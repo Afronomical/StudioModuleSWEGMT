@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AIPatrolState : AICharacterBaseClass
+public class AIPatrolState : AIBaseState
 {
     public AIPatrolState()
     {
@@ -12,10 +12,5 @@ public class AIPatrolState : AICharacterBaseClass
     public override void UpdateLogic()
     {
         Debug.Log("Patrolling");
-    }
-
-    public override void UpdatePhysics()
-    {
-
     }
 }
