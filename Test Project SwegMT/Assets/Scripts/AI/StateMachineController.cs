@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Collections.LowLevel.Unsafe;
+using Unity.VisualScripting;
 using UnityEngine;
 //using "Character"
 
@@ -38,6 +39,20 @@ public class StateMachineController : MonoBehaviour
         }
         */
 
+        if (character.health == 0)
+        {
+            character.ChangeState(AICharacter.States.Dead);
+            return;
+        }
+
+        if (character.health == 1)
+        {
+            character.ChangeState(AICharacter.States.Downed);
+            return;
+        }
+
+
+        //put everything in separate functions
         if (character.characterType == AICharacter.CharacterTypes.Villager)
         {
             if (player.transform.position.x > this.transform.position.x + 2f)

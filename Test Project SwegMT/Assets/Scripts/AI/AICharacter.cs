@@ -31,7 +31,7 @@ public class AICharacter : MonoBehaviour
 
     [Header("Character Stats")]
     public CharacterTypes characterType;
-    public int health;
+    public int health = 3;
     public float walkSpeed, runSpeed;
 
     [Header("States")]

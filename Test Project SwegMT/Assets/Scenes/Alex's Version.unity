@@ -273,7 +273,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterType: 1
-  health: 0
+  health: 2
   walkSpeed: 0
   runSpeed: 0
   currentState: 4
@@ -596,7 +596,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterType: 0
-  health: 0
+  health: 2
   walkSpeed: 0
   runSpeed: 0
   currentState: 0
