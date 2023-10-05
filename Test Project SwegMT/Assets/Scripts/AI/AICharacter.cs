@@ -24,7 +24,8 @@ public class AICharacter : MonoBehaviour
         Downed,
         Dead,
         Patrol,
-        Attack
+        Attack,
+        Run
     }
 
 
@@ -35,7 +36,7 @@ public class AICharacter : MonoBehaviour
 
     [Header("States")]
     public States currentState;
-    public AIBaseState stateScript;
+    public StateBaseClass stateScript;
 
 
 
@@ -51,7 +52,7 @@ public class AICharacter : MonoBehaviour
     }
 
 
-    public AIBaseState GetCurrentState()  // Tell the script that called it which state is currently active
+    public StateBaseClass GetCurrentState()  // Tell the script that called it which state is currently active
     {
         return stateScript;
     }
@@ -69,16 +70,19 @@ public class AICharacter : MonoBehaviour
         switch(newState)
         {
             case States.Idle:
-                stateScript = new AIIdleState();
+                stateScript = new IdleState();
                 break;
             case States.Patrol:
-                stateScript = new AIPatrolState();
+                stateScript = new PatrolState();
+                break;
+            case States.Run:
+                stateScript = new RunState();
                 break;
 
             //------------------------------------ Add new states in here
 
             default:
-                stateScript = new AIIdleState(); 
+                stateScript = new IdleState(); 
                 break;
         }
     }

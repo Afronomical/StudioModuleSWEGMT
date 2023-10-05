@@ -9,10 +9,11 @@ public class StateMachineController : MonoBehaviour
 {
     //handles the switching of the states depending on if certain conditions are met
     public GameObject player;
+    private AICharacter character;
 
     private void Start()
     {
-        
+        character = GetComponent<AICharacter>();
     }
 
     private void Update()
@@ -41,14 +42,15 @@ public class StateMachineController : MonoBehaviour
         //placeholder value for reaction range
         int n = 0;
 
-        if (this.CompareTag("Villager"))
+        if (character.characterType == AICharacter.CharacterTypes.Villager)
         {
-            if (this.transform.position.x < n)
+            if (player.transform.position.x > this.transform.position.x + 2f)
             {
-                /*
-                 character.SetState(RunState);
-                 character.GetCurrentState().UpdateLogic();
-                 */
+                Debug.Log("Working");
+
+                character.ChangeState(AICharacter.States.Run);
+                //character.GetCurrentState().UpdateLogic();
+
             }
             else
             {
