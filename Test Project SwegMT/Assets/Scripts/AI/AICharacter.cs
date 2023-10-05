@@ -78,6 +78,15 @@ public class AICharacter : MonoBehaviour
             case States.Run:
                 stateScript = new RunState();
                 break;
+            case States.Attack:
+                stateScript = new AttackState();
+                break;
+            case States.Downed:
+                stateScript = new DownedState();
+                break;
+            case States.Dead:
+                stateScript = new DeadState();
+                break;
 
             //------------------------------------ Add new states in here
 
