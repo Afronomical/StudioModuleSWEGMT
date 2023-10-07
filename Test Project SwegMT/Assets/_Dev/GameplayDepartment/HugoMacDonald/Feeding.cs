@@ -28,11 +28,11 @@ public class Feeding : MonoBehaviour
 
     private void Update()
     {
-        if (canHeal && Input.GetKeyDown(healKey))
+        if (canHeal && Input.GetKeyDown(healKey)) // canheal is true (player inside the zone) and e key is being pressed down
         {
             
 
-            // Assuming your PlayerDeath script is attached to the same GameObject as this script
+            // currently references to the death script but soon there will be a dedicated script for health
             PlayerDeath playerDeath = GetComponent<PlayerDeath>();
 
             if (playerDeath != null)
@@ -40,7 +40,7 @@ public class Feeding : MonoBehaviour
                 // Update the currentHealth variable in the PlayerDeath script
                 playerDeath.currentHealth += healAmount;
 
-                // Debug.Log the updated currentHealth
+                //debug the health and make sure its updating
                 Debug.Log(playerDeath.currentHealth);
             }
         }
