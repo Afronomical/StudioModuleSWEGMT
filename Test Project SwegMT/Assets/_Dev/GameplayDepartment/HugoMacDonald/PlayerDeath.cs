@@ -3,7 +3,7 @@ using UnityEngine;
 public class PlayerDeath : MonoBehaviour
 {
     public int maxHealth = 100;
-    private int currentHealth;
+    public int currentHealth;
     private int damageAmount = 10; // example for test purpsoses
     private Animator animator; // Reference to the Animator component.
 
