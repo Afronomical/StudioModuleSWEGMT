@@ -5,7 +5,8 @@ using UnityEngine;
 public class PlayerHealthTestScript : MonoBehaviour
 {
     public int MaxHealth = 100;
-    public int currentHealth = 0;
+    public int currentHealth;
+    public int minHealth = 0;
 
 
     public HealthBarScript healthBar;
@@ -24,8 +25,23 @@ public class PlayerHealthTestScript : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space))
         {
             TakeDamage(20);
-            Debug.Log("Damage Taken!");
+            if (currentHealth < minHealth)
+            {
+                currentHealth = minHealth;
+               
+            }
+            if(currentHealth > minHealth) 
+            {
+                Debug.Log("Damage Taken!");
+            }
+            else
+            {
+                Debug.Log("Game Over, You Have Died!");
+            }
+            
         }
+
+
     }
 
     void TakeDamage(int damage)
