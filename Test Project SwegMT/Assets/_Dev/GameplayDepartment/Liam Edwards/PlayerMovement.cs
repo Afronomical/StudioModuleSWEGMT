@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     //Declare Variables 
-    public float walkSpeed = 6f; // Variable to store the walking speed
-    public float sprintSpeed = 8f; // Variable to store the srint speed
+    public float walkSpeed = 4f; // Variable to store the walking speed
+    public float sprintSpeed = 2.25f; // Variable to store the srint speed
 
     //Update Method  
     void Update()
