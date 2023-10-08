@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9104347261712471879}
   m_Layer: 0
   m_Name: Entity SpawnPoint
-  m_TagString: Untagged
+  m_TagString: EntitySpawnPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
