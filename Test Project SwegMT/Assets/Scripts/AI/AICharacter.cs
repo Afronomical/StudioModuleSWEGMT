@@ -60,45 +60,57 @@ public class AICharacter : MonoBehaviour
 
     public void ChangeState(States newState)  // Will destroy the old state script and create a new one
     {
-        if (stateScript != null)
+        if (currentState != newState || stateScript == null)
         {
-            //----------------------------------------- Destroy script here
-        }
+            if (stateScript != null)
+            {
+                //----------------------------------------- Destroy script here
+            }
 
-        currentState = newState;
+            currentState = newState;
 
-        switch(newState)
-        {
-            case States.Idle:
-                stateScript = new IdleState();
-                break;
-            case States.Patrol:
-                stateScript = new PatrolState();
-                break;
-            case States.Run:
-                stateScript = new RunState();
-                break;
-            case States.Attack:
-                stateScript = new AttackState();
-                break;
-            case States.Downed:
-                stateScript = new DownedState();
-                break;
-            case States.Dead:
-                stateScript = new DeadState();
-                break;
+            switch (newState)
+            {
+                case States.Idle:
+                    stateScript = new IdleState();
+                    break;
+                case States.Patrol:
+                    stateScript = new PatrolState();
+                    break;
+                case States.Run:
+                    stateScript = new RunState();
+                    break;
+                case States.Attack:
+                    stateScript = new AttackState();
+                    break;
+                case States.Downed:
+                    stateScript = new DownedState();
+                    break;
+                case States.Dead:
+                    stateScript = new DeadState();
+                    break;
 
-            //------------------------------------ Add new states in here
+                //------------------------------------ Add new states in here
 
-            default:
-                stateScript = new IdleState(); 
-                break;
+                default:
+                    stateScript = new IdleState();
+                    break;
+            }
+
+            stateScript.character = this;
+            //stateScript.player = GameObject.FindGameObjectWithTag("Player");
         }
     }
 
 
-    public Vector2 GetPosition()
+    public Vector3 GetPosition()
     {
         return transform.position;
+    }
+
+
+    public void SetPosition(Vector3 pos)
+    {
+        transform.position = pos;
     }
 }

@@ -246,7 +246,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1102999772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -597,8 +597,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterType: 0
   health: 2
-  walkSpeed: 0
-  runSpeed: 0
+  walkSpeed: 3
+  runSpeed: 5
   currentState: 0
 --- !u!65 &1984748138
 BoxCollider:
@@ -700,7 +700,7 @@ GameObject:
   - component: {fileID: 2077651536}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
