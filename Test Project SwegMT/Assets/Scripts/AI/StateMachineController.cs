@@ -9,7 +9,6 @@ using UnityEngine;
 public class StateMachineController : MonoBehaviour
 {
     //handles the switching of the states depending on if certain conditions are met
-    public GameObject player;
     private AICharacter character;
     private float detectionRange = 4f;
 
@@ -38,12 +37,11 @@ public class StateMachineController : MonoBehaviour
             return;
         }
 
-        float distance = Vector3.Distance(player.transform.position, character.transform.position);
+        float distance = Vector3.Distance(character.player.transform.position, character.transform.position);
         Debug.Log(distance);
 
         if (character.characterType == AICharacter.CharacterTypes.Villager)
         {
-            
             if (distance < detectionRange)
             {
                 character.ChangeState(AICharacter.States.Run);

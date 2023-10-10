@@ -5,7 +5,6 @@ using UnityEngine;
 public class StateBaseClass
 {
     public AICharacter character;
-    //public GameObject player;
 
     public virtual void UpdateLogic()
     {

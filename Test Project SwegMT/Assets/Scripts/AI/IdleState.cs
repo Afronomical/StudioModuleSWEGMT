@@ -1,3 +1,11 @@
+/*
+ *This script is created by AICharacter, it inherits from StateBaseClass
+ *It controls the behaviour of the enemy when they are idle
+ *They will stand still and sometimes wander around
+ * 
+ * Written by Aaron and Adam
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting.FullSerializer;
@@ -20,6 +28,7 @@ public class IdleState : StateBaseClass
 
     public override void UpdateLogic()
     {
+        //Debug.Log("Idle");
         if (walking)
             Walk();
         else

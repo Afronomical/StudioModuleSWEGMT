@@ -38,6 +38,8 @@ public class AICharacter : MonoBehaviour
     public States currentState;
     public StateBaseClass stateScript;
 
+    public GameObject player;
+
 
 
     void Start()
@@ -65,6 +67,7 @@ public class AICharacter : MonoBehaviour
             if (stateScript != null)
             {
                 //----------------------------------------- Destroy script here
+                
             }
 
             currentState = newState;
@@ -98,7 +101,6 @@ public class AICharacter : MonoBehaviour
             }
 
             stateScript.character = this;  // Set the reference that state scripts will use
-            //stateScript.player = GameObject.FindGameObjectWithTag("Player");
         }
     }
 
@@ -112,5 +114,11 @@ public class AICharacter : MonoBehaviour
     public void SetPosition(Vector3 pos)
     {
         transform.position = pos;
+    }
+
+
+    public Vector3 GetPlayerPosition()
+    {
+        return player.transform.position;
     }
 }
