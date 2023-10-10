@@ -11,6 +11,7 @@ public class StateMachineController : MonoBehaviour
     //handles the switching of the states depending on if certain conditions are met
     public GameObject player;
     private AICharacter character;
+    private float detectionRange = 2f;
 
     private void Start()
     {
@@ -24,20 +25,6 @@ public class StateMachineController : MonoBehaviour
 
     private void CheckState()
     {
-        //switch between states based on the pre-set conditions
-        //need to liaise with leads
-        /*if(this.getHealth() < n)
-        {
-            character.SetState(DownedState);
-            character.GetCurrentState().UpdateLogic();
-        }
-
-        if(this.GetHealth() == 0)
-        {
-            character.SetState(DeadState);
-            character.GetCurrentState().UpdateLogic();
-        }
-        */
 
         if (character.health == 0)
         {
@@ -51,11 +38,13 @@ public class StateMachineController : MonoBehaviour
             return;
         }
 
+        float distance = Vector3.Distance(player.transform.position, character.transform.position);
+        Debug.Log(distance);
 
-        //put everything in separate functions
         if (character.characterType == AICharacter.CharacterTypes.Villager)
         {
-            if (player.transform.position.x > this.transform.position.x + 2f)
+            
+            if (distance < detectionRange)
             {
                 character.ChangeState(AICharacter.States.Run);
             }
@@ -66,7 +55,7 @@ public class StateMachineController : MonoBehaviour
         }
         else if (character.characterType == AICharacter.CharacterTypes.Hunter)
         {
-            if (player.transform.position.x < this.transform.position.x + 2f)
+            if (distance > detectionRange)
             {
                 character.ChangeState(AICharacter.States.Patrol);
             }
