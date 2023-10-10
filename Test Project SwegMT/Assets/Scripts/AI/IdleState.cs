@@ -20,6 +20,7 @@ public class IdleState : StateBaseClass
 
     public override void UpdateLogic()
     {
+        //Debug.Log("Idle");
         if (walking)
             Walk();
         else

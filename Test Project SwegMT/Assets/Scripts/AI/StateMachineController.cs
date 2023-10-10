@@ -9,7 +9,6 @@ using UnityEngine;
 public class StateMachineController : MonoBehaviour
 {
     //handles the switching of the states depending on if certain conditions are met
-    public GameObject player;
     private AICharacter character;
 
     private void Start()
@@ -55,7 +54,7 @@ public class StateMachineController : MonoBehaviour
         //put everything in separate functions
         if (character.characterType == AICharacter.CharacterTypes.Villager)
         {
-            if (player.transform.position.x > this.transform.position.x + 2f)
+            if (character.player.transform.position.x > this.transform.position.x + 2f)
             {
                 character.ChangeState(AICharacter.States.Run);
             }
@@ -66,7 +65,7 @@ public class StateMachineController : MonoBehaviour
         }
         else if (character.characterType == AICharacter.CharacterTypes.Hunter)
         {
-            if (player.transform.position.x < this.transform.position.x + 2f)
+            if (character.player.transform.position.x < this.transform.position.x + 2f)
             {
                 character.ChangeState(AICharacter.States.Patrol);
             }
