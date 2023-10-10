@@ -8,7 +8,7 @@ public class IdleState : StateBaseClass
     private bool walking;
     private Vector3 walkDestination;
     private float idleTime;
-    private float maxWalkDistance = 5;
+    private float maxWalkDistance = 5;  // How far the character can walk while idle
 
 
     public IdleState()
@@ -47,7 +47,7 @@ public class IdleState : StateBaseClass
         if (Vector3.Distance(character.GetPosition(), walkDestination) <= 0.01f)
         {
             walking = false;
-            idleTime = Random.Range(2, 10);
+            idleTime = Random.Range(2, 10);  // How long the character will stand still for
         }
     }
 }

@@ -1,6 +1,6 @@
 /*
  *This script should be placed on the AI character
- *It is responsible for
+ *It is responsible for the character's main logic
  * 
  * Written by Aaron & Adam
  */
@@ -97,7 +97,7 @@ public class AICharacter : MonoBehaviour
                     break;
             }
 
-            stateScript.character = this;
+            stateScript.character = this;  // Set the reference that state scripts will use
             //stateScript.player = GameObject.FindGameObjectWithTag("Player");
         }
     }
