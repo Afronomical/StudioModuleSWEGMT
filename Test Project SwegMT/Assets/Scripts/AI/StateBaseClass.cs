@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class StateBaseClass
 {
+    public AICharacter character;
+    //public GameObject player;
+
     public virtual void UpdateLogic()
     {
         //handles the logic for each individual state
