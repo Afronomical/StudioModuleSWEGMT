@@ -55,8 +55,8 @@ public class playerAttack : MonoBehaviour
         //gets mous pos (0, 0 at centre screen)
         mousePos.x = Input.mousePosition.x - (Screen.width / 2);
         mousePos.y = Input.mousePosition.y - (Screen.height / 2);
-        float angle = Mathf.Atan2(-mousePos.y, mousePos.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0, angle, 0); //swap "angle" with another 0 if cam is another angle
+        float angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward); //swap "angle" with another 0 if cam is another angle
 
         //calls damage enemy when LMB is pressed
         if (Input.GetKey(KeyCode.Mouse0))
