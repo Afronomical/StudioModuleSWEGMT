@@ -11,7 +11,7 @@ public class StateMachineController : MonoBehaviour
     //handles the switching of the states depending on if certain conditions are met
     public GameObject player;
     private AICharacter character;
-    private float detectionRange = 2f;
+    private float detectionRange = 4f;
 
     private void Start()
     {

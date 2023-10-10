@@ -12,18 +12,22 @@ public class PatrolState : StateBaseClass
 
     public override void UpdateLogic()
     {
-        Debug.Log("Is patrolling");
+        //Wait();
+        //Debug.Log("Is patrolling");
+        //float rand1 = Random.Range(-100, 100);
+        //float rand2 = Random.Range(-100, 100);
 
-        //while (true)
-        //{
-        //    hunter.transform.position = Vector3.MoveTowards(hunter.transform.position, new Vector3(Random.Range(0f, 10f), 0, Random.Range(0f, 10f)), speed * Time.deltaTime);
-        //    waitingTime -= Time.deltaTime;
-        //    if (waitingTime < 0.01)
-        //    {
-        //        break;
-        //    }
-        //}
+        ////while (waitingTime > 0.01)
+        ////{
+        //    hunter.transform.position = Vector3.MoveTowards(hunter.transform.position, new Vector3(rand1, 1, rand2), speed * Time.deltaTime);
+        
+        ////}
 
     }
+
+    //private IEnumerator Wait()
+    //{
+    //    yield return new WaitForSeconds(5);
+    //}
 
 }
