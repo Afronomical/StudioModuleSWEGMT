@@ -276,6 +276,7 @@ MonoBehaviour:
   health: 2
   walkSpeed: 3
   runSpeed: 0
+  crawlSpeed: 1
   currentState: 4
   stateScript: {fileID: 0}
   player: {fileID: 2077651535}
@@ -601,6 +602,7 @@ MonoBehaviour:
   health: 2
   walkSpeed: 3
   runSpeed: 5
+  crawlSpeed: 1
   currentState: 0
   stateScript: {fileID: 0}
   player: {fileID: 2077651535}
@@ -789,7 +791,7 @@ Transform:
   m_GameObject: {fileID: 2077651535}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.97, y: 0.66, z: 16.12}
+  m_LocalPosition: {x: 2.7, y: 0.66, z: 0.65}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
