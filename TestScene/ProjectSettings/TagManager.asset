@@ -7,6 +7,8 @@ TagManager:
   - EntitySpawnPoint
   - enemyMeleeRadius
   - enemy
+  - Villager
+  - Hunter
   layers:
   - Default
   - TransparentFX
