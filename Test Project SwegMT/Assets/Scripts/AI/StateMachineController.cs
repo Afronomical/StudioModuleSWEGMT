@@ -10,7 +10,7 @@ public class StateMachineController : MonoBehaviour
 {
     //handles the switching of the states depending on if certain conditions are met
     private AICharacter character;
-    private float detectionRange = 4f;
+    private float detectionRange = 6f;
 
     private void Start()
     {
@@ -38,7 +38,7 @@ public class StateMachineController : MonoBehaviour
         }
 
         float distance = Vector3.Distance(character.player.transform.position, character.transform.position);
-        Debug.Log(distance);
+        //Debug.Log(distance);
 
         if (character.characterType == AICharacter.CharacterTypes.Villager)
         {

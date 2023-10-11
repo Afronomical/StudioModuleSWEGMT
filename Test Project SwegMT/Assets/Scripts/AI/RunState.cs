@@ -11,8 +11,8 @@ using UnityEngine;
 
 public class RunState : StateBaseClass
 {
-    private float minRunDistance = 2;
-    private float maxRunDistance = 3;
+    private float minRunDistance = 20;
+    private float maxRunDistance = 50;
     private float runOffset = 2;  // Stops them from running straight
     private float minCheckTime = 2;
     private float maxCheckTime = 5;
@@ -23,12 +23,13 @@ public class RunState : StateBaseClass
 
     public RunState()
     {
-        checkTime = 1f;
+        checkTime = 0f;
     }
 
 
     public override void UpdateLogic()
     {
+        Debug.Log("Is running");
         if (checkTime > 0)  // Wait a bit before running 
             checkTime -= Time.deltaTime;
 
