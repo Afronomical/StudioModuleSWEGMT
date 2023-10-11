@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StateBaseClass
+public class StateBaseClass : MonoBehaviour
 {
     public AICharacter character;
 

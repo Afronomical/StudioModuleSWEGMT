@@ -259,6 +259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a24d8aecd3ce13a468536f48c8a327a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  detectionRange: 4
 --- !u!114 &1102999773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -275,7 +276,9 @@ MonoBehaviour:
   health: 2
   walkSpeed: 3
   runSpeed: 0
+  crawlSpeed: 1
   currentState: 4
+  stateScript: {fileID: 0}
   player: {fileID: 2077651535}
 --- !u!65 &1102999774
 BoxCollider:
@@ -582,6 +585,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a24d8aecd3ce13a468536f48c8a327a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  detectionRange: 10
 --- !u!114 &1984748137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -598,7 +602,9 @@ MonoBehaviour:
   health: 2
   walkSpeed: 3
   runSpeed: 5
+  crawlSpeed: 1
   currentState: 0
+  stateScript: {fileID: 0}
   player: {fileID: 2077651535}
 --- !u!65 &1984748138
 BoxCollider:
@@ -785,7 +791,7 @@ Transform:
   m_GameObject: {fileID: 2077651535}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.97, y: 0.66, z: 16.12}
+  m_LocalPosition: {x: 2.7, y: 0.66, z: 0.65}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

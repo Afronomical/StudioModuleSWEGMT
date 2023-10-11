@@ -10,7 +10,7 @@ public class StateMachineController : MonoBehaviour
 {
     //handles the switching of the states depending on if certain conditions are met
     private AICharacter character;
-    private float detectionRange = 6f;
+    public float detectionRange = 4f;
 
     private void Start()
     {
