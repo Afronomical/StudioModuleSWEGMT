@@ -5,10 +5,17 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     //Declare Variables 
-    public float walkSpeed = 4f; // Variable to store the walking speed
-    public float sprintSpeed = 2.25f; // Variable to store the srint speed
-
+    public float speed;
+    public float sprintSpeed;
+    public float jumpSpeed;
+    private Rigidbody2D rb;
     //Update Method  
+
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
+
     void Update()
     {
         PlayerMovement();
@@ -18,18 +25,18 @@ public class PlayerController : MonoBehaviour
 
     public void PlayerMovement()
     {
-        float horizontal = Input.GetAxis("Horizontal") * Time.deltaTime * walkSpeed; // Horizontal input multiplied with Time.deltaTime and walkSpeed to get the horizontal movement.
-        float vertical = Input.GetAxis("Vertical") * Time.deltaTime * walkSpeed; // Vertical input multiplied with Time.deltaTime and walkSpeed to get the horizontal movement.
-
-
-        if (Input.GetKey(KeyCode.LeftShift)) // Multiplies the horizontal and vertical variables by a sprintSpeed value. This will increase the speed of the character, simulating a sprint.
+        if (Input.GetKey(KeyCode.LeftShift))
         {
-            horizontal *= sprintSpeed;
-            vertical *= sprintSpeed;
+            rb.velocity = new Vector2(Input.GetAxis("Horizontal") * sprintSpeed, Input.GetAxis("Vertical") * sprintSpeed);
+        }
+        else
+        {
+            rb.velocity = new Vector2(Input.GetAxis("Horizontal") * speed, Input.GetAxis("Vertical") * speed);
         }
 
-        transform.Translate(horizontal, 0f, vertical); // Move the object along the x-axis by 'horizontal' units and along the z-axis by 'vertical' units, leaving the y-axis unchanged.
+
     }
+
 }
 
 
