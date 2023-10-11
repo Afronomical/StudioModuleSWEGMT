@@ -7,6 +7,7 @@
 
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class AICharacter : MonoBehaviour
@@ -75,28 +76,28 @@ public class AICharacter : MonoBehaviour
             switch (newState)
             {
                 case States.Idle:
-                    stateScript = new IdleState();
+                    stateScript = transform.AddComponent<IdleState>();
                     break;
                 case States.Patrol:
-                    stateScript = new PatrolState();
+                    stateScript = transform.AddComponent<PatrolState>();
                     break;
                 case States.Run:
-                    stateScript = new RunState();
+                    stateScript = transform.AddComponent<RunState>();
                     break;
                 case States.Attack:
-                    stateScript = new AttackState();
+                    stateScript = transform.AddComponent<AttackState>();
                     break;
                 case States.Downed:
-                    stateScript = new DownedState();
+                    stateScript = transform.AddComponent<DownedState>();
                     break;
                 case States.Dead:
-                    stateScript = new DeadState();
+                    stateScript = transform.AddComponent<DeadState>();
                     break;
 
                 //------------------------------------ Add new states in here
 
                 default:
-                    stateScript = new IdleState();
+                    stateScript = transform.AddComponent<IdleState>();
                     break;
             }
 

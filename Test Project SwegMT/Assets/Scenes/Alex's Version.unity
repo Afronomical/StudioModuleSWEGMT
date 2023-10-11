@@ -259,6 +259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a24d8aecd3ce13a468536f48c8a327a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  detectionRange: 4
 --- !u!114 &1102999773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -276,7 +277,8 @@ MonoBehaviour:
   walkSpeed: 3
   runSpeed: 0
   currentState: 4
-  player: {fileID: 0}
+  stateScript: {fileID: 0}
+  player: {fileID: 2077651535}
 --- !u!65 &1102999774
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -582,6 +584,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a24d8aecd3ce13a468536f48c8a327a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  detectionRange: 10
 --- !u!114 &1984748137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -599,6 +602,7 @@ MonoBehaviour:
   walkSpeed: 3
   runSpeed: 5
   currentState: 0
+  stateScript: {fileID: 0}
   player: {fileID: 2077651535}
 --- !u!65 &1984748138
 BoxCollider:

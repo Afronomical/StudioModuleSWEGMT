@@ -21,7 +21,7 @@ public class IdleState : StateBaseClass
 
     public IdleState()
     {
-        idleTime = Random.Range(2, 10);
+        idleTime = 2f;
         walking = false;
     }
 

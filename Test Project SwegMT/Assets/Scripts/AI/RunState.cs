@@ -13,7 +13,7 @@ public class RunState : StateBaseClass
 {
     private float minRunDistance = 2;
     private float maxRunDistance = 3;
-    private float runOffset = 2;  // Stops them from running straight
+    private float runOffset = 1;  // Stops them from running straight
     private float minCheckTime = 2;
     private float maxCheckTime = 5;
 
