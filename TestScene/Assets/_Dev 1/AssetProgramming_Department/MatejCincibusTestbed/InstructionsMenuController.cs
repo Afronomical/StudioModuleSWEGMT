@@ -13,7 +13,7 @@ public class InstructionsMenuController : MonoBehaviour
 
     public void Back()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
         //Debug.Log("Back to main menu!");
     }
 
