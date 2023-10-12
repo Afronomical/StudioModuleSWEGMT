@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-10-04T17:49:48.670Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.31" etag="arpu9HrN8GaHE-wAJdtE" version="21.2.7" type="github">
+<mxfile host="app.diagrams.net" modified="2023-10-12T14:24:46.148Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.31" etag="EXVo4mA19gdLZAK0nAX1" version="21.2.7" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="986" dy="549" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1420" dy="784" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -70,58 +70,58 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="vCdEnvLLKQnP61XP-Ws--28" value="Is damaged" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="480" y="360" width="120" height="60" as="geometry" />
+          <mxGeometry x="273" y="420" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="vCdEnvLLKQnP61XP-Ws--36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vCdEnvLLKQnP61XP-Ws--31" target="vCdEnvLLKQnP61XP-Ws--35">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="vCdEnvLLKQnP61XP-Ws--31" value="health &amp;lt; 1" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="490" y="505" width="100" height="80" as="geometry" />
+          <mxGeometry x="283" y="565" width="100" height="80" as="geometry" />
         </mxCell>
         <mxCell id="vCdEnvLLKQnP61XP-Ws--35" value="Enter downed state" style="whiteSpace=wrap;html=1;shadow=0;strokeWidth=1;spacing=6;spacingTop=-4;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="480" y="675" width="120" height="60" as="geometry" />
+          <mxGeometry x="273" y="735" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="vCdEnvLLKQnP61XP-Ws--37" value="AI State: Healthy" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="510" y="320" width="60" height="30" as="geometry" />
+          <mxGeometry x="303" y="380" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="vCdEnvLLKQnP61XP-Ws--38" value="AI State: Downed" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="670" y="320" width="60" height="30" as="geometry" />
+          <mxGeometry x="463" y="380" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="vCdEnvLLKQnP61XP-Ws--41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vCdEnvLLKQnP61XP-Ws--39" target="vCdEnvLLKQnP61XP-Ws--40">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="vCdEnvLLKQnP61XP-Ws--39" value="Is damaged" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="640" y="360" width="120" height="60" as="geometry" />
+          <mxGeometry x="433" y="420" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="vCdEnvLLKQnP61XP-Ws--43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vCdEnvLLKQnP61XP-Ws--40" target="vCdEnvLLKQnP61XP-Ws--42">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="vCdEnvLLKQnP61XP-Ws--40" value="Get reference to GameManager" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="640" y="480" width="120" height="60" as="geometry" />
+          <mxGeometry x="433" y="540" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="vCdEnvLLKQnP61XP-Ws--49" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vCdEnvLLKQnP61XP-Ws--42" target="vCdEnvLLKQnP61XP-Ws--48">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="vCdEnvLLKQnP61XP-Ws--42" value="Increase kill points by one" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="640" y="600" width="120" height="60" as="geometry" />
+          <mxGeometry x="433" y="660" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="vCdEnvLLKQnP61XP-Ws--47" value="sw" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vCdEnvLLKQnP61XP-Ws--44" target="vCdEnvLLKQnP61XP-Ws--46">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="vCdEnvLLKQnP61XP-Ws--44" value="timer WaitforSeconds()" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="150" y="865" width="120" height="60" as="geometry" />
+          <mxGeometry x="590" y="550" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="vCdEnvLLKQnP61XP-Ws--46" value="Destroy()" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="150" y="975" width="120" height="60" as="geometry" />
+          <mxGeometry x="590" y="660" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="vCdEnvLLKQnP61XP-Ws--48" value="Death()" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="640" y="710" width="120" height="60" as="geometry" />
+          <mxGeometry x="433" y="770" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="vCdEnvLLKQnP61XP-Ws--51" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vCdEnvLLKQnP61XP-Ws--50" target="vCdEnvLLKQnP61XP-Ws--44">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="vCdEnvLLKQnP61XP-Ws--50" value="Death()" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="150" y="735" width="120" height="60" as="geometry" />
+          <mxGeometry x="590" y="420" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
