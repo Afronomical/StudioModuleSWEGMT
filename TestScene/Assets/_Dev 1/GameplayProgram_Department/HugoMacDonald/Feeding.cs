@@ -10,17 +10,17 @@ public class Feeding : MonoBehaviour
     private bool canHeal = false; // To check if the player is inside the healing zone
    
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("healingZone")) // Make sure the player enters the zone
+        if (other.CompareTag("feedingZone")) // Make sure the player enters the zone
         {
             canHeal = true;
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("healingZone")) // Player left the zone
+        if (other.CompareTag("feedingZone")) // Player left the zone
         {
             canHeal = false;
         }
