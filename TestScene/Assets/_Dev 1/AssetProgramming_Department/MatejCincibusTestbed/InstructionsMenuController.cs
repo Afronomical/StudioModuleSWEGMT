@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class InstructionsMenuController : MonoBehaviour
 {
@@ -12,7 +13,8 @@ public class InstructionsMenuController : MonoBehaviour
 
     public void Back()
     {
-        Debug.Log("Back to main menu!");
+        SceneManager.LoadScene(1);
+        //Debug.Log("Back to main menu!");
     }
 
     private void Start()
