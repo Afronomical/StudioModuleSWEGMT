@@ -14,7 +14,7 @@ public class playerAttack : MonoBehaviour
     {
         
 
-        if (other.tag == "enemy")
+        if ((other.tag == "Villager") || (other.tag == "Hunter"))
         {
             enemyTarg = other.gameObject;
         }
@@ -23,7 +23,7 @@ public class playerAttack : MonoBehaviour
     //exit clears enemy target
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.tag == "enemy")
+        if ((other.tag == "Villager") || (other.tag == "Hunter"))
         {
             enemyTarg = null;
             
