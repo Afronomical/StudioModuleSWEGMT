@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class playerAttack : MonoBehaviour
 {
-
+    public int damage = 1;
     public GameObject hitBox;
+    public float attackDelay;
+    public float attackDelayStart = 0.3f;
     private Vector2 mousePos;
     private GameObject enemyTarg;
+    private AICharacter AiEnemy;
+    private bool canHit = true;
 
     //enter collision, detects if has enemy tag, if true set enemy to attacking var
     private void OnTriggerEnter2D(Collider2D other)
@@ -17,6 +21,7 @@ public class playerAttack : MonoBehaviour
         if ((other.tag == "Villager") || (other.tag == "Hunter"))
         {
             enemyTarg = other.gameObject;
+            AiEnemy = other.GetComponent<AICharacter>();
         }
     }
 
@@ -26,7 +31,7 @@ public class playerAttack : MonoBehaviour
         if ((other.tag == "Villager") || (other.tag == "Hunter"))
         {
             enemyTarg = null;
-            
+            AiEnemy = null;
         }
     }
 
@@ -34,10 +39,14 @@ public class playerAttack : MonoBehaviour
     //damages the enemy (damage not yet implemented)
     void damageEnemy()
     {
+        
+        
+        
         if (enemyTarg != null)
         {
+
             Debug.Log(enemyTarg.name);
-            //damage enemyTarg
+            AiEnemy.health -= damage;
         }
 
 
@@ -46,7 +55,7 @@ public class playerAttack : MonoBehaviour
 
     void Start()
     {
-
+        attackDelay = attackDelayStart;
     }
 
 
@@ -62,8 +71,20 @@ public class playerAttack : MonoBehaviour
         //calls damage enemy when LMB is pressed
         if (Input.GetKey(KeyCode.Mouse0))
         {
-
-            damageEnemy();
+            if (canHit)
+            {
+                damageEnemy();
+                canHit = false;
+            }
+            attackDelay -= Time.deltaTime;
+            if (attackDelay <= 0)
+            {
+                canHit = true;
+                attackDelay = attackDelayStart;
+            }
+            
+            
+            
         }
     }
 }
