@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class ReferenceManager : MonoBehaviour
 {
-    public GameObject player;
+    [SerializeField] GameObject player;
     [SerializeField] PlayerDeath playerHealthScript;
-    [SerializeField] int playerHunger;
+    [SerializeField] float playerHunger;
     
 
     // Start is called before the first frame update
@@ -24,13 +24,20 @@ public class ReferenceManager : MonoBehaviour
     }
 
 
-    public int GetPlayerHealth()
+    public float GetPlayerHealth()
     {
         return playerHealthScript.currentHealth;
     }
 
-    public int GetHungerLevel()
+    public float GetHungerLevel()
     {
         return playerHunger;
     }
+
+    public GameObject GetPlayer()
+    {
+        return player;
+    }
+
+
 }
