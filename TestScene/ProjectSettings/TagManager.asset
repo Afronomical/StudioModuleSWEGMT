@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - EntitySpawnPoint
+  - enemyMeleeRadius
+  - enemy
+  - Villager
+  - Hunter
+  - feedingZone
   layers:
   - Default
   - TransparentFX
