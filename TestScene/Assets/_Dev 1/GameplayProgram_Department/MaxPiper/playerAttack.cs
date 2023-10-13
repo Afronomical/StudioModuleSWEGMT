@@ -6,8 +6,8 @@ public class playerAttack : MonoBehaviour
 {
     public int damage = 1;
     public GameObject hitBox;
-    public float attackDelay;
     public float attackDelayStart = 0.3f;
+    private float attackDelay;
     private Vector2 mousePos;
     private GameObject enemyTarg;
     private AICharacter AiEnemy;
@@ -28,7 +28,12 @@ public class playerAttack : MonoBehaviour
     //exit clears enemy target
     private void OnTriggerExit2D(Collider2D other)
     {
-        if ((other.tag == "Villager") || (other.tag == "Hunter"))
+        enemyTarg = null;
+        AiEnemy = null;
+
+
+
+        if (other == enemyTarg)                            //((other.tag == "Villager") || (other.tag == "Hunter"))
         {
             enemyTarg = null;
             AiEnemy = null;
