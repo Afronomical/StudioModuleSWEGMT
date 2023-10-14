@@ -414,6 +414,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 9138447254673542036, guid: f31c5603327369f4a9a67a256c38040c, type: 3}
+      propertyPath: healthBarScript
+      value: 
+      objectReference: {fileID: 1651346397}
+    - target: {fileID: 9138447254673542036, guid: f31c5603327369f4a9a67a256c38040c, type: 3}
+      propertyPath: hungerBarSlider
+      value: 
+      objectReference: {fileID: 943001636}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1228,10 +1236,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b81547cebcddaa746ad23c244a4f31f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healAmount: 10
+  currentHunger: 0
+  minHunger: 0
   healKey: 101
   aiCharacter: {fileID: 1379014425}
   aiCharacter1: {fileID: 1180797092}
+  hungerBarSlider: {fileID: 943001636}
 --- !u!1001 &1995343966
 PrefabInstance:
   m_ObjectHideFlags: 0
