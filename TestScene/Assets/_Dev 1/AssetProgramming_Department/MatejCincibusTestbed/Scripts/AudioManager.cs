@@ -6,6 +6,10 @@ public class AudioManager : MonoBehaviour
 {
     public enum SoundEffects
     {
+        // INFO: Test sounds to be removed once proper sound implementation starts:
+        SwordSlash,
+        TakeDamage
+
         // INFO: All sound effects in the game go in here, for example:
         // PlayerIdle,
         // PlayerRun,
