@@ -5,10 +5,23 @@ using UnityEngine;
 
 public class Feeding : MonoBehaviour
 {
-    public int healAmount = 10; // Amount of healing to provide
+    public int currentHunger;
+    public int minHunger = 0;
     public KeyCode healKey = KeyCode.E; // The key to trigger healing
     private bool canHeal = false; // To check if the player is inside the healing zone
-   
+    public AICharacter aiCharacter;
+    public AICharacter aiCharacter1;
+    public HungerBar hungerBarSlider;
+
+
+
+    private void Start()
+    {
+        
+        currentHunger = minHunger;
+        hungerBarSlider.SetMinHunger(minHunger);
+    }
+
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -28,21 +41,19 @@ public class Feeding : MonoBehaviour
 
     private void Update()
     {
-        if (canHeal && Input.GetKeyDown(healKey)) // canheal is true (player inside the zone) and e key is being pressed down
+        if (canHeal && Input.GetKeyDown(healKey)) // can heal is true (player inside the zone) and e key is being pressed down
         {
-            
-
-            // currently references to the death script but soon there will be a dedicated script for health
-            PlayerDeath playerDeath = GetComponent<PlayerDeath>();
-
-            if (playerDeath != null)
+            if ((aiCharacter.currentState == AICharacter.States.Downed || aiCharacter1.currentState == AICharacter.States.Downed) && canHeal && Input.GetKeyDown(healKey))
             {
-                // Update the currentHealth variable in the PlayerDeath script
-                playerDeath.currentHealth += healAmount;
-
-                //debug the health and make sure its updating
-                Debug.Log(playerDeath.currentHealth);
+                
+                currentHunger += 1;
+                hungerBarSlider.SetHunger(currentHunger); //
+                
             }
+           
+
+
+
         }
     }
 }
