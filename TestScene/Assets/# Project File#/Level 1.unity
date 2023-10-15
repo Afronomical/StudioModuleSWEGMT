@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 036f22b620ec3e9498457f0d9c5acba3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 1919636557}
   playerHealthScript: {fileID: 0}
   playerHunger: 0
 --- !u!4 &404374156
@@ -648,7 +648,7 @@ MonoBehaviour:
   crawlSpeed: 1
   currentState: 0
   stateScript: {fileID: 0}
-  player: {fileID: 1069331028}
+  player: {fileID: 1919636557}
 --- !u!212 &1180797093
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -964,7 +964,7 @@ MonoBehaviour:
   crawlSpeed: 1
   currentState: 0
   stateScript: {fileID: 0}
-  player: {fileID: 1069331028}
+  player: {fileID: 1919636557}
 --- !u!212 &1379014426
 SpriteRenderer:
   m_ObjectHideFlags: 0
