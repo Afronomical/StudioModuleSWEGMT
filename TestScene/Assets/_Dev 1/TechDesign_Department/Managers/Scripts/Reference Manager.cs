@@ -12,15 +12,21 @@ public class ReferenceManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindWithTag("Player");
-        playerHealthScript = player.GetComponent<PlayerDeath>();
+        
+            player = FindFirstObjectByType<PlayerController>().gameObject;
+            playerHealthScript = player.GetComponent<PlayerDeath>();
+        
+            
         
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(player == null)
+        {
+            player = FindFirstObjectByType<PlayerController>().gameObject;
+        }
     }
 
 
