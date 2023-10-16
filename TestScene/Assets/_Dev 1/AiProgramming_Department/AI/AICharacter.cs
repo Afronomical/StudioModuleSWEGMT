@@ -46,6 +46,7 @@ public class AICharacter : MonoBehaviour
     void Start()
     {
         ChangeState(States.Idle);  // The character will start in the idle state
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
 

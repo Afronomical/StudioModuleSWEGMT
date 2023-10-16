@@ -8,7 +8,14 @@ public class AttackState : StateBaseClass
 
     public override void UpdateLogic()
     {
-        Debug.Log("Is attacking");
-        character.transform.position = Vector3.MoveTowards(character.transform.position, character.player.transform.position, speed * Time.deltaTime);
+        //Debug.Log("Is attacking");
+        character.transform.position = Vector2.MoveTowards(character.transform.position, character.player.transform.position, speed * Time.deltaTime / 2);
+
+        
+    }
+
+    private void DealDamage()
+    {
+        
     }
 }

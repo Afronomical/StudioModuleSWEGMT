@@ -23,10 +23,10 @@ public class PlayerDeath : MonoBehaviour
         
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("Collision detected");
-        if (collision.gameObject.CompareTag("enemyMeleeRadius"))
+        if (collision.gameObject.CompareTag("Hunter")) //changed from enemyMelee to Hunter
         {
             currentHealth -= damageAmount;
             healthBarScript.setHealth(currentHealth); //
@@ -38,16 +38,31 @@ public class PlayerDeath : MonoBehaviour
         }
     }
 
+    //void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    Debug.Log("Collision detected");
+    //    if (collision.gameObject.CompareTag("Hunter")) //changed from enemyMelee to Hunter
+    //    {
+    //        currentHealth -= damageAmount;
+    //        healthBarScript.setHealth(currentHealth); //
+    //        Debug.Log(currentHealth);
+    //        if (currentHealth <= 0)
+    //        {
+    //            Die();
+    //        }
+    //    }
+    //}
+
 
 
 
     // To Test Health Bar and hunger // remove once enemy attacks player
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            currentHealth -= 10;
-        }
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //{
+        //    currentHealth -= 10;
+        //}
      
     }
 
