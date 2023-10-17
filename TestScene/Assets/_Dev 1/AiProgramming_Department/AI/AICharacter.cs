@@ -69,10 +69,11 @@ public class AICharacter : MonoBehaviour
         {
             if (stateScript != null)
             {
-                //----------------------------------------- Destroy script here
-                
+                //destroy current script attached to AI character
+                Destroy(stateScript);
             }
 
+            //set the current state of AI character to the new state
             currentState = newState;
 
             switch (newState)
