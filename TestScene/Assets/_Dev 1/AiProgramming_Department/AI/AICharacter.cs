@@ -26,7 +26,8 @@ public class AICharacter : MonoBehaviour
         Dead,
         Patrol,
         Attack,
-        Run
+        Run,
+        Hunt //added hunt state
     }
 
 
@@ -94,6 +95,9 @@ public class AICharacter : MonoBehaviour
                 case States.Dead:
                     stateScript = transform.AddComponent<DeadState>();
                     break;
+                case States.Hunt:
+                    stateScript = transform.AddComponent<HuntState>();
+                    break;
 
                 //------------------------------------ Add new states in here
 
@@ -122,5 +126,15 @@ public class AICharacter : MonoBehaviour
     public Vector3 GetPlayerPosition()
     {
         return player.transform.position;
+    }
+
+    public int GetHealth()
+    {
+        return this.health;
+    }
+
+    public void SetHealth(int n)
+    {
+        this.health = n;
     }
 }

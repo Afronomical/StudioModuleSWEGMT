@@ -44,7 +44,7 @@ public class RunState : StateBaseClass
                                              -moveVector.y + Random.Range(-runOffset, runOffset)) * Random.Range(minRunDistance, maxRunDistance);
             }
 
-            character.SetPosition(Vector2.MoveTowards(character.GetPosition(), runDestination, character.runSpeed * Time.deltaTime));  // Move towards the destination
+            character.SetPosition(Vector2.MoveTowards(character.GetPosition(), runDestination, character.runSpeed * Time.deltaTime / 2));  // Move towards the destination
 
             if (Vector2.Distance(character.GetPosition(), runDestination) <= 0.01f)  // When they reach the destination
             {
