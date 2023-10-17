@@ -11,6 +11,7 @@ public class StateMachineController : MonoBehaviour
     //handles the switching of the states depending on if certain conditions are met
     private AICharacter character;
     public float detectionRange = 4f;
+    public float attackRange = 1f;
 
     private void Start()
     {
@@ -53,10 +54,17 @@ public class StateMachineController : MonoBehaviour
         }
         else if (character.characterType == AICharacter.CharacterTypes.Hunter)
         {
+            //patrol if out of detection range
             if (distance > detectionRange)
             {
                 character.ChangeState(AICharacter.States.Patrol);
             }
+            //hunt while not in attack range
+            else if(distance < detectionRange && distance > attackRange)
+            {
+                character.ChangeState(AICharacter.States.Hunt);
+            }
+            //attack when in attack range
             else
             {
                 character.ChangeState(AICharacter.States.Attack);
