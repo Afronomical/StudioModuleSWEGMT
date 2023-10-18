@@ -5,7 +5,7 @@ using UnityEngine;
 public class ReferenceManager : MonoBehaviour
 {
     [SerializeField] GameObject player;
-    [SerializeField] PlayerDeath playerHealthScript;
+    public PlayerDeath playerHealthScript;
     [SerializeField] float playerHunger;
     
 
