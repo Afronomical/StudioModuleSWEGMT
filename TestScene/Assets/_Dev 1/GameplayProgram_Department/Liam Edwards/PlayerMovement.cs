@@ -9,7 +9,8 @@ public class PlayerController : MonoBehaviour
     public float sprintSpeed;
     public float jumpSpeed;
     private Rigidbody2D rb;
-    //Update Method  
+
+
 
     void Start()
     {
@@ -18,7 +19,9 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+
         PlayerMovement();
+
     }
 
 
@@ -38,5 +41,4 @@ public class PlayerController : MonoBehaviour
     }
 
 }
-
 
