@@ -31,7 +31,7 @@ public class RunState : StateBaseClass
 
     public override void UpdateLogic()
     {
-        Debug.Log("Is running");
+        //Debug.Log("Is running");
         if (checkTime > 0)  // Wait a bit before running 
             checkTime -= Time.deltaTime;
 

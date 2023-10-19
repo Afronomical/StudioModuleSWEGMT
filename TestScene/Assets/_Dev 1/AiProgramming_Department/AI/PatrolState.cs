@@ -27,7 +27,7 @@ public class PatrolState : StateBaseClass
         if (idleTime <= 0)
         {
             walking = true;
-            walkDestination = new Vector2(character.GetPosition().x + Random.Range(-maxWalkDistance, maxWalkDistance), character.GetPosition().y);
+            walkDestination = new Vector2(character.GetPosition().x + Random.Range(-maxWalkDistance, maxWalkDistance), character.GetPosition().y + Random.Range(-maxWalkDistance, maxWalkDistance));
         }
     }
 
