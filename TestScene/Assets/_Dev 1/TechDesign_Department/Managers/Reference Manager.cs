@@ -8,6 +8,9 @@ public class ReferenceManager : MonoBehaviour
     public PlayerDeath playerHealthScript;
     [SerializeField] float playerHunger;
     
+    // Adam's AI Attack Timer
+    public float aiattackDelay;
+    public bool StartCount = true;
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +23,13 @@ public class ReferenceManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //AI Attack Countdown (Linked to the "AttackState" script)
+        if(StartCount == true)
+        {
+            aiattackDelay -= Time.deltaTime;
+        }
         
+
     }
 
 
