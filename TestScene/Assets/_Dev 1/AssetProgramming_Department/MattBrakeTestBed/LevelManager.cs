@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
+using Image = UnityEngine.UI.Image;
 
 public class LevelManager : MonoBehaviour
 {
@@ -26,23 +29,24 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-    public async void LoadScene(string SceneName, float loadingDuration)
+    public async void LoadScene(string SceneName)
     {
         _target = 0; 
         _progressBar.fillAmount = 0;
-        _loaderCanvas.SetActive(true);
         
         var scene = SceneManager.LoadSceneAsync(SceneName);
         scene.allowSceneActivation = false;
+        
+        
+        _loaderCanvas.SetActive(true);
 
-        float startTime = Time.time;
 
-
+       
         do
         {
             if (_progressBar != null)
             {
-                await Task.Delay(100);
+                await Task.Delay(500);
                 _target = scene.progress;
             }
             else
@@ -50,22 +54,25 @@ public class LevelManager : MonoBehaviour
                 Debug.LogWarning("Progress Bar ref is null");
             }
 
-            //_target = scene.progress;
+            _target = scene.progress;
 
         } while (scene.progress < 0.9f);
 
         scene.allowSceneActivation = true;
-        float remainingTime = loadingDuration - (Time.time - startTime);
-        if(remainingTime > 0)
-        {
-            await Task.Delay((int)(remainingTime * 1000));
-        }
 
         _loaderCanvas.SetActive(false);
+      
+       
+
     }
     private void Update()
     {
-        _progressBar.fillAmount = Mathf.MoveTowards(_progressBar.fillAmount, _target, 3 * Time.deltaTime);
+       if(_progressBar != null)
+        {
+            _progressBar.fillAmount = Mathf.MoveTowards(_progressBar.fillAmount, _target, 3 * Time.deltaTime);
+        }
+        
+        
     }
 
 }
