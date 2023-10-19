@@ -12,7 +12,8 @@ public class MapGenerator : MonoBehaviour
     public int gridHeight = 100;
 
     public Tilemap village;
-    public TileBase ground;
+    public Tilemap obstacles;
+    //public TileBase ground;
 
     //int[,] map;
 
@@ -28,7 +29,8 @@ public class MapGenerator : MonoBehaviour
         //    }
         //}
        
-        procGen.RenderMap(map, village);
+        procGen.RenderWalkMap(map, village);
+        procGen.RenderCollisionMap(map, obstacles);
     }
 
     // Update is called once per frame
