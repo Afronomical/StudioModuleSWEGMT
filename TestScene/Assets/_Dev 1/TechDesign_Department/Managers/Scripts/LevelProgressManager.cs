@@ -1,52 +1,39 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelProgressManager : MonoBehaviour
 {
-    [Tooltip("Checks to see if player has enough kills to end the night")]
-
-    
-    [SerializeField] float playerKills;
-    [SerializeField] float killsRequired;
-    [SerializeField] bool enoughKills = false;
-
     [SerializeField] GameObject player;
-
     [SerializeField] ReferenceManager refManager;
-    // Start is called before the first frame update
+    [SerializeField] float maxHunger;
 
     private void Awake()
     {
-        
-        //Set this object to a trigger
+        // Set this object to a trigger
+        GetComponent<BoxCollider2D>().isTrigger = true;
     }
+
     void Start()
     {
-        
         refManager = FindFirstObjectByType<ReferenceManager>();
-        
-        if(GetComponent<BoxCollider2D>().isTrigger == false)
+
+        if (!GetComponent<BoxCollider2D>().isTrigger)
         {
             Debug.Log("Trigger set to false");
         }
-        
     }
 
-    // Update is called once per frame
     void Update()
     {
         SetPlayer();
         SetRefManager();
-
-        
     }
 
     private void SetRefManager()
     {
-       if(refManager == null)
+        if (refManager == null)
         {
             refManager = FindFirstObjectByType<ReferenceManager>();
         }
@@ -54,31 +41,37 @@ public class LevelProgressManager : MonoBehaviour
 
     private void SetPlayer()
     {
-        if(player == null)
+        if (player == null)
         {
             player = refManager.GetPlayer();
         }
     }
 
-    
-
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.transform.tag == player.transform.tag)
         {
-            if(playerKills >= killsRequired)
-            {
-             //Next Level code here
-                Debug.Log("Winner, move to next level");
-                Destroy(player);    //destroy the player GameObject and stop level from being played further
+            // Get the Feeding script attached to the player.
+            Feeding feedingScript = player.GetComponent<Feeding>();
 
+            // Check if the feedingScript exists and the currentHunger is sufficient to progress.
+            if (feedingScript != null && feedingScript.currentHunger >= maxHunger)
+            {
+                Debug.Log("Winner, move to next level");
+                // Load the next level when hunger is full.
+                LoadNextLevel();
             }
             else
             {
-                Debug.Log("You need " + (killsRequired - playerKills) + " more kills to advance");
-                //Write on screen "you need X more kills"  where X is the (number of needed kills) - (the number of player kills)
+                Debug.Log("You need more hunger to advance");
+                // Display a message on the screen indicating that more hunger is needed.
             }
         }
+    }
+
+    private void LoadNextLevel()
+    {
+        // Load the next level. Please replace "Level2" with the appropriate level name - Max W :) .
+        SceneManager.LoadScene("Level2");
     }
 }
