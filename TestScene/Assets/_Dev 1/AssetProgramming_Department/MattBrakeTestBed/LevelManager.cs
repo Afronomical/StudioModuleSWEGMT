@@ -31,8 +31,8 @@ public class LevelManager : MonoBehaviour
 
     public async void LoadScene(string SceneName)
     {
-        _target = 0; 
-        _progressBar.fillAmount = 0;
+        _target = 1f; 
+        _progressBar.fillAmount = 0.1f;
         
         var scene = SceneManager.LoadSceneAsync(SceneName);
         scene.allowSceneActivation = false;
@@ -56,13 +56,14 @@ public class LevelManager : MonoBehaviour
 
             _target = scene.progress;
 
-        } while (scene.progress < 0.9f);
+        } while (_progressBar.fillAmount < 0.9f);
 
-        scene.allowSceneActivation = true;
+        
 
-        _loaderCanvas.SetActive(false);
       
+        scene.allowSceneActivation = true;
        
+        _loaderCanvas.SetActive(false);
 
     }
     private void Update()
