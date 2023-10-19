@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PathfindingGrid : MonoBehaviour
 {
+    public Transform player;
     public Vector2 gridWorldSize;  // How large does the grid need to be to cover the map
     public float nodeRadius;  // How big should each node be?
     public LayerMask unwalkableLayer;
@@ -40,15 +41,33 @@ public class PathfindingGrid : MonoBehaviour
     }
 
 
+    public PathfindingNode GetNodeFromPosition(Vector3 worldPosition)
+    {
+        float percentX = (worldPosition.x + gridWorldSize.x / 2) / gridWorldSize.x;  // How far across the grid this point is
+        float percentY = (worldPosition.y + gridWorldSize.y / 2) / gridWorldSize.y;
+        percentX = Mathf.Clamp01(percentX);  // Make sure the value is on the grid
+        percentY = Mathf.Clamp01(percentY);
+
+        int x = Mathf.RoundToInt((gridSizeX - 1) * percentX);
+        int y = Mathf.RoundToInt((gridSizeY - 1) * percentY);
+        return grid[x, y];
+    }
+
+
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireCube(transform.position, new Vector3(gridWorldSize.x, gridWorldSize.y, 1));  // Draw an outline of the grid
 
         if (grid != null)
         {
+            PathfindingNode playerNode = GetNodeFromPosition(player.transform.position);
+
             foreach (PathfindingNode n in grid)
             {
                 Gizmos.color = (n.walkable) ? Color.white : Color.red;  // Set the node to white if walkable or red if not
+                if (playerNode == n)
+                    Gizmos.color = Color.cyan;  // Set the node to white if the player is on it
+
                 Gizmos.DrawCube(n.worldPosition, Vector3.one * (nodeDiameter - 0.1f));  // Draw each node
             }
         }
