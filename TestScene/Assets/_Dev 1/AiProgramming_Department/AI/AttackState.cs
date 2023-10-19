@@ -29,7 +29,7 @@ public class AttackState : StateBaseClass
         //Checks if the delay timer has hit 0, if so, it will damage the player and reset the delay timer to x amount
         if (currentAttackDelay <= 0)
         {
-            playerDeath.currentHealth -= attackDamage;
+            playerDeath.SetHealth(attackDamage);
             currentAttackDelay = attackDelay;
         }
 
