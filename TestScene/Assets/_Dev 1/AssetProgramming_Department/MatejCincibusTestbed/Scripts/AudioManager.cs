@@ -6,21 +6,37 @@ public class AudioManager : MonoBehaviour
 {
     public enum SoundEffects
     {
-        // INFO: Test sounds to be removed once proper sound implementation starts:
-        SwordSlash,
-        TakeDamage
+        //Player Effects
+        PlayerTakeDamage,
+        PlayerDeath,
+        PlayerAttack,
+        PlayerFeed,
+        PlayerDodge,
+        PlayerHeal,
+        VampireToBat,
+        BatSounds,
 
-        // INFO: All sound effects in the game go in here, for example:
-        // PlayerIdle,
-        // PlayerRun,
-        // PlayerAttack
-        // PlayerTakeDamage,
-        // PlayerDeath,
-        //
-        // EnemyIdle,
-        // EnemyRun,
-        // EnemyChase,
-        // ...........
+        //NPC Sounds
+        NPC_TakeDamage,
+        NPC_Death,
+        NPC_Downed,
+        NPC_AttackMelee,
+        NPC_AttackRanged,
+        NPC_Scream,
+        NPC_Alterted,
+        NPC_VilToHunter,
+
+        //UI SFX
+        ButtonClick,
+        UpgradeAchieved,
+
+        //Background Music Types
+        MenuMusic,
+        InLevelMusic,
+        PlayerHuntedMusic,
+        BossMusic,
+        DeathEndMusic,
+        BossVictoryMusic
     }
 
     // INFO: The order of sound effects and audio clips should be exactly the same, otherwise the incorrect sound will be played

@@ -44,6 +44,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e47aef7b911b7b94aa63d92fca7a65fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundEffectsList: 
-  audioClipsList: []
+  soundEffectsList: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a000000090000000b0000000c0000001000000011000000120000001300000014000000150000001600000017000000140000001500000015000000
+  audioClipsList:
+  - {fileID: 8300000, guid: ab01c18519ce80f4ba908371bdc9e1af, type: 3}
+  - {fileID: 0}
+  - {fileID: 8300000, guid: b00465445f60bbc4983b0593b787a380, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   soundEffectsPlayerPrefab: {fileID: 9064102277824120092, guid: 8119af40807d7f0489294d83d78e6ac6, type: 3}
