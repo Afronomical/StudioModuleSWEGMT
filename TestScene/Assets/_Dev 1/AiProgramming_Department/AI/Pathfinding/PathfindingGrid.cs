@@ -94,7 +94,6 @@ public class PathfindingGrid : MonoBehaviour
     }
 
 
-    public List<PathfindingNode> path;
     private void OnDrawGizmos()
     {
         if (debugGizmos)
@@ -110,9 +109,9 @@ public class PathfindingGrid : MonoBehaviour
                     Gizmos.color = (n.walkable) ? Color.white : Color.red;  // Set the node to white if walkable or red if not
                     if (playerNode == n)
                         Gizmos.color = Color.cyan;  // Set the node to white if the player is on it
-                    if (path != null)
-                        if (path.Contains(n))
-                            Gizmos.color = Color.black;
+                    //if (path != null)
+                    //    if (path.Contains(n))
+                    //        Gizmos.color = Color.black;
 
                     Gizmos.DrawCube(n.worldPosition, Vector3.one * (nodeDiameter - 0.1f));  // Draw each node
                 }
