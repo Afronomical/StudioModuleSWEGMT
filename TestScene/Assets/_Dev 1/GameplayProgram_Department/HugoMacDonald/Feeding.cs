@@ -12,16 +12,13 @@ public class Feeding : MonoBehaviour
     public AICharacter aiCharacter;
     public AICharacter aiCharacter1;
     public HungerBar hungerBarSlider;
-
-
+    public PlayerDeath playerDeath; // Reference to the PlayerDeath script
 
     private void Start()
     {
-        
         currentHunger = minHunger;
         hungerBarSlider.SetMinHunger(minHunger);
     }
-
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -43,20 +40,18 @@ public class Feeding : MonoBehaviour
     {
         if (canHeal && Input.GetKeyDown(healKey)) // can heal is true (player inside the zone) and e key is being pressed down
         {
-            if ((aiCharacter.currentState == AICharacter.States.Downed || aiCharacter1.currentState == AICharacter.States.Downed) && canHeal && Input.GetKeyDown(healKey))
+            if ((aiCharacter.currentState == AICharacter.States.Downed || aiCharacter1.currentState == AICharacter.States.Downed) && canHeal)
             {
-                
                 currentHunger += 1;
-                hungerBarSlider.SetHunger(currentHunger); //
-                
+                hungerBarSlider.SetHunger(currentHunger);
+
+                // Call a method in the PlayerDeath script to increase player health
+                playerDeath.FeedAttack();
             }
-           
-
-
-
         }
     }
 }
+
 
 
 
