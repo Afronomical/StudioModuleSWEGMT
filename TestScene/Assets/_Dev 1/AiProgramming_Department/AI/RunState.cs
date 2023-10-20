@@ -73,7 +73,6 @@ public class RunState : StateBaseClass
         runDestination = new Vector3((-moveVector.x + Random.Range(-runOffset, runOffset)) * Random.Range(minRunDistance, maxRunDistance),
                                      -moveVector.y + Random.Range(-runOffset, runOffset)) * Random.Range(minRunDistance, maxRunDistance);
 
-        Debug.Log(runDestination);
         PathfindingRequestManager.RequestPath(transform.position, runDestination, this, OnPathFound);
     }
 
