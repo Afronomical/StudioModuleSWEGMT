@@ -22,7 +22,7 @@ public class PathfindingGrid : MonoBehaviour
     private int gridSizeX, gridSizeY;
 
 
-    private void Start()
+    private void Awake()
     {
         nodeDiameter = nodeRadius * 2;
         gridSizeX = Mathf.RoundToInt(gridWorldSize.x / nodeDiameter);  // How many nodes should be in the grid?

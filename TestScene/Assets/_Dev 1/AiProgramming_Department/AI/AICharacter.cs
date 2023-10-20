@@ -46,6 +46,9 @@ public class AICharacter : MonoBehaviour
 
     void Start()
     {
+        walkSpeed /= 2;
+        runSpeed /= 2;
+        crawlSpeed /= 2;
         ChangeState(States.Idle);  // The character will start in the idle state
         player = GameObject.FindGameObjectWithTag("Player");
     }

@@ -18,8 +18,6 @@ public class Pathfinding : MonoBehaviour
     PathfindingRequestManager requestManager;
     [HideInInspector] public PathfindingHeap<PathfindingNode> openNodes;
     private HashSet<PathfindingNode> closedNodes = new HashSet<PathfindingNode>();
-
-    //public Transform seeker, target;
     public bool debugTimeTaken;
 
 
@@ -27,11 +25,6 @@ public class Pathfinding : MonoBehaviour
     {
         grid = GetComponent<PathfindingGrid>();
         requestManager = GetComponent<PathfindingRequestManager>();
-    }
-
-    private void Update()
-    {
-        //FindPath(seeker.position, target.position);
     }
 
 
@@ -51,7 +44,7 @@ public class Pathfinding : MonoBehaviour
         PathfindingNode startNode = grid.GetNodeFromPosition(startPos);
         PathfindingNode targetNode = grid.GetNodeFromPosition(targetPos);
 
-        if (startNode.walkable && targetNode.walkable)
+        if (targetNode.walkable)
         {
             openNodes.Clear();  // Doing this rather than creating a new heap prevents garbage from being created
             closedNodes.Clear();
@@ -109,23 +102,31 @@ public class Pathfinding : MonoBehaviour
             currentNode = currentNode.parent;  // Move down the path
         }
 
-        Vector3[] waypoints = SimplifyPath(path);  // Create an array of waypoint positions
+        Vector3[] waypoints = SimplifyPath(path, startNode);  // Create an array of waypoint positions
         Array.Reverse(waypoints);  // This list is backwards so we have to reverse it
         return waypoints;
     }
 
 
-    private Vector3[] SimplifyPath(List<PathfindingNode> path)  // Removes useless waypoints in a straight line
+    private Vector3[] SimplifyPath(List<PathfindingNode> path, PathfindingNode startNode)  // Removes useless waypoints in a straight line
     {
+        if (path.Count < 1)
+            return new Vector3[0];
+
         List<Vector3> waypoints = new List<Vector3>();
         Vector2 directionOld = Vector2.zero;
+        waypoints.Add(path[0].worldPosition);  // Add in the last position
 
         for (int i = 1; i < path.Count; i++)
         {
             Vector2 directionNew = new Vector2(path[i - 1].gridX - path[i].gridX, path[i - 1].gridY - path[i].gridY);  // Get the direction between two waypoints
             if (directionNew != directionOld)  // If it is pointing in a different direction
                 waypoints.Add(path[i].worldPosition);  // Add the waypoint to a list
+            
             directionOld = directionNew;
+
+            if (i == path.Count - 1 && directionOld != new Vector2(path[i].gridX, path[i].gridY) - new Vector2(startNode.gridX, startNode.gridY))
+                waypoints.Add(path[path.Count - 1].worldPosition);
         }
         return waypoints.ToArray();
     }
