@@ -13,7 +13,7 @@ public class RunState : StateBaseClass
 {
     private float minRunDistance = 3;
     private float maxRunDistance = 8;
-    private float runOffset = 0.25f;  // Stops them from running straight
+    private float runOffset = 1.25f;  // Stops them from running straight
     private float minCheckTime = 1;
     private float maxCheckTime = 3;
 
@@ -86,10 +86,5 @@ public class RunState : StateBaseClass
         }
         else
             FindWalkTarget();  // Try and find a new path
-    }
-
-    private void OnDrawGizmos()
-    {
-        Gizmos.DrawSphere(runDestination, 0.2f);
     }
 }

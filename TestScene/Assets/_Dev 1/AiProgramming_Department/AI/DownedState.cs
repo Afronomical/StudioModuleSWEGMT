@@ -5,14 +5,16 @@ using UnityEngine;
 public class DownedState : StateBaseClass
 {
     private float minCrawlDistance = 1f;
-    private float maxCrawlDistance = 3f;
-    private float crawlOffset = 1;  // Stops them from running straight
+    private float maxCrawlDistance = 6f;
+    private float crawlOffset = 1.25f;  // Stops them from running straight
     private float minCheckTime = 3;
     private float maxCheckTime = 8;
 
     private Vector2 runDestination = Vector2.zero;
+    private Vector3[] path;
+    private Vector3 currentWaypoint;
+    private int targetPathIndex;
     private float checkTime;
-
 
     public DownedState()
     {
@@ -27,21 +29,53 @@ public class DownedState : StateBaseClass
 
         else
         {
-            if (runDestination == Vector2.zero)
+            if (path == null)
             {
-                Vector2 moveVector = character.GetPlayerPosition() - character.transform.position;
-                runDestination = new Vector2((-moveVector.x + Random.Range(-crawlOffset, crawlOffset)) * Random.Range(minCrawlDistance, maxCrawlDistance),
-                                             character.GetPosition().y);
+                FindWalkTarget();
             }
-
-            character.SetPosition(Vector2.MoveTowards(character.GetPosition(), runDestination, character.crawlSpeed * Time.deltaTime));  // Move towards the destination
-
-            if (Vector3.Distance(character.GetPosition(), runDestination) <= 0.01f)  // When they reach the destination
+            else
             {
-                // Stop to look around and see if they escaped
-                runDestination = Vector2.zero;
-                checkTime = Random.Range(minCheckTime, maxCheckTime);
+                if (transform.position == currentWaypoint)
+                {
+                    targetPathIndex++;
+                    if (targetPathIndex >= path.Length)
+                    {
+                        path = new Vector3[0];
+                        targetPathIndex = 0;
+
+                        runDestination = Vector2.zero;  // Stop to look around and see if they escaped
+                        checkTime = Random.Range(minCheckTime, maxCheckTime);
+                        FindWalkTarget();
+                        return;
+                    }
+                    currentWaypoint = path[targetPathIndex];
+                }
+
+                transform.position = Vector3.MoveTowards(transform.position, currentWaypoint, character.crawlSpeed * Time.deltaTime);
             }
         }
+    }
+
+
+    private void FindWalkTarget()
+    {
+        Vector3 moveVector = character.GetPlayerPosition() - character.transform.position;
+        moveVector = moveVector.normalized;
+        runDestination = new Vector3((-moveVector.x + Random.Range(-crawlOffset, crawlOffset)) * Random.Range(minCrawlDistance, maxCrawlDistance),
+                                     -moveVector.y + Random.Range(-crawlOffset, crawlOffset)) * Random.Range(minCrawlDistance, maxCrawlDistance);
+
+        PathfindingRequestManager.RequestPath(transform.position, runDestination, this, OnPathFound);
+    }
+
+
+    public void OnPathFound(Vector3[] newPath, bool pathSuccessful)
+    {
+        if (pathSuccessful && newPath.Length != 0)
+        {
+            path = newPath;
+            currentWaypoint = path[0];  // Set the first waypoint
+        }
+        else
+            FindWalkTarget();  // Try and find a new path
     }
 }
