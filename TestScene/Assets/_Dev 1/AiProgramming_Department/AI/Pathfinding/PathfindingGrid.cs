@@ -51,6 +51,7 @@ public class PathfindingGrid : MonoBehaviour
                 Vector3 worldPoint = worldBottomLeft + Vector3.right * (x * nodeDiameter + nodeRadius) + Vector3.up * (y * nodeDiameter + nodeRadius);  // Find the position of the node
                 worldPoint.z = 0;
                 bool walkable = !(Physics2D.OverlapCircle(worldPoint, nodeRadius, unwalkableLayer));  // Check if the node is touching an obstacle or not
+
                 grid[x, y] = new PathfindingNode(walkable, worldPoint, x, y);  // Create the node and add it to the array
             }
         }

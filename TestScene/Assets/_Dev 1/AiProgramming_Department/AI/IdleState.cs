@@ -77,7 +77,7 @@ public class IdleState : StateBaseClass
     private void FindWalkTarget()
     {
         walkDestination = new Vector3(character.GetPosition().x + Random.Range(-maxWalkDistance, maxWalkDistance), character.GetPosition().y + Random.Range(-maxWalkDistance, maxWalkDistance));
-        PathfindingRequestManager.RequestPath(transform.position, walkDestination, OnPathFound);
+        PathfindingRequestManager.RequestPath(transform.position, walkDestination, this, OnPathFound);
     }
 
 

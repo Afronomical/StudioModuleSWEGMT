@@ -25,9 +25,9 @@ public class PathfindingRequestManager : MonoBehaviour
         pathfinding = GetComponent<Pathfinding>();
     }
 
-    public static void RequestPath(Vector3 pathStart, Vector3 pathEnd, Action<Vector3[], bool> callback)
+    public static void RequestPath(Vector3 pathStart, Vector3 pathEnd, StateBaseClass state, Action<Vector3[], bool> callback)
     {
-        PathRequest newRequest = new PathRequest(pathStart, pathEnd, callback);  // Create a new request
+        PathRequest newRequest = new PathRequest(pathStart, pathEnd, state, callback);  // Create a new request
         instance.pathRequestQueue.Enqueue(newRequest);  // Add this request to the queue
         instance.TryProcessNext();
     }
@@ -44,7 +44,8 @@ public class PathfindingRequestManager : MonoBehaviour
 
     public void FinishedProcessingPath(Vector3[] path, bool success)
     {
-        currentPathRequest.callback(path, success);  // Return the result
+        if (currentPathRequest.state)
+            currentPathRequest.callback(path, success);  // Return the result
         isProcessingPath = false;
         TryProcessNext();  // Try to move onto the next request
     }
@@ -53,12 +54,14 @@ public class PathfindingRequestManager : MonoBehaviour
     {
         public Vector3 pathStart;
         public Vector3 pathEnd;
+        public StateBaseClass state;
         public Action<Vector3[], bool> callback;
 
-        public PathRequest(Vector3 _start, Vector3 _end, Action<Vector3[], bool> _callback)
+        public PathRequest(Vector3 _start, Vector3 _end, StateBaseClass _state, Action<Vector3[], bool> _callback)
         {
             pathStart = _start;
             pathEnd = _end;
+            state = _state;
             callback = _callback;
         }
     }

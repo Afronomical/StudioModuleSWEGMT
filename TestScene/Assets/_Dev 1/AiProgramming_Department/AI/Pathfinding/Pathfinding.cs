@@ -79,6 +79,8 @@ public class Pathfinding : MonoBehaviour
 
                         if (!openNodes.Contains(neighbour))
                             openNodes.Add(neighbour);
+                        else
+                            openNodes.UpdateItem(neighbour);
                     }
                 }
             }
