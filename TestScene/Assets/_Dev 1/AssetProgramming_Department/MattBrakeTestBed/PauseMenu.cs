@@ -7,13 +7,13 @@ public class PauseMenu : MonoBehaviour
 {
 
     public static bool isPaused = false;
-    public GameObject pauseMenuUI; 
-   
+    public GameObject pauseMenuUI;
+
 
     // Update is called once per frame
-    void Update()
+    void Update() 
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (isPaused)
             {
@@ -26,16 +26,27 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
-    void Pause()
+    public void Pause()
     {
         isPaused = true;
         pauseMenuUI.SetActive(true);
-        Time.timeScale = 0f; 
+        Time.timeScale = 0f;
     }
-    void Resume()
+    public void Resume()
     {
         isPaused = false;
         pauseMenuUI.SetActive(false);
-        Time.timeScale = 1f; 
+        Time.timeScale = 1f;
+    }
+
+    public void LoadMenu()
+    {
+        pauseMenuUI.SetActive(false);
+        LevelManager.Instance.LoadScene("MainMenu");
+    }
+
+    public void Quit() 
+    {
+        
     }
 }
