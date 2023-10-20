@@ -1,12 +1,24 @@
+/*
+ *This script should be placed on the AI Pathfinding object
+ *It uses the grid of nodes that has been created to find the shortest
+ *path to the destination
+ *
+ *Written by Aaron
+ */
+
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 
 public class Pathfinding : MonoBehaviour
 {
     PathfindingGrid grid;
+    [HideInInspector] public PathfindingHeap<PathfindingNode> openNodes;
+    private HashSet<PathfindingNode> closedNodes = new HashSet<PathfindingNode>();
 
     public Transform seeker, target;
+    public bool printTimeTaken;
 
 
     private void Awake()
@@ -23,25 +35,26 @@ public class Pathfinding : MonoBehaviour
 
     public void FindPath(Vector3 startPos, Vector3 targetPos)
     {
+        Stopwatch sw = new Stopwatch();
+
         PathfindingNode startNode = grid.GetNodeFromPosition(startPos);
         PathfindingNode targetNode = grid.GetNodeFromPosition(targetPos);
 
-        List<PathfindingNode> openNodes = new List<PathfindingNode>();
-        HashSet<PathfindingNode> closedNodes = new HashSet<PathfindingNode>();
+        openNodes.Clear();  // Doing this rather than creating a new heap prevents garbage from being created
+        closedNodes.Clear();
         openNodes.Add(startNode);
 
         while (openNodes.Count > 0)
         {
-            PathfindingNode currentNode = openNodes[0];
-            for (int i = 1; i < openNodes.Count; i++)  // Get the open node with the lowest fCost
-                if (openNodes[i].fCost < currentNode.fCost || openNodes[i].fCost == currentNode.fCost && openNodes[i].hCost < currentNode.hCost)
-                    currentNode = openNodes[i];
-
-            openNodes.Remove(currentNode);
+            PathfindingNode currentNode = openNodes.RemoveFirst();
             closedNodes.Add(currentNode);  // Close the node with the lowest fCost
 
             if (currentNode == targetNode)  // If the path has reached it's destination
             {
+                sw.Stop();
+                if (printTimeTaken)
+                    print("AI Path Found: " + sw.ElapsedMilliseconds + " milliseconds");
+
                 RetracePath(startNode, targetNode);
                 return;  // Leave the loop
             }

@@ -1,3 +1,10 @@
+/*
+ *This script should be placed on an AI Pathfinding object at position 0, 0, 0 in the world
+ *It creates a grid of nodes that covers the map, each node will figure out if it is walkable or not
+ *
+ *Written by Aaron
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -24,6 +31,14 @@ public class PathfindingGrid : MonoBehaviour
     }
 
 
+    public int MaxSize
+    {
+        get
+        {
+            return gridSizeX * gridSizeY;
+        }
+    }
+
     private void CreateGrid()
     {
         grid = new PathfindingNode[gridSizeX, gridSizeY];
@@ -39,6 +54,8 @@ public class PathfindingGrid : MonoBehaviour
                 grid[x, y] = new PathfindingNode(walkable, worldPoint, x, y);  // Create the node and add it to the array
             }
         }
+
+        GetComponent<Pathfinding>().openNodes = new PathfindingHeap<PathfindingNode>(MaxSize);
     }
 
 

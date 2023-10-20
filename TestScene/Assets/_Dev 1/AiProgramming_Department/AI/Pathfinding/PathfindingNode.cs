@@ -1,8 +1,13 @@
+/*
+ *This class is used by PathfindingGrid
+ *
+ *Written by Aaron
+ */
+
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class PathfindingNode
+public class PathfindingNode : IHeapItem<PathfindingNode>
 {
     public bool walkable;
     public Vector2 worldPosition;
@@ -11,6 +16,7 @@ public class PathfindingNode
     public int gCost;  // Distance from start
     public int hCost;  // Distance from target
     public PathfindingNode parent;
+    int heapIndex;
 
     public PathfindingNode(bool _walkable, Vector2 _worldPosition, int _gridX, int _gridY)
     {
@@ -26,5 +32,25 @@ public class PathfindingNode
         {
             return gCost + hCost;
         }
+    }
+
+    public int HeapIndex
+    {
+        get
+        {
+            return heapIndex;
+        }
+        set
+        {
+            heapIndex = value;
+        }
+    }
+
+    public int CompareTo(PathfindingNode nodeToCompare)
+    {
+        int compare = fCost.CompareTo(nodeToCompare.fCost);
+        if (compare == 0)  // If the fCost is the same
+            compare = hCost.CompareTo(nodeToCompare.hCost);  // Compare the hCost
+        return -compare;
     }
 }

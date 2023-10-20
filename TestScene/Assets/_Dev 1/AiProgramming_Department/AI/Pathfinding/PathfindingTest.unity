@@ -261,6 +261,7 @@ GameObject:
   m_Component:
   - component: {fileID: 205905383}
   - component: {fileID: 205905382}
+  - component: {fileID: 205905384}
   m_Layer: 0
   m_Name: AI Pathfinding
   m_TagString: Untagged
@@ -280,11 +281,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e7ee5bfb99c6ce46994c78be29fc562, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 2405128687637974433}
   gridWorldSize: {x: 40, y: 30}
   nodeRadius: 0.5
   unwalkableLayer:
     serializedVersion: 2
     m_Bits: 64
+  debugGizmos: 1
 --- !u!4 &205905383
 Transform:
   m_ObjectHideFlags: 0
@@ -300,6 +303,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &205905384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205905381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7884fc6fdf49ed45bbf5adff6d3ba12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  seeker: {fileID: 2405128687637974433}
+  target: {fileID: 1379014427}
+  printTimeTaken: 0
 --- !u!1 &316621860
 GameObject:
   m_ObjectHideFlags: 0
