@@ -9,7 +9,13 @@ public class PatrolState : StateBaseClass
     private bool walking;
     private Vector2 walkDestination;
     private float idleTime;
-    private float maxWalkDistance = 5;  // How far the character can walk while idle
+    private float maxWalkDistance = 10;  // How far the character can walk while idle
+    private float minIdleTime = 0;
+    private float maxIdleTime = 3;
+
+    private Vector3[] path;
+    private Vector3 currentWaypoint;
+    private int targetPathIndex;
 
     public override void UpdateLogic()
     {
@@ -27,19 +33,49 @@ public class PatrolState : StateBaseClass
         if (idleTime <= 0)
         {
             walking = true;
-            walkDestination = new Vector2(character.GetPosition().x + Random.Range(-maxWalkDistance, maxWalkDistance), character.GetPosition().y + Random.Range(-maxWalkDistance, maxWalkDistance));
+            FindWalkTarget();
         }
     }
 
 
     private void Patrol()
     {
-        character.SetPosition(Vector2.MoveTowards(character.GetPosition(), walkDestination, character.walkSpeed * Time.deltaTime));
-
-        if (Vector2.Distance(character.GetPosition(), walkDestination) <= 0.01f)
+        if (path != null)
         {
-            walking = false;
-            idleTime = Random.Range(2, 10);  // How long the character will stand still for
+            if (transform.position == currentWaypoint)
+            {
+                targetPathIndex++;
+                if (targetPathIndex >= path.Length)
+                {
+                    path = new Vector3[0];
+                    walking = false;
+                    targetPathIndex = 0;
+                    idleTime = Random.Range(minIdleTime, maxIdleTime);  // How long the character will stand still for
+                    return;
+                }
+                currentWaypoint = path[targetPathIndex];
+            }
+
+            transform.position = Vector3.MoveTowards(transform.position, currentWaypoint, character.walkSpeed * Time.deltaTime);
         }
+    }
+
+
+    private void FindWalkTarget()
+    {
+        walkDestination = new Vector2(character.GetPosition().x + Random.Range(-maxWalkDistance, maxWalkDistance), character.GetPosition().y + Random.Range(-maxWalkDistance, maxWalkDistance));
+        PathfindingRequestManager.RequestPath(transform.position, walkDestination, this, OnPathFound);
+    }
+
+
+    public void OnPathFound(Vector3[] newPath, bool pathSuccessful)
+    {
+        if (pathSuccessful && newPath.Length != 0)
+        {
+            path = newPath;
+            currentWaypoint = path[0];  // Set the first waypoint
+        }
+        else
+            FindWalkTarget();  // Try and find a new path
     }
 }
