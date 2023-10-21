@@ -13,9 +13,10 @@ public class PatrolState : StateBaseClass
     private float minIdleTime = 0;
     private float maxIdleTime = 3;
 
-    private Vector3[] path;
-    private Vector3 currentWaypoint;
-    private int targetPathIndex;
+    //private Vector3[] path;
+    //private Vector3 currentWaypoint;
+    //private int targetPathIndex;
+    private PathfindingSmoothing path;
 
     public override void UpdateLogic()
     {
@@ -40,24 +41,24 @@ public class PatrolState : StateBaseClass
 
     private void Patrol()
     {
-        if (path != null)
-        {
-            if (transform.position == currentWaypoint)
-            {
-                targetPathIndex++;
-                if (targetPathIndex >= path.Length)
-                {
-                    path = new Vector3[0];
-                    walking = false;
-                    targetPathIndex = 0;
-                    idleTime = Random.Range(minIdleTime, maxIdleTime);  // How long the character will stand still for
-                    return;
-                }
-                currentWaypoint = path[targetPathIndex];
-            }
+        //if (path != null)
+        //{
+        //    if (transform.position == currentWaypoint)
+        //    {
+        //        targetPathIndex++;
+        //        if (targetPathIndex >= path.Length)
+        //        {
+        //            path = new Vector3[0];
+        //            walking = false;
+        //            targetPathIndex = 0;
+        //            idleTime = Random.Range(minIdleTime, maxIdleTime);  // How long the character will stand still for
+        //            return;
+        //        }
+        //        currentWaypoint = path[targetPathIndex];
+        //    }
 
-            transform.position = Vector3.MoveTowards(transform.position, currentWaypoint, character.walkSpeed * Time.deltaTime);
-        }
+        //    transform.position = Vector3.MoveTowards(transform.position, currentWaypoint, character.walkSpeed * Time.deltaTime);
+        //}
     }
 
 
@@ -68,14 +69,19 @@ public class PatrolState : StateBaseClass
     }
 
 
-    public void OnPathFound(Vector3[] newPath, bool pathSuccessful)
+    public void OnPathFound(Vector3[] waypoints, bool pathSuccessful)
     {
-        if (pathSuccessful && newPath.Length != 0)
+        if (pathSuccessful)
         {
-            path = newPath;
-            currentWaypoint = path[0];  // Set the first waypoint
+            path = new PathfindingSmoothing(waypoints, transform.position, character.turnDistance);
         }
         else
             FindWalkTarget();  // Try and find a new path
+    }
+
+    public void OnDrawGizmos()
+    {
+        if (path != null)
+            path.DrawWithGizmos();
     }
 }
