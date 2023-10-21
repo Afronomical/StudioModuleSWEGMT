@@ -32,6 +32,7 @@ public class PlayerController : MonoBehaviour
         canBatForm = true;
         playerMesh.SetActive(true);
         batMesh.SetActive(false);
+        hitBox = GetComponent<BoxCollider2D>();
 
     }
 
@@ -84,14 +85,16 @@ public class PlayerController : MonoBehaviour
 
         canBatForm = false;
         speed = batFormSpeed;
-        playerMesh.SetActive(false);
-        batMesh.SetActive(true);
+        playerMesh.SetActive(false); // hides Player Skin
+        batMesh.SetActive(true); // shows bat skin
+        hitBox.size = new Vector2(0.5f, 0.5f);
         rb.velocity = new Vector2(Input.GetAxis("Horizontal") * speed, Input.GetAxis("Vertical") * speed);
-        yield return new WaitForSeconds(5); // Wait for 5 seconds
+        yield return new WaitForSeconds(5); // Bat Form duration
         speed = 3;
-        playerMesh.SetActive(true);
-        batMesh.SetActive(false);
-        yield return new WaitForSeconds(30);
+        playerMesh.SetActive(true); // shows player skin
+        batMesh.SetActive(false); // hides bat skin
+        hitBox.size = new Vector2(1.15f, 1.15f);
+        yield return new WaitForSeconds(15);// Bat Form ability cool down
         canBatForm = true;
 
 
