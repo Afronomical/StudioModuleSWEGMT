@@ -4,20 +4,35 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    //Declare Variables 
+    //Declare Variables
+    private Rigidbody2D rb;
+
     public float speed;
     public float sprintSpeed;
-    private Rigidbody2D rb;
+    [SerializeField] float batFormSpeed = 10f;
     [SerializeField] float dodgeSpeed = 10f;
     [SerializeField] float dodgeDuration = 1f;
     [SerializeField] float dodgeCooldown;
     bool isDodging;
     bool canDodge;
+    bool canBatForm;
+    bool inBatForm;
+   
+    public GameObject playerMesh;
+    public GameObject batMesh;
+    public BoxCollider2D hitBox;
+
+
 
     void Start()
     {
+
         rb = GetComponent<Rigidbody2D>();
         canDodge = true;
+        canBatForm = true;
+        playerMesh.SetActive(true);
+        batMesh.SetActive(false);
+
     }
 
     void Update()
@@ -35,6 +50,10 @@ public class PlayerController : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Space) && canDodge)
         {
             StartCoroutine(Dodge());
+        }
+        else if (Input.GetKeyDown(KeyCode.LeftControl) && canBatForm)
+        {
+            StartCoroutine(BatForm());
         }
         else 
         {
@@ -58,6 +77,24 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(dodgeCooldown);
         canDodge = true;
         
+    }
+
+    private IEnumerator BatForm()
+    {
+
+        canBatForm = false;
+        speed = batFormSpeed;
+        playerMesh.SetActive(false);
+        batMesh.SetActive(true);
+        rb.velocity = new Vector2(Input.GetAxis("Horizontal") * speed, Input.GetAxis("Vertical") * speed);
+        yield return new WaitForSeconds(5); // Wait for 5 seconds
+        speed = 3;
+        playerMesh.SetActive(true);
+        batMesh.SetActive(false);
+        yield return new WaitForSeconds(30);
+        canBatForm = true;
+
+
     }
 
 }
