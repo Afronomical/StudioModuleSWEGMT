@@ -39,7 +39,7 @@ public class PathfindingGrid : MonoBehaviour
         }
     }
 
-    private void CreateGrid()
+    public void CreateGrid()
     {
         grid = new PathfindingNode[gridSizeX, gridSizeY];
         Vector3 worldBottomLeft = transform.position - Vector3.right * gridWorldSize.x / 2 - Vector3.up * gridWorldSize.y / 2;  // Find position of the bottom left node

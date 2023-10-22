@@ -393,7 +393,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &99547331
 Rigidbody2D:
   serializedVersion: 4
@@ -638,7 +638,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &183671661
 Rigidbody2D:
   serializedVersion: 4
@@ -962,7 +962,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &211535483
 Rigidbody2D:
   serializedVersion: 4
@@ -1768,7 +1768,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &577285811
 Rigidbody2D:
   serializedVersion: 4
@@ -2527,7 +2527,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &675917480
 Rigidbody2D:
   serializedVersion: 4
@@ -3024,7 +3024,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &723542359
 Rigidbody2D:
   serializedVersion: 4
@@ -3521,7 +3521,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &831707752
 Rigidbody2D:
   serializedVersion: 4
@@ -3897,7 +3897,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &859651123
 Rigidbody2D:
   serializedVersion: 4
@@ -4384,7 +4384,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &909910793
 Rigidbody2D:
   serializedVersion: 4
@@ -4629,7 +4629,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &957419084
 Rigidbody2D:
   serializedVersion: 4
@@ -5754,7 +5754,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &1183136681
 Rigidbody2D:
   serializedVersion: 4
@@ -7756,7 +7756,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &1600439725
 Rigidbody2D:
   serializedVersion: 4
@@ -8397,7 +8397,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &1654581536
 Rigidbody2D:
   serializedVersion: 4
@@ -8642,7 +8642,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &1754584839
 Rigidbody2D:
   serializedVersion: 4
@@ -8887,7 +8887,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &1804596960
 Rigidbody2D:
   serializedVersion: 4
@@ -9384,7 +9384,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &1852311757
 Rigidbody2D:
   serializedVersion: 4
@@ -9750,7 +9750,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &1873469423
 Rigidbody2D:
   serializedVersion: 4
@@ -10378,7 +10378,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &1988132434
 Rigidbody2D:
   serializedVersion: 4
@@ -10921,7 +10921,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &2125560868
 Rigidbody2D:
   serializedVersion: 4
@@ -12517,6 +12517,8 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1379014427}
+  - {fileID: 1180797094}
+  - {fileID: 205905383}
   - {fileID: 99547336}
   - {fileID: 1654581541}
   - {fileID: 1852311762}
@@ -12530,7 +12532,6 @@ SceneRoots:
   - {fileID: 2125560873}
   - {fileID: 1183136686}
   - {fileID: 831707757}
-  - {fileID: 1180797094}
   - {fileID: 183671666}
   - {fileID: 577285816}
   - {fileID: 1600439730}
@@ -12542,4 +12543,3 @@ SceneRoots:
   - {fileID: 9016660614770367788}
   - {fileID: 404374156}
   - {fileID: 2105808884}
-  - {fileID: 205905383}
