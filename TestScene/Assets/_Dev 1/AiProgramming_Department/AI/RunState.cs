@@ -13,7 +13,7 @@ public class RunState : StateBaseClass
 {
     private float minRunDistance = 3;
     private float maxRunDistance = 8;
-    private float runOffset = 1.25f;  // Stops them from running straight
+    private float runOffset = 0.5f;  // Stops them from running straight
     private float minCheckTime = 1;
     private float maxCheckTime = 3;
     private float stopDistance = 1;  // When they start slowing down
@@ -61,7 +61,8 @@ public class RunState : StateBaseClass
                 {
                     Vector3 vectorToTarget = Quaternion.Euler(0, 0, 90) * (path.lookPoints[pathIndex] - transform.position);  // Direction towards the target location
                     targetRotation = Quaternion.LookRotation(forward: Vector3.forward, upwards: vectorToTarget);  // Get the direction as a quaternion
-                    Quaternion rotateBy = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * character.turnSpeed * 2);  // Turn towards it slowly
+                    Quaternion rotateBy = pathIndex == 0 ? Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * character.turnSpeed * 5):  // If the AI has just stared moving
+                                                           Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * character.turnSpeed * 2);  
                     transform.rotation = Quaternion.AngleAxis(rotateBy.eulerAngles.z, Vector3.forward);  // Turn the character
                 }
 

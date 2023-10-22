@@ -1,5 +1,5 @@
 /*
- *This script 
+ *This script creates a smooth path for the AI to follow through the waypoints
  *
  *Written by Aaron
  */
