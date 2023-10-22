@@ -540,8 +540,8 @@ MonoBehaviour:
   tree_Tile: {fileID: 11400000, guid: 3041de17640a8f54981156e02a8218d9, type: 2}
   house_Tile: {fileID: 11400000, guid: a3186efebeed31142b9f7c280615f5d5, type: 2}
   fence_Tile: {fileID: 11400000, guid: fcf35beb8475bdf40bc3a6d7d9aec93c, type: 2}
-  numberOfHouses: 27
-  numberOfFences: 35
+  numberOfHouses: 40
+  numberOfFences: 40
 --- !u!114 &1644593263
 MonoBehaviour:
   m_ObjectHideFlags: 0
