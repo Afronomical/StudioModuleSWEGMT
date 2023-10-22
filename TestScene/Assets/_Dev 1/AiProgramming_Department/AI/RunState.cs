@@ -16,12 +16,14 @@ public class RunState : StateBaseClass
     private float runOffset = 1.25f;  // Stops them from running straight
     private float minCheckTime = 1;
     private float maxCheckTime = 3;
-
+    private float stopDistance = 1;  // When they start slowing down
+    private bool debugPath = false;
 
     private Vector2 runDestination = Vector2.zero;
-    private Vector3[] path;
-    private Vector3 currentWaypoint;
-    private int targetPathIndex;
+    private PathfindingSmoothing path;
+    private int pathIndex = 0;
+    private float speedPercent;
+
     private float checkTime;
 
 
@@ -38,30 +40,38 @@ public class RunState : StateBaseClass
 
         else
         {
-            if (path == null)
+            if (path != null && path.turnBoundaries != null && path.turnBoundaries.Length != 0)
             {
-                FindWalkTarget();
-            }
-            else
-            {
-                if (transform.position == currentWaypoint)
+                if (path.turnBoundaries[pathIndex].HasCrossedLine(transform.position) || speedPercent < 0.1f)
                 {
-                    targetPathIndex++;
-                    if (targetPathIndex >= path.Length)
+                    if (pathIndex == path.finishLineIndex)  // Has finished
                     {
-                        path = new Vector3[0];
-                        targetPathIndex = 0;
-
+                        path = new PathfindingSmoothing(null, Vector3.zero, 0, 0);
                         runDestination = Vector2.zero;  // Stop to look around and see if they escaped
                         checkTime = Random.Range(minCheckTime, maxCheckTime);
                         FindWalkTarget();
                         return;
                     }
-                    currentWaypoint = path[targetPathIndex];
+                    else  // Has reached a checkpoint
+                        pathIndex++;
                 }
 
-                transform.position = Vector3.MoveTowards(transform.position, currentWaypoint, character.runSpeed * Time.deltaTime);
+                Quaternion targetRotation = Quaternion.identity;
+                if (speedPercent > 0.25f)
+                {
+                    Vector3 vectorToTarget = Quaternion.Euler(0, 0, 90) * (path.lookPoints[pathIndex] - transform.position);  // Direction towards the target location
+                    targetRotation = Quaternion.LookRotation(forward: Vector3.forward, upwards: vectorToTarget);  // Get the direction as a quaternion
+                    Quaternion rotateBy = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * character.turnSpeed * 2);  // Turn towards it slowly
+                    transform.rotation = Quaternion.AngleAxis(rotateBy.eulerAngles.z, Vector3.forward);  // Turn the character
+                }
+
+                if (pathIndex >= path.slowDownIndex && stopDistance > 0)
+                    speedPercent = Mathf.Clamp01(path.turnBoundaries[path.finishLineIndex].DistanceFromPoint(transform.position) / stopDistance);  // Slow the character down near the end of the path
+
+                transform.Translate(Vector3.right * character.runSpeed * speedPercent * Time.deltaTime, Space.Self);  // Move the character forwards
             }
+            else
+                FindWalkTarget();
         }
     }
 
@@ -77,14 +87,21 @@ public class RunState : StateBaseClass
     }
 
 
-    public void OnPathFound(Vector3[] newPath, bool pathSuccessful)
+    public void OnPathFound(Vector3[] waypoints, bool pathSuccessful)
     {
-        if (pathSuccessful && newPath.Length != 0)
+        if (pathSuccessful)
         {
-            path = newPath;
-            currentWaypoint = path[0];  // Set the first waypoint
+            path = new PathfindingSmoothing(waypoints, transform.position, character.turnDistance, stopDistance);
+            pathIndex = 0;
+            speedPercent = 1;
         }
         else
             FindWalkTarget();  // Try and find a new path
+    }
+
+    public void OnDrawGizmos()
+    {
+        if (path != null && path.turnBoundaries != null && debugPath)
+            path.DrawWithGizmos();
     }
 }

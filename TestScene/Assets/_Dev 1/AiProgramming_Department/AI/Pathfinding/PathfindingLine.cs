@@ -55,6 +55,14 @@ public struct PathfindingLine
         return GetSide(p) != approachSide;
     }
 
+    public float DistanceFromPoint(Vector2 p)
+    {
+        float yInterceptPerpendicular = p.y - gradientPerpendicular * p.x;
+        float intercectX = (yInterceptPerpendicular - yIntercept) / (gradient - gradientPerpendicular);
+        float intercectY = gradient * intercectX + yIntercept;
+        return Vector2.Distance(p, new Vector2(intercectX, intercectY));
+    }
+
     public void DrawWithGizmos(float length)
     {
         Vector3 lineDir = new Vector3(1, gradient, 0).normalized;

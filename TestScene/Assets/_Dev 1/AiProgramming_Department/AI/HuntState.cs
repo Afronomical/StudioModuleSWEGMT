@@ -7,9 +7,10 @@ public class HuntState : StateBaseClass
 {
     public float pathRefreshTime = 1;  // How often a new path to the player should be found
     private float refreshTimer = 0;
-    private Vector3[] path;
-    private Vector3 currentWaypoint;
-    private int targetPathIndex;
+    private bool debugPath = false;
+
+    private PathfindingSmoothing path;
+    private int pathIndex = 0;
 
     public override void UpdateLogic()
     {
@@ -22,33 +23,43 @@ public class HuntState : StateBaseClass
         }
 
 
-        if (path != null)
+        if (path != null && path.turnBoundaries != null && path.turnBoundaries.Length != 0)
         {
-            if (transform.position == currentWaypoint)
+            while (path.turnBoundaries[pathIndex].HasCrossedLine(transform.position))
             {
-                targetPathIndex++;
-                if (targetPathIndex >= path.Length)
+                if (pathIndex == path.finishLineIndex)  // Has finished
                 {
-                    path = new Vector3[0];
-                    targetPathIndex = 0;
+                    path = new PathfindingSmoothing(null, Vector3.zero, 0, 0);
                     return;
                 }
-                currentWaypoint = path[targetPathIndex];
+                else  // Has reached a checkpoint
+                    pathIndex++;
             }
 
-            transform.position = Vector3.MoveTowards(transform.position, currentWaypoint, character.runSpeed * Time.deltaTime);
+            Vector3 vectorToTarget = Quaternion.Euler(0, 0, 90) * (path.lookPoints[pathIndex] - transform.position);  // Direction towards the target location
+            Quaternion targetRotation = Quaternion.LookRotation(forward: Vector3.forward, upwards: vectorToTarget);  // Get the direction as a quaternion
+            Quaternion rotateBy = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * character.turnSpeed * 2);  // Turn towards it slowly
+            transform.rotation = Quaternion.AngleAxis(rotateBy.eulerAngles.z, Vector3.forward);  // Turn the character
+
+            transform.Translate(Vector3.right * character.runSpeed * Time.deltaTime, Space.Self);  // Move the character forwards
         }
     }
 
 
-    public void OnPathFound(Vector3[] newPath, bool pathSuccessful)
+    public void OnPathFound(Vector3[] waypoints, bool pathSuccessful)
     {
-        if (pathSuccessful && newPath.Length != 0)
+        if (pathSuccessful)
         {
-            path = newPath;
-            currentWaypoint = path[0];  // Set the first waypoint
+            path = new PathfindingSmoothing(waypoints, transform.position, character.turnDistance, 0);
+            pathIndex = 0;
         }
         else
             refreshTimer = 0;  // Try and find a new path
+    }
+
+    public void OnDrawGizmos()
+    {
+        if (path != null && path.turnBoundaries != null && debugPath)
+            path.DrawWithGizmos();
     }
 }

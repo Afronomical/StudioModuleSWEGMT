@@ -16,10 +16,15 @@ public class IdleState : StateBaseClass
     private bool walking;
     private Vector3 walkDestination;
     private float idleTime;
+    private float minIdleTime = 2;
+    private float maxIdleTime = 10;
     private float maxWalkDistance = 5;  // How far the character can walk while idle
-    private Vector3[] path;
-    private Vector3 currentWaypoint;
-    private int targetPathIndex;
+    private float stopDistance = 1;  // When they start slowing down
+    private bool debugPath = false;
+
+    private PathfindingSmoothing path;
+    private int pathIndex = 0;
+    private float speedPercent;
 
 
     public IdleState()
@@ -53,23 +58,37 @@ public class IdleState : StateBaseClass
 
     private void Walk()
     {
-        if (path != null)
+        if (path != null && path.turnBoundaries != null && path.turnBoundaries.Length != 0)
         {
-            if (transform.position == currentWaypoint)
+            while (path.turnBoundaries[pathIndex].HasCrossedLine(transform.position) || speedPercent < 0.1f)
             {
-                targetPathIndex++;
-                if (targetPathIndex >= path.Length)
+                if (pathIndex == path.finishLineIndex)  // Has finished
                 {
-                    path = new Vector3[0];
+                    path = new PathfindingSmoothing(null, Vector3.zero, 0, 0);
                     walking = false;
-                    targetPathIndex = 0;
-                    idleTime = Random.Range(2, 10);  // How long the character will stand still for
+                    idleTime = Random.Range(minIdleTime, maxIdleTime);  // How long the character will stand still for
                     return;
                 }
-                currentWaypoint = path[targetPathIndex];
+                else  // Has reached a checkpoint
+                    pathIndex++;
             }
 
-            transform.position = Vector3.MoveTowards(transform.position, currentWaypoint, character.walkSpeed * Time.deltaTime);
+            Quaternion targetRotation = Quaternion.identity;
+            if (speedPercent > 0.25f)
+            {
+                Vector3 vectorToTarget = Quaternion.Euler(0, 0, 90) * (path.lookPoints[pathIndex] - transform.position);  // Direction towards the target location
+                targetRotation = Quaternion.LookRotation(forward: Vector3.forward, upwards: vectorToTarget);  // Get the direction as a quaternion
+                Quaternion rotateBy = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * character.turnSpeed);  // Turn towards it slowly
+                transform.rotation = Quaternion.AngleAxis(rotateBy.eulerAngles.z, Vector3.forward);  // Turn the character
+            }
+
+            if (pathIndex >= path.slowDownIndex && stopDistance > 0)
+                speedPercent = Mathf.Clamp01(path.turnBoundaries[path.finishLineIndex].DistanceFromPoint(transform.position) / stopDistance);  // Slow the character down near the end of the path
+
+            if (pathIndex == 0 && transform.rotation.eulerAngles.z > targetRotation.eulerAngles.z - 15f && transform.rotation.eulerAngles.z < targetRotation.eulerAngles.z + 15f)  // If they are just starting to move then turn on the spot
+                transform.Translate(Vector3.right * character.walkSpeed * speedPercent * Time.deltaTime, Space.Self);  // Move the character forwards
+            else if (pathIndex != 0)
+                transform.Translate(Vector3.right * character.walkSpeed * speedPercent * Time.deltaTime, Space.Self);  // Move the character forwards
         }
     }
 
@@ -81,14 +100,22 @@ public class IdleState : StateBaseClass
     }
 
 
-    public void OnPathFound(Vector3[] newPath, bool pathSuccessful)
+    public void OnPathFound(Vector3[] waypoints, bool pathSuccessful)
     {
-        if (pathSuccessful && newPath.Length != 0)
+        if (pathSuccessful)
         {
-            path = newPath;
-            currentWaypoint = path[0];  // Set the first waypoint
+            path = new PathfindingSmoothing(waypoints, transform.position, character.turnDistance, stopDistance);
+            pathIndex = 0;
+            speedPercent = 1;
         }
         else
             FindWalkTarget();  // Try and find a new path
+    }
+
+
+    public void OnDrawGizmos()
+    {
+        if (path != null && path.turnBoundaries != null && debugPath)
+            path.DrawWithGizmos();
     }
 }

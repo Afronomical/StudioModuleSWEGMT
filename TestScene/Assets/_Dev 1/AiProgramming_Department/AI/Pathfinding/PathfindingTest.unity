@@ -495,10 +495,10 @@ MonoBehaviour:
   characterType: 0
   health: 3
   walkSpeed: 2
-  runSpeed: 5
+  runSpeed: 7
   crawlSpeed: 1
-  turnSpeed: 0
-  turnDistance: 5
+  turnSpeed: 2
+  turnDistance: 1
   currentState: 0
   stateScript: {fileID: 0}
   player: {fileID: 256090623088614576}
@@ -590,7 +590,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!50 &183671661
 Rigidbody2D:
   serializedVersion: 4
@@ -693,10 +693,10 @@ MonoBehaviour:
   characterType: 1
   health: 3
   walkSpeed: 2
-  runSpeed: 5
+  runSpeed: 7
   crawlSpeed: 1
-  turnSpeed: 0
-  turnDistance: 5
+  turnSpeed: 2
+  turnDistance: 1
   currentState: 0
   stateScript: {fileID: 0}
   player: {fileID: 256090623088614576}
@@ -970,10 +970,10 @@ MonoBehaviour:
   characterType: 0
   health: 3
   walkSpeed: 2
-  runSpeed: 5
+  runSpeed: 7
   crawlSpeed: 1
-  turnSpeed: 0
-  turnDistance: 5
+  turnSpeed: 2
+  turnDistance: 1
   currentState: 0
   stateScript: {fileID: 0}
   player: {fileID: 256090623088614576}
@@ -1626,7 +1626,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!50 &577285811
 Rigidbody2D:
   serializedVersion: 4
@@ -1729,10 +1729,10 @@ MonoBehaviour:
   characterType: 1
   health: 3
   walkSpeed: 2
-  runSpeed: 5
+  runSpeed: 7
   crawlSpeed: 1
-  turnSpeed: 0
-  turnDistance: 5
+  turnSpeed: 2
+  turnDistance: 1
   currentState: 0
   stateScript: {fileID: 0}
   player: {fileID: 256090623088614576}
@@ -2338,7 +2338,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!50 &675917480
 Rigidbody2D:
   serializedVersion: 4
@@ -2441,10 +2441,10 @@ MonoBehaviour:
   characterType: 1
   health: 3
   walkSpeed: 2
-  runSpeed: 5
+  runSpeed: 7
   crawlSpeed: 1
-  turnSpeed: 0
-  turnDistance: 5
+  turnSpeed: 2
+  turnDistance: 1
   currentState: 0
   stateScript: {fileID: 0}
   player: {fileID: 256090623088614576}
@@ -2891,10 +2891,10 @@ MonoBehaviour:
   characterType: 0
   health: 3
   walkSpeed: 2
-  runSpeed: 5
+  runSpeed: 7
   crawlSpeed: 1
-  turnSpeed: 0
-  turnDistance: 5
+  turnSpeed: 2
+  turnDistance: 1
   currentState: 0
   stateScript: {fileID: 0}
   player: {fileID: 256090623088614576}
@@ -3341,10 +3341,10 @@ MonoBehaviour:
   characterType: 0
   health: 3
   walkSpeed: 2
-  runSpeed: 5
+  runSpeed: 7
   crawlSpeed: 1
-  turnSpeed: 0
-  turnDistance: 5
+  turnSpeed: 2
+  turnDistance: 1
   currentState: 0
   stateScript: {fileID: 0}
   player: {fileID: 256090623088614576}
@@ -3670,10 +3670,10 @@ MonoBehaviour:
   characterType: 0
   health: 3
   walkSpeed: 2
-  runSpeed: 5
+  runSpeed: 7
   crawlSpeed: 1
-  turnSpeed: 0
-  turnDistance: 5
+  turnSpeed: 2
+  turnDistance: 1
   currentState: 0
   stateScript: {fileID: 0}
   player: {fileID: 256090623088614576}
@@ -4110,10 +4110,10 @@ MonoBehaviour:
   characterType: 0
   health: 3
   walkSpeed: 2
-  runSpeed: 5
+  runSpeed: 7
   crawlSpeed: 1
-  turnSpeed: 0
-  turnDistance: 5
+  turnSpeed: 2
+  turnDistance: 1
   currentState: 0
   stateScript: {fileID: 0}
   player: {fileID: 256090623088614576}
@@ -4308,10 +4308,10 @@ MonoBehaviour:
   characterType: 0
   health: 3
   walkSpeed: 2
-  runSpeed: 5
+  runSpeed: 7
   crawlSpeed: 1
-  turnSpeed: 0
-  turnDistance: 5
+  turnSpeed: 2
+  turnDistance: 1
   currentState: 0
   stateScript: {fileID: 0}
   player: {fileID: 256090623088614576}
@@ -5068,9 +5068,9 @@ MonoBehaviour:
   characterType: 1
   health: 3
   walkSpeed: 2
-  runSpeed: 5
+  runSpeed: 7
   crawlSpeed: 1
-  turnSpeed: 3
+  turnSpeed: 2
   turnDistance: 1
   currentState: 0
   stateScript: {fileID: 0}
@@ -5339,10 +5339,10 @@ MonoBehaviour:
   characterType: 0
   health: 3
   walkSpeed: 2
-  runSpeed: 5
+  runSpeed: 7
   crawlSpeed: 1
-  turnSpeed: 0
-  turnDistance: 5
+  turnSpeed: 2
+  turnDistance: 1
   currentState: 0
   stateScript: {fileID: 0}
   player: {fileID: 256090623088614576}
@@ -6220,10 +6220,10 @@ MonoBehaviour:
   characterType: 0
   health: 3
   walkSpeed: 2
-  runSpeed: 5
+  runSpeed: 7
   crawlSpeed: 1
-  turnSpeed: 0
-  turnDistance: 5
+  turnSpeed: 2
+  turnDistance: 1
   currentState: 0
   stateScript: {fileID: 0}
   player: {fileID: 256090623088614576}
@@ -7144,7 +7144,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!50 &1600439725
 Rigidbody2D:
   serializedVersion: 4
@@ -7247,10 +7247,10 @@ MonoBehaviour:
   characterType: 1
   health: 3
   walkSpeed: 2
-  runSpeed: 5
+  runSpeed: 7
   crawlSpeed: 1
-  turnSpeed: 0
-  turnDistance: 5
+  turnSpeed: 2
+  turnDistance: 1
   currentState: 0
   stateScript: {fileID: 0}
   player: {fileID: 256090623088614576}
@@ -7841,10 +7841,10 @@ MonoBehaviour:
   characterType: 0
   health: 3
   walkSpeed: 2
-  runSpeed: 5
+  runSpeed: 7
   crawlSpeed: 1
-  turnSpeed: 0
-  turnDistance: 5
+  turnSpeed: 2
+  turnDistance: 1
   currentState: 0
   stateScript: {fileID: 0}
   player: {fileID: 256090623088614576}
@@ -8039,10 +8039,10 @@ MonoBehaviour:
   characterType: 0
   health: 3
   walkSpeed: 2
-  runSpeed: 5
+  runSpeed: 7
   crawlSpeed: 1
-  turnSpeed: 0
-  turnDistance: 5
+  turnSpeed: 2
+  turnDistance: 1
   currentState: 0
   stateScript: {fileID: 0}
   player: {fileID: 256090623088614576}
@@ -8134,7 +8134,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!50 &1804596960
 Rigidbody2D:
   serializedVersion: 4
@@ -8237,10 +8237,10 @@ MonoBehaviour:
   characterType: 1
   health: 3
   walkSpeed: 2
-  runSpeed: 5
+  runSpeed: 7
   crawlSpeed: 1
-  turnSpeed: 0
-  turnDistance: 5
+  turnSpeed: 2
+  turnDistance: 1
   currentState: 0
   stateScript: {fileID: 0}
   player: {fileID: 256090623088614576}
@@ -8687,10 +8687,10 @@ MonoBehaviour:
   characterType: 0
   health: 3
   walkSpeed: 2
-  runSpeed: 5
+  runSpeed: 7
   crawlSpeed: 1
-  turnSpeed: 0
-  turnDistance: 5
+  turnSpeed: 2
+  turnDistance: 1
   currentState: 0
   stateScript: {fileID: 0}
   player: {fileID: 256090623088614576}
@@ -9006,10 +9006,10 @@ MonoBehaviour:
   characterType: 0
   health: 3
   walkSpeed: 2
-  runSpeed: 5
+  runSpeed: 7
   crawlSpeed: 1
-  turnSpeed: 0
-  turnDistance: 5
+  turnSpeed: 2
+  turnDistance: 1
   currentState: 0
   stateScript: {fileID: 0}
   player: {fileID: 256090623088614576}
@@ -9484,7 +9484,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!50 &1988132434
 Rigidbody2D:
   serializedVersion: 4
@@ -9587,10 +9587,10 @@ MonoBehaviour:
   characterType: 1
   health: 3
   walkSpeed: 2
-  runSpeed: 5
+  runSpeed: 7
   crawlSpeed: 1
-  turnSpeed: 0
-  turnDistance: 5
+  turnSpeed: 2
+  turnDistance: 1
   currentState: 0
   stateScript: {fileID: 0}
   player: {fileID: 256090623088614576}
@@ -10083,10 +10083,10 @@ MonoBehaviour:
   characterType: 0
   health: 3
   walkSpeed: 2
-  runSpeed: 5
+  runSpeed: 7
   crawlSpeed: 1
-  turnSpeed: 0
-  turnDistance: 5
+  turnSpeed: 2
+  turnDistance: 1
   currentState: 0
   stateScript: {fileID: 0}
   player: {fileID: 256090623088614576}

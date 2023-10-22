@@ -12,12 +12,12 @@ public class PatrolState : StateBaseClass
     private float maxWalkDistance = 10;  // How far the character can walk while idle
     private float minIdleTime = 0;
     private float maxIdleTime = 3;
+    private float stopDistance = 1;  // When they start slowing down
+    private bool debugPath = false;
 
-    //private Vector3[] path;
-    //private Vector3 currentWaypoint;
-    //private int targetPathIndex;
     private PathfindingSmoothing path;
     private int pathIndex = 0;
+    private float speedPercent;
 
     public override void UpdateLogic()
     {
@@ -42,13 +42,13 @@ public class PatrolState : StateBaseClass
 
     private void Patrol()
     {
-        if (path != null && path.turnBoundaries != null)
+        if (path != null && path.turnBoundaries != null && path.turnBoundaries.Length != 0)
         {
-            while (path.turnBoundaries[pathIndex].HasCrossedLine(transform.position))
+            while (path.turnBoundaries[pathIndex].HasCrossedLine(transform.position) || speedPercent < 0.1f)
             {
                 if (pathIndex == path.finishLineIndex)  // Has finished
                 {
-                    path = new PathfindingSmoothing(null, Vector3.zero, 0);
+                    path = new PathfindingSmoothing(null, Vector3.zero, 0, 0);
                     walking = false;
                     idleTime = Random.Range(minIdleTime, maxIdleTime);  // How long the character will stand still for
                     return;
@@ -57,15 +57,22 @@ public class PatrolState : StateBaseClass
                     pathIndex++;
             }
 
-            Vector3 vectorToTarget = Quaternion.Euler(0, 0, 90) * (path.lookPoints[pathIndex] - transform.position);  // Direction towards the target location
-            Quaternion targetRotation = Quaternion.LookRotation(forward: Vector3.forward, upwards: vectorToTarget);  // Get the direction as a quaternion
-            Quaternion rotateBy = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * character.turnSpeed);  // Turn towards it slowly
-            transform.rotation = Quaternion.AngleAxis(rotateBy.eulerAngles.z, Vector3.forward);  // Turn the character
-            
+            Quaternion targetRotation = Quaternion.identity;
+            if (speedPercent > 0.25f)
+            {
+                Vector3 vectorToTarget = Quaternion.Euler(0, 0, 90) * (path.lookPoints[pathIndex] - transform.position);  // Direction towards the target location
+                targetRotation = Quaternion.LookRotation(forward: Vector3.forward, upwards: vectorToTarget);  // Get the direction as a quaternion
+                Quaternion rotateBy = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * character.turnSpeed);  // Turn towards it slowly
+                transform.rotation = Quaternion.AngleAxis(rotateBy.eulerAngles.z, Vector3.forward);  // Turn the character
+            }
+
+            if (pathIndex >= path.slowDownIndex && stopDistance > 0)
+                speedPercent = Mathf.Clamp01(path.turnBoundaries[path.finishLineIndex].DistanceFromPoint(transform.position) / stopDistance);  // Slow the character down near the end of the path
+
             if (pathIndex == 0 && transform.rotation.eulerAngles.z > targetRotation.eulerAngles.z - 15f && transform.rotation.eulerAngles.z < targetRotation.eulerAngles.z + 15f)  // If they are just starting to move then turn on the spot
-                transform.Translate(Vector3.right * character.walkSpeed * Time.deltaTime, Space.Self);  // Move the character forwards
+                transform.Translate(Vector3.right * character.walkSpeed * speedPercent * Time.deltaTime, Space.Self);  // Move the character forwards
             else if (pathIndex != 0)
-                transform.Translate(Vector3.right * character.walkSpeed * Time.deltaTime, Space.Self);  // Move the character forwards
+                transform.Translate(Vector3.right * character.walkSpeed * speedPercent * Time.deltaTime, Space.Self);  // Move the character forwards
         }
     }
 
@@ -81,8 +88,9 @@ public class PatrolState : StateBaseClass
     {
         if (pathSuccessful)
         {
-            path = new PathfindingSmoothing(waypoints, transform.position, character.turnDistance);
+            path = new PathfindingSmoothing(waypoints, transform.position, character.turnDistance, stopDistance);
             pathIndex = 0;
+            speedPercent = 1;
         }
         else
             FindWalkTarget();  // Try and find a new path
@@ -90,7 +98,7 @@ public class PatrolState : StateBaseClass
 
     public void OnDrawGizmos()
     {
-        if (path != null && path.turnBoundaries != null)
+        if (path != null && path.turnBoundaries != null && debugPath)
             path.DrawWithGizmos();
     }
 }

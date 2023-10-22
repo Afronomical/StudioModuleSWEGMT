@@ -11,11 +11,13 @@ using UnityEngine;
 
 public class PathfindingSmoothing
 {
-    public readonly Vector3[] lookPoints;
-    public readonly PathfindingLine[] turnBoundaries;
-    public readonly int finishLineIndex;
+    public Vector3[] lookPoints;
+    public PathfindingLine[] turnBoundaries;
+    public int finishLineIndex;
+    public int slowDownIndex;
 
-    public PathfindingSmoothing(Vector3[] waypoints, Vector3 startPos, float turnDist)
+
+    public PathfindingSmoothing(Vector3[] waypoints, Vector3 startPos, float turnDist, float stoppingDistance)
     {
         if (waypoints != null)
         {
@@ -31,6 +33,17 @@ public class PathfindingSmoothing
                 Vector2 turnBoundaryPoint = (i == finishLineIndex) ? currentPoint : currentPoint - dirToCurrentPoint * turnDist;
                 turnBoundaries[i] = new PathfindingLine(turnBoundaryPoint, previousPoint - dirToCurrentPoint * turnDist);
                 previousPoint = turnBoundaryPoint;
+            }
+
+            float distFromEnd = 0;
+            for (int i = lookPoints.Length - 1; i > 0; i--)
+            {
+                distFromEnd += Vector3.Distance(lookPoints[i], lookPoints[i - 1]);
+                if (distFromEnd > stoppingDistance)
+                {
+                    slowDownIndex = i;
+                    break;
+                }
             }
         }
     }
