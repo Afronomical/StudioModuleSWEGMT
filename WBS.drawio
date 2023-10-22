@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-10-22T01:00:13.924Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.2088.46" etag="ZbVqqZEW9FLPX1mix1GX" version="22.0.6" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2023-10-22T01:02:11.675Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.2088.46" etag="Z-HCFumynLJ-9C6-dic_" version="22.0.6" type="github" pages="3">
   <diagram name="V1" id="2E0uqucmmRCA9DNlLTua">
     <mxGraphModel dx="4310" dy="3257" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -2364,6 +2364,9 @@
         <mxCell id="OrO1Q9xSoHbRluxVMB7A-141" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="OrO1Q9xSoHbRluxVMB7A-120" target="OrO1Q9xSoHbRluxVMB7A-140">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="OrO1Q9xSoHbRluxVMB7A-160" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="OrO1Q9xSoHbRluxVMB7A-120" target="OrO1Q9xSoHbRluxVMB7A-159">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="OrO1Q9xSoHbRluxVMB7A-120" value="3. Systems Design" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="2270" y="-760" width="120" height="60" as="geometry" />
         </mxCell>
@@ -2403,7 +2406,7 @@
         <mxCell id="OrO1Q9xSoHbRluxVMB7A-138" value="3.2.2&lt;br&gt;Player Damaging" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry x="2400" y="342.75" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="OrO1Q9xSoHbRluxVMB7A-140" value="3.2&lt;br&gt;Armouries" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+        <mxCell id="OrO1Q9xSoHbRluxVMB7A-140" value="3.3&lt;br&gt;Armouries" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry x="2350" y="442.75" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="OrO1Q9xSoHbRluxVMB7A-142" value="3.1.1&lt;br&gt;Day Manager" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
@@ -2430,11 +2433,14 @@
         <mxCell id="OrO1Q9xSoHbRluxVMB7A-152" value="3.1.3.2&lt;br&gt;Score System" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry x="2450" y="-170" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="OrO1Q9xSoHbRluxVMB7A-155" value="3.2.2&lt;br&gt;Time Indicators" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+        <mxCell id="OrO1Q9xSoHbRluxVMB7A-155" value="3.1.1&lt;br&gt;Time Indicators" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry x="2450" y="130" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="OrO1Q9xSoHbRluxVMB7A-157" value="3.2.2&lt;br&gt;NPC activities" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+        <mxCell id="OrO1Q9xSoHbRluxVMB7A-157" value="3.1.2&lt;br&gt;NPC activities" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry x="2450" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OrO1Q9xSoHbRluxVMB7A-159" value="3.4&lt;br&gt;Procedural Generation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="2350" y="555" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
