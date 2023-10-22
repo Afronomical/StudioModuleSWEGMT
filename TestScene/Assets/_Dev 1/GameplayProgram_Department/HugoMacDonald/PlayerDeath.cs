@@ -28,13 +28,7 @@ public class PlayerDeath : MonoBehaviour
         Debug.Log("Collision detected");
         if (collision.gameObject.CompareTag("Hunter")) //changed from enemyMelee to Hunter
         {
-            currentHealth -= damageAmount;
-            healthBarScript.setHealth(currentHealth); //
-            Debug.Log(currentHealth);
-            if (currentHealth <= 0)
-            {
-                Die();
-            }
+           
         }
     }
 
@@ -74,5 +68,16 @@ public class PlayerDeath : MonoBehaviour
         }
 
         gameObject.SetActive(false);
+    }
+
+    public void SetHealth(int damage)
+    {
+        currentHealth -= damage;
+        healthBarScript.setHealth(currentHealth); //
+        Debug.Log(currentHealth);
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
     }
 }
