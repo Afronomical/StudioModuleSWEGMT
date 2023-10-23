@@ -1206,6 +1206,18 @@ PrefabInstance:
       propertyPath: hungerBarSlider
       value: 
       objectReference: {fileID: 943001636}
+    - target: {fileID: 4820945011877703518, guid: 99d0183fde40a224eae3632a6b0caf96, type: 3}
+      propertyPath: aiCharacters.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820945011877703518, guid: 99d0183fde40a224eae3632a6b0caf96, type: 3}
+      propertyPath: 'aiCharacters.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1379014425}
+    - target: {fileID: 4820945011877703518, guid: 99d0183fde40a224eae3632a6b0caf96, type: 3}
+      propertyPath: 'aiCharacters.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1180797092}
     - target: {fileID: 6270121427028448982, guid: 99d0183fde40a224eae3632a6b0caf96, type: 3}
       propertyPath: m_Direction
       value: 0
