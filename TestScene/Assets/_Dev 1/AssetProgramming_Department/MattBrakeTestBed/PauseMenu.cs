@@ -11,7 +11,7 @@ public class PauseMenu : MonoBehaviour
 
 
     // Update is called once per frame
-    void Update() 
+    void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -45,8 +45,13 @@ public class PauseMenu : MonoBehaviour
         LevelManager.Instance.LoadScene("MainMenu");
     }
 
-    public void Quit() 
+    public void Quit()
     {
-        
+
+    }
+    public void LoadSettingsMenu()
+    {
+        Debug.Log("settings menu opened");
     }
 }
+
