@@ -18,8 +18,8 @@ public class AnimationManager : MonoBehaviour
     public enum AnimationStates
     {
         // INFO: Test Animations:
-        MoveHorizontal,
-        MoveVertical,
+        Idle,
+        Run
 
         //Idle,
         //Run,

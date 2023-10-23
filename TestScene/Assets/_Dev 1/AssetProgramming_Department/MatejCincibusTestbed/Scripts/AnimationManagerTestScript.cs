@@ -13,13 +13,13 @@ public class AnimationManagerTestScript : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            animationManager.ChangeAnimationState(AnimationManager.AnimationStates.MoveHorizontal);
-        }
-        else if (Input.GetKeyDown(KeyCode.S))
-        {
-            animationManager.ChangeAnimationState(AnimationManager.AnimationStates.MoveVertical);
-        }
+        //if (Input.GetKeyDown(KeyCode.D))
+        //{
+        //    animationManager.ChangeAnimationState(AnimationManager.AnimationStates.MoveHorizontal);
+        //}
+        //else if (Input.GetKeyDown(KeyCode.S))
+        //{
+        //    animationManager.ChangeAnimationState(AnimationManager.AnimationStates.MoveVertical);
+        //}
     }
 }

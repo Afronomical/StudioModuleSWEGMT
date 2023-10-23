@@ -4,7 +4,7 @@ public class PlayerDeath : MonoBehaviour
 {
     public int maxHealth = 100;
     public int currentHealth;
-    private int damageAmount = 10;
+    //private int damageAmount = 10;
     private Animator animator;
     public HealthBarScript healthBarScript;
     public bool godMode;

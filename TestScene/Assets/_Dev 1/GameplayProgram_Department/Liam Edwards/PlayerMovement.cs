@@ -13,6 +13,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float dodgeSpeed = 10f;
     [SerializeField] float dodgeDuration = 1f;
     [SerializeField] float dodgeCooldown;
+
+    private Animator animator;
+    private AnimationManager animationManager;
+
     bool isDodging;
     bool canDodge;
     bool canBatForm;
@@ -22,7 +26,7 @@ public class PlayerController : MonoBehaviour
     public GameObject batMesh;
     public BoxCollider2D hitBox;
 
-
+    private Vector2 lastMovementInput;
 
     void Start()
     {
@@ -33,11 +37,13 @@ public class PlayerController : MonoBehaviour
         playerMesh.SetActive(true);
         batMesh.SetActive(false);
         hitBox = GetComponent<BoxCollider2D>();
-
+        animator = GetComponent<Animator>();
+        animationManager = GetComponent<AnimationManager>();
     }
 
     void Update()
     {
+        AnimateMovement();
 
         if (isDodging)
         {
@@ -46,7 +52,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            rb.velocity = new Vector2(Input.GetAxis("Horizontal") * sprintSpeed, Input.GetAxis("Vertical") * sprintSpeed);
+            rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * sprintSpeed, Input.GetAxisRaw("Vertical") * sprintSpeed);
         }
         else if (Input.GetKeyDown(KeyCode.Space) && canDodge)
         {
@@ -58,12 +64,31 @@ public class PlayerController : MonoBehaviour
         }
         else 
         {
-            rb.velocity = new Vector2(Input.GetAxis("Horizontal") * speed, Input.GetAxis("Vertical") * speed);
+            rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * speed, Input.GetAxisRaw("Vertical") * speed);
         }
 
     }
 
+    private void AnimateMovement()
+    {
+        Vector2 movementInput = new(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
+        animator.SetFloat("MovementX", movementInput.x);
+        animator.SetFloat("MovementY", movementInput.y);
+
+        if (movementInput != Vector2.zero)
+        {
+            lastMovementInput = movementInput;
+            animationManager.ChangeAnimationState(AnimationManager.AnimationStates.Run);
+        }
+        else
+        {
+            animator.SetFloat("MovementX", lastMovementInput.x);
+            animator.SetFloat("MovementY", lastMovementInput.y);
+
+            animationManager.ChangeAnimationState(AnimationManager.AnimationStates.Idle);
+        }
+    }
 
 
     private IEnumerator Dodge()
@@ -71,7 +96,7 @@ public class PlayerController : MonoBehaviour
 
         canDodge = false;
         isDodging = true;
-        rb.velocity = new Vector2(Input.GetAxis("Horizontal") * dodgeSpeed, Input.GetAxis("Vertical") * dodgeSpeed);
+        rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * dodgeSpeed, Input.GetAxisRaw("Vertical") * dodgeSpeed);
         yield return new WaitForSeconds(dodgeDuration);
         isDodging = false;
 
@@ -88,7 +113,7 @@ public class PlayerController : MonoBehaviour
         playerMesh.SetActive(false); // hides Player Skin
         batMesh.SetActive(true); // shows bat skin
         hitBox.size = new Vector2(0.5f, 0.5f);
-        rb.velocity = new Vector2(Input.GetAxis("Horizontal") * speed, Input.GetAxis("Vertical") * speed);
+        rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * speed, Input.GetAxisRaw("Vertical") * speed);
         yield return new WaitForSeconds(5); // Bat Form duration
         speed = 3;
         playerMesh.SetActive(true); // shows player skin
