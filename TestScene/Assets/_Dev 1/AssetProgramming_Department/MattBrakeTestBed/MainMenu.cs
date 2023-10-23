@@ -11,7 +11,8 @@ public class MainMenu : MonoBehaviour
     public void PlayGame()
     {
         Debug.Log("Play Game");
-        LevelManager.Instance.LoadScene("TestCaveScene");
+        //LevelManager.Instance.LoadScene("TestCaveScene");
+        SceneManager.LoadScene(3);
     }
 
     public void SettingsMenu()
@@ -25,6 +26,7 @@ public class MainMenu : MonoBehaviour
     {
         Debug.Log("Instructions");
         SceneManager.LoadScene(1);
+        
     }
 
     public void ExitGame()

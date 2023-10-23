@@ -31,6 +31,9 @@ public class LevelManager : MonoBehaviour
 
     public async void LoadScene(string SceneName)
     {
+        
+        _loaderCanvas.SetActive(true);
+        
         _target = 1f; 
         _progressBar.fillAmount = 0.1f;
         
@@ -38,7 +41,6 @@ public class LevelManager : MonoBehaviour
         scene.allowSceneActivation = false;
         
         
-        _loaderCanvas.SetActive(true);
 
 
        
