@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 24918
+  controlID: 30629
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -149,7 +149,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 24849
+  controlID: 30561
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -174,7 +174,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 24818
+  controlID: 30530
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -245,11 +245,11 @@ MonoBehaviour:
     - e00: 0.7532275
       e01: 0
       e02: 0
-      e03: -72.52052
+      e03: -196.52051
       e10: 0
       e11: 0.7532275
       e12: 0
-      e13: 94.267624
+      e13: 15.267641
       e20: 0
       e21: 0
       e22: 1
@@ -883,7 +883,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 24850
+  controlID: 30562
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1049,7 +1049,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/_Dev 1/AssetProgramming_Department/MatejCincibusTestbed/GFX/VampireAnimatedSprites/VampireRunForward/N
+    - Assets/_Dev 1/AssetProgramming_Department/MatejCincibusTestbed/GFX/VampireAnimatedSprites/VampireAttackHorizontal/W
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1059,16 +1059,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/_Dev 1/AssetProgramming_Department/MatejCincibusTestbed/GFX/VampireAnimatedSprites/VampireRunForward/N
+  - Assets/_Dev 1/AssetProgramming_Department/MatejCincibusTestbed/GFX/VampireAnimatedSprites/VampireAttackHorizontal/W
   m_LastFoldersGridSize: -1
   m_LastProjectPath: B:\University Projects\SWEGMT Assessment Project\StudioModuleSWEGMT\TestScene
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 102}
-    m_SelectedIDs: b26f0000
-    m_LastClickedID: 28594
-    m_ExpandedIDs: 00000000506e0000526e0000546e0000566e0000626e0000646e00008e6e000000ca9a3b
+    scrollPos: {x: 0, y: 143}
+    m_SelectedIDs: 32740000
+    m_LastClickedID: 29746
+    m_ExpandedIDs: 00000000506e0000526e0000546e0000566e0000626e00008c6e00008e6e0000586f0000946f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1123,7 +1123,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: ccf3ffff
     m_LastClickedInstanceID: -3124
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000607a0000067a000026b00000000000001ac200001cc20000c46f00004471000048710000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
