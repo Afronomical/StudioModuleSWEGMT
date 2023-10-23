@@ -11,15 +11,19 @@ using UnityEngine;
 
 public class RunState : StateBaseClass
 {
-
-    private float minRunDistance = 20;
-    private float maxRunDistance = 50;
-    private float runOffset = 2;  // Stops them from running straight
-    private float minCheckTime = 2;
-    private float maxCheckTime = 5;
-
+    private float minRunDistance = 3;
+    private float maxRunDistance = 8;
+    private float runOffset = 0.5f;  // Stops them from running straight
+    private float minCheckTime = 1;
+    private float maxCheckTime = 3;
+    private float stopDistance = 1;  // When they start slowing down
+    private bool debugPath = false;
 
     private Vector2 runDestination = Vector2.zero;
+    private PathfindingSmoothing path;
+    private int pathIndex = 0;
+    private float speedPercent;
+
     private float checkTime;
 
 
@@ -31,27 +35,74 @@ public class RunState : StateBaseClass
 
     public override void UpdateLogic()
     {
-        //Debug.Log("Is running");
         if (checkTime > 0)  // Wait a bit before running 
             checkTime -= Time.deltaTime;
 
         else
         {
-            if (runDestination == Vector2.zero)
+            if (path != null && path.turnBoundaries != null && path.turnBoundaries.Length != 0)
             {
-                Vector3 moveVector = character.GetPlayerPosition() - character.transform.position;
-                runDestination = new Vector3((-moveVector.x + Random.Range(-runOffset, runOffset))* Random.Range(minRunDistance, maxRunDistance),
-                                             -moveVector.y + Random.Range(-runOffset, runOffset)) * Random.Range(minRunDistance, maxRunDistance);
-            }
+                if (path.turnBoundaries[pathIndex].HasCrossedLine(transform.position) || speedPercent < 0.1f)
+                {
+                    if (pathIndex == path.finishLineIndex)  // Has finished
+                    {
+                        path = new PathfindingSmoothing(null, Vector3.zero, 0, 0);
+                        runDestination = Vector2.zero;  // Stop to look around and see if they escaped
+                        checkTime = Random.Range(minCheckTime, maxCheckTime);
+                        FindWalkTarget();
+                        return;
+                    }
+                    else  // Has reached a checkpoint
+                        pathIndex++;
+                }
 
-            character.SetPosition(Vector2.MoveTowards(character.GetPosition(), runDestination, character.runSpeed * Time.deltaTime));  // Move towards the destination
+                Quaternion targetRotation = Quaternion.identity;
+                if (speedPercent > 0.25f)
+                {
+                    Vector3 vectorToTarget = Quaternion.Euler(0, 0, 90) * (path.lookPoints[pathIndex] - transform.position);  // Direction towards the target location
+                    targetRotation = Quaternion.LookRotation(forward: Vector3.forward, upwards: vectorToTarget);  // Get the direction as a quaternion
+                    Quaternion rotateBy = pathIndex == 0 ? Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * character.turnSpeed * 5):  // If the AI has just stared moving
+                                                           Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * character.turnSpeed * 2);  
+                    transform.rotation = Quaternion.AngleAxis(rotateBy.eulerAngles.z, Vector3.forward);  // Turn the character
+                }
 
-            if (Vector2.Distance(character.GetPosition(), runDestination) <= 0.01f)  // When they reach the destination
-            {
-                // Stop to look around and see if they escaped
-                runDestination = Vector2.zero;
-                checkTime = Random.Range(minCheckTime, maxCheckTime);
+                if (pathIndex >= path.slowDownIndex && stopDistance > 0)
+                    speedPercent = Mathf.Clamp01(path.turnBoundaries[path.finishLineIndex].DistanceFromPoint(transform.position) / stopDistance);  // Slow the character down near the end of the path
+
+                transform.Translate(Vector3.right * character.runSpeed * speedPercent * Time.deltaTime, Space.Self);  // Move the character forwards
             }
+            else
+                FindWalkTarget();
         }
+    }
+
+
+    private void FindWalkTarget()
+    {
+        Vector3 moveVector = character.GetPlayerPosition() - character.transform.position;
+        moveVector = moveVector.normalized;
+        runDestination = new Vector3((-moveVector.x + Random.Range(-runOffset, runOffset)) * Random.Range(minRunDistance, maxRunDistance),
+                                     -moveVector.y + Random.Range(-runOffset, runOffset)) * Random.Range(minRunDistance, maxRunDistance);
+
+        PathfindingRequestManager.RequestPath(transform.position, runDestination, this, OnPathFound);
+    }
+
+
+    public void OnPathFound(Vector3[] waypoints, bool pathSuccessful)
+    {
+        if (pathSuccessful)
+        {
+            path = new PathfindingSmoothing(waypoints, transform.position, character.turnDistance, stopDistance);
+            pathIndex = 0;
+            speedPercent = 1;
+        }
+        else
+            FindWalkTarget();  // Try and find a new path
+    }
+
+    public void OnDrawGizmos()
+    {
+        if (path != null && path.turnBoundaries != null && debugPath)
+            path.DrawWithGizmos();
     }
 }

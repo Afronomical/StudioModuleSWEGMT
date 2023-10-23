@@ -26,7 +26,8 @@ public class AICharacter : MonoBehaviour
         Dead,
         Patrol,
         Attack,
-        Run
+        Run,
+        Hunt //added hunt state
     }
 
 
@@ -34,6 +35,8 @@ public class AICharacter : MonoBehaviour
     public CharacterTypes characterType;
     public int health = 3;
     public float walkSpeed, runSpeed, crawlSpeed;
+    public float turnSpeed;
+    public float turnDistance;
 
     [Header("States")]
     public States currentState;
@@ -45,6 +48,9 @@ public class AICharacter : MonoBehaviour
 
     void Start()
     {
+        walkSpeed /= 2;
+        runSpeed /= 2;
+        crawlSpeed /= 2;
         ChangeState(States.Idle);  // The character will start in the idle state
         player = GameObject.FindGameObjectWithTag("Player");
     }
@@ -68,10 +74,11 @@ public class AICharacter : MonoBehaviour
         {
             if (stateScript != null)
             {
-                //----------------------------------------- Destroy script here
-                
+                //destroy current script attached to AI character
+                Destroy(stateScript);
             }
 
+            //set the current state of AI character to the new state
             currentState = newState;
 
             switch (newState)
@@ -93,6 +100,9 @@ public class AICharacter : MonoBehaviour
                     break;
                 case States.Dead:
                     stateScript = transform.AddComponent<DeadState>();
+                    break;
+                case States.Hunt:
+                    stateScript = transform.AddComponent<HuntState>();
                     break;
 
                 //------------------------------------ Add new states in here
@@ -122,5 +132,15 @@ public class AICharacter : MonoBehaviour
     public Vector3 GetPlayerPosition()
     {
         return player.transform.position;
+    }
+
+    public int GetHealth()
+    {
+        return this.health;
+    }
+
+    public void SetHealth(int n)
+    {
+        this.health = n;
     }
 }
