@@ -1,73 +1,40 @@
-
-
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class PlayerDeath : MonoBehaviour
 {
     public int maxHealth = 100;
-    
     public int currentHealth;
-   
     private int damageAmount = 10;
-    private float deathLevelDelay = 3f;
     private Animator animator;
     public HealthBarScript healthBarScript;
-    public bool godMode;
-    
-
 
     private void Start()
     {
         currentHealth = maxHealth;
-
         animator = GetComponent<Animator>();
         healthBarScript.SetMaxHealth(maxHealth);
-        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("Collision detected");
-        if (collision.gameObject.CompareTag("Hunter")) //changed from enemyMelee to Hunter
+        if (collision.gameObject.CompareTag("Hunter"))
         {
-           
+            currentHealth -= damageAmount;
+            healthBarScript.setHealth(currentHealth);
+            Debug.Log(currentHealth);
+            if (currentHealth <= 0)
+            {
+                Die();
+            }
         }
     }
 
-    //void OnCollisionEnter2D(Collision2D collision)
-    //{
-    //    Debug.Log("Collision detected");
-    //    if (collision.gameObject.CompareTag("Hunter")) //changed from enemyMelee to Hunter
-    //    {
-    //        currentHealth -= damageAmount;
-    //        healthBarScript.setHealth(currentHealth); //
-    //        Debug.Log(currentHealth);
-    //        if (currentHealth <= 0)
-    //        {
-    //            Die();
-    //        }
-    //    }
-    //}
-
-
-
-
-    // To Test Health Bar and hunger // remove once enemy attacks player
-    void Update()
+    public void FeedAttack()
     {
-        //if (Input.GetKeyDown(KeyCode.Space))
-        //{
-        //    currentHealth -= 10;
-        //}
-
-
-        //if godmode enabled set health to 100 every tick so is esentailly immortal
-        if (godMode)
-        {
-            currentHealth = maxHealth;
-        }
-     
+        // Implement your logic to increase health when the player is fed
+        currentHealth += 20; // You can adjust the value as needed
+        healthBarScript.setHealth(currentHealth);
     }
 
     private void Die()
@@ -76,26 +43,8 @@ public class PlayerDeath : MonoBehaviour
         {
             animator.SetTrigger("Die"); // Make sure your Animator has a "Die" trigger.
         }
-
         gameObject.SetActive(false);
-        //Instantiate(...);              //spawn "YOU DIED" ui
-        Invoke("deathAfterDelay", deathLevelDelay);
-
-    }
-    private void deathAfterDelay()
-    {
-        SceneManager.LoadScene("MainMenu");
-
-    }
-
-    public void SetHealth(int damage)
-    {
-        currentHealth -= damage;
-        healthBarScript.setHealth(currentHealth); //
-        Debug.Log(currentHealth);
-        if (currentHealth <= 0)
-        {
-            Die();
-        }
     }
 }
+
+
