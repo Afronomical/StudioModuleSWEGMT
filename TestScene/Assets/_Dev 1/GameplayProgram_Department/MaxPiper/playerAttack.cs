@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class playerAttack : MonoBehaviour
@@ -12,6 +13,7 @@ public class playerAttack : MonoBehaviour
     private GameObject enemyTarg;
     private AICharacter AiEnemy;
     private bool canHit = true;
+    
 
     //enter collision, detects if has enemy tag, if true set enemy to attacking var
     private void OnTriggerEnter2D(Collider2D other)
@@ -88,8 +90,8 @@ public class playerAttack : MonoBehaviour
                 attackDelay = attackDelayStart;
             }
             
-            
-            
         }
+        
+
     }
 }
