@@ -7,6 +7,9 @@ public class PlayerDeath : MonoBehaviour
     private int damageAmount = 10;
     private Animator animator;
     public HealthBarScript healthBarScript;
+    public bool godMode;
+    //public float SetHealth;
+
 
     private void Start()
     {
@@ -15,19 +18,37 @@ public class PlayerDeath : MonoBehaviour
         healthBarScript.SetMaxHealth(maxHealth);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void Update()
     {
-        Debug.Log("Collision detected");
-        if (collision.gameObject.CompareTag("Hunter"))
+
+
+
+        //if godmode enabled set health to 100 every tick so is esentailly immortal
+        if (godMode)
         {
-            currentHealth -= damageAmount;
-            healthBarScript.setHealth(currentHealth);
-            Debug.Log(currentHealth);
-            if (currentHealth <= 0)
-            {
-                Die();
-            }
+            currentHealth = maxHealth;
         }
+    }
+
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    Debug.Log("Collision detected");
+    //    if (collision.gameObject.CompareTag("Hunter"))
+    //    {
+    //        currentHealth -= damageAmount;
+    //        healthBarScript.setHealth(currentHealth);
+    //        Debug.Log(currentHealth);
+    //        if (currentHealth <= 0)
+    //        {
+    //            Die();
+    //        }
+    //    }
+    //}
+
+    public void SetHealth(int damage)
+    {
+        currentHealth -= damage;
+        healthBarScript.setHealth(currentHealth);
     }
 
     public void FeedAttack()

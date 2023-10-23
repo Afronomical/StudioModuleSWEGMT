@@ -9,9 +9,15 @@ public class AttackState : StateBaseClass
     public int attackDamage = 10;
     public float attackDelay = 2;
     private float currentDelay;
-    
+
     //Gameplay Programmers Script for the Player Health
+    private ReferenceManager referenceManager;
     private PlayerDeath playerDeath;
+
+    private void Start()
+    {
+        playerDeath = referenceManager.GetPlayer().GetComponent<PlayerDeath>();
+    }
     public AttackState() 
     {
         //When a character goes to the attack state, this will delay the attack by x amount
