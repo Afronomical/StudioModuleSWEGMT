@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b1a46a9717089a54caa3aa13184e25b4
+guid: fa3d8dc95148b584e8689a24344808ec
 AssetOrigin:
   serializedVersion: 1
   productId: 164725
@@ -112,6 +112,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1

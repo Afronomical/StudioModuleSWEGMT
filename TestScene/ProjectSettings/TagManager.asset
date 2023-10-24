@@ -5,11 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - EntitySpawnPoint
-  - enemyMeleeRadius
-  - enemy
-  - Villager
+  - PlayerSpawnPoint
   - Hunter
   - feedingZone
+  - Villager
+  - CheatMenu
   layers:
   - Default
   - TransparentFX
@@ -17,7 +17,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Unwalkable
   - 
   - 
   - 
