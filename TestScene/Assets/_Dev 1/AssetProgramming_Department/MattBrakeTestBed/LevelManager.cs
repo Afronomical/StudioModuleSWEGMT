@@ -40,6 +40,7 @@ public class LevelManager : MonoBehaviour
 
     public async void LoadScene(string SceneName)
     {
+ 
         _target = 1f; 
         _progressBar.fillAmount = 0.1f;
         
