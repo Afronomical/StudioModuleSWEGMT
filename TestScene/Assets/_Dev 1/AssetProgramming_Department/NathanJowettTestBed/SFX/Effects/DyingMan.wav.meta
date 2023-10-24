@@ -1,0 +1,29 @@
+fileFormatVersion: 2
+guid: aa86a07c7997b734c8d1fb562cb8a469
+AudioImporter:
+  externalObjects: {}
+  serializedVersion: 6
+  defaultSettings:
+    loadType: 0
+    sampleRateSetting: 0
+    sampleRateOverride: 44100
+    compressionFormat: 1
+    quality: 1
+    conversionMode: 0
+  platformSettingOverrides: {}
+  forceToMono: 0
+  normalize: 1
+  preloadAudioData: 1
+  loadInBackground: 0
+  ambisonic: 0
+  3D: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 153417
+  packageName: Horror Game Essentials
+  packageVersion: 1.0
+  assetPath: Assets/Audios/Blood&Gore/Blood/DyingMan.wav
+  uploadId: 385634
