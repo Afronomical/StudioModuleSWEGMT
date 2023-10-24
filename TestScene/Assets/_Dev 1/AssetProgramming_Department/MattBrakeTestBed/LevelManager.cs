@@ -22,11 +22,20 @@ public class LevelManager : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
+            //DontDestroyOnLoad(_loaderCanvas);  crashes unity 
         }
         else
         {
             Destroy(gameObject);
         }
+
+       
+    }
+
+    public void Start()
+    {
+        //_loaderCanvas.SetActive(false);
+        //DontDestroyOnLoad(_loaderCanvas);
     }
 
     public async void LoadScene(string SceneName)
@@ -64,6 +73,8 @@ public class LevelManager : MonoBehaviour
         scene.allowSceneActivation = true;
        
         _loaderCanvas.SetActive(false);
+
+        
 
     }
     private void Update()
