@@ -9,8 +9,7 @@ public class Feeding : MonoBehaviour
     public int minHunger = 0;
     public KeyCode healKey = KeyCode.E; // The key to trigger healing
     private bool canHeal = false; // To check if the player is inside the healing zone
-    public AICharacter aiCharacter;
-    public AICharacter aiCharacter1;
+    public List<AICharacter> aiCharacters; // Use a list to store references to AI characters
     public HungerBar hungerBarSlider;
     public PlayerDeath playerDeath; // Reference to the PlayerDeath script
 
@@ -40,17 +39,21 @@ public class Feeding : MonoBehaviour
     {
         if (canHeal && Input.GetKeyDown(healKey)) // can heal is true (player inside the zone) and e key is being pressed down
         {
-            if ((aiCharacter.currentState == AICharacter.States.Downed || aiCharacter1.currentState == AICharacter.States.Downed) && canHeal)
+            foreach (AICharacter aiChar in aiCharacters)
             {
-                currentHunger += 1;
-                hungerBarSlider.SetHunger(currentHunger);
+                if (aiChar.currentState == AICharacter.States.Downed)
+                {
+                    currentHunger += 1;
+                    hungerBarSlider.SetHunger(currentHunger);
 
-                // Call a method in the PlayerDeath script to increase player health
-                playerDeath.FeedAttack();
+                    // Call a method in the PlayerDeath script to increase player health
+                    playerDeath.FeedAttack();
+                }
             }
         }
     }
 }
+
 
 
 

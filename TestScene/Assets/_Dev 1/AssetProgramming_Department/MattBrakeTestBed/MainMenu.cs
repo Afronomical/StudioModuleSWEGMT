@@ -11,7 +11,8 @@ public class MainMenu : MonoBehaviour
     public void PlayGame()
     {
         Debug.Log("Play Game");
-        LevelManager.Instance.LoadScene("TestCaveScene");
+        SceneManager.LoadScene(2);
+        //LevelManager.Instance.LoadScene("TestCaveScene");
     }
 
     public void SettingsMenu()
