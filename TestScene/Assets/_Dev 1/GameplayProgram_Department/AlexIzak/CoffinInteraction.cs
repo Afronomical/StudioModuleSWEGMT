@@ -11,6 +11,7 @@ public class CoffinInteraction : MonoBehaviour
     //private TMP_Text tooltip;
 
     public TMP_Text closedCoffin;
+    public TMP_Text stillHungry;
     public TMP_Text openCoffin;
     public TMP_Text useCoffin;
     public int hungerThreshold = 5; //This might need to be moved into 
@@ -27,6 +28,7 @@ public class CoffinInteraction : MonoBehaviour
         //tooltip.enabled = false;
 
         closedCoffin.enabled = false;
+        stillHungry.enabled = false;
         openCoffin.enabled = false;
         useCoffin.enabled = false;
     }
@@ -34,11 +36,15 @@ public class CoffinInteraction : MonoBehaviour
     //When coffin is closed
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.collider.CompareTag("Player"))
+        if(collision.collider.CompareTag("Player") && hungerCheck.currentHunger == 0)
         {
             //Display a message to the player that you cant sleep yet
             closedCoffin.enabled = true;
             print("Can't sleep yet, I must feast first!");
+        }
+        else if(collision.collider.CompareTag("Player") && hungerCheck.currentHunger > 0 && hungerCheck.currentHunger < hungerThreshold)
+        {
+            stillHungry.enabled = true;
         }
     }
 
@@ -47,6 +53,7 @@ public class CoffinInteraction : MonoBehaviour
         if (collision.collider.CompareTag("Player"))
         {
             closedCoffin.enabled = false; //Remove tooltip off screen
+            stillHungry.enabled = false;
         }
     }
 
@@ -64,6 +71,7 @@ public class CoffinInteraction : MonoBehaviour
         else
         {
             openCoffin.enabled = false;
+
         }
     }
 
