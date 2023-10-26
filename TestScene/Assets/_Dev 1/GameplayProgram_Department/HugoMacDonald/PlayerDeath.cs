@@ -1,5 +1,8 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
+using System.Collections.Generic;
+
 
 public class PlayerDeath : MonoBehaviour
 {
@@ -9,14 +12,17 @@ public class PlayerDeath : MonoBehaviour
     private Animator animator;
     public HealthBarScript healthBarScript;
     public bool godMode;
+    public bool canDamage = true;
+    public int sunDamage = 5;
     //public float SetHealth;
 
 
     private void Start()
-    {
+    {   
         currentHealth = maxHealth;
         animator = GetComponent<Animator>();
         healthBarScript.SetMaxHealth(maxHealth);
+        canDamage = true;
     }
 
     private void Update()
@@ -26,9 +32,9 @@ public class PlayerDeath : MonoBehaviour
         {
             Die();
         }
-                        
 
-            //if godmode enabled set health to 100 every tick so is esentailly immortal
+
+        //if godmode enabled set health to 100 every tick so is esentailly immortal
         if (godMode)
         {
             currentHealth = maxHealth;
@@ -69,7 +75,7 @@ public class PlayerDeath : MonoBehaviour
         {
             //animator.SetTrigger("Die"); // Make sure your Animator has a "Die" trigger.
         }
-        
+
         gameObject.SetActive(false);
         //Instantiate(...);              //spawn "YOU DIED" ui
         Invoke("deathAfterDelay", 1);
@@ -79,6 +85,15 @@ public class PlayerDeath : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
+
+    public void SunRiseDamage()
+    {
+        currentHealth = currentHealth - sunDamage;
+        healthBarScript.setHealth(currentHealth);
+    }
+
+
+
 }
 
 
