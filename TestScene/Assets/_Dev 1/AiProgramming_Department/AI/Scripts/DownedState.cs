@@ -26,6 +26,10 @@ public class DownedState : StateBaseClass
 
     public override void UpdateLogic()
     {
+        //change colour to indicate state change
+        this.GetComponent<SpriteRenderer>().color = Color.white;
+
+
         if (checkTime > 0)  // Wait a bit before running 
             checkTime -= Time.deltaTime;
 

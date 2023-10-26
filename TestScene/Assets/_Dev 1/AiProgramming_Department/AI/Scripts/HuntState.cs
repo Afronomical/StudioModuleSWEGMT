@@ -14,6 +14,11 @@ public class HuntState : StateBaseClass
 
     public override void UpdateLogic()
     {
+
+        //change colour to indicate state change
+        this.GetComponent<SpriteRenderer>().color = Color.magenta;
+
+
         refreshTimer -= Time.deltaTime;
 
         if (refreshTimer <= 0)
