@@ -4,6 +4,7 @@ using UnityEngine.Audio;
 using UnityEngine;
 
 
+
 [System.Serializable]
 public class VFX_Controller
 {
@@ -19,3 +20,5 @@ public class VFX_Controller
     [HideInInspector]
     public AudioSource source;
 }
+
+//AudioManager.Manager.Play("PlayerAttack");

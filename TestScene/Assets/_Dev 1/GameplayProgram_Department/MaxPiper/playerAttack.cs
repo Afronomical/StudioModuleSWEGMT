@@ -78,8 +78,10 @@ public class playerAttack : MonoBehaviour
         //calls damage enemy when LMB is pressed
         if (Input.GetKey(KeyCode.Mouse0))
         {
+            
             if (canHit)
             {
+                
                 damageEnemy();
                 canHit = false;
             }

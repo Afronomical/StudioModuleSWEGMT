@@ -10,15 +10,15 @@ public class AudioManager : MonoBehaviour
     public VFX_Controller[] Sounds;
     public Music_Controller[] Music;
 
-    public static AudioManager instance;
+    public static AudioManager Manager;
 
     private void Awake()
     {
-        if (instance == null)
-            instance = this;
+        if (AudioManager.Manager == null)
+            AudioManager.Manager = this;
         else
         {
-            Destroy(gameObject);
+            Destroy(this);
             return;
         }
         DontDestroyOnLoad(gameObject);
@@ -45,17 +45,22 @@ public class AudioManager : MonoBehaviour
     public void Play(string name)
     {
         VFX_Controller s = Array.Find(Sounds, VFX_Controller => VFX_Controller.Name == name);
-
+        s.source.Play();
         Music_Controller m = Array.Find(Music, Music_Controller => Music_Controller.Name == name);
+        
+        m.source.Play();
 
-
-        if (s == null || m == null)
+        if (s == null )
         {
             Debug.Log("Sound: " + name + " not found!");
             return;
         }
-        s.source.Play();
-        m.source.Play();
+        if (m == null)
+        {
+            Debug.Log("Music: " + name + " not found!");
+            return;
+        }
+
     }
 
 }
