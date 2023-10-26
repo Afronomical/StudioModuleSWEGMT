@@ -86,7 +86,7 @@ public class PlayerDeath : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
-    public void SunRiseDamage()
+    public void SunRiseDamage() // Deals Damage While The Player Is In Sun Light
     {
         currentHealth = currentHealth - sunDamage;
         healthBarScript.setHealth(currentHealth);
