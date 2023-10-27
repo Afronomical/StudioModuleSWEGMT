@@ -14,6 +14,7 @@ public class MainMenu : MonoBehaviour
     public void PlayGame()
     {
         AudioManager.Manager.PlayVFX("UI_Click");
+        AudioManager.Manager.StopAudio("MenuMusic");
         Debug.Log("Play Game");
         SceneManager.LoadScene(2);
         //LevelManager.Instance.LoadScene("TestCaveScene");

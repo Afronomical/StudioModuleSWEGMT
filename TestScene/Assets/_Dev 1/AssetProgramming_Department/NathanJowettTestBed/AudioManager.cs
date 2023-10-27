@@ -39,6 +39,7 @@ public class AudioManager : MonoBehaviour
             m.source.volume = m.volume;
             m.source.pitch = m.pitch;
             m.source.loop = m.Loop;
+            
         }
     }
 
@@ -71,6 +72,23 @@ public class AudioManager : MonoBehaviour
         }
 
     }
+    public void StopAudio(string name)
+    {
+        Music_Controller m = Array.Find(Music, music=> music.Name== name);
+        if(m != null)
+        {
+            m.source.Stop();
+        }
+    }
+    public void StopSoundEffect(string name)
+    {
+        VFX_Controller s = Array.Find(Sounds,sound=> sound.Name == name);
+        if(s != null)
+        {
+            s.source.Stop();
+        }
+    }
+    
 
 
 }
