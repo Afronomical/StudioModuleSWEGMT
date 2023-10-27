@@ -94,20 +94,20 @@ MonoBehaviour:
     Loop: 1
     source: {fileID: 0}
   - Name: NPC_TakeDamage
-    clip: {fileID: 0}
-    volume: 0.474
+    clip: {fileID: 8300000, guid: 97cb1199f33074ead900715f9db9c6f3, type: 3}
+    volume: 0.366
     pitch: 1
     Loop: 0
     source: {fileID: 0}
   - Name: NPC_Death
     clip: {fileID: 8300000, guid: ddc650b445586454e9e4f5e74d58d0ed, type: 3}
-    volume: 1
+    volume: 0.28
     pitch: 1
     Loop: 0
     source: {fileID: 0}
   - Name: NPC_MeleeAttack
-    clip: {fileID: 8300000, guid: 97cb1199f33074ead900715f9db9c6f3, type: 3}
-    volume: 1
+    clip: {fileID: 8300000, guid: 13182107f288fdc47a11f9216c8f062b, type: 3}
+    volume: 0.455
     pitch: 1
     Loop: 0
     source: {fileID: 0}
@@ -118,8 +118,8 @@ MonoBehaviour:
     Loop: 0
     source: {fileID: 0}
   - Name: NPC_Downed
-    clip: {fileID: 0}
-    volume: 1
+    clip: {fileID: 8300000, guid: ca5bc1cf4b7f0e446bf6c4a9c7975b50, type: 3}
+    volume: 0.539
     pitch: 1
     Loop: 0
     source: {fileID: 0}
@@ -167,7 +167,7 @@ MonoBehaviour:
     Loop: 0
     source: {fileID: 0}
   - Name: LevelMusic
-    clip: {fileID: 8300000, guid: fd7841e04d96b9041897e7c94f59bebd, type: 3}
+    clip: {fileID: 8300000, guid: 5a1944aa7c9b294499f993b3c5b484f5, type: 3}
     volume: 0.26
     pitch: 1
     Loop: 0

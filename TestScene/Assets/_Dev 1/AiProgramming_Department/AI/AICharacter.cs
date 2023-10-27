@@ -93,12 +93,15 @@ public class AICharacter : MonoBehaviour
                     stateScript = transform.AddComponent<RunState>();
                     break;
                 case States.Attack:
+                    AudioManager.Manager.PlayVFX("NPC_MeleeAttack");
                     stateScript = transform.AddComponent<AttackState>();
                     break;
                 case States.Downed:
+                    AudioManager.Manager.PlayVFX("NPC_Downed");
                     stateScript = transform.AddComponent<DownedState>();
                     break;
                 case States.Dead:
+                    AudioManager.Manager.PlayVFX("NPC_Death");
                     stateScript = transform.AddComponent<DeadState>();
                     break;
                 case States.Hunt:

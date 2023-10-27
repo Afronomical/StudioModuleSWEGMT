@@ -47,13 +47,15 @@ public class playerAttack : MonoBehaviour
     void damageEnemy()
     {
         
-        
-        
+
+
+
         if (enemyTarg != null)
         {
-
+            
             Debug.Log(enemyTarg.name);
             AiEnemy.health -= damage;
+            AudioManager.Manager.PlayVFX("NPC_TakeDamage");
         }
 
 
