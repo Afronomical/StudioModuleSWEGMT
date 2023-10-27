@@ -8,9 +8,12 @@ using TMPro;
 
 public class CountdownTimer : MonoBehaviour
 {
-    public float timeRemaining = 60f;
+    
+    public float timeRemaining = 120f;
     public bool timeIsRunning = true;
     public TMP_Text timeText;
+    public Transform rotatingCover;
+    public float rotationSpeed = 90f; 
 
     void Start()
     {
@@ -23,8 +26,11 @@ public class CountdownTimer : MonoBehaviour
         { 
             if(timeRemaining >= 0)
             {
-                timeRemaining -= Time.deltaTime;
                 DisplayTime(timeRemaining);
+                timeRemaining -= Time.deltaTime;
+                float rotationAngle = -180 * (1 - (timeRemaining / 60f));
+
+                rotatingCover.rotation = Quaternion.Euler(0,0,rotationAngle);
             }
             else
             {
