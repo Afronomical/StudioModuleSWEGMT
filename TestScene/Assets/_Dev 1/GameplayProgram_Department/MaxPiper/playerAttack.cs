@@ -81,7 +81,7 @@ public class playerAttack : MonoBehaviour
             
             if (canHit)
             {
-                
+                AudioManager.Manager.PlayVFX("PlayerAttack");
                 damageEnemy();
                 canHit = false;
             }

@@ -21,4 +21,22 @@ public class VFX_Controller
     public AudioSource source;
 }
 
+//AudioManager.Manager.Play("PlayerMove");
 //AudioManager.Manager.Play("PlayerAttack");
+//AudioManager.Manager.Play("PlayerFeed");
+//AudioManager.Manager.Play("PlayerTakeDamage");
+//AudioManager.Manager.Play("PlayerDeath");
+//AudioManager.Manager.Play("PlayerHeal");
+//AudioManager.Manager.Play("PlayerDodge");
+//AudioManager.Manager.Play("PlayerLowHealth");
+//AudioManager.Manager.Play("NPC_TakeDamage");
+//AudioManager.Manager.Play("NPC_Death");
+//AudioManager.Manager.Play("NPC_MeleeAttack");
+//AudioManager.Manager.Play("NPC_RangedAttack");
+//AudioManager.Manager.Play("NPC_Downed");
+//AudioManager.Manager.Play("NPC_Scream");
+//AudioManager.Manager.Play("NPC_Alerted");
+//AudioManager.Manager.Play("UI_Click");
+//AudioManager.Manager.Play("UI_Loading");
+//AudioManager.Manager.Play("EndGame_Victory");
+

@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-
+        AudioManager.Manager.PlayMusic("LevelMusic");
         rb = GetComponent<Rigidbody2D>();
         canDodge = true;
         canBatForm = true;
@@ -43,6 +43,8 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+         
+
         AnimateMovement();
 
         if (isDodging)
@@ -56,6 +58,7 @@ public class PlayerController : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.Space) && canDodge)
         {
+            AudioManager.Manager.PlayVFX("PlayerDodge");
             StartCoroutine(Dodge());
         }
         else if (Input.GetKeyDown(KeyCode.LeftControl) && canBatForm)
@@ -64,6 +67,7 @@ public class PlayerController : MonoBehaviour
         }
         else 
         {
+           
             rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * speed, Input.GetAxisRaw("Vertical") * speed);
         }
 
@@ -72,20 +76,23 @@ public class PlayerController : MonoBehaviour
     private void AnimateMovement()
     {
         Vector2 movementInput = new(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        
 
         animator.SetFloat("MovementX", movementInput.x);
         animator.SetFloat("MovementY", movementInput.y);
 
         if (movementInput != Vector2.zero)
         {
+            
             lastMovementInput = movementInput;
             animationManager.ChangeAnimationState(AnimationManager.AnimationStates.Run);
+            
         }
         else
         {
             animator.SetFloat("MovementX", lastMovementInput.x);
             animator.SetFloat("MovementY", lastMovementInput.y);
-
+            //AudioManager.Manager.PlayVFX("PlayerMove");
             animationManager.ChangeAnimationState(AnimationManager.AnimationStates.Idle);
         }
     }

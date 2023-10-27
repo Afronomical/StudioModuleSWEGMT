@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System;
 using UnityEngine;
 using UnityEngine.Audio;
-
+using UnityEngine.Rendering;
 
 public class AudioManager : MonoBehaviour
 {
@@ -42,19 +42,28 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    public void Play(string name)
+    public void PlayVFX(string name)
     {
         VFX_Controller s = Array.Find(Sounds, VFX_Controller => VFX_Controller.Name == name);
         s.source.Play();
         Music_Controller m = Array.Find(Music, Music_Controller => Music_Controller.Name == name);
         
-        m.source.Play();
+       // m.source.Play();
 
         if (s == null )
         {
             Debug.Log("Sound: " + name + " not found!");
             return;
         }
+        
+
+    }
+
+    public void PlayMusic(String  name)
+    {
+        Music_Controller m = Array.Find(Music, Music_Controller => Music_Controller.Name == name);
+
+        m.source.Play();
         if (m == null)
         {
             Debug.Log("Music: " + name + " not found!");
@@ -62,6 +71,7 @@ public class AudioManager : MonoBehaviour
         }
 
     }
+
 
 }
 

@@ -43,6 +43,7 @@ public class Feeding : MonoBehaviour
             {
                 if (aiChar.currentState == AICharacter.States.Downed)
                 {
+                    //AudioManager.Manager.PlayVFX("PlayerFeed");
                     currentHunger += 1;
                     hungerBarSlider.SetHunger(currentHunger);
 

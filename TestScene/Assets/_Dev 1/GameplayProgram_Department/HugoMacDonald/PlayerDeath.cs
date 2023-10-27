@@ -24,6 +24,7 @@ public class PlayerDeath : MonoBehaviour
 
         if (currentHealth <= 0)
         {
+            AudioManager.Manager.PlayVFX("PlayerDeath");
             Die();
         }
                         
@@ -52,6 +53,7 @@ public class PlayerDeath : MonoBehaviour
 
     public void SetHealth(int damage)
     {
+        AudioManager.Manager.PlayVFX("PlayerTakeDamage");
         currentHealth -= damage;
         healthBarScript.setHealth(currentHealth);
     }
