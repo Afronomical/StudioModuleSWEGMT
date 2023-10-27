@@ -16,6 +16,8 @@ public class AttackState : StateBaseClass
 
     private void Start()
     {
+
+        referenceManager = FindObjectOfType<ReferenceManager>();
         playerDeath = referenceManager.GetPlayer().GetComponent<PlayerDeath>();
     }
     public AttackState() 
