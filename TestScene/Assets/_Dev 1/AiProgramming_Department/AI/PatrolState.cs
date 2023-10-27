@@ -17,6 +17,7 @@ public class PatrolState : StateBaseClass
 
     private PathfindingSmoothing path;
     private int pathIndex = 0;
+    private int pathErrorCheck;
     private float speedPercent;
 
     public override void UpdateLogic()
@@ -81,6 +82,7 @@ public class PatrolState : StateBaseClass
     {
         walkDestination = new Vector2(character.GetPosition().x + Random.Range(-maxWalkDistance, maxWalkDistance), character.GetPosition().y + Random.Range(-maxWalkDistance, maxWalkDistance));
         PathfindingRequestManager.RequestPath(transform.position, walkDestination, this, OnPathFound);
+        pathErrorCheck++;
     }
 
 
@@ -91,6 +93,13 @@ public class PatrolState : StateBaseClass
             path = new PathfindingSmoothing(waypoints, transform.position, character.turnDistance, stopDistance);
             pathIndex = 0;
             speedPercent = 1;
+            pathErrorCheck = 0;
+        }
+        else if (pathErrorCheck > 250)
+        {
+            Debug.Log(character.transform.name + " Patrol state pathfinding error");
+            if (PathfindingRequestManager.requestListSize < 5)
+                FindWalkTarget();
         }
         else
             FindWalkTarget();  // Try and find a new path

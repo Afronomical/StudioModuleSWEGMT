@@ -21,10 +21,11 @@ public class RunState : StateBaseClass
 
     private Vector2 runDestination = Vector2.zero;
     private PathfindingSmoothing path;
+    private int pathErrorCheck;
     private int pathIndex = 0;
     private float speedPercent;
 
-    private float checkTime;
+    public float checkTime;
 
 
     public RunState()
@@ -85,6 +86,7 @@ public class RunState : StateBaseClass
                                      -moveVector.y + Random.Range(-runOffset, runOffset)) * Random.Range(minRunDistance, maxRunDistance);
 
         PathfindingRequestManager.RequestPath(transform.position, runDestination, this, OnPathFound);
+        pathErrorCheck++;
     }
 
 
@@ -95,6 +97,13 @@ public class RunState : StateBaseClass
             path = new PathfindingSmoothing(waypoints, transform.position, character.turnDistance, stopDistance);
             pathIndex = 0;
             speedPercent = 1;
+            pathErrorCheck = 0;
+        }
+        else if (pathErrorCheck > 250)
+        {
+            Debug.Log(character.transform.name + " Run state pathfinding error");
+            if (PathfindingRequestManager.requestListSize < 5)
+                FindWalkTarget();
         }
         else
             FindWalkTarget();  // Try and find a new path
