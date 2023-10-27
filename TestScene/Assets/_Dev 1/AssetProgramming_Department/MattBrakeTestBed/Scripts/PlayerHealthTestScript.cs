@@ -34,6 +34,7 @@ public class PlayerHealthTestScript : MonoBehaviour
             if(currentHealth > minHealth) 
             {
                 Debug.Log("Damage Taken!");
+                
             }
             else
             {

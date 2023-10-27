@@ -28,7 +28,7 @@ public class CountdownTimer : MonoBehaviour
             {
                 DisplayTime(timeRemaining);
                 timeRemaining -= Time.deltaTime;
-                float rotationAngle = -180 * (1 - (timeRemaining / 60f));
+                float rotationAngle = 180 * (1 - (timeRemaining / 60f));
 
                 rotatingCover.rotation = Quaternion.Euler(0,0,rotationAngle);
             }
