@@ -10,6 +10,7 @@ public class MainMenu : MonoBehaviour
     
     public void PlayGame()
     {
+        AudioManager.Manager.PlayVFX("UI_Click");
         Debug.Log("Play Game");
         SceneManager.LoadScene(2);
         //LevelManager.Instance.LoadScene("TestCaveScene");
@@ -17,6 +18,7 @@ public class MainMenu : MonoBehaviour
 
     public void SettingsMenu()
     {
+        AudioManager.Manager.PlayVFX("UI_Click");
         Debug.Log("Settings");
         
 
@@ -24,12 +26,14 @@ public class MainMenu : MonoBehaviour
 
     public void InstructionsMenu()
     {
+        AudioManager.Manager.PlayVFX("UI_Click");
         Debug.Log("Instructions");
         SceneManager.LoadScene(1);
     }
 
     public void ExitGame()
     {
+        AudioManager.Manager.PlayVFX("UI_Click");
         Debug.Log("GameQuit");
         Application.Quit();
     }
