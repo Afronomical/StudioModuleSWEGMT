@@ -418,7 +418,7 @@ MonoBehaviour:
   MaxHealth: 100
   currentHealth: 0
   minHealth: 0
-  floatingDamage: {fileID: 7907351951442812156, guid: 6f3a123f815ec40479af1dfa206b7166, type: 3}
+  floatingDamage: {fileID: 3144044576336324553, guid: 6f3a123f815ec40479af1dfa206b7166, type: 3}
   healthBar: {fileID: 1705232618}
 --- !u!4 &1980642869
 Transform:

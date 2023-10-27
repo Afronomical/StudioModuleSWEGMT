@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class PlayerHealthTestScript : MonoBehaviour
@@ -35,7 +36,7 @@ public class PlayerHealthTestScript : MonoBehaviour
             if(currentHealth > minHealth) 
             {
                 Debug.Log("Damage Taken!");
-                if(floatingDamage)
+                if(floatingDamage && currentHealth > 0)
                 {
                   showFloatingText();
 
@@ -59,6 +60,7 @@ public class PlayerHealthTestScript : MonoBehaviour
     }
     void showFloatingText()
     {
-        Instantiate(floatingDamage, transform.position, Quaternion.identity);
+       var go = Instantiate(floatingDamage, transform.position, Quaternion.identity,transform);
+        go.GetComponentInChildren<TextMeshProUGUI>().text = currentHealth.ToString();
     }
 }
