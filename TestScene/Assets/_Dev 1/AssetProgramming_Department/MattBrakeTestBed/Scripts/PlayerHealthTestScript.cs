@@ -7,6 +7,7 @@ public class PlayerHealthTestScript : MonoBehaviour
     public int MaxHealth = 100;
     public int currentHealth;
     public int minHealth = 0;
+    public GameObject floatingDamage; 
 
 
     public HealthBarScript healthBar;
@@ -34,6 +35,12 @@ public class PlayerHealthTestScript : MonoBehaviour
             if(currentHealth > minHealth) 
             {
                 Debug.Log("Damage Taken!");
+                if(floatingDamage)
+                {
+                  showFloatingText();
+
+                }
+                
             }
             else
             {
@@ -49,5 +56,9 @@ public class PlayerHealthTestScript : MonoBehaviour
     {
         currentHealth -= damage;
         healthBar.setHealth(currentHealth);
+    }
+    void showFloatingText()
+    {
+        Instantiate(floatingDamage, transform.position, Quaternion.identity);
     }
 }

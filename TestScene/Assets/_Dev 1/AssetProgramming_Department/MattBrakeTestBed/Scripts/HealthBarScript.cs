@@ -34,9 +34,12 @@ public class HealthBarScript : MonoBehaviour
     public void setHealth(int health)
     {
         _target = Mathf.Max(health, 0);
-        //StopCoroutine(drainHealthBar);
-        slider.value = health;
+        if(drainHealthBar!= null)
+        {
+            StopCoroutine(drainHealthBar);
+        }
         drainHealthBar = StartCoroutine(DrainHealthBar());
+        slider.value = health;
         UpdateHealthBarGradientAmount();
 
     }
@@ -48,21 +51,25 @@ public class HealthBarScript : MonoBehaviour
         float healthPercentage = currentHealth / maxHealth; 
         
         _image.color = healthBarGradient.Evaluate(healthPercentage);
+        
     }
 
     private IEnumerator DrainHealthBar()
     {
-        float fillamount = _image.fillAmount; 
-        Color currentColour = _image.color;
-
+        float Startfillamount = _image.fillAmount;
+        float endFillAmount = _target / slider.maxValue;
         float elapsedTime = 0f; 
-        while(_image.fillAmount > _target)
+        
+        //Color currentColour = _image.color;
+
+        while(elapsedTime < _timeToDrain)
         {
             elapsedTime += Time.deltaTime;
-            float lerpValue = Mathf.Lerp(fillamount, _target,(elapsedTime / _timeToDrain));
-            _image.fillAmount = lerpValue;
+            float lerpValue = elapsedTime / _timeToDrain;
+            _image.fillAmount = Mathf.Lerp(Startfillamount, endFillAmount, lerpValue);
             yield return null; 
         }
+        _image.fillAmount = endFillAmount;
     }
     
 }
