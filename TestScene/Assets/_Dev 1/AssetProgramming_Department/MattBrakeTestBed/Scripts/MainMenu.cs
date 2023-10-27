@@ -5,9 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    
-    
-    
+    private void Start()
+    {
+        AudioManager.Manager.PlayMusic("MenuMusic");
+    }
+
+
     public void PlayGame()
     {
         AudioManager.Manager.PlayVFX("UI_Click");

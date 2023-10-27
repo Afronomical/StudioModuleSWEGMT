@@ -161,16 +161,16 @@ MonoBehaviour:
     source: {fileID: 0}
   Music:
   - Name: MenuMusic
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0
-    Loop: 0
+    clip: {fileID: 8300000, guid: e2a073a65e81749fdb085ab52ae881e6, type: 3}
+    volume: 1
+    pitch: 1
+    Loop: 1
     source: {fileID: 0}
   - Name: LevelMusic
     clip: {fileID: 8300000, guid: 5a1944aa7c9b294499f993b3c5b484f5, type: 3}
     volume: 0.26
     pitch: 1
-    Loop: 0
+    Loop: 1
     source: {fileID: 0}
   - Name: BossMusic
     clip: {fileID: 0}
