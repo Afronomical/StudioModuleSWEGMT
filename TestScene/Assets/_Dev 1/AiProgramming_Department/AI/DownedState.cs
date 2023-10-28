@@ -41,6 +41,7 @@ public class DownedState : StateBaseClass
                         path = new PathfindingSmoothing(null, Vector3.zero, 0, 0);
                         crawlDestination = Vector2.zero;  // Stop to look around and see if they escaped
                         checkTime = Random.Range(minCheckTime, maxCheckTime);
+                        character.isMoving = false;
                         FindWalkTarget();
                         return;
                     }
@@ -68,6 +69,8 @@ public class DownedState : StateBaseClass
 
             else
                 FindWalkTarget();
+
+            character.isMoving = true;
         }
     }
 

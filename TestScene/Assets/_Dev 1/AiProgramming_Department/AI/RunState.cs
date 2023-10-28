@@ -51,6 +51,7 @@ public class RunState : StateBaseClass
                         runDestination = Vector2.zero;  // Stop to look around and see if they escaped
                         checkTime = Random.Range(minCheckTime, maxCheckTime);
                         FindWalkTarget();
+                        character.isMoving = false;
                         return;
                     }
                     else  // Has reached a checkpoint
@@ -74,6 +75,8 @@ public class RunState : StateBaseClass
             }
             else
                 FindWalkTarget();
+
+            character.isMoving = true;
         }
     }
 

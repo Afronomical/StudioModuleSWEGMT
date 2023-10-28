@@ -42,6 +42,7 @@ public class AICharacter : MonoBehaviour
     [Header("States")]
     public States currentState;
     public StateBaseClass stateScript;
+    public bool isMoving;
 
     public GameObject player;
 

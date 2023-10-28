@@ -22,6 +22,7 @@ public class StateMachineController : MonoBehaviour
     private void Start()
     {
         character = GetComponent<AICharacter>();
+        changeStateTimer = UnityEngine.Random.Range(-2.5f, changeStateTime);
     }
 
 
@@ -59,7 +60,10 @@ public class StateMachineController : MonoBehaviour
 
 
         if (!StuckCheck())  // Check to see if the character is stuck on an object
+        {
+            character.isMoving = false;
             character.ChangeState(AICharacter.States.None);
+        }
         lastPosition = transform.position;  // Update the last position of this character
     }
 
@@ -77,7 +81,7 @@ public class StateMachineController : MonoBehaviour
         {
             changeStateTimer = changeStateTime;  // Don't stop checking if the state can change
 
-            if (GetComponent<RunState>().checkTime > 0 && (distance > detectionRange * 1.5f || RaycastToPlayer(detectionRange * 1.5f)))  // Only change state when they stop running
+            if (!character.isMoving && (distance > detectionRange * 1.5f || RaycastToPlayer(detectionRange * 1.5f)))  // Only change state when they stop running
                 character.ChangeState(AICharacter.States.Idle);
         }
 
@@ -122,6 +126,9 @@ public class StateMachineController : MonoBehaviour
 
     private bool StuckCheck()
     {
+        if (!character.isMoving)
+            return true;
+
         if (Vector3.Distance(lastPosition, transform.position) > 0.25f)  // They are moving
         {
             stuckCheckFrames = 0;
@@ -130,7 +137,7 @@ public class StateMachineController : MonoBehaviour
         else  // They haven't moved enough
         {
             stuckCheckFrames++;
-            if (stuckCheckFrames > 3)
+            if (stuckCheckFrames > 2)
             {
                 stuckCheckFrames = 0;
                 return false;  // They are stuck

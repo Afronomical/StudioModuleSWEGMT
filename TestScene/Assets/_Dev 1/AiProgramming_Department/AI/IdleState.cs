@@ -52,6 +52,7 @@ public class IdleState : StateBaseClass
         if (idleTime <= 0)
         {
             walking = true;
+            character.isMoving = true;
             FindWalkTarget();
         }
     }
@@ -68,6 +69,7 @@ public class IdleState : StateBaseClass
                     path = new PathfindingSmoothing(null, Vector3.zero, 0, 0);
                     walking = false;
                     idleTime = Random.Range(minIdleTime, maxIdleTime);  // How long the character will stand still for
+                    character.isMoving = false;
                     return;
                 }
                 else  // Has reached a checkpoint

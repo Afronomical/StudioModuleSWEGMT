@@ -13,6 +13,7 @@ public class HuntState : StateBaseClass
     private int pathIndex = 0;
     private int pathErrorCheck;
 
+
     public override void UpdateLogic()
     {
         refreshTimer -= Time.deltaTime;
@@ -56,6 +57,7 @@ public class HuntState : StateBaseClass
             path = new PathfindingSmoothing(waypoints, transform.position, character.turnDistance, 0);
             pathIndex = 0;
             pathErrorCheck = 0;
+            character.isMoving = true;
         }
         else if (pathErrorCheck > 250)
         {
