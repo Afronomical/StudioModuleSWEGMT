@@ -73,11 +73,15 @@ public class StateMachineController : MonoBehaviour
         }
         else if(character.characterType == AICharacter.CharacterTypes.RangedHunter)
         {
-            if(distance < detectionRange)
+            if(distance < attackRange)
             {
                 character.ChangeState(AICharacter.States.Shoot);
-
             }
+            else if(distance < detectionRange && distance > attackRange)
+            {
+                character.ChangeState(AICharacter.States.Hunt);
+            }
+            
             else if(distance > detectionRange)
             {
                 character.ChangeState(AICharacter.States.Patrol);

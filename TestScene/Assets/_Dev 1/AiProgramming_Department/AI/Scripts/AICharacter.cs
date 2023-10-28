@@ -46,7 +46,7 @@ public class AICharacter : MonoBehaviour
 
     public GameObject player;
 
-
+    public GameObject bulletPrefab;
 
     void Start()
     {
