@@ -10,6 +10,9 @@ TagManager:
   - feedingZone
   - Villager
   - CheatMenu
+  - enemyMeleeRadius
+  - enemy
+  - RangedHunter
   layers:
   - Default
   - TransparentFX

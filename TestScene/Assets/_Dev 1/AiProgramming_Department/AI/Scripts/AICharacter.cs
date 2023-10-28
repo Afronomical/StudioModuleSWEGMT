@@ -15,7 +15,8 @@ public class AICharacter : MonoBehaviour
     public enum CharacterTypes
     {
         Villager,
-        Hunter
+        Hunter,
+        RangedHunter
     }
 
     public enum States
@@ -27,7 +28,8 @@ public class AICharacter : MonoBehaviour
         Patrol,
         Attack,
         Run,
-        Hunt //added hunt state
+        Hunt, //added hunt state
+        Shoot
     }
 
 
@@ -44,7 +46,7 @@ public class AICharacter : MonoBehaviour
 
     public GameObject player;
 
-
+    public GameObject bulletPrefab;
 
     void Start()
     {
@@ -107,7 +109,9 @@ public class AICharacter : MonoBehaviour
                 case States.Hunt:
                     stateScript = transform.AddComponent<HuntState>();
                     break;
-
+                case States.Shoot:
+                    stateScript = transform.AddComponent<ShootState>();
+                    break;
                 //------------------------------------ Add new states in here
 
                 default:

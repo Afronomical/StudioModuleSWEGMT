@@ -21,6 +21,17 @@ public class PatrolState : StateBaseClass
 
     public override void UpdateLogic()
     {
+        if(character.characterType == AICharacter.CharacterTypes.Hunter)
+        {
+            //change colour to indicate state change
+            this.GetComponent<SpriteRenderer>().color = Color.red;
+        }   
+        else if(character.characterType == AICharacter.CharacterTypes.RangedHunter)
+        {
+            this.GetComponent<SpriteRenderer>().color = Color.yellow;
+        }
+            
+
         if (walking)
             Patrol();
         else

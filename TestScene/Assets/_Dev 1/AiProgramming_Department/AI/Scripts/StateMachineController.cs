@@ -46,6 +46,7 @@ public class StateMachineController : MonoBehaviour
             if (distance < detectionRange)
             {
                 character.ChangeState(AICharacter.States.Run);
+
             }
             else
             {
@@ -68,6 +69,22 @@ public class StateMachineController : MonoBehaviour
             else
             {
                 character.ChangeState(AICharacter.States.Attack);
+            }
+        }
+        else if(character.characterType == AICharacter.CharacterTypes.RangedHunter)
+        {
+            if(distance < attackRange)
+            {
+                character.ChangeState(AICharacter.States.Shoot);
+            }
+            else if(distance < detectionRange && distance > attackRange)
+            {
+                character.ChangeState(AICharacter.States.Hunt);
+            }
+            
+            else if(distance > detectionRange)
+            {
+                character.ChangeState(AICharacter.States.Patrol);
             }
         }
     }

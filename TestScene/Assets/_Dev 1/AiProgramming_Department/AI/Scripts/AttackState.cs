@@ -16,7 +16,8 @@ public class AttackState : StateBaseClass
 
     private void Start()
     {
-        playerDeath = referenceManager.GetPlayer().GetComponent<PlayerDeath>();
+        //playerDeath = referenceManager.GetPlayer().GetComponent<PlayerDeath>();
+        playerDeath = character.player.GetComponent<PlayerDeath>();
     }
     public AttackState() 
     {
@@ -32,7 +33,7 @@ public class AttackState : StateBaseClass
             playerDeath = character.player.GetComponent<PlayerDeath>();
         }
         
-        Debug.Log("AI is attacking");
+        //Debug.Log("AI is attacking");
 
         //Counts down the delay
         currentDelay -= Time.deltaTime;

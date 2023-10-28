@@ -36,6 +36,9 @@ public class IdleState : StateBaseClass
 
     public override void UpdateLogic()
     {
+        //change colour to indicate state change
+        this.GetComponent<SpriteRenderer>().color = Color.green;
+
         //Debug.Log("Idle");
         if (walking)
             Walk();
