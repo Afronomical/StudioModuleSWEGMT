@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerDeath : MonoBehaviour
 {
+    private KnockBack knockBack;
     public int maxHealth = 100;
     public int currentHealth;
     //private int damageAmount = 10;
@@ -10,6 +11,11 @@ public class PlayerDeath : MonoBehaviour
     public HealthBarScript healthBarScript;
     public bool godMode;
     //public float SetHealth;
+    public bool isInvincible = false;
+    public float invincibilityDuration = 2.0f; // Adjust the duration as needed
+    private float invincibilityTimer = 0.0f;
+
+
 
 
     private void Start()
@@ -21,19 +27,35 @@ public class PlayerDeath : MonoBehaviour
 
     private void Update()
     {
+        if (isInvincible)
+        {
+            // Decrement the invincibility timer
+            invincibilityTimer -= Time.deltaTime;
+
+            // Check if invincibility has expired
+            if (invincibilityTimer <= 0)
+            {
+                isInvincible = false;
+            }
+        }
 
         if (currentHealth <= 0)
         {
-            AudioManager.Manager.PlayVFX("PlayerDeath");
             Die();
         }
-                        
 
-            //if godmode enabled set health to 100 every tick so is esentailly immortal
+
+        //if godmode enabled set health to 100 every tick so is esentailly immortal
         if (godMode)
         {
             currentHealth = maxHealth;
         }
+        // If the player is invincible, return early to prevent damage and knockbacks
+        if (isInvincible)
+        {
+            return;
+        }
+
     }
 
     //private void OnTriggerEnter2D(Collider2D collision)
@@ -53,9 +75,16 @@ public class PlayerDeath : MonoBehaviour
 
     public void SetHealth(int damage)
     {
-        AudioManager.Manager.PlayVFX("PlayerTakeDamage");
-        currentHealth -= damage;
-        healthBarScript.setHealth(currentHealth);
+        if (!isInvincible)
+        {
+            currentHealth -= damage;
+            healthBarScript.setHealth(currentHealth);
+
+            // Apply invincibility
+            isInvincible = true;
+            invincibilityTimer = invincibilityDuration;
+
+        }
     }
 
     public void FeedAttack()
@@ -71,7 +100,7 @@ public class PlayerDeath : MonoBehaviour
         {
             //animator.SetTrigger("Die"); // Make sure your Animator has a "Die" trigger.
         }
-        
+
         gameObject.SetActive(false);
         //Instantiate(...);              //spawn "YOU DIED" ui
         Invoke("deathAfterDelay", 1);
@@ -82,5 +111,3 @@ public class PlayerDeath : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 }
-
-
