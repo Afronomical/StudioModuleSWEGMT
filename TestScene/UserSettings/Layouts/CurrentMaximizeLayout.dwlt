@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 3904
+  controlID: 8652
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -149,7 +149,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 3847
+  controlID: 8595
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -174,7 +174,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 3807
+  controlID: 8586
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -756,9 +756,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 345.58984, y: 235.00421, z: -15.272771}
+    m_Target: {x: 364.878, y: 185.40598, z: -15.644933}
     speed: 2
-    m_Value: {x: 345.58984, y: 235.00421, z: -15.272771}
+    m_Value: {x: 364.878, y: 185.40598, z: -15.644933}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
