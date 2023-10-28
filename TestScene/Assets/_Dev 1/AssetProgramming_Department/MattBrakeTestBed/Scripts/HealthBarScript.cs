@@ -15,8 +15,7 @@ public class HealthBarScript : MonoBehaviour
     private float _target;
     private Coroutine drainHealthBar;
 
-
-    private void Start()
+    private void Awake()
     {
         _image = slider.fillRect.GetComponent<Image>(); 
         
