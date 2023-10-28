@@ -29,7 +29,7 @@ public class Bullet : MonoBehaviour
             player.GetComponent<PlayerDeath>().SetHealth(bulletDamage);
             Destroy(gameObject);
         }
-        if (collision.gameObject.CompareTag("Villager"))//add hunter and any other colliders here
+        else if (collision.gameObject.CompareTag("Villager"))//add hunter and any other colliders here
         {
             //add any checks to destroy bullet here
             Destroy(gameObject);
