@@ -5,7 +5,7 @@ using UnityEngine.TextCore.Text;
 
 public class HuntState : StateBaseClass
 {
-    public float pathRefreshTime = 1;  // How often a new path to the player should be found
+    public float pathRefreshTime = 1f;  // How often a new path to the player should be found
     private float refreshTimer = 0;
     private bool debugPath = false;
 
@@ -32,6 +32,7 @@ public class HuntState : StateBaseClass
                 if (pathIndex == path.finishLineIndex)  // Has finished
                 {
                     path = new PathfindingSmoothing(null, Vector3.zero, 0, 0);
+                    refreshTimer = 0;
                     return;
                 }
                 else  // Has reached a checkpoint
@@ -58,7 +59,7 @@ public class HuntState : StateBaseClass
         }
         else if (pathErrorCheck > 250)
         {
-            Debug.Log("Hunt error");
+            Debug.Log(character.transform.name + " Hunt state pathfinding error");
             if (PathfindingRequestManager.requestListSize < 5)
                 refreshTimer = 0;
             else

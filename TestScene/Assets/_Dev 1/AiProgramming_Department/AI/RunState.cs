@@ -11,8 +11,8 @@ using UnityEngine;
 
 public class RunState : StateBaseClass
 {
-    private float minRunDistance = 3;
-    private float maxRunDistance = 8;
+    private float minRunDistance = 8;
+    private float maxRunDistance = 20;
     private float runOffset = 0.5f;  // Stops them from running straight
     private float minCheckTime = 1;
     private float maxCheckTime = 3;
