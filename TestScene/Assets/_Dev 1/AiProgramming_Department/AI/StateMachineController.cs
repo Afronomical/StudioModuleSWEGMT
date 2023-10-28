@@ -39,7 +39,6 @@ public class StateMachineController : MonoBehaviour
     private void CheckState()
     {
         distance = Vector3.Distance(character.player.transform.position, character.transform.position);
-        lastPosition = transform.position;
 
 
         if (character.health == 0)
@@ -56,6 +55,12 @@ public class StateMachineController : MonoBehaviour
 
         else if (character.characterType == AICharacter.CharacterTypes.Hunter)
             HunterStates();
+
+
+
+        if (!StuckCheck())  // Check to see if the character is stuck on an object
+            character.ChangeState(AICharacter.States.None);
+        lastPosition = transform.position;  // Update the last position of this character
     }
 
 
@@ -73,9 +78,6 @@ public class StateMachineController : MonoBehaviour
             changeStateTimer = changeStateTime;  // Don't stop checking if the state can change
 
             if (GetComponent<RunState>().checkTime > 0 && (distance > detectionRange * 1.5f || RaycastToPlayer(detectionRange * 1.5f)))  // Only change state when they stop running
-                character.ChangeState(AICharacter.States.Idle);
-            
-            if (!StuckCheck())  // If the character is stuck on an object
                 character.ChangeState(AICharacter.States.Idle);
         }
 
@@ -120,7 +122,7 @@ public class StateMachineController : MonoBehaviour
 
     private bool StuckCheck()
     {
-        if (Vector3.Distance(lastPosition, transform.position) > 0.35f)  // They are moving
+        if (Vector3.Distance(lastPosition, transform.position) > 0.25f)  // They are moving
         {
             stuckCheckFrames = 0;
             return true;
@@ -128,8 +130,11 @@ public class StateMachineController : MonoBehaviour
         else  // They haven't moved enough
         {
             stuckCheckFrames++;
-            if (stuckCheckFrames > 10)
+            if (stuckCheckFrames > 3)
+            {
+                stuckCheckFrames = 0;
                 return false;  // They are stuck
+            }
             else
                 return true;  // They haven't been stuck long enough
         }

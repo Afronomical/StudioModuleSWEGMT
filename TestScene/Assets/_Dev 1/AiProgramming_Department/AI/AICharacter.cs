@@ -20,6 +20,7 @@ public class AICharacter : MonoBehaviour
 
     public enum States
     {
+        None,
         Idle,
         Roam,
         Downed,
@@ -27,7 +28,7 @@ public class AICharacter : MonoBehaviour
         Patrol,
         Attack,
         Run,
-        Hunt //added hunt state
+        Hunt,
     }
 
 
@@ -58,7 +59,8 @@ public class AICharacter : MonoBehaviour
 
     void Update()
     {
-        stateScript.UpdateLogic();  // Calls the virtual function for whatever state scripts
+        if (stateScript != null)
+            stateScript.UpdateLogic();  // Calls the virtual function for whatever state scripts
     }
 
 
@@ -72,10 +74,9 @@ public class AICharacter : MonoBehaviour
     {
         if (currentState != newState || stateScript == null)
         {
-            if (stateScript != null)
+            if (stateScript != null && currentState != States.None)
             {
-                //destroy current script attached to AI character
-                Destroy(stateScript);
+                Destroy(stateScript);  // Destroy current script attached to AI character
             }
 
             //set the current state of AI character to the new state
@@ -107,12 +108,16 @@ public class AICharacter : MonoBehaviour
 
                 //------------------------------------ Add new states in here
 
+                case States.None:
+                    stateScript = null;
+                    break;
                 default:
                     stateScript = transform.AddComponent<IdleState>();
                     break;
             }
 
-            stateScript.character = this;  // Set the reference that state scripts will use
+            if (stateScript != null)
+                stateScript.character = this;  // Set the reference that state scripts will use
         }
     }
 
