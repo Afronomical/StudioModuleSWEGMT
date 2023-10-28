@@ -1,36 +1,46 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using System.Collections;
-using System.Collections.Generic;
-
 
 public class PlayerDeath : MonoBehaviour
 {
+    private KnockBack knockBack;
     public int maxHealth = 100;
     public int currentHealth;
     //private int damageAmount = 10;
     private Animator animator;
     public HealthBarScript healthBarScript;
     public bool godMode;
-    public bool canDamage = true;
-    public int sunDamage = 5;
     //public float SetHealth;
+    public bool isInvincible = false;
+    public float invincibilityDuration = 2.0f; // Adjust the duration as needed
+    private float invincibilityTimer = 0.0f;
+
+
 
 
     private void Start()
-    {   
+    {
         currentHealth = maxHealth;
         animator = GetComponent<Animator>();
         healthBarScript.SetMaxHealth(maxHealth);
-        canDamage = true;
     }
 
     private void Update()
     {
+        if (isInvincible)
+        {
+            // Decrement the invincibility timer
+            invincibilityTimer -= Time.deltaTime;
+
+            // Check if invincibility has expired
+            if (invincibilityTimer <= 0)
+            {
+                isInvincible = false;
+            }
+        }
 
         if (currentHealth <= 0)
         {
-            AudioManager.Manager.PlayVFX("PlayerDeath");
             Die();
         }
 
@@ -40,6 +50,12 @@ public class PlayerDeath : MonoBehaviour
         {
             currentHealth = maxHealth;
         }
+        // If the player is invincible, return early to prevent damage and knockbacks
+        if (isInvincible)
+        {
+            return;
+        }
+
     }
 
     //private void OnTriggerEnter2D(Collider2D collision)
@@ -59,9 +75,16 @@ public class PlayerDeath : MonoBehaviour
 
     public void SetHealth(int damage)
     {
-        AudioManager.Manager.PlayVFX("PlayerTakeDamage");
-        currentHealth -= damage;
-        healthBarScript.setHealth(currentHealth);
+        if (!isInvincible)
+        {
+            currentHealth -= damage;
+            healthBarScript.setHealth(currentHealth);
+
+            // Apply invincibility
+            isInvincible = true;
+            invincibilityTimer = invincibilityDuration;
+
+        }
     }
 
     public void FeedAttack()
@@ -87,15 +110,4 @@ public class PlayerDeath : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
-
-    public void SunRiseDamage() // Deals Damage While The Player Is In Sun Light
-    {
-        currentHealth = currentHealth - sunDamage;
-        healthBarScript.setHealth(currentHealth);
-    }
-
-
-
 }
-
-
