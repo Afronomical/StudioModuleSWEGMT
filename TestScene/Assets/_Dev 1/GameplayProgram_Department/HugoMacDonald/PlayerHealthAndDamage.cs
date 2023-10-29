@@ -70,7 +70,7 @@ public class PlayerHealthAndDamage : MonoBehaviour
                     // Check if the player is not currently invincible and can take damage.
                     if (!isInvincible && canTakeDamage)
                     {
-                        AudioManager.Manager.PlayVFX("PlayerTakeDamage");
+                        AudioManager.Manager.PlaySFX("PlayerTakeDamage");
                         currentHealth -= damageAmount;
                         healthBarScript.setHealth(currentHealth);
                         Debug.Log(currentHealth);

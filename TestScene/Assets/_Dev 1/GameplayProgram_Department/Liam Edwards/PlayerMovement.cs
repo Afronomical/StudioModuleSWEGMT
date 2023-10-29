@@ -58,7 +58,7 @@ public class PlayerController : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.Space) && canDodge)
         {
-            AudioManager.Manager.PlayVFX("PlayerDodge");
+            AudioManager.Manager.PlaySFX("PlayerDodge");
             StartCoroutine(Dodge());
         }
         else if (Input.GetKeyDown(KeyCode.LeftControl) && canBatForm)

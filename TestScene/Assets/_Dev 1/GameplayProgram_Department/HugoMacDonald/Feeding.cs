@@ -44,6 +44,8 @@ public class Feeding : MonoBehaviour
     {
         if (canHeal && Input.GetKeyDown(healKey) && currentTarget != null)
         {
+            //Play Feed SFX
+            AudioManager.Manager.PlaySFX("PlayerFeed");
             // Feed on the current AI character in the feeding zone when it's downed
             currentHunger += 1;
             hungerBarSlider.SetHunger(currentHunger);

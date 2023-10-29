@@ -43,6 +43,7 @@ public class PlayerDeath : MonoBehaviour
 
         if (currentHealth <= 0)
         {
+            AudioManager.Manager.PlaySFX("PlayerDeath");
             Die();
         }
 
@@ -79,6 +80,7 @@ public class PlayerDeath : MonoBehaviour
     {
         if (!isInvincible)
         {
+            AudioManager.Manager.PlaySFX("PlayerTakeDamage");
             currentHealth -= damage;
             healthBarScript.setHealth(currentHealth);
             showFloatingText();
@@ -112,6 +114,7 @@ public class PlayerDeath : MonoBehaviour
     }
     private void deathAfterDelay()
     {
+        AudioManager.Manager.StopAudio("LevelMusic");
         SceneManager.LoadScene("MainMenu");
     }
 
