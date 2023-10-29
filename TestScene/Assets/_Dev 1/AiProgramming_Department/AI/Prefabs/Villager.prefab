@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 222520338588703597}
   - component: {fileID: 8867317865414971838}
   - component: {fileID: 2396381723003450701}
-  - component: {fileID: 145052052821008589}
+  - component: {fileID: 4141917933844150411}
   m_Layer: 0
   m_Name: Villager
   m_TagString: Villager
@@ -105,13 +105,15 @@ MonoBehaviour:
   characterType: 0
   health: 3
   walkSpeed: 2
-  runSpeed: 7
+  runSpeed: 6.5
   crawlSpeed: 0.5
   turnSpeed: 2
   turnDistance: 1
   currentState: 0
   stateScript: {fileID: 0}
+  isMoving: 0
   player: {fileID: 0}
+  bulletPrefab: {fileID: 0}
 --- !u!114 &222520338588703597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,6 +128,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detectionRange: 4
   attackRange: 1
+  unwalkableLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!61 &8867317865414971838
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -199,8 +204,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &145052052821008589
-BoxCollider2D:
+--- !u!58 &4141917933844150411
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -234,17 +239,7 @@ BoxCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Radius: 0.5
 --- !u!1 &9149072043081722755
 GameObject:
   m_ObjectHideFlags: 0

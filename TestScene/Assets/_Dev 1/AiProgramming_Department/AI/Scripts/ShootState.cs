@@ -34,6 +34,7 @@ public class ShootState : StateBaseClass
     {
         //change colour to indicate state change
         this.GetComponent<SpriteRenderer>().color = Color.cyan;
+        character.isMoving = false;
 
         //Counts down the delay
         currentDelay -= Time.deltaTime;
