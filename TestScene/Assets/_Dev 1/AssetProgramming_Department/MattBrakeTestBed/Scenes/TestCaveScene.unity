@@ -415,7 +415,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 1593312396}
-  loadingScreen: {fileID: 1991956523}
 --- !u!1 &711754304
 GameObject:
   m_ObjectHideFlags: 0
@@ -1878,11 +1877,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d0f79928628b4a4da97580fc537f066, type: 3}
---- !u!223 &1991956523 stripped
-Canvas:
-  m_CorrespondingSourceObject: {fileID: 6353505544783565160, guid: 3d0f79928628b4a4da97580fc537f066, type: 3}
-  m_PrefabInstance: {fileID: 1991956522}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2029151078
 GameObject:
   m_ObjectHideFlags: 0
