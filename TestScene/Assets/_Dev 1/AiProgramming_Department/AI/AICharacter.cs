@@ -149,14 +149,4 @@ public class AICharacter : MonoBehaviour
     {
         this.health = n;
     }
-
-    //private void OnCollisionEnter2D(Collision2D col)
-    //{
-    //    if (col.gameObject.tag == "Villager" || col.gameObject.tag == "Hunter")
-    //    {
-    //        Vector3 moveVector = col.transform.position - transform.position;
-    //        moveVector = moveVector.normalized;
-    //        col.transform.position = new Vector3(col.transform.position.x + -moveVector.x * 2, col.transform.position.y + -moveVector.y * 2);
-    //    }
-    //}
 }

@@ -59,11 +59,19 @@ public class StateMachineController : MonoBehaviour
 
 
 
-        if (!StuckCheck())  // Check to see if the character is stuck on an object
+
+
+        if (character.isMoving && character.currentState != AICharacter.States.Run)  // Check to see if the character is stuck on an object
         {
-            character.isMoving = false;
-            character.ChangeState(AICharacter.States.None);
+            if (StuckCheck())
+            {
+                character.isMoving = false;
+                character.ChangeState(AICharacter.States.None);
+            }
         }
+        else
+            stuckCheckFrames = 0;
+
         lastPosition = transform.position;  // Update the last position of this character
     }
 
@@ -81,7 +89,7 @@ public class StateMachineController : MonoBehaviour
         {
             changeStateTimer = changeStateTime;  // Don't stop checking if the state can change
 
-            if (!character.isMoving && (distance > detectionRange * 1.5f || RaycastToPlayer(detectionRange * 1.5f)))  // Only change state when they stop running
+            if (!character.isMoving && distance > detectionRange * 1.5f && RaycastToPlayer(detectionRange * 1.5f))  // Only change state when they stop running
                 character.ChangeState(AICharacter.States.Idle);
         }
 
@@ -109,10 +117,6 @@ public class StateMachineController : MonoBehaviour
 
         else if (distance < attackRange) // Attack when in attack range
             character.ChangeState(AICharacter.States.Attack);
-
-
-        else if (!StuckCheck())  // If the character is stuck on an object
-            character.ChangeState(AICharacter.States.Patrol);
     }
 
 
@@ -126,24 +130,21 @@ public class StateMachineController : MonoBehaviour
 
     private bool StuckCheck()
     {
-        if (!character.isMoving)
-            return true;
-
-        if (Vector3.Distance(lastPosition, transform.position) > 0.25f)  // They are moving
+        if (Vector3.Distance(lastPosition, transform.position) > 0.2f)  // They are moving
         {
             stuckCheckFrames = 0;
-            return true;
+            return false;
         }
         else  // They haven't moved enough
         {
             stuckCheckFrames++;
-            if (stuckCheckFrames > 2)
+            if (stuckCheckFrames >= 4)
             {
                 stuckCheckFrames = 0;
-                return false;  // They are stuck
+                return true;  // They are stuck
             }
             else
-                return true;  // They haven't been stuck long enough
+                return false;  // They haven't been stuck long enough
         }
     }
 }
