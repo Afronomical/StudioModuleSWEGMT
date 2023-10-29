@@ -24,6 +24,7 @@ public class IdleState : StateBaseClass
 
     private PathfindingSmoothing path;
     private int pathIndex = 0;
+    private int pathErrorCheck;
     private float speedPercent;
 
 
@@ -54,6 +55,7 @@ public class IdleState : StateBaseClass
         if (idleTime <= 0)
         {
             walking = true;
+            character.isMoving = true;
             FindWalkTarget();
         }
     }
@@ -70,6 +72,7 @@ public class IdleState : StateBaseClass
                     path = new PathfindingSmoothing(null, Vector3.zero, 0, 0);
                     walking = false;
                     idleTime = Random.Range(minIdleTime, maxIdleTime);  // How long the character will stand still for
+                    character.isMoving = false;
                     return;
                 }
                 else  // Has reached a checkpoint
@@ -100,6 +103,7 @@ public class IdleState : StateBaseClass
     {
         walkDestination = new Vector3(character.GetPosition().x + Random.Range(-maxWalkDistance, maxWalkDistance), character.GetPosition().y + Random.Range(-maxWalkDistance, maxWalkDistance));
         PathfindingRequestManager.RequestPath(transform.position, walkDestination, this, OnPathFound);
+        pathErrorCheck++;
     }
 
 
@@ -110,6 +114,13 @@ public class IdleState : StateBaseClass
             path = new PathfindingSmoothing(waypoints, transform.position, character.turnDistance, stopDistance);
             pathIndex = 0;
             speedPercent = 1;
+            pathErrorCheck = 0;
+        }
+        else if (pathErrorCheck > 250)
+        {
+            Debug.Log(character.transform.name + " Idle state pathfinding error");
+            if (PathfindingRequestManager.requestListSize < 5)
+                FindWalkTarget();
         }
         else
             FindWalkTarget();  // Try and find a new path
