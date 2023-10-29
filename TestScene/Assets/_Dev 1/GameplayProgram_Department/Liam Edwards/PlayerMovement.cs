@@ -15,7 +15,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float dodgeCooldown;
 
     private Animator animator;
-    private AnimationManager animationManager;
+    private PlayerAnimationController animationController;
+    private PlayerDeath playerDeath;
 
     bool isDodging;
     bool canDodge;
@@ -25,8 +26,6 @@ public class PlayerController : MonoBehaviour
     public GameObject playerMesh;
     public GameObject batMesh;
     public BoxCollider2D hitBox;
-
-    private Vector2 lastMovementInput;
 
     void Start()
     {
@@ -38,62 +37,69 @@ public class PlayerController : MonoBehaviour
         batMesh.SetActive(false);
         hitBox = GetComponent<BoxCollider2D>();
         animator = GetComponent<Animator>();
-        animationManager = GetComponent<AnimationManager>();
+        animationController = GetComponent<PlayerAnimationController>();
+        playerDeath = GetComponent<PlayerDeath>();
     }
 
     void Update()
     {
-         
-
         AnimateMovement();
 
-        if (isDodging)
+        if (!playerDeath.IsDead())
         {
-            return;
+            if (isDodging)
+            {
+                return;
+            }
+            
+            if (Input.GetKey(KeyCode.LeftShift))
+            {
+                rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * sprintSpeed, Input.GetAxisRaw("Vertical") * sprintSpeed);
+            }
+            else if (Input.GetKeyDown(KeyCode.Space) && canDodge)
+            {
+                AudioManager.Manager.PlaySFX("PlayerDodge");
+                animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Dash);
+                StartCoroutine(Dodge());
+            }
+            else if (Input.GetKeyDown(KeyCode.LeftControl) && canBatForm)
+            {
+                StartCoroutine(BatForm());
+            }
+            else 
+            {
+                rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * speed, Input.GetAxisRaw("Vertical") * speed);
+            }
         }
-
-        if (Input.GetKey(KeyCode.LeftShift))
-        {
-            rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * sprintSpeed, Input.GetAxisRaw("Vertical") * sprintSpeed);
-        }
-        else if (Input.GetKeyDown(KeyCode.Space) && canDodge)
-        {
-            AudioManager.Manager.PlayVFX("PlayerDodge");
-            StartCoroutine(Dodge());
-        }
-        else if (Input.GetKeyDown(KeyCode.LeftControl) && canBatForm)
-        {
-            StartCoroutine(BatForm());
-        }
-        else 
-        {
-           
-            rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * speed, Input.GetAxisRaw("Vertical") * speed);
-        }
-
     }
 
     private void AnimateMovement()
     {
         Vector2 movementInput = new(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        
-
-        animator.SetFloat("MovementX", movementInput.x);
-        animator.SetFloat("MovementY", movementInput.y);
 
         if (movementInput != Vector2.zero)
         {
-            
-            lastMovementInput = movementInput;
-            animationManager.ChangeAnimationState(AnimationManager.AnimationStates.Run);
-            
+            animator.SetFloat("MovementX", movementInput.x);
+            animator.SetFloat("MovementY", movementInput.y);
         }
-        else
+
+        if (!animationController.IsAnimationPlaying(animator, PlayerAnimationController.AnimationStates.SlashAttack) &&
+            !animationController.IsAnimationPlaying(animator, PlayerAnimationController.AnimationStates.Dash) &&
+            !animationController.IsAnimationPlaying(animator, PlayerAnimationController.AnimationStates.Hurt) &&
+            !animationController.IsAnimationPlaying(animator, PlayerAnimationController.AnimationStates.Death))
         {
-            animator.SetFloat("MovementX", lastMovementInput.x);
-            animator.SetFloat("MovementY", lastMovementInput.y);
-            //AudioManager.Manager.PlayVFX("PlayerMove");
-            animationManager.ChangeAnimationState(AnimationManager.AnimationStates.Idle);
+            if (!playerDeath.IsDead())
+            {
+                if (movementInput != Vector2.zero)
+                {
+                    animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Walk);
+                }
+                else
+                {
+                    //AudioManager.Manager.PlayVFX("PlayerMove");
+                    animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Idle);
+                }
+            }
         }
     }
 
