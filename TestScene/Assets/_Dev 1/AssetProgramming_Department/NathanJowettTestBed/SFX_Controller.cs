@@ -6,7 +6,7 @@ using UnityEngine;
 
 
 [System.Serializable]
-public class VFX_Controller
+public class SFX_Controller
 {
 
     public string Name;

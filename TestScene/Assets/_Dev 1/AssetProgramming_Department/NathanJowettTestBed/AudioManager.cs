@@ -7,7 +7,7 @@ using UnityEngine.Rendering;
 
 public class AudioManager : MonoBehaviour
 {
-    public VFX_Controller[] Sounds;
+    public SFX_Controller[] Sounds;
     public Music_Controller[] Music;
 
     public static AudioManager Manager;
@@ -23,7 +23,7 @@ public class AudioManager : MonoBehaviour
         }
         DontDestroyOnLoad(gameObject);
 
-        foreach (VFX_Controller s in Sounds)
+        foreach (SFX_Controller s in Sounds)
         {
             s.source = gameObject.AddComponent<AudioSource>();
             s.source.clip = s.clip;
@@ -43,11 +43,11 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    public void PlayVFX(string name)
+    public void PlaySFX(string name)
     {
-        VFX_Controller s = Array.Find(Sounds, VFX_Controller => VFX_Controller.Name == name);
+        SFX_Controller s = Array.Find(Sounds, SFX_Controller => SFX_Controller.Name == name);
         s.source.Play();
-        Music_Controller m = Array.Find(Music, Music_Controller => Music_Controller.Name == name);
+        
         
        // m.source.Play();
 
@@ -82,7 +82,7 @@ public class AudioManager : MonoBehaviour
     }
     public void StopSoundEffect(string name)
     {
-        VFX_Controller s = Array.Find(Sounds,sound=> sound.Name == name);
+        SFX_Controller s = Array.Find(Sounds,sound=> sound.Name == name);
         if(s != null)
         {
             s.source.Stop();

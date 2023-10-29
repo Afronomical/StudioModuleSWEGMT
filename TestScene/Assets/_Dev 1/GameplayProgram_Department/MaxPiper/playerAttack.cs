@@ -55,7 +55,7 @@ public class playerAttack : MonoBehaviour
             
             Debug.Log(enemyTarg.name);
             AiEnemy.health -= damage;
-            AudioManager.Manager.PlayVFX("NPC_TakeDamage");
+            AudioManager.Manager.PlaySFX("NPC_TakeDamage");
         }
 
 
@@ -83,7 +83,7 @@ public class playerAttack : MonoBehaviour
             
             if (canHit)
             {
-                AudioManager.Manager.PlayVFX("PlayerAttack");
+                AudioManager.Manager.PlaySFX("PlayerAttack");
                 damageEnemy();
                 canHit = false;
             }
