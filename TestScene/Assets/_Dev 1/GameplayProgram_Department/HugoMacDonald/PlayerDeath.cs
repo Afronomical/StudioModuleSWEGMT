@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -14,6 +15,7 @@ public class PlayerDeath : MonoBehaviour
     public bool isInvincible = false;
     public float invincibilityDuration = 2.0f; // Adjust the duration as needed
     private float invincibilityTimer = 0.0f;
+    public GameObject floatingText; 
 
 
 
@@ -79,6 +81,8 @@ public class PlayerDeath : MonoBehaviour
         {
             currentHealth -= damage;
             healthBarScript.setHealth(currentHealth);
+            showFloatingText();
+            
 
             // Apply invincibility
             isInvincible = true;
@@ -109,5 +113,11 @@ public class PlayerDeath : MonoBehaviour
     private void deathAfterDelay()
     {
         SceneManager.LoadScene("MainMenu");
+    }
+
+    void showFloatingText()
+    {
+        var go = Instantiate(floatingText, transform.position, Quaternion.identity, transform);
+        go.GetComponentInChildren<TextMeshProUGUI>().text = currentHealth.ToString();
     }
 }
