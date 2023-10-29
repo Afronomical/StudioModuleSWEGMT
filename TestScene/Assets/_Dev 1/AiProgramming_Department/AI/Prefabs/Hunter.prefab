@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 5003693677747352745}
   - component: {fileID: 5785094608074434423}
   - component: {fileID: 8249115080113718895}
+  - component: {fileID: 6771885212507505570}
+  - component: {fileID: 145325091609028003}
   m_Layer: 0
   m_Name: Hunter
   m_TagString: Hunter
@@ -112,6 +114,7 @@ MonoBehaviour:
   currentState: 0
   stateScript: {fileID: 0}
   player: {fileID: 0}
+  bulletPrefab: {fileID: 0}
 --- !u!114 &3470126584826272329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -245,6 +248,49 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!95 &6771885212507505570
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1133785511964601302}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d92f98abe304c304b83e9663936ab261, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &145325091609028003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1133785511964601302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8be5dd2a69a63e94eb0b327d9c093baa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationStatesList: 00000000010000000200000003000000040000000500000006000000
+  animationStringsList:
+  - Idle Tree
+  - Walk Tree
+  - Hurt Tree
+  - Downed Tree
+  - S_Death
+  - Bow Attack Tree
+  - Sword Attack Tree
 --- !u!1 &4316415217644720785
 GameObject:
   m_ObjectHideFlags: 0
