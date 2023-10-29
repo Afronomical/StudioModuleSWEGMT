@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 /// <summary>
@@ -61,6 +62,19 @@ public class PlayerAnimationController : MonoBehaviour
         else
         {
             Debug.Log("Animation not found!");
+        }
+    }
+
+    public bool IsAnimationPlaying(Animator animator, AnimationStates state)
+    {
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName(animationsDictionary[state])
+            && animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1.0f)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
         }
     }
 }

@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
 
     private Animator animator;
     private PlayerAnimationController animationController;
+    private PlayerDeath playerDeath;
 
     bool isDodging;
     bool canDodge;
@@ -37,37 +38,39 @@ public class PlayerController : MonoBehaviour
         hitBox = GetComponent<BoxCollider2D>();
         animator = GetComponent<Animator>();
         animationController = GetComponent<PlayerAnimationController>();
+        playerDeath = GetComponent<PlayerDeath>();
     }
 
     void Update()
     {
         AnimateMovement();
 
-        if (isDodging)
+        if (!playerDeath.IsDead())
         {
-            return;
+            if (isDodging)
+            {
+                return;
+            }
+            
+            if (Input.GetKey(KeyCode.LeftShift))
+            {
+                rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * sprintSpeed, Input.GetAxisRaw("Vertical") * sprintSpeed);
+            }
+            else if (Input.GetKeyDown(KeyCode.Space) && canDodge)
+            {
+                AudioManager.Manager.PlaySFX("PlayerDodge");
+                animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Dash);
+                StartCoroutine(Dodge());
+            }
+            else if (Input.GetKeyDown(KeyCode.LeftControl) && canBatForm)
+            {
+                StartCoroutine(BatForm());
+            }
+            else 
+            {
+                rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * speed, Input.GetAxisRaw("Vertical") * speed);
+            }
         }
-
-        if (Input.GetKey(KeyCode.LeftShift))
-        {
-            rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * sprintSpeed, Input.GetAxisRaw("Vertical") * sprintSpeed);
-        }
-        else if (Input.GetKeyDown(KeyCode.Space) && canDodge)
-        {
-            AudioManager.Manager.PlaySFX("PlayerDodge");
-            animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Dash);
-            StartCoroutine(Dodge());
-        }
-        else if (Input.GetKeyDown(KeyCode.LeftControl) && canBatForm)
-        {
-            StartCoroutine(BatForm());
-        }
-        else 
-        {
-           
-            rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * speed, Input.GetAxisRaw("Vertical") * speed);
-        }
-
     }
 
     private void AnimateMovement()
@@ -78,14 +81,25 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetFloat("MovementX", movementInput.x);
             animator.SetFloat("MovementY", movementInput.y);
-
-            animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Walk);
-            
         }
-        else
+
+        if (!animationController.IsAnimationPlaying(animator, PlayerAnimationController.AnimationStates.SlashAttack) &&
+            !animationController.IsAnimationPlaying(animator, PlayerAnimationController.AnimationStates.Dash) &&
+            !animationController.IsAnimationPlaying(animator, PlayerAnimationController.AnimationStates.Hurt) &&
+            !animationController.IsAnimationPlaying(animator, PlayerAnimationController.AnimationStates.Death))
         {
-            //AudioManager.Manager.PlayVFX("PlayerMove");
-            animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Idle);
+            if (!playerDeath.IsDead())
+            {
+                if (movementInput != Vector2.zero)
+                {
+                    animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Walk);
+                }
+                else
+                {
+                    //AudioManager.Manager.PlayVFX("PlayerMove");
+                    animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Idle);
+                }
+            }
         }
     }
 
