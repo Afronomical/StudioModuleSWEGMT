@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4922840379051898909}
   - component: {fileID: 6961027146306363984}
-  - component: {fileID: 4064046770937422976}
+  - component: {fileID: 4170961376182087740}
   - component: {fileID: 3470126584826272329}
   - component: {fileID: 5003693677747352745}
   - component: {fileID: 5785094608074434423}
-  - component: {fileID: 8249115080113718895}
+  - component: {fileID: 891675478318412785}
   m_Layer: 0
   m_Name: Hunter
   m_TagString: Hunter
@@ -90,7 +90,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4064046770937422976
+--- !u!114 &4170961376182087740
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -105,13 +105,15 @@ MonoBehaviour:
   characterType: 1
   health: 3
   walkSpeed: 2
-  runSpeed: 7
+  runSpeed: 6.5
   crawlSpeed: 0.5
   turnSpeed: 2
   turnDistance: 1
   currentState: 0
   stateScript: {fileID: 0}
+  isMoving: 0
   player: {fileID: 0}
+  bulletPrefab: {fileID: 0}
 --- !u!114 &3470126584826272329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,6 +128,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detectionRange: 6
   attackRange: 1
+  unwalkableLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!61 &5003693677747352745
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -199,8 +204,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &8249115080113718895
-BoxCollider2D:
+--- !u!58 &891675478318412785
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -234,17 +239,7 @@ BoxCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Radius: 0.5
 --- !u!1 &4316415217644720785
 GameObject:
   m_ObjectHideFlags: 0

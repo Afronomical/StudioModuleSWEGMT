@@ -64,8 +64,6 @@ public class StateMachineController : MonoBehaviour
 
 
 
-
-
         if (character.isMoving && character.currentState != AICharacter.States.Run)  // Check to see if the character is stuck on an object
         {
             if (StuckCheck())
@@ -122,23 +120,6 @@ public class StateMachineController : MonoBehaviour
 
         else if (distance < attackRange) // Attack when in attack range
             character.ChangeState(AICharacter.States.Attack);
-
-        else if (character.characterType == AICharacter.CharacterTypes.RangedHunter)
-        {
-            if (distance < attackRange)
-            {
-                character.ChangeState(AICharacter.States.Shoot);
-            }
-            else if (distance < detectionRange && distance > attackRange)
-            {
-                character.ChangeState(AICharacter.States.Hunt);
-            }
-
-            else if (distance > detectionRange)
-            {
-                character.ChangeState(AICharacter.States.Patrol);
-            }
-        }
     }
 
 
