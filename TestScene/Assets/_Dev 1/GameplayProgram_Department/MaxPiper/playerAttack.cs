@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class playerAttack : MonoBehaviour
@@ -13,7 +14,9 @@ public class playerAttack : MonoBehaviour
     private GameObject enemyTarg;
     private AICharacter AiEnemy;
     private bool canHit = true;
-    
+
+    private Animator animator;
+    private PlayerAnimationController animationController;
 
     //enter collision, detects if has enemy tag, if true set enemy to attacking var
     private void OnTriggerEnter2D(Collider2D other)
@@ -65,6 +68,9 @@ public class playerAttack : MonoBehaviour
     void Start()
     {
         attackDelay = attackDelayStart;
+
+        animator = GetComponent<Animator>();
+        animationController = GetComponent<PlayerAnimationController>();
     }
 
 
@@ -83,6 +89,7 @@ public class playerAttack : MonoBehaviour
             
             if (canHit)
             {
+                animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.SlashAttack);
                 AudioManager.Manager.PlaySFX("PlayerAttack");
                 damageEnemy();
                 canHit = false;

@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float dodgeCooldown;
 
     private Animator animator;
-    private AnimationManager animationManager;
+    private PlayerAnimationController animationController;
 
     bool isDodging;
     bool canDodge;
@@ -25,8 +25,6 @@ public class PlayerController : MonoBehaviour
     public GameObject playerMesh;
     public GameObject batMesh;
     public BoxCollider2D hitBox;
-
-    private Vector2 lastMovementInput;
 
     void Start()
     {
@@ -38,13 +36,11 @@ public class PlayerController : MonoBehaviour
         batMesh.SetActive(false);
         hitBox = GetComponent<BoxCollider2D>();
         animator = GetComponent<Animator>();
-        animationManager = GetComponent<AnimationManager>();
+        animationController = GetComponent<PlayerAnimationController>();
     }
 
     void Update()
     {
-         
-
         AnimateMovement();
 
         if (isDodging)
@@ -59,6 +55,7 @@ public class PlayerController : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Space) && canDodge)
         {
             AudioManager.Manager.PlaySFX("PlayerDodge");
+            animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Dash);
             StartCoroutine(Dodge());
         }
         else if (Input.GetKeyDown(KeyCode.LeftControl) && canBatForm)
@@ -76,24 +73,19 @@ public class PlayerController : MonoBehaviour
     private void AnimateMovement()
     {
         Vector2 movementInput = new(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        
-
-        animator.SetFloat("MovementX", movementInput.x);
-        animator.SetFloat("MovementY", movementInput.y);
 
         if (movementInput != Vector2.zero)
         {
-            
-            lastMovementInput = movementInput;
-            animationManager.ChangeAnimationState(AnimationManager.AnimationStates.Run);
+            animator.SetFloat("MovementX", movementInput.x);
+            animator.SetFloat("MovementY", movementInput.y);
+
+            animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Walk);
             
         }
         else
         {
-            animator.SetFloat("MovementX", lastMovementInput.x);
-            animator.SetFloat("MovementY", lastMovementInput.y);
             //AudioManager.Manager.PlayVFX("PlayerMove");
-            animationManager.ChangeAnimationState(AnimationManager.AnimationStates.Idle);
+            animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Idle);
         }
     }
 
