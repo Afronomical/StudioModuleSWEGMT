@@ -23,7 +23,8 @@ public class PlayerAnimationController : MonoBehaviour
         SlashAttack,
         Hurt,
         Dash,
-        Death
+        Death,
+        Feed
     }
 
     // GOs Animator Component:

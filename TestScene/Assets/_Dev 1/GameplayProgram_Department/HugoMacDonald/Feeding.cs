@@ -12,10 +12,16 @@ public class Feeding : MonoBehaviour
     public HungerBar hungerBarSlider;
     public PlayerDeath playerDeath; // Reference to the PlayerDeath script
 
+    private Animator animator;
+    private PlayerAnimationController animationController;
+
     private void Start()
     {
         currentHunger = minHunger;
         hungerBarSlider.SetMinHunger(minHunger);
+
+        animator = GetComponent<Animator>();
+        animationController = GetComponent<PlayerAnimationController>();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -46,6 +52,7 @@ public class Feeding : MonoBehaviour
         {
             //Play Feed SFX
             AudioManager.Manager.PlaySFX("PlayerFeed");
+            animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Feed);
             // Feed on the current AI character in the feeding zone when it's downed
             currentHunger += 1;
             hungerBarSlider.SetHunger(currentHunger);

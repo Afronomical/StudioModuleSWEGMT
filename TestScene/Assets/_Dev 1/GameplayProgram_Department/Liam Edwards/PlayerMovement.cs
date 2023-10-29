@@ -86,7 +86,8 @@ public class PlayerController : MonoBehaviour
         if (!animationController.IsAnimationPlaying(animator, PlayerAnimationController.AnimationStates.SlashAttack) &&
             !animationController.IsAnimationPlaying(animator, PlayerAnimationController.AnimationStates.Dash) &&
             !animationController.IsAnimationPlaying(animator, PlayerAnimationController.AnimationStates.Hurt) &&
-            !animationController.IsAnimationPlaying(animator, PlayerAnimationController.AnimationStates.Death))
+            !animationController.IsAnimationPlaying(animator, PlayerAnimationController.AnimationStates.Death) &&
+            !animationController.IsAnimationPlaying(animator, PlayerAnimationController.AnimationStates.Feed))
         {
             if (!playerDeath.IsDead())
             {
