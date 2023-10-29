@@ -1,0 +1,4924 @@
+fileFormatVersion: 2
+guid: 19fddbf4c572ac345b532f9fc92c9b8a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8479045103394712149
+    second: Mage-Red_0
+  - first:
+      213: -2476969210028978253
+    second: Mage-Red_1
+  - first:
+      213: -3075202493335432332
+    second: Mage-Red_2
+  - first:
+      213: 1335538919864731851
+    second: Mage-Red_3
+  - first:
+      213: -3810487310857665867
+    second: Mage-Red_4
+  - first:
+      213: -2305754619721442657
+    second: Mage-Red_5
+  - first:
+      213: 6222004213048100555
+    second: Mage-Red_6
+  - first:
+      213: 8498093476955623345
+    second: Mage-Red_7
+  - first:
+      213: -3051383091967959089
+    second: Mage-Red_8
+  - first:
+      213: 1121999723506611184
+    second: Mage-Red_9
+  - first:
+      213: 7763774349839313995
+    second: Mage-Red_10
+  - first:
+      213: -8692392853697485550
+    second: Mage-Red_11
+  - first:
+      213: 9063369128434202132
+    second: Mage-Red_12
+  - first:
+      213: -5231138358569969711
+    second: Mage-Red_13
+  - first:
+      213: 883786114514807179
+    second: Mage-Red_14
+  - first:
+      213: 672188464970392152
+    second: Mage-Red_15
+  - first:
+      213: 3616687890184993602
+    second: Mage-Red_16
+  - first:
+      213: 6231546955820868503
+    second: Mage-Red_17
+  - first:
+      213: -9120779059865262983
+    second: Mage-Red_18
+  - first:
+      213: -643275059034912239
+    second: Mage-Red_19
+  - first:
+      213: 3836700538957969319
+    second: Mage-Red_20
+  - first:
+      213: 1524343784330155152
+    second: Mage-Red_21
+  - first:
+      213: -7373361386945839523
+    second: Mage-Red_22
+  - first:
+      213: -7169670205486709519
+    second: Mage-Red_23
+  - first:
+      213: 5984666558116696715
+    second: Mage-Red_24
+  - first:
+      213: 6006306923407164217
+    second: Mage-Red_25
+  - first:
+      213: 7827174434090906951
+    second: Mage-Red_26
+  - first:
+      213: -2799072727664652724
+    second: Mage-Red_27
+  - first:
+      213: 1979442930830919796
+    second: Mage-Red_28
+  - first:
+      213: -3361917588217829146
+    second: Mage-Red_29
+  - first:
+      213: -5365879110906348207
+    second: Mage-Red_30
+  - first:
+      213: -21679947961290329
+    second: Mage-Red_31
+  - first:
+      213: -629185638474675420
+    second: Mage-Red_32
+  - first:
+      213: -1860450013872799464
+    second: Mage-Red_33
+  - first:
+      213: -4070242640042051521
+    second: Mage-Red_34
+  - first:
+      213: 8094419074453367346
+    second: Mage-Red_35
+  - first:
+      213: -5787435497381359494
+    second: Mage-Red_36
+  - first:
+      213: 8358742302996907514
+    second: Mage-Red_37
+  - first:
+      213: 4019265714983145907
+    second: Mage-Red_38
+  - first:
+      213: 9210503478800775416
+    second: Mage-Red_39
+  - first:
+      213: 5187829551573228895
+    second: Mage-Red_40
+  - first:
+      213: -8407122226913267938
+    second: Mage-Red_41
+  - first:
+      213: 4943708262804376633
+    second: Mage-Red_42
+  - first:
+      213: 6174991344159410849
+    second: Mage-Red_43
+  - first:
+      213: 3010910479894749360
+    second: Mage-Red_44
+  - first:
+      213: -5473844590339744367
+    second: Mage-Red_45
+  - first:
+      213: -9025110328929739353
+    second: Mage-Red_46
+  - first:
+      213: -7994629258416369303
+    second: Mage-Red_47
+  - first:
+      213: -5488089177693154616
+    second: Mage-Red_48
+  - first:
+      213: -4354161394727147042
+    second: Mage-Red_49
+  - first:
+      213: -654891555190553600
+    second: Mage-Red_50
+  - first:
+      213: -550761452195435599
+    second: Mage-Red_51
+  - first:
+      213: 8335560584239938755
+    second: Mage-Red_52
+  - first:
+      213: -3685509196245148252
+    second: Mage-Red_53
+  - first:
+      213: -1238013311797460011
+    second: Mage-Red_54
+  - first:
+      213: -3354017182412779608
+    second: Mage-Red_55
+  - first:
+      213: -5760206542213915081
+    second: Mage-Red_56
+  - first:
+      213: 8290799804018372046
+    second: Mage-Red_57
+  - first:
+      213: -4740497341111208543
+    second: Mage-Red_58
+  - first:
+      213: 3581478188437008051
+    second: Mage-Red_59
+  - first:
+      213: -4224734108718389951
+    second: Mage-Red_60
+  - first:
+      213: -9117578600637002924
+    second: Mage-Red_61
+  - first:
+      213: 7263468590419975409
+    second: Mage-Red_62
+  - first:
+      213: -1539574001459693140
+    second: Mage-Red_63
+  - first:
+      213: -152414485518613421
+    second: Mage-Red_64
+  - first:
+      213: 4545731521395195749
+    second: Mage-Red_65
+  - first:
+      213: 8156931383542822967
+    second: Mage-Red_66
+  - first:
+      213: -6213646516678470658
+    second: Mage-Red_67
+  - first:
+      213: -1924465117441362789
+    second: Mage-Red_68
+  - first:
+      213: 4490763916665807227
+    second: Mage-Red_69
+  - first:
+      213: -1690892151819829613
+    second: Mage-Red_70
+  - first:
+      213: 2451154637538742770
+    second: Mage-Red_71
+  - first:
+      213: 4346915051084280059
+    second: Mage-Red_72
+  - first:
+      213: 4394467653771882194
+    second: Mage-Red_73
+  - first:
+      213: 5586148863957942313
+    second: Mage-Red_74
+  - first:
+      213: -1290232365974771588
+    second: Mage-Red_75
+  - first:
+      213: 5471221861851017557
+    second: Mage-Red_76
+  - first:
+      213: 747535785671514671
+    second: Mage-Red_77
+  - first:
+      213: -3355654218641043542
+    second: Mage-Red_78
+  - first:
+      213: 3926870575311824698
+    second: Mage-Red_79
+  - first:
+      213: 6784755256809459040
+    second: Mage-Red_80
+  - first:
+      213: 3593408725423953844
+    second: Mage-Red_81
+  - first:
+      213: 918080574971290324
+    second: Mage-Red_82
+  - first:
+      213: 4343992882694518042
+    second: Mage-Red_83
+  - first:
+      213: 4033748779319304366
+    second: Mage-Red_84
+  - first:
+      213: 9003313537614331319
+    second: Mage-Red_85
+  - first:
+      213: -3642092086263258930
+    second: Mage-Red_86
+  - first:
+      213: 1709358580722225701
+    second: Mage-Red_87
+  - first:
+      213: -1484815669593787086
+    second: Mage-Red_88
+  - first:
+      213: -3149414637557868965
+    second: Mage-Red_89
+  - first:
+      213: -7654630401131125232
+    second: Mage-Red_90
+  - first:
+      213: 3606816166508727077
+    second: Mage-Red_91
+  - first:
+      213: -9103092183761870585
+    second: Mage-Red_92
+  - first:
+      213: 7741445911061745390
+    second: Mage-Red_93
+  - first:
+      213: 2268443335191485666
+    second: Mage-Red_94
+  - first:
+      213: 8759691250399684048
+    second: Mage-Red_95
+  - first:
+      213: -6146487552932607329
+    second: Mage-Red_96
+  - first:
+      213: -1865743693342366505
+    second: Mage-Red_97
+  - first:
+      213: -7931695995432887416
+    second: Mage-Red_98
+  - first:
+      213: 4554372632579935490
+    second: Mage-Red_99
+  - first:
+      213: 3591502776277854541
+    second: Mage-Red_100
+  - first:
+      213: -2744997240689477086
+    second: Mage-Red_101
+  - first:
+      213: -4255996339375739825
+    second: Mage-Red_102
+  - first:
+      213: 5371678852675192333
+    second: Mage-Red_103
+  - first:
+      213: -1683983816685400361
+    second: Mage-Red_104
+  - first:
+      213: 6817004680930045681
+    second: Mage-Red_105
+  - first:
+      213: 8319007753989061761
+    second: Mage-Red_106
+  - first:
+      213: -2734025406781400313
+    second: Mage-Red_107
+  - first:
+      213: 2288495089556642566
+    second: Mage-Red_108
+  - first:
+      213: 9075912957834883779
+    second: Mage-Red_109
+  - first:
+      213: -2812558832962758284
+    second: Mage-Red_110
+  - first:
+      213: 4266631513580845732
+    second: Mage-Red_111
+  - first:
+      213: 5056467725014925320
+    second: Mage-Red_112
+  - first:
+      213: 3088369136962805549
+    second: Mage-Red_113
+  - first:
+      213: -608221540515178928
+    second: Mage-Red_114
+  - first:
+      213: -1721336092776150147
+    second: Mage-Red_115
+  - first:
+      213: 3258602723680015709
+    second: Mage-Red_116
+  - first:
+      213: 3330893887123941571
+    second: Mage-Red_117
+  - first:
+      213: 541701064139728548
+    second: Mage-Red_118
+  - first:
+      213: 2116175562207984165
+    second: Mage-Red_119
+  - first:
+      213: -8132620352032440782
+    second: Mage-Red_120
+  - first:
+      213: -6872708057804950205
+    second: Mage-Red_121
+  - first:
+      213: -537678695521761697
+    second: Mage-Red_122
+  - first:
+      213: 776691084906002399
+    second: Mage-Red_123
+  - first:
+      213: 7570750772446672134
+    second: Mage-Red_124
+  - first:
+      213: 5329132804932561835
+    second: Mage-Red_125
+  - first:
+      213: 3041304970867860228
+    second: Mage-Red_126
+  - first:
+      213: 5196050866572763254
+    second: Mage-Red_127
+  - first:
+      213: 6762307184446180432
+    second: Mage-Red_128
+  - first:
+      213: 1641156460292700900
+    second: Mage-Red_129
+  - first:
+      213: 1102468540094381822
+    second: Mage-Red_130
+  - first:
+      213: -8933218376655881292
+    second: Mage-Red_131
+  - first:
+      213: 8846751228643806303
+    second: Mage-Red_132
+  - first:
+      213: -6330650100843527132
+    second: Mage-Red_133
+  - first:
+      213: 2438676328021771065
+    second: Mage-Red_134
+  - first:
+      213: -1258166487549083507
+    second: Mage-Red_135
+  - first:
+      213: 3341960419438261080
+    second: Mage-Red_136
+  - first:
+      213: 8047115809025640322
+    second: Mage-Red_137
+  - first:
+      213: -8041013676273041866
+    second: Mage-Red_138
+  - first:
+      213: -2402509629830781363
+    second: Mage-Red_139
+  - first:
+      213: -4587853943187833425
+    second: Mage-Red_140
+  - first:
+      213: -5833083244657489807
+    second: Mage-Red_141
+  - first:
+      213: 3463142956079530466
+    second: Mage-Red_142
+  - first:
+      213: -5349548303515427399
+    second: Mage-Red_143
+  - first:
+      213: -8422855071325195464
+    second: Mage-Red_144
+  - first:
+      213: 3469553726753516759
+    second: Mage-Red_145
+  - first:
+      213: -1982626447454468542
+    second: Mage-Red_146
+  - first:
+      213: -4788457735220998923
+    second: Mage-Red_147
+  - first:
+      213: -947928724476554558
+    second: Mage-Red_148
+  - first:
+      213: 7703269030660481947
+    second: Mage-Red_149
+  - first:
+      213: 9130725837141451350
+    second: Mage-Red_150
+  - first:
+      213: -4632449532042326277
+    second: Mage-Red_151
+  - first:
+      213: 5043100273393514062
+    second: Mage-Red_152
+  - first:
+      213: 8825909665060871440
+    second: Mage-Red_153
+  - first:
+      213: -2170411404314487272
+    second: Mage-Red_154
+  - first:
+      213: -7961060628478278909
+    second: Mage-Red_155
+  - first:
+      213: 5379781241481996777
+    second: Mage-Red_156
+  - first:
+      213: -2695163998899932660
+    second: Mage-Red_157
+  - first:
+      213: -4333649509179922221
+    second: Mage-Red_158
+  - first:
+      213: -8562702713685241256
+    second: Mage-Red_159
+  - first:
+      213: -4509190439141440106
+    second: Mage-Red_160
+  - first:
+      213: -224812712000772051
+    second: Mage-Red_161
+  - first:
+      213: -4849061293093313171
+    second: Mage-Red_162
+  - first:
+      213: -9096709811395672443
+    second: Mage-Red_163
+  - first:
+      213: 6009281357791088648
+    second: Mage-Red_164
+  - first:
+      213: 7143005609387496451
+    second: Mage-Red_165
+  - first:
+      213: 1290278105083447083
+    second: Mage-Red_166
+  - first:
+      213: -8026194752871797305
+    second: Mage-Red_167
+  - first:
+      213: 8676973784493170126
+    second: Mage-Red_168
+  - first:
+      213: 7495354277897274980
+    second: Mage-Red_169
+  - first:
+      213: 6105785359000878102
+    second: Mage-Red_170
+  - first:
+      213: 6208807527742403373
+    second: Mage-Red_171
+  - first:
+      213: -8489820114102138894
+    second: Mage-Red_172
+  - first:
+      213: -383449139736546748
+    second: Mage-Red_173
+  - first:
+      213: 330712413688644635
+    second: Mage-Red_174
+  - first:
+      213: 2886522133601679893
+    second: Mage-Red_175
+  - first:
+      213: -2654100946042078034
+    second: Mage-Red_176
+  - first:
+      213: -527028452812896257
+    second: Mage-Red_177
+  - first:
+      213: 7772826042611297724
+    second: Mage-Red_178
+  - first:
+      213: 2733751497082657805
+    second: Mage-Red_179
+  - first:
+      213: 3929938767991611473
+    second: Mage-Red_180
+  - first:
+      213: -6285410791065045783
+    second: Mage-Red_181
+  - first:
+      213: -7757074621592705619
+    second: Mage-Red_182
+  - first:
+      213: -926477689531732173
+    second: Mage-Red_183
+  - first:
+      213: -2291335080442095239
+    second: Mage-Red_184
+  - first:
+      213: 4116467116698391754
+    second: Mage-Red_185
+  - first:
+      213: 5208108807277441420
+    second: Mage-Red_186
+  - first:
+      213: 864641091194466547
+    second: Mage-Red_187
+  - first:
+      213: -6446961022863758795
+    second: Mage-Red_188
+  - first:
+      213: -6207231393692700573
+    second: Mage-Red_189
+  - first:
+      213: -4360077585997479158
+    second: Mage-Red_190
+  - first:
+      213: 3922530123969608695
+    second: Mage-Red_191
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mage-Red_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 232
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55a6b5ef89e9ba570800000000000000
+      internalID: 8479045103394712149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 232
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bf84a480a900add0800000000000000
+      internalID: -2476969210028978253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 231
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 473985c10afa255d0800000000000000
+      internalID: -3075202493335432332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_3
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 231
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc80f365299c88210800000000000000
+      internalID: 1335538919864731851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_4
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 232
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b20237cafd6e1bc0800000000000000
+      internalID: -3810487310857665867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_5
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 232
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9a9948c3605000e0800000000000000
+      internalID: -2305754619721442657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_6
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 231
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc647bdbddff85650800000000000000
+      internalID: 6222004213048100555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_7
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 232
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bf01021efa4fe570800000000000000
+      internalID: 8498093476955623345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_8
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 231
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcfdd99ae3f47a5d0800000000000000
+      internalID: -3051383091967959089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_9
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 231
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f3b2bdcdc4229f00800000000000000
+      internalID: 1121999723506611184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_10
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 231
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4c267e03a77ebb60800000000000000
+      internalID: 7763774349839313995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_11
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 232
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 215a73bf0ca6e5780800000000000000
+      internalID: -8692392853697485550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_12
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 232
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 416ff88d33e87cd70800000000000000
+      internalID: 9063369128434202132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_13
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 232
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d7548ee0634767b0800000000000000
+      internalID: -5231138358569969711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_14
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 228
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b89e315e9c6d34c00800000000000000
+      internalID: 883786114514807179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_15
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 232
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 852eca4f8d7145900800000000000000
+      internalID: 672188464970392152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_16
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 232
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24bfeed597e013230800000000000000
+      internalID: 3616687890184993602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_17
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 232
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 793aedea0f6ea7650800000000000000
+      internalID: 6231546955820868503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_18
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 232
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 974e8edd4cb7c6180800000000000000
+      internalID: -9120779059865262983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_19
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 233
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11a0b55fdb0a217f0800000000000000
+      internalID: -643275059034912239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_20
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 232
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a7b32effc2be3530800000000000000
+      internalID: 3836700538957969319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_21
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 232
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 094d294789e872510800000000000000
+      internalID: 1524343784330155152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_22
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 232
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5ef28262ee8ca990800000000000000
+      internalID: -7373361386945839523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_23
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 232
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f443454fe6308c90800000000000000
+      internalID: -7169670205486709519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_24
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 200
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8294b7c68ecd0350800000000000000
+      internalID: 5984666558116696715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_25
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 200
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93347a5f250ba5350800000000000000
+      internalID: 6006306923407164217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_26
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 199
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 745f10b7da5bf9c60800000000000000
+      internalID: 7827174434090906951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_27
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 199
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4e801f2f22b729d0800000000000000
+      internalID: -2799072727664652724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_28
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 200
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 478c559abd4687b10800000000000000
+      internalID: 1979442930830919796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_29
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 200
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e8632604c11851d0800000000000000
+      internalID: -3361917588217829146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_30
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 200
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15dfcb6d0619885b0800000000000000
+      internalID: -5365879110906348207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_31
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 200
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a1b403c33af2bff0800000000000000
+      internalID: -21679947961290329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_32
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 200
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42b80f0defea447f0800000000000000
+      internalID: -629185638474675420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_33
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 199
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 811cdb8c19a5e26e0800000000000000
+      internalID: -1860450013872799464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_34
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 199
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3835aa42e79387c0800000000000000
+      internalID: -4070242640042051521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_35
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 200
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23a60fb1347255070800000000000000
+      internalID: 8094419074453367346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_36
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 200
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a70191a0416eeafa0800000000000000
+      internalID: -5787435497381359494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_37
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 200
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af5492b86d7300470800000000000000
+      internalID: 8358742302996907514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_38
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 200
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b11a7f6fdc47c730800000000000000
+      internalID: 4019265714983145907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_39
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 200
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f87b685d1842df70800000000000000
+      internalID: 9210503478800775416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_40
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 200
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5ddbc8ad7fdef740800000000000000
+      internalID: 5187829551573228895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_41
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 200
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1f2b81a0e6e35b80800000000000000
+      internalID: -8407122226913267938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_42
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 200
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93c4e9dd8749b9440800000000000000
+      internalID: 4943708262804376633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_43
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 201
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aacbb739e9f1b550800000000000000
+      internalID: 6174991344159410849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_44
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 200
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b0a0a40127e8c920800000000000000
+      internalID: 3010910479894749360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_45
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 200
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19d1b15c85ff804b0800000000000000
+      internalID: -5473844590339744367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_46
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 200
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ad1f6119fd50c280800000000000000
+      internalID: -9025110328929739353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_47
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 200
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 961d52dfb0f5d0190800000000000000
+      internalID: -7994629258416369303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_48
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 168
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c21fe358f366d3b0800000000000000
+      internalID: -5488089177693154616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_49
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 168
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed9a194e749e293c0800000000000000
+      internalID: -4354161394727147042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_50
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 167
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 004c67ea99b59e6f0800000000000000
+      internalID: -654891555190553600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_51
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 167
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bba9e5906d4b58f0800000000000000
+      internalID: -550761452195435599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_52
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 168
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cc7e5b003cdda370800000000000000
+      internalID: 8335560584239938755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_53
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 168
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ad5f55a9e07adcc0800000000000000
+      internalID: -3685509196245148252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_54
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 168
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d38b13c371b1dee0800000000000000
+      internalID: -1238013311797460011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_55
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 168
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8afcab794232471d0800000000000000
+      internalID: -3354017182412779608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_56
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 168
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73e55723ba2af00b0800000000000000
+      internalID: -5760206542213915081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_57
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 168
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecda466ce76de0370800000000000000
+      internalID: 8290799804018372046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_58
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 168
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a5f164d8ce563eb0800000000000000
+      internalID: -4740497341111208543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_59
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 168
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bee898df67f3b130800000000000000
+      internalID: 3581478188437008051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_60
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 168
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1452d5336babe55c0800000000000000
+      internalID: -4224734108718389951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_61
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 168
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45b0459d19ad77180800000000000000
+      internalID: -9117578600637002924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_62
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 168
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fc903113360dc460800000000000000
+      internalID: 7263468590419975409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_63
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 168
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca971994a9552aae0800000000000000
+      internalID: -1539574001459693140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_64
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 168
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3540a0c35d382edf0800000000000000
+      internalID: -152414485518613421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_65
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 168
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56f7e010cbea51f30800000000000000
+      internalID: 4545731521395195749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_66
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 168
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7383e4540ed333170800000000000000
+      internalID: 8156931383542822967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_67
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 168
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef359851a61b4c9a0800000000000000
+      internalID: -6213646516678470658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_68
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 168
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b94f6440c2dea45e0800000000000000
+      internalID: -1924465117441362789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_69
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 168
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b71e1073df5625e30800000000000000
+      internalID: 4490763916665807227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_70
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 166
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39e7841fb8eb888e0800000000000000
+      internalID: -1690892151819829613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_71
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 167
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f15c04f720440220800000000000000
+      internalID: 2451154637538742770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_72
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 136
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf07da04538535c30800000000000000
+      internalID: 4346915051084280059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_73
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 136
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2de64085c094cfc30800000000000000
+      internalID: 4394467653771882194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_74
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 135
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9204aaa8bccf58d40800000000000000
+      internalID: 5586148863957942313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_75
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 135
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c78ac54cf7c281ee0800000000000000
+      internalID: -1290232365974771588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_76
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 136
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5513bfaab4fadeb40800000000000000
+      internalID: 5471221861851017557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_77
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 136
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2ad7d126d7cf5a00800000000000000
+      internalID: 747535785671514671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_78
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 136
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaf0cd464425e61d0800000000000000
+      internalID: -3355654218641043542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_79
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 136
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3725689bfb0f7630800000000000000
+      internalID: 3926870575311824698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_80
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 136
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06d871a75fa482e50800000000000000
+      internalID: 6784755256809459040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_81
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 136
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b71fa3723a5ed130800000000000000
+      internalID: 3593408725423953844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_82
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 136
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d2a9523b6dadbc00800000000000000
+      internalID: 918080574971290324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_83
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 136
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a15f4d7e286f84c30800000000000000
+      internalID: 4343992882694518042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_84
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 136
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea02e70a421caf730800000000000000
+      internalID: 4033748779319304366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_85
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 136
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bdb7faf5f132fc70800000000000000
+      internalID: 9003313537614331319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_86
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 136
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec0640f4b80b47dc0800000000000000
+      internalID: -3642092086263258930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_87
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 136
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 522d6b5929cd8b710800000000000000
+      internalID: 1709358580722225701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_88
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 136
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 235bde0f300e46be0800000000000000
+      internalID: -1484815669593787086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_89
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 136
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5692fdc2180b44d0800000000000000
+      internalID: -3149414637557868965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_90
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 136
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0166ca5c43a45c590800000000000000
+      internalID: -7654630401131125232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_91
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 135
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52b83e6913cfd0230800000000000000
+      internalID: 3606816166508727077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_92
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 136
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7012d3d93e15ba180800000000000000
+      internalID: -9103092183761870585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_93
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 136
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eee4cb84a042f6b60800000000000000
+      internalID: 7741445911061745390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_94
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 131
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ecd033d1312b7f10800000000000000
+      internalID: 2268443335191485666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_95
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 132
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d5ab2a08cca09970800000000000000
+      internalID: 8759691250399684048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_96
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 104
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9a8717d22a43baa0800000000000000
+      internalID: -6146487552932607329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_97
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 104
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d4276cfefb8b16e0800000000000000
+      internalID: -1865743693342366505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_98
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 103
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88b95dd1484fce190800000000000000
+      internalID: -7931695995432887416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_99
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 103
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20d00bb77c1643f30800000000000000
+      internalID: 4554372632579935490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_100
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 104
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d49eed51fb497d130800000000000000
+      internalID: 3591502776277854541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_101
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 104
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22ab64f9d8fc7e9d0800000000000000
+      internalID: -2744997240689477086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_102
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 104
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4c652ae0e9afe4c0800000000000000
+      internalID: -4255996339375739825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_103
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 104
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d06ce25c4790c8a40800000000000000
+      internalID: 5371678852675192333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_104
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 104
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dec5fe04a941a8e0800000000000000
+      internalID: -1683983816685400361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_105
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 104
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fea207a3adda9e50800000000000000
+      internalID: 6817004680930045681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_106
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 104
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18cfc3ce97d037370800000000000000
+      internalID: 8319007753989061761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_107
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 104
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70bd6e5c06ace0ad0800000000000000
+      internalID: -2734025406781400313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_108
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 104
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60bdf33b82e52cf10800000000000000
+      internalID: 2288495089556642566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_109
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 104
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c2fc18bfbe14fd70800000000000000
+      internalID: 9075912957834883779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_110
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 104
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4791e5b94a8c7f8d0800000000000000
+      internalID: -2812558832962758284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_111
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 104
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4aa397a81ce163b30800000000000000
+      internalID: 4266631513580845732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_112
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 104
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8000eb70b9e2c2640800000000000000
+      internalID: 5056467725014925320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_113
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 104
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2f92fffd571cda20800000000000000
+      internalID: 3088369136962805549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_114
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 104
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0561adc3bb92f87f0800000000000000
+      internalID: -608221540515178928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_115
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 103
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7bc40391f59c18e0800000000000000
+      internalID: -1721336092776150147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_116
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 104
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d55511199e1e83d20800000000000000
+      internalID: 3258602723680015709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_117
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 104
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c8ea8ea756b93e20800000000000000
+      internalID: 3330893887123941571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_118
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 98
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a6ef7e6f32848700800000000000000
+      internalID: 541701064139728548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_119
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 99
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52af4cb367a2e5d10800000000000000
+      internalID: 2116175562207984165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_120
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 72
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23e7ef7d0e0232f80800000000000000
+      internalID: -8132620352032440782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_121
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 72
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34532914f6c3f90a0800000000000000
+      internalID: -6872708057804950205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_122
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 71
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f56412e3318c988f0800000000000000
+      internalID: -537678695521761697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_123
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 71
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd7f8083d6c57ca00800000000000000
+      internalID: 776691084906002399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_124
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 72
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 605b2ba47b5b01960800000000000000
+      internalID: 7570750772446672134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_125
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 72
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: babe2e61d02e4f940800000000000000
+      internalID: 5329132804932561835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_126
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 72
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 403653ae1c2e43a20800000000000000
+      internalID: 3041304970867860228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_127
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 72
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6702ee8bbb41c1840800000000000000
+      internalID: 5196050866572763254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_128
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 72
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05c8cf65e8a88dd50800000000000000
+      internalID: 6762307184446180432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_129
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 72
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ea759cfa1f86c610800000000000000
+      internalID: 1641156460292700900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_130
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 72
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efe7e5ccb41cc4f00800000000000000
+      internalID: 1102468540094381822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_131
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 72
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bb3f667735d60480800000000000000
+      internalID: -8933218376655881292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_132
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 72
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5c809fce59f5ca70800000000000000
+      internalID: 8846751228643806303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_133
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 72
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4244ee546430528a0800000000000000
+      internalID: -6330650100843527132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_134
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 72
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93344ed133be7d120800000000000000
+      internalID: 2438676328021771065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_135
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 72
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d800651ee381a8ee0800000000000000
+      internalID: -1258166487549083507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_136
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 72
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85378068b47016e20800000000000000
+      internalID: 3341960419438261080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_137
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 72
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 287476f51391daf60800000000000000
+      internalID: 8047115809025640322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_138
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 72
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63effaf1aa4986090800000000000000
+      internalID: -8041013676273041866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_139
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 71
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d462b70883298aed0800000000000000
+      internalID: -2402509629830781363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_140
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 72
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fadf9ea652ba450c0800000000000000
+      internalID: -4587853943187833425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_141
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 72
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17848e8a1b9bc0fa0800000000000000
+      internalID: -5833083244657489807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_142
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 65
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e144878b2e8f0030800000000000000
+      internalID: 3463142956079530466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_143
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 66
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bd5b2c392692c5b0800000000000000
+      internalID: -5349548303515427399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_144
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 40
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 833701750f10c1b80800000000000000
+      internalID: -8422855071325195464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_145
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 40
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dca6446bb4562030800000000000000
+      internalID: 3469553726753516759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_146
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 39
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2468e2d10cb4c74e0800000000000000
+      internalID: -1982626447454468542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_147
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 39
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fc4e266f0bfb8db0800000000000000
+      internalID: -4788457735220998923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_148
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 40
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c29f21f8d748d2f0800000000000000
+      internalID: -947928724476554558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_149
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 40
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9329c5ae5287ea60800000000000000
+      internalID: 7703269030660481947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_150
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 40
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6522c40b5cad6be70800000000000000
+      internalID: 9130725837141451350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_151
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 40
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfe41b2c1bb36bfb0800000000000000
+      internalID: -4632449532042326277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_152
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 40
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e46bb4aaaf0bcf540800000000000000
+      internalID: 5043100273393514062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_153
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 40
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01dd3a5241eeb7a70800000000000000
+      internalID: 8825909665060871440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_154
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 40
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 816d06db35621e1e0800000000000000
+      internalID: -2170411404314487272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_155
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 40
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3034434b981a48190800000000000000
+      internalID: -7961060628478278909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_156
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 40
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e928db2982d8aa40800000000000000
+      internalID: 5379781241481996777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_157
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 40
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c02f5226f9ad89ad0800000000000000
+      internalID: -2695163998899932660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_158
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 40
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d8e8486bb8cbd3c0800000000000000
+      internalID: -4333649509179922221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_159
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 40
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8529481cf3b2b2980800000000000000
+      internalID: -8562702713685241256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_160
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 40
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6950362bf232c61c0800000000000000
+      internalID: -4509190439141440106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_161
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 40
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d28a330970e41ecf0800000000000000
+      internalID: -224812712000772051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_162
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 40
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d65a313027ca4bcb0800000000000000
+      internalID: -4849061293093313171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_163
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 40
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58643fa7f9ef1c180800000000000000
+      internalID: -9096709811395672443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_164
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 40
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 800d38e6e81456350800000000000000
+      internalID: 6009281357791088648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_165
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 40
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3041a28a1cd012360800000000000000
+      internalID: 7143005609387496451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_166
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 38
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2786f2b91df7e110800000000000000
+      internalID: 1290278105083447083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_167
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 39
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cde8f8956a3d9090800000000000000
+      internalID: -8026194752871797305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_168
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 8
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecd97163fadca6870800000000000000
+      internalID: 8676973784493170126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_169
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 8
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46685cfe009d40860800000000000000
+      internalID: 7495354277897274980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_170
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 7
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61c37062f6b1cb450800000000000000
+      internalID: 6105785359000878102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_171
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 7
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d237bd10d8d1a2650800000000000000
+      internalID: 6208807527742403373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_172
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 8
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f7c9f356991e2a80800000000000000
+      internalID: -8489820114102138894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_173
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 8
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 442f29cf907bdaaf0800000000000000
+      internalID: -383449139736546748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_174
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 8
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1449b4203de69400800000000000000
+      internalID: 330712413688644635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_175
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 8
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51a71a9469cfe0820800000000000000
+      internalID: 2886522133601679893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_176
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 8
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eac3229604dba2bd0800000000000000
+      internalID: -2654100946042078034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_177
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 7
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff7409b1a6e9fa8f0800000000000000
+      internalID: -527028452812896257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_178
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 7
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbd60c28a10aedb60800000000000000
+      internalID: 7772826042611297724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_179
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 7
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0cddc7a08c30f520800000000000000
+      internalID: 2733751497082657805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_180
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 8
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1502d2fdc72f98630800000000000000
+      internalID: 3929938767991611473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_181
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 8
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e43923ef2cb5c8a0800000000000000
+      internalID: -6285410791065045783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_182
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 7
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da5e4cbfab5595490800000000000000
+      internalID: -7757074621592705619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_183
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 8
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33fe227337d7423f0800000000000000
+      internalID: -926477689531732173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_184
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 8
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9799bd462ea8330e0800000000000000
+      internalID: -2291335080442095239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_185
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 8
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac4526c5801a02930800000000000000
+      internalID: 4116467116698391754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_186
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 8
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c81fa51dd5be64840800000000000000
+      internalID: 5208108807277441420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_187
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 9
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f03adacd72dffb00800000000000000
+      internalID: 864641091194466547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_188
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 8
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53aaa6f6b1bc786a0800000000000000
+      internalID: -6446961022863758795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_189
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 8
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3603b4c4feb7bd9a0800000000000000
+      internalID: -6207231393692700573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_190
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 8
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a034a754984ed73c0800000000000000
+      internalID: -4360077585997479158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage-Red_191
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 8
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fb3af38d50af6630800000000000000
+      internalID: 3922530123969608695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Mage-Red_0: 8479045103394712149
+      Mage-Red_1: -2476969210028978253
+      Mage-Red_10: 7763774349839313995
+      Mage-Red_100: 3591502776277854541
+      Mage-Red_101: -2744997240689477086
+      Mage-Red_102: -4255996339375739825
+      Mage-Red_103: 5371678852675192333
+      Mage-Red_104: -1683983816685400361
+      Mage-Red_105: 6817004680930045681
+      Mage-Red_106: 8319007753989061761
+      Mage-Red_107: -2734025406781400313
+      Mage-Red_108: 2288495089556642566
+      Mage-Red_109: 9075912957834883779
+      Mage-Red_11: -8692392853697485550
+      Mage-Red_110: -2812558832962758284
+      Mage-Red_111: 4266631513580845732
+      Mage-Red_112: 5056467725014925320
+      Mage-Red_113: 3088369136962805549
+      Mage-Red_114: -608221540515178928
+      Mage-Red_115: -1721336092776150147
+      Mage-Red_116: 3258602723680015709
+      Mage-Red_117: 3330893887123941571
+      Mage-Red_118: 541701064139728548
+      Mage-Red_119: 2116175562207984165
+      Mage-Red_12: 9063369128434202132
+      Mage-Red_120: -8132620352032440782
+      Mage-Red_121: -6872708057804950205
+      Mage-Red_122: -537678695521761697
+      Mage-Red_123: 776691084906002399
+      Mage-Red_124: 7570750772446672134
+      Mage-Red_125: 5329132804932561835
+      Mage-Red_126: 3041304970867860228
+      Mage-Red_127: 5196050866572763254
+      Mage-Red_128: 6762307184446180432
+      Mage-Red_129: 1641156460292700900
+      Mage-Red_13: -5231138358569969711
+      Mage-Red_130: 1102468540094381822
+      Mage-Red_131: -8933218376655881292
+      Mage-Red_132: 8846751228643806303
+      Mage-Red_133: -6330650100843527132
+      Mage-Red_134: 2438676328021771065
+      Mage-Red_135: -1258166487549083507
+      Mage-Red_136: 3341960419438261080
+      Mage-Red_137: 8047115809025640322
+      Mage-Red_138: -8041013676273041866
+      Mage-Red_139: -2402509629830781363
+      Mage-Red_14: 883786114514807179
+      Mage-Red_140: -4587853943187833425
+      Mage-Red_141: -5833083244657489807
+      Mage-Red_142: 3463142956079530466
+      Mage-Red_143: -5349548303515427399
+      Mage-Red_144: -8422855071325195464
+      Mage-Red_145: 3469553726753516759
+      Mage-Red_146: -1982626447454468542
+      Mage-Red_147: -4788457735220998923
+      Mage-Red_148: -947928724476554558
+      Mage-Red_149: 7703269030660481947
+      Mage-Red_15: 672188464970392152
+      Mage-Red_150: 9130725837141451350
+      Mage-Red_151: -4632449532042326277
+      Mage-Red_152: 5043100273393514062
+      Mage-Red_153: 8825909665060871440
+      Mage-Red_154: -2170411404314487272
+      Mage-Red_155: -7961060628478278909
+      Mage-Red_156: 5379781241481996777
+      Mage-Red_157: -2695163998899932660
+      Mage-Red_158: -4333649509179922221
+      Mage-Red_159: -8562702713685241256
+      Mage-Red_16: 3616687890184993602
+      Mage-Red_160: -4509190439141440106
+      Mage-Red_161: -224812712000772051
+      Mage-Red_162: -4849061293093313171
+      Mage-Red_163: -9096709811395672443
+      Mage-Red_164: 6009281357791088648
+      Mage-Red_165: 7143005609387496451
+      Mage-Red_166: 1290278105083447083
+      Mage-Red_167: -8026194752871797305
+      Mage-Red_168: 8676973784493170126
+      Mage-Red_169: 7495354277897274980
+      Mage-Red_17: 6231546955820868503
+      Mage-Red_170: 6105785359000878102
+      Mage-Red_171: 6208807527742403373
+      Mage-Red_172: -8489820114102138894
+      Mage-Red_173: -383449139736546748
+      Mage-Red_174: 330712413688644635
+      Mage-Red_175: 2886522133601679893
+      Mage-Red_176: -2654100946042078034
+      Mage-Red_177: -527028452812896257
+      Mage-Red_178: 7772826042611297724
+      Mage-Red_179: 2733751497082657805
+      Mage-Red_18: -9120779059865262983
+      Mage-Red_180: 3929938767991611473
+      Mage-Red_181: -6285410791065045783
+      Mage-Red_182: -7757074621592705619
+      Mage-Red_183: -926477689531732173
+      Mage-Red_184: -2291335080442095239
+      Mage-Red_185: 4116467116698391754
+      Mage-Red_186: 5208108807277441420
+      Mage-Red_187: 864641091194466547
+      Mage-Red_188: -6446961022863758795
+      Mage-Red_189: -6207231393692700573
+      Mage-Red_19: -643275059034912239
+      Mage-Red_190: -4360077585997479158
+      Mage-Red_191: 3922530123969608695
+      Mage-Red_2: -3075202493335432332
+      Mage-Red_20: 3836700538957969319
+      Mage-Red_21: 1524343784330155152
+      Mage-Red_22: -7373361386945839523
+      Mage-Red_23: -7169670205486709519
+      Mage-Red_24: 5984666558116696715
+      Mage-Red_25: 6006306923407164217
+      Mage-Red_26: 7827174434090906951
+      Mage-Red_27: -2799072727664652724
+      Mage-Red_28: 1979442930830919796
+      Mage-Red_29: -3361917588217829146
+      Mage-Red_3: 1335538919864731851
+      Mage-Red_30: -5365879110906348207
+      Mage-Red_31: -21679947961290329
+      Mage-Red_32: -629185638474675420
+      Mage-Red_33: -1860450013872799464
+      Mage-Red_34: -4070242640042051521
+      Mage-Red_35: 8094419074453367346
+      Mage-Red_36: -5787435497381359494
+      Mage-Red_37: 8358742302996907514
+      Mage-Red_38: 4019265714983145907
+      Mage-Red_39: 9210503478800775416
+      Mage-Red_4: -3810487310857665867
+      Mage-Red_40: 5187829551573228895
+      Mage-Red_41: -8407122226913267938
+      Mage-Red_42: 4943708262804376633
+      Mage-Red_43: 6174991344159410849
+      Mage-Red_44: 3010910479894749360
+      Mage-Red_45: -5473844590339744367
+      Mage-Red_46: -9025110328929739353
+      Mage-Red_47: -7994629258416369303
+      Mage-Red_48: -5488089177693154616
+      Mage-Red_49: -4354161394727147042
+      Mage-Red_5: -2305754619721442657
+      Mage-Red_50: -654891555190553600
+      Mage-Red_51: -550761452195435599
+      Mage-Red_52: 8335560584239938755
+      Mage-Red_53: -3685509196245148252
+      Mage-Red_54: -1238013311797460011
+      Mage-Red_55: -3354017182412779608
+      Mage-Red_56: -5760206542213915081
+      Mage-Red_57: 8290799804018372046
+      Mage-Red_58: -4740497341111208543
+      Mage-Red_59: 3581478188437008051
+      Mage-Red_6: 6222004213048100555
+      Mage-Red_60: -4224734108718389951
+      Mage-Red_61: -9117578600637002924
+      Mage-Red_62: 7263468590419975409
+      Mage-Red_63: -1539574001459693140
+      Mage-Red_64: -152414485518613421
+      Mage-Red_65: 4545731521395195749
+      Mage-Red_66: 8156931383542822967
+      Mage-Red_67: -6213646516678470658
+      Mage-Red_68: -1924465117441362789
+      Mage-Red_69: 4490763916665807227
+      Mage-Red_7: 8498093476955623345
+      Mage-Red_70: -1690892151819829613
+      Mage-Red_71: 2451154637538742770
+      Mage-Red_72: 4346915051084280059
+      Mage-Red_73: 4394467653771882194
+      Mage-Red_74: 5586148863957942313
+      Mage-Red_75: -1290232365974771588
+      Mage-Red_76: 5471221861851017557
+      Mage-Red_77: 747535785671514671
+      Mage-Red_78: -3355654218641043542
+      Mage-Red_79: 3926870575311824698
+      Mage-Red_8: -3051383091967959089
+      Mage-Red_80: 6784755256809459040
+      Mage-Red_81: 3593408725423953844
+      Mage-Red_82: 918080574971290324
+      Mage-Red_83: 4343992882694518042
+      Mage-Red_84: 4033748779319304366
+      Mage-Red_85: 9003313537614331319
+      Mage-Red_86: -3642092086263258930
+      Mage-Red_87: 1709358580722225701
+      Mage-Red_88: -1484815669593787086
+      Mage-Red_89: -3149414637557868965
+      Mage-Red_9: 1121999723506611184
+      Mage-Red_90: -7654630401131125232
+      Mage-Red_91: 3606816166508727077
+      Mage-Red_92: -9103092183761870585
+      Mage-Red_93: 7741445911061745390
+      Mage-Red_94: 2268443335191485666
+      Mage-Red_95: 8759691250399684048
+      Mage-Red_96: -6146487552932607329
+      Mage-Red_97: -1865743693342366505
+      Mage-Red_98: -7931695995432887416
+      Mage-Red_99: 4554372632579935490
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

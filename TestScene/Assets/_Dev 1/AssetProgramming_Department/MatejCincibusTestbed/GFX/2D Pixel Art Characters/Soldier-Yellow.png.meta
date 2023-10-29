@@ -1,0 +1,4924 @@
+fileFormatVersion: 2
+guid: e39b9f5f112c34649af2a8d34bf5fd87
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1784107046680036601
+    second: Soldier-Yellow_0
+  - first:
+      213: -7549085529437928589
+    second: Soldier-Yellow_1
+  - first:
+      213: 5098687256136412712
+    second: Soldier-Yellow_2
+  - first:
+      213: 6814876263932291928
+    second: Soldier-Yellow_3
+  - first:
+      213: -2544316719645917627
+    second: Soldier-Yellow_4
+  - first:
+      213: 4915520571219261965
+    second: Soldier-Yellow_5
+  - first:
+      213: 3486404707940661334
+    second: Soldier-Yellow_6
+  - first:
+      213: 1718955893143547629
+    second: Soldier-Yellow_7
+  - first:
+      213: -3536044399530269334
+    second: Soldier-Yellow_8
+  - first:
+      213: -4520476210994739425
+    second: Soldier-Yellow_9
+  - first:
+      213: -424361646050915999
+    second: Soldier-Yellow_10
+  - first:
+      213: -8239661864436632062
+    second: Soldier-Yellow_11
+  - first:
+      213: 4534446259040939112
+    second: Soldier-Yellow_12
+  - first:
+      213: 4127081758504423524
+    second: Soldier-Yellow_13
+  - first:
+      213: 5712303344001840112
+    second: Soldier-Yellow_14
+  - first:
+      213: -9144508950627685510
+    second: Soldier-Yellow_15
+  - first:
+      213: 5468526853503133426
+    second: Soldier-Yellow_16
+  - first:
+      213: 2282484408835532467
+    second: Soldier-Yellow_17
+  - first:
+      213: -5804361328223088992
+    second: Soldier-Yellow_18
+  - first:
+      213: 5913787832411908605
+    second: Soldier-Yellow_19
+  - first:
+      213: 7143763139156759259
+    second: Soldier-Yellow_20
+  - first:
+      213: 4532243825778602516
+    second: Soldier-Yellow_21
+  - first:
+      213: -5229228013250182224
+    second: Soldier-Yellow_22
+  - first:
+      213: -5827330420579475322
+    second: Soldier-Yellow_23
+  - first:
+      213: 6438153550530183121
+    second: Soldier-Yellow_24
+  - first:
+      213: 8706900903590170504
+    second: Soldier-Yellow_25
+  - first:
+      213: 7718179231603470450
+    second: Soldier-Yellow_26
+  - first:
+      213: -7372767263029534638
+    second: Soldier-Yellow_27
+  - first:
+      213: -207106549729516215
+    second: Soldier-Yellow_28
+  - first:
+      213: 1427293570212969307
+    second: Soldier-Yellow_29
+  - first:
+      213: 3836434166802742065
+    second: Soldier-Yellow_30
+  - first:
+      213: -2929882124012848077
+    second: Soldier-Yellow_31
+  - first:
+      213: 8237038847306191501
+    second: Soldier-Yellow_32
+  - first:
+      213: -8968559473048725882
+    second: Soldier-Yellow_33
+  - first:
+      213: 3692471380659122366
+    second: Soldier-Yellow_34
+  - first:
+      213: -3184208027126644795
+    second: Soldier-Yellow_35
+  - first:
+      213: 3031178325040897394
+    second: Soldier-Yellow_36
+  - first:
+      213: -1444369978011558905
+    second: Soldier-Yellow_37
+  - first:
+      213: -2307044728482549319
+    second: Soldier-Yellow_38
+  - first:
+      213: 9155620832732242027
+    second: Soldier-Yellow_39
+  - first:
+      213: 1919871645817543874
+    second: Soldier-Yellow_40
+  - first:
+      213: 8530333727947560521
+    second: Soldier-Yellow_41
+  - first:
+      213: -1269800328697239878
+    second: Soldier-Yellow_42
+  - first:
+      213: -3153111964114341546
+    second: Soldier-Yellow_43
+  - first:
+      213: 4772158871950793009
+    second: Soldier-Yellow_44
+  - first:
+      213: 8513142090674050135
+    second: Soldier-Yellow_45
+  - first:
+      213: 6518333889398399581
+    second: Soldier-Yellow_46
+  - first:
+      213: 6001319913442434782
+    second: Soldier-Yellow_47
+  - first:
+      213: 7395547033659589730
+    second: Soldier-Yellow_48
+  - first:
+      213: 3416909381947551838
+    second: Soldier-Yellow_49
+  - first:
+      213: 132030625323640225
+    second: Soldier-Yellow_50
+  - first:
+      213: 772118326508683091
+    second: Soldier-Yellow_51
+  - first:
+      213: -6578422951881785610
+    second: Soldier-Yellow_52
+  - first:
+      213: 6976799745280439787
+    second: Soldier-Yellow_53
+  - first:
+      213: 2982829252213040957
+    second: Soldier-Yellow_54
+  - first:
+      213: 8261612914780040074
+    second: Soldier-Yellow_55
+  - first:
+      213: 660876276973091192
+    second: Soldier-Yellow_56
+  - first:
+      213: -6965333017166057121
+    second: Soldier-Yellow_57
+  - first:
+      213: 400757168445399657
+    second: Soldier-Yellow_58
+  - first:
+      213: -4339084414738224965
+    second: Soldier-Yellow_59
+  - first:
+      213: -937613334159380795
+    second: Soldier-Yellow_60
+  - first:
+      213: -7517220547569582174
+    second: Soldier-Yellow_61
+  - first:
+      213: -9075771053744342016
+    second: Soldier-Yellow_62
+  - first:
+      213: 2036877702541703589
+    second: Soldier-Yellow_63
+  - first:
+      213: 3691149063054868923
+    second: Soldier-Yellow_64
+  - first:
+      213: -4746750143070885303
+    second: Soldier-Yellow_65
+  - first:
+      213: 4280000754545098086
+    second: Soldier-Yellow_66
+  - first:
+      213: 6885066697239846376
+    second: Soldier-Yellow_67
+  - first:
+      213: -5095788778894952793
+    second: Soldier-Yellow_68
+  - first:
+      213: -4124925508018864012
+    second: Soldier-Yellow_69
+  - first:
+      213: -6011405006305199537
+    second: Soldier-Yellow_70
+  - first:
+      213: 8121093058236143509
+    second: Soldier-Yellow_71
+  - first:
+      213: -394613777686996192
+    second: Soldier-Yellow_72
+  - first:
+      213: -1096298459625441257
+    second: Soldier-Yellow_73
+  - first:
+      213: -2735268167288008440
+    second: Soldier-Yellow_74
+  - first:
+      213: 7175557830106996930
+    second: Soldier-Yellow_75
+  - first:
+      213: 4131526691432171698
+    second: Soldier-Yellow_76
+  - first:
+      213: -4895909807470587600
+    second: Soldier-Yellow_77
+  - first:
+      213: -941672684105392194
+    second: Soldier-Yellow_78
+  - first:
+      213: 1140939528469631326
+    second: Soldier-Yellow_79
+  - first:
+      213: 2596250277846710273
+    second: Soldier-Yellow_80
+  - first:
+      213: 3995543936567436283
+    second: Soldier-Yellow_81
+  - first:
+      213: -8687122492274431877
+    second: Soldier-Yellow_82
+  - first:
+      213: 6691761790745372109
+    second: Soldier-Yellow_83
+  - first:
+      213: 6152483229114438644
+    second: Soldier-Yellow_84
+  - first:
+      213: -7568923652620927132
+    second: Soldier-Yellow_85
+  - first:
+      213: 6630741344452266868
+    second: Soldier-Yellow_86
+  - first:
+      213: -1642602311893439557
+    second: Soldier-Yellow_87
+  - first:
+      213: 1675062292455753892
+    second: Soldier-Yellow_88
+  - first:
+      213: -2937001046730019006
+    second: Soldier-Yellow_89
+  - first:
+      213: 6260431942632095646
+    second: Soldier-Yellow_90
+  - first:
+      213: -1410434571979293522
+    second: Soldier-Yellow_91
+  - first:
+      213: 8452813615015255550
+    second: Soldier-Yellow_92
+  - first:
+      213: 4633623908378254288
+    second: Soldier-Yellow_93
+  - first:
+      213: 8902741712788157741
+    second: Soldier-Yellow_94
+  - first:
+      213: 8896249264570157089
+    second: Soldier-Yellow_95
+  - first:
+      213: 3939294346635111481
+    second: Soldier-Yellow_96
+  - first:
+      213: 3277084369328450968
+    second: Soldier-Yellow_97
+  - first:
+      213: -4596727602231198946
+    second: Soldier-Yellow_98
+  - first:
+      213: -9085788108331110874
+    second: Soldier-Yellow_99
+  - first:
+      213: -5145559101144141066
+    second: Soldier-Yellow_100
+  - first:
+      213: -6448837476674680800
+    second: Soldier-Yellow_101
+  - first:
+      213: -5978860828981475705
+    second: Soldier-Yellow_102
+  - first:
+      213: 3014947561259099578
+    second: Soldier-Yellow_103
+  - first:
+      213: 4191574957289319608
+    second: Soldier-Yellow_104
+  - first:
+      213: 2145687978253687711
+    second: Soldier-Yellow_105
+  - first:
+      213: 7495996816726245128
+    second: Soldier-Yellow_106
+  - first:
+      213: -4827402811916076628
+    second: Soldier-Yellow_107
+  - first:
+      213: 2057752496397487645
+    second: Soldier-Yellow_108
+  - first:
+      213: 1027321947058893248
+    second: Soldier-Yellow_109
+  - first:
+      213: 5769868443974540138
+    second: Soldier-Yellow_110
+  - first:
+      213: 5447379058183329475
+    second: Soldier-Yellow_111
+  - first:
+      213: 6564200381263049833
+    second: Soldier-Yellow_112
+  - first:
+      213: -8502205637925903736
+    second: Soldier-Yellow_113
+  - first:
+      213: -607695255962271157
+    second: Soldier-Yellow_114
+  - first:
+      213: -6179632046079804288
+    second: Soldier-Yellow_115
+  - first:
+      213: 5733340219106953004
+    second: Soldier-Yellow_116
+  - first:
+      213: 6182020218601536898
+    second: Soldier-Yellow_117
+  - first:
+      213: -3481304142826299400
+    second: Soldier-Yellow_118
+  - first:
+      213: 6091227565874680486
+    second: Soldier-Yellow_119
+  - first:
+      213: -6497346211943771933
+    second: Soldier-Yellow_120
+  - first:
+      213: 1511874893734264072
+    second: Soldier-Yellow_121
+  - first:
+      213: 685292824057011809
+    second: Soldier-Yellow_122
+  - first:
+      213: 4094896473065150367
+    second: Soldier-Yellow_123
+  - first:
+      213: 2730178361986549709
+    second: Soldier-Yellow_124
+  - first:
+      213: 7996563945723032576
+    second: Soldier-Yellow_125
+  - first:
+      213: 5743631337980602190
+    second: Soldier-Yellow_126
+  - first:
+      213: -7792780447013748855
+    second: Soldier-Yellow_127
+  - first:
+      213: -5785712419867551039
+    second: Soldier-Yellow_128
+  - first:
+      213: 4995343451700655331
+    second: Soldier-Yellow_129
+  - first:
+      213: -4863763413984099419
+    second: Soldier-Yellow_130
+  - first:
+      213: 2308211117874257223
+    second: Soldier-Yellow_131
+  - first:
+      213: 2634139315238966575
+    second: Soldier-Yellow_132
+  - first:
+      213: 2637407617163358991
+    second: Soldier-Yellow_133
+  - first:
+      213: 6021733374307108556
+    second: Soldier-Yellow_134
+  - first:
+      213: -714633858097827876
+    second: Soldier-Yellow_135
+  - first:
+      213: 6186804996644288296
+    second: Soldier-Yellow_136
+  - first:
+      213: -26623820190192553
+    second: Soldier-Yellow_137
+  - first:
+      213: -6254581617610492020
+    second: Soldier-Yellow_138
+  - first:
+      213: 3189857713489727192
+    second: Soldier-Yellow_139
+  - first:
+      213: 5372186486768847737
+    second: Soldier-Yellow_140
+  - first:
+      213: 626305498684440324
+    second: Soldier-Yellow_141
+  - first:
+      213: 8809820813348448079
+    second: Soldier-Yellow_142
+  - first:
+      213: -8867386382897901475
+    second: Soldier-Yellow_143
+  - first:
+      213: 1360422008043193469
+    second: Soldier-Yellow_144
+  - first:
+      213: 4222482723689878267
+    second: Soldier-Yellow_145
+  - first:
+      213: -1497003147799799138
+    second: Soldier-Yellow_146
+  - first:
+      213: -6617001096159616429
+    second: Soldier-Yellow_147
+  - first:
+      213: -6895195725169116882
+    second: Soldier-Yellow_148
+  - first:
+      213: -1669333611644584040
+    second: Soldier-Yellow_149
+  - first:
+      213: -7456180429844970287
+    second: Soldier-Yellow_150
+  - first:
+      213: -2176646916412472943
+    second: Soldier-Yellow_151
+  - first:
+      213: -5817244987463974128
+    second: Soldier-Yellow_152
+  - first:
+      213: 8263586510148680909
+    second: Soldier-Yellow_153
+  - first:
+      213: 5918172844028562461
+    second: Soldier-Yellow_154
+  - first:
+      213: -8429740960525899587
+    second: Soldier-Yellow_155
+  - first:
+      213: -7110867513866415217
+    second: Soldier-Yellow_156
+  - first:
+      213: 2070604127880433736
+    second: Soldier-Yellow_157
+  - first:
+      213: -7062763601509473350
+    second: Soldier-Yellow_158
+  - first:
+      213: -6216738699616705777
+    second: Soldier-Yellow_159
+  - first:
+      213: -7493028371406084387
+    second: Soldier-Yellow_160
+  - first:
+      213: -8619909637731201693
+    second: Soldier-Yellow_161
+  - first:
+      213: 4022774125159244938
+    second: Soldier-Yellow_162
+  - first:
+      213: 2584392751877227713
+    second: Soldier-Yellow_163
+  - first:
+      213: -4089978333524361099
+    second: Soldier-Yellow_164
+  - first:
+      213: 4352085336516068592
+    second: Soldier-Yellow_165
+  - first:
+      213: -5162010246103255152
+    second: Soldier-Yellow_166
+  - first:
+      213: -9040513742768951546
+    second: Soldier-Yellow_167
+  - first:
+      213: -3405857479554168537
+    second: Soldier-Yellow_168
+  - first:
+      213: -2147465811848420198
+    second: Soldier-Yellow_169
+  - first:
+      213: -209942233088150089
+    second: Soldier-Yellow_170
+  - first:
+      213: -686126835317788867
+    second: Soldier-Yellow_171
+  - first:
+      213: -4588000551177803184
+    second: Soldier-Yellow_172
+  - first:
+      213: 7387975373153482506
+    second: Soldier-Yellow_173
+  - first:
+      213: 7507661376700511020
+    second: Soldier-Yellow_174
+  - first:
+      213: 1466133540391562608
+    second: Soldier-Yellow_175
+  - first:
+      213: -6563272263632061415
+    second: Soldier-Yellow_176
+  - first:
+      213: 3116136163318682030
+    second: Soldier-Yellow_177
+  - first:
+      213: -1809777316353436696
+    second: Soldier-Yellow_178
+  - first:
+      213: 6680685714658198701
+    second: Soldier-Yellow_179
+  - first:
+      213: 6084256160783897486
+    second: Soldier-Yellow_180
+  - first:
+      213: 6313196272373066832
+    second: Soldier-Yellow_181
+  - first:
+      213: -8851037374612315834
+    second: Soldier-Yellow_182
+  - first:
+      213: -5498229072121735300
+    second: Soldier-Yellow_183
+  - first:
+      213: -2425925644158209643
+    second: Soldier-Yellow_184
+  - first:
+      213: 4404741019975651404
+    second: Soldier-Yellow_185
+  - first:
+      213: -1480790172743063610
+    second: Soldier-Yellow_186
+  - first:
+      213: 7914521449449742494
+    second: Soldier-Yellow_187
+  - first:
+      213: -865060231209546056
+    second: Soldier-Yellow_188
+  - first:
+      213: -2368991913041935426
+    second: Soldier-Yellow_189
+  - first:
+      213: 581480984647720485
+    second: Soldier-Yellow_190
+  - first:
+      213: 5860256677167241478
+    second: Soldier-Yellow_191
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Soldier-Yellow_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 232
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70b7d59f7149d37e0800000000000000
+      internalID: -1784107046680036601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 232
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3738fce25b24c3790800000000000000
+      internalID: -7549085529437928589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_2
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 231
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82e62d2ab0d22c640800000000000000
+      internalID: 5098687256136412712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_3
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 231
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85bece3fadd439e50800000000000000
+      internalID: 6814876263932291928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_4
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 232
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54efa618c65c0bcd0800000000000000
+      internalID: -2544316719645917627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_5
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 232
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0a36ad7aef673440800000000000000
+      internalID: 4915520571219261965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_6
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 231
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6587d003c92326030800000000000000
+      internalID: 3486404707940661334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_7
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 232
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deea2630745fad710800000000000000
+      internalID: 1718955893143547629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_8
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 231
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a652df77a527deec0800000000000000
+      internalID: -3536044399530269334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_9
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 231
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f170e0c26da0441c0800000000000000
+      internalID: -4520476210994739425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_10
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 231
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 169c5dec45d5c1af0800000000000000
+      internalID: -424361646050915999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_11
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 232
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 206fbec9037d6ad80800000000000000
+      internalID: -8239661864436632062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_12
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 232
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86ceb3b19d69dee30800000000000000
+      internalID: 4534446259040939112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_13
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 232
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46096ae3ef6564930800000000000000
+      internalID: 4127081758504423524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_14
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 228
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f3718450ad264f40800000000000000
+      internalID: 5712303344001840112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_15
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 232
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7be4702f8d281180800000000000000
+      internalID: -9144508950627685510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_16
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 232
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f62db3233c14eb40800000000000000
+      internalID: 5468526853503133426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_17
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 232
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b6620a0a730daf10800000000000000
+      internalID: 2282484408835532467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_18
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 232
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ae8f33ff14c27fa0800000000000000
+      internalID: -5804361328223088992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_19
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 233
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df960f373bef11250800000000000000
+      internalID: 5913787832411908605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_20
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 232
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd2d7fcc9beb32360800000000000000
+      internalID: 7143763139156759259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_21
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 232
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 412bdf62fb3c5ee30800000000000000
+      internalID: 4532243825778602516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_22
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 232
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b383bcd3dc0e67b0800000000000000
+      internalID: -5229228013250182224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_23
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 232
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68068846bd9212fa0800000000000000
+      internalID: -5827330420579475322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_24
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 200
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1df75cc1b8ae85950800000000000000
+      internalID: 6438153550530183121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_25
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 200
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88f050d9d3025d870800000000000000
+      internalID: 8706900903590170504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_26
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 199
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 270b5845e1b7c1b60800000000000000
+      internalID: 7718179231603470450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_27
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 199
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 250ee73ac3baea990800000000000000
+      internalID: -7372767263029534638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_28
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 200
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94527b8b0b5302df0800000000000000
+      internalID: -207106549729516215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_29
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 200
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5b3eb2a0f3cec310800000000000000
+      internalID: 1427293570212969307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_30
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 200
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13bf2746c80cd3530800000000000000
+      internalID: 3836434166802742065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_31
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 200
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33c727c3bb7f657d0800000000000000
+      internalID: -2929882124012848077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_32
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 200
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8257ce9037df4270800000000000000
+      internalID: 8237038847306191501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_33
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 199
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68657fd3da6498380800000000000000
+      internalID: -8968559473048725882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_34
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 199
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb0bb7b382b4e3330800000000000000
+      internalID: 3692471380659122366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_35
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 200
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cf3b248bab6fc3d0800000000000000
+      internalID: -3184208027126644795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_36
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 200
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27d1de270a8e01a20800000000000000
+      internalID: 3031178325040897394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_37
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 200
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70cd168582194fbe0800000000000000
+      internalID: -1444369978011558905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_38
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 200
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b13cddea0bbbffd0800000000000000
+      internalID: -2307044728482549319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_39
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 200
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b60eb2983ac4f0f70800000000000000
+      internalID: 9155620832732242027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_40
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 200
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cc9c470711c4aa10800000000000000
+      internalID: 1919871645817543874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_41
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 200
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94619d57455d16670800000000000000
+      internalID: 8530333727947560521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_42
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 200
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab6a3582453c06ee0800000000000000
+      internalID: -1269800328697239878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_43
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 201
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6513ee1ef55ed34d0800000000000000
+      internalID: -3153111964114341546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_44
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 200
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1391b56c53d1a3240800000000000000
+      internalID: 4772158871950793009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_45
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 200
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7549d0d70a1c42670800000000000000
+      internalID: 8513142090674050135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_46
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 200
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d526bf40326c57a50800000000000000
+      internalID: 6518333889398399581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_47
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 200
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eded6383aa8f84350800000000000000
+      internalID: 6001319913442434782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_48
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 168
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26449f408d242a660800000000000000
+      internalID: 7395547033659589730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_49
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 168
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e50fea4bafc4b6f20800000000000000
+      internalID: 3416909381947551838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_50
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 167
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a563e9772115d100800000000000000
+      internalID: 132030625323640225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_51
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 167
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35f7e10f68d17ba00800000000000000
+      internalID: 772118326508683091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_52
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 168
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fe3fc2ed2fb4b4a0800000000000000
+      internalID: -6578422951881785610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_53
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 168
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be5f976576292d060800000000000000
+      internalID: 6976799745280439787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_54
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 168
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d376dc3b663256920800000000000000
+      internalID: 2982829252213040957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_55
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 168
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8b6e319c2527a270800000000000000
+      internalID: 8261612914780040074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_56
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 168
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 879b671f877eb2900800000000000000
+      internalID: 660876276973091192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_57
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 168
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f517489568a265f90800000000000000
+      internalID: -6965333017166057121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_58
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 168
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 962216a7586cf8500800000000000000
+      internalID: 400757168445399657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_59
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 168
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb82819d6b978c3c0800000000000000
+      internalID: -4339084414738224965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_60
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 168
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cea2c8e3adecf2f0800000000000000
+      internalID: -937613334159380795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_61
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 168
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2aff8db6db77da790800000000000000
+      internalID: -7517220547569582174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_62
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 168
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00cbbc6ef426c0280800000000000000
+      internalID: -9075771053744342016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_63
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 168
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a979e68a71744c10800000000000000
+      internalID: 2036877702541703589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_64
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 168
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb1c66c2488993330800000000000000
+      internalID: 3691149063054868923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_65
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 168
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94aa9bce4e7202eb0800000000000000
+      internalID: -4746750143070885303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_66
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 168
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66d7015820e956b30800000000000000
+      internalID: 4280000754545098086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_67
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 168
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ed5ad7beabac8f50800000000000000
+      internalID: 6885066697239846376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_68
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 168
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a67b8faa1f1849b0800000000000000
+      internalID: -5095788778894952793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_69
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 168
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4708691fa1251c6c0800000000000000
+      internalID: -4124925508018864012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_70
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 166
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4a7c2e1ff2339ca0800000000000000
+      internalID: -6011405006305199537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_71
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 167
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5975e0ceb1be3b070800000000000000
+      internalID: 8121093058236143509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_72
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 136
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02bdd752cdc068af0800000000000000
+      internalID: -394613777686996192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_73
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 136
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 718b7320c5a29c0f0800000000000000
+      internalID: -1096298459625441257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_74
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 135
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8015d5b08106a0ad0800000000000000
+      internalID: -2735268167288008440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_75
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 135
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c0ecc824d3b49360800000000000000
+      internalID: 7175557830106996930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_76
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 136
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b80cd6d2a1265930800000000000000
+      internalID: 4131526691432171698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_77
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 136
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0315d5148fb3e0cb0800000000000000
+      internalID: -4895909807470587600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_78
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 136
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebf9539dea18ee2f0800000000000000
+      internalID: -941672684105392194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_79
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 136
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5152a8c47e65df00800000000000000
+      internalID: 1140939528469631326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_80
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 136
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 108ff074fdbb70420800000000000000
+      internalID: 2596250277846710273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_81
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 136
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf3619f7a06037730800000000000000
+      internalID: 3995543936567436283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_82
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 136
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b782daf9e14217780800000000000000
+      internalID: -8687122492274431877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_83
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 136
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc5e8eae4e9eddc50800000000000000
+      internalID: 6691761790745372109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_84
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 136
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f31aed46e2026550800000000000000
+      internalID: 6152483229114438644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_85
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 136
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46f3a713a08c5f690800000000000000
+      internalID: -7568923652620927132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_86
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 136
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47bc2912f10250c50800000000000000
+      internalID: 6630741344452266868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_87
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 136
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbb2b5476ed4439e0800000000000000
+      internalID: -1642602311893439557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_88
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 136
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a80a76b7440f3710800000000000000
+      internalID: 1675062292455753892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_89
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 136
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24fe4b0eb1dad37d0800000000000000
+      internalID: -2937001046730019006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_90
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 136
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9f3811cea581e650800000000000000
+      internalID: 6260431942632095646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_91
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 135
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eac7e36ca312d6ce0800000000000000
+      internalID: -1410434571979293522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_92
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 136
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efdd19ba23d6e4570800000000000000
+      internalID: 8452813615015255550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_93
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 136
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0db94a90560fd4040800000000000000
+      internalID: 4633623908378254288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_94
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 132
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d257ac54b64ec8b70800000000000000
+      internalID: 8902741712788157741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_95
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 133
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 128c8006293d57b70800000000000000
+      internalID: 8896249264570157089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_96
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 104
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93ce3e4465f2ba630800000000000000
+      internalID: 3939294346635111481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_97
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 104
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89daec40fda8a7d20800000000000000
+      internalID: 3277084369328450968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_98
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 103
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1bb6cba9942530c0800000000000000
+      internalID: -4596727602231198946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_99
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 103
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62ea472aadbc8e180800000000000000
+      internalID: -9085788108331110874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_100
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 104
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f27685824d4798b0800000000000000
+      internalID: -5145559101144141066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_101
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 104
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 028449c7b702186a0800000000000000
+      internalID: -6448837476674680800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_102
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 104
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 786cf0fd0c1d60da0800000000000000
+      internalID: -5978860828981475705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_103
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 104
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab5674545de37d920800000000000000
+      internalID: 3014947561259099578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_104
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 104
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bc27aa37377b2a30800000000000000
+      internalID: 4191574957289319608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_105
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 104
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9b13ae09d307cd10800000000000000
+      internalID: 2145687978253687711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_106
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 104
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80f3d6aa361270860800000000000000
+      internalID: 7495996816726245128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_107
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 104
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca9350028be910db0800000000000000
+      internalID: -4827402811916076628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_108
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 104
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1e02773efa9e8c10800000000000000
+      internalID: 2057752496397487645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_109
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 104
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c1786c2ed7c14e00800000000000000
+      internalID: 1027321947058893248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_110
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 104
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6b96db97c0b21050800000000000000
+      internalID: 5769868443974540138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_111
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 104
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c65be7546af89b40800000000000000
+      internalID: 5447379058183329475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_112
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 104
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 964faa7d779b81b50800000000000000
+      internalID: 6564200381263049833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_113
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 104
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8826a18d409120a80800000000000000
+      internalID: -8502205637925903736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_114
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 104
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b42cda862680197f0800000000000000
+      internalID: -607695255962271157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_115
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 103
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08cfaca25698d3aa0800000000000000
+      internalID: -6179632046079804288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_116
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 104
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2784508d8ae09f40800000000000000
+      internalID: 5733340219106953004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_117
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 104
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28df60492a2fac550800000000000000
+      internalID: 6182020218601536898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_118
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 99
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ff1ebba35cefafc0800000000000000
+      internalID: -3481304142826299400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_119
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 100
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a2170ec233688450800000000000000
+      internalID: 6091227565874680486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_120
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 72
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e09c5e6b0ac4d5a0800000000000000
+      internalID: -6497346211943771933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_121
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 72
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80dbcd1a4324bf410800000000000000
+      internalID: 1511874893734264072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_122
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 71
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16eda015136a28900800000000000000
+      internalID: 685292824057011809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_123
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 71
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f975c0585aef3d830800000000000000
+      internalID: 4094896473065150367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_124
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 72
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc78aaf41ca83e520800000000000000
+      internalID: 2730178361986549709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_125
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 72
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00474808a8089fe60800000000000000
+      internalID: 7996563945723032576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_126
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 72
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e47a225554a75bf40800000000000000
+      internalID: 5743631337980602190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_127
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 72
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98fb22ba87b7ad390800000000000000
+      internalID: -7792780447013748855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_128
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 72
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ca9a39453505bfa0800000000000000
+      internalID: -5785712419867551039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_129
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 72
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e4f0b12766035540800000000000000
+      internalID: 4995343451700655331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_130
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 72
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a3cfedb1f0708cb0800000000000000
+      internalID: -4863763413984099419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_131
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 72
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74d908348c9680020800000000000000
+      internalID: 2308211117874257223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_132
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 72
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2595bd30c75e8420800000000000000
+      internalID: 2634139315238966575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_133
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 72
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f037ee41144f99420800000000000000
+      internalID: 2637407617163358991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_134
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 72
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc680b3799e719350800000000000000
+      internalID: 6021733374307108556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_135
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 72
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdfac97da4c1516f0800000000000000
+      internalID: -714633858097827876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_136
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 72
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82738978d52fbd550800000000000000
+      internalID: 6186804996644288296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_137
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 72
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75ceffec6c961aff0800000000000000
+      internalID: -26623820190192553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_138
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 72
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8773af28234339a0800000000000000
+      internalID: -6254581617610492020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_139
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 71
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8de489890b6a44c20800000000000000
+      internalID: 3189857713489727192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_140
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 72
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97bc20b8527dd8a40800000000000000
+      internalID: 5372186486768847737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_141
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 72
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40fb5f1688511b800800000000000000
+      internalID: 626305498684440324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_142
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 66
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f472a727a55c24a70800000000000000
+      internalID: 8809820813348448079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_143
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 67
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d501c31f017b0f480800000000000000
+      internalID: -8867386382897901475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_144
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 40
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d74c906cb9031e210800000000000000
+      internalID: 1360422008043193469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_145
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 40
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf252cf5aa5499a30800000000000000
+      internalID: 4222482723689878267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_146
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 39
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9a50cb8193993be0800000000000000
+      internalID: -1497003147799799138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_147
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 39
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3522909bf80bb24a0800000000000000
+      internalID: -6617001096159616429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_148
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 40
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e29b08035085f40a0800000000000000
+      internalID: -6895195725169116882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_149
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 40
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89ffd4abce555d8e0800000000000000
+      internalID: -1669333611644584040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_150
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 40
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d40fd15763568890800000000000000
+      internalID: -7456180429844970287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_151
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 40
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19109c1792ffac1e0800000000000000
+      internalID: -2176646916412472943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_152
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 40
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 013c9c6418ef44fa0800000000000000
+      internalID: -5817244987463974128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_153
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 40
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcc3f1c06282ea270800000000000000
+      internalID: 8263586510148680909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_154
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 40
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1c8fa788d2912250800000000000000
+      internalID: 5918172844028562461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_155
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 40
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db82b43524b830b80800000000000000
+      internalID: -8429740960525899587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_156
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 40
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f83902fcbaf115d90800000000000000
+      internalID: -7110867513866415217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_157
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 40
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84055c8db734cbc10800000000000000
+      internalID: 2070604127880433736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_158
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 40
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab3287face50cfd90800000000000000
+      internalID: -7062763601509473350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_159
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 40
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f032ce32715b9b9a0800000000000000
+      internalID: -6216738699616705777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_160
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 40
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd6aa6e556a630890800000000000000
+      internalID: -7493028371406084387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_161
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 40
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36dc01fcaddef5880800000000000000
+      internalID: -8619909637731201693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_162
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 40
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a84efb5d0c3c3d730800000000000000
+      internalID: 4022774125159244938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_163
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 40
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c48cbfd38b9dd320800000000000000
+      internalID: 2584392751877227713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_164
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 40
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5708c33106a7d37c0800000000000000
+      internalID: -4089978333524361099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_165
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 40
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f40a332e86b56c30800000000000000
+      internalID: 4352085336516068592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_166
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 38
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 097b61ad70bdc58b0800000000000000
+      internalID: -5162010246103255152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_167
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 39
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60f283f46a4a98280800000000000000
+      internalID: -9040513742768951546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_168
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 8
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7290197daa6fbb0d0800000000000000
+      internalID: -3405857479554168537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_169
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 8
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a94aa7dc83ba232e0800000000000000
+      internalID: -2147465811848420198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_170
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 7
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b5bd6db6a2261df0800000000000000
+      internalID: -209942233088150089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_171
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 7
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3f250e47436a76f0800000000000000
+      internalID: -686126835317788867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_172
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 8
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05a20c59ec52450c0800000000000000
+      internalID: -4588000551177803184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_173
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 8
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a07b52e657c578660800000000000000
+      internalID: 7387975373153482506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_174
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 8
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c23772cae32903860800000000000000
+      internalID: 7507661376700511020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_175
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 8
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07d2354efa0c85410800000000000000
+      internalID: 1466133540391562608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_176
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 8
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91c790266a29ae4a0800000000000000
+      internalID: -6563272263632061415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_177
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 7
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea1db5e945dbe3b20800000000000000
+      internalID: 3116136163318682030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_178
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 7
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e391309e1162e6e0800000000000000
+      internalID: -1809777316353436696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_179
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 7
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da48a3ef24096bc50800000000000000
+      internalID: 6680685714658198701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_180
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 8
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8391021ebe9f6450800000000000000
+      internalID: 6084256160783897486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_181
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 8
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05ced1c9f8afc9750800000000000000
+      internalID: 6313196272373066832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_182
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 7
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 641e680176cca2580800000000000000
+      internalID: -8851037374612315834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_183
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 8
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c77557e2acd52b3b0800000000000000
+      internalID: -5498229072121735300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_184
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 8
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5917070da71655ed0800000000000000
+      internalID: -2425925644158209643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_185
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 8
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c409d3fce98c02d30800000000000000
+      internalID: 4404741019975651404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_186
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 8
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c7a2c6fe2d237be0800000000000000
+      internalID: -1480790172743063610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_187
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 9
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9069a9435706dd60800000000000000
+      internalID: 7914521449449742494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_188
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 8
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8be00719d40bef3f0800000000000000
+      internalID: -865060231209546056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_189
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 8
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb3cc531866af1fd0800000000000000
+      internalID: -2368991913041935426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_190
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 8
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52e529defd5d11800800000000000000
+      internalID: 581480984647720485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Yellow_191
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 8
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6091a2f1660d35150800000000000000
+      internalID: 5860256677167241478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Soldier-Yellow_0: -1784107046680036601
+      Soldier-Yellow_1: -7549085529437928589
+      Soldier-Yellow_10: -424361646050915999
+      Soldier-Yellow_100: -5145559101144141066
+      Soldier-Yellow_101: -6448837476674680800
+      Soldier-Yellow_102: -5978860828981475705
+      Soldier-Yellow_103: 3014947561259099578
+      Soldier-Yellow_104: 4191574957289319608
+      Soldier-Yellow_105: 2145687978253687711
+      Soldier-Yellow_106: 7495996816726245128
+      Soldier-Yellow_107: -4827402811916076628
+      Soldier-Yellow_108: 2057752496397487645
+      Soldier-Yellow_109: 1027321947058893248
+      Soldier-Yellow_11: -8239661864436632062
+      Soldier-Yellow_110: 5769868443974540138
+      Soldier-Yellow_111: 5447379058183329475
+      Soldier-Yellow_112: 6564200381263049833
+      Soldier-Yellow_113: -8502205637925903736
+      Soldier-Yellow_114: -607695255962271157
+      Soldier-Yellow_115: -6179632046079804288
+      Soldier-Yellow_116: 5733340219106953004
+      Soldier-Yellow_117: 6182020218601536898
+      Soldier-Yellow_118: -3481304142826299400
+      Soldier-Yellow_119: 6091227565874680486
+      Soldier-Yellow_12: 4534446259040939112
+      Soldier-Yellow_120: -6497346211943771933
+      Soldier-Yellow_121: 1511874893734264072
+      Soldier-Yellow_122: 685292824057011809
+      Soldier-Yellow_123: 4094896473065150367
+      Soldier-Yellow_124: 2730178361986549709
+      Soldier-Yellow_125: 7996563945723032576
+      Soldier-Yellow_126: 5743631337980602190
+      Soldier-Yellow_127: -7792780447013748855
+      Soldier-Yellow_128: -5785712419867551039
+      Soldier-Yellow_129: 4995343451700655331
+      Soldier-Yellow_13: 4127081758504423524
+      Soldier-Yellow_130: -4863763413984099419
+      Soldier-Yellow_131: 2308211117874257223
+      Soldier-Yellow_132: 2634139315238966575
+      Soldier-Yellow_133: 2637407617163358991
+      Soldier-Yellow_134: 6021733374307108556
+      Soldier-Yellow_135: -714633858097827876
+      Soldier-Yellow_136: 6186804996644288296
+      Soldier-Yellow_137: -26623820190192553
+      Soldier-Yellow_138: -6254581617610492020
+      Soldier-Yellow_139: 3189857713489727192
+      Soldier-Yellow_14: 5712303344001840112
+      Soldier-Yellow_140: 5372186486768847737
+      Soldier-Yellow_141: 626305498684440324
+      Soldier-Yellow_142: 8809820813348448079
+      Soldier-Yellow_143: -8867386382897901475
+      Soldier-Yellow_144: 1360422008043193469
+      Soldier-Yellow_145: 4222482723689878267
+      Soldier-Yellow_146: -1497003147799799138
+      Soldier-Yellow_147: -6617001096159616429
+      Soldier-Yellow_148: -6895195725169116882
+      Soldier-Yellow_149: -1669333611644584040
+      Soldier-Yellow_15: -9144508950627685510
+      Soldier-Yellow_150: -7456180429844970287
+      Soldier-Yellow_151: -2176646916412472943
+      Soldier-Yellow_152: -5817244987463974128
+      Soldier-Yellow_153: 8263586510148680909
+      Soldier-Yellow_154: 5918172844028562461
+      Soldier-Yellow_155: -8429740960525899587
+      Soldier-Yellow_156: -7110867513866415217
+      Soldier-Yellow_157: 2070604127880433736
+      Soldier-Yellow_158: -7062763601509473350
+      Soldier-Yellow_159: -6216738699616705777
+      Soldier-Yellow_16: 5468526853503133426
+      Soldier-Yellow_160: -7493028371406084387
+      Soldier-Yellow_161: -8619909637731201693
+      Soldier-Yellow_162: 4022774125159244938
+      Soldier-Yellow_163: 2584392751877227713
+      Soldier-Yellow_164: -4089978333524361099
+      Soldier-Yellow_165: 4352085336516068592
+      Soldier-Yellow_166: -5162010246103255152
+      Soldier-Yellow_167: -9040513742768951546
+      Soldier-Yellow_168: -3405857479554168537
+      Soldier-Yellow_169: -2147465811848420198
+      Soldier-Yellow_17: 2282484408835532467
+      Soldier-Yellow_170: -209942233088150089
+      Soldier-Yellow_171: -686126835317788867
+      Soldier-Yellow_172: -4588000551177803184
+      Soldier-Yellow_173: 7387975373153482506
+      Soldier-Yellow_174: 7507661376700511020
+      Soldier-Yellow_175: 1466133540391562608
+      Soldier-Yellow_176: -6563272263632061415
+      Soldier-Yellow_177: 3116136163318682030
+      Soldier-Yellow_178: -1809777316353436696
+      Soldier-Yellow_179: 6680685714658198701
+      Soldier-Yellow_18: -5804361328223088992
+      Soldier-Yellow_180: 6084256160783897486
+      Soldier-Yellow_181: 6313196272373066832
+      Soldier-Yellow_182: -8851037374612315834
+      Soldier-Yellow_183: -5498229072121735300
+      Soldier-Yellow_184: -2425925644158209643
+      Soldier-Yellow_185: 4404741019975651404
+      Soldier-Yellow_186: -1480790172743063610
+      Soldier-Yellow_187: 7914521449449742494
+      Soldier-Yellow_188: -865060231209546056
+      Soldier-Yellow_189: -2368991913041935426
+      Soldier-Yellow_19: 5913787832411908605
+      Soldier-Yellow_190: 581480984647720485
+      Soldier-Yellow_191: 5860256677167241478
+      Soldier-Yellow_2: 5098687256136412712
+      Soldier-Yellow_20: 7143763139156759259
+      Soldier-Yellow_21: 4532243825778602516
+      Soldier-Yellow_22: -5229228013250182224
+      Soldier-Yellow_23: -5827330420579475322
+      Soldier-Yellow_24: 6438153550530183121
+      Soldier-Yellow_25: 8706900903590170504
+      Soldier-Yellow_26: 7718179231603470450
+      Soldier-Yellow_27: -7372767263029534638
+      Soldier-Yellow_28: -207106549729516215
+      Soldier-Yellow_29: 1427293570212969307
+      Soldier-Yellow_3: 6814876263932291928
+      Soldier-Yellow_30: 3836434166802742065
+      Soldier-Yellow_31: -2929882124012848077
+      Soldier-Yellow_32: 8237038847306191501
+      Soldier-Yellow_33: -8968559473048725882
+      Soldier-Yellow_34: 3692471380659122366
+      Soldier-Yellow_35: -3184208027126644795
+      Soldier-Yellow_36: 3031178325040897394
+      Soldier-Yellow_37: -1444369978011558905
+      Soldier-Yellow_38: -2307044728482549319
+      Soldier-Yellow_39: 9155620832732242027
+      Soldier-Yellow_4: -2544316719645917627
+      Soldier-Yellow_40: 1919871645817543874
+      Soldier-Yellow_41: 8530333727947560521
+      Soldier-Yellow_42: -1269800328697239878
+      Soldier-Yellow_43: -3153111964114341546
+      Soldier-Yellow_44: 4772158871950793009
+      Soldier-Yellow_45: 8513142090674050135
+      Soldier-Yellow_46: 6518333889398399581
+      Soldier-Yellow_47: 6001319913442434782
+      Soldier-Yellow_48: 7395547033659589730
+      Soldier-Yellow_49: 3416909381947551838
+      Soldier-Yellow_5: 4915520571219261965
+      Soldier-Yellow_50: 132030625323640225
+      Soldier-Yellow_51: 772118326508683091
+      Soldier-Yellow_52: -6578422951881785610
+      Soldier-Yellow_53: 6976799745280439787
+      Soldier-Yellow_54: 2982829252213040957
+      Soldier-Yellow_55: 8261612914780040074
+      Soldier-Yellow_56: 660876276973091192
+      Soldier-Yellow_57: -6965333017166057121
+      Soldier-Yellow_58: 400757168445399657
+      Soldier-Yellow_59: -4339084414738224965
+      Soldier-Yellow_6: 3486404707940661334
+      Soldier-Yellow_60: -937613334159380795
+      Soldier-Yellow_61: -7517220547569582174
+      Soldier-Yellow_62: -9075771053744342016
+      Soldier-Yellow_63: 2036877702541703589
+      Soldier-Yellow_64: 3691149063054868923
+      Soldier-Yellow_65: -4746750143070885303
+      Soldier-Yellow_66: 4280000754545098086
+      Soldier-Yellow_67: 6885066697239846376
+      Soldier-Yellow_68: -5095788778894952793
+      Soldier-Yellow_69: -4124925508018864012
+      Soldier-Yellow_7: 1718955893143547629
+      Soldier-Yellow_70: -6011405006305199537
+      Soldier-Yellow_71: 8121093058236143509
+      Soldier-Yellow_72: -394613777686996192
+      Soldier-Yellow_73: -1096298459625441257
+      Soldier-Yellow_74: -2735268167288008440
+      Soldier-Yellow_75: 7175557830106996930
+      Soldier-Yellow_76: 4131526691432171698
+      Soldier-Yellow_77: -4895909807470587600
+      Soldier-Yellow_78: -941672684105392194
+      Soldier-Yellow_79: 1140939528469631326
+      Soldier-Yellow_8: -3536044399530269334
+      Soldier-Yellow_80: 2596250277846710273
+      Soldier-Yellow_81: 3995543936567436283
+      Soldier-Yellow_82: -8687122492274431877
+      Soldier-Yellow_83: 6691761790745372109
+      Soldier-Yellow_84: 6152483229114438644
+      Soldier-Yellow_85: -7568923652620927132
+      Soldier-Yellow_86: 6630741344452266868
+      Soldier-Yellow_87: -1642602311893439557
+      Soldier-Yellow_88: 1675062292455753892
+      Soldier-Yellow_89: -2937001046730019006
+      Soldier-Yellow_9: -4520476210994739425
+      Soldier-Yellow_90: 6260431942632095646
+      Soldier-Yellow_91: -1410434571979293522
+      Soldier-Yellow_92: 8452813615015255550
+      Soldier-Yellow_93: 4633623908378254288
+      Soldier-Yellow_94: 8902741712788157741
+      Soldier-Yellow_95: 8896249264570157089
+      Soldier-Yellow_96: 3939294346635111481
+      Soldier-Yellow_97: 3277084369328450968
+      Soldier-Yellow_98: -4596727602231198946
+      Soldier-Yellow_99: -9085788108331110874
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

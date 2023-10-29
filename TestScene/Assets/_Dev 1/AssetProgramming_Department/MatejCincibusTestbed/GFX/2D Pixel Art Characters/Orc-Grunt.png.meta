@@ -1,0 +1,4924 @@
+fileFormatVersion: 2
+guid: 63c887a4378784742908925cc4e60147
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7401311274437778631
+    second: Orc-Grunt_0
+  - first:
+      213: -793202637768912736
+    second: Orc-Grunt_1
+  - first:
+      213: 5517774271449681239
+    second: Orc-Grunt_2
+  - first:
+      213: 7258023616719695144
+    second: Orc-Grunt_3
+  - first:
+      213: 1027542930553676489
+    second: Orc-Grunt_4
+  - first:
+      213: 8852953150026307214
+    second: Orc-Grunt_5
+  - first:
+      213: -7504772388983523395
+    second: Orc-Grunt_6
+  - first:
+      213: 8751700445693308831
+    second: Orc-Grunt_7
+  - first:
+      213: 9009927781069564044
+    second: Orc-Grunt_8
+  - first:
+      213: 4092584849915648159
+    second: Orc-Grunt_9
+  - first:
+      213: 3898546549512325423
+    second: Orc-Grunt_10
+  - first:
+      213: -8020351000886779407
+    second: Orc-Grunt_11
+  - first:
+      213: -7597881862523084359
+    second: Orc-Grunt_12
+  - first:
+      213: 5582332535856103613
+    second: Orc-Grunt_13
+  - first:
+      213: 1062246167270232984
+    second: Orc-Grunt_14
+  - first:
+      213: 5862408453840123660
+    second: Orc-Grunt_15
+  - first:
+      213: 2839729340807915391
+    second: Orc-Grunt_16
+  - first:
+      213: -1773955129468046089
+    second: Orc-Grunt_17
+  - first:
+      213: -5774215695863612253
+    second: Orc-Grunt_18
+  - first:
+      213: 1086928984009705987
+    second: Orc-Grunt_19
+  - first:
+      213: -9034344663279861479
+    second: Orc-Grunt_20
+  - first:
+      213: 7895562461145485969
+    second: Orc-Grunt_21
+  - first:
+      213: -2050661695430264204
+    second: Orc-Grunt_22
+  - first:
+      213: 6306758532514723477
+    second: Orc-Grunt_23
+  - first:
+      213: -8693926695078410507
+    second: Orc-Grunt_24
+  - first:
+      213: 2252980867836224230
+    second: Orc-Grunt_25
+  - first:
+      213: -3108669630219542217
+    second: Orc-Grunt_26
+  - first:
+      213: 628763642073043290
+    second: Orc-Grunt_27
+  - first:
+      213: 8963541335606629340
+    second: Orc-Grunt_28
+  - first:
+      213: -9205894061077436323
+    second: Orc-Grunt_29
+  - first:
+      213: -69067545818124053
+    second: Orc-Grunt_30
+  - first:
+      213: -4242090094451513249
+    second: Orc-Grunt_31
+  - first:
+      213: 1861165076626709406
+    second: Orc-Grunt_32
+  - first:
+      213: 1135359594859899399
+    second: Orc-Grunt_33
+  - first:
+      213: -9128113279086872258
+    second: Orc-Grunt_34
+  - first:
+      213: 1289540755106514641
+    second: Orc-Grunt_35
+  - first:
+      213: -8088182372156106303
+    second: Orc-Grunt_36
+  - first:
+      213: 1872520526920627898
+    second: Orc-Grunt_37
+  - first:
+      213: -4663906913430013242
+    second: Orc-Grunt_38
+  - first:
+      213: -1159919931813568533
+    second: Orc-Grunt_39
+  - first:
+      213: 7864096919073286269
+    second: Orc-Grunt_40
+  - first:
+      213: -4598009640881347362
+    second: Orc-Grunt_41
+  - first:
+      213: -511697255341709579
+    second: Orc-Grunt_42
+  - first:
+      213: 3844136994261505351
+    second: Orc-Grunt_43
+  - first:
+      213: 7781945117376316683
+    second: Orc-Grunt_44
+  - first:
+      213: -149263353339710358
+    second: Orc-Grunt_45
+  - first:
+      213: 3764983747856579529
+    second: Orc-Grunt_46
+  - first:
+      213: -1896198007251656657
+    second: Orc-Grunt_47
+  - first:
+      213: -6310382644342906426
+    second: Orc-Grunt_48
+  - first:
+      213: 3444095351859719478
+    second: Orc-Grunt_49
+  - first:
+      213: -3812610550086044313
+    second: Orc-Grunt_50
+  - first:
+      213: -6686834566977560220
+    second: Orc-Grunt_51
+  - first:
+      213: 1260689380162902619
+    second: Orc-Grunt_52
+  - first:
+      213: -7052394228391923452
+    second: Orc-Grunt_53
+  - first:
+      213: -6906644356766992953
+    second: Orc-Grunt_54
+  - first:
+      213: -4653591986656128847
+    second: Orc-Grunt_55
+  - first:
+      213: -295422490472889392
+    second: Orc-Grunt_56
+  - first:
+      213: 1884293024727389539
+    second: Orc-Grunt_57
+  - first:
+      213: -2832399973196044288
+    second: Orc-Grunt_58
+  - first:
+      213: -3215001836282694824
+    second: Orc-Grunt_59
+  - first:
+      213: -7083427771917926500
+    second: Orc-Grunt_60
+  - first:
+      213: 6919609827625085107
+    second: Orc-Grunt_61
+  - first:
+      213: -1324382707918018447
+    second: Orc-Grunt_62
+  - first:
+      213: -7664066008884858154
+    second: Orc-Grunt_63
+  - first:
+      213: -3951320853877740556
+    second: Orc-Grunt_64
+  - first:
+      213: -1759468277495979775
+    second: Orc-Grunt_65
+  - first:
+      213: -2770481202510768561
+    second: Orc-Grunt_66
+  - first:
+      213: -1260032163569091711
+    second: Orc-Grunt_67
+  - first:
+      213: -3989455979505956555
+    second: Orc-Grunt_68
+  - first:
+      213: -7297441332847749764
+    second: Orc-Grunt_69
+  - first:
+      213: 5722527941596046026
+    second: Orc-Grunt_70
+  - first:
+      213: -5466504140962511319
+    second: Orc-Grunt_71
+  - first:
+      213: -1119451070647800690
+    second: Orc-Grunt_72
+  - first:
+      213: -8829395670055052568
+    second: Orc-Grunt_73
+  - first:
+      213: 3334338794658603130
+    second: Orc-Grunt_74
+  - first:
+      213: -3319384520249364753
+    second: Orc-Grunt_75
+  - first:
+      213: 3395344772805653586
+    second: Orc-Grunt_76
+  - first:
+      213: -3189922514822416455
+    second: Orc-Grunt_77
+  - first:
+      213: -1143913753495472837
+    second: Orc-Grunt_78
+  - first:
+      213: 7686001119406250952
+    second: Orc-Grunt_79
+  - first:
+      213: 8931951965619262674
+    second: Orc-Grunt_80
+  - first:
+      213: 3824803709462569790
+    second: Orc-Grunt_81
+  - first:
+      213: 2627851217299666361
+    second: Orc-Grunt_82
+  - first:
+      213: 5135793790598490144
+    second: Orc-Grunt_83
+  - first:
+      213: -4936223562281524598
+    second: Orc-Grunt_84
+  - first:
+      213: -6665098641953040765
+    second: Orc-Grunt_85
+  - first:
+      213: -3189842946855362032
+    second: Orc-Grunt_86
+  - first:
+      213: 7556481338524924440
+    second: Orc-Grunt_87
+  - first:
+      213: -1226370878459218652
+    second: Orc-Grunt_88
+  - first:
+      213: -4132553797249610151
+    second: Orc-Grunt_89
+  - first:
+      213: -1474603223585300894
+    second: Orc-Grunt_90
+  - first:
+      213: -5357363413496423347
+    second: Orc-Grunt_91
+  - first:
+      213: 4538754150406926267
+    second: Orc-Grunt_92
+  - first:
+      213: 2240807343457558379
+    second: Orc-Grunt_93
+  - first:
+      213: -8722417416067637006
+    second: Orc-Grunt_94
+  - first:
+      213: -7747937935354357329
+    second: Orc-Grunt_95
+  - first:
+      213: -6627562520838503744
+    second: Orc-Grunt_96
+  - first:
+      213: 7967810490463100376
+    second: Orc-Grunt_97
+  - first:
+      213: 8519364844668114070
+    second: Orc-Grunt_98
+  - first:
+      213: 4090439563605057754
+    second: Orc-Grunt_99
+  - first:
+      213: 2989825212660778862
+    second: Orc-Grunt_100
+  - first:
+      213: -658230675943172071
+    second: Orc-Grunt_101
+  - first:
+      213: 4571171063922764011
+    second: Orc-Grunt_102
+  - first:
+      213: 7721185482653856444
+    second: Orc-Grunt_103
+  - first:
+      213: 1557200204757095036
+    second: Orc-Grunt_104
+  - first:
+      213: 1428532121830459065
+    second: Orc-Grunt_105
+  - first:
+      213: 6295151771978666366
+    second: Orc-Grunt_106
+  - first:
+      213: -8934897513667846171
+    second: Orc-Grunt_107
+  - first:
+      213: 7816093552762457686
+    second: Orc-Grunt_108
+  - first:
+      213: 6633339774142243537
+    second: Orc-Grunt_109
+  - first:
+      213: 4624482134263244370
+    second: Orc-Grunt_110
+  - first:
+      213: 5267081612979578644
+    second: Orc-Grunt_111
+  - first:
+      213: 5765258296669889840
+    second: Orc-Grunt_112
+  - first:
+      213: -2534831912739805669
+    second: Orc-Grunt_113
+  - first:
+      213: -4797259397463615985
+    second: Orc-Grunt_114
+  - first:
+      213: -8812597648693341766
+    second: Orc-Grunt_115
+  - first:
+      213: -6073836702056746599
+    second: Orc-Grunt_116
+  - first:
+      213: -719521478317040325
+    second: Orc-Grunt_117
+  - first:
+      213: -6473100767539576305
+    second: Orc-Grunt_118
+  - first:
+      213: -3704663840306391944
+    second: Orc-Grunt_119
+  - first:
+      213: 8577270274593606226
+    second: Orc-Grunt_120
+  - first:
+      213: 7447900757026695589
+    second: Orc-Grunt_121
+  - first:
+      213: 7343365239721037945
+    second: Orc-Grunt_122
+  - first:
+      213: -8342704661673122536
+    second: Orc-Grunt_123
+  - first:
+      213: 4937412546208344403
+    second: Orc-Grunt_124
+  - first:
+      213: 1258173234346676021
+    second: Orc-Grunt_125
+  - first:
+      213: -3038305776073257973
+    second: Orc-Grunt_126
+  - first:
+      213: 2391705621538955478
+    second: Orc-Grunt_127
+  - first:
+      213: 3424118999520821198
+    second: Orc-Grunt_128
+  - first:
+      213: 1467758704208550069
+    second: Orc-Grunt_129
+  - first:
+      213: -9011329177680927743
+    second: Orc-Grunt_130
+  - first:
+      213: -1692941521876008327
+    second: Orc-Grunt_131
+  - first:
+      213: 2617257127510340029
+    second: Orc-Grunt_132
+  - first:
+      213: 3249655345749125077
+    second: Orc-Grunt_133
+  - first:
+      213: -6988619477553785190
+    second: Orc-Grunt_134
+  - first:
+      213: 6023841839803067524
+    second: Orc-Grunt_135
+  - first:
+      213: 8096267714391911229
+    second: Orc-Grunt_136
+  - first:
+      213: -6278866655684683914
+    second: Orc-Grunt_137
+  - first:
+      213: -5671642542637711891
+    second: Orc-Grunt_138
+  - first:
+      213: 111402153713620991
+    second: Orc-Grunt_139
+  - first:
+      213: 2543138576910920078
+    second: Orc-Grunt_140
+  - first:
+      213: -5335054765342140469
+    second: Orc-Grunt_141
+  - first:
+      213: -7388408995163866175
+    second: Orc-Grunt_142
+  - first:
+      213: -8168568539502316745
+    second: Orc-Grunt_143
+  - first:
+      213: -7469650590954939922
+    second: Orc-Grunt_144
+  - first:
+      213: 3838803521747471742
+    second: Orc-Grunt_145
+  - first:
+      213: 8262310321984696238
+    second: Orc-Grunt_146
+  - first:
+      213: -2295589684382150267
+    second: Orc-Grunt_147
+  - first:
+      213: 2568375277526003984
+    second: Orc-Grunt_148
+  - first:
+      213: 4688562845026205268
+    second: Orc-Grunt_149
+  - first:
+      213: -9053113288153166383
+    second: Orc-Grunt_150
+  - first:
+      213: -1139177565965346802
+    second: Orc-Grunt_151
+  - first:
+      213: -1883740976013981245
+    second: Orc-Grunt_152
+  - first:
+      213: -3305203232059831581
+    second: Orc-Grunt_153
+  - first:
+      213: -5697069201861368439
+    second: Orc-Grunt_154
+  - first:
+      213: -4169380058732462579
+    second: Orc-Grunt_155
+  - first:
+      213: 3225410871177741374
+    second: Orc-Grunt_156
+  - first:
+      213: -2273032974467594800
+    second: Orc-Grunt_157
+  - first:
+      213: -5476179014322969450
+    second: Orc-Grunt_158
+  - first:
+      213: 4079608690295731918
+    second: Orc-Grunt_159
+  - first:
+      213: -8284983206429822962
+    second: Orc-Grunt_160
+  - first:
+      213: -5443016105855756068
+    second: Orc-Grunt_161
+  - first:
+      213: 2464514774855986058
+    second: Orc-Grunt_162
+  - first:
+      213: -1934590895534111209
+    second: Orc-Grunt_163
+  - first:
+      213: -4348477531194364502
+    second: Orc-Grunt_164
+  - first:
+      213: 7390039402567698049
+    second: Orc-Grunt_165
+  - first:
+      213: -7134067607429707964
+    second: Orc-Grunt_166
+  - first:
+      213: -6769757882996953413
+    second: Orc-Grunt_167
+  - first:
+      213: -6809955724556409053
+    second: Orc-Grunt_168
+  - first:
+      213: 8785164805589881292
+    second: Orc-Grunt_169
+  - first:
+      213: 1831411294953409493
+    second: Orc-Grunt_170
+  - first:
+      213: -5359600169015885948
+    second: Orc-Grunt_171
+  - first:
+      213: -5110900864044104719
+    second: Orc-Grunt_172
+  - first:
+      213: -330203311623923556
+    second: Orc-Grunt_173
+  - first:
+      213: 7168744818790753300
+    second: Orc-Grunt_174
+  - first:
+      213: 470226321836213454
+    second: Orc-Grunt_175
+  - first:
+      213: -6856781382503287332
+    second: Orc-Grunt_176
+  - first:
+      213: -8330040783036612659
+    second: Orc-Grunt_177
+  - first:
+      213: 8242895708405691068
+    second: Orc-Grunt_178
+  - first:
+      213: -3684160497279727492
+    second: Orc-Grunt_179
+  - first:
+      213: 925099815246516578
+    second: Orc-Grunt_180
+  - first:
+      213: -4574844880560319629
+    second: Orc-Grunt_181
+  - first:
+      213: -8545667714540244653
+    second: Orc-Grunt_182
+  - first:
+      213: 745768231929190951
+    second: Orc-Grunt_183
+  - first:
+      213: -8937370168530728833
+    second: Orc-Grunt_184
+  - first:
+      213: -7982385127549714501
+    second: Orc-Grunt_185
+  - first:
+      213: -5598946997277321484
+    second: Orc-Grunt_186
+  - first:
+      213: -7039926048912587455
+    second: Orc-Grunt_187
+  - first:
+      213: 8435342719253425912
+    second: Orc-Grunt_188
+  - first:
+      213: -3068145006188820243
+    second: Orc-Grunt_189
+  - first:
+      213: -523507423255749464
+    second: Orc-Grunt_190
+  - first:
+      213: -6617859494875970108
+    second: Orc-Grunt_191
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Orc-Grunt_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 232
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cc15f8e36db6b660800000000000000
+      internalID: 7401311274437778631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 232
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a091ec476afdf4f0800000000000000
+      internalID: -793202637768912736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_2
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 231
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75d4c882772139c40800000000000000
+      internalID: 5517774271449681239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_3
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 232
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82d29f5560ea9b460800000000000000
+      internalID: 7258023616719695144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_4
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 231
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c2ad17e9d0924e00800000000000000
+      internalID: 1027542930553676489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_5
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 232
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e865e782cf10cda70800000000000000
+      internalID: 8852953150026307214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_6
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 232
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db73a723641b9d790800000000000000
+      internalID: -7504772388983523395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_7
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 231
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9f6d26df29447970800000000000000
+      internalID: 8751700445693308831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_8
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 232
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c88239a8491b90d70800000000000000
+      internalID: 9009927781069564044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_9
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 231
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f981e50dc38cbc830800000000000000
+      internalID: 4092584849915648159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_10
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 231
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f29c1007e6b6a1630800000000000000
+      internalID: 3898546549512325423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_11
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 231
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f1e132224df1b090800000000000000
+      internalID: -8020351000886779407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_12
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 232
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b1adea83b6ee8690800000000000000
+      internalID: -7597881862523084359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_13
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 232
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db00fc96ddd687d40800000000000000
+      internalID: 5582332535856103613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_14
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 232
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8939928d24bddbe00800000000000000
+      internalID: 1062246167270232984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_15
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 228
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c07336bad657b5150800000000000000
+      internalID: 5862408453840123660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_16
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 232
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f772c193aceb86720800000000000000
+      internalID: 2839729340807915391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_17
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 232
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f433946535a167e0800000000000000
+      internalID: -1773955129468046089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_18
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 232
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ac709fea6ddddfa0800000000000000
+      internalID: -5774215695863612253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_19
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 232
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30a89f3f62c851f00800000000000000
+      internalID: 1086928984009705987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_20
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 233
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91102ce056f8f9280800000000000000
+      internalID: -9034344663279861479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_21
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 232
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1925c76d93ca29d60800000000000000
+      internalID: 7895562461145485969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_22
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 232
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47af0698d069a83e0800000000000000
+      internalID: -2050661695430264204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_23
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 232
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59634be787b168750800000000000000
+      internalID: 6306758532514723477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_24
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 200
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f6c094bbb7f85780800000000000000
+      internalID: -8693926695078410507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_25
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 200
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e221299922344f10800000000000000
+      internalID: 2252980867836224230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_26
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 199
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73128b61179cbd4d0800000000000000
+      internalID: -3108669630219542217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_27
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 200
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a51d17d7331d9b800800000000000000
+      internalID: 628763642073043290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_28
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 199
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd31d569a55e46c70800000000000000
+      internalID: 8963541335606629340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_29
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 200
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d58e99950281e3080800000000000000
+      internalID: -9205894061077436323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_30
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 200
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be0b00ade6f9a0ff0800000000000000
+      internalID: -69067545818124053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_31
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 200
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f58a30fd8811125c0800000000000000
+      internalID: -4242090094451513249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_32
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 200
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9b92bcb6cf24d910800000000000000
+      internalID: 1861165076626709406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_33
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 200
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70aa4ff398b91cf00800000000000000
+      internalID: 1135359594859899399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_34
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 199
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e393082e55d625180800000000000000
+      internalID: -9128113279086872258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_35
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 199
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d643870c7e55e110800000000000000
+      internalID: 1289540755106514641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_36
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 200
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c91f0d4cf001cf80800000000000000
+      internalID: -8088182372156106303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_37
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 200
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab63bb98f778cf910800000000000000
+      internalID: 1872520526920627898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_38
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 200
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6caf3876f59764fb0800000000000000
+      internalID: -4663906913430013242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_39
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 200
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bef5b50b7f227efe0800000000000000
+      internalID: -1159919931813568533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_40
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 200
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d786b9c6b72e22d60800000000000000
+      internalID: 7864096919073286269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_41
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 200
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed42279c7969030c0800000000000000
+      internalID: -4598009640881347362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_42
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 200
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f6a0deae0616e8f0800000000000000
+      internalID: -511697255341709579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_43
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 200
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74515eaaa3e195530800000000000000
+      internalID: 3844136994261505351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_44
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 201
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b050dce8ad50ffb60800000000000000
+      internalID: 7781945117376316683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_45
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 200
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a64f33e55c5bdedf0800000000000000
+      internalID: -149263353339710358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_46
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 200
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cb3c1c55c8ef3430800000000000000
+      internalID: 3764983747856579529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_47
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 199
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2026f975f95fa5e0800000000000000
+      internalID: -1896198007251656657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_48
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 168
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c1a6273b640d68a0800000000000000
+      internalID: -6310382644342906426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_49
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 168
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63d2c249972ebcf20800000000000000
+      internalID: 3444095351859719478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_50
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 167
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 765f63f97e2e61bc0800000000000000
+      internalID: -3812610550086044313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_51
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 168
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 461ef73c3679333a0800000000000000
+      internalID: -6686834566977560220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_52
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 167
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5a97b4df4ede7110800000000000000
+      internalID: 1260689380162902619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_53
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 168
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4013fa080dcd02e90800000000000000
+      internalID: -7052394228391923452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_54
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 168
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c572fcec8ba620a0800000000000000
+      internalID: -6906644356766992953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_55
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 168
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b0d1c17ebe1b6fb0800000000000000
+      internalID: -4653591986656128847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_56
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 168
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d3c3b46fc276ebf0800000000000000
+      internalID: -295422490472889392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_57
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 168
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3655f97c58a562a10800000000000000
+      internalID: 1884293024727389539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_58
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 168
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 008e2d72b3b41b8d0800000000000000
+      internalID: -2832399973196044288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_59
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 168
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 853342c1dd40263d0800000000000000
+      internalID: -3215001836282694824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_60
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 168
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9ff1b698fb92bd90800000000000000
+      internalID: -7083427771917926500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_61
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 168
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b825eff974670060800000000000000
+      internalID: 6919609827625085107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_62
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 168
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17860eba1f8de9de0800000000000000
+      internalID: -1324382707918018447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_63
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 168
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d2b5452294c3a590800000000000000
+      internalID: -7664066008884858154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_64
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 168
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fb260f4e961a29c0800000000000000
+      internalID: -3951320853877740556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_65
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 168
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 101a8467cec1597e0800000000000000
+      internalID: -1759468277495979775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_66
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 168
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f46d27366064d89d0800000000000000
+      internalID: -2770481202510768561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_67
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 168
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18bb5e45c67738ee0800000000000000
+      internalID: -1260032163569091711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_68
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 168
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5394d767cea92a8c0800000000000000
+      internalID: -3989455979505956555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_69
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 168
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c755b5275c74aba90800000000000000
+      internalID: -7297441332847749764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_70
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 168
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac26418f7d08a6f40800000000000000
+      internalID: 5722527941596046026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_71
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 166
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9264ab252731324b0800000000000000
+      internalID: -5466504140962511319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_72
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 136
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8c6b9eae29e670f0800000000000000
+      internalID: -1119451070647800690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_73
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 136
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ea1ff01b6fa77580800000000000000
+      internalID: -8829395670055052568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_74
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 135
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a702e68b773f54e20800000000000000
+      internalID: 3334338794658603130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_75
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 136
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fee2b9d9d5d2fe1d0800000000000000
+      internalID: -3319384520249364753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_76
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 135
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2547f01e410be1f20800000000000000
+      internalID: 3395344772805653586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_77
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 136
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b73dfaaf5e1bb3d0800000000000000
+      internalID: -3189922514822416455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_78
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 136
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b35f73d70800020f0800000000000000
+      internalID: -1143913753495472837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_79
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 136
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cbd671cb492aaa60800000000000000
+      internalID: 7686001119406250952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_80
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 136
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d4969d3dfaa4fb70800000000000000
+      internalID: 8931951965619262674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_81
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 136
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e33ec1685be641530800000000000000
+      internalID: 3824803709462569790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_82
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 136
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b579b952c0087420800000000000000
+      internalID: 2627851217299666361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_83
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 136
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 028a740fd31064740800000000000000
+      internalID: 5135793790598490144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_84
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 136
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a82eb46c2d20f7bb0800000000000000
+      internalID: -4936223562281524598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_85
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 136
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 386537d2910d083a0800000000000000
+      internalID: -6665098641953040765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_86
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 136
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 012a6678db66bb3d0800000000000000
+      internalID: -3189842946855362032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_87
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 136
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81a75aecdb30ed860800000000000000
+      internalID: 7556481338524924440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_88
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 136
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 425fd820f2e0bfee0800000000000000
+      internalID: -1226370878459218652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_89
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 136
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95eceb3773836a6c0800000000000000
+      internalID: -4132553797249610151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_90
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 136
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26e5d815e28298be0800000000000000
+      internalID: -1474603223585300894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_91
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 136
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4c1fd52c52d6a5b0800000000000000
+      internalID: -5357363413496423347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_92
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 135
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbfa5d93ad4ecfe30800000000000000
+      internalID: 4538754150406926267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_93
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 136
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6fdfd41862f81f10800000000000000
+      internalID: 2240807343457558379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_94
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 136
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f0ab9cc29fb3f680800000000000000
+      internalID: -8722417416067637006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_95
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 132
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa91e658f7bc97490800000000000000
+      internalID: -7747937935354357329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_96
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 104
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c28aba600b2604a0800000000000000
+      internalID: -6627562520838503744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_97
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 104
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dd1fa10d69539e60800000000000000
+      internalID: 7967810490463100376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_98
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 103
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 694d46e403dda3670800000000000000
+      internalID: 8519364844668114070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_99
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 104
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad022eb6c1924c830800000000000000
+      internalID: 4090439563605057754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_100
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 103
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e67072da03efd7920800000000000000
+      internalID: 2989825212660778862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_101
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 104
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 918542c00be7dd6f0800000000000000
+      internalID: -658230675943172071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_102
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 104
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be829a01ddf007f30800000000000000
+      internalID: 4571171063922764011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_103
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 104
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb27c72b949272b60800000000000000
+      internalID: 7721185482653856444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_104
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 104
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7256b8f5594c9510800000000000000
+      internalID: 1557200204757095036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_105
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 104
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b680f7656a23d310800000000000000
+      internalID: 1428532121830459065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_106
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 104
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7195f7fe2fdc5750800000000000000
+      internalID: 6295151771978666366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_107
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 104
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ef9e49ec0ed00480800000000000000
+      internalID: -8934897513667846171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_108
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 104
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65e80afbca7587c60800000000000000
+      internalID: 7816093552762457686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_109
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 104
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d2e730316b5e0c50800000000000000
+      internalID: 6633339774142243537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_110
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 104
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 256a6e2eff57d2040800000000000000
+      internalID: 4624482134263244370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_111
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 104
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 417a3a022de681940800000000000000
+      internalID: 5267081612979578644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_112
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 104
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 035e16b00ef420050800000000000000
+      internalID: 5765258296669889840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_113
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 104
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b16e1d33ec772dcd0800000000000000
+      internalID: -2534831912739805669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_114
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 104
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f06d6c6bef5bc6db0800000000000000
+      internalID: -4797259397463615985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_115
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 104
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab1d031312d53b580800000000000000
+      internalID: -8812597648693341766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_116
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 103
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9917d2633b565bba0800000000000000
+      internalID: -6073836702056746599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_117
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 104
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3d16a4170fb306f0800000000000000
+      internalID: -719521478317040325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_118
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 104
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f02ce7bd52dea26a0800000000000000
+      internalID: -6473100767539576305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_119
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 100
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8749d4a8dd3669cc0800000000000000
+      internalID: -3704663840306391944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_120
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 72
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25a4ba3ded5980770800000000000000
+      internalID: 8577270274593606226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_121
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 72
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a960f027424c5760800000000000000
+      internalID: 7447900757026695589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_122
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 71
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 970168957cfd8e560800000000000000
+      internalID: 7343365239721037945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_123
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 72
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8156afecf42c83c80800000000000000
+      internalID: -8342704661673122536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_124
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 71
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3592e4e1d86358440800000000000000
+      internalID: 4937412546208344403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_125
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 72
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53f432bf3ede57110800000000000000
+      internalID: 1258173234346676021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_126
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 72
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0cc22a8ef4c5d5d0800000000000000
+      internalID: -3038305776073257973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_127
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 72
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d0622b479b013120800000000000000
+      internalID: 2391705621538955478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_128
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 72
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecfba1b961ae48f20800000000000000
+      internalID: 3424118999520821198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_129
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 72
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b89654d3c68e5410800000000000000
+      internalID: 1467758704208550069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_130
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 72
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10427326bd351f280800000000000000
+      internalID: -9011329177680927743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_131
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 72
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 972421bc7a67188e0800000000000000
+      internalID: -1692941521876008327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_132
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 72
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db1fc1b9d7d525420800000000000000
+      internalID: 2617257127510340029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_133
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 72
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d763ddc158191d20800000000000000
+      internalID: 3249655345749125077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_134
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 72
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a96d70acc9f630f90800000000000000
+      internalID: -6988619477553785190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_135
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 72
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48ce894dc3cf89350800000000000000
+      internalID: 6023841839803067524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_136
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 72
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3b2bc22798bb5070800000000000000
+      internalID: 8096267714391911229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_137
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 72
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6779ed32b0cfcd8a0800000000000000
+      internalID: -6278866655684683914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_138
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 72
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dedf51938274a41b0800000000000000
+      internalID: -5671642542637711891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_139
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 72
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff750572ba7cb8100800000000000000
+      internalID: 111402153713620991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_140
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 71
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e892e53cf0b0b4320800000000000000
+      internalID: 2543138576910920078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_141
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 72
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc7d68e05f316f5b0800000000000000
+      internalID: -5335054765342140469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_142
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 72
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cbf4f31a29177990800000000000000
+      internalID: -7388408995163866175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_143
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 68
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7337887313a63ae80800000000000000
+      internalID: -8168568539502316745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_144
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 40
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee918d90d58765890800000000000000
+      internalID: -7469650590954939922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_145
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 40
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7dc644d67b264530800000000000000
+      internalID: 3838803521747471742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_146
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 39
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eafe0f5567f99a270800000000000000
+      internalID: 8262310321984696238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_147
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 40
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 581d958385d6420e0800000000000000
+      internalID: -2295589684382150267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_148
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 39
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01135d205b3b4a320800000000000000
+      internalID: 2568375277526003984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_149
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 40
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45eb1e4011f111140800000000000000
+      internalID: 4688562845026205268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_150
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 40
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dd034c0e61ec5280800000000000000
+      internalID: -9053113288153166383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_151
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 40
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e089a841a04d030f0800000000000000
+      internalID: -1139177565965346802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_152
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 40
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c9c6d3109b9bd5e0800000000000000
+      internalID: -1883740976013981245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_153
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 40
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eac9921c2f8122d0800000000000000
+      internalID: -3305203232059831581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_154
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 40
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9852c3aceb1ffe0b0800000000000000
+      internalID: -5697069201861368439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_155
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 40
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0e77a94de26326c0800000000000000
+      internalID: -4169380058732462579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_156
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 40
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e348b3f2916f2cc20800000000000000
+      internalID: 3225410871177741374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_157
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 40
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d50c128d809470e0800000000000000
+      internalID: -2273032974467594800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_158
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 40
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 694a4d45334b004b0800000000000000
+      internalID: -5476179014322969450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_159
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 40
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec67ca73d7ead9830800000000000000
+      internalID: 4079608690295731918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_160
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 40
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e007ca26ba3d50d80800000000000000
+      internalID: -8284983206429822962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_161
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 40
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd8dcb7a0b58674b0800000000000000
+      internalID: -5443016105855756068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_162
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 40
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8b2ef25127b33220800000000000000
+      internalID: 2464514774855986058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_163
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 40
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7160cf594d3f625e0800000000000000
+      internalID: -1934590895534111209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_164
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 40
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aad646f79ba17a3c0800000000000000
+      internalID: -4348477531194364502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_165
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 40
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 186003abea1be8660800000000000000
+      internalID: 7390039402567698049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_166
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 40
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44708871f43befc90800000000000000
+      internalID: -7134067607429707964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_167
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 38
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbee098b21dfc02a0800000000000000
+      internalID: -6769757882996953413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_168
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 8
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3276da5695d2e71a0800000000000000
+      internalID: -6809955724556409053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_169
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 8
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc1d27a48dc2be970800000000000000
+      internalID: 8785164805589881292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_170
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 7
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5db06599eda7a6910800000000000000
+      internalID: 1831411294953409493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_171
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 8
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48f3fabea00ee95b0800000000000000
+      internalID: -5359600169015885948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_172
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 7
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f30a6c2ebe6219b0800000000000000
+      internalID: -5110900864044104719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_173
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 8
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c989ffa66d1ea6bf0800000000000000
+      internalID: -330203311623923556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_174
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 8
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 414e1795e6f7c7360800000000000000
+      internalID: 7168744818790753300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_175
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 8
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec4061d2954968600800000000000000
+      internalID: 470226321836213454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_176
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 8
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd5316159a1d7d0a0800000000000000
+      internalID: -6856781382503287332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_177
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 8
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcff592da00c56c80800000000000000
+      internalID: -8330040783036612659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_178
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 7
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb2fc1c59f5a46270800000000000000
+      internalID: 8242895708405691068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_179
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 7
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c788d181c8b3fdcc0800000000000000
+      internalID: -3684160497279727492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_180
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 7
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2615c8d616d96dc00800000000000000
+      internalID: 925099815246516578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_181
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 8
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37310b7d1d2e280c0800000000000000
+      internalID: -4574844880560319629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_182
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 8
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 351fd429d70b76980800000000000000
+      internalID: -8545667714540244653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_183
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 7
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72a19e47140895a00800000000000000
+      internalID: 745768231929190951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_184
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 8
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f788d861f2518f380800000000000000
+      internalID: -8937370168530728833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_185
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 8
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbfb90cd40fd83190800000000000000
+      internalID: -7982385127549714501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_186
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 8
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f69b07de5b8c42b0800000000000000
+      internalID: -5598946997277321484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_187
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 8
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 145cb81ce882d4e90800000000000000
+      internalID: -7039926048912587455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_188
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 9
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fe27c3c28b501570800000000000000
+      internalID: 8435342719253425912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_189
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 8
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de80ab26f52cb65d0800000000000000
+      internalID: -3068145006188820243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_190
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 8
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ac9f8fa5c02cb8f0800000000000000
+      internalID: -523507423255749464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Grunt_191
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 7
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c5c8723ad3a824a0800000000000000
+      internalID: -6617859494875970108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Orc-Grunt_0: 7401311274437778631
+      Orc-Grunt_1: -793202637768912736
+      Orc-Grunt_10: 3898546549512325423
+      Orc-Grunt_100: 2989825212660778862
+      Orc-Grunt_101: -658230675943172071
+      Orc-Grunt_102: 4571171063922764011
+      Orc-Grunt_103: 7721185482653856444
+      Orc-Grunt_104: 1557200204757095036
+      Orc-Grunt_105: 1428532121830459065
+      Orc-Grunt_106: 6295151771978666366
+      Orc-Grunt_107: -8934897513667846171
+      Orc-Grunt_108: 7816093552762457686
+      Orc-Grunt_109: 6633339774142243537
+      Orc-Grunt_11: -8020351000886779407
+      Orc-Grunt_110: 4624482134263244370
+      Orc-Grunt_111: 5267081612979578644
+      Orc-Grunt_112: 5765258296669889840
+      Orc-Grunt_113: -2534831912739805669
+      Orc-Grunt_114: -4797259397463615985
+      Orc-Grunt_115: -8812597648693341766
+      Orc-Grunt_116: -6073836702056746599
+      Orc-Grunt_117: -719521478317040325
+      Orc-Grunt_118: -6473100767539576305
+      Orc-Grunt_119: -3704663840306391944
+      Orc-Grunt_12: -7597881862523084359
+      Orc-Grunt_120: 8577270274593606226
+      Orc-Grunt_121: 7447900757026695589
+      Orc-Grunt_122: 7343365239721037945
+      Orc-Grunt_123: -8342704661673122536
+      Orc-Grunt_124: 4937412546208344403
+      Orc-Grunt_125: 1258173234346676021
+      Orc-Grunt_126: -3038305776073257973
+      Orc-Grunt_127: 2391705621538955478
+      Orc-Grunt_128: 3424118999520821198
+      Orc-Grunt_129: 1467758704208550069
+      Orc-Grunt_13: 5582332535856103613
+      Orc-Grunt_130: -9011329177680927743
+      Orc-Grunt_131: -1692941521876008327
+      Orc-Grunt_132: 2617257127510340029
+      Orc-Grunt_133: 3249655345749125077
+      Orc-Grunt_134: -6988619477553785190
+      Orc-Grunt_135: 6023841839803067524
+      Orc-Grunt_136: 8096267714391911229
+      Orc-Grunt_137: -6278866655684683914
+      Orc-Grunt_138: -5671642542637711891
+      Orc-Grunt_139: 111402153713620991
+      Orc-Grunt_14: 1062246167270232984
+      Orc-Grunt_140: 2543138576910920078
+      Orc-Grunt_141: -5335054765342140469
+      Orc-Grunt_142: -7388408995163866175
+      Orc-Grunt_143: -8168568539502316745
+      Orc-Grunt_144: -7469650590954939922
+      Orc-Grunt_145: 3838803521747471742
+      Orc-Grunt_146: 8262310321984696238
+      Orc-Grunt_147: -2295589684382150267
+      Orc-Grunt_148: 2568375277526003984
+      Orc-Grunt_149: 4688562845026205268
+      Orc-Grunt_15: 5862408453840123660
+      Orc-Grunt_150: -9053113288153166383
+      Orc-Grunt_151: -1139177565965346802
+      Orc-Grunt_152: -1883740976013981245
+      Orc-Grunt_153: -3305203232059831581
+      Orc-Grunt_154: -5697069201861368439
+      Orc-Grunt_155: -4169380058732462579
+      Orc-Grunt_156: 3225410871177741374
+      Orc-Grunt_157: -2273032974467594800
+      Orc-Grunt_158: -5476179014322969450
+      Orc-Grunt_159: 4079608690295731918
+      Orc-Grunt_16: 2839729340807915391
+      Orc-Grunt_160: -8284983206429822962
+      Orc-Grunt_161: -5443016105855756068
+      Orc-Grunt_162: 2464514774855986058
+      Orc-Grunt_163: -1934590895534111209
+      Orc-Grunt_164: -4348477531194364502
+      Orc-Grunt_165: 7390039402567698049
+      Orc-Grunt_166: -7134067607429707964
+      Orc-Grunt_167: -6769757882996953413
+      Orc-Grunt_168: -6809955724556409053
+      Orc-Grunt_169: 8785164805589881292
+      Orc-Grunt_17: -1773955129468046089
+      Orc-Grunt_170: 1831411294953409493
+      Orc-Grunt_171: -5359600169015885948
+      Orc-Grunt_172: -5110900864044104719
+      Orc-Grunt_173: -330203311623923556
+      Orc-Grunt_174: 7168744818790753300
+      Orc-Grunt_175: 470226321836213454
+      Orc-Grunt_176: -6856781382503287332
+      Orc-Grunt_177: -8330040783036612659
+      Orc-Grunt_178: 8242895708405691068
+      Orc-Grunt_179: -3684160497279727492
+      Orc-Grunt_18: -5774215695863612253
+      Orc-Grunt_180: 925099815246516578
+      Orc-Grunt_181: -4574844880560319629
+      Orc-Grunt_182: -8545667714540244653
+      Orc-Grunt_183: 745768231929190951
+      Orc-Grunt_184: -8937370168530728833
+      Orc-Grunt_185: -7982385127549714501
+      Orc-Grunt_186: -5598946997277321484
+      Orc-Grunt_187: -7039926048912587455
+      Orc-Grunt_188: 8435342719253425912
+      Orc-Grunt_189: -3068145006188820243
+      Orc-Grunt_19: 1086928984009705987
+      Orc-Grunt_190: -523507423255749464
+      Orc-Grunt_191: -6617859494875970108
+      Orc-Grunt_2: 5517774271449681239
+      Orc-Grunt_20: -9034344663279861479
+      Orc-Grunt_21: 7895562461145485969
+      Orc-Grunt_22: -2050661695430264204
+      Orc-Grunt_23: 6306758532514723477
+      Orc-Grunt_24: -8693926695078410507
+      Orc-Grunt_25: 2252980867836224230
+      Orc-Grunt_26: -3108669630219542217
+      Orc-Grunt_27: 628763642073043290
+      Orc-Grunt_28: 8963541335606629340
+      Orc-Grunt_29: -9205894061077436323
+      Orc-Grunt_3: 7258023616719695144
+      Orc-Grunt_30: -69067545818124053
+      Orc-Grunt_31: -4242090094451513249
+      Orc-Grunt_32: 1861165076626709406
+      Orc-Grunt_33: 1135359594859899399
+      Orc-Grunt_34: -9128113279086872258
+      Orc-Grunt_35: 1289540755106514641
+      Orc-Grunt_36: -8088182372156106303
+      Orc-Grunt_37: 1872520526920627898
+      Orc-Grunt_38: -4663906913430013242
+      Orc-Grunt_39: -1159919931813568533
+      Orc-Grunt_4: 1027542930553676489
+      Orc-Grunt_40: 7864096919073286269
+      Orc-Grunt_41: -4598009640881347362
+      Orc-Grunt_42: -511697255341709579
+      Orc-Grunt_43: 3844136994261505351
+      Orc-Grunt_44: 7781945117376316683
+      Orc-Grunt_45: -149263353339710358
+      Orc-Grunt_46: 3764983747856579529
+      Orc-Grunt_47: -1896198007251656657
+      Orc-Grunt_48: -6310382644342906426
+      Orc-Grunt_49: 3444095351859719478
+      Orc-Grunt_5: 8852953150026307214
+      Orc-Grunt_50: -3812610550086044313
+      Orc-Grunt_51: -6686834566977560220
+      Orc-Grunt_52: 1260689380162902619
+      Orc-Grunt_53: -7052394228391923452
+      Orc-Grunt_54: -6906644356766992953
+      Orc-Grunt_55: -4653591986656128847
+      Orc-Grunt_56: -295422490472889392
+      Orc-Grunt_57: 1884293024727389539
+      Orc-Grunt_58: -2832399973196044288
+      Orc-Grunt_59: -3215001836282694824
+      Orc-Grunt_6: -7504772388983523395
+      Orc-Grunt_60: -7083427771917926500
+      Orc-Grunt_61: 6919609827625085107
+      Orc-Grunt_62: -1324382707918018447
+      Orc-Grunt_63: -7664066008884858154
+      Orc-Grunt_64: -3951320853877740556
+      Orc-Grunt_65: -1759468277495979775
+      Orc-Grunt_66: -2770481202510768561
+      Orc-Grunt_67: -1260032163569091711
+      Orc-Grunt_68: -3989455979505956555
+      Orc-Grunt_69: -7297441332847749764
+      Orc-Grunt_7: 8751700445693308831
+      Orc-Grunt_70: 5722527941596046026
+      Orc-Grunt_71: -5466504140962511319
+      Orc-Grunt_72: -1119451070647800690
+      Orc-Grunt_73: -8829395670055052568
+      Orc-Grunt_74: 3334338794658603130
+      Orc-Grunt_75: -3319384520249364753
+      Orc-Grunt_76: 3395344772805653586
+      Orc-Grunt_77: -3189922514822416455
+      Orc-Grunt_78: -1143913753495472837
+      Orc-Grunt_79: 7686001119406250952
+      Orc-Grunt_8: 9009927781069564044
+      Orc-Grunt_80: 8931951965619262674
+      Orc-Grunt_81: 3824803709462569790
+      Orc-Grunt_82: 2627851217299666361
+      Orc-Grunt_83: 5135793790598490144
+      Orc-Grunt_84: -4936223562281524598
+      Orc-Grunt_85: -6665098641953040765
+      Orc-Grunt_86: -3189842946855362032
+      Orc-Grunt_87: 7556481338524924440
+      Orc-Grunt_88: -1226370878459218652
+      Orc-Grunt_89: -4132553797249610151
+      Orc-Grunt_9: 4092584849915648159
+      Orc-Grunt_90: -1474603223585300894
+      Orc-Grunt_91: -5357363413496423347
+      Orc-Grunt_92: 4538754150406926267
+      Orc-Grunt_93: 2240807343457558379
+      Orc-Grunt_94: -8722417416067637006
+      Orc-Grunt_95: -7747937935354357329
+      Orc-Grunt_96: -6627562520838503744
+      Orc-Grunt_97: 7967810490463100376
+      Orc-Grunt_98: 8519364844668114070
+      Orc-Grunt_99: 4090439563605057754
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

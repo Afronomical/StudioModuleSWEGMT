@@ -1,0 +1,4924 @@
+fileFormatVersion: 2
+guid: 18331fd9220cfd343a0ca574d5636b94
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -774254937363714712
+    second: Human-Worker-Red_0
+  - first:
+      213: 8773630685077276727
+    second: Human-Worker-Red_1
+  - first:
+      213: -323155546586187605
+    second: Human-Worker-Red_2
+  - first:
+      213: 7559529515391126104
+    second: Human-Worker-Red_3
+  - first:
+      213: 7718756381329791761
+    second: Human-Worker-Red_4
+  - first:
+      213: 7779992093469589156
+    second: Human-Worker-Red_5
+  - first:
+      213: -2744123535518394867
+    second: Human-Worker-Red_6
+  - first:
+      213: -2881776112680410185
+    second: Human-Worker-Red_7
+  - first:
+      213: -2483635783635637953
+    second: Human-Worker-Red_8
+  - first:
+      213: -1745430210822342936
+    second: Human-Worker-Red_9
+  - first:
+      213: 7121823282825101243
+    second: Human-Worker-Red_10
+  - first:
+      213: 8752457235108057889
+    second: Human-Worker-Red_11
+  - first:
+      213: -4103109726727685609
+    second: Human-Worker-Red_12
+  - first:
+      213: -6847813899235042823
+    second: Human-Worker-Red_13
+  - first:
+      213: -3175547625678912546
+    second: Human-Worker-Red_14
+  - first:
+      213: 3826160756871322855
+    second: Human-Worker-Red_15
+  - first:
+      213: -8907754899758319046
+    second: Human-Worker-Red_16
+  - first:
+      213: 5044570626990187662
+    second: Human-Worker-Red_17
+  - first:
+      213: 7506915153245185528
+    second: Human-Worker-Red_18
+  - first:
+      213: 7538197297167047617
+    second: Human-Worker-Red_19
+  - first:
+      213: -2586521801508932792
+    second: Human-Worker-Red_20
+  - first:
+      213: 1211716682025973460
+    second: Human-Worker-Red_21
+  - first:
+      213: -6455103372717107997
+    second: Human-Worker-Red_22
+  - first:
+      213: 2143266303923437237
+    second: Human-Worker-Red_23
+  - first:
+      213: 3429626991712316156
+    second: Human-Worker-Red_24
+  - first:
+      213: -4507197006143157999
+    second: Human-Worker-Red_25
+  - first:
+      213: -2223655314915851812
+    second: Human-Worker-Red_26
+  - first:
+      213: 8071827632481767669
+    second: Human-Worker-Red_27
+  - first:
+      213: -6208356611294793083
+    second: Human-Worker-Red_28
+  - first:
+      213: -3468969141384285871
+    second: Human-Worker-Red_29
+  - first:
+      213: 3940703382540421820
+    second: Human-Worker-Red_30
+  - first:
+      213: 8321696098004873037
+    second: Human-Worker-Red_31
+  - first:
+      213: 6307797660471149333
+    second: Human-Worker-Red_32
+  - first:
+      213: 4194121310154017351
+    second: Human-Worker-Red_33
+  - first:
+      213: 2859668853763532940
+    second: Human-Worker-Red_34
+  - first:
+      213: 7641791042761325834
+    second: Human-Worker-Red_35
+  - first:
+      213: -3999814937806367558
+    second: Human-Worker-Red_36
+  - first:
+      213: -8454447030921653157
+    second: Human-Worker-Red_37
+  - first:
+      213: 6306845921401449653
+    second: Human-Worker-Red_38
+  - first:
+      213: -419085218023370059
+    second: Human-Worker-Red_39
+  - first:
+      213: 1150372132229155966
+    second: Human-Worker-Red_40
+  - first:
+      213: 8015807284887301644
+    second: Human-Worker-Red_41
+  - first:
+      213: 92307260673572561
+    second: Human-Worker-Red_42
+  - first:
+      213: -4692436488229199186
+    second: Human-Worker-Red_43
+  - first:
+      213: 4711535237290503236
+    second: Human-Worker-Red_44
+  - first:
+      213: -5018382941939662855
+    second: Human-Worker-Red_45
+  - first:
+      213: -2906165077854613349
+    second: Human-Worker-Red_46
+  - first:
+      213: 2632203683767084224
+    second: Human-Worker-Red_47
+  - first:
+      213: -5944372163450666764
+    second: Human-Worker-Red_48
+  - first:
+      213: 8457025889098079804
+    second: Human-Worker-Red_49
+  - first:
+      213: 780253111288304038
+    second: Human-Worker-Red_50
+  - first:
+      213: -7481400564085369223
+    second: Human-Worker-Red_51
+  - first:
+      213: 6600476267870219041
+    second: Human-Worker-Red_52
+  - first:
+      213: 4400992195393876204
+    second: Human-Worker-Red_53
+  - first:
+      213: 5856839179626787050
+    second: Human-Worker-Red_54
+  - first:
+      213: -3115123420213413519
+    second: Human-Worker-Red_55
+  - first:
+      213: -5145415862413615714
+    second: Human-Worker-Red_56
+  - first:
+      213: 4781689659104384069
+    second: Human-Worker-Red_57
+  - first:
+      213: 2374655363134733523
+    second: Human-Worker-Red_58
+  - first:
+      213: -730188050760828950
+    second: Human-Worker-Red_59
+  - first:
+      213: -8974113675947253675
+    second: Human-Worker-Red_60
+  - first:
+      213: -2491508780650381070
+    second: Human-Worker-Red_61
+  - first:
+      213: 4049917400477617961
+    second: Human-Worker-Red_62
+  - first:
+      213: -2708331527186190709
+    second: Human-Worker-Red_63
+  - first:
+      213: 4032435525862451158
+    second: Human-Worker-Red_64
+  - first:
+      213: 8229617815900335702
+    second: Human-Worker-Red_65
+  - first:
+      213: 371292224814691978
+    second: Human-Worker-Red_66
+  - first:
+      213: 1808754126549935800
+    second: Human-Worker-Red_67
+  - first:
+      213: -3172864251176962591
+    second: Human-Worker-Red_68
+  - first:
+      213: 5178273883147130362
+    second: Human-Worker-Red_69
+  - first:
+      213: 2569197459965526860
+    second: Human-Worker-Red_70
+  - first:
+      213: -3365700290516844222
+    second: Human-Worker-Red_71
+  - first:
+      213: 5322777145217198837
+    second: Human-Worker-Red_72
+  - first:
+      213: 1415596507079805139
+    second: Human-Worker-Red_73
+  - first:
+      213: 1856924174941076836
+    second: Human-Worker-Red_74
+  - first:
+      213: -7304753489475612817
+    second: Human-Worker-Red_75
+  - first:
+      213: -3287726229362511325
+    second: Human-Worker-Red_76
+  - first:
+      213: -7752891212783424063
+    second: Human-Worker-Red_77
+  - first:
+      213: -5029985336036860413
+    second: Human-Worker-Red_78
+  - first:
+      213: 4939690187062259720
+    second: Human-Worker-Red_79
+  - first:
+      213: -7187034208769830059
+    second: Human-Worker-Red_80
+  - first:
+      213: -2794778131170953878
+    second: Human-Worker-Red_81
+  - first:
+      213: 534829424841732273
+    second: Human-Worker-Red_82
+  - first:
+      213: -815013502137561485
+    second: Human-Worker-Red_83
+  - first:
+      213: 7142179725631826862
+    second: Human-Worker-Red_84
+  - first:
+      213: 7313812034594840993
+    second: Human-Worker-Red_85
+  - first:
+      213: 2037449335080928918
+    second: Human-Worker-Red_86
+  - first:
+      213: 7418907362540138081
+    second: Human-Worker-Red_87
+  - first:
+      213: 591832154520127230
+    second: Human-Worker-Red_88
+  - first:
+      213: -5273419158105387702
+    second: Human-Worker-Red_89
+  - first:
+      213: 1845815808619370531
+    second: Human-Worker-Red_90
+  - first:
+      213: 4163600336394766900
+    second: Human-Worker-Red_91
+  - first:
+      213: 7107146588769231732
+    second: Human-Worker-Red_92
+  - first:
+      213: -6712760672856104281
+    second: Human-Worker-Red_93
+  - first:
+      213: 7796928406126127387
+    second: Human-Worker-Red_94
+  - first:
+      213: -4199907790736240392
+    second: Human-Worker-Red_95
+  - first:
+      213: -1375574372930128124
+    second: Human-Worker-Red_96
+  - first:
+      213: -4386043985345460649
+    second: Human-Worker-Red_97
+  - first:
+      213: -1361677394964692959
+    second: Human-Worker-Red_98
+  - first:
+      213: 1793634517041004661
+    second: Human-Worker-Red_99
+  - first:
+      213: 7246237265021417038
+    second: Human-Worker-Red_100
+  - first:
+      213: 7939726459802454915
+    second: Human-Worker-Red_101
+  - first:
+      213: 2831500269498300755
+    second: Human-Worker-Red_102
+  - first:
+      213: -6502354577893273858
+    second: Human-Worker-Red_103
+  - first:
+      213: 3988080937221621969
+    second: Human-Worker-Red_104
+  - first:
+      213: 8783723681287639728
+    second: Human-Worker-Red_105
+  - first:
+      213: -6671497731884798204
+    second: Human-Worker-Red_106
+  - first:
+      213: 2412226462784485513
+    second: Human-Worker-Red_107
+  - first:
+      213: -816837469725688907
+    second: Human-Worker-Red_108
+  - first:
+      213: 4582732722315932683
+    second: Human-Worker-Red_109
+  - first:
+      213: 7446457926780118425
+    second: Human-Worker-Red_110
+  - first:
+      213: 370848171116716379
+    second: Human-Worker-Red_111
+  - first:
+      213: -8455195248890780895
+    second: Human-Worker-Red_112
+  - first:
+      213: 8435499242206172626
+    second: Human-Worker-Red_113
+  - first:
+      213: -6712016202276455651
+    second: Human-Worker-Red_114
+  - first:
+      213: -5982029708214955388
+    second: Human-Worker-Red_115
+  - first:
+      213: -7567205552252565674
+    second: Human-Worker-Red_116
+  - first:
+      213: -1367700120823403066
+    second: Human-Worker-Red_117
+  - first:
+      213: 5582744711129639427
+    second: Human-Worker-Red_118
+  - first:
+      213: -1846289264490436928
+    second: Human-Worker-Red_119
+  - first:
+      213: -332822273588941976
+    second: Human-Worker-Red_120
+  - first:
+      213: 6138012110375399726
+    second: Human-Worker-Red_121
+  - first:
+      213: -7626809408745481724
+    second: Human-Worker-Red_122
+  - first:
+      213: -7137767051510797278
+    second: Human-Worker-Red_123
+  - first:
+      213: -8186380891186290745
+    second: Human-Worker-Red_124
+  - first:
+      213: -866741709430786866
+    second: Human-Worker-Red_125
+  - first:
+      213: -3089389535554486929
+    second: Human-Worker-Red_126
+  - first:
+      213: 7392153775145599080
+    second: Human-Worker-Red_127
+  - first:
+      213: 4847428705264297620
+    second: Human-Worker-Red_128
+  - first:
+      213: 3859942150956059198
+    second: Human-Worker-Red_129
+  - first:
+      213: 4075758169762915112
+    second: Human-Worker-Red_130
+  - first:
+      213: 8008409911839064036
+    second: Human-Worker-Red_131
+  - first:
+      213: -4729001944371113049
+    second: Human-Worker-Red_132
+  - first:
+      213: 7755937745878008252
+    second: Human-Worker-Red_133
+  - first:
+      213: -8456374179610292197
+    second: Human-Worker-Red_134
+  - first:
+      213: 8603302304189764339
+    second: Human-Worker-Red_135
+  - first:
+      213: -3532768961179312322
+    second: Human-Worker-Red_136
+  - first:
+      213: 5967615719703583505
+    second: Human-Worker-Red_137
+  - first:
+      213: -4550111479520681086
+    second: Human-Worker-Red_138
+  - first:
+      213: 6624527970033369793
+    second: Human-Worker-Red_139
+  - first:
+      213: 6288414321388642099
+    second: Human-Worker-Red_140
+  - first:
+      213: -1480411194297900790
+    second: Human-Worker-Red_141
+  - first:
+      213: 3697342926118869811
+    second: Human-Worker-Red_142
+  - first:
+      213: -8880849609027114843
+    second: Human-Worker-Red_143
+  - first:
+      213: -8954920788603401602
+    second: Human-Worker-Red_144
+  - first:
+      213: 7688458195385239689
+    second: Human-Worker-Red_145
+  - first:
+      213: -8784261818967351854
+    second: Human-Worker-Red_146
+  - first:
+      213: -4071075158397229644
+    second: Human-Worker-Red_147
+  - first:
+      213: -7522615880870356578
+    second: Human-Worker-Red_148
+  - first:
+      213: -2037555991905692834
+    second: Human-Worker-Red_149
+  - first:
+      213: -6407283250498059106
+    second: Human-Worker-Red_150
+  - first:
+      213: -4491755282077910177
+    second: Human-Worker-Red_151
+  - first:
+      213: 339199315939294080
+    second: Human-Worker-Red_152
+  - first:
+      213: 7302954854693879960
+    second: Human-Worker-Red_153
+  - first:
+      213: -4714229840463002803
+    second: Human-Worker-Red_154
+  - first:
+      213: -8272137233075821641
+    second: Human-Worker-Red_155
+  - first:
+      213: -8774035720442948976
+    second: Human-Worker-Red_156
+  - first:
+      213: 5992834712270977505
+    second: Human-Worker-Red_157
+  - first:
+      213: -2618517743937337876
+    second: Human-Worker-Red_158
+  - first:
+      213: 6817623712782147644
+    second: Human-Worker-Red_159
+  - first:
+      213: -4175639716893833821
+    second: Human-Worker-Red_160
+  - first:
+      213: -4810262582713153475
+    second: Human-Worker-Red_161
+  - first:
+      213: 86468832494097386
+    second: Human-Worker-Red_162
+  - first:
+      213: -3931914617101193113
+    second: Human-Worker-Red_163
+  - first:
+      213: 7611201575641969404
+    second: Human-Worker-Red_164
+  - first:
+      213: -4315819426401636387
+    second: Human-Worker-Red_165
+  - first:
+      213: 8220886806544617506
+    second: Human-Worker-Red_166
+  - first:
+      213: -1254487851308113540
+    second: Human-Worker-Red_167
+  - first:
+      213: 663242391924652882
+    second: Human-Worker-Red_168
+  - first:
+      213: -354459020222528812
+    second: Human-Worker-Red_169
+  - first:
+      213: 6566338929663889895
+    second: Human-Worker-Red_170
+  - first:
+      213: -3798168495871423511
+    second: Human-Worker-Red_171
+  - first:
+      213: 5905798247201915827
+    second: Human-Worker-Red_172
+  - first:
+      213: 6770661889233789551
+    second: Human-Worker-Red_173
+  - first:
+      213: 8675426578642817802
+    second: Human-Worker-Red_174
+  - first:
+      213: 2144753415934792524
+    second: Human-Worker-Red_175
+  - first:
+      213: -8054851532750742095
+    second: Human-Worker-Red_176
+  - first:
+      213: 9222295059193389547
+    second: Human-Worker-Red_177
+  - first:
+      213: -1799397920446370026
+    second: Human-Worker-Red_178
+  - first:
+      213: -2325196634635709179
+    second: Human-Worker-Red_179
+  - first:
+      213: 1557413985565613621
+    second: Human-Worker-Red_180
+  - first:
+      213: -2172580704082570193
+    second: Human-Worker-Red_181
+  - first:
+      213: 4611021703387907739
+    second: Human-Worker-Red_182
+  - first:
+      213: 5822336226266814214
+    second: Human-Worker-Red_183
+  - first:
+      213: -6618611766939915862
+    second: Human-Worker-Red_184
+  - first:
+      213: 6343044245537172222
+    second: Human-Worker-Red_185
+  - first:
+      213: 4482832683615671651
+    second: Human-Worker-Red_186
+  - first:
+      213: 4589136539013151393
+    second: Human-Worker-Red_187
+  - first:
+      213: 7538830035774312796
+    second: Human-Worker-Red_188
+  - first:
+      213: 4157161587053202565
+    second: Human-Worker-Red_189
+  - first:
+      213: 7947894350751418237
+    second: Human-Worker-Red_190
+  - first:
+      213: 8223756736206835977
+    second: Human-Worker-Red_191
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Human-Worker-Red_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 232
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86de7d49c3b4145f0800000000000000
+      internalID: -774254937363714712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 232
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7388f769f9232c970800000000000000
+      internalID: 8773630685077276727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_2
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 231
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba878861ebbe38bf0800000000000000
+      internalID: -323155546586187605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_3
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 232
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85a08f9ca08d8e860800000000000000
+      internalID: 7559529515391126104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_4
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 231
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11b11f878088e1b60800000000000000
+      internalID: 7718756381329791761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_5
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 232
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ae3a9eb69518fb60800000000000000
+      internalID: 7779992093469589156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_6
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 232
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0613a5fe2aeae9d0800000000000000
+      internalID: -2744123535518394867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_7
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 231
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b36a71d4efd108d0800000000000000
+      internalID: -2881776112680410185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_8
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 232
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f39e2f4e96a588dd0800000000000000
+      internalID: -2483635783635637953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_9
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 231
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e6f2bf887cf6c7e0800000000000000
+      internalID: -1745430210822342936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_10
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 231
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbf75edea8cc5d260800000000000000
+      internalID: 7121823282825101243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_11
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 231
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 123d96a9b79f67970800000000000000
+      internalID: 8752457235108057889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_12
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 232
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71a32f75173de07c0800000000000000
+      internalID: -4103109726727685609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_13
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 232
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f9dc183a8da7f0a0800000000000000
+      internalID: -6847813899235042823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_14
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 232
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed3c21c52403ee3d0800000000000000
+      internalID: -3175547625678912546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_15
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 228
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ecdadebfe0491530800000000000000
+      internalID: 3826160756871322855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_16
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 232
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3af8ad2d1c416480800000000000000
+      internalID: -8907754899758319046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_17
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 232
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e84ae1a024ae10640800000000000000
+      internalID: 5044570626990187662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_18
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 232
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f52d2cfe8bed2860800000000000000
+      internalID: 7506915153245185528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_19
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 232
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cb9370b08e0d9860800000000000000
+      internalID: 7538197297167047617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_20
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 233
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 843b1412024da1cd0800000000000000
+      internalID: -2586521801508932792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_21
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 232
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d6b29007e1e0d010800000000000000
+      internalID: 1211716682025973460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_22
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 232
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e455c0eeadda66a0800000000000000
+      internalID: -6455103372717107997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_23
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 232
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bebb6019596ebd10800000000000000
+      internalID: 2143266303923437237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_24
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 200
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfaaa19f39b789f20800000000000000
+      internalID: 3429626991712316156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_25
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 200
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 119022cf3383371c0800000000000000
+      internalID: -4507197006143157999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_26
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 199
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd10883c54df321e0800000000000000
+      internalID: -2223655314915851812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_27
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 200
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f012422774e40070800000000000000
+      internalID: 8071827632481767669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_28
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 199
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58273d82e8c77d9a0800000000000000
+      internalID: -6208356611294793083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_29
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 200
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1517ffef1febbdfc0800000000000000
+      internalID: -3468969141384285871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_30
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 200
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cba808109d030b630800000000000000
+      internalID: 3940703382540421820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_31
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 200
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4fa55ac28a9c7370800000000000000
+      internalID: 8321696098004873037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_32
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 200
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5134c635d8cc98750800000000000000
+      internalID: 6307797660471149333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_33
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 200
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74a40a43c13843a30800000000000000
+      internalID: 4194121310154017351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_34
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 199
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c88e2dbdba59fa720800000000000000
+      internalID: 2859668853763532940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_35
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 199
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0dfc8727781d0a60800000000000000
+      internalID: 7641791042761325834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_36
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 200
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab410c8818dcd78c0800000000000000
+      internalID: -3999814937806367558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_37
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 200
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b541f8d0835cbaa80800000000000000
+      internalID: -8454447030921653157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_38
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 200
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bc214e43fa668750800000000000000
+      internalID: 6306845921401449653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_39
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 200
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b29911f63c1f2af0800000000000000
+      internalID: -419085218023370059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_40
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 200
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7c070dfb51f6ff00800000000000000
+      internalID: 1150372132229155966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_41
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 200
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0e22bb814edd3f60800000000000000
+      internalID: 8015807284887301644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_42
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 200
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1de33aae6f0f74100800000000000000
+      internalID: 92307260673572561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_43
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 200
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea2640420ed11eeb0800000000000000
+      internalID: -4692436488229199186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_44
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 201
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44caf65e55cb26140800000000000000
+      internalID: 4711535237290503236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_45
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 200
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ff7ec68d4f1b5ab0800000000000000
+      internalID: -5018382941939662855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_46
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 200
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9094db524a3ba7d0800000000000000
+      internalID: -2906165077854613349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_47
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 199
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c4696bed47778420800000000000000
+      internalID: 2632203683767084224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_48
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 168
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f08dc01309518da0800000000000000
+      internalID: -5944372163450666764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_49
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 168
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3e19f72d346d5570800000000000000
+      internalID: 8457025889098079804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_50
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 167
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a19b3d121404da00800000000000000
+      internalID: 780253111288304038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_51
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 168
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 976d84b33d9bc2890800000000000000
+      internalID: -7481400564085369223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_52
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 167
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12becced13a999b50800000000000000
+      internalID: 6600476267870219041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_53
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 168
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce0f7b19517731d30800000000000000
+      internalID: 4400992195393876204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_54
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 168
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae0be38f33ca74150800000000000000
+      internalID: 5856839179626787050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_55
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 168
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 179fda201cbd4c4d0800000000000000
+      internalID: -3115123420213413519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_56
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 168
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9d1d23e88fc798b0800000000000000
+      internalID: -5145415862413615714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_57
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 168
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54453151969fb5240800000000000000
+      internalID: 4781689659104384069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_58
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 168
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dc3f97a87874f020800000000000000
+      internalID: 2374655363134733523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_59
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 168
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae77a2726d9ddd5f0800000000000000
+      internalID: -730188050760828950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_60
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 168
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 550603b982b857380800000000000000
+      internalID: -8974113675947253675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_61
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 168
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f0419ee6f16c6dd0800000000000000
+      internalID: -2491508780650381070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_62
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 168
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92f44291b62343830800000000000000
+      internalID: 4049917400477617961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_63
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 168
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8e631c43d21a6ad0800000000000000
+      internalID: -2708331527186190709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_64
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 168
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d762bafeb616f730800000000000000
+      internalID: 4032435525862451158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_65
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 168
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65e27f91dc9753270800000000000000
+      internalID: 8229617815900335702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_66
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 168
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a86b1ffaf48172500800000000000000
+      internalID: 371292224814691978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_67
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 168
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b6e70f7b4cf91910800000000000000
+      internalID: 1808754126549935800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_68
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 168
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e5bf0c26c8b7f3d0800000000000000
+      internalID: -3172864251176962591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_69
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 168
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af5daaa39acecd740800000000000000
+      internalID: 5178273883147130362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_70
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 168
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c43c4174a7f97a320800000000000000
+      internalID: 2569197459965526860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_71
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 167
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24180530b61aa41d0800000000000000
+      internalID: -3365700290516844222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_72
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 136
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fa2d3fbc9d4ed940800000000000000
+      internalID: 5322777145217198837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_73
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 136
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d886c5e58535a310800000000000000
+      internalID: 1415596507079805139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_74
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 135
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46db23ed2be15c910800000000000000
+      internalID: 1856924174941076836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_75
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 136
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6fc200576d40aa90800000000000000
+      internalID: -7304753489475612817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_76
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 135
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 322fc1cd966af52d0800000000000000
+      internalID: -3287726229362511325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_77
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 136
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cdebcfb482386490800000000000000
+      internalID: -7752891212783424063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_78
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 136
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30e5914acf6e13ab0800000000000000
+      internalID: -5029985336036860413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_79
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 136
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8003454bd0e4d8440800000000000000
+      internalID: 4939690187062259720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_80
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 136
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55391b53776824c90800000000000000
+      internalID: -7187034208769830059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_81
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 136
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a657689d814f639d0800000000000000
+      internalID: -2794778131170953878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_82
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 136
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b03e1b37881c6700800000000000000
+      internalID: 534829424841732273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_83
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 136
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37e81f5b98d70b4f0800000000000000
+      internalID: -815013502137561485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_84
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 136
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eab284c9e9e1e1360800000000000000
+      internalID: 7142179725631826862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_85
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 136
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a1a0049b41ef7560800000000000000
+      internalID: 7313812034594840993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_86
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 136
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 696ca591069764c10800000000000000
+      internalID: 2037449335080928918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_87
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 136
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16e2cbd60f045f660800000000000000
+      internalID: 7418907362540138081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_88
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 136
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef683d8753c963800800000000000000
+      internalID: 591832154520127230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_89
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 136
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4d8369273d01d6b0800000000000000
+      internalID: -5273419158105387702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_90
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 136
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 328de89c2b7ad9910800000000000000
+      internalID: 1845815808619370531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_91
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 136
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43ac18d327418c930800000000000000
+      internalID: 4163600336394766900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_92
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 135
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 473283eca28a1a260800000000000000
+      internalID: 7107146588769231732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_93
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 136
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a22338dbbb77d2a0800000000000000
+      internalID: -6712760672856104281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_94
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 136
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b19ec425311443c60800000000000000
+      internalID: 7796928406126127387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_95
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 135
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f055cbcd1ee6b5c0800000000000000
+      internalID: -4199907790736240392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_96
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 104
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4077e5b556af8ece0800000000000000
+      internalID: -1375574372930128124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_97
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 104
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 756ce3ccb34a123c0800000000000000
+      internalID: -4386043985345460649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_98
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 103
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 120437eaf995a1de0800000000000000
+      internalID: -1361677394964692959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_99
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 104
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 570cb15171544e810800000000000000
+      internalID: 1793634517041004661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_100
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 103
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e46bccb766ecf8460800000000000000
+      internalID: 7246237265021417038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_101
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 104
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38b8b4216239f2e60800000000000000
+      internalID: 7939726459802454915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_102
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 104
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3597ed04e728b4720800000000000000
+      internalID: 2831500269498300755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_103
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 104
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efe490d56fef2c5a0800000000000000
+      internalID: -6502354577893273858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_104
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 104
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d80a9e8b72885730800000000000000
+      internalID: 3988080937221621969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_105
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 104
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b21654662e06e970800000000000000
+      internalID: 8783723681287639728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_106
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 104
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40fae23f8241a63a0800000000000000
+      internalID: -6671497731884798204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_107
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 104
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 988f018ff23f97120800000000000000
+      internalID: 2412226462784485513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_108
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 104
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bb75c926a20aa4f0800000000000000
+      internalID: -816837469725688907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_109
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 104
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b04333e6123299f30800000000000000
+      internalID: 4582732722315932683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_110
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 104
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 995ee980802275760800000000000000
+      internalID: 7446457926780118425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_111
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 104
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b51e3016274852500800000000000000
+      internalID: 370848171116716379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_112
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 104
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1236b4bf7bc19aa80800000000000000
+      internalID: -8455195248890780895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_113
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 104
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d596ca1ed9e01570800000000000000
+      internalID: 8435499242206172626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_114
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 104
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1b35a863d02ad2a0800000000000000
+      internalID: -6712016202276455651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_115
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 104
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 482930eacaf8bfca0800000000000000
+      internalID: -5982029708214955388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_116
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 103
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6574f9b94a2ebf690800000000000000
+      internalID: -7567205552252565674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_117
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 104
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cdef0b8cf3f40de0800000000000000
+      internalID: -1367700120823403066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_118
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 104
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30aa2927cb4e97d40800000000000000
+      internalID: 5582744711129639427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_119
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 102
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c62e6d22b9a066e0800000000000000
+      internalID: -1846289264490436928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_120
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 72
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86ba461d7e3916bf0800000000000000
+      internalID: -332822273588941976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_121
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 72
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e21b8f96e799e2550800000000000000
+      internalID: 6138012110375399726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_122
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 71
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40a5e165041282690800000000000000
+      internalID: -7626809408745481724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_123
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 72
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22c26352fae81fc90800000000000000
+      internalID: -7137767051510797278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_124
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 71
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cf9bc8e3f1246e80800000000000000
+      internalID: -8186380891186290745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_125
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 72
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec4fc59e107b8f3f0800000000000000
+      internalID: -866741709430786866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_126
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 72
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6d3770f5984025d0800000000000000
+      internalID: -3089389535554486929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_127
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 72
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 860cd9471b4369660800000000000000
+      internalID: 7392153775145599080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_128
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 72
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4966f4389b6854340800000000000000
+      internalID: 4847428705264297620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_129
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 72
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3a0b497fe4419530800000000000000
+      internalID: 3859942150956059198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_130
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 72
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8236d1b0670009830800000000000000
+      internalID: 4075758169762915112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_131
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 72
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ef72ea6266932f60800000000000000
+      internalID: 8008409911839064036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_132
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 72
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a3d0a379c53f5eb0800000000000000
+      internalID: -4729001944371113049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_133
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 72
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb14a138940a2ab60800000000000000
+      internalID: 7755937745878008252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_134
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 72
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b101b88cc7ce4aa80800000000000000
+      internalID: -8456374179610292197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_135
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 72
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f2d7880dd1156770800000000000000
+      internalID: 8603302304189764339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_136
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 72
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3f9163e85519fec0800000000000000
+      internalID: -3532768961179312322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_137
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 72
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11b18f811ea31d250800000000000000
+      internalID: 5967615719703583505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_138
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 72
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2832eb687b1cad0c0800000000000000
+      internalID: -4550111479520681086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_139
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 72
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c28a7a271d0feb50800000000000000
+      internalID: 6624527970033369793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_140
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 71
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33f59d2028fe44750800000000000000
+      internalID: 6288414321388642099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_141
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 72
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a01ac52ccd5847be0800000000000000
+      internalID: -1480411194297900790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_142
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 72
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33b5e1c4dc99f4330800000000000000
+      internalID: 3697342926118869811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_143
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 71
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a8a5465552e0c480800000000000000
+      internalID: -8880849609027114843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_144
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 40
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7a888becfab9b380800000000000000
+      internalID: -8954920788603401602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_145
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 40
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 988c0665ef3e2ba60800000000000000
+      internalID: 7688458195385239689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_146
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 39
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dd9c6aaa68081680800000000000000
+      internalID: -8784261818967351854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_147
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 40
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b5e0d186b2a087c0800000000000000
+      internalID: -4071075158397229644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_148
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 39
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e99920f76bc4a9790800000000000000
+      internalID: -7522615880870356578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_149
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 40
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e531e7cee9529b3e0800000000000000
+      internalID: -2037555991905692834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_150
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 40
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e94c0c6b4d1c417a0800000000000000
+      internalID: -6407283250498059106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_151
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 40
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5bf2c98e541aa1c0800000000000000
+      internalID: -4491755282077910177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_152
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 40
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08bfd9e0bf315b400800000000000000
+      internalID: 339199315939294080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_153
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 40
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8904eb46fbe495560800000000000000
+      internalID: 7302954854693879960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_154
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 40
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4308a9efe0b39eb0800000000000000
+      internalID: -4714229840463002803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_155
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 40
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b3ab31a307733d80800000000000000
+      internalID: -8272137233075821641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_156
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 40
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 092d864cffc5c3680800000000000000
+      internalID: -8774035720442948976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_157
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 40
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e9ba8e5b63da2350800000000000000
+      internalID: 5992834712270977505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_158
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 40
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce5ce824cf729abd0800000000000000
+      internalID: -2618517743937337876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_159
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 40
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c30e8ac35a01d9e50800000000000000
+      internalID: 6817623712782147644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_160
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 40
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a5c78c0dc52d06c0800000000000000
+      internalID: -4175639716893833821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_161
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 40
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d388709baa38e3db0800000000000000
+      internalID: -4810262582713153475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_162
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 40
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae314fce1f2333100800000000000000
+      internalID: 86468832494097386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_163
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 40
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7607488ec780f69c0800000000000000
+      internalID: -3931914617101193113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_164
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 40
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf27806d18b60a960800000000000000
+      internalID: 7611201575641969404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_165
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 40
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddfa99e09112b14c0800000000000000
+      internalID: -4315819426401636387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_166
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 40
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22099c29ef4761270800000000000000
+      internalID: 8220886806544617506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_167
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 39
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c71acbf12f9279ee0800000000000000
+      internalID: -1254487851308113540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_168
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 8
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25b36a2017f443900800000000000000
+      internalID: 663242391924652882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_169
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 8
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d2043c2665b41bf0800000000000000
+      internalID: -354459020222528812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_170
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 7
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e15f617772502b50800000000000000
+      internalID: 6566338929663889895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_171
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 8
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eb018660e13a4bc0800000000000000
+      internalID: -3798168495871423511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_172
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 7
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b3489f273c95f150800000000000000
+      internalID: 5905798247201915827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_173
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 8
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f622e02ad1936fd50800000000000000
+      internalID: 6770661889233789551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_174
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 8
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a03dcf6428e456870800000000000000
+      internalID: 8675426578642817802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_175
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 8
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c43599f4ed1b3cd10800000000000000
+      internalID: 2144753415934792524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_176
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 8
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bd91e7153b673090800000000000000
+      internalID: -8054851532750742095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_177
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 8
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be1ef099e7c2cff70800000000000000
+      internalID: 9222295059193389547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_178
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 7
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61fa73eff114707e0800000000000000
+      internalID: -1799397920446370026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_179
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 7
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 505da9feafd3bbfd0800000000000000
+      internalID: -2325196634635709179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_180
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 7
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53e1dd1b4cb0d9510800000000000000
+      internalID: 1557413985565613621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_181
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 8
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f245a474c5179d1e0800000000000000
+      internalID: -2172580704082570193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_182
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 8
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b968d0a1fc3adff30800000000000000
+      internalID: 4611021703387907739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_183
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 7
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 607958123f71dc050800000000000000
+      internalID: 5822336226266814214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_184
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 8
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa963553aa7f524a0800000000000000
+      internalID: -6618611766939915862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_185
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 8
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efa24d96225070850800000000000000
+      internalID: 6343044245537172222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_186
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 8
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3655c6e1398363e30800000000000000
+      internalID: 4482832683615671651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_187
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 8
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aaf4a13e53efaf30800000000000000
+      internalID: 4589136539013151393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_188
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 9
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c519f50a9fd4f9860800000000000000
+      internalID: 7538830035774312796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_189
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 8
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58c8436107431b930800000000000000
+      internalID: 4157161587053202565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_190
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 8
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d774fd06dc79c4e60800000000000000
+      internalID: 7947894350751418237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Human-Worker-Red_191
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 7
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90195d42e27a02270800000000000000
+      internalID: 8223756736206835977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Human-Worker-Red_0: -774254937363714712
+      Human-Worker-Red_1: 8773630685077276727
+      Human-Worker-Red_10: 7121823282825101243
+      Human-Worker-Red_100: 7246237265021417038
+      Human-Worker-Red_101: 7939726459802454915
+      Human-Worker-Red_102: 2831500269498300755
+      Human-Worker-Red_103: -6502354577893273858
+      Human-Worker-Red_104: 3988080937221621969
+      Human-Worker-Red_105: 8783723681287639728
+      Human-Worker-Red_106: -6671497731884798204
+      Human-Worker-Red_107: 2412226462784485513
+      Human-Worker-Red_108: -816837469725688907
+      Human-Worker-Red_109: 4582732722315932683
+      Human-Worker-Red_11: 8752457235108057889
+      Human-Worker-Red_110: 7446457926780118425
+      Human-Worker-Red_111: 370848171116716379
+      Human-Worker-Red_112: -8455195248890780895
+      Human-Worker-Red_113: 8435499242206172626
+      Human-Worker-Red_114: -6712016202276455651
+      Human-Worker-Red_115: -5982029708214955388
+      Human-Worker-Red_116: -7567205552252565674
+      Human-Worker-Red_117: -1367700120823403066
+      Human-Worker-Red_118: 5582744711129639427
+      Human-Worker-Red_119: -1846289264490436928
+      Human-Worker-Red_12: -4103109726727685609
+      Human-Worker-Red_120: -332822273588941976
+      Human-Worker-Red_121: 6138012110375399726
+      Human-Worker-Red_122: -7626809408745481724
+      Human-Worker-Red_123: -7137767051510797278
+      Human-Worker-Red_124: -8186380891186290745
+      Human-Worker-Red_125: -866741709430786866
+      Human-Worker-Red_126: -3089389535554486929
+      Human-Worker-Red_127: 7392153775145599080
+      Human-Worker-Red_128: 4847428705264297620
+      Human-Worker-Red_129: 3859942150956059198
+      Human-Worker-Red_13: -6847813899235042823
+      Human-Worker-Red_130: 4075758169762915112
+      Human-Worker-Red_131: 8008409911839064036
+      Human-Worker-Red_132: -4729001944371113049
+      Human-Worker-Red_133: 7755937745878008252
+      Human-Worker-Red_134: -8456374179610292197
+      Human-Worker-Red_135: 8603302304189764339
+      Human-Worker-Red_136: -3532768961179312322
+      Human-Worker-Red_137: 5967615719703583505
+      Human-Worker-Red_138: -4550111479520681086
+      Human-Worker-Red_139: 6624527970033369793
+      Human-Worker-Red_14: -3175547625678912546
+      Human-Worker-Red_140: 6288414321388642099
+      Human-Worker-Red_141: -1480411194297900790
+      Human-Worker-Red_142: 3697342926118869811
+      Human-Worker-Red_143: -8880849609027114843
+      Human-Worker-Red_144: -8954920788603401602
+      Human-Worker-Red_145: 7688458195385239689
+      Human-Worker-Red_146: -8784261818967351854
+      Human-Worker-Red_147: -4071075158397229644
+      Human-Worker-Red_148: -7522615880870356578
+      Human-Worker-Red_149: -2037555991905692834
+      Human-Worker-Red_15: 3826160756871322855
+      Human-Worker-Red_150: -6407283250498059106
+      Human-Worker-Red_151: -4491755282077910177
+      Human-Worker-Red_152: 339199315939294080
+      Human-Worker-Red_153: 7302954854693879960
+      Human-Worker-Red_154: -4714229840463002803
+      Human-Worker-Red_155: -8272137233075821641
+      Human-Worker-Red_156: -8774035720442948976
+      Human-Worker-Red_157: 5992834712270977505
+      Human-Worker-Red_158: -2618517743937337876
+      Human-Worker-Red_159: 6817623712782147644
+      Human-Worker-Red_16: -8907754899758319046
+      Human-Worker-Red_160: -4175639716893833821
+      Human-Worker-Red_161: -4810262582713153475
+      Human-Worker-Red_162: 86468832494097386
+      Human-Worker-Red_163: -3931914617101193113
+      Human-Worker-Red_164: 7611201575641969404
+      Human-Worker-Red_165: -4315819426401636387
+      Human-Worker-Red_166: 8220886806544617506
+      Human-Worker-Red_167: -1254487851308113540
+      Human-Worker-Red_168: 663242391924652882
+      Human-Worker-Red_169: -354459020222528812
+      Human-Worker-Red_17: 5044570626990187662
+      Human-Worker-Red_170: 6566338929663889895
+      Human-Worker-Red_171: -3798168495871423511
+      Human-Worker-Red_172: 5905798247201915827
+      Human-Worker-Red_173: 6770661889233789551
+      Human-Worker-Red_174: 8675426578642817802
+      Human-Worker-Red_175: 2144753415934792524
+      Human-Worker-Red_176: -8054851532750742095
+      Human-Worker-Red_177: 9222295059193389547
+      Human-Worker-Red_178: -1799397920446370026
+      Human-Worker-Red_179: -2325196634635709179
+      Human-Worker-Red_18: 7506915153245185528
+      Human-Worker-Red_180: 1557413985565613621
+      Human-Worker-Red_181: -2172580704082570193
+      Human-Worker-Red_182: 4611021703387907739
+      Human-Worker-Red_183: 5822336226266814214
+      Human-Worker-Red_184: -6618611766939915862
+      Human-Worker-Red_185: 6343044245537172222
+      Human-Worker-Red_186: 4482832683615671651
+      Human-Worker-Red_187: 4589136539013151393
+      Human-Worker-Red_188: 7538830035774312796
+      Human-Worker-Red_189: 4157161587053202565
+      Human-Worker-Red_19: 7538197297167047617
+      Human-Worker-Red_190: 7947894350751418237
+      Human-Worker-Red_191: 8223756736206835977
+      Human-Worker-Red_2: -323155546586187605
+      Human-Worker-Red_20: -2586521801508932792
+      Human-Worker-Red_21: 1211716682025973460
+      Human-Worker-Red_22: -6455103372717107997
+      Human-Worker-Red_23: 2143266303923437237
+      Human-Worker-Red_24: 3429626991712316156
+      Human-Worker-Red_25: -4507197006143157999
+      Human-Worker-Red_26: -2223655314915851812
+      Human-Worker-Red_27: 8071827632481767669
+      Human-Worker-Red_28: -6208356611294793083
+      Human-Worker-Red_29: -3468969141384285871
+      Human-Worker-Red_3: 7559529515391126104
+      Human-Worker-Red_30: 3940703382540421820
+      Human-Worker-Red_31: 8321696098004873037
+      Human-Worker-Red_32: 6307797660471149333
+      Human-Worker-Red_33: 4194121310154017351
+      Human-Worker-Red_34: 2859668853763532940
+      Human-Worker-Red_35: 7641791042761325834
+      Human-Worker-Red_36: -3999814937806367558
+      Human-Worker-Red_37: -8454447030921653157
+      Human-Worker-Red_38: 6306845921401449653
+      Human-Worker-Red_39: -419085218023370059
+      Human-Worker-Red_4: 7718756381329791761
+      Human-Worker-Red_40: 1150372132229155966
+      Human-Worker-Red_41: 8015807284887301644
+      Human-Worker-Red_42: 92307260673572561
+      Human-Worker-Red_43: -4692436488229199186
+      Human-Worker-Red_44: 4711535237290503236
+      Human-Worker-Red_45: -5018382941939662855
+      Human-Worker-Red_46: -2906165077854613349
+      Human-Worker-Red_47: 2632203683767084224
+      Human-Worker-Red_48: -5944372163450666764
+      Human-Worker-Red_49: 8457025889098079804
+      Human-Worker-Red_5: 7779992093469589156
+      Human-Worker-Red_50: 780253111288304038
+      Human-Worker-Red_51: -7481400564085369223
+      Human-Worker-Red_52: 6600476267870219041
+      Human-Worker-Red_53: 4400992195393876204
+      Human-Worker-Red_54: 5856839179626787050
+      Human-Worker-Red_55: -3115123420213413519
+      Human-Worker-Red_56: -5145415862413615714
+      Human-Worker-Red_57: 4781689659104384069
+      Human-Worker-Red_58: 2374655363134733523
+      Human-Worker-Red_59: -730188050760828950
+      Human-Worker-Red_6: -2744123535518394867
+      Human-Worker-Red_60: -8974113675947253675
+      Human-Worker-Red_61: -2491508780650381070
+      Human-Worker-Red_62: 4049917400477617961
+      Human-Worker-Red_63: -2708331527186190709
+      Human-Worker-Red_64: 4032435525862451158
+      Human-Worker-Red_65: 8229617815900335702
+      Human-Worker-Red_66: 371292224814691978
+      Human-Worker-Red_67: 1808754126549935800
+      Human-Worker-Red_68: -3172864251176962591
+      Human-Worker-Red_69: 5178273883147130362
+      Human-Worker-Red_7: -2881776112680410185
+      Human-Worker-Red_70: 2569197459965526860
+      Human-Worker-Red_71: -3365700290516844222
+      Human-Worker-Red_72: 5322777145217198837
+      Human-Worker-Red_73: 1415596507079805139
+      Human-Worker-Red_74: 1856924174941076836
+      Human-Worker-Red_75: -7304753489475612817
+      Human-Worker-Red_76: -3287726229362511325
+      Human-Worker-Red_77: -7752891212783424063
+      Human-Worker-Red_78: -5029985336036860413
+      Human-Worker-Red_79: 4939690187062259720
+      Human-Worker-Red_8: -2483635783635637953
+      Human-Worker-Red_80: -7187034208769830059
+      Human-Worker-Red_81: -2794778131170953878
+      Human-Worker-Red_82: 534829424841732273
+      Human-Worker-Red_83: -815013502137561485
+      Human-Worker-Red_84: 7142179725631826862
+      Human-Worker-Red_85: 7313812034594840993
+      Human-Worker-Red_86: 2037449335080928918
+      Human-Worker-Red_87: 7418907362540138081
+      Human-Worker-Red_88: 591832154520127230
+      Human-Worker-Red_89: -5273419158105387702
+      Human-Worker-Red_9: -1745430210822342936
+      Human-Worker-Red_90: 1845815808619370531
+      Human-Worker-Red_91: 4163600336394766900
+      Human-Worker-Red_92: 7107146588769231732
+      Human-Worker-Red_93: -6712760672856104281
+      Human-Worker-Red_94: 7796928406126127387
+      Human-Worker-Red_95: -4199907790736240392
+      Human-Worker-Red_96: -1375574372930128124
+      Human-Worker-Red_97: -4386043985345460649
+      Human-Worker-Red_98: -1361677394964692959
+      Human-Worker-Red_99: 1793634517041004661
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

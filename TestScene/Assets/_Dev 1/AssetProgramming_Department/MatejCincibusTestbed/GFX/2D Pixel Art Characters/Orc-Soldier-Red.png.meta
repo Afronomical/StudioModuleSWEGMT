@@ -1,0 +1,4924 @@
+fileFormatVersion: 2
+guid: 70dfa3e2d2db4a4449c3f8941137a0f4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8133799744575478624
+    second: Orc-Soldier-Red_0
+  - first:
+      213: -7335010862398621068
+    second: Orc-Soldier-Red_1
+  - first:
+      213: -3585329492432397769
+    second: Orc-Soldier-Red_2
+  - first:
+      213: 2262102998640017794
+    second: Orc-Soldier-Red_3
+  - first:
+      213: -1492350310232013755
+    second: Orc-Soldier-Red_4
+  - first:
+      213: 3499156164322950647
+    second: Orc-Soldier-Red_5
+  - first:
+      213: -8961406380771334457
+    second: Orc-Soldier-Red_6
+  - first:
+      213: -5888785953866028633
+    second: Orc-Soldier-Red_7
+  - first:
+      213: -5548486873373667330
+    second: Orc-Soldier-Red_8
+  - first:
+      213: 8723089518791095897
+    second: Orc-Soldier-Red_9
+  - first:
+      213: 2854933943515316727
+    second: Orc-Soldier-Red_10
+  - first:
+      213: -674892013851973931
+    second: Orc-Soldier-Red_11
+  - first:
+      213: 4246329123225817588
+    second: Orc-Soldier-Red_12
+  - first:
+      213: 8219666623904771752
+    second: Orc-Soldier-Red_13
+  - first:
+      213: -1414953503469036801
+    second: Orc-Soldier-Red_14
+  - first:
+      213: 2829936609838928236
+    second: Orc-Soldier-Red_15
+  - first:
+      213: -1701755022250127637
+    second: Orc-Soldier-Red_16
+  - first:
+      213: 4411188030283124223
+    second: Orc-Soldier-Red_17
+  - first:
+      213: -2198748180850624318
+    second: Orc-Soldier-Red_18
+  - first:
+      213: 3845425051524524401
+    second: Orc-Soldier-Red_19
+  - first:
+      213: -7115909924964975761
+    second: Orc-Soldier-Red_20
+  - first:
+      213: 5463125666992063717
+    second: Orc-Soldier-Red_21
+  - first:
+      213: -6698277974523734387
+    second: Orc-Soldier-Red_22
+  - first:
+      213: -4077196900849978850
+    second: Orc-Soldier-Red_23
+  - first:
+      213: -9195418128334196267
+    second: Orc-Soldier-Red_24
+  - first:
+      213: 4412106801589665638
+    second: Orc-Soldier-Red_25
+  - first:
+      213: -603841377577465385
+    second: Orc-Soldier-Red_26
+  - first:
+      213: -2223092661331599946
+    second: Orc-Soldier-Red_27
+  - first:
+      213: -6764175557429987976
+    second: Orc-Soldier-Red_28
+  - first:
+      213: -7727257421312482581
+    second: Orc-Soldier-Red_29
+  - first:
+      213: 8616893174604654972
+    second: Orc-Soldier-Red_30
+  - first:
+      213: -8413393560711220174
+    second: Orc-Soldier-Red_31
+  - first:
+      213: 5915586660254548927
+    second: Orc-Soldier-Red_32
+  - first:
+      213: -7486435383003882939
+    second: Orc-Soldier-Red_33
+  - first:
+      213: -1672455740391479866
+    second: Orc-Soldier-Red_34
+  - first:
+      213: 124747404611271377
+    second: Orc-Soldier-Red_35
+  - first:
+      213: -200941800893364419
+    second: Orc-Soldier-Red_36
+  - first:
+      213: -4478152492206983925
+    second: Orc-Soldier-Red_37
+  - first:
+      213: -8647213869377593248
+    second: Orc-Soldier-Red_38
+  - first:
+      213: 4842238631049052134
+    second: Orc-Soldier-Red_39
+  - first:
+      213: 3029295477419561081
+    second: Orc-Soldier-Red_40
+  - first:
+      213: -3025104738757424063
+    second: Orc-Soldier-Red_41
+  - first:
+      213: 7414934668506500367
+    second: Orc-Soldier-Red_42
+  - first:
+      213: -6661659546464056129
+    second: Orc-Soldier-Red_43
+  - first:
+      213: 7507497205010576441
+    second: Orc-Soldier-Red_44
+  - first:
+      213: -6591768782724807623
+    second: Orc-Soldier-Red_45
+  - first:
+      213: -3046338057047160924
+    second: Orc-Soldier-Red_46
+  - first:
+      213: -4442159925232066706
+    second: Orc-Soldier-Red_47
+  - first:
+      213: -11804802668970541
+    second: Orc-Soldier-Red_48
+  - first:
+      213: 6924063681970036535
+    second: Orc-Soldier-Red_49
+  - first:
+      213: -6468129086641626383
+    second: Orc-Soldier-Red_50
+  - first:
+      213: 1031436342919745702
+    second: Orc-Soldier-Red_51
+  - first:
+      213: -883348802631524020
+    second: Orc-Soldier-Red_52
+  - first:
+      213: -8603717209505691065
+    second: Orc-Soldier-Red_53
+  - first:
+      213: 351401010229338560
+    second: Orc-Soldier-Red_54
+  - first:
+      213: 4724645024724336521
+    second: Orc-Soldier-Red_55
+  - first:
+      213: 5717813256978110373
+    second: Orc-Soldier-Red_56
+  - first:
+      213: 7261414698302010908
+    second: Orc-Soldier-Red_57
+  - first:
+      213: -6106200509725630058
+    second: Orc-Soldier-Red_58
+  - first:
+      213: 4004174266918925273
+    second: Orc-Soldier-Red_59
+  - first:
+      213: -6852943067698055477
+    second: Orc-Soldier-Red_60
+  - first:
+      213: 112657463979671241
+    second: Orc-Soldier-Red_61
+  - first:
+      213: -8379953367705191929
+    second: Orc-Soldier-Red_62
+  - first:
+      213: -7268290078267283474
+    second: Orc-Soldier-Red_63
+  - first:
+      213: 2597923706111975848
+    second: Orc-Soldier-Red_64
+  - first:
+      213: -3042726302050216562
+    second: Orc-Soldier-Red_65
+  - first:
+      213: -3964377271884883710
+    second: Orc-Soldier-Red_66
+  - first:
+      213: -9168265157717929640
+    second: Orc-Soldier-Red_67
+  - first:
+      213: -5465308628624618489
+    second: Orc-Soldier-Red_68
+  - first:
+      213: -902961368930616211
+    second: Orc-Soldier-Red_69
+  - first:
+      213: 5768089797984900181
+    second: Orc-Soldier-Red_70
+  - first:
+      213: -1993628745672656102
+    second: Orc-Soldier-Red_71
+  - first:
+      213: -1525458225110549863
+    second: Orc-Soldier-Red_72
+  - first:
+      213: 6568842269484915896
+    second: Orc-Soldier-Red_73
+  - first:
+      213: 7151802191736304533
+    second: Orc-Soldier-Red_74
+  - first:
+      213: -4208976754065705973
+    second: Orc-Soldier-Red_75
+  - first:
+      213: -6663157941149058000
+    second: Orc-Soldier-Red_76
+  - first:
+      213: 7551828493413918327
+    second: Orc-Soldier-Red_77
+  - first:
+      213: 3836894298243289403
+    second: Orc-Soldier-Red_78
+  - first:
+      213: -2035985554323755488
+    second: Orc-Soldier-Red_79
+  - first:
+      213: -3125762959391350776
+    second: Orc-Soldier-Red_80
+  - first:
+      213: -1059900020715489761
+    second: Orc-Soldier-Red_81
+  - first:
+      213: 2153244210519770201
+    second: Orc-Soldier-Red_82
+  - first:
+      213: 3202628372582378607
+    second: Orc-Soldier-Red_83
+  - first:
+      213: 427987436498367624
+    second: Orc-Soldier-Red_84
+  - first:
+      213: 3468904012939877030
+    second: Orc-Soldier-Red_85
+  - first:
+      213: 4497075770021837942
+    second: Orc-Soldier-Red_86
+  - first:
+      213: -3434638236648496576
+    second: Orc-Soldier-Red_87
+  - first:
+      213: 6044729655626035761
+    second: Orc-Soldier-Red_88
+  - first:
+      213: 4881991368799253013
+    second: Orc-Soldier-Red_89
+  - first:
+      213: 2307703194858975263
+    second: Orc-Soldier-Red_90
+  - first:
+      213: -3387399278214161048
+    second: Orc-Soldier-Red_91
+  - first:
+      213: 2034884128364396097
+    second: Orc-Soldier-Red_92
+  - first:
+      213: -271588176735921306
+    second: Orc-Soldier-Red_93
+  - first:
+      213: 8186536333433946345
+    second: Orc-Soldier-Red_94
+  - first:
+      213: -1630323175725554177
+    second: Orc-Soldier-Red_95
+  - first:
+      213: 2450589065527815097
+    second: Orc-Soldier-Red_96
+  - first:
+      213: -9136039536589717848
+    second: Orc-Soldier-Red_97
+  - first:
+      213: -3455850878196486054
+    second: Orc-Soldier-Red_98
+  - first:
+      213: -6406448082445804138
+    second: Orc-Soldier-Red_99
+  - first:
+      213: -6554693710747103928
+    second: Orc-Soldier-Red_100
+  - first:
+      213: 7812094276980763712
+    second: Orc-Soldier-Red_101
+  - first:
+      213: -3449221678274659953
+    second: Orc-Soldier-Red_102
+  - first:
+      213: 6268915192719711526
+    second: Orc-Soldier-Red_103
+  - first:
+      213: -5101238957777558157
+    second: Orc-Soldier-Red_104
+  - first:
+      213: -678812431657991400
+    second: Orc-Soldier-Red_105
+  - first:
+      213: 8563788790625381977
+    second: Orc-Soldier-Red_106
+  - first:
+      213: -498879676910400302
+    second: Orc-Soldier-Red_107
+  - first:
+      213: 4505706311362801076
+    second: Orc-Soldier-Red_108
+  - first:
+      213: 6727790601995268446
+    second: Orc-Soldier-Red_109
+  - first:
+      213: -7112956278410278925
+    second: Orc-Soldier-Red_110
+  - first:
+      213: -1028688466926943269
+    second: Orc-Soldier-Red_111
+  - first:
+      213: 6956843767886705027
+    second: Orc-Soldier-Red_112
+  - first:
+      213: 2190754511257420756
+    second: Orc-Soldier-Red_113
+  - first:
+      213: 2215137978863804212
+    second: Orc-Soldier-Red_114
+  - first:
+      213: 4884087890831830194
+    second: Orc-Soldier-Red_115
+  - first:
+      213: -2586495977625035818
+    second: Orc-Soldier-Red_116
+  - first:
+      213: 3023976864836982744
+    second: Orc-Soldier-Red_117
+  - first:
+      213: 1986404366650135453
+    second: Orc-Soldier-Red_118
+  - first:
+      213: -6876526054753938710
+    second: Orc-Soldier-Red_119
+  - first:
+      213: 4070503544877253788
+    second: Orc-Soldier-Red_120
+  - first:
+      213: 4611623096961351212
+    second: Orc-Soldier-Red_121
+  - first:
+      213: -7487440615513736668
+    second: Orc-Soldier-Red_122
+  - first:
+      213: 1108960599517274760
+    second: Orc-Soldier-Red_123
+  - first:
+      213: 4009901097807664092
+    second: Orc-Soldier-Red_124
+  - first:
+      213: 4217310453892007556
+    second: Orc-Soldier-Red_125
+  - first:
+      213: 115183847653075268
+    second: Orc-Soldier-Red_126
+  - first:
+      213: -2533236080627768366
+    second: Orc-Soldier-Red_127
+  - first:
+      213: 5839186906999206645
+    second: Orc-Soldier-Red_128
+  - first:
+      213: 2349686660007609559
+    second: Orc-Soldier-Red_129
+  - first:
+      213: -2431352680748732476
+    second: Orc-Soldier-Red_130
+  - first:
+      213: -4191026237085390223
+    second: Orc-Soldier-Red_131
+  - first:
+      213: -2496200539176875317
+    second: Orc-Soldier-Red_132
+  - first:
+      213: 3347818389838600772
+    second: Orc-Soldier-Red_133
+  - first:
+      213: -1222847832199454900
+    second: Orc-Soldier-Red_134
+  - first:
+      213: 367680127355984650
+    second: Orc-Soldier-Red_135
+  - first:
+      213: -7983259330490787011
+    second: Orc-Soldier-Red_136
+  - first:
+      213: -7263500057450814559
+    second: Orc-Soldier-Red_137
+  - first:
+      213: -5279932366505101054
+    second: Orc-Soldier-Red_138
+  - first:
+      213: 7726127420453874475
+    second: Orc-Soldier-Red_139
+  - first:
+      213: -6121001088800943154
+    second: Orc-Soldier-Red_140
+  - first:
+      213: 4593533250521291510
+    second: Orc-Soldier-Red_141
+  - first:
+      213: -884918729882394636
+    second: Orc-Soldier-Red_142
+  - first:
+      213: 1031115270953342727
+    second: Orc-Soldier-Red_143
+  - first:
+      213: -5050303134018193395
+    second: Orc-Soldier-Red_144
+  - first:
+      213: 6767841171654710791
+    second: Orc-Soldier-Red_145
+  - first:
+      213: 5797492258557777632
+    second: Orc-Soldier-Red_146
+  - first:
+      213: 6235840007210933800
+    second: Orc-Soldier-Red_147
+  - first:
+      213: 5069974573836327266
+    second: Orc-Soldier-Red_148
+  - first:
+      213: -1226741563695110764
+    second: Orc-Soldier-Red_149
+  - first:
+      213: 6628466794446862152
+    second: Orc-Soldier-Red_150
+  - first:
+      213: 1693424381699787677
+    second: Orc-Soldier-Red_151
+  - first:
+      213: -2560753830148823209
+    second: Orc-Soldier-Red_152
+  - first:
+      213: -4356671295528291661
+    second: Orc-Soldier-Red_153
+  - first:
+      213: 400555612363535846
+    second: Orc-Soldier-Red_154
+  - first:
+      213: -5445119863427145174
+    second: Orc-Soldier-Red_155
+  - first:
+      213: -506816262862850701
+    second: Orc-Soldier-Red_156
+  - first:
+      213: 5530165620798585592
+    second: Orc-Soldier-Red_157
+  - first:
+      213: -8172834381903356531
+    second: Orc-Soldier-Red_158
+  - first:
+      213: -7258326455760924878
+    second: Orc-Soldier-Red_159
+  - first:
+      213: 8416885764609190828
+    second: Orc-Soldier-Red_160
+  - first:
+      213: -2583292029911137232
+    second: Orc-Soldier-Red_161
+  - first:
+      213: -4161215753639704266
+    second: Orc-Soldier-Red_162
+  - first:
+      213: 1942289057952477808
+    second: Orc-Soldier-Red_163
+  - first:
+      213: 6688876187670019545
+    second: Orc-Soldier-Red_164
+  - first:
+      213: -8250154954595705033
+    second: Orc-Soldier-Red_165
+  - first:
+      213: 6055178524968533094
+    second: Orc-Soldier-Red_166
+  - first:
+      213: 4467950644295321133
+    second: Orc-Soldier-Red_167
+  - first:
+      213: -3139634592915172457
+    second: Orc-Soldier-Red_168
+  - first:
+      213: 5276968253265930987
+    second: Orc-Soldier-Red_169
+  - first:
+      213: -6122092438792345843
+    second: Orc-Soldier-Red_170
+  - first:
+      213: -5449406573748297512
+    second: Orc-Soldier-Red_171
+  - first:
+      213: -305108746758004333
+    second: Orc-Soldier-Red_172
+  - first:
+      213: 1794213361952245145
+    second: Orc-Soldier-Red_173
+  - first:
+      213: -8465722016784205443
+    second: Orc-Soldier-Red_174
+  - first:
+      213: -406017542260085940
+    second: Orc-Soldier-Red_175
+  - first:
+      213: 6687507216324961311
+    second: Orc-Soldier-Red_176
+  - first:
+      213: -1423600004981505746
+    second: Orc-Soldier-Red_177
+  - first:
+      213: -3860418585096978162
+    second: Orc-Soldier-Red_178
+  - first:
+      213: -5389534398598236096
+    second: Orc-Soldier-Red_179
+  - first:
+      213: -9042147939642161076
+    second: Orc-Soldier-Red_180
+  - first:
+      213: 5785012255341560768
+    second: Orc-Soldier-Red_181
+  - first:
+      213: -4403826151588275199
+    second: Orc-Soldier-Red_182
+  - first:
+      213: 4603398890865729831
+    second: Orc-Soldier-Red_183
+  - first:
+      213: -1771180459666424166
+    second: Orc-Soldier-Red_184
+  - first:
+      213: 789594929669029169
+    second: Orc-Soldier-Red_185
+  - first:
+      213: -155405504742988192
+    second: Orc-Soldier-Red_186
+  - first:
+      213: 8830376785527867493
+    second: Orc-Soldier-Red_187
+  - first:
+      213: 2121761432847817455
+    second: Orc-Soldier-Red_188
+  - first:
+      213: -2077281538548147072
+    second: Orc-Soldier-Red_189
+  - first:
+      213: 5430053932089500462
+    second: Orc-Soldier-Red_190
+  - first:
+      213: 7550390105127668144
+    second: Orc-Soldier-Red_191
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 232
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a46a6e1a30fe1f80800000000000000
+      internalID: -8133799744575478624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 232
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47a3913bb7ec43a90800000000000000
+      internalID: -7335010862398621068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_2
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 231
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73ad5d092d95e3ec0800000000000000
+      internalID: -3585329492432397769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_3
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 232
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 281c84f21ba946f10800000000000000
+      internalID: 2262102998640017794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_4
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 231
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5444d26bc4b1a4be0800000000000000
+      internalID: -1492350310232013755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_5
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 232
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fd761cfdff7f8030800000000000000
+      internalID: 3499156164322950647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_6
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 232
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c6a4325060b2a380800000000000000
+      internalID: -8961406380771334457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_7
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 231
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a961850064d64ea0800000000000000
+      internalID: -5888785953866028633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_8
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 232
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eff05a7f590dff2b0800000000000000
+      internalID: -5548486873373667330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_9
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 231
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 956f97f43b3ae0970800000000000000
+      internalID: 8723089518791095897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_10
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 231
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f18f68ab43ce9720800000000000000
+      internalID: 2854933943515316727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_11
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 231
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d6ea940a4d42a6f0800000000000000
+      internalID: -674892013851973931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_12
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 232
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f1554de6ddfdea30800000000000000
+      internalID: 4246329123225817588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_13
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 232
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ae6af9ae3f121270800000000000000
+      internalID: 8219666623904771752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_14
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 232
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffa980c09431d5ce0800000000000000
+      internalID: -1414953503469036801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_15
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 228
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c61925e5a54f54720800000000000000
+      internalID: 2829936609838928236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_16
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 232
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bee4b04d2d62268e0800000000000000
+      internalID: -1701755022250127637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_17
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 232
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffd0b7e5420b73d30800000000000000
+      internalID: 4411188030283124223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_18
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 232
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c8bcd1dd2a7c71e0800000000000000
+      internalID: -2198748180850624318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_19
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 232
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 179e18ed5b1bd5530800000000000000
+      internalID: 3845425051524524401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_20
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 233
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6b39ccff953f3d90800000000000000
+      internalID: -7115909924964975761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_21
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 232
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e4816869dbe0db40800000000000000
+      internalID: 5463125666992063717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_22
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 232
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8690b1dbafea03a0800000000000000
+      internalID: -6698277974523734387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_23
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 232
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1273854503ea67c0800000000000000
+      internalID: -4077196900849978850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_24
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 200
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d1f3738eef436080800000000000000
+      internalID: -9195418128334196267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_25
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 200
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66f36db72c3fa3d30800000000000000
+      internalID: 4412106801589665638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_26
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 199
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d900d46779be97f0800000000000000
+      internalID: -603841377577465385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_27
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 200
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bd5d82c00df521e0800000000000000
+      internalID: -2223092661331599946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_28
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 199
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 875710d2b22d022a0800000000000000
+      internalID: -6764175557429987976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_29
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 200
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be22baae05443c490800000000000000
+      internalID: -7727257421312482581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_30
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 200
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c796cc320ba559770800000000000000
+      internalID: 8616893174604654972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_31
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 200
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 234bf32f12f9d3b80800000000000000
+      internalID: -8413393560711220174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_32
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 200
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb30382b9b2681250800000000000000
+      internalID: 5915586660254548927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_33
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 200
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54a532a1fa6da1890800000000000000
+      internalID: -7486435383003882939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_34
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 199
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c5276b7d5e3ac8e0800000000000000
+      internalID: -1672455740391479866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_35
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 199
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dab1828a113bb100800000000000000
+      internalID: 124747404611271377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_36
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 200
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3749392f7c163df0800000000000000
+      internalID: -200941800893364419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_37
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 200
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b05f8fbd8086ad1c0800000000000000
+      internalID: -4478152492206983925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_38
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 200
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 060eaeafccceef780800000000000000
+      internalID: -8647213869377593248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_39
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 200
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ef3a513166133340800000000000000
+      internalID: 4842238631049052134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_40
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 200
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9705a43df283a0a20800000000000000
+      internalID: 3029295477419561081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_41
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 200
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14c430e844ba406d0800000000000000
+      internalID: -3025104738757424063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_42
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 200
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0d0f058bc327e660800000000000000
+      internalID: 7414934668506500367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_43
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 200
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbc8b6effe70d83a0800000000000000
+      internalID: -6661659546464056129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_44
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 201
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 934b4e87eecff2860800000000000000
+      internalID: 7507497205010576441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_45
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 200
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 934cd2087355584a0800000000000000
+      internalID: -6591768782724807623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_46
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 200
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a743f36dab39b5d0800000000000000
+      internalID: -3046338057047160924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_47
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 199
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6f111565174a52c0800000000000000
+      internalID: -4442159925232066706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_48
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 168
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ddb542389f06dff0800000000000000
+      internalID: -11804802668970541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_49
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 168
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73fd106cb37371060800000000000000
+      internalID: 6924063681970036535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_50
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 167
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f2aa558dd69c36a0800000000000000
+      internalID: -6468129086641626383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_51
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 168
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a0d82c93e5605e00800000000000000
+      internalID: 1031436342919745702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_52
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 167
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c41a166b1f6bdb3f0800000000000000
+      internalID: -883348802631524020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_53
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 168
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74a8f7b48c4799880800000000000000
+      internalID: -8603717209505691065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_54
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 168
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c1ee646b5d60e400800000000000000
+      internalID: 351401010229338560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_55
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 168
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98fb2842e9f419140800000000000000
+      internalID: 4724645024724336521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_56
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 168
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a7133aecd0c95f40800000000000000
+      internalID: 5717813256978110373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_57
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 168
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c16771b023ab5c460800000000000000
+      internalID: 7261414698302010908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_58
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 168
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 691ae7a0dfa624ba0800000000000000
+      internalID: -6106200509725630058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_59
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 168
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d3767ed74fa19730800000000000000
+      internalID: 4004174266918925273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_60
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 168
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc6b1ef969475e0a0800000000000000
+      internalID: -6852943067698055477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_61
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 168
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cefdc9dd5d309100800000000000000
+      internalID: 112657463979671241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_62
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 168
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70af79b9fcc64bb80800000000000000
+      internalID: -8379953367705191929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_63
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 168
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee7e160dea8d12b90800000000000000
+      internalID: -7268290078267283474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_64
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 168
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a1ee58a8ddad0420800000000000000
+      internalID: 2597923706111975848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_65
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 168
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e851f81ac8016c5d0800000000000000
+      internalID: -3042726302050216562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_66
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 168
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2095ba910e3bbf8c0800000000000000
+      internalID: -3964377271884883710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_67
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 168
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 851d1a32a67c3c080800000000000000
+      internalID: -9168265157717929640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_68
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 168
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70cc3fa32c25724b0800000000000000
+      internalID: -5465308628624618489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_69
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 168
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6c7df64b690873f0800000000000000
+      internalID: -902961368930616211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_70
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 168
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 554d1715c1f5c0050800000000000000
+      internalID: 5768089797984900181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_71
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 166
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1b7c20f7353554e0800000000000000
+      internalID: -1993628745672656102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_72
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 136
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99a769493db74dae0800000000000000
+      internalID: -1525458225110549863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_73
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 136
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bc183aad37392b50800000000000000
+      internalID: 6568842269484915896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_74
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 135
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5937d46933e404360800000000000000
+      internalID: 7151802191736304533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_75
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 136
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b04790a31f5b695c0800000000000000
+      internalID: -4208976754065705973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_76
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 135
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03cbc7bc725b783a0800000000000000
+      internalID: -6663157941149058000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_77
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 136
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7762c92e00c7dc860800000000000000
+      internalID: 7551828493413918327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_78
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 136
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b31538719036f3530800000000000000
+      internalID: 3836894298243289403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_79
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 136
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02ea4baece9beb3e0800000000000000
+      internalID: -2035985554323755488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_80
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 136
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 800a761462f0f94d0800000000000000
+      internalID: -3125762959391350776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_81
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 136
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f16f2d7fb8a7a41f0800000000000000
+      internalID: -1059900020715489761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_82
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 136
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95482ba733cd1ed10800000000000000
+      internalID: 2153244210519770201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_83
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 136
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6c2c5f5985027c20800000000000000
+      internalID: 3202628372582378607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_84
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 136
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 884b0d05e4480f500800000000000000
+      internalID: 427987436498367624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_85
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 136
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6aa553b12d5042030800000000000000
+      internalID: 3468904012939877030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_86
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 136
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67cfa281692d86e30800000000000000
+      internalID: 4497075770021837942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_87
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 136
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 042a794a8b6b550d0800000000000000
+      internalID: -3434638236648496576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_88
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 136
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 132fbde689133e350800000000000000
+      internalID: 6044729655626035761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_89
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 136
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5127dc5b84150c340800000000000000
+      internalID: 4881991368799253013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_90
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 136
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f107a9834db960020800000000000000
+      internalID: 2307703194858975263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_91
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 136
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86d51adbd4a8df0d0800000000000000
+      internalID: -3387399278214161048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_92
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 135
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14e7d3e555c5d3c10800000000000000
+      internalID: 2034884128364396097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_93
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 136
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66b95700eff1b3cf0800000000000000
+      internalID: -271588176735921306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_94
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 136
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e0c82fcb6b6c9170800000000000000
+      internalID: 8186536333433946345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_95
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 131
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff5aac1a5bdef59e0800000000000000
+      internalID: -1630323175725554177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_96
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 104
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bbed3575cd320220800000000000000
+      internalID: 2450589065527815097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_97
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 104
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ae35af3274463180800000000000000
+      internalID: -9136039536589717848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_98
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 103
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a507068afe95a00d0800000000000000
+      internalID: -3455850878196486054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_99
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 104
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69dd5dd6969b717a0800000000000000
+      internalID: -6406448082445804138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_100
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 103
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84d8e6f5ccc0905a0800000000000000
+      internalID: -6554693710747103928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_101
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 104
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04cec4bca522a6c60800000000000000
+      internalID: 7812094276980763712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_102
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 104
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f89bcda8827e120d0800000000000000
+      internalID: -3449221678274659953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_103
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 104
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62d9b155729aff650800000000000000
+      internalID: 6268915192719711526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_104
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 104
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 375e8470232c439b0800000000000000
+      internalID: -5101238957777558157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_105
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 104
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81308ed90bf5496f0800000000000000
+      internalID: -678812431657991400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_106
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 104
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95ea2bc3880b8d670800000000000000
+      internalID: 8563788790625381977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_107
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 104
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dc0818b39f9319f0800000000000000
+      internalID: -498879676910400302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_108
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 104
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bde307940c778e30800000000000000
+      internalID: 4505706311362801076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_109
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 104
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e51b32b38e9ed5d50800000000000000
+      internalID: 6727790601995268446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_110
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 104
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f7887a63f3b94d90800000000000000
+      internalID: -7112956278410278925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_111
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 104
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd347402a4d59b1f0800000000000000
+      internalID: -1028688466926943269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_112
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 104
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 381f6c64c8cab8060800000000000000
+      internalID: 6956843767886705027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_113
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 104
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d34591fe9f176e10800000000000000
+      internalID: 2190754511257420756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_114
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 104
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43f57a66140cdbe10800000000000000
+      internalID: 2215137978863804212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_115
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 104
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bc61d84f04c7c340800000000000000
+      internalID: 4884087890831830194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_116
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 103
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dbdea8bc9bea1cd0800000000000000
+      internalID: -2586495977625035818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_117
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 104
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d79b95dfe257f920800000000000000
+      internalID: 3023976864836982744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_118
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 104
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d93577e3f30219b10800000000000000
+      internalID: 1986404366650135453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_119
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 99
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae25ca19cfba190a0800000000000000
+      internalID: -6876526054753938710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_120
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 72
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c94806958655d7830800000000000000
+      internalID: 4070503544877253788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_121
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 72
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2e3e54f5c6cfff30800000000000000
+      internalID: 4611623096961351212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_122
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 71
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42ab87b2e64471890800000000000000
+      internalID: -7487440615513736668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_123
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 72
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 882a12c2ac1d36f00800000000000000
+      internalID: 1108960599517274760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_124
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 71
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd356479dc706a730800000000000000
+      internalID: 4009901097807664092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_125
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 72
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48646c77385e68a30800000000000000
+      internalID: 4217310453892007556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_126
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 72
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44969336917399100800000000000000
+      internalID: 115183847653075268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_127
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 72
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d3aaf1d43328dcd0800000000000000
+      internalID: -2533236080627768366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_128
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 72
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f2bcc8fd85f80150800000000000000
+      internalID: 5839186906999206645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_129
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 72
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d44a3f6193cb9020800000000000000
+      internalID: 2349686660007609559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_130
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 72
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cf27446e99124ed0800000000000000
+      internalID: -2431352680748732476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_131
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 72
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17aee26a7db76d5c0800000000000000
+      internalID: -4191026237085390223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_132
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 72
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bca4936c5d6bb5dd0800000000000000
+      internalID: -2496200539176875317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_133
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 72
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44a99da8617d57e20800000000000000
+      internalID: 3347818389838600772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_134
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 72
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4f15632062970fe0800000000000000
+      internalID: -1222847832199454900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_135
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 72
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0b1606b0234a1500800000000000000
+      internalID: 367680127355984650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_136
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 72
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3b1640afe3c53190800000000000000
+      internalID: -7983259330490787011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_137
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 72
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a36d917e2dd23b90800000000000000
+      internalID: -7263500057450814559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_138
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 72
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2093068ac79e9b6b0800000000000000
+      internalID: -5279932366505101054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_139
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 72
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2bee8144f7b83b60800000000000000
+      internalID: 7726127420453874475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_140
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 71
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec39d30b0f5dd0ba0800000000000000
+      internalID: -6121001088800943154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_141
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 72
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fa544d57228fbf30800000000000000
+      internalID: 4593533250521291510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_142
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 72
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ff154a8a1328b3f0800000000000000
+      internalID: -884918729882394636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_143
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 67
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70797a730e14f4e00800000000000000
+      internalID: 1031115270953342727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_144
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 40
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d08bdc8ae08b9e9b0800000000000000
+      internalID: -5050303134018193395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_145
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 40
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7061eb420b33ced50800000000000000
+      internalID: 6767841171654710791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_146
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 39
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e6d9632e74d47050800000000000000
+      internalID: 5797492258557777632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_147
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 40
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82e1af992772a8650800000000000000
+      internalID: 6235840007210933800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_148
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 39
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 269d6c5530b2c5640800000000000000
+      internalID: 5069974573836327266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_149
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 40
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 495eeb02c0db9fee0800000000000000
+      internalID: -1226741563695110764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_150
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 40
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8473a703e6b0dfb50800000000000000
+      internalID: 6628466794446862152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_151
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 40
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9b8335c080408710800000000000000
+      internalID: 1693424381699787677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_152
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 40
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75722cc75ff567cd0800000000000000
+      internalID: -2560753830148823209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_153
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 40
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b235e21a8ef983c0800000000000000
+      internalID: -4356671295528291661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_154
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 40
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e5b7bb053f0f8500800000000000000
+      internalID: 400555612363535846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_155
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 40
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a22600d655c0f64b0800000000000000
+      internalID: -5445119863427145174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_156
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 40
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3753bad4b4d67f8f0800000000000000
+      internalID: -506816262862850701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_157
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 40
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8faf6c005581fbc40800000000000000
+      internalID: 5530165620798585592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_158
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 40
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8d1d826e62449e80800000000000000
+      internalID: -8172834381903356531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_159
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 40
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23fcc847b8e354b90800000000000000
+      internalID: -7258326455760924878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_160
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 40
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caba2922209cec470800000000000000
+      internalID: 8416885764609190828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_161
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 40
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0348c0ee59d462cd0800000000000000
+      internalID: -2583292029911137232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_162
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 40
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 639cb82b1546046c0800000000000000
+      internalID: -4161215753639704266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_163
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 40
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 072b2668b9564fa10800000000000000
+      internalID: 1942289057952477808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_164
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 40
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ddf3a81479a3dc50800000000000000
+      internalID: 6688876187670019545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_165
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 40
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73fd46da7cf818d80800000000000000
+      internalID: -8250154954595705033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_166
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 40
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66cb25869c0580450800000000000000
+      internalID: 6055178524968533094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_167
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 38
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2643335079510e30800000000000000
+      internalID: 4467950644295321133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_168
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 8
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79353c4e8f6cd64d0800000000000000
+      internalID: -3139634592915172457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_169
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 8
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: beaede2faae8b3940800000000000000
+      internalID: 5276968253265930987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_170
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 7
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d076da7fc55f90ba0800000000000000
+      internalID: -6122092438792345843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_171
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 8
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d0ed07e791df54b0800000000000000
+      internalID: -5449406573748297512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_172
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 7
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 391ef9b163904cbf0800000000000000
+      internalID: -305108746758004333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_173
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 8
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9954c6aeb8356e810800000000000000
+      internalID: 1794213361952245145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_174
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 8
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d79bf56dda6b38a80800000000000000
+      internalID: -8465722016784205443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_175
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 8
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4ba20d42398d5af0800000000000000
+      internalID: -406017542260085940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_176
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 8
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1429ed916ccecc50800000000000000
+      internalID: 6687507216324961311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_177
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 8
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2145d8865b5e3ce0800000000000000
+      internalID: -1423600004981505746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_178
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 7
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e018afe00c90d6ac0800000000000000
+      internalID: -3860418585096978162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_179
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 7
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 048bdcaf4078435b0800000000000000
+      internalID: -5389534398598236096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_180
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 7
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4849133b56d38280800000000000000
+      internalID: -9042147939642161076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_181
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 8
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c34ae4fefd784050800000000000000
+      internalID: 5785012255341560768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_182
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 8
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10c5106927772e2c0800000000000000
+      internalID: -4403826151588275199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_183
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 7
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 721aa71c6ee82ef30800000000000000
+      internalID: 4603398890865729831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_184
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 8
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9e387c81c08b67e0800000000000000
+      internalID: -1771180459666424166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_185
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 8
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13d3f53b76435fa00800000000000000
+      internalID: 789594929669029169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_186
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 8
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06667ad4483e7ddf0800000000000000
+      internalID: -155405504742988192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_187
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 8
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5688e3ea6eccb8a70800000000000000
+      internalID: 8830376785527867493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_188
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 9
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fea940718c2027d10800000000000000
+      internalID: 2121761432847817455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_189
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 8
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08c5c5452730c23e0800000000000000
+      internalID: -2077281538548147072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_190
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 8
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e236865184d6b5b40800000000000000
+      internalID: 5430053932089500462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc-Soldier-Red_191
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 7
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b942c30ccf58c860800000000000000
+      internalID: 7550390105127668144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Orc-Soldier-Red_0: -8133799744575478624
+      Orc-Soldier-Red_1: -7335010862398621068
+      Orc-Soldier-Red_10: 2854933943515316727
+      Orc-Soldier-Red_100: -6554693710747103928
+      Orc-Soldier-Red_101: 7812094276980763712
+      Orc-Soldier-Red_102: -3449221678274659953
+      Orc-Soldier-Red_103: 6268915192719711526
+      Orc-Soldier-Red_104: -5101238957777558157
+      Orc-Soldier-Red_105: -678812431657991400
+      Orc-Soldier-Red_106: 8563788790625381977
+      Orc-Soldier-Red_107: -498879676910400302
+      Orc-Soldier-Red_108: 4505706311362801076
+      Orc-Soldier-Red_109: 6727790601995268446
+      Orc-Soldier-Red_11: -674892013851973931
+      Orc-Soldier-Red_110: -7112956278410278925
+      Orc-Soldier-Red_111: -1028688466926943269
+      Orc-Soldier-Red_112: 6956843767886705027
+      Orc-Soldier-Red_113: 2190754511257420756
+      Orc-Soldier-Red_114: 2215137978863804212
+      Orc-Soldier-Red_115: 4884087890831830194
+      Orc-Soldier-Red_116: -2586495977625035818
+      Orc-Soldier-Red_117: 3023976864836982744
+      Orc-Soldier-Red_118: 1986404366650135453
+      Orc-Soldier-Red_119: -6876526054753938710
+      Orc-Soldier-Red_12: 4246329123225817588
+      Orc-Soldier-Red_120: 4070503544877253788
+      Orc-Soldier-Red_121: 4611623096961351212
+      Orc-Soldier-Red_122: -7487440615513736668
+      Orc-Soldier-Red_123: 1108960599517274760
+      Orc-Soldier-Red_124: 4009901097807664092
+      Orc-Soldier-Red_125: 4217310453892007556
+      Orc-Soldier-Red_126: 115183847653075268
+      Orc-Soldier-Red_127: -2533236080627768366
+      Orc-Soldier-Red_128: 5839186906999206645
+      Orc-Soldier-Red_129: 2349686660007609559
+      Orc-Soldier-Red_13: 8219666623904771752
+      Orc-Soldier-Red_130: -2431352680748732476
+      Orc-Soldier-Red_131: -4191026237085390223
+      Orc-Soldier-Red_132: -2496200539176875317
+      Orc-Soldier-Red_133: 3347818389838600772
+      Orc-Soldier-Red_134: -1222847832199454900
+      Orc-Soldier-Red_135: 367680127355984650
+      Orc-Soldier-Red_136: -7983259330490787011
+      Orc-Soldier-Red_137: -7263500057450814559
+      Orc-Soldier-Red_138: -5279932366505101054
+      Orc-Soldier-Red_139: 7726127420453874475
+      Orc-Soldier-Red_14: -1414953503469036801
+      Orc-Soldier-Red_140: -6121001088800943154
+      Orc-Soldier-Red_141: 4593533250521291510
+      Orc-Soldier-Red_142: -884918729882394636
+      Orc-Soldier-Red_143: 1031115270953342727
+      Orc-Soldier-Red_144: -5050303134018193395
+      Orc-Soldier-Red_145: 6767841171654710791
+      Orc-Soldier-Red_146: 5797492258557777632
+      Orc-Soldier-Red_147: 6235840007210933800
+      Orc-Soldier-Red_148: 5069974573836327266
+      Orc-Soldier-Red_149: -1226741563695110764
+      Orc-Soldier-Red_15: 2829936609838928236
+      Orc-Soldier-Red_150: 6628466794446862152
+      Orc-Soldier-Red_151: 1693424381699787677
+      Orc-Soldier-Red_152: -2560753830148823209
+      Orc-Soldier-Red_153: -4356671295528291661
+      Orc-Soldier-Red_154: 400555612363535846
+      Orc-Soldier-Red_155: -5445119863427145174
+      Orc-Soldier-Red_156: -506816262862850701
+      Orc-Soldier-Red_157: 5530165620798585592
+      Orc-Soldier-Red_158: -8172834381903356531
+      Orc-Soldier-Red_159: -7258326455760924878
+      Orc-Soldier-Red_16: -1701755022250127637
+      Orc-Soldier-Red_160: 8416885764609190828
+      Orc-Soldier-Red_161: -2583292029911137232
+      Orc-Soldier-Red_162: -4161215753639704266
+      Orc-Soldier-Red_163: 1942289057952477808
+      Orc-Soldier-Red_164: 6688876187670019545
+      Orc-Soldier-Red_165: -8250154954595705033
+      Orc-Soldier-Red_166: 6055178524968533094
+      Orc-Soldier-Red_167: 4467950644295321133
+      Orc-Soldier-Red_168: -3139634592915172457
+      Orc-Soldier-Red_169: 5276968253265930987
+      Orc-Soldier-Red_17: 4411188030283124223
+      Orc-Soldier-Red_170: -6122092438792345843
+      Orc-Soldier-Red_171: -5449406573748297512
+      Orc-Soldier-Red_172: -305108746758004333
+      Orc-Soldier-Red_173: 1794213361952245145
+      Orc-Soldier-Red_174: -8465722016784205443
+      Orc-Soldier-Red_175: -406017542260085940
+      Orc-Soldier-Red_176: 6687507216324961311
+      Orc-Soldier-Red_177: -1423600004981505746
+      Orc-Soldier-Red_178: -3860418585096978162
+      Orc-Soldier-Red_179: -5389534398598236096
+      Orc-Soldier-Red_18: -2198748180850624318
+      Orc-Soldier-Red_180: -9042147939642161076
+      Orc-Soldier-Red_181: 5785012255341560768
+      Orc-Soldier-Red_182: -4403826151588275199
+      Orc-Soldier-Red_183: 4603398890865729831
+      Orc-Soldier-Red_184: -1771180459666424166
+      Orc-Soldier-Red_185: 789594929669029169
+      Orc-Soldier-Red_186: -155405504742988192
+      Orc-Soldier-Red_187: 8830376785527867493
+      Orc-Soldier-Red_188: 2121761432847817455
+      Orc-Soldier-Red_189: -2077281538548147072
+      Orc-Soldier-Red_19: 3845425051524524401
+      Orc-Soldier-Red_190: 5430053932089500462
+      Orc-Soldier-Red_191: 7550390105127668144
+      Orc-Soldier-Red_2: -3585329492432397769
+      Orc-Soldier-Red_20: -7115909924964975761
+      Orc-Soldier-Red_21: 5463125666992063717
+      Orc-Soldier-Red_22: -6698277974523734387
+      Orc-Soldier-Red_23: -4077196900849978850
+      Orc-Soldier-Red_24: -9195418128334196267
+      Orc-Soldier-Red_25: 4412106801589665638
+      Orc-Soldier-Red_26: -603841377577465385
+      Orc-Soldier-Red_27: -2223092661331599946
+      Orc-Soldier-Red_28: -6764175557429987976
+      Orc-Soldier-Red_29: -7727257421312482581
+      Orc-Soldier-Red_3: 2262102998640017794
+      Orc-Soldier-Red_30: 8616893174604654972
+      Orc-Soldier-Red_31: -8413393560711220174
+      Orc-Soldier-Red_32: 5915586660254548927
+      Orc-Soldier-Red_33: -7486435383003882939
+      Orc-Soldier-Red_34: -1672455740391479866
+      Orc-Soldier-Red_35: 124747404611271377
+      Orc-Soldier-Red_36: -200941800893364419
+      Orc-Soldier-Red_37: -4478152492206983925
+      Orc-Soldier-Red_38: -8647213869377593248
+      Orc-Soldier-Red_39: 4842238631049052134
+      Orc-Soldier-Red_4: -1492350310232013755
+      Orc-Soldier-Red_40: 3029295477419561081
+      Orc-Soldier-Red_41: -3025104738757424063
+      Orc-Soldier-Red_42: 7414934668506500367
+      Orc-Soldier-Red_43: -6661659546464056129
+      Orc-Soldier-Red_44: 7507497205010576441
+      Orc-Soldier-Red_45: -6591768782724807623
+      Orc-Soldier-Red_46: -3046338057047160924
+      Orc-Soldier-Red_47: -4442159925232066706
+      Orc-Soldier-Red_48: -11804802668970541
+      Orc-Soldier-Red_49: 6924063681970036535
+      Orc-Soldier-Red_5: 3499156164322950647
+      Orc-Soldier-Red_50: -6468129086641626383
+      Orc-Soldier-Red_51: 1031436342919745702
+      Orc-Soldier-Red_52: -883348802631524020
+      Orc-Soldier-Red_53: -8603717209505691065
+      Orc-Soldier-Red_54: 351401010229338560
+      Orc-Soldier-Red_55: 4724645024724336521
+      Orc-Soldier-Red_56: 5717813256978110373
+      Orc-Soldier-Red_57: 7261414698302010908
+      Orc-Soldier-Red_58: -6106200509725630058
+      Orc-Soldier-Red_59: 4004174266918925273
+      Orc-Soldier-Red_6: -8961406380771334457
+      Orc-Soldier-Red_60: -6852943067698055477
+      Orc-Soldier-Red_61: 112657463979671241
+      Orc-Soldier-Red_62: -8379953367705191929
+      Orc-Soldier-Red_63: -7268290078267283474
+      Orc-Soldier-Red_64: 2597923706111975848
+      Orc-Soldier-Red_65: -3042726302050216562
+      Orc-Soldier-Red_66: -3964377271884883710
+      Orc-Soldier-Red_67: -9168265157717929640
+      Orc-Soldier-Red_68: -5465308628624618489
+      Orc-Soldier-Red_69: -902961368930616211
+      Orc-Soldier-Red_7: -5888785953866028633
+      Orc-Soldier-Red_70: 5768089797984900181
+      Orc-Soldier-Red_71: -1993628745672656102
+      Orc-Soldier-Red_72: -1525458225110549863
+      Orc-Soldier-Red_73: 6568842269484915896
+      Orc-Soldier-Red_74: 7151802191736304533
+      Orc-Soldier-Red_75: -4208976754065705973
+      Orc-Soldier-Red_76: -6663157941149058000
+      Orc-Soldier-Red_77: 7551828493413918327
+      Orc-Soldier-Red_78: 3836894298243289403
+      Orc-Soldier-Red_79: -2035985554323755488
+      Orc-Soldier-Red_8: -5548486873373667330
+      Orc-Soldier-Red_80: -3125762959391350776
+      Orc-Soldier-Red_81: -1059900020715489761
+      Orc-Soldier-Red_82: 2153244210519770201
+      Orc-Soldier-Red_83: 3202628372582378607
+      Orc-Soldier-Red_84: 427987436498367624
+      Orc-Soldier-Red_85: 3468904012939877030
+      Orc-Soldier-Red_86: 4497075770021837942
+      Orc-Soldier-Red_87: -3434638236648496576
+      Orc-Soldier-Red_88: 6044729655626035761
+      Orc-Soldier-Red_89: 4881991368799253013
+      Orc-Soldier-Red_9: 8723089518791095897
+      Orc-Soldier-Red_90: 2307703194858975263
+      Orc-Soldier-Red_91: -3387399278214161048
+      Orc-Soldier-Red_92: 2034884128364396097
+      Orc-Soldier-Red_93: -271588176735921306
+      Orc-Soldier-Red_94: 8186536333433946345
+      Orc-Soldier-Red_95: -1630323175725554177
+      Orc-Soldier-Red_96: 2450589065527815097
+      Orc-Soldier-Red_97: -9136039536589717848
+      Orc-Soldier-Red_98: -3455850878196486054
+      Orc-Soldier-Red_99: -6406448082445804138
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -13,7 +13,7 @@ public class ReferenceManager : MonoBehaviour
     void Start()
     {
         
-            player = FindFirstObjectByType<PlayerController>().gameObject;
+            player = GameObject.FindGameObjectWithTag("Player");
             playerHealthScript = player.GetComponent<PlayerDeath>();
         
             

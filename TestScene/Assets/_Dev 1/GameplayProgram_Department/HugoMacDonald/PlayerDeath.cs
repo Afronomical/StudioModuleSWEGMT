@@ -1,63 +1,113 @@
-
-
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerDeath : MonoBehaviour
 {
+    private KnockBack knockBack;
     public int maxHealth = 100;
-    
     public int currentHealth;
-   
-    private int damageAmount = 10;
+    //private int damageAmount = 10;
     private Animator animator;
     public HealthBarScript healthBarScript;
-    
+    public bool godMode;
+    //public float SetHealth;
+    public bool isInvincible = false;
+    public float invincibilityDuration = 2.0f; // Adjust the duration as needed
+    private float invincibilityTimer = 0.0f;
+
+
 
 
     private void Start()
     {
         currentHealth = maxHealth;
-
         animator = GetComponent<Animator>();
         healthBarScript.SetMaxHealth(maxHealth);
-        
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    private void Update()
     {
-        Debug.Log("Collision detected");
-        if (collision.gameObject.CompareTag("enemyMeleeRadius"))
+        if (isInvincible)
         {
-            currentHealth -= damageAmount;
-            healthBarScript.setHealth(currentHealth); //
-            Debug.Log(currentHealth);
-            if (currentHealth <= 0)
+            // Decrement the invincibility timer
+            invincibilityTimer -= Time.deltaTime;
+
+            // Check if invincibility has expired
+            if (invincibilityTimer <= 0)
             {
-                Die();
+                isInvincible = false;
             }
         }
+
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
+
+
+        //if godmode enabled set health to 100 every tick so is esentailly immortal
+        if (godMode)
+        {
+            currentHealth = maxHealth;
+        }
+        // If the player is invincible, return early to prevent damage and knockbacks
+        if (isInvincible)
+        {
+            return;
+        }
+
     }
 
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    Debug.Log("Collision detected");
+    //    if (collision.gameObject.CompareTag("Hunter"))
+    //    {
+    //        currentHealth -= damageAmount;
+    //        healthBarScript.setHealth(currentHealth);
+    //        Debug.Log(currentHealth);
+    //        if (currentHealth <= 0)
+    //        {
+    //            Die();
+    //        }
+    //    }
+    //}
 
-
-
-    // To Test Health Bar and hunger // remove once enemy attacks player
-    void Update()
+    public void SetHealth(int damage)
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (!isInvincible)
         {
-            currentHealth -= 10;
+            currentHealth -= damage;
+            healthBarScript.setHealth(currentHealth);
+
+            // Apply invincibility
+            isInvincible = true;
+            invincibilityTimer = invincibilityDuration;
+
         }
-     
+    }
+
+    public void FeedAttack()
+    {
+        // Implement your logic to increase health when the player is fed
+        currentHealth += 20; // You can adjust the value as needed
+        healthBarScript.setHealth(currentHealth);
     }
 
     private void Die()
     {
         if (animator != null)
         {
-            animator.SetTrigger("Die"); // Make sure your Animator has a "Die" trigger.
+            //animator.SetTrigger("Die"); // Make sure your Animator has a "Die" trigger.
         }
 
         gameObject.SetActive(false);
+        //Instantiate(...);              //spawn "YOU DIED" ui
+        Invoke("deathAfterDelay", 1);
+
+    }
+    private void deathAfterDelay()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 }

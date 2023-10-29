@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class playerAttack : MonoBehaviour
@@ -12,6 +13,7 @@ public class playerAttack : MonoBehaviour
     private GameObject enemyTarg;
     private AICharacter AiEnemy;
     private bool canHit = true;
+    
 
     //enter collision, detects if has enemy tag, if true set enemy to attacking var
     private void OnTriggerEnter2D(Collider2D other)
@@ -45,13 +47,15 @@ public class playerAttack : MonoBehaviour
     void damageEnemy()
     {
         
-        
-        
+
+
+
         if (enemyTarg != null)
         {
-
+            
             Debug.Log(enemyTarg.name);
             AiEnemy.health -= damage;
+            AudioManager.Manager.PlayVFX("NPC_TakeDamage");
         }
 
 
@@ -76,8 +80,10 @@ public class playerAttack : MonoBehaviour
         //calls damage enemy when LMB is pressed
         if (Input.GetKey(KeyCode.Mouse0))
         {
+            
             if (canHit)
             {
+                AudioManager.Manager.PlayVFX("PlayerAttack");
                 damageEnemy();
                 canHit = false;
             }
@@ -88,8 +94,8 @@ public class playerAttack : MonoBehaviour
                 attackDelay = attackDelayStart;
             }
             
-            
-            
         }
+        
+
     }
 }

@@ -6,6 +6,13 @@ TagManager:
   tags:
   - EntitySpawnPoint
   - PlayerSpawnPoint
+  - Hunter
+  - feedingZone
+  - Villager
+  - CheatMenu
+  - enemyMeleeRadius
+  - enemy
+  - RangedHunter
   layers:
   - Default
   - TransparentFX
@@ -13,7 +20,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Unwalkable
   - 
   - 
   - 

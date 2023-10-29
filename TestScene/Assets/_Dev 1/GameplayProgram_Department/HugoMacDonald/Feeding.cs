@@ -1,4 +1,3 @@
-
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,25 +8,26 @@ public class Feeding : MonoBehaviour
     public int minHunger = 0;
     public KeyCode healKey = KeyCode.E; // The key to trigger healing
     private bool canHeal = false; // To check if the player is inside the healing zone
-    public AICharacter aiCharacter;
-    public AICharacter aiCharacter1;
+    private AICharacter currentTarget = null; // Store the current AI character being healed
     public HungerBar hungerBarSlider;
-
-
+    public PlayerDeath playerDeath; // Reference to the PlayerDeath script
 
     private void Start()
     {
-        
         currentHunger = minHunger;
         hungerBarSlider.SetMinHunger(minHunger);
     }
-
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("feedingZone")) // Make sure the player enters the zone
         {
-            canHeal = true;
+            AICharacter aiCharacter = other.GetComponentInParent<AICharacter>();
+            if (aiCharacter != null && aiCharacter.currentState == AICharacter.States.Downed)
+            {
+                canHeal = true;
+                currentTarget = aiCharacter;
+            }
         }
     }
 
@@ -36,27 +36,31 @@ public class Feeding : MonoBehaviour
         if (other.CompareTag("feedingZone")) // Player left the zone
         {
             canHeal = false;
+            currentTarget = null;
         }
     }
 
     private void Update()
     {
-        if (canHeal && Input.GetKeyDown(healKey)) // can heal is true (player inside the zone) and e key is being pressed down
+        if (canHeal && Input.GetKeyDown(healKey) && currentTarget != null)
         {
-            if ((aiCharacter.currentState == AICharacter.States.Downed || aiCharacter1.currentState == AICharacter.States.Downed) && canHeal && Input.GetKeyDown(healKey))
-            {
-                
-                currentHunger += 1;
-                hungerBarSlider.SetHunger(currentHunger); //
-                
-            }
-           
+            // Feed on the current AI character in the feeding zone when it's downed
+            currentHunger += 1;
+            hungerBarSlider.SetHunger(currentHunger);
 
-
-
+            // Call a method in the PlayerDeath script to increase player health
+            playerDeath.FeedAttack();
         }
     }
 }
+
+
+
+
+
+
+
+
 
 
 
