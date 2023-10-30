@@ -28,7 +28,7 @@ public class ShootState : StateBaseClass
     public ShootState()
     {
         
-        currentDelay = 1;
+        currentDelay = 0.8f;
     }
 
     public override void UpdateLogic()

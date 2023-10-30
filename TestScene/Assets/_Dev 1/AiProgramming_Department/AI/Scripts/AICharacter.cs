@@ -21,16 +21,15 @@ public class AICharacter : MonoBehaviour
 
     public enum States
     {
-        None,
         Idle,
-        Roam,
         Downed,
         Dead,
         Patrol,
         Attack,
         Run,
         Hunt,
-        Shoot
+        Shoot,
+        None
     }
 
 
@@ -44,11 +43,10 @@ public class AICharacter : MonoBehaviour
     [Header("States")]
     public States currentState;
     public StateBaseClass stateScript;
-    public bool isMoving;
-
     public GameObject player;
-
     public GameObject bulletPrefab;
+
+    public bool isMoving;
 
     void Start()
     {
@@ -77,9 +75,10 @@ public class AICharacter : MonoBehaviour
     {
         if (currentState != newState || stateScript == null)
         {
-            if (stateScript != null && currentState != States.None)
+            if (stateScript != null)
             {
-                Destroy(stateScript);  // Destroy current script attached to AI character
+                //destroy current script attached to AI character
+                Destroy(stateScript);
             }
 
             //set the current state of AI character to the new state
@@ -114,7 +113,6 @@ public class AICharacter : MonoBehaviour
                 case States.Shoot:
                     stateScript = transform.AddComponent<ShootState>();
                     break;
-
                 //------------------------------------ Add new states in here
 
                 case States.None:

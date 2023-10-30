@@ -13,7 +13,7 @@ using UnityEngine;
 /// animationManager = GetComponent<AnimationManager>();
 /// 
 /// </summary>
-public class AI_AnimationController : MonoBehaviour
+public class AIAnimationController : MonoBehaviour
 {
     public enum AnimationStates
     {
