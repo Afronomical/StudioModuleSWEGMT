@@ -15,6 +15,7 @@ public class PlayerDeath : MonoBehaviour
     public float invincibilityDuration = 2.0f; // Adjust the duration as needed
     private float invincibilityTimer = 0.0f;
     public GameObject floatingText;
+    public int feedHealAmount = 5;
 
     public int sunDamage = 5;
 
@@ -117,7 +118,7 @@ public class PlayerDeath : MonoBehaviour
     public void FeedAttack()
     {
         // Implement your logic to increase health when the player is fed
-        currentHealth += 20; // You can adjust the value as needed
+        currentHealth += feedHealAmount; // You can adjust the value as needed
         healthBarScript.setHealth(currentHealth);
     }
 
