@@ -59,6 +59,7 @@ public class playerAttack : MonoBehaviour
             Debug.Log(enemyTarg.name);
             AiEnemy.health -= damage;
             AudioManager.Manager.PlaySFX("NPC_TakeDamage");
+            enemyTarg.GetComponentInChildren<AI_AnimationController>().ChangeAnimationState(AI_AnimationController.AnimationStates.Hurt);
         }
 
 
