@@ -15,6 +15,7 @@ public class PlayerDeath : MonoBehaviour
     public float invincibilityDuration = 2.0f; // Adjust the duration as needed
     private float invincibilityTimer = 0.0f;
     public GameObject floatingText;
+    public Vector3 offset; 
     
 
     private Animator animator;
@@ -131,7 +132,10 @@ public class PlayerDeath : MonoBehaviour
 
     void showFloatingText()
     {
-        var go = Instantiate(floatingText, transform.position, Quaternion.identity, transform);
+
+        Vector3 spawnPos = transform.position + offset; 
+        
+        var go = Instantiate(floatingText, spawnPos, Quaternion.identity, transform);
         go.GetComponentInChildren<TextMeshProUGUI>().text = currentHealth.ToString();
     }
 
