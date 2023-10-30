@@ -15,6 +15,7 @@ public class PlayerDeath : MonoBehaviour
     public float invincibilityDuration = 2.0f; // Adjust the duration as needed
     private float invincibilityTimer = 0.0f;
     public GameObject floatingText;
+    
 
     private Animator animator;
     private PlayerAnimationController animationController;
