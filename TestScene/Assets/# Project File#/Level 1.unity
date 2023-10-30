@@ -4800,11 +4800,11 @@ PrefabInstance:
       objectReference: {fileID: 943001636}
     - target: {fileID: 8811865619863605101, guid: 99d0183fde40a224eae3632a6b0caf96, type: 3}
       propertyPath: offset.x
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8811865619863605101, guid: 99d0183fde40a224eae3632a6b0caf96, type: 3}
       propertyPath: offset.y
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8811865619863605101, guid: 99d0183fde40a224eae3632a6b0caf96, type: 3}
       propertyPath: floatingText

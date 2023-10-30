@@ -8,6 +8,7 @@ public class MainMenu : MonoBehaviour
     private void Start()
     {
         AudioManager.Manager.PlayMusic("MenuMusic");
+
     }
 
 
@@ -17,6 +18,7 @@ public class MainMenu : MonoBehaviour
         AudioManager.Manager.StopAudio("MenuMusic");
         Debug.Log("Play Game");
         SceneManager.LoadScene(2);
+        Time.timeScale = 1;
         //LevelManager.Instance.LoadScene("TestCaveScene");
     }
 
