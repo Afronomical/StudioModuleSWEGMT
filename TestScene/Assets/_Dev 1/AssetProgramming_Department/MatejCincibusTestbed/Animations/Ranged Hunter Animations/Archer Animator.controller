@@ -124,8 +124,8 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: movementX
     m_Mirror: 0
-  m_BlendParameter: movementX
-  m_BlendParameterY: movementY
+  m_BlendParameter: MovementX
+  m_BlendParameterY: MovementY
   m_MinThreshold: 0
   m_MaxThreshold: 1
   m_UseAutomaticThresholds: 1
@@ -203,8 +203,8 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: movementX
     m_Mirror: 0
-  m_BlendParameter: movementX
-  m_BlendParameterY: movementY
+  m_BlendParameter: MovementX
+  m_BlendParameterY: MovementY
   m_MinThreshold: 0
   m_MaxThreshold: 1
   m_UseAutomaticThresholds: 1
@@ -319,8 +319,8 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: movementX
     m_Mirror: 0
-  m_BlendParameter: movementX
-  m_BlendParameterY: movementY
+  m_BlendParameter: MovementX
+  m_BlendParameterY: MovementY
   m_MinThreshold: 0
   m_MaxThreshold: 1
   m_UseAutomaticThresholds: 1
@@ -413,13 +413,13 @@ AnimatorController:
   m_Name: Archer Animator
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: movementX
+  - m_Name: MovementX
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: movementY
+  - m_Name: MovementY
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -536,8 +536,8 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: movementX
     m_Mirror: 0
-  m_BlendParameter: movementX
-  m_BlendParameterY: movementY
+  m_BlendParameter: MovementX
+  m_BlendParameterY: MovementY
   m_MinThreshold: 0
   m_MaxThreshold: 1
   m_UseAutomaticThresholds: 1
@@ -615,8 +615,8 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: movementX
     m_Mirror: 0
-  m_BlendParameter: movementX
-  m_BlendParameterY: movementY
+  m_BlendParameter: MovementX
+  m_BlendParameterY: MovementY
   m_MinThreshold: 0
   m_MaxThreshold: 1
   m_UseAutomaticThresholds: 1
