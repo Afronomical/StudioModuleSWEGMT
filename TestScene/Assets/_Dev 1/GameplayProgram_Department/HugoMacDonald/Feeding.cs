@@ -57,6 +57,8 @@ public class Feeding : MonoBehaviour
             currentHunger += 1;
             hungerBarSlider.SetHunger(currentHunger);
 
+            currentTarget.health -= 1;
+
             // Call a method in the PlayerDeath script to increase player health
             playerDeath.FeedAttack();
         }

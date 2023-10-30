@@ -42,7 +42,7 @@ public class StateMachineController : MonoBehaviour
         distance = Vector3.Distance(character.player.transform.position, character.transform.position);
 
 
-        if (character.health == 0)
+        if (character.health <= 0)
             character.ChangeState(AICharacter.States.Dead);
 
 

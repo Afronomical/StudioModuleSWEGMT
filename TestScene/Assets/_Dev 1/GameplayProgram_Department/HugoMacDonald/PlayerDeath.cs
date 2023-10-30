@@ -15,6 +15,7 @@ public class PlayerDeath : MonoBehaviour
     public float invincibilityDuration = 2.0f; // Adjust the duration as needed
     private float invincibilityTimer = 0.0f;
     public GameObject floatingText;
+    public int sunDamage = 5;
 
     private Animator animator;
     private PlayerAnimationController animationController;
@@ -67,6 +68,12 @@ public class PlayerDeath : MonoBehaviour
         if (isInvincible)
         {
             return;
+        }
+
+        //prevents over healing
+        if (currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
         }
 
     }
@@ -126,6 +133,12 @@ public class PlayerDeath : MonoBehaviour
     {
         AudioManager.Manager.StopAudio("LevelMusic");
         SceneManager.LoadScene("MainMenu");
+    }
+
+    public void SunRiseDamage() // Deals Damage While The Player Is In Sun Light
+    {
+        currentHealth = currentHealth - sunDamage;
+        healthBarScript.setHealth(currentHealth);
     }
 
     void showFloatingText()
