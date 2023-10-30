@@ -70,6 +70,12 @@ public class PlayerDeath : MonoBehaviour
             return;
         }
 
+        //prevents over healing
+        if (currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+
     }
 
     //private void OnTriggerEnter2D(Collider2D collision)

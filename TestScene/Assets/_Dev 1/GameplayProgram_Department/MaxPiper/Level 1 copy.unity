@@ -120,6 +120,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &21796865 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 618411871520163718, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
+  m_PrefabInstance: {fileID: 509267606}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f3a76e03d2b302418e2f23c5e2a30f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &159473204
 GameObject:
   m_ObjectHideFlags: 0
@@ -3211,6 +3222,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SunRise
       objectReference: {fileID: 0}
+    - target: {fileID: 9058639578269936801, guid: a560453a471988d488cd8cab7743dc53, type: 3}
+      propertyPath: countdownTimer
+      value: 
+      objectReference: {fileID: 21796865}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4834,6 +4849,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 018313b4c83e5cb4988889aea956d000, type: 2}
+    - target: {fileID: 1022398017744774872, guid: 99d0183fde40a224eae3632a6b0caf96, type: 3}
+      propertyPath: attackDelayStart
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2207885135432695148, guid: 99d0183fde40a224eae3632a6b0caf96, type: 3}
       propertyPath: m_Name
       value: PlayerPrefab1

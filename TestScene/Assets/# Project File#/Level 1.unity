@@ -396,6 +396,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detectionRange: 6
   attackRange: 1
+  unwalkableLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &282692817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -417,6 +420,7 @@ MonoBehaviour:
   turnDistance: 1
   currentState: 0
   stateScript: {fileID: 0}
+  isMoving: 0
   player: {fileID: 1919636557}
   bulletPrefab: {fileID: 0}
 --- !u!212 &282692818
@@ -763,6 +767,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detectionRange: 4
   attackRange: 1
+  unwalkableLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &344794354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -784,6 +791,7 @@ MonoBehaviour:
   turnDistance: 1
   currentState: 0
   stateScript: {fileID: 0}
+  isMoving: 0
   player: {fileID: 1919636557}
   bulletPrefab: {fileID: 0}
 --- !u!212 &344794355
@@ -1387,6 +1395,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detectionRange: 6
   attackRange: 1
+  unwalkableLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &526840061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1408,6 +1419,7 @@ MonoBehaviour:
   turnDistance: 1
   currentState: 0
   stateScript: {fileID: 0}
+  isMoving: 0
   player: {fileID: 1919636557}
   bulletPrefab: {fileID: 0}
 --- !u!212 &526840062
@@ -1633,6 +1645,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detectionRange: 4
   attackRange: 1
+  unwalkableLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &537042811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1654,6 +1669,7 @@ MonoBehaviour:
   turnDistance: 1
   currentState: 0
   stateScript: {fileID: 0}
+  isMoving: 0
   player: {fileID: 1919636557}
   bulletPrefab: {fileID: 0}
 --- !u!212 &537042812
@@ -2034,90 +2050,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &656456657
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 656456658}
-  - component: {fileID: 656456659}
-  m_Layer: 0
-  m_Name: Teeth_0
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &656456658
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 656456657}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.4300001, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1244385488}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &656456659
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 656456657}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 4864446039743735051, guid: 0700673ff8b970f4bbccef832fcd08c3, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1.8, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1001 &702257890
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2330,6 +2262,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detectionRange: 8
   attackRange: 5
+  unwalkableLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &770136341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2351,6 +2286,7 @@ MonoBehaviour:
   turnDistance: 1
   currentState: 0
   stateScript: {fileID: 0}
+  isMoving: 0
   player: {fileID: 1919636557}
   bulletPrefab: {fileID: 4959076639111065171, guid: 86924d39f5b2d3e44bfdd60051fa4164, type: 3}
 --- !u!212 &770136342
@@ -2588,6 +2524,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detectionRange: 8
   attackRange: 5
+  unwalkableLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &1009192465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2609,6 +2548,7 @@ MonoBehaviour:
   turnDistance: 1
   currentState: 0
   stateScript: {fileID: 0}
+  isMoving: 0
   player: {fileID: 1919636557}
   bulletPrefab: {fileID: 4959076639111065171, guid: 86924d39f5b2d3e44bfdd60051fa4164, type: 3}
 --- !u!212 &1009192466
@@ -2956,6 +2896,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detectionRange: 4
   attackRange: 1
+  unwalkableLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &1031754011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2977,6 +2920,7 @@ MonoBehaviour:
   turnDistance: 1
   currentState: 0
   stateScript: {fileID: 0}
+  isMoving: 0
   player: {fileID: 1919636557}
   bulletPrefab: {fileID: 0}
 --- !u!212 &1031754012
@@ -3047,90 +2991,6 @@ Transform:
   - {fileID: 1019536062}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1039829999
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1039830000}
-  - component: {fileID: 1039830001}
-  m_Layer: 0
-  m_Name: Teeth_1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1039830000
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1039829999}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.43, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1244385488}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1039830001
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1039829999}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -4939847119294170580, guid: 0700673ff8b970f4bbccef832fcd08c3, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1.57, y: 0.96}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &1224224678
 GameObject:
   m_ObjectHideFlags: 0
@@ -3215,39 +3075,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1244385487
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1244385488}
-  m_Layer: 0
-  m_Name: BiteIcon
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1244385488
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1244385487}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.63, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
-  m_ConstrainProportionsScale: 1
-  m_Children:
-  - {fileID: 656456658}
-  - {fileID: 1039830000}
-  m_Father: {fileID: 1973510777}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1285857985
 GameObject:
   m_ObjectHideFlags: 0
@@ -3434,6 +3261,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detectionRange: 6
   attackRange: 1
+  unwalkableLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &1433310387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3455,6 +3285,7 @@ MonoBehaviour:
   turnDistance: 1
   currentState: 0
   stateScript: {fileID: 0}
+  isMoving: 0
   player: {fileID: 1919636557}
   bulletPrefab: {fileID: 0}
 --- !u!212 &1433310388
@@ -3691,6 +3522,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detectionRange: 4
   attackRange: 1
+  unwalkableLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &1693569717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3712,6 +3546,7 @@ MonoBehaviour:
   turnDistance: 1
   currentState: 0
   stateScript: {fileID: 0}
+  isMoving: 0
   player: {fileID: 1919636557}
   bulletPrefab: {fileID: 0}
 --- !u!212 &1693569718
@@ -4179,6 +4014,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detectionRange: 6
   attackRange: 1
+  unwalkableLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &1904420992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4200,6 +4038,7 @@ MonoBehaviour:
   turnDistance: 1
   currentState: 0
   stateScript: {fileID: 0}
+  isMoving: 0
   player: {fileID: 1919636557}
   bulletPrefab: {fileID: 0}
 --- !u!212 &1904420993
@@ -4280,27 +4119,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4345570161522551933, guid: 99d0183fde40a224eae3632a6b0caf96, type: 3}
   m_PrefabInstance: {fileID: 2102665104474890716}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1973510778
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1919636557}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a801f212440603448b3433d3a24f25f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animationStatesList: 00000000010000000200000003000000040000000500000006000000
-  animationStringsList:
-  - Idle Tree
-  - Walk Tree
-  - Slash Attack Tree
-  - Hurt Tree
-  - Dash Tree
-  - S_Death_Player
-  - Feeding Icon
 --- !u!1001 &1995343966
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4557,7 +4375,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dab6754407e7b04682766844a9cbd67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  requestListSize: 0
 --- !u!114 &2031917020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4734,25 +4551,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 596612271460105518, guid: 99d0183fde40a224eae3632a6b0caf96, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 018313b4c83e5cb4988889aea956d000, type: 2}
     - target: {fileID: 2207885135432695148, guid: 99d0183fde40a224eae3632a6b0caf96, type: 3}
       propertyPath: m_Name
       value: PlayerPrefab1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3284862352158443892, guid: 99d0183fde40a224eae3632a6b0caf96, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 641961028149040586, guid: 9fc2ccdd0f8e92b4196a5e038b120522, type: 3}
-    - target: {fileID: 3438935536249312359, guid: 99d0183fde40a224eae3632a6b0caf96, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3438935536249312359, guid: 99d0183fde40a224eae3632a6b0caf96, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4345570161522551933, guid: 99d0183fde40a224eae3632a6b0caf96, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4799,24 +4600,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 943001636}
     - target: {fileID: 8811865619863605101, guid: 99d0183fde40a224eae3632a6b0caf96, type: 3}
-      propertyPath: floatingText
-      value: 
-      objectReference: {fileID: 3144044576336324553, guid: 6f3a123f815ec40479af1dfa206b7166, type: 3}
-    - target: {fileID: 8811865619863605101, guid: 99d0183fde40a224eae3632a6b0caf96, type: 3}
       propertyPath: healthBarScript
       value: 
       objectReference: {fileID: 1651346399}
-    m_RemovedComponents:
-    - {fileID: 487986410629779598, guid: 99d0183fde40a224eae3632a6b0caf96, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 4345570161522551933, guid: 99d0183fde40a224eae3632a6b0caf96, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1244385488}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2207885135432695148, guid: 99d0183fde40a224eae3632a6b0caf96, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1973510778}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99d0183fde40a224eae3632a6b0caf96, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
