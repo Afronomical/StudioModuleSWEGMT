@@ -24,12 +24,15 @@ public class DownedState : StateBaseClass
         checkTime = 0f;
     }
 
+    private void Start()
+    {
+        //change colour to indicate state change
+        transform.Find("Sprite").GetComponent<SpriteRenderer>().color = Color.red;
+    }
+
 
     public override void UpdateLogic()
     {
-        //change colour to indicate state change
-        this.GetComponent<SpriteRenderer>().color = Color.white;
-
 
         if (checkTime > 0)  // Wait a bit before running 
             checkTime -= Time.deltaTime;

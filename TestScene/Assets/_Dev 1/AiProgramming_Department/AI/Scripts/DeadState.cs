@@ -1,3 +1,4 @@
+using NUnit.Framework.Internal.Filters;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
@@ -12,16 +13,20 @@ public class DeadState : StateBaseClass
     {
         animController = transform.GetComponentInChildren<AIAnimationController>();
         anim = transform.GetComponentInChildren<Animator>();
+        animController.ChangeAnimationState(AIAnimationController.AnimationStates.SwordAttack);
     }
 
 
     public override void UpdateLogic()
     {
         //Disables the specific character when health is 0
-        while (!animController.IsAnimationPlaying(anim, AIAnimationController.AnimationStates.Death))
+        if (animController != null && anim != null)
         {
-            character.gameObject.SetActive(false);
-            Debug.Log("Character Disabled");
+            if (!animController.IsAnimationPlaying(anim, AIAnimationController.AnimationStates.Death))
+            {
+                character.gameObject.SetActive(false);
+                Debug.Log("Character Disabled");
+            }
         }
     }
 }
