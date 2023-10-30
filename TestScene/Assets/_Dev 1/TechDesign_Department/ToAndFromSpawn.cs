@@ -8,8 +8,8 @@ public class ToAndFromSpawn : MonoBehaviour
 {
     private bool canLeaveHub;
     private bool canLeaveLevel;
-    [SerializeField] string hub;
-    [SerializeField] string level1;
+    [SerializeField] string nextLevel;
+ 
 
 
     private void Start()
@@ -19,13 +19,15 @@ public class ToAndFromSpawn : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (SceneManager.GetActiveScene().name == level1 && canLeaveLevel)
+        if (collision.CompareTag("Player"))
         {
-            SceneManager.LoadScene(hub);
-        }
-        else if (SceneManager.GetActiveScene().name == hub && canLeaveHub)
-        {
-            SceneManager.LoadScene(level1);
+            Debug.Log("Collided");
+
+            
+                SceneManager.LoadScene(nextLevel);
+            
+                
+            
         }
     }
 }

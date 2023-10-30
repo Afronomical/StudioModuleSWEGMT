@@ -13,7 +13,8 @@ public class RespawningSystem : MonoBehaviour
     [Header("Spawning Conditions")]
     [SerializeField] bool canRespawn = false;
     [SerializeField] float spawnTimer = 60f;
-    
+    [SerializeField]float offsetX;
+
 
     // Start is called before the first frame update
     void Start()
@@ -30,7 +31,8 @@ public class RespawningSystem : MonoBehaviour
 
     private void SpawnEntities()
     {
-        float offsetX;
+        float originalOffsetX = offsetX;
+
         foreach (GameObject item in entities)
         {
             if (item.activeInHierarchy == true)
@@ -40,11 +42,12 @@ public class RespawningSystem : MonoBehaviour
                     item.transform.SetParent(transform);
                 }
                 item.transform.position = transform.parent.position;
-                item.transform.position.x += offsetX;
-                offsetX += transform.position.x
+                item.transform.position += new Vector3 (offsetX,0,0);
+                offsetX += transform.position.x;
                 item.SetActive(true);
             }
         }
+        offsetX= originalOffsetX;
     }
 
     // Update is called once per frame
@@ -55,7 +58,7 @@ public class RespawningSystem : MonoBehaviour
 
     private void RespawnCheck()
     {
-        int entitiesActive;
+        int entitiesActive = 0;
 
         foreach (GameObject item in entities)
         {
