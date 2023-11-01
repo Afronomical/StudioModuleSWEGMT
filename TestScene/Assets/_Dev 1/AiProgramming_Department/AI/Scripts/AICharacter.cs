@@ -16,7 +16,8 @@ public class AICharacter : MonoBehaviour
     {
         Villager,
         Hunter,
-        RangedHunter
+        RangedHunter,
+        Boss
     }
 
     public enum States
@@ -30,6 +31,8 @@ public class AICharacter : MonoBehaviour
         Hunt,
         Shoot,
         None
+        //boss states
+        //phase 1, 2, 3...?
     }
 
 
@@ -45,6 +48,7 @@ public class AICharacter : MonoBehaviour
     public StateBaseClass stateScript;
     public GameObject player;
     public GameObject bulletPrefab;
+    public GameObject homingBulletPrefab;
 
     public bool isMoving;
 

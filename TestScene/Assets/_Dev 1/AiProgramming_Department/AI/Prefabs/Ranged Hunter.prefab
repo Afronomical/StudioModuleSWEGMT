@@ -116,6 +116,7 @@ MonoBehaviour:
   stateScript: {fileID: 0}
   player: {fileID: 0}
   bulletPrefab: {fileID: 4959076639111065171, guid: 86924d39f5b2d3e44bfdd60051fa4164, type: 3}
+  homingBulletPrefab: {fileID: 4959076639111065171, guid: de38b59bde5493d43a0a6740291acf5b, type: 3}
   isMoving: 0
 --- !u!114 &2438711860252939866
 MonoBehaviour:
