@@ -250,7 +250,7 @@ MonoBehaviour:
   characterType: 0
   health: 3
   walkSpeed: 2
-  runSpeed: 7
+  runSpeed: 6
   crawlSpeed: 0.5
   turnSpeed: 2
   turnDistance: 1
@@ -258,6 +258,7 @@ MonoBehaviour:
   stateScript: {fileID: 0}
   player: {fileID: 0}
   bulletPrefab: {fileID: 0}
+  isMoving: 0
 --- !u!114 &222520338588703597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -272,6 +273,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detectionRange: 4
   attackRange: 1
+  unwalkableLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!61 &8867317865414971838
 BoxCollider2D:
   m_ObjectHideFlags: 0

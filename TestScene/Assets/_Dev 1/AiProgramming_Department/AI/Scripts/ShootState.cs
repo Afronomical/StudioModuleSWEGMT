@@ -28,13 +28,14 @@ public class ShootState : StateBaseClass
     public ShootState()
     {
         
-        currentDelay = 1;
+        currentDelay = 0.8f;
     }
 
     public override void UpdateLogic()
     {
         //change colour to indicate state change
         this.GetComponent<SpriteRenderer>().color = Color.cyan;
+        character.isMoving = false;
 
         Vector3 vectorToTarget = Quaternion.Euler(0, 0, 90) * (character.player.transform.position - transform.position);  // Direction towards the target location
         transform.rotation = Quaternion.LookRotation(forward: Vector3.forward, upwards: vectorToTarget);

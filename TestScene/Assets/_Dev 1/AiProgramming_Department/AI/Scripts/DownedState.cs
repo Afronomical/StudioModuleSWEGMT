@@ -14,6 +14,7 @@ public class DownedState : StateBaseClass
 
     private PathfindingSmoothing path;
     private int pathIndex = 0;
+    private int pathErrorCheck;
     private float speedPercent;
     private Vector3 crawlDestination;
     private float checkTime;
@@ -23,12 +24,15 @@ public class DownedState : StateBaseClass
         checkTime = 0f;
     }
 
+    private void Start()
+    {
+        //change colour to indicate state change
+        transform.Find("Sprite").GetComponent<SpriteRenderer>().color = Color.red;
+    }
+
 
     public override void UpdateLogic()
     {
-        //change colour to indicate state change
-        this.GetComponent<SpriteRenderer>().color = Color.white;
-
 
         if (checkTime > 0)  // Wait a bit before running 
             checkTime -= Time.deltaTime;
@@ -44,6 +48,7 @@ public class DownedState : StateBaseClass
                         path = new PathfindingSmoothing(null, Vector3.zero, 0, 0);
                         crawlDestination = Vector2.zero;  // Stop to look around and see if they escaped
                         checkTime = Random.Range(minCheckTime, maxCheckTime);
+                        character.isMoving = false;
                         FindWalkTarget();
                         return;
                     }
@@ -71,6 +76,8 @@ public class DownedState : StateBaseClass
 
             else
                 FindWalkTarget();
+
+            character.isMoving = true;
         }
     }
 
@@ -83,6 +90,7 @@ public class DownedState : StateBaseClass
                                      -moveVector.y + Random.Range(-crawlOffset, crawlOffset)) * Random.Range(minCrawlDistance, maxCrawlDistance);
 
         PathfindingRequestManager.RequestPath(transform.position, crawlDestination, this, OnPathFound);
+        pathErrorCheck++;
     }
 
 
@@ -93,6 +101,13 @@ public class DownedState : StateBaseClass
             path = new PathfindingSmoothing(waypoints, transform.position, character.turnDistance, stopDistance);
             pathIndex = 0;
             speedPercent = 1;
+            pathErrorCheck = 0;
+        }
+        else if (pathErrorCheck > 250)
+        {
+            Debug.Log(character.transform.name + " Downed state pathfinding error");
+            if (PathfindingRequestManager.requestListSize < 5)
+                FindWalkTarget();
         }
         else
             FindWalkTarget();  // Try and find a new path

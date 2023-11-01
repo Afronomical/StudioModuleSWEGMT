@@ -14,11 +14,13 @@ public class AttackState : StateBaseClass
     private ReferenceManager referenceManager;
     private PlayerDeath playerDeath;
 
+
     private void Start()
     {
-        //playerDeath = referenceManager.GetPlayer().GetComponent<PlayerDeath>();
         playerDeath = character.player.GetComponent<PlayerDeath>();
+        transform.GetComponentInChildren<AIAnimationController>().ChangeAnimationState(AIAnimationController.AnimationStates.SwordAttack);
     }
+
     public AttackState() 
     {
         //When a character goes to the attack state, this will delay the attack by x amount
@@ -32,8 +34,6 @@ public class AttackState : StateBaseClass
         {
             playerDeath = character.player.GetComponent<PlayerDeath>();
         }
-        
-        //Debug.Log("AI is attacking");
 
         //Counts down the delay
         currentDelay -= Time.deltaTime;

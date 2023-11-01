@@ -5,12 +5,14 @@ using UnityEngine.TextCore.Text;
 
 public class HuntState : StateBaseClass
 {
-    public float pathRefreshTime = 1;  // How often a new path to the player should be found
+    public float pathRefreshTime = 1f;  // How often a new path to the player should be found
     private float refreshTimer = 0;
     private bool debugPath = false;
 
     private PathfindingSmoothing path;
     private int pathIndex = 0;
+    private int pathErrorCheck;
+
 
     public override void UpdateLogic()
     {
@@ -25,6 +27,7 @@ public class HuntState : StateBaseClass
         {
             refreshTimer = pathRefreshTime;
             PathfindingRequestManager.RequestPath(transform.position, character.player.transform.position, this, OnPathFound);
+            pathErrorCheck++;
         }
 
 
@@ -35,6 +38,7 @@ public class HuntState : StateBaseClass
                 if (pathIndex == path.finishLineIndex)  // Has finished
                 {
                     path = new PathfindingSmoothing(null, Vector3.zero, 0, 0);
+                    refreshTimer = 0;
                     return;
                 }
                 else  // Has reached a checkpoint
@@ -57,6 +61,16 @@ public class HuntState : StateBaseClass
         {
             path = new PathfindingSmoothing(waypoints, transform.position, character.turnDistance, 0);
             pathIndex = 0;
+            pathErrorCheck = 0;
+            character.isMoving = true;
+        }
+        else if (pathErrorCheck > 250)
+        {
+            Debug.Log(character.transform.name + " Hunt state pathfinding error");
+            if (PathfindingRequestManager.requestListSize < 5)
+                refreshTimer = 0;
+            else
+                refreshTimer = 10;
         }
         else
             refreshTimer = 0;  // Try and find a new path

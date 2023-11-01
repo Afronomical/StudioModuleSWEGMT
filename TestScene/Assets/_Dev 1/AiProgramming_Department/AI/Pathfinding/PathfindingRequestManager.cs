@@ -18,7 +18,7 @@ public class PathfindingRequestManager : MonoBehaviour
     static PathfindingRequestManager instance;
     Pathfinding pathfinding;
     bool isProcessingPath;
-    public int requestListSize;
+    public static int requestListSize;
 
     private void Awake()
     {
@@ -30,7 +30,7 @@ public class PathfindingRequestManager : MonoBehaviour
     {
         PathRequest newRequest = new PathRequest(pathStart, pathEnd, state, callback);  // Create a new request
         instance.pathRequestQueue.Enqueue(newRequest);  // Add this request to the queue
-        instance.requestListSize++;
+        requestListSize++;
         instance.TryProcessNext();
     }
 

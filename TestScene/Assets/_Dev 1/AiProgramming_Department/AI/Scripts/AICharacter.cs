@@ -22,14 +22,14 @@ public class AICharacter : MonoBehaviour
     public enum States
     {
         Idle,
-        Roam,
         Downed,
         Dead,
         Patrol,
         Attack,
         Run,
-        Hunt, //added hunt state
-        Shoot
+        Hunt,
+        Shoot,
+        None
     }
 
 
@@ -43,10 +43,10 @@ public class AICharacter : MonoBehaviour
     [Header("States")]
     public States currentState;
     public StateBaseClass stateScript;
-
     public GameObject player;
-
     public GameObject bulletPrefab;
+
+    public bool isMoving;
 
     void Start()
     {
@@ -60,7 +60,8 @@ public class AICharacter : MonoBehaviour
 
     void Update()
     {
-        stateScript.UpdateLogic();  // Calls the virtual function for whatever state scripts
+        if (stateScript != null)
+            stateScript.UpdateLogic();  // Calls the virtual function for whatever state scripts
     }
 
 
@@ -114,12 +115,16 @@ public class AICharacter : MonoBehaviour
                     break;
                 //------------------------------------ Add new states in here
 
+                case States.None:
+                    stateScript = null;
+                    break;
                 default:
                     stateScript = transform.AddComponent<IdleState>();
                     break;
             }
 
-            stateScript.character = this;  // Set the reference that state scripts will use
+            if (stateScript != null)
+                stateScript.character = this;  // Set the reference that state scripts will use
         }
     }
 

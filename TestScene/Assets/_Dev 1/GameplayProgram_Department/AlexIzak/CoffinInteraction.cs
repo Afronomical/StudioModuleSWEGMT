@@ -96,6 +96,7 @@ public class CoffinInteraction : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        useCoffin.enabled = false;
+        if (useCoffin !=  null)
+            useCoffin.enabled = false;
     }
 }

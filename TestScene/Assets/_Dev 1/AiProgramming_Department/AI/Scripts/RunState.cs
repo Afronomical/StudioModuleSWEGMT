@@ -11,20 +11,21 @@ using UnityEngine;
 
 public class RunState : StateBaseClass
 {
-    private float minRunDistance = 3;
-    private float maxRunDistance = 8;
-    private float runOffset = 0.5f;  // Stops them from running straight
-    private float minCheckTime = 1;
-    private float maxCheckTime = 3;
-    private float stopDistance = 1;  // When they start slowing down
+    private float minRunDistance = 4;
+    private float maxRunDistance = 6;
+    private float runOffset = 0.05f;  // Stops them from running straight
+    private float minCheckTime = 0.5f;
+    private float maxCheckTime = 1.5f;
+    private float stopDistance = 0.5f;  // When they start slowing down
     private bool debugPath = false;
 
     private Vector2 runDestination = Vector2.zero;
     private PathfindingSmoothing path;
+    private int pathErrorCheck;
     private int pathIndex = 0;
     private float speedPercent;
 
-    private float checkTime;
+    public float checkTime;
 
 
     public RunState()
@@ -54,6 +55,7 @@ public class RunState : StateBaseClass
                         runDestination = Vector2.zero;  // Stop to look around and see if they escaped
                         checkTime = Random.Range(minCheckTime, maxCheckTime);
                         FindWalkTarget();
+                        character.isMoving = false;
                         return;
                     }
                     else  // Has reached a checkpoint
@@ -77,6 +79,8 @@ public class RunState : StateBaseClass
             }
             else
                 FindWalkTarget();
+
+            character.isMoving = true;
         }
     }
 
@@ -89,6 +93,7 @@ public class RunState : StateBaseClass
                                      -moveVector.y + Random.Range(-runOffset, runOffset)) * Random.Range(minRunDistance, maxRunDistance);
 
         PathfindingRequestManager.RequestPath(transform.position, runDestination, this, OnPathFound);
+        pathErrorCheck++;
     }
 
 
@@ -99,6 +104,13 @@ public class RunState : StateBaseClass
             path = new PathfindingSmoothing(waypoints, transform.position, character.turnDistance, stopDistance);
             pathIndex = 0;
             speedPercent = 1;
+            pathErrorCheck = 0;
+        }
+        else if (pathErrorCheck > 250)
+        {
+            Debug.Log(character.transform.name + " Run state pathfinding error");
+            if (PathfindingRequestManager.requestListSize < 5)
+                FindWalkTarget();
         }
         else
             FindWalkTarget();  // Try and find a new path
