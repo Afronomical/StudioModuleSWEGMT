@@ -103,10 +103,10 @@ public class playerAttack : MonoBehaviour
         //calls damage enemy when LMB is pressed
         if (Input.GetKey(KeyCode.Mouse0))
         {
+            animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.SlashAttack);
             
             if (canHit)
             {
-                animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.SlashAttack);
                 AudioManager.Manager.PlaySFX("PlayerAttack");
                 damageEnemy();
                 canHit = false;

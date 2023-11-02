@@ -24,6 +24,7 @@ public class PlayerDeath : MonoBehaviour
     private Animator animator;
     private PlayerAnimationController animationController;
     private bool isDead = false;
+    private bool isDamaged = false;
 
     private void Start()
     {
@@ -37,6 +38,8 @@ public class PlayerDeath : MonoBehaviour
 
     private void Update()
     {
+        IsDamaged();
+
         if (isInvincible)
         {
             // Decrement the invincibility timer
@@ -101,9 +104,9 @@ public class PlayerDeath : MonoBehaviour
     {
         if (!isInvincible)
         {
+            isDamaged = true;
             AudioManager.Manager.PlaySFX("PlayerTakeDamage");
             currentHealth -= damage;
-            animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Hurt);
             healthBarScript.setHealth(currentHealth);
             showFloatingText();
             
@@ -112,6 +115,19 @@ public class PlayerDeath : MonoBehaviour
             isInvincible = true;
             invincibilityTimer = invincibilityDuration;
 
+        }
+    }
+
+    private void IsDamaged()
+    {
+        if (isDamaged)
+        {
+            animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Hurt);
+
+            if (!animationController.IsAnimationPlaying(animator, PlayerAnimationController.AnimationStates.Hurt)) 
+            {
+                isDamaged = false;
+            }
         }
     }
 
@@ -141,6 +157,7 @@ public class PlayerDeath : MonoBehaviour
 
     public void SunRiseDamage() // Deals Damage While The Player Is In Sun Light
     {
+        animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Hurt);
         currentHealth = currentHealth - sunDamage;
         healthBarScript.setHealth(currentHealth);
     }

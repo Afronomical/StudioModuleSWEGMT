@@ -52,7 +52,6 @@ public class Feeding : MonoBehaviour
         {
             //Play Feed SFX
             AudioManager.Manager.PlaySFX("PlayerFeed");
-            animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Feed);
             // Feed on the current AI character in the feeding zone when it's downed
             currentHunger += 1;
             hungerBarSlider.SetHunger(currentHunger);
@@ -61,6 +60,11 @@ public class Feeding : MonoBehaviour
 
             // Call a method in the PlayerDeath script to increase player health
             playerDeath.FeedAttack();
+        }
+
+        if (Input.GetKey(healKey) && currentTarget != null)
+        {
+            animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Feed);
         }
     }
 }
