@@ -34,7 +34,7 @@ public class SFX_Controller
 //AudioManager.Manager.Play("NPC_MeleeAttack");
 //AudioManager.Manager.Play("NPC_RangedAttack");
 //AudioManager.Manager.Play("NPC_Downed");
-//AudioManager.Manager.Play("NPC_Scream");
+//AudioManager.Manager.Play("SunriseApproaching");
 //AudioManager.Manager.Play("NPC_Alerted");
 //AudioManager.Manager.Play("UI_Click");
 //AudioManager.Manager.Play("UI_Loading");
