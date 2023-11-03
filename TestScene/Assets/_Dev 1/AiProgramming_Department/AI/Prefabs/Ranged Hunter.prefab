@@ -107,6 +107,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterType: 2
   health: 3
+  hungerValue: 2
   walkSpeed: 2
   runSpeed: 5
   crawlSpeed: 0.5
@@ -129,11 +130,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a24d8aecd3ce13a468536f48c8a327a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectionRange: 8
-  attackRange: 5
+  detectionRange: 10
+  attackRange: 8
   unwalkableLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
 --- !u!61 &7142695189202120243
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -193,8 +194,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_LinearDrag: 15
+  m_AngularDrag: 7.5
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:

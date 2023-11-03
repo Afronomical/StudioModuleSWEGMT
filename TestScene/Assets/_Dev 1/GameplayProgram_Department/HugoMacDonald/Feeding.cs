@@ -54,7 +54,7 @@ public class Feeding : MonoBehaviour
             AudioManager.Manager.PlaySFX("PlayerFeed");
             animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Feed);
             // Feed on the current AI character in the feeding zone when it's downed
-            currentHunger += 1;
+            currentHunger += currentTarget.hungerValue;
             hungerBarSlider.SetHunger(currentHunger);
 
             currentTarget.health -= 1;

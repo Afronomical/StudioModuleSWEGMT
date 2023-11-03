@@ -12,7 +12,7 @@ public class ShootState : StateBaseClass
 
     public Transform origin;
     public GameObject bulletPrefab;
-    private float bulletSpeed = 500f;
+    private float bulletSpeed = 8.5f;
     
 
     //Gameplay Programmers Script for the Player Health
@@ -54,6 +54,6 @@ public class ShootState : StateBaseClass
     {
         Vector2 distance = character.player.transform.position - character.transform.position;
         GameObject bullet = Instantiate(bulletPrefab, origin.position, origin.rotation);
-        bullet.GetComponent<Rigidbody2D>().velocity = distance * bulletSpeed * Time.deltaTime;
+        bullet.GetComponent<Rigidbody2D>().velocity = distance.normalized * bulletSpeed;
     }
 }

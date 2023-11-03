@@ -9,10 +9,11 @@ public class PatrolState : StateBaseClass
     private bool walking;
     private Vector2 walkDestination;
     private float idleTime;
-    private float maxWalkDistance = 10;  // How far the character can walk while idle
+    private float minWalkDistance = 6;
+    private float maxWalkDistance = 12;  // How far the character can walk while idle
     private float minIdleTime = 0;
     private float maxIdleTime = 3;
-    private float stopDistance = 1;  // When they start slowing down
+    private float stopDistance = 0.25f;  // When they start slowing down
     private bool debugPath = false;
 
     private PathfindingSmoothing path;
@@ -93,9 +94,12 @@ public class PatrolState : StateBaseClass
 
     private void FindWalkTarget()
     {
-        walkDestination = new Vector2(character.GetPosition().x + Random.Range(-maxWalkDistance, maxWalkDistance), character.GetPosition().y + Random.Range(-maxWalkDistance, maxWalkDistance));
-        PathfindingRequestManager.RequestPath(transform.position, walkDestination, this, OnPathFound);
         pathErrorCheck++;
+        walkDestination = new Vector2(character.GetPosition().x + Random.Range(-maxWalkDistance, maxWalkDistance), character.GetPosition().y + Random.Range(-maxWalkDistance, maxWalkDistance));
+        if (Vector3.Distance(character.GetPosition(), walkDestination) < minWalkDistance)
+            FindWalkTarget();
+        else
+            PathfindingRequestManager.RequestPath(transform.position, walkDestination, this, OnPathFound);
     }
 
 

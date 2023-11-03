@@ -29,9 +29,8 @@ public class Bullet : MonoBehaviour
             player.GetComponent<PlayerDeath>().RemoveHealth(bulletDamage);
             Destroy(gameObject);
         }
-        else if (collision.gameObject.CompareTag("Villager"))//add hunter and any other colliders here
+        else if (collision.gameObject.layer == LayerMask.NameToLayer("Unwalkable"))
         {
-            //add any checks to destroy bullet here
             Destroy(gameObject);
         }
     }
