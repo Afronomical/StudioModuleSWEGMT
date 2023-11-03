@@ -52,10 +52,10 @@ public class AIAnimationController : MonoBehaviour
 
     private void Update()
     {
-        if (AnimationStates.SwordAttack == currentState)
+        /*if (AnimationStates.SwordAttack == currentState)
         {
             AudioManager.Manager.PlaySFX("NPC_MeleeAttack");
-        }
+        /*}
 
         /*if (AnimationStates.BowAttack == currentState)
         {
