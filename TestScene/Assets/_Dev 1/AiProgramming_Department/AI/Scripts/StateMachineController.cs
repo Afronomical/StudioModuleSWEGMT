@@ -125,16 +125,17 @@ public class StateMachineController : MonoBehaviour
 
     private void RangedHunterStates()
     { 
-        if (distance < attackRange)
+        if (distance < attackRange && RaycastToPlayer(distance))
         {
             character.ChangeState(AICharacter.States.Shoot);
         }
-        else if (distance < detectionRange && distance > attackRange)
+
+        else if (distance < detectionRange)
         {
             character.ChangeState(AICharacter.States.Hunt);
         }
 
-        else if (distance > detectionRange)
+        else
         {
             character.ChangeState(AICharacter.States.Patrol);
         }

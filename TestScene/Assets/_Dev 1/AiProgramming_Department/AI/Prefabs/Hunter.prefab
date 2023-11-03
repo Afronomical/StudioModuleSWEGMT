@@ -106,8 +106,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterType: 1
   health: 3
+  hungerValue: 3
   walkSpeed: 2
-  runSpeed: 6
+  runSpeed: 5.5
   crawlSpeed: 0.5
   turnSpeed: 2
   turnDistance: 1
@@ -132,7 +133,7 @@ MonoBehaviour:
   attackRange: 1
   unwalkableLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
 --- !u!61 &5003693677747352745
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -191,9 +192,9 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 1.75
+  m_LinearDrag: 15
+  m_AngularDrag: 7.5
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -407,6 +408,8 @@ GameObject:
   - component: {fileID: 3522959902128332175}
   - component: {fileID: 4972735768924884987}
   - component: {fileID: 4622460344589319978}
+  - component: {fileID: 4052197312175468408}
+  - component: {fileID: 7539895397861853076}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -517,6 +520,40 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   faceTowards: {fileID: 8330677311624415417}
 --- !u!114 &4622460344589319978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6239938354583543264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8be5dd2a69a63e94eb0b327d9c093baa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationStatesList: 00000000010000000200000003000000040000000500000006000000
+  animationStringsList:
+  - Idle Tree
+  - Walk Tree
+  - Hurt Tree
+  - Downed Tree
+  - S_Death
+  - BowAttack Tree
+  - SwordAttack Tree
+--- !u!114 &4052197312175468408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6239938354583543264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3b70362f5dcf2f47b5ed8b4a1ce4d89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  faceTowards: {fileID: 8330677311624415417}
+--- !u!114 &7539895397861853076
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

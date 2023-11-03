@@ -36,6 +36,7 @@ public class AICharacter : MonoBehaviour
     [Header("Character Stats")]
     public CharacterTypes characterType;
     public int health = 3;
+    public int hungerValue = 1;
     public float walkSpeed, runSpeed, crawlSpeed;
     public float turnSpeed;
     public float turnDistance;

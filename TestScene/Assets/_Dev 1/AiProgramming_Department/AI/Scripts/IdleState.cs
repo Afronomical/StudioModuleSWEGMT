@@ -17,9 +17,10 @@ public class IdleState : StateBaseClass
     private Vector3 walkDestination;
     private float idleTime;
     private float minIdleTime = 2;
-    private float maxIdleTime = 10;
-    private float maxWalkDistance = 5;  // How far the character can walk while idle
-    private float stopDistance = 1;  // When they start slowing down
+    private float maxIdleTime = 7;
+    private float minWalkDistance = 3;
+    private float maxWalkDistance = 6;  // How far the character can walk while idle
+    private float stopDistance = 0.5f;  // When they start slowing down
     private bool debugPath = false;
 
     private PathfindingSmoothing path;
@@ -101,9 +102,16 @@ public class IdleState : StateBaseClass
 
     private void FindWalkTarget()
     {
-        walkDestination = new Vector3(character.GetPosition().x + Random.Range(-maxWalkDistance, maxWalkDistance), character.GetPosition().y + Random.Range(-maxWalkDistance, maxWalkDistance));
-        PathfindingRequestManager.RequestPath(transform.position, walkDestination, this, OnPathFound);
         pathErrorCheck++;
+        walkDestination = new Vector3(character.GetPosition().x + Random.Range(-maxWalkDistance, maxWalkDistance), character.GetPosition().y + Random.Range(-maxWalkDistance, maxWalkDistance));
+        if (Vector3.Distance(character.GetPosition(), walkDestination) < minWalkDistance)
+        {
+            FindWalkTarget();
+        }
+        else
+        {
+            PathfindingRequestManager.RequestPath(transform.position, walkDestination, this, OnPathFound);
+        }
     }
 
 
