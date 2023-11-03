@@ -16,6 +16,9 @@ public class CoffinInteraction : MonoBehaviour
     public TMP_Text useCoffin;
     public int hungerThreshold = 5; //This might need to be moved into 
 
+    public ToolTipManager toolTipManager;
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +34,7 @@ public class CoffinInteraction : MonoBehaviour
         stillHungry.enabled = false;
         openCoffin.enabled = false;
         useCoffin.enabled = false;
+        ToolTipManager.HideToolTip_Static();
     }
 
     //When coffin is closed
@@ -39,8 +43,10 @@ public class CoffinInteraction : MonoBehaviour
         if(collision.collider.CompareTag("Player") && hungerCheck.currentHunger == 0)
         {
             //Display a message to the player that you cant sleep yet
-            closedCoffin.enabled = true;
-            print("Can't sleep yet, I must feast first!");
+            //closedCoffin.enabled = true;
+            //print("Can't sleep yet, I must feast first!");
+           
+            ToolTipManager.ShowToolTip_Static("Can't sleep yet, I must feast first");
         }
         else if(collision.collider.CompareTag("Player") && hungerCheck.currentHunger > 0 && hungerCheck.currentHunger < hungerThreshold)
         {
@@ -54,6 +60,7 @@ public class CoffinInteraction : MonoBehaviour
         {
             closedCoffin.enabled = false; //Remove tooltip off screen
             stillHungry.enabled = false;
+            ToolTipManager.HideToolTip_Static();
         }
     }
 

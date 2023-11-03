@@ -8,14 +8,14 @@ using UnityEngine.UIElements;
 public class ToolTipManager : MonoBehaviour
 {
     public static ToolTipManager instance;
-    private TextMeshProUGUI toolTipText;
+    public TextMeshProUGUI toolTipText;
     private RectTransform backgroundRectTransform;
 
     private void Awake()
     {
         instance = this;
-        backgroundRectTransform = transform.Find("Background").GetComponent<RectTransform>();
-        toolTipText = transform.Find("ToolTipText").GetComponent<TextMeshProUGUI>();
+        //backgroundRectTransform = transform.Find("Background").GetComponent<RectTransform>();
+       // toolTipText = transform.Find("ToolTipText").GetComponent<TextMeshProUGUI>();
 
 
     }
@@ -26,10 +26,10 @@ public class ToolTipManager : MonoBehaviour
         gameObject.SetActive(true);
 
         toolTipText.text = tooltipString;
-        float textPaddingSize = 4f;
+        //float textPaddingSize = 4f;
 
-        Vector2 backgroundSize = new Vector2(toolTipText.preferredWidth + textPaddingSize * 2f, toolTipText.preferredHeight + textPaddingSize * 2f);
-        backgroundRectTransform.sizeDelta = backgroundSize;
+        //Vector2 backgroundSize = new Vector2(toolTipText.preferredWidth + textPaddingSize * 2f, toolTipText.preferredHeight + textPaddingSize * 2f);
+        //backgroundRectTransform.sizeDelta = backgroundSize;
 
     }
 
