@@ -10,6 +10,7 @@ public class Feeding : MonoBehaviour
     private bool canHeal = false; // To check if the player is inside the healing zone
     private AICharacter currentTarget = null; // Store the current AI character being healed
     public HungerBar hungerBarSlider;
+    public GameObject flashingCanvas;
     public PlayerDeath playerDeath; // Reference to the PlayerDeath script
 
     private Animator animator;
@@ -55,7 +56,7 @@ public class Feeding : MonoBehaviour
             // Feed on the current AI character in the feeding zone when it's downed
             currentHunger += 1;
             hungerBarSlider.SetHunger(currentHunger);
-
+            flashingCanvas.SetActive(false);
             currentTarget.health -= 1;
 
             // Call a method in the PlayerDeath script to increase player health
