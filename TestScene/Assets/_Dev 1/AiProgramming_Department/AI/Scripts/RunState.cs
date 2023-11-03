@@ -13,7 +13,7 @@ public class RunState : StateBaseClass
 {
     private float minRunDistance = 4;
     private float maxRunDistance = 6;
-    private float runOffset = 0.05f;  // Stops them from running straight
+    private float runOffset = 0.1f;  // Stops them from running straight
     private float minCheckTime = 0.5f;
     private float maxCheckTime = 1.5f;
     private float stopDistance = 0.5f;  // When they start slowing down
@@ -87,10 +87,10 @@ public class RunState : StateBaseClass
 
     private void FindWalkTarget()
     {
-        Vector3 moveVector = character.GetPlayerPosition() - character.transform.position;
+        Vector3 moveVector = character.GetPlayerPosition() - (new Vector3(character.transform.position.x + Random.Range(-runOffset, runOffset), character.transform.position.y + Random.Range(-runOffset, runOffset), 0));
         moveVector = moveVector.normalized;
-        runDestination = new Vector3((-moveVector.x + Random.Range(-runOffset, runOffset)) * Random.Range(minRunDistance, maxRunDistance),
-                                     -moveVector.y + Random.Range(-runOffset, runOffset)) * Random.Range(minRunDistance, maxRunDistance);
+        runDestination = new Vector3(-moveVector.x * Random.Range(minRunDistance, maxRunDistance),
+                                     -moveVector.y * Random.Range(minRunDistance, maxRunDistance));
 
         PathfindingRequestManager.RequestPath(transform.position, runDestination, this, OnPathFound);
         pathErrorCheck++;
