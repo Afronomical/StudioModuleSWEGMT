@@ -151,12 +151,13 @@ public class PlayerDeath : MonoBehaviour
     }
     private void deathAfterDelay()
     {
-        AudioManager.Manager.StopAudio("LevelMusic");
+        AudioManager.Manager.StopMusic("LevelMusic");
         SceneManager.LoadScene("MainMenu");
     }
 
     public void SunRiseDamage() // Deals Damage While The Player Is In Sun Light
     {
+        AudioManager.Manager.PlaySFX("PlayerTakeDamage");
         animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Hurt);
         currentHealth = currentHealth - sunDamage;
         healthBarScript.setHealth(currentHealth);

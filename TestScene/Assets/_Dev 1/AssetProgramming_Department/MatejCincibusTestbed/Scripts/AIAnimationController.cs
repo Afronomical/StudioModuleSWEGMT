@@ -50,6 +50,19 @@ public class AIAnimationController : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (AnimationStates.SwordAttack == currentState)
+        {
+            AudioManager.Manager.PlaySFX("NPC_MeleeAttack");
+        }
+
+        /*if (AnimationStates.BowAttack == currentState)
+        {
+            AudioManager.Manager.PlaySFX("NPC_RangedAttack");
+        }*/
+    }
+
     public void ChangeAnimationState(AnimationStates newState)
     {
         if (currentState == newState) return;

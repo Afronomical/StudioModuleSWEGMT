@@ -51,6 +51,13 @@ public class PlayerAnimationController : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if(AnimationStates.SlashAttack == currentState) 
+        {
+            AudioManager.Manager.PlaySFX("PlayerAttack");
+        }
+    }
     public void ChangeAnimationState(AnimationStates newState)
     {
         if (currentState == newState) return;

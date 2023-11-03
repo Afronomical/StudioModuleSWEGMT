@@ -28,8 +28,7 @@ public class SunRise : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        
+                
         nightTime = countdownTimer.timeRemaining; // Links Up The "nightTime" Variable To The Countdown Clock
 
 
@@ -46,8 +45,7 @@ public class SunRise : MonoBehaviour
             }
 
         }
-
-        
+               
     }
 
     private IEnumerator sunDamage()

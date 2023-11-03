@@ -36,6 +36,7 @@ public class PauseMenu : MonoBehaviour
     }
     public void Resume()
     {
+        AudioManager.Manager.PlaySFX("UI_Click");
         isPaused = false;
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
@@ -43,9 +44,10 @@ public class PauseMenu : MonoBehaviour
 
     public void LoadMenu()
     {
+        AudioManager.Manager.PlaySFX("UI_Click");
         pauseMenuUI.SetActive(false);
         SceneManager.LoadScene(0);
-        AudioManager.Manager.StopAudio("LevelMusic");
+        AudioManager.Manager.StopMusic("LevelMusic");
         
        // loadingScreen.enabled = true;
         
@@ -56,10 +58,11 @@ public class PauseMenu : MonoBehaviour
 
     public void Quit()
     {
-
+        AudioManager.Manager.PlaySFX("UI_Click");
     }
     public void LoadSettingsMenu()
     {
+        AudioManager.Manager.PlaySFX("UI_Click");
         Debug.Log("settings menu opened");
     }
 }

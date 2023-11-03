@@ -38,26 +38,20 @@ public class AudioManager : MonoBehaviour
             m.source.clip = m.clip;
             m.source.volume = m.volume;
             m.source.pitch = m.pitch;
-            m.source.loop = m.Loop;
-            
+            m.source.loop = m.Loop;            
         }
     }
 
     public void PlaySFX(string name)
     {
         SFX_Controller s = Array.Find(Sounds, SFX_Controller => SFX_Controller.Name == name);
-        s.source.Play();
-        
-        
-       // m.source.Play();
+        s.source.Play();        
 
         if (s == null )
         {
             Debug.Log("Sound: " + name + " not found!");
             return;
-        }
-        
-
+        }     
     }
 
     public void PlayMusic(String  name)
@@ -70,9 +64,8 @@ public class AudioManager : MonoBehaviour
             Debug.Log("Music: " + name + " not found!");
             return;
         }
-
     }
-    public void StopAudio(string name)
+    public void StopMusic(string name)
     {
         Music_Controller m = Array.Find(Music, music=> music.Name== name);
         if(m != null)
@@ -80,7 +73,7 @@ public class AudioManager : MonoBehaviour
             m.source.Stop();
         }
     }
-    public void StopSoundEffect(string name)
+    public void StopSFX(string name)
     {
         SFX_Controller s = Array.Find(Sounds,sound=> sound.Name == name);
         if(s != null)
@@ -88,20 +81,7 @@ public class AudioManager : MonoBehaviour
             s.source.Stop();
         }
     }
-    
-
-
 }
-
-
-
-
-
-
-
-
-
-
 
 //Old Manager
 /*public class AudioManager : MonoBehaviour

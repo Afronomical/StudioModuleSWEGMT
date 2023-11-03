@@ -13,6 +13,7 @@ public class InstructionsMenuController : MonoBehaviour
 
     public void Back()
     {
+        AudioManager.Manager.PlaySFX("UI_Click");
         SceneManager.LoadScene(0);
         //Debug.Log("Back to main menu!");
     }
@@ -26,6 +27,7 @@ public class InstructionsMenuController : MonoBehaviour
     {
         if (instructionIndex < instructionTexts.Count - 1)
         {
+            AudioManager.Manager.PlaySFX("UI_Click");
             instructionIndex++;
             DisplayText();
         }
@@ -35,6 +37,7 @@ public class InstructionsMenuController : MonoBehaviour
     {
         if (instructionIndex > 0)
         {
+            AudioManager.Manager.PlaySFX("UI_Click");
             instructionIndex--;
             DisplayText();
         }

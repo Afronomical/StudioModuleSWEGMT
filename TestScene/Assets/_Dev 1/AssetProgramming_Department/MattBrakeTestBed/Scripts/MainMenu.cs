@@ -14,7 +14,7 @@ public class MainMenu : MonoBehaviour
     public void PlayGame()
     {
         AudioManager.Manager.PlaySFX("UI_Click");
-        AudioManager.Manager.StopAudio("MenuMusic");
+        AudioManager.Manager.StopMusic("MenuMusic");
         Debug.Log("Play Game");
         SceneManager.LoadScene(2);
         Time.timeScale = 1; 
