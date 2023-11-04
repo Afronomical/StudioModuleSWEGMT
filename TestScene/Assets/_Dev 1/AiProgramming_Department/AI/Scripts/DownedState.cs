@@ -89,7 +89,7 @@ public class DownedState : StateBaseClass
         crawlDestination = new Vector3((-moveVector.x + Random.Range(-crawlOffset, crawlOffset)) * Random.Range(minCrawlDistance, maxCrawlDistance),
                                      -moveVector.y + Random.Range(-crawlOffset, crawlOffset)) * Random.Range(minCrawlDistance, maxCrawlDistance);
 
-        PathfindingRequestManager.RequestPath(transform.position, crawlDestination, this, OnPathFound);
+        PathfindingRequestManager.RequestPath(new PathRequest(transform.position, crawlDestination, this, OnPathFound));
         pathErrorCheck++;
     }
 
@@ -103,12 +103,12 @@ public class DownedState : StateBaseClass
             speedPercent = 1;
             pathErrorCheck = 0;
         }
-        else if (pathErrorCheck > 250)
-        {
-            Debug.Log(character.transform.name + " Downed state pathfinding error");
-            if (PathfindingRequestManager.requestListSize < 5)
-                FindWalkTarget();
-        }
+        //else if (pathErrorCheck > 250)
+        //{
+        //    Debug.Log(character.transform.name + " Downed state pathfinding error");
+        //    if (PathfindingRequestManager.requestListSize < 5)
+        //        FindWalkTarget();
+        //}
         else
             FindWalkTarget();  // Try and find a new path
     }

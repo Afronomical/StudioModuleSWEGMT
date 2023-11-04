@@ -110,7 +110,7 @@ public class IdleState : StateBaseClass
         }
         else
         {
-            PathfindingRequestManager.RequestPath(transform.position, walkDestination, this, OnPathFound);
+            PathfindingRequestManager.RequestPath(new PathRequest(transform.position, walkDestination, this, OnPathFound));
         }
     }
 
@@ -124,12 +124,12 @@ public class IdleState : StateBaseClass
             speedPercent = 1;
             pathErrorCheck = 0;
         }
-        else if (pathErrorCheck > 250)
-        {
-            Debug.Log(character.transform.name + " Idle state pathfinding error");
-            if (PathfindingRequestManager.requestListSize < 5)
-                FindWalkTarget();
-        }
+        //else if (pathErrorCheck > 250)
+        //{
+        //    Debug.Log(character.transform.name + " Idle state pathfinding error");
+        //    if (PathfindingRequestManager.requestListSize < 5)
+        //        FindWalkTarget();
+        //}
         else
             FindWalkTarget();  // Try and find a new path
     }

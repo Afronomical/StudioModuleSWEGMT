@@ -99,7 +99,7 @@ public class PatrolState : StateBaseClass
         if (Vector3.Distance(character.GetPosition(), walkDestination) < minWalkDistance)
             FindWalkTarget();
         else
-            PathfindingRequestManager.RequestPath(transform.position, walkDestination, this, OnPathFound);
+            PathfindingRequestManager.RequestPath(new PathRequest(transform.position, walkDestination, this, OnPathFound));
     }
 
 
@@ -112,12 +112,12 @@ public class PatrolState : StateBaseClass
             speedPercent = 1;
             pathErrorCheck = 0;
         }
-        else if (pathErrorCheck > 250)
-        {
-            Debug.Log(character.transform.name + " Patrol state pathfinding error");
-            if (PathfindingRequestManager.requestListSize < 5)
-                FindWalkTarget();
-        }
+        //else if (pathErrorCheck > 250)
+        //{
+        //    Debug.Log(character.transform.name + " Patrol state pathfinding error");
+        //    if (PathfindingRequestManager.requestListSize < 5)
+        //        FindWalkTarget();
+        //}
         else
             FindWalkTarget();  // Try and find a new path
     }

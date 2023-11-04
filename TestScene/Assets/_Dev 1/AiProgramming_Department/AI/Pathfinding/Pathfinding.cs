@@ -15,7 +15,6 @@ using UnityEngine;
 public class Pathfinding : MonoBehaviour
 {
     PathfindingGrid grid;
-    PathfindingRequestManager requestManager;
     [HideInInspector] public PathfindingHeap<PathfindingNode> openNodes;
     private HashSet<PathfindingNode> closedNodes = new HashSet<PathfindingNode>();
     public bool debugTimeTaken;
@@ -24,25 +23,24 @@ public class Pathfinding : MonoBehaviour
     private void Awake()
     {
         grid = GetComponent<PathfindingGrid>();
-        requestManager = GetComponent<PathfindingRequestManager>();
     }
 
 
-    public void StartFindPath(Vector3 startPos, Vector3 targetPos)
-    {
-        StartCoroutine(FindPath(startPos, targetPos));
-    }
+    //public void StartFindPath(Vector3 startPos, Vector3 targetPos)
+    //{
+    //    StartCoroutine(FindPath(startPos, targetPos));
+    //}
 
 
-    public IEnumerator FindPath(Vector3 startPos, Vector3 targetPos)
+    public void FindPath(PathRequest request, Action<PathResult> callback)
     {
         Stopwatch sw = new Stopwatch();
 
         Vector3[] waypoints = new Vector3[0];
         bool pathSuccess = false;
 
-        PathfindingNode startNode = grid.GetNodeFromPosition(startPos);
-        PathfindingNode targetNode = grid.GetNodeFromPosition(targetPos);
+        PathfindingNode startNode = grid.GetNodeFromPosition(request.pathStart);
+        PathfindingNode targetNode = grid.GetNodeFromPosition(request.pathEnd);
 
         if (targetNode.walkable)
         {
@@ -85,11 +83,13 @@ public class Pathfinding : MonoBehaviour
                 }
             }
         }
-        yield return null;
 
         if (pathSuccess)  // If it found a path
+        {
             waypoints = RetracePath(startNode, targetNode);  // Create an array of waypoints using the path found
-        requestManager.FinishedProcessingPath(waypoints, pathSuccess);  // Return the result
+            pathSuccess = waypoints.Length > 0;
+        }
+        callback(new PathResult(waypoints, pathSuccess, request.callback));  // Return the result
     }
 
 

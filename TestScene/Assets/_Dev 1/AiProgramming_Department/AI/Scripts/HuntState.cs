@@ -26,7 +26,7 @@ public class HuntState : StateBaseClass
         if (refreshTimer <= 0)
         {
             refreshTimer = pathRefreshTime;
-            PathfindingRequestManager.RequestPath(transform.position, character.player.transform.position, this, OnPathFound);
+            PathfindingRequestManager.RequestPath(new PathRequest(transform.position, character.player.transform.position, this, OnPathFound));
             pathErrorCheck++;
         }
 
@@ -64,14 +64,14 @@ public class HuntState : StateBaseClass
             pathErrorCheck = 0;
             character.isMoving = true;
         }
-        else if (pathErrorCheck > 250)
-        {
-            Debug.Log(character.transform.name + " Hunt state pathfinding error");
-            if (PathfindingRequestManager.requestListSize < 5)
-                refreshTimer = 0;
-            else
-                refreshTimer = 10;
-        }
+        //else if (pathErrorCheck > 250)
+        //{
+        //    Debug.Log(character.transform.name + " Hunt state pathfinding error");
+        //    if (PathfindingRequestManager.requestListSize < 5)
+        //        refreshTimer = 0;
+        //    else
+        //        refreshTimer = 10;
+        //}
         else
             refreshTimer = 0;  // Try and find a new path
     }

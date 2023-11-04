@@ -64,7 +64,7 @@ public class StateMachineController : MonoBehaviour
 
 
 
-        if (character.isMoving && character.currentState != AICharacter.States.Run)  // Check to see if the character is stuck on an object
+        if (character.isMoving && character.currentState != AICharacter.States.Run && character.currentState != AICharacter.States.Downed)  // Check to see if the character is stuck on an object
         {
             if (StuckCheck())
             {
