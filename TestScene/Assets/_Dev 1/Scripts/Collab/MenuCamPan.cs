@@ -28,7 +28,7 @@ public class MenuCamPan : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        if (Vector2.Distance(waypoint[currentWayPointIndex].transform.position, transform.position) < 1)
+        if (Vector2.Distance(waypoint[currentWayPointIndex].transform.position, transform.position) < 3)
         {
             currentWayPointIndex++;
             if(currentWayPointIndex >= waypoint.Length)
@@ -37,7 +37,7 @@ public class MenuCamPan : MonoBehaviour
             }
 
         }
-        transform.position = Vector2.LerpUnclamped(transform.position, waypoint[currentWayPointIndex].transform.position, Time.deltaTime * speed);
+        transform.position = Vector2.MoveTowards(transform.position, waypoint[currentWayPointIndex].transform.position, Time.deltaTime * speed);
 
 
         switch (timeOfDay)
