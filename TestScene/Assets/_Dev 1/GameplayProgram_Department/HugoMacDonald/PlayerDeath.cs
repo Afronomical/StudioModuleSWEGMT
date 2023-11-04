@@ -108,7 +108,7 @@ public class PlayerDeath : MonoBehaviour
             AudioManager.Manager.PlaySFX("PlayerTakeDamage");
             currentHealth -= damage;
             healthBarScript.setHealth(currentHealth);
-            showFloatingText();
+            showFloatingText(damage);
             
 
             // Apply invincibility
@@ -163,13 +163,13 @@ public class PlayerDeath : MonoBehaviour
         healthBarScript.setHealth(currentHealth);
     }
 
-    void showFloatingText()
+    void showFloatingText(int damage)
     {
 
         Vector3 spawnPos = transform.position + offset; 
         
         var go = Instantiate(floatingText, spawnPos, Quaternion.identity, transform);
-        go.GetComponentInChildren<TextMeshProUGUI>().text = currentHealth.ToString();
+        go.GetComponentInChildren<TextMeshProUGUI>().text = damage.ToString();
     }
 
     public bool IsDead()
