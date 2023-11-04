@@ -11,7 +11,6 @@ public class HuntState : StateBaseClass
 
     private PathfindingSmoothing path;
     private int pathIndex = 0;
-    private int pathErrorCheck;
 
 
     public override void UpdateLogic()
@@ -27,7 +26,6 @@ public class HuntState : StateBaseClass
         {
             refreshTimer = pathRefreshTime;
             PathfindingRequestManager.RequestPath(new PathRequest(transform.position, character.player.transform.position, this, OnPathFound));
-            pathErrorCheck++;
         }
 
 
@@ -61,17 +59,8 @@ public class HuntState : StateBaseClass
         {
             path = new PathfindingSmoothing(waypoints, transform.position, character.turnDistance, 0);
             pathIndex = 0;
-            pathErrorCheck = 0;
             character.isMoving = true;
         }
-        //else if (pathErrorCheck > 250)
-        //{
-        //    Debug.Log(character.transform.name + " Hunt state pathfinding error");
-        //    if (PathfindingRequestManager.requestListSize < 5)
-        //        refreshTimer = 0;
-        //    else
-        //        refreshTimer = 10;
-        //}
         else
             refreshTimer = 0;  // Try and find a new path
     }
