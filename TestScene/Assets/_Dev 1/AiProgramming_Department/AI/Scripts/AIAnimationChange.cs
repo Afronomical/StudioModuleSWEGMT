@@ -11,6 +11,8 @@ public class AIAnimationChange : MonoBehaviour
     private AICharacter characterScript;
     public Transform faceTowards;
 
+    private bool characterAttacking = false;
+
     void Start()
     {
         characterTransform = transform.parent;
@@ -59,7 +61,18 @@ public class AIAnimationChange : MonoBehaviour
                     animController.ChangeAnimationState(AIAnimationController.AnimationStates.Downed);
                     break;
                 case AICharacter.States.Attack:
-                    animController.ChangeAnimationState(AIAnimationController.AnimationStates.SwordAttack);
+                    if (!characterAttacking)
+                    {
+                        animController.ChangeAnimationState(AIAnimationController.AnimationStates.SwordAttack);
+                        characterAttacking = true;
+                    }
+                    else
+                    {
+                        if (!animController.IsAnimationPlaying(anim, AIAnimationController.AnimationStates.SwordAttack))
+                        {
+                            characterAttacking = false;
+                        }
+                    }
                     break;
                 case AICharacter.States.Shoot:
                     animController.ChangeAnimationState(AIAnimationController.AnimationStates.BowAttack);
