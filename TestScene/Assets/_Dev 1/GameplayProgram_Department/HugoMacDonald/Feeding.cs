@@ -56,7 +56,7 @@ public class Feeding : MonoBehaviour
             // Feed on the current AI character in the feeding zone when it's downed
             currentHunger += currentTarget.hungerValue;
             hungerBarSlider.SetHunger(currentHunger);
-            flashingCanvas.SetActive(false);
+            //flashingCanvas.SetActive(false);
             currentTarget.health -= 1;
 
             // Call a method in the PlayerDeath script to increase player health
