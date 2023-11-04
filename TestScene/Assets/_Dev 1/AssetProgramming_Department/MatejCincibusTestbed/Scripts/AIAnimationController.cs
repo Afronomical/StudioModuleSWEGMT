@@ -29,7 +29,8 @@ public class AIAnimationController : MonoBehaviour
     // GOs Animator Component:
     private Animator animator;
     private AnimationStates currentState;
-
+    private bool sfxCanPlay = true;
+    private bool sfxJustPlayed = false;
     // INFO: The position of each state and string should match in both lists, otherwise the state will point to a completely different animation
 
     // List of all the GOs animation states that will be used as a key later to access instead of calling via strings
@@ -52,15 +53,34 @@ public class AIAnimationController : MonoBehaviour
 
     private void Update()
     {
-        /*if (AnimationStates.SwordAttack == currentState)
+        /*if (AnimationStates.SwordAttack == currentState && sfxCanPlay == true)
         {
             AudioManager.Manager.PlaySFX("NPC_MeleeAttack");
-        /*}
-
+            sfxJustPlayed = true;
+        }
+        if (sfxJustPlayed == true)
+        {
+            AudioManager.Manager.StopSFX("NPC_MeleeAttack");
+        }*/
         /*if (AnimationStates.BowAttack == currentState)
         {
-            AudioManager.Manager.PlaySFX("NPC_RangedAttack");
+            if (sfxCanPlay == true)
+            {
+                AudioManager.Manager.PlaySFX("NPC_RangedAttack");
+                sfxCanPlay = false;
+                AudioManager.Manager.StopSFX("NPC_RangedAttack");
+            }            
+        }
+        if (AnimationStates.Downed == currentState)
+        {
+            if (sfxCanPlay == true)
+            {
+                AudioManager.Manager.PlaySFX("NPC_Downed");
+                sfxCanPlay = false;
+                AudioManager.Manager.StopSFX("NPC_Downed");
+            }
         }*/
+
     }
 
     public void ChangeAnimationState(AnimationStates newState)

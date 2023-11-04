@@ -30,6 +30,7 @@ public class PlayerAnimationController : MonoBehaviour
     // GOs Animator Component:
     private Animator animator;
     private AnimationStates currentState;
+    private bool sfxCanPlay = true;
 
     // INFO: The position of each state and string should match in both lists, otherwise the state will point to a completely different animation
 
@@ -53,9 +54,12 @@ public class PlayerAnimationController : MonoBehaviour
 
     private void Update()
     {
-        if(AnimationStates.SlashAttack == currentState) 
+        if (AnimationStates.SlashAttack == currentState && sfxCanPlay == true)
         {
             AudioManager.Manager.PlaySFX("PlayerAttack");
+                /*sfxCanPlay = false;
+                AudioManager.Manager.StopSFX("PlayerAttack");*/
+        
         }
     }
     public void ChangeAnimationState(AnimationStates newState)

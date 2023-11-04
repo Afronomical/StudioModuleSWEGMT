@@ -97,7 +97,7 @@ public class AICharacter : MonoBehaviour
                     stateScript = transform.AddComponent<RunState>();
                     break;
                 case States.Attack:
-                    
+                    AudioManager.Manager.PlaySFX("NPC_MeleeAttack");
                     stateScript = transform.AddComponent<AttackState>();
                     break;
                 case States.Downed:
@@ -112,6 +112,7 @@ public class AICharacter : MonoBehaviour
                     stateScript = transform.AddComponent<HuntState>();
                     break;
                 case States.Shoot:
+                    AudioManager.Manager.PlaySFX("NPC_RangedAttack");
                     stateScript = transform.AddComponent<ShootState>();
                     break;
                 //------------------------------------ Add new states in here
