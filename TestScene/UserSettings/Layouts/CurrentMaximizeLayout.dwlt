@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 22568
+  controlID: 23290
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -149,7 +149,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 22505
+  controlID: 23227
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -175,7 +175,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 50}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 22481
+  controlID: 23203
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -726,10 +726,23 @@ MonoBehaviour:
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: UnityEditor.SceneViewCameraOverlay
-      index: 13
+      index: 14
       layout: 4
       size: {x: 240, y: 135}
       sizeOverridden: 1
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 48, y: 48}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Cinemachine Tool Settings
+      index: 13
+      layout: 4
+      size: {x: 0, y: 0}
+      sizeOverridden: 0
     m_ContainerData:
     - containerId: overlay-toolbar__top
       scrollOffset: 0
@@ -756,9 +769,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -38.923435, y: 9.679624, z: 1.4861102}
+    m_Target: {x: -39.39542, y: 11.138481, z: 1.4762349}
     speed: 2
-    m_Value: {x: -38.923435, y: 9.679624, z: 1.4861102}
+    m_Value: {x: -39.39542, y: 11.138481, z: 1.4762349}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -880,8 +893,8 @@ MonoBehaviour:
     y: 455.2
     width: 1173.6
     height: 315.59998
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
   m_ActualView: {fileID: 11}
   m_Panes:
   - {fileID: 11}
@@ -935,7 +948,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/_Dev 1/Scripts/Collab
+    - Assets/Samples/Cinemachine/2.9.7
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -945,16 +958,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/_Dev 1/Scripts/Collab
+  - Assets/Samples/Cinemachine/2.9.7
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Somi3\Somi\Apps\GitHub\StudioModuleSWEGMT\TestScene
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: e2500100
-    m_LastClickedID: 86242
-    m_ExpandedIDs: 00000000a67b000088830000de50010000ca9a3bffffff7f
+    m_SelectedIDs: 98bb0100
+    m_LastClickedID: 113560
+    m_ExpandedIDs: 00000000a67b000088830000de50010090bb010094bb010000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1007,9 +1020,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 6e440100
-    m_LastClickedInstanceID: 83054
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: 0efbfeff
+    m_LastClickedInstanceID: -66802
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000607a0000067a00000000000026b00000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1098,7 +1111,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 22569
+  controlID: 23291
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1118,8 +1131,8 @@ MonoBehaviour:
     y: 0
     width: 362.40002
     height: 376
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -1283,7 +1296,7 @@ MonoBehaviour:
     m_CachedPref: -160
     m_ControlHash: 1412526313
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: 83054
+  m_LastInspectedObjectInstanceID: -66802
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
