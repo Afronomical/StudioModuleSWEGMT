@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class MenuCamPan : MonoBehaviour
 {
-    [SerializeField] Material dayTime;
+    [SerializeField] Material[] timeColour;
 
     [SerializeField] GameObject[] waypoint;
 
@@ -12,12 +14,12 @@ public class MenuCamPan : MonoBehaviour
 
     [SerializeField] float speed = 5f;
 
-
+    [SerializeField] Image menuCanvas;
 
 
     public enum TimeOfDay
     {
-        day, night, dusk, dawn
+        dawn, day, dusk, night
     }
 
     public TimeOfDay timeOfDay;
@@ -25,15 +27,23 @@ public class MenuCamPan : MonoBehaviour
     private void Start()
     {
         transform.position = waypoint[currentWayPointIndex].transform.position;
+
+        timeOfDay= TimeOfDay.night;
+        SetTimeMaterial();
     }
     private void FixedUpdate()
     {
+        CheckIfPenultimateNode(waypoint, currentWayPointIndex);
         if (Vector2.Distance(waypoint[currentWayPointIndex].transform.position, transform.position) < 3)
         {
+           
             currentWayPointIndex++;
             if(currentWayPointIndex >= waypoint.Length)
             {
                 currentWayPointIndex = 0;
+               
+                
+
             }
 
         }
@@ -43,6 +53,8 @@ public class MenuCamPan : MonoBehaviour
         switch (timeOfDay)
         {
             case TimeOfDay.day:
+
+
                 //Set material day
                 break;
 
@@ -60,6 +72,22 @@ public class MenuCamPan : MonoBehaviour
 
             default:
                 break;
+        }
+    }
+
+    public void SetTimeMaterial()
+    {
+        menuCanvas.color = timeColour[(int)TimeOfDay.night].color;
+        
+    }
+    private void CheckIfPenultimateNode(GameObject[] arrayOfNodes, int currentIndex)
+    {
+        if (currentIndex == arrayOfNodes.Length - 1)
+        {
+            SetTimeMaterial();
+            Debug.Log("Time is now" + timeOfDay.ToString());
+            timeOfDay++;
+            
         }
     }
 }
