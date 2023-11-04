@@ -8,6 +8,14 @@ public class cameraFollow : MonoBehaviour
     public float SmoothSpeed = 0.125f;
     public Vector3 Offset;
 
+    //public GameManager gameManager;
+
+    private void Start()
+    {
+        //Target = gameManager.player.transform;
+        //Target = FindFirstObjectByType<PlayerController>().GetComponent<Transform>();
+    }
+
     void LateUpdate()
     {
         // Calculate the desired camera position based on the player's position and offset
