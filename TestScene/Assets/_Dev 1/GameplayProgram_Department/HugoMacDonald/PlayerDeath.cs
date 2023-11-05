@@ -106,11 +106,11 @@ public class PlayerDeath : MonoBehaviour
             animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Hurt);
             healthBarScript.setHealth(currentHealth);
             showFloatingText();
-            
+
 
             // Apply invincibility
-            isInvincible = true;
-            invincibilityTimer = invincibilityDuration;
+            //isInvincible = true;
+            //invincibilityTimer = invincibilityDuration;
 
         }
     }
