@@ -8,7 +8,7 @@ public class PlayerDeath : MonoBehaviour
     public int maxHealth = 100;
     public int currentHealth;
     //private int damageAmount = 10;
-    public HealthBarScript healthBarScript;
+    public NewHealthBarScript healthBarScript;
     public bool godMode;
     //public float SetHealth;
     public bool isInvincible = false;
@@ -30,7 +30,7 @@ public class PlayerDeath : MonoBehaviour
     {
         isDead = false;
         currentHealth = maxHealth;
-        healthBarScript.SetMaxHealth(maxHealth);
+        healthBarScript.setMaxHealth(maxHealth);
 
         animator = GetComponent<Animator>();
         animationController = GetComponent<PlayerAnimationController>();
@@ -107,7 +107,7 @@ public class PlayerDeath : MonoBehaviour
             isDamaged = true;
             AudioManager.Manager.PlaySFX("PlayerTakeDamage");
             currentHealth -= damage;
-            healthBarScript.setHealth(currentHealth);
+            healthBarScript.SetHealth(currentHealth);
             showFloatingText(damage);
             
 
@@ -135,7 +135,7 @@ public class PlayerDeath : MonoBehaviour
     {
         // Implement your logic to increase health when the player is fed
         currentHealth += feedHealAmount; // You can adjust the value as needed
-        healthBarScript.setHealth(currentHealth);
+        healthBarScript.SetHealth(currentHealth);
     }
 
     private void Die()
@@ -160,7 +160,7 @@ public class PlayerDeath : MonoBehaviour
         AudioManager.Manager.PlaySFX("PlayerTakeDamage");
         animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Hurt);
         currentHealth = currentHealth - sunDamage;
-        healthBarScript.setHealth(currentHealth);
+        healthBarScript.SetHealth(currentHealth);
     }
 
     void showFloatingText(int damage)
