@@ -7,6 +7,7 @@ public class HungerBar : MonoBehaviour
 {
     public Slider slider;
     public BlinkEffect BlinkEffect;
+    
 
 
     public void SetMinHunger(int Hunger)
