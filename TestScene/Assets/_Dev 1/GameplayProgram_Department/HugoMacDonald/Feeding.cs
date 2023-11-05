@@ -15,6 +15,8 @@ public class Feeding : MonoBehaviour
 
     private Animator animator;
     private PlayerAnimationController animationController;
+   // public ToolTipManager toolTipManager;
+   // public float durationTime = 3.0f;
     
 
     private void Start()
@@ -68,7 +70,7 @@ public class Feeding : MonoBehaviour
         if (Input.GetKey(healKey) && currentTarget != null)
         {
             animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Feed);
-            ToolTipManager.ShowTopToolTip_Static("TASTY! Let's keep going before Sunlight hits!", 3f);
+            ToolTipManager.ShowTopToolTip_Static("TASTY! Let's keep going before Sunlight hits!", 3.0f); 
         }
     }
 }
