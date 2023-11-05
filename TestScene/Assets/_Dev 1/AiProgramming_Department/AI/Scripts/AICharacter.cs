@@ -16,7 +16,8 @@ public class AICharacter : MonoBehaviour
     {
         Villager,
         Hunter,
-        RangedHunter
+        RangedHunter,
+        Boss
     }
 
     public enum States
@@ -29,7 +30,10 @@ public class AICharacter : MonoBehaviour
         Run,
         Hunt,
         Shoot,
+        SpecialAttack,
         None
+        //boss states
+        //phase 1, 2, 3...?
     }
 
 
@@ -46,6 +50,7 @@ public class AICharacter : MonoBehaviour
     public StateBaseClass stateScript;
     public GameObject player;
     public GameObject bulletPrefab;
+    public GameObject homingBulletPrefab;
 
     public bool isMoving;
 
@@ -114,6 +119,9 @@ public class AICharacter : MonoBehaviour
                 case States.Shoot:
                     AudioManager.Manager.PlaySFX("NPC_RangedAttack");
                     stateScript = transform.AddComponent<ShootState>();
+                    break;
+                case States.SpecialAttack:
+                    stateScript = transform.AddComponent<SpecialAttackState>();
                     break;
                 //------------------------------------ Add new states in here
 

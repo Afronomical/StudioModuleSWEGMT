@@ -10,15 +10,14 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Threading;
 
 public class PathfindingRequestManager : MonoBehaviour
 {
-    Queue<PathRequest> pathRequestQueue = new Queue<PathRequest>();
-    PathRequest currentPathRequest;
+    Queue<PathResult> results = new Queue<PathResult>();
     static PathfindingRequestManager instance;
     Pathfinding pathfinding;
-    bool isProcessingPath;
-    public static int requestListSize;
+
 
     private void Awake()
     {
@@ -26,46 +25,69 @@ public class PathfindingRequestManager : MonoBehaviour
         pathfinding = GetComponent<Pathfinding>();
     }
 
-    public static void RequestPath(Vector3 pathStart, Vector3 pathEnd, StateBaseClass state, Action<Vector3[], bool> callback)
-    {
-        PathRequest newRequest = new PathRequest(pathStart, pathEnd, state, callback);  // Create a new request
-        instance.pathRequestQueue.Enqueue(newRequest);  // Add this request to the queue
-        requestListSize++;
-        instance.TryProcessNext();
-    }
 
-    void TryProcessNext()
+    private void Update()
     {
-        if (!isProcessingPath && pathRequestQueue.Count > 0)  // If there is something in the queue and we aren't processing something
+        if (results.Count > 0)  // If there are results in the queue
         {
-            currentPathRequest = pathRequestQueue.Dequeue();  // Get and remove the first item from the queue
-            isProcessingPath = true;
-            pathfinding.StartFindPath(currentPathRequest.pathStart, currentPathRequest.pathEnd);
+            int itemsInQueue = results.Count;
+            lock (results)
+            {
+                for (int i = 0; i < itemsInQueue; i++)  // Go through each item in the queue
+                {
+                    PathResult result = results.Dequeue();  // Remove it
+                    result.callback(result.path, result.success);  // Callback to the state script
+                }
+            }
         }
     }
 
-    public void FinishedProcessingPath(Vector3[] path, bool success)
+
+    public static void RequestPath(PathRequest request)
     {
-        if (currentPathRequest.state)
-            currentPathRequest.callback(path, success);  // Return the result
-        isProcessingPath = false;
-        requestListSize--;
-        TryProcessNext();  // Try to move onto the next request
+        ThreadStart threadStart = delegate  // Create a thread
+        {
+            instance.pathfinding.FindPath(request, instance.FinishedProcessingPath);
+        };
+        threadStart.Invoke();
     }
 
-    struct PathRequest
-    {
-        public Vector3 pathStart;
-        public Vector3 pathEnd;
-        public StateBaseClass state;
-        public Action<Vector3[], bool> callback;
 
-        public PathRequest(Vector3 _start, Vector3 _end, StateBaseClass _state, Action<Vector3[], bool> _callback)
-        {
-            pathStart = _start;
-            pathEnd = _end;
-            state = _state;
-            callback = _callback;
-        }
+    public void FinishedProcessingPath(PathResult result)
+    {
+        lock(results)  // Only add one to the queue at a time
+            results.Enqueue(result);  // Add the pathfinding result to the queue
+    }
+}
+
+
+public struct PathRequest  // The request for a path that is created by the state scripts
+{
+    public Vector3 pathStart;
+    public Vector3 pathEnd;
+    public StateBaseClass state;
+    public Action<Vector3[], bool> callback;
+
+    public PathRequest(Vector3 _start, Vector3 _end, StateBaseClass _state, Action<Vector3[], bool> _callback)
+    {
+        pathStart = _start;
+        pathEnd = _end;
+        state = _state;
+        callback = _callback;
+    }
+}
+
+
+public struct PathResult  // The result of the pathfinding that is created by Pathfinding.FindPath
+{
+    public Vector3[] path;
+    public bool success;
+    public Action<Vector3[], bool> callback;
+
+    public PathResult(Vector3[] path, bool success, Action<Vector3[], bool> callback)
+    {
+        this.path = path;
+        this.success = success;
+        this.callback = callback;
     }
 }
