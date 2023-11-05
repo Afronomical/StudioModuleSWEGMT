@@ -9,6 +9,9 @@ public class ToolTipManager : MonoBehaviour
 {
     public static ToolTipManager instance;
     public TextMeshProUGUI toolTipText;
+    public TextMeshProUGUI toolTipTopText;
+    public GameObject topToolTip;
+    public GameObject bottomToolTip;
     private RectTransform backgroundRectTransform;
 
     private void Awake()
@@ -21,32 +24,58 @@ public class ToolTipManager : MonoBehaviour
     }
 
 
-    private void ShowToolTip(string tooltipString)
+    private void ShowTopToolTip(string tooltipString, float displayDuration)
     {
         gameObject.SetActive(true);
-
-        toolTipText.text = tooltipString;
-        //float textPaddingSize = 4f;
-
-        //Vector2 backgroundSize = new Vector2(toolTipText.preferredWidth + textPaddingSize * 2f, toolTipText.preferredHeight + textPaddingSize * 2f);
-        //backgroundRectTransform.sizeDelta = backgroundSize;
+        toolTipTopText.text = tooltipString;
+        Debug.Log(tooltipString);
+        if(displayDuration > 0)
+        {
+            StartCoroutine(RemoveToolTipAfterDelay(displayDuration));
+        }
 
     }
-
-    private void HideToolTip()
+    public void HideTopToolTip()
     {
-        gameObject.SetActive(false);
+        topToolTip.SetActive(false);
     }
 
-
-    public static void ShowToolTip_Static(string toolTipString)
+   public void ShowBottomToolTip(string tooltipstring)
     {
-        instance.ShowToolTip(toolTipString);
+        bottomToolTip.SetActive(true);
+        toolTipText.text = tooltipstring;
     }
 
-    public static void HideToolTip_Static()
+    public void HideBottomToolTip()
     {
-        instance.HideToolTip();
+        bottomToolTip.SetActive(false);
+    }
+    
+
+    private IEnumerator RemoveToolTipAfterDelay(float duration)
+    {
+        yield return new WaitForSeconds(duration);
+        HideTopToolTip();
     }
 
+
+    public static void ShowTopToolTip_Static(string toolTipString, float displayDuration)
+    {
+       instance.ShowTopToolTip(toolTipString, displayDuration);
+    }
+    
+    public static void HideTopToolTip_Static()
+    {
+        instance.HideTopToolTip();
+    }
+
+   public static void ShowBottomToolTip_Static(string tooltipString)
+    {
+        instance.ShowBottomToolTip(tooltipString);
+    }
+
+    public static void HideBottomToolTip_Static()
+    {
+        instance.HideBottomToolTip();
+    }
 }

@@ -17,6 +17,9 @@ public class CoffinInteraction : MonoBehaviour
     public int hungerThreshold = 5; //This might need to be moved into 
 
     public ToolTipManager toolTipManager;
+    public GameObject bottomScreenToolTip;
+    public GameObject topScreenToolTip;
+    private float tooltipDisplayDuration = 6.0f;
     
 
     // Start is called before the first frame update
@@ -25,6 +28,7 @@ public class CoffinInteraction : MonoBehaviour
         coffinArea = GetComponent<BoxCollider2D>();
         hungerCheck = GameObject.Find("PlayerPrefab1").GetComponent<Feeding>();
 
+        ToolTipManager.ShowTopToolTip_Static("This Hunger Bar needs filling! Get out there and eat!", tooltipDisplayDuration);
         //Coffin closed
         coffinArea.isTrigger = false;
         //tooltip = GameObject.Find("Coffin Closed Text").GetComponent<TMP_Text>();
@@ -34,7 +38,7 @@ public class CoffinInteraction : MonoBehaviour
         stillHungry.enabled = false;
         openCoffin.enabled = false;
         useCoffin.enabled = false;
-        ToolTipManager.HideToolTip_Static();
+        ToolTipManager.HideBottomToolTip_Static();
     }
 
     //When coffin is closed
@@ -45,8 +49,8 @@ public class CoffinInteraction : MonoBehaviour
             //Display a message to the player that you cant sleep yet
             //closedCoffin.enabled = true;
             //print("Can't sleep yet, I must feast first!");
-           
-            ToolTipManager.ShowToolTip_Static("Can't sleep yet, I must feast first");
+
+            ToolTipManager.ShowBottomToolTip_Static("Can't Sleep yet, I must eat first");
         }
         else if(collision.collider.CompareTag("Player") && hungerCheck.currentHunger > 0 && hungerCheck.currentHunger < hungerThreshold)
         {
@@ -60,7 +64,7 @@ public class CoffinInteraction : MonoBehaviour
         {
             closedCoffin.enabled = false; //Remove tooltip off screen
             stillHungry.enabled = false;
-            ToolTipManager.HideToolTip_Static();
+            ToolTipManager.HideBottomToolTip_Static();
         }
     }
 
@@ -74,6 +78,7 @@ public class CoffinInteraction : MonoBehaviour
             coffinArea.isTrigger = true;
             openCoffin.enabled = true;
             print("Coffin opened, I can finally rest!");
+            ToolTipManager.ShowBottomToolTip_Static("Coffin Opened, I can finally Rest!");
         }
         else
         {
@@ -90,6 +95,7 @@ public class CoffinInteraction : MonoBehaviour
             //Display tooltip
             openCoffin.text = null;
             useCoffin.enabled = true;
+            ToolTipManager.ShowBottomToolTip_Static("Use the coffin");
         }
 
         //Press a button to sleep
@@ -98,6 +104,7 @@ public class CoffinInteraction : MonoBehaviour
             //Sleep - go to next level
 
             print("Sleeping...");
+            ToolTipManager.ShowBottomToolTip_Static("Sleeping...");
         }
     }
 
@@ -105,5 +112,8 @@ public class CoffinInteraction : MonoBehaviour
     {
         if (useCoffin !=  null)
             useCoffin.enabled = false;
+        ToolTipManager.HideBottomToolTip_Static();
     }
+
+    
 }
