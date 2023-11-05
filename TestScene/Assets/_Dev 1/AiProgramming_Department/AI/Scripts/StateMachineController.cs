@@ -89,7 +89,7 @@ public class StateMachineController : MonoBehaviour
         if (distance < attackRange)
         {
             //changes to special attack when health is low
-            if (character.GetHealth() <= specialAttackThreshold) //choose suitable number
+            if (character.GetHealth() <= specialAttackThreshold)
                 character.ChangeState(AICharacter.States.SpecialAttack);
             else
                 character.ChangeState(AICharacter.States.Shoot);

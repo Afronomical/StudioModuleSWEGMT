@@ -118,6 +118,9 @@ public class AICharacter : MonoBehaviour
                 case States.Shoot:
                     stateScript = transform.AddComponent<ShootState>();
                     break;
+                case States.SpecialAttack:
+                    stateScript = transform.AddComponent<SpecialAttackState>();
+                    break;
                 //------------------------------------ Add new states in here
 
                 case States.None:

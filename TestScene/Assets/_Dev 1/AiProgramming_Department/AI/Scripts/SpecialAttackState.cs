@@ -5,13 +5,29 @@ using UnityEngine;
 public class SpecialAttackState : StateBaseClass
 {
     public int attackDamage = 20;
-    public float attackDelay = 2;
+    public float attackDelay = 1;
     private float currentDelay;
+
+    private float stateChangeDelay = 5;
+    private float currentStateDelay;
 
     public Transform origin;
     public GameObject bulletPrefab;
     public GameObject homingBulletPrefab;
     private float bulletSpeed = 500f;
+
+    //Gameplay Programmers Script for the Player Health
+    private ReferenceManager referenceManager;
+    private PlayerDeath playerDeath;
+    private int rand;//= UnityEngine.Random.Range(1, 100);
+
+    private void Start()
+    {
+        playerDeath = character.player.GetComponent<PlayerDeath>();
+        origin = character.transform;
+        bulletPrefab = character.bulletPrefab;
+        homingBulletPrefab = character.homingBulletPrefab;
+    }
 
     public SpecialAttackState()
     {
@@ -21,30 +37,25 @@ public class SpecialAttackState : StateBaseClass
 
     public override void UpdateLogic()
     {
-        //random selection of attacks
-        //will make this smarter in the next weeks of production as designers give us requirements
-        int random = UnityEngine.Random.Range(1, 4);
 
-        switch (random)
+        character.isMoving = false;
+
+        currentStateDelay -= Time.deltaTime;
+
+        if (currentStateDelay <= 0)
         {
-            case 1:
-                SprayShoot();
-                break;
-            case 2:
-                SprayShoot2();
-                break;
-            case 3:
-                CircularShoot();
-                break;
-            case 4:
-                ShootHomingBullet();
-                break;
-            default:
-                Shoot();
-                break;
+            //changes attack based on time
+
+
+            rand = UnityEngine.Random.Range(1, 100);
+
+            currentStateDelay = stateChangeDelay;
         }
+        ChooseAttack();
 
-
+        //CircularShoot();
+        //SprayShoot2();
+        //ShootHomingBullet();
     }
     void Shoot()
     {
@@ -135,5 +146,40 @@ public class SpecialAttackState : StateBaseClass
 
 
 
+    }
+
+    void ChooseAttack()
+    {
+        //random selection of attacks
+        //will make this smarter in the next weeks of production as designers give us requirements
+        //rand = UnityEngine.Random.Range(1, 100);
+
+        //switch (rand)
+        //{
+        //    case 1:
+        //        //SprayShoot();
+        //        break;
+        //    case 2:
+        //        //SprayShoot2();
+        //        break;
+        //    case 3:
+        //        CircularShoot();
+        //        break;
+        //    case 4:
+        //        ShootHomingBullet();
+        //        break;
+        //    default:
+        //        //Shoot();
+        //        break;
+        //}
+
+        if (rand <= 10)
+            SprayShoot2();
+        else if (10 < rand && rand <= 30)
+            SprayShoot();
+        else if (rand > 30 && rand <= 70)
+            CircularShoot();
+        else
+            ShootHomingBullet();
     }
 }

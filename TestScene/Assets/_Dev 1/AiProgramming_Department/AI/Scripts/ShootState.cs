@@ -43,14 +43,14 @@ public class ShootState : StateBaseClass
 
 
         //Counts down the delay
-        //currentDelay -= Time.deltaTime;
+        currentDelay -= Time.deltaTime;
 
-        //if (currentDelay <= 0)
-        //{
+        if (currentDelay <= 0)
+        {
 
-        //    Shoot();
-        //    currentDelay = attackDelay;
-        //}
+            Shoot();
+            currentDelay = attackDelay;
+        }
 
         //CircularShoot();
         //SprayShoot();
