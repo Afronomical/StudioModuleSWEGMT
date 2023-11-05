@@ -48,7 +48,10 @@ public class ToolTipManager : MonoBehaviour
 
     public void HideBottomToolTip()
     {
-        bottomToolTip.SetActive(false);
+        if (bottomToolTip != null)
+            bottomToolTip.SetActive(false);
+
+        
     }
     
 

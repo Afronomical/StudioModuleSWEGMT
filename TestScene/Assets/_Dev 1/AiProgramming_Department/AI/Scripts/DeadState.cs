@@ -22,11 +22,16 @@ public class DeadState : StateBaseClass
         //Disables the specific character when health is 0
         if (animController != null && anim != null)
         {
-            if (!animController.IsAnimationPlaying(anim, AIAnimationController.AnimationStates.Death))
-            {
-                character.gameObject.SetActive(false);
-                Debug.Log("Character Disabled");
-            }
+            Invoke("DisableAfterDeath", 1);
+        }
+    }
+
+    private void DisableAfterDeath()
+    {
+        if (!animController.IsAnimationPlaying(anim, AIAnimationController.AnimationStates.Death))
+        {
+            character.gameObject.SetActive(false);
+            Debug.Log("Character Disabled");
         }
     }
 }
