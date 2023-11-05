@@ -60,7 +60,7 @@ public class Feeding : MonoBehaviour
             currentHunger += currentTarget.hungerValue;
             
             hungerBarSlider.SetHunger(currentHunger);
-            flashingCanvas.SetActive(false);
+            //flashingCanvas.SetActive(false);
             currentTarget.health -= 1;
 
             // Call a method in the PlayerDeath script to increase player health
