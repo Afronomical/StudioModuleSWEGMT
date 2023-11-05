@@ -77,7 +77,7 @@ public class CoffinInteraction : MonoBehaviour
             //Open if this is met - make the current box collider into a trigger instead
             coffinArea.isTrigger = true;
             openCoffin.enabled = true;
-            print("Coffin opened, I can finally rest!");
+            //print("Coffin opened, I can finally rest!");
             ToolTipManager.ShowBottomToolTip_Static("Coffin Opened, I can finally Rest!");
         }
         else
