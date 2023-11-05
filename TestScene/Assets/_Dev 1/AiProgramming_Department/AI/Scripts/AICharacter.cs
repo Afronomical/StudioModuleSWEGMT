@@ -30,6 +30,7 @@ public class AICharacter : MonoBehaviour
         Run,
         Hunt,
         Shoot,
+        SpecialAttack,
         None
         //boss states
         //phase 1, 2, 3...?

@@ -17,6 +17,7 @@ public class StateMachineController : MonoBehaviour
     private int stuckCheckFrames;
     private float changeStateTimer;
     private float changeStateTime = 0.5f;
+    private int specialAttackThreshold = 2;
 
 
     private void Start()
@@ -62,6 +63,9 @@ public class StateMachineController : MonoBehaviour
         else if (character.characterType == AICharacter.CharacterTypes.RangedHunter)
             RangedHunterStates();
 
+        //boss behaviour
+        else if (character.characterType == AICharacter.CharacterTypes.Boss)
+            BossStates();
 
 
         if (character.isMoving && character.currentState != AICharacter.States.Run)  // Check to see if the character is stuck on an object
@@ -77,6 +81,30 @@ public class StateMachineController : MonoBehaviour
 
         lastPosition = transform.position;  // Update the last position of this character
     }
+
+    //basic state machine for boss
+    //can be extended/modified according to tech design requirements
+    private void BossStates()
+    {
+        if (distance < attackRange)
+        {
+            //changes to special attack when health is low
+            if (character.GetHealth() <= specialAttackThreshold) //choose suitable number
+                character.ChangeState(AICharacter.States.SpecialAttack);
+            else
+                character.ChangeState(AICharacter.States.Shoot);
+        }
+        else if (distance < detectionRange && distance > attackRange)
+        {
+            character.ChangeState(AICharacter.States.Hunt);
+        }
+
+        else if (distance > detectionRange)
+        {
+            character.ChangeState(AICharacter.States.Patrol);
+        }
+    }
+
 
 
     private void VillagerStates()
