@@ -22,6 +22,7 @@ public class DeadState : StateBaseClass
         //Disables the specific character when health is 0
         if (animController != null && anim != null)
         {
+            character.gameObject.GetComponent<CircleCollider2D>().enabled = false; //Player can't push AI whilst they're death animation is playing
             Invoke("DisableAfterDeath", 1);
         }
     }

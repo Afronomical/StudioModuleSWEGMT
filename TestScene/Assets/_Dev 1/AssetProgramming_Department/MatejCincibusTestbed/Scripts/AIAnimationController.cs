@@ -29,8 +29,8 @@ public class AIAnimationController : MonoBehaviour
     // GOs Animator Component:
     private Animator animator;
     private AnimationStates currentState;
-    private bool sfxCanPlay = true;
-    private bool sfxJustPlayed = false;
+    //private bool sfxCanPlay = true;
+    //private bool sfxJustPlayed = false;
     // INFO: The position of each state and string should match in both lists, otherwise the state will point to a completely different animation
 
     // List of all the GOs animation states that will be used as a key later to access instead of calling via strings
