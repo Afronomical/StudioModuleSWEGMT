@@ -51,7 +51,7 @@ public class PlayerDeath : MonoBehaviour
                 isInvincible = false;
             }
         }
-
+        
         if (currentHealth <= 0 && !isDead)
         {
             AudioManager.Manager.PlaySFX("PlayerDeath");

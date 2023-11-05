@@ -9,7 +9,7 @@ public class NewHealthBarScript : MonoBehaviour
     public Slider slider;
     public float fillSpeed = 5f;
     public Gradient gradient;
-
+    [SerializeField]
     private Image fillImage;
     private float targetValue;
     private float currentValue;
@@ -17,7 +17,7 @@ public class NewHealthBarScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        fillImage = slider.fillRect.GetComponent<Image>();
+        //fillImage = slider.fillRect.GetComponent<Image>();
         currentValue = slider.value;
         targetValue = slider.value;
     }

@@ -374,9 +374,9 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1705232621 stripped
+--- !u!114 &1791784373 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3870587731394422371, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
+  m_CorrespondingSourceObject: {fileID: 6309451953078501879, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
   m_PrefabInstance: {fileID: 5018164657183555259}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
@@ -419,7 +419,7 @@ MonoBehaviour:
   currentHealth: 0
   minHealth: 0
   floatingDamage: {fileID: 3144044576336324553, guid: 6f3a123f815ec40479af1dfa206b7166, type: 3}
-  healthBar: {fileID: 1705232621}
+  healthBar: {fileID: 1791784373}
 --- !u!4 &1980642869
 Transform:
   m_ObjectHideFlags: 0
