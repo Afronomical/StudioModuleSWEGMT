@@ -13,7 +13,7 @@ public class DeadState : StateBaseClass
     {
         animController = transform.GetComponentInChildren<AIAnimationController>();
         anim = transform.GetComponentInChildren<Animator>();
-        animController.ChangeAnimationState(AIAnimationController.AnimationStates.SwordAttack);
+        //animController.ChangeAnimationState(AIAnimationController.AnimationStates.SwordAttack);
     }
 
 
