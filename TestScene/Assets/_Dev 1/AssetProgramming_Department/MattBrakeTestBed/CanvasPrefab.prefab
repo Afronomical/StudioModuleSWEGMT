@@ -402,6 +402,7 @@ MonoBehaviour:
     m_ColorSpace: -1
     m_NumColorKeys: 3
     m_NumAlphaKeys: 2
+  fillImage: {fileID: 3256677672589431992}
 --- !u!1 &1251861895036578298
 GameObject:
   m_ObjectHideFlags: 0
@@ -2390,6 +2391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 3500548692249957960}
+  BlinkEffect: {fileID: 5467851922213096365}
 --- !u!1 &6856197342246727909
 GameObject:
   m_ObjectHideFlags: 0
@@ -2574,14 +2576,13 @@ GameObject:
   - component: {fileID: 3792124470740224628}
   - component: {fileID: 302758833607967666}
   - component: {fileID: 3417727616183881883}
-  - component: {fileID: 3308444015794925393}
   m_Layer: 5
   m_Name: FlashingUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3792124470740224628
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2639,22 +2640,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &3308444015794925393
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7117382716382523482}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e64754998784a3d4fbd36fe65a71ee06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  image: {fileID: 3417727616183881883}
-  startColour: {r: 1, g: 1, b: 1, a: 0}
-  endColour: {r: 0.827451, g: 1, b: 0, a: 1}
-  speed: 4.3
 --- !u!1 &7353785878539517986
 GameObject:
   m_ObjectHideFlags: 0
@@ -3139,6 +3124,7 @@ GameObject:
   - component: {fileID: 6735579504183721518}
   - component: {fileID: 8299086894275789494}
   - component: {fileID: 4912919948141023436}
+  - component: {fileID: 5467851922213096365}
   m_Layer: 5
   m_Name: Fill
   m_TagString: Untagged
@@ -3203,6 +3189,22 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &5467851922213096365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8393028514800796149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e64754998784a3d4fbd36fe65a71ee06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 4912919948141023436}
+  startColour: {r: 1, g: 1, b: 1, a: 1}
+  endColour: {r: 0, g: 0, b: 0, a: 1}
+  speed: 3.45
 --- !u!1 &8499984281895282879
 GameObject:
   m_ObjectHideFlags: 0
@@ -3289,7 +3291,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toolTipText: {fileID: 1392339193063690999}
-  toolTipTopText: {fileID: 0}
+  toolTipTopText: {fileID: 9038174480472698010}
   topToolTip: {fileID: 2209352062146924726}
   bottomToolTip: {fileID: 2987512428617241686}
 --- !u!1001 &2846277951962395787
