@@ -32,14 +32,17 @@ public class HealthBarScript : MonoBehaviour
 
     public void setHealth(int health)
     {
+        Debug.Log("Setting Health to: " + health);
+        
         _target = Mathf.Max(health, 0);
-        if(drainHealthBar!= null)
+        if (drainHealthBar != null)
         {
             StopCoroutine(drainHealthBar);
         }
         drainHealthBar = StartCoroutine(DrainHealthBar());
-        slider.value = health;
-        UpdateHealthBarGradientAmount();
+       // slider.value = health;
+        //UpdateHealthBarGradientAmount();
+        
 
     }
 
@@ -58,6 +61,7 @@ public class HealthBarScript : MonoBehaviour
         float Startfillamount = _image.fillAmount;
         float endFillAmount = _target / slider.maxValue;
         float elapsedTime = 0f; 
+        
         
         //Color currentColour = _image.color;
 
