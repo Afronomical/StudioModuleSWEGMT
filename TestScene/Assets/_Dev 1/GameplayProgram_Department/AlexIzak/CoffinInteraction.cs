@@ -76,7 +76,7 @@ public class CoffinInteraction : MonoBehaviour
         {
             //Open if this is met - make the current box collider into a trigger instead
             coffinArea.isTrigger = true;
-            openCoffin.enabled = true;
+           // openCoffin.enabled = true;
             //print("Coffin opened, I can finally rest!");
             ToolTipManager.ShowBottomToolTip_Static("Coffin Opened, I can finally Rest!");
         }
@@ -93,7 +93,7 @@ public class CoffinInteraction : MonoBehaviour
         if(collision.CompareTag("Player") && hungerCheck.currentHunger >= hungerThreshold)
         {
             //Display tooltip
-            openCoffin.text = null;
+            //openCoffin.text = null;
             useCoffin.enabled = true;
             ToolTipManager.ShowBottomToolTip_Static("Use the coffin");
         }
