@@ -15,8 +15,8 @@ public class Feeding : MonoBehaviour
 
     private Animator animator;
     private PlayerAnimationController animationController;
-   // public ToolTipManager toolTipManager;
-   // public float durationTime = 3.0f;
+    public ToolTipManager toolTipManager;
+    public float durationTime = 3.0f;
     
 
     private void Start()
@@ -65,14 +65,16 @@ public class Feeding : MonoBehaviour
 
             // Call a method in the PlayerDeath script to increase player health
             playerDeath.FeedAttack();
+            ToolTipManager.ShowTopToolTip_Static("TASTY! Let's keep going before Sunlight hits!", durationTime);
         }
 
         if (Input.GetKey(healKey) && currentTarget != null)
         {
             animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Feed);
-            ToolTipManager.ShowTopToolTip_Static("TASTY! Let's keep going before Sunlight hits!", 3.0f); 
+            
         }
     }
+
 }
 
 

@@ -26,7 +26,7 @@ public class ToolTipManager : MonoBehaviour
 
     private void ShowTopToolTip(string tooltipString, float displayDuration)
     {
-        gameObject.SetActive(true);
+        topToolTip.SetActive(true);
         toolTipTopText.text = tooltipString;
         Debug.Log(tooltipString);
         if(displayDuration > 0)
