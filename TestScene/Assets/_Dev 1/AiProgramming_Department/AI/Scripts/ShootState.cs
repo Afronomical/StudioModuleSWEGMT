@@ -13,7 +13,7 @@ public class ShootState : StateBaseClass
     public Transform origin;
     public GameObject bulletPrefab;
     public GameObject homingBulletPrefab;
-    private float bulletSpeed = 500f;
+    private float bulletSpeed = 2250f;
 
     //private IEnumerator coroutine;
 
@@ -64,7 +64,7 @@ public class ShootState : StateBaseClass
 
         Vector2 distance = character.player.transform.position - character.transform.position;
         GameObject bullet = Instantiate(bulletPrefab, origin.position, origin.rotation);
-        bullet.GetComponent<Rigidbody2D>().velocity = distance * bulletSpeed * Time.deltaTime;
+        bullet.GetComponent<Rigidbody2D>().velocity = distance.normalized * bulletSpeed * Time.deltaTime;
     }
 
 
