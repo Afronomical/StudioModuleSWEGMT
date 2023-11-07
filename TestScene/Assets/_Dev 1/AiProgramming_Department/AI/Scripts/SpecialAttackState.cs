@@ -63,6 +63,7 @@ public class SpecialAttackState : StateBaseClass
         transform.rotation = Quaternion.LookRotation(forward: Vector3.forward, upwards: vectorToTarget);
 
         Vector2 distance = character.player.transform.position - character.transform.position;
+        distance.Normalize();
         GameObject bullet = Instantiate(bulletPrefab, origin.position, origin.rotation);
         bullet.GetComponent<Rigidbody2D>().velocity = distance * bulletSpeed * Time.deltaTime;
     }
@@ -93,7 +94,7 @@ public class SpecialAttackState : StateBaseClass
         {
 
             Vector2 direction = character.player.transform.position - bullet.transform.position;
-            direction.Normalize();
+            //direction.Normalize();
             rot = Vector3.Cross(direction, bullet.transform.right).z;
 
 
@@ -104,7 +105,7 @@ public class SpecialAttackState : StateBaseClass
             currentDelay -= Time.deltaTime;
         }
         bullet.GetComponent<Rigidbody2D>().angularVelocity = rot * 200;
-        bullet.GetComponent<Rigidbody2D>().velocity = transform.right * 5;
+        bullet.GetComponent<Rigidbody2D>().velocity = transform.right * 5 * Time.deltaTime;
     }
 
     void CircularShoot()

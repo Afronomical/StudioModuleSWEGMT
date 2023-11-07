@@ -30,10 +30,15 @@ public class AICharacter : MonoBehaviour
         Run,
         Hunt,
         Shoot,
-        SpecialAttack,
-        None
         //boss states
         //phase 1, 2, 3...?
+        SpecialAttack,
+        SprayShoot1,
+        SprayShoot2,
+        CircularShoot,
+        HomingArrow,
+        SpawnEnemies,
+        None
     }
 
 
@@ -51,6 +56,8 @@ public class AICharacter : MonoBehaviour
     public GameObject player;
     public GameObject bulletPrefab;
     public GameObject homingBulletPrefab;
+    public GameObject hunterPrefab;
+    public GameObject archerPrefab;
 
     public bool isMoving;
 
@@ -106,7 +113,6 @@ public class AICharacter : MonoBehaviour
                     stateScript = transform.AddComponent<AttackState>();
                     break;
                 case States.Downed:
-                    
                     stateScript = transform.AddComponent<DownedState>();
                     break;
                 case States.Dead:
@@ -120,8 +126,24 @@ public class AICharacter : MonoBehaviour
                     AudioManager.Manager.PlaySFX("NPC_RangedAttack");
                     stateScript = transform.AddComponent<ShootState>();
                     break;
+                //boss states
                 case States.SpecialAttack:
                     stateScript = transform.AddComponent<SpecialAttackState>();
+                    break;
+                //case States.SprayShoot1:
+                //    stateScript = transform.AddComponent<SprayShoot1State>();
+                //    break;
+                //case States.SprayShoot2:
+                //    stateScript = transform.AddComponent<SprayShoot2State>();
+                //    break;
+                //case States.CircularShoot:
+                //    stateScript = transform.AddComponent<CircularShootState>();
+                //    break;
+                //case States.HomingArrow:
+                //    stateScript = transform.AddComponent<HomingArrowState>();
+                //    break;
+                case States.SpawnEnemies:
+                    stateScript = transform.AddComponent<SpawnEnemiesState>();
                     break;
                 //------------------------------------ Add new states in here
 
