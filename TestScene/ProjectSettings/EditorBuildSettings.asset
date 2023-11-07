@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/_Dev 1/TechDesign_Department/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/# Project File#/MainMenu.unity
     guid: 18baa3a01d0f1a04d97faa60ca220a54
   - enabled: 1
@@ -20,5 +20,8 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/_Dev 1/TechDesign_Department/Somi/Level Design/Level 1 - World.unity
     guid: ac6431dda51ee8145a8aa7537c015919
+  - enabled: 1
+    path: Assets/# Project File#/Main Menu Animated.unity
+    guid: 3bc18b4398882774baff97fb932aeb75
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
