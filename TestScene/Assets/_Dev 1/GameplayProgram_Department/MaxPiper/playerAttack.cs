@@ -40,7 +40,7 @@ public class playerAttack : MonoBehaviour
         if ((other.tag == "Villager") || (other.tag == "Hunter"))
         {
             enemyList.Remove(other.gameObject);
-            Debug.Log(other.name);
+            //Debug.Log(other.name);
         }
     }
 
@@ -111,16 +111,21 @@ public class playerAttack : MonoBehaviour
                 //AudioManager.Manager.PlaySFX("PlayerAttack");
                 damageEnemy();
                 canHit = false;
-            }
-            attackDelay -= Time.deltaTime;
-            if (attackDelay <= 0)
-            {
-                canHit = true;
-                attackDelay = attackDelayStart;
+                Debug.Log("ATTACKED HDBGSUYHGBK");
             }
             
+            
         }
-        
+        if (canHit)
+        {
+
+        }
+        attackDelay -= Time.deltaTime;
+        if (attackDelay <= 0)
+        {
+            canHit = true;
+            attackDelay = attackDelayStart;
+        }
 
     }
 }
