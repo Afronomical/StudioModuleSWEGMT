@@ -35,7 +35,9 @@ public class MenuCamPan : MonoBehaviour
 
     private void Start()
     {
-        //initialCamPos.position = transform.position;
+        ////initialCamPos.position = transform.position;
+
+        transform.position = initialCamPos.position;
         
         transform.position = waypoint[currentWayPointIndex].transform.position;
 
@@ -45,7 +47,7 @@ public class MenuCamPan : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        CheckIfPenultimateNode(waypoint, currentWayPointIndex);
+       // CheckIfPenultimateNode(waypoint, currentWayPointIndex);
         if (Vector2.Distance(waypoint[currentWayPointIndex].transform.position, transform.position) < 3)
         {
            
