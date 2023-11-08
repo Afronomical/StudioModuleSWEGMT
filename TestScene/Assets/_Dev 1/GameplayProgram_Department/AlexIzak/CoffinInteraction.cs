@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class CoffinInteraction : MonoBehaviour
 {
     private BoxCollider2D coffinArea;
-    //private Feeding hungerCheck;
+    private Feeding hungerCheck;
 
     //private TMP_Text tooltip;
 
@@ -18,13 +18,13 @@ public class CoffinInteraction : MonoBehaviour
     public string areaToMove = "Spawn";
     public int hungerThreshold = 5; //This might need to be moved into 
 
-    private GameManager gameManager;
+    //private GameManager gameManager;
 
     // Start is called before the first frame update
     void Start()
     {
         coffinArea = GetComponent<BoxCollider2D>();
-        //hungerCheck = GameObject.Find("PlayerPrefab1").GetComponent<Feeding>();
+        hungerCheck = GameObject.Find("PlayerPrefab1").GetComponent<Feeding>();
 
         //Coffin closed
         coffinArea.isTrigger = false;
@@ -36,26 +36,26 @@ public class CoffinInteraction : MonoBehaviour
         openCoffin.enabled = false;
         useCoffin.enabled = false;
 
-        gameManager = FindAnyObjectByType<GameManager>();
+        //gameManager = FindAnyObjectByType<GameManager>();
     }
 
     //When coffin is closed
     private void OnCollisionEnter2D(Collision2D collision)
     {
         //If you just started the game - do this
-        if(collision.collider.CompareTag("Player") && gameManager.peopleEaten == 0) 
+        if(collision.collider.CompareTag("Player") && hungerCheck.currentHunger == 0) 
         {
             //Display a message to the player that you cant sleep yet
             closedCoffin.enabled = true;
             print("Can't sleep yet, I must feast first!");
         }
         //If player ate at least 1 human - do this
-        else if(collision.collider.CompareTag("Player") && gameManager.peopleEaten > 0 && gameManager.peopleEaten < gameManager.peopleEatingThreshold)
+        else if(collision.collider.CompareTag("Player") && hungerCheck.currentHunger > 0 && hungerCheck.currentHunger < hungerThreshold)
         {
             stillHungry.enabled = true;
         }
         //If hunger satiated - do this
-        else if(collision.collider.CompareTag("Player") && gameManager.peopleEaten >= gameManager.peopleEatingThreshold)
+        else if(collision.collider.CompareTag("Player") && hungerCheck.currentHunger >= hungerThreshold)
         {
             //Display tooltip
             openCoffin.text = null;
@@ -98,7 +98,7 @@ public class CoffinInteraction : MonoBehaviour
     void Update()
     {
         //Check hunger meter for threshold
-        if(gameManager.peopleEaten >= gameManager.peopleEatingThreshold && openCoffin != null) 
+        if(hungerCheck.currentHunger >= hungerThreshold && openCoffin != null) 
         {
             //Open if this is met
             openCoffin.enabled = true;
