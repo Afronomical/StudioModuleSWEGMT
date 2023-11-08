@@ -28,8 +28,7 @@ public class SunRise : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        
+                
         nightTime = countdownTimer.timeRemaining; // Links Up The "nightTime" Variable To The Countdown Clock
 
 
@@ -41,13 +40,12 @@ public class SunRise : MonoBehaviour
 
             if (transform.GetComponent<Collider2D>().IsTouching(GameObject.FindGameObjectWithTag("Player").GetComponent<Collider2D>()) && canBurn == true) // When Player Touches Sun Light And canBurn = true 
             {   
-                //GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerDeath>().SunRiseDamage(); // Calls The Function "SunRiseDamage" From "playerDeath" Script
+                GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerDeath>().SunRiseDamage(); // Calls The Function "SunRiseDamage" From "playerDeath" Script
                 StartCoroutine(sunDamage()); 
             }
 
         }
-
-        
+               
     }
 
     private IEnumerator sunDamage()

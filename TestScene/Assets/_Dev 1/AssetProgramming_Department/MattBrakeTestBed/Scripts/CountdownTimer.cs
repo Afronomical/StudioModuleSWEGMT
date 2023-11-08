@@ -8,8 +8,8 @@ using TMPro;
 
 public class CountdownTimer : MonoBehaviour
 {
-    
-    public float timeRemaining = 120f;
+    public float time;
+    public float timeRemaining;
     public bool timeIsRunning = true;
     public TMP_Text timeText;
     public Transform rotatingCover;
@@ -18,6 +18,7 @@ public class CountdownTimer : MonoBehaviour
     void Start()
     {
         timeIsRunning = true;
+        timeRemaining = time;
     }
     
     void Update()
@@ -28,12 +29,13 @@ public class CountdownTimer : MonoBehaviour
             {
                 DisplayTime(timeRemaining);
                 timeRemaining -= Time.deltaTime;
-                float rotationAngle = 180 * (1 - (timeRemaining / 60f));
+                float rotationAngle = 180 * (1 - (timeRemaining / time));
 
                 rotatingCover.rotation = Quaternion.Euler(0,0,rotationAngle);
             }
             else
             {
+                AudioManager.Manager.PlaySFX("SunriseApproaching");
                 Debug.Log("Out of Time! Sunrise is Here!");
             }
         }

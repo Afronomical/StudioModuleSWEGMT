@@ -4,88 +4,197 @@ using System.Collections.Generic;
 using Unity.Collections.LowLevel.Unsafe;
 using Unity.VisualScripting;
 using UnityEngine;
-//using "Character"
 
 public class StateMachineController : MonoBehaviour
 {
-    //handles the switching of the states depending on if certain conditions are met
+    // Handles the switching of the states depending on if certain conditions are met
     private AICharacter character;
     public float detectionRange = 4f;
     public float attackRange = 1f;
+    public LayerMask unwalkableLayer;
+    private float distance;
+    private Vector3 lastPosition;
+    private int stuckCheckFrames;
+    private float changeStateTimer;
+    private float changeStateTime = 0.5f;
+    private int specialAttackThreshold = 2;
+
 
     private void Start()
     {
         character = GetComponent<AICharacter>();
+        changeStateTimer = UnityEngine.Random.Range(-2.5f, changeStateTime);
     }
+
 
     private void Update()
     {
-        CheckState();
+        changeStateTimer += Time.deltaTime;
+        if (changeStateTimer > changeStateTime)  // Don't try to change the state every frame
+        {
+            changeStateTimer = 0f;
+            CheckState();
+        }
     }
+
 
     private void CheckState()
     {
+        distance = Vector3.Distance(character.player.transform.position, character.transform.position);
 
-        if (character.health == 0)
-        {
+
+        if (character.health <= 0)
             character.ChangeState(AICharacter.States.Dead);
-            return;
-        }
 
-        if (character.health == 1)
-        {
+
+        else if (character.health == 1)
             character.ChangeState(AICharacter.States.Downed);
-            return;
-        }
 
-        float distance = Vector3.Distance(character.player.transform.position, character.transform.position);
-        //Debug.Log(distance);
 
-        if (character.characterType == AICharacter.CharacterTypes.Villager)
-        {
-            if (distance < detectionRange)
-            {
-                character.ChangeState(AICharacter.States.Run);
 
-            }
-            else
-            {
-                character.ChangeState(AICharacter.States.Idle);
-            }
-        }
+        else if (character.characterType == AICharacter.CharacterTypes.Villager)
+            VillagerStates();
+
+
         else if (character.characterType == AICharacter.CharacterTypes.Hunter)
+            HunterStates();
+
+
+        else if (character.characterType == AICharacter.CharacterTypes.RangedHunter)
+            RangedHunterStates();
+
+        //boss behaviour
+        else if (character.characterType == AICharacter.CharacterTypes.Boss)
+            BossStates();
+
+
+        if (character.isMoving && character.currentState != AICharacter.States.Run && character.currentState != AICharacter.States.Downed)  // Check to see if the character is stuck on an object
         {
-            //patrol if out of detection range
-            if (distance > detectionRange)
+            if (StuckCheck())
             {
-                character.ChangeState(AICharacter.States.Patrol);
-            }
-            //hunt while not in attack range
-            else if(distance < detectionRange && distance > attackRange)
-            {
-                character.ChangeState(AICharacter.States.Hunt);
-            }
-            //attack when in attack range
-            else
-            {
-                character.ChangeState(AICharacter.States.Attack);
+                character.isMoving = false;
+                character.ChangeState(AICharacter.States.None);
             }
         }
-        else if(character.characterType == AICharacter.CharacterTypes.RangedHunter)
+        else
+            stuckCheckFrames = 0;
+
+        lastPosition = transform.position;  // Update the last position of this character
+    }
+
+    //basic state machine for boss
+    //can be extended/modified according to tech design requirements
+    private void BossStates()
+    {
+        if (distance < attackRange)
         {
-            if(distance < attackRange)
-            {
+            //changes to special attack when health is low
+            if (character.GetHealth() <= specialAttackThreshold)
+                character.ChangeState(AICharacter.States.SpecialAttack);
+            else
                 character.ChangeState(AICharacter.States.Shoot);
-            }
-            else if(distance < detectionRange && distance > attackRange)
-            {
+        }
+        else if (distance < detectionRange && distance > attackRange)
+        {
+            character.ChangeState(AICharacter.States.Hunt);
+        }
+
+        else if (distance > detectionRange)
+        {
+            character.ChangeState(AICharacter.States.Patrol);
+        }
+    }
+
+
+
+    private void VillagerStates()
+    {
+        if (character.currentState == AICharacter.States.Idle)
+        {
+            if (distance < detectionRange && RaycastToPlayer(detectionRange))  // When the player gets close to the villager
+                character.ChangeState(AICharacter.States.Run);
+        }
+
+
+        else if (character.currentState == AICharacter.States.Run)  // If they are running
+        {
+            changeStateTimer = changeStateTime;  // Don't stop checking if the state can change
+
+            if (!character.isMoving && distance > detectionRange * 1.5f && RaycastToPlayer(detectionRange * 1.5f))  // Only change state when they stop running
+                character.ChangeState(AICharacter.States.Idle);
+        }
+
+
+        else
+            character.ChangeState(AICharacter.States.Idle);
+    }
+
+
+    private void HunterStates()
+    {
+        if (distance > detectionRange)  // Patrol if out of detection range
+            character.ChangeState(AICharacter.States.Patrol);
+
+
+        else if (distance < detectionRange && distance > attackRange)  // Hunt while not in attack range
+        {
+            if (character.currentState != AICharacter.States.Hunt)  // If they are running
+                if (RaycastToPlayer(detectionRange))  // Can they see the player
+                    character.ChangeState(AICharacter.States.Hunt);
+            else  // If hunt is already the state then don't check for walls
                 character.ChangeState(AICharacter.States.Hunt);
-            }
-            
-            else if(distance > detectionRange)
+        }
+
+
+        else if (distance < attackRange) // Attack when in attack range
+            character.ChangeState(AICharacter.States.Attack);
+    }
+
+
+    private void RangedHunterStates()
+    { 
+        if (distance < attackRange && RaycastToPlayer(distance))
+        {
+            character.ChangeState(AICharacter.States.Shoot);
+        }
+
+        else if (distance < detectionRange)
+        {
+            character.ChangeState(AICharacter.States.Hunt);
+        }
+
+        else
+        {
+            character.ChangeState(AICharacter.States.Patrol);
+        }
+    }
+
+
+    private bool RaycastToPlayer(float range)
+    {
+        if (Physics2D.Raycast(transform.position, (character.player.transform.position - transform.position), range, unwalkableLayer))
+            return false;  // The raycast hit a wall
+        else return true;  // The enemy can see the player
+    }
+
+
+    private bool StuckCheck()
+    {
+        if (Vector3.Distance(lastPosition, transform.position) > 0.2f)  // They are moving
+        {
+            stuckCheckFrames = 0;
+            return false;
+        }
+        else  // They haven't moved enough
+        {
+            stuckCheckFrames++;
+            if (stuckCheckFrames >= 4)
             {
-                character.ChangeState(AICharacter.States.Patrol);
+                stuckCheckFrames = 0;
+                return true;  // They are stuck
             }
+            else
+                return false;  // They haven't been stuck long enough
         }
     }
 }

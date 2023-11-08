@@ -7,7 +7,7 @@ using UnityEngine.Rendering;
 
 public class AudioManager : MonoBehaviour
 {
-    public VFX_Controller[] Sounds;
+    public SFX_Controller[] Sounds;
     public Music_Controller[] Music;
 
     public static AudioManager Manager;
@@ -23,7 +23,7 @@ public class AudioManager : MonoBehaviour
         }
         DontDestroyOnLoad(gameObject);
 
-        foreach (VFX_Controller s in Sounds)
+        foreach (SFX_Controller s in Sounds)
         {
             s.source = gameObject.AddComponent<AudioSource>();
             s.source.clip = s.clip;
@@ -38,26 +38,20 @@ public class AudioManager : MonoBehaviour
             m.source.clip = m.clip;
             m.source.volume = m.volume;
             m.source.pitch = m.pitch;
-            m.source.loop = m.Loop;
-            
+            m.source.loop = m.Loop;            
         }
     }
 
-    public void PlayVFX(string name)
+    public void PlaySFX(string name)
     {
-        VFX_Controller s = Array.Find(Sounds, VFX_Controller => VFX_Controller.Name == name);
-        s.source.Play();
-        Music_Controller m = Array.Find(Music, Music_Controller => Music_Controller.Name == name);
-        
-       // m.source.Play();
+        SFX_Controller s = Array.Find(Sounds, SFX_Controller => SFX_Controller.Name == name);
+        s.source.Play();        
 
         if (s == null )
         {
             Debug.Log("Sound: " + name + " not found!");
             return;
-        }
-        
-
+        }     
     }
 
     public void PlayMusic(String  name)
@@ -70,9 +64,8 @@ public class AudioManager : MonoBehaviour
             Debug.Log("Music: " + name + " not found!");
             return;
         }
-
     }
-    public void StopAudio(string name)
+    public void StopMusic(string name)
     {
         Music_Controller m = Array.Find(Music, music=> music.Name== name);
         if(m != null)
@@ -80,28 +73,15 @@ public class AudioManager : MonoBehaviour
             m.source.Stop();
         }
     }
-    public void StopSoundEffect(string name)
+    public void StopSFX(string name)
     {
-        VFX_Controller s = Array.Find(Sounds,sound=> sound.Name == name);
+        SFX_Controller s = Array.Find(Sounds,sound=> sound.Name == name);
         if(s != null)
         {
             s.source.Stop();
         }
     }
-    
-
-
 }
-
-
-
-
-
-
-
-
-
-
 
 //Old Manager
 /*public class AudioManager : MonoBehaviour

@@ -11,14 +11,15 @@ public class PlayerHealthTestScript : MonoBehaviour
     public GameObject floatingDamage; 
 
 
-    public HealthBarScript healthBar;
+
+    public NewHealthBarScript healthBar;
     
     
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = MaxHealth;
-        healthBar.SetMaxHealth(MaxHealth);
+        healthBar.setMaxHealth(MaxHealth);
         
     }
 
@@ -56,7 +57,8 @@ public class PlayerHealthTestScript : MonoBehaviour
     void TakeDamage(int damage)
     {
         currentHealth -= damage;
-        healthBar.setHealth(currentHealth);
+        currentHealth = Mathf.Max(currentHealth, minHealth);
+        healthBar.SetHealth(currentHealth);
     }
     void showFloatingText()
     {

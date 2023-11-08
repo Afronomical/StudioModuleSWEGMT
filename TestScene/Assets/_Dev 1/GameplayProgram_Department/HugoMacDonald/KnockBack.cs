@@ -42,7 +42,7 @@ public class KnockBack : MonoBehaviour
         {
             foreach (Collider2D collider in colliders)
             {
-                if (collider.CompareTag("Hunter") || collider.CompareTag("Villager"))
+                if (collider.CompareTag("Hunter") || collider.CompareTag("Villager") || collider.CompareTag("Projectile"))
                 {
                     if (playerDeath != null && playerDeath.currentHealth < previousHealth)
                     {

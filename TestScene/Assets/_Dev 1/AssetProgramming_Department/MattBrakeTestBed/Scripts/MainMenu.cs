@@ -13,16 +13,17 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGame()
     {
-        AudioManager.Manager.PlayVFX("UI_Click");
-        AudioManager.Manager.StopAudio("MenuMusic");
+        AudioManager.Manager.PlaySFX("UI_Click");
+        AudioManager.Manager.StopMusic("MenuMusic");
         Debug.Log("Play Game");
         SceneManager.LoadScene(2);
+        Time.timeScale = 1; 
         //LevelManager.Instance.LoadScene("TestCaveScene");
     }
 
     public void SettingsMenu()
     {
-        AudioManager.Manager.PlayVFX("UI_Click");
+        AudioManager.Manager.PlaySFX("UI_Click");
         Debug.Log("Settings");
         
 
@@ -30,14 +31,14 @@ public class MainMenu : MonoBehaviour
 
     public void InstructionsMenu()
     {
-        AudioManager.Manager.PlayVFX("UI_Click");
+        AudioManager.Manager.PlaySFX("UI_Click");
         Debug.Log("Instructions");
         SceneManager.LoadScene(1);
     }
 
     public void ExitGame()
     {
-        AudioManager.Manager.PlayVFX("UI_Click");
+        AudioManager.Manager.PlaySFX("UI_Click");
         Debug.Log("GameQuit");
         Application.Quit();
     }

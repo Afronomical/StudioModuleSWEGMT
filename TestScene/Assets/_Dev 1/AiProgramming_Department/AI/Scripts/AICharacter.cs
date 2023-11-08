@@ -16,26 +16,31 @@ public class AICharacter : MonoBehaviour
     {
         Villager,
         Hunter,
-        RangedHunter
+        RangedHunter,
+        Boss
     }
 
     public enum States
     {
         Idle,
-        Roam,
         Downed,
         Dead,
         Patrol,
         Attack,
         Run,
-        Hunt, //added hunt state
-        Shoot
+        Hunt,
+        Shoot,
+        SpecialAttack,
+        None
+        //boss states
+        //phase 1, 2, 3...?
     }
 
 
     [Header("Character Stats")]
     public CharacterTypes characterType;
     public int health = 3;
+    public int hungerValue = 1;
     public float walkSpeed, runSpeed, crawlSpeed;
     public float turnSpeed;
     public float turnDistance;
@@ -43,10 +48,11 @@ public class AICharacter : MonoBehaviour
     [Header("States")]
     public States currentState;
     public StateBaseClass stateScript;
-
     public GameObject player;
-
     public GameObject bulletPrefab;
+    public GameObject homingBulletPrefab;
+
+    public bool isMoving;
 
     void Start()
     {
@@ -60,7 +66,8 @@ public class AICharacter : MonoBehaviour
 
     void Update()
     {
-        stateScript.UpdateLogic();  // Calls the virtual function for whatever state scripts
+        if (stateScript != null)
+            stateScript.UpdateLogic();  // Calls the virtual function for whatever state scripts
     }
 
 
@@ -95,31 +102,39 @@ public class AICharacter : MonoBehaviour
                     stateScript = transform.AddComponent<RunState>();
                     break;
                 case States.Attack:
-                    AudioManager.Manager.PlayVFX("NPC_MeleeAttack");
+                    AudioManager.Manager.PlaySFX("NPC_MeleeAttack");
                     stateScript = transform.AddComponent<AttackState>();
                     break;
                 case States.Downed:
-                    AudioManager.Manager.PlayVFX("NPC_Downed");
+                    
                     stateScript = transform.AddComponent<DownedState>();
                     break;
                 case States.Dead:
-                    AudioManager.Manager.PlayVFX("NPC_Death");
+                    AudioManager.Manager.PlaySFX("NPC_Death");
                     stateScript = transform.AddComponent<DeadState>();
                     break;
                 case States.Hunt:
                     stateScript = transform.AddComponent<HuntState>();
                     break;
                 case States.Shoot:
+                    AudioManager.Manager.PlaySFX("NPC_RangedAttack");
                     stateScript = transform.AddComponent<ShootState>();
+                    break;
+                case States.SpecialAttack:
+                    stateScript = transform.AddComponent<SpecialAttackState>();
                     break;
                 //------------------------------------ Add new states in here
 
+                case States.None:
+                    stateScript = null;
+                    break;
                 default:
                     stateScript = transform.AddComponent<IdleState>();
                     break;
             }
 
-            stateScript.character = this;  // Set the reference that state scripts will use
+            if (stateScript != null)
+                stateScript.character = this;  // Set the reference that state scripts will use
         }
     }
 

@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class playerAttack : MonoBehaviour
 {
     public int damage = 1;
     public GameObject hitBox;
-    public float attackDelayStart = 0.3f;
+    public float attackDelayStart = 0.5f;
     private float attackDelay;
     private Vector2 mousePos;
     private GameObject enemyTarg;
@@ -15,48 +16,66 @@ public class playerAttack : MonoBehaviour
     private bool canHit = true;
     
 
+    private Animator animator;
+    private PlayerAnimationController animationController;
+
+    public static List<GameObject> enemyList = new List<GameObject>();
+
     //enter collision, detects if has enemy tag, if true set enemy to attacking var
     private void OnTriggerEnter2D(Collider2D other)
     {
-        
-
         if ((other.tag == "Villager") || (other.tag == "Hunter"))
         {
-            enemyTarg = other.gameObject;
-            AiEnemy = other.GetComponent<AICharacter>();
+            if (!enemyList.Contains(other.gameObject))
+            {
+                enemyList.Add(other.gameObject);
+            }
+            
         }
     }
 
     //exit clears enemy target
     private void OnTriggerExit2D(Collider2D other)
     {
-        enemyTarg = null;
-        AiEnemy = null;
-
-
-
-        if (other == enemyTarg)                            //((other.tag == "Villager") || (other.tag == "Hunter"))
+        if ((other.tag == "Villager") || (other.tag == "Hunter"))
         {
-            enemyTarg = null;
-            AiEnemy = null;
+            enemyList.Remove(other.gameObject);
+            Debug.Log(other.name);
         }
     }
 
 
-    //damages the enemy (damage not yet implemented)
+    //damages the enemy
     void damageEnemy()
     {
-        
-
-
-
-        if (enemyTarg != null)
+        foreach (GameObject obj in enemyList)
         {
+            if (obj.TryGetComponent(out AICharacter AiEnemy))
+            {
+                AiEnemy.health = Mathf.Clamp(AiEnemy.health - damage, 1, 1000);
+
+                AudioManager.Manager.PlaySFX("NPC_TakeDamage");
+                AiEnemy.GetComponentInChildren<AIAnimationController>().ChangeAnimationState(AIAnimationController.AnimationStates.Hurt); //Plays the currently hit AIs take damage function
+                //enemyTarg.GetComponentInChildren<AI_AnimationController>().ChangeAnimationState(AI_AnimationController.AnimationStates.Hurt);
+            }
+
             
-            Debug.Log(enemyTarg.name);
-            AiEnemy.health -= damage;
-            AudioManager.Manager.PlayVFX("NPC_TakeDamage");
+
         }
+
+        //for (int i = enemyList.Count -1; i >= 0; i--)
+        //{
+        //    GameObject o = enemyList[i];
+        //    o.
+        //}
+
+        //if (enemyTarg != null)
+        //{
+            
+        //    Debug.Log(enemyTarg.name);
+        //    AiEnemy.health -= damage;
+        //    AudioManager.Manager.PlaySFX("NPC_TakeDamage");
+        //}
 
 
     }
@@ -65,6 +84,11 @@ public class playerAttack : MonoBehaviour
     void Start()
     {
         attackDelay = attackDelayStart;
+
+        animator = GetComponent<Animator>();
+        animationController = GetComponent<PlayerAnimationController>();
+
+        //enemyHealth = AiEnemy.health;
     }
 
 
@@ -80,10 +104,11 @@ public class playerAttack : MonoBehaviour
         //calls damage enemy when LMB is pressed
         if (Input.GetKey(KeyCode.Mouse0))
         {
+            animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.SlashAttack);
             
             if (canHit)
             {
-                AudioManager.Manager.PlayVFX("PlayerAttack");
+                //AudioManager.Manager.PlaySFX("PlayerAttack");
                 damageEnemy();
                 canHit = false;
             }

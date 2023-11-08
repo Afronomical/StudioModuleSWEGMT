@@ -6,6 +6,9 @@ using UnityEngine.UI;
 public class HungerBar : MonoBehaviour
 {
     public Slider slider;
+    public BlinkEffect BlinkEffect;
+    
+
 
     public void SetMinHunger(int Hunger)
     {
@@ -16,6 +19,15 @@ public class HungerBar : MonoBehaviour
     public void SetHunger(int Hunger)
     {
         slider.value = Hunger;
+
+        if(slider.value >= slider.maxValue)
+        {
+            BlinkEffect.enabled = false;
+        }
+        else
+        {
+            BlinkEffect.enabled = true; 
+        }
     }
 
 }

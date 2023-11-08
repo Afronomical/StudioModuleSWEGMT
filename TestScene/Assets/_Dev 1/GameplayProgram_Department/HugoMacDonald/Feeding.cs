@@ -10,12 +10,22 @@ public class Feeding : MonoBehaviour
     private bool canHeal = false; // To check if the player is inside the healing zone
     private AICharacter currentTarget = null; // Store the current AI character being healed
     public HungerBar hungerBarSlider;
+    public GameObject flashingCanvas;
     public PlayerDeath playerDeath; // Reference to the PlayerDeath script
+
+    private Animator animator;
+    private PlayerAnimationController animationController;
+    public ToolTipManager toolTipManager;
+    public float durationTime = 3.0f;
+    
 
     private void Start()
     {
         currentHunger = minHunger;
         hungerBarSlider.SetMinHunger(minHunger);
+
+        animator = GetComponent<Animator>();
+        animationController = GetComponent<PlayerAnimationController>();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -44,14 +54,27 @@ public class Feeding : MonoBehaviour
     {
         if (canHeal && Input.GetKeyDown(healKey) && currentTarget != null)
         {
+            //Play Feed SFX
+            AudioManager.Manager.PlaySFX("PlayerFeed");
             // Feed on the current AI character in the feeding zone when it's downed
-            currentHunger += 1;
+            currentHunger += currentTarget.hungerValue;
+            
             hungerBarSlider.SetHunger(currentHunger);
+            //flashingCanvas.SetActive(false);
+            currentTarget.health -= 1;
 
             // Call a method in the PlayerDeath script to increase player health
             playerDeath.FeedAttack();
+            ToolTipManager.ShowTopToolTip_Static("TASTY! Let's keep going before Sunlight hits!", durationTime);
+        }
+
+        if (Input.GetKey(healKey) && currentTarget != null)
+        {
+            animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Feed);
+            
         }
     }
+
 }
 
 
