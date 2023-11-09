@@ -9,9 +9,8 @@ public class HungerBar : MonoBehaviour
     public BlinkEffect BlinkEffect;
     private float targetValue;
     private float currentValue;
-    public float fillSpeed = 5f;
-
-
+    public float fillSpeed = 0.1f;
+    float currentSpeed = 0;
     private void Start()
     {
      
@@ -45,25 +44,19 @@ public class HungerBar : MonoBehaviour
 
     public void Update()
     {
-        ManageBar();
-       
-    }
 
-    public void ManageBar()
-    {
         if (currentValue != targetValue)
         {
-            currentValue = Mathf.Lerp(currentValue, targetValue, fillSpeed * Time.deltaTime);
+            currentValue = Mathf.Lerp(currentValue, targetValue, fillSpeed * Time.deltaTime);    
             slider.value = currentValue;
-            //if (Mathf.Approximately(currentValue, targetValue))
-            //{
-            //    currentValue = targetValue;
-            //}
             Debug.Log("Current Value: " + currentValue + " Target Value: " + targetValue);
-            
-            //currentValue = targetValue;
-            
+
+           
+
         }
     }
+
+   
+   
 
 }
