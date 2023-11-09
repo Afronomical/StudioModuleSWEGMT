@@ -59,7 +59,7 @@ public class CountdownTimer : MonoBehaviour
     {
         rotatingCover.Rotate(Vector3.forward * Time.deltaTime * rotationSpeed); ///continuosly rotates the cover as specified speed 
 
-        rotatingCover.rotation = Quaternion.Euler(0, 0, rotatingCover.eulerAngles.z % maxrotationAngle); ///caps the rotation to 360 degrees
+        //rotatingCover.rotation = Quaternion.Euler(0, 0, rotatingCover.eulerAngles.z % maxrotationAngle); ///caps the rotation to 360 degrees
 
        
     }
