@@ -153,8 +153,8 @@ public class PlayerDeath : MonoBehaviour
     private void deathAfterDelay()
     {
         AudioManager.Manager.StopMusic("LevelMusic");
-        Time.timeScale = 0;
         deathscreenCanvas.ShowUI();
+       
         //SceneManager.LoadScene("MainMenu");
     }
 
