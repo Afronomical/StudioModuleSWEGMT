@@ -555,7 +555,8 @@ MonoBehaviour:
   timeIsRunning: 1
   timeText: {fileID: 244302574974424187}
   rotatingCover: {fileID: 8902011787197866989}
-  rotationSpeed: 90
+  rotationSpeed: 1.5
+  maxrotationAngle: 360
 --- !u!1 &1348509196184816650
 GameObject:
   m_ObjectHideFlags: 0
@@ -2795,6 +2796,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slider: {fileID: 3500548692249957960}
   BlinkEffect: {fileID: 5467851922213096365}
+  fillSpeed: 1
 --- !u!1 &6636882998037152997
 GameObject:
   m_ObjectHideFlags: 0
