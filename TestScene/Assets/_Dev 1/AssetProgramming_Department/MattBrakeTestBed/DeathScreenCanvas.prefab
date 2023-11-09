@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.5660378, g: 0, b: 0, a: 1}
-    m_HighlightedColor: {r: 0.6320754, g: 0.021466741, b: 0.021466741, a: 0.6862745}
+    m_HighlightedColor: {r: 0.6313726, g: 0.019607844, b: 0.019607844, a: 0.42745098}
     m_PressedColor: {r: 0.6313726, g: 0.019607844, b: 0.019607844, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -554,7 +554,7 @@ GameObject:
   - component: {fileID: 2847135785822609831}
   - component: {fileID: 7426153589086856901}
   m_Layer: 5
-  m_Name: STATS
+  m_Name: Stats
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -640,7 +640,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.5660378, g: 0, b: 0, a: 1}
-    m_HighlightedColor: {r: 0.6320754, g: 0.021466741, b: 0.021466741, a: 0.6862745}
+    m_HighlightedColor: {r: 0.6313726, g: 0.019607844, b: 0.019607844, a: 0.42745098}
     m_PressedColor: {r: 0.6313726, g: 0.019607844, b: 0.019607844, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -851,7 +851,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.5660378, g: 0, b: 0, a: 1}
-    m_HighlightedColor: {r: 0.6320754, g: 0.021466741, b: 0.021466741, a: 0.6862745}
+    m_HighlightedColor: {r: 0.6320754, g: 0.021466741, b: 0.021466741, a: 0.42745098}
     m_PressedColor: {r: 0.6313726, g: 0.019607844, b: 0.019607844, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -1032,7 +1032,7 @@ GameObject:
   - component: {fileID: 8837099017583134222}
   - component: {fileID: 9040935120346971969}
   - component: {fileID: 3606127083213559161}
-  - component: {fileID: 92764226520880723}
+  - component: {fileID: 9141107297912362927}
   m_Layer: 5
   m_Name: DeathScreenCanvas
   m_TagString: Untagged
@@ -1135,7 +1135,7 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
---- !u!114 &92764226520880723
+--- !u!114 &9141107297912362927
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1216,7 +1216,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'TRY AGAIN
+  m_text: 'PLAY AGAIN
 
 '
   m_isRightToLeft: 0

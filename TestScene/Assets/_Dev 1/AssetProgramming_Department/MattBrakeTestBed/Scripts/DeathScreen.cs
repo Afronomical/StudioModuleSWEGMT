@@ -13,7 +13,7 @@ public class DeathScreen : MonoBehaviour
 
     private void Start()
     {
-        deathScreenCanvasGroup.alpha = 0; 
+        deathScreenCanvasGroup.alpha = 1; 
     }
 
 
@@ -32,6 +32,19 @@ public class DeathScreen : MonoBehaviour
 
     private void Update()
     {
+       
+        if(Input.GetKeyDown(KeyCode.I))
+        {
+            ShowUI();
+        }
+
+        if(Input.GetKeyDown(KeyCode.H))
+        {
+            HideUI();
+        }
+        
+        
+        
         if(fadeIn)
         {
             if(deathScreenCanvasGroup.alpha < 1)
