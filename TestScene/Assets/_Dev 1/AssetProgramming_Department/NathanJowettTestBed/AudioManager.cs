@@ -6,6 +6,7 @@ using UnityEngine.Audio;
 using UnityEngine.Rendering;
 using UnityEngine.UI;
 using TMPro;
+using Unity.VisualScripting;
 
 public class AudioManager : MonoBehaviour
 {
@@ -94,7 +95,7 @@ public class AudioManager : MonoBehaviour
 
     public void Volumeslider(float volume)
     {
-        volumeText.text = volume.ToString("1.0");
+        volumeText.text = volume.ToString("0.0");
     }
 
     public void SaveVolumeButton()
@@ -106,9 +107,17 @@ public class AudioManager : MonoBehaviour
 
     private void loadValues()
     {
-        float volumeValue = PlayerPrefs.GetFloat("VolumeValue");
-        volumeSlider.value = volumeValue;
-        AudioListener.volume = volumeValue;
+        if (PlayerPrefs.GetFloat("VolumeValue") == null)
+        {
+            volumeSlider.value = 1;
+        }
+        else
+        {
+            float volumeValue = PlayerPrefs.GetFloat("VolumeValue");
+            volumeSlider.value = volumeValue;
+            AudioListener.volume = volumeValue;
+        }
+        
     }
 }
 
