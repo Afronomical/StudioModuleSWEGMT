@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 18350
+  controlID: 30118
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -149,7 +149,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 18296
+  controlID: 30064
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -175,7 +175,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 50}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 18272
+  controlID: 30040
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -243,7 +243,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 84acfeff8cacfeffc4acfeffe2c0ffffdae3fffff8e9fffff4faffff80710000d88500002487000018e40000
+      m_ExpandedIDs: 3876fdff4076fdff4e76fdff7c76fdff5c4dfeff644dfeff744dfeffa655feff1257feffb865feff84acfeff8cacfeffc4acfeffe2c0ffffdae3fffff8e9fffff4faffff80710000d88500002487000018e400006a090100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -769,9 +769,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 359.5, y: 202, z: 0}
+    m_Target: {x: 369.23053, y: 174.57951, z: 0.99539256}
     speed: 2
-    m_Value: {x: 359.5, y: 202, z: 0}
+    m_Value: {x: 369.23053, y: 174.57951, z: 0.99539256}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -821,9 +821,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 412.36423
+    m_Target: 312.82483
     speed: 2
-    m_Value: 412.36423
+    m_Value: 312.82483
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -948,7 +948,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/_Dev 1/AssetProgramming_Department/MattBrakeTestBed/Scripts
+    - Assets/_Dev 1/AssetProgramming_Department/MattBrakeTestBed/Scenes
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -958,15 +958,15 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/_Dev 1/AssetProgramming_Department/MattBrakeTestBed/Scripts
+  - Assets/_Dev 1/AssetProgramming_Department/MattBrakeTestBed/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Matth\Documents\UNI WORK\Actual Year 2\SWEGMT REPO\StudioModuleSWEGMT\TestScene
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 5a7c0000
-    m_LastClickedID: 31834
+    m_SelectedIDs: 587c0000
+    m_LastClickedID: 31832
     m_ExpandedIDs: 0000000076720000307c00003a7c00003c7c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1022,7 +1022,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000607a0000067a00000000000026b00000327600004c2f0300
     m_RenameOverlay:
       m_UserAcceptedRename: 0

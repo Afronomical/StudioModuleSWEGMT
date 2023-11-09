@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class PlayerDeath : MonoBehaviour
 {
+
+    public DeathScreen deathscreenCanvas;
     private KnockBack knockBack;
     public int maxHealth = 100;
     public int currentHealth;
@@ -31,7 +33,6 @@ public class PlayerDeath : MonoBehaviour
         isDead = false;
         currentHealth = maxHealth;
         healthBarScript.setMaxHealth(maxHealth);
-
         animator = GetComponent<Animator>();
         animationController = GetComponent<PlayerAnimationController>();
     }
@@ -152,7 +153,9 @@ public class PlayerDeath : MonoBehaviour
     private void deathAfterDelay()
     {
         AudioManager.Manager.StopMusic("LevelMusic");
-        SceneManager.LoadScene("MainMenu");
+        Time.timeScale = 0;
+        deathscreenCanvas.ShowUI();
+        //SceneManager.LoadScene("MainMenu");
     }
 
     public void SunRiseDamage() // Deals Damage While The Player Is In Sun Light
