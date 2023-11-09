@@ -38,15 +38,20 @@ public class PlayerController : MonoBehaviour
     {
         AudioManager.Manager.PlayMusic("LevelMusic");
         rb = GetComponent<Rigidbody2D>();
+
         canDodge = true;
+        
         //canBatForm = true;
-        playerMesh.SetActive(true);
-        batMesh.SetActive(false);
+        //playerMesh.SetActive(true);
+        //batMesh.SetActive(false);
+
         hitBox = GetComponent<BoxCollider2D>();
         animator = GetComponent<Animator>();
         animationController = GetComponent<PlayerAnimationController>();
         playerDeath = GetComponent<PlayerDeath>();
+        
         stamina = maxStamina;
+        staminaBarSlider.SetStamina(stamina);
     }
 
     void Update()
@@ -133,7 +138,12 @@ public class PlayerController : MonoBehaviour
 
         canDodge = false;
         isDodging = true;
-        rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * dodgeSpeed, Input.GetAxisRaw("Vertical") * dodgeSpeed);
+        
+
+        Vector2 inputVector = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        inputVector.Normalize();
+        rb.velocity = inputVector * dodgeSpeed;
+
         yield return new WaitForSeconds(dodgeDuration);
         isDodging = false;
 
