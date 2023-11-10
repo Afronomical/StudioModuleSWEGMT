@@ -14,7 +14,8 @@ public class playerAttack : MonoBehaviour
     private GameObject enemyTarg;
     private AICharacter AiEnemy;
     private bool canHit = true;
-    
+    private Feeding feeding;
+
 
     private Animator animator;
     private PlayerAnimationController animationController;
@@ -30,7 +31,7 @@ public class playerAttack : MonoBehaviour
             {
                 enemyList.Add(other.gameObject);
             }
-            
+
         }
     }
 
@@ -59,7 +60,7 @@ public class playerAttack : MonoBehaviour
                 //enemyTarg.GetComponentInChildren<AI_AnimationController>().ChangeAnimationState(AI_AnimationController.AnimationStates.Hurt);
             }
 
-            
+
 
         }
 
@@ -71,7 +72,7 @@ public class playerAttack : MonoBehaviour
 
         //if (enemyTarg != null)
         //{
-            
+
         //    Debug.Log(enemyTarg.name);
         //    AiEnemy.health -= damage;
         //    AudioManager.Manager.PlaySFX("NPC_TakeDamage");
@@ -87,6 +88,8 @@ public class playerAttack : MonoBehaviour
 
         animator = GetComponent<Animator>();
         animationController = GetComponent<PlayerAnimationController>();
+
+        feeding = GetComponent<Feeding>();
 
         //enemyHealth = AiEnemy.health;
     }
@@ -105,8 +108,8 @@ public class playerAttack : MonoBehaviour
         if (Input.GetKey(KeyCode.Mouse0))
         {
             animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.SlashAttack);
-            
-            if (canHit)
+
+            if (canHit && feeding.currentlyFeeding == false)
             {
                 //AudioManager.Manager.PlaySFX("PlayerAttack");
                 damageEnemy();
@@ -118,9 +121,9 @@ public class playerAttack : MonoBehaviour
                 canHit = true;
                 attackDelay = attackDelayStart;
             }
-            
+
         }
-        
+
 
     }
 }
