@@ -31,6 +31,7 @@ public class PlayerController : MonoBehaviour
 
     public GameObject playerMesh;
     public GameObject batMesh;
+    private GameObject hud;
     public BoxCollider2D hitBox;
     public StaminaBar staminaBarSlider;
 
@@ -180,7 +181,16 @@ public class PlayerController : MonoBehaviour
         }     
     }
 
-   
+
+
+    public void SetHUDReference(GameObject hudReference)
+    {
+        hud = hudReference;
+        Debug.Log("HUD reference set in PlayerController!");
+    }
+
+
+
     // Batform Code //
 
 
