@@ -81,6 +81,7 @@ public class CoffinInteraction : MonoBehaviour
             //print("Coffin opened, I can finally rest!");
             ToolTipManager.ShowBottomToolTip_Static("Coffin Opened, I can finally Rest!");
             StartCoroutine(PlayCoffinSFX());
+            StopAllCoroutines();
         }
         else
         {
@@ -125,7 +126,7 @@ public class CoffinInteraction : MonoBehaviour
         {
             AudioManager.Manager.StopSFX("CoffinOpen");
         }
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(1f);
         canPlay = false;
 
     }
