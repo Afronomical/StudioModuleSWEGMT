@@ -50,7 +50,7 @@ public class HungerBar : MonoBehaviour
         {
             currentValue = Mathf.Lerp(currentValue, targetValue, fillSpeed * Time.deltaTime);    
             slider.value = currentValue;
-            Debug.Log("Current Value: " + currentValue + " Target Value: " + targetValue);
+            //Debug.Log("Current Value: " + currentValue + " Target Value: " + targetValue);
 
            
 

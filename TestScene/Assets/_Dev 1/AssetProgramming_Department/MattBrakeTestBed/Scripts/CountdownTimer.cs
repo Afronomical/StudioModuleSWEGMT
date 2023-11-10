@@ -31,7 +31,7 @@ public class CountdownTimer : MonoBehaviour
             {
                 DisplayTime(timeRemaining);
                 timeRemaining -= Time.deltaTime;
-                Debug.Log("Time remaining: " + timeRemaining);
+               // Debug.Log("Time remaining: " + timeRemaining);
                 //float rotationAngle = 180 * (1 - (timeRemaining / time));
 
                 //rotatingCover.rotation = Quaternion.Euler(0,0,rotationAngle);

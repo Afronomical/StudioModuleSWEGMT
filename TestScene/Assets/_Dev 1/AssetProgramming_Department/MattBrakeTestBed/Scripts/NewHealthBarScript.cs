@@ -46,7 +46,7 @@ public class NewHealthBarScript : MonoBehaviour
         {
             currentValue = Mathf.Lerp(currentValue, targetValue, fillSpeed * Time.deltaTime);
             slider.value = currentValue;
-            Debug.Log("Current Health Value: " + currentValue + "Current Health Target: " + targetValue);
+           // Debug.Log("Current Health Value: " + currentValue + "Current Health Target: " + targetValue);
         }
 
     }
