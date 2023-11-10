@@ -50,15 +50,17 @@ public class debugMode : MonoBehaviour
 
     public void instakill()
     {
+        instaPressed = !instaPressed;
+
         if (instaPressed)
         {
-            player.GetComponent<playerAttack>().attackDelayStart = origAttackDelay;
-            instaPressed = false;
+            // Set attack damage to a high value for instant kill
+            player.GetComponent<playerAttack>().damage = 1000;
         }
         else
         {
-            player.GetComponent<playerAttack>().attackDelayStart = 0.0001f;
-            instaPressed = true;
+            // Restore the original attack damage
+            player.GetComponent<playerAttack>().damage = 1;
         }
     }
 
