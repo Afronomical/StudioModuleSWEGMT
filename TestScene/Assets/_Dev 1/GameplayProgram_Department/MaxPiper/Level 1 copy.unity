@@ -220,7 +220,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -424,6 +424,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterType: 1
   health: 3
+  hungerValue: 1
   walkSpeed: 2
   runSpeed: 7
   crawlSpeed: 0.5
@@ -431,9 +432,10 @@ MonoBehaviour:
   turnDistance: 1
   currentState: 0
   stateScript: {fileID: 0}
-  isMoving: 0
   player: {fileID: 1919636557}
   bulletPrefab: {fileID: 0}
+  homingBulletPrefab: {fileID: 0}
+  isMoving: 0
 --- !u!212 &282692818
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -454,7 +456,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -591,7 +593,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -795,6 +797,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterType: 0
   health: 3
+  hungerValue: 1
   walkSpeed: 2
   runSpeed: 7
   crawlSpeed: 0.5
@@ -802,9 +805,10 @@ MonoBehaviour:
   turnDistance: 1
   currentState: 0
   stateScript: {fileID: 0}
-  isMoving: 0
   player: {fileID: 1919636557}
   bulletPrefab: {fileID: 0}
+  homingBulletPrefab: {fileID: 0}
+  isMoving: 0
 --- !u!212 &344794355
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -825,7 +829,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1106,7 +1110,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1224,6 +1228,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1749349002811242419, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1981758959967963264, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
+      propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1981758959967963264, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
@@ -1423,6 +1431,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterType: 1
   health: 3
+  hungerValue: 1
   walkSpeed: 2
   runSpeed: 7
   crawlSpeed: 0.5
@@ -1430,9 +1439,10 @@ MonoBehaviour:
   turnDistance: 1
   currentState: 0
   stateScript: {fileID: 0}
-  isMoving: 0
   player: {fileID: 1919636557}
   bulletPrefab: {fileID: 0}
+  homingBulletPrefab: {fileID: 0}
+  isMoving: 0
 --- !u!212 &526840062
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1453,7 +1463,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1673,6 +1683,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterType: 0
   health: 3
+  hungerValue: 1
   walkSpeed: 2
   runSpeed: 7
   crawlSpeed: 0.5
@@ -1680,9 +1691,10 @@ MonoBehaviour:
   turnDistance: 1
   currentState: 0
   stateScript: {fileID: 0}
-  isMoving: 0
   player: {fileID: 1919636557}
   bulletPrefab: {fileID: 0}
+  homingBulletPrefab: {fileID: 0}
+  isMoving: 0
 --- !u!212 &537042812
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1703,7 +1715,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1840,7 +1852,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1961,7 +1973,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2374,6 +2386,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterType: 2
   health: 3
+  hungerValue: 1
   walkSpeed: 2
   runSpeed: 7
   crawlSpeed: 0.5
@@ -2381,9 +2394,10 @@ MonoBehaviour:
   turnDistance: 1
   currentState: 0
   stateScript: {fileID: 0}
-  isMoving: 0
   player: {fileID: 1919636557}
   bulletPrefab: {fileID: 4959076639111065171, guid: 86924d39f5b2d3e44bfdd60051fa4164, type: 3}
+  homingBulletPrefab: {fileID: 0}
+  isMoving: 0
 --- !u!212 &770136342
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2404,7 +2418,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2636,6 +2650,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterType: 2
   health: 3
+  hungerValue: 1
   walkSpeed: 2
   runSpeed: 7
   crawlSpeed: 0.5
@@ -2643,9 +2658,10 @@ MonoBehaviour:
   turnDistance: 1
   currentState: 0
   stateScript: {fileID: 0}
-  isMoving: 0
   player: {fileID: 1919636557}
   bulletPrefab: {fileID: 4959076639111065171, guid: 86924d39f5b2d3e44bfdd60051fa4164, type: 3}
+  homingBulletPrefab: {fileID: 0}
+  isMoving: 0
 --- !u!212 &1009192466
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2666,7 +2682,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2804,7 +2820,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3008,6 +3024,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterType: 0
   health: 3
+  hungerValue: 1
   walkSpeed: 2
   runSpeed: 7
   crawlSpeed: 0.5
@@ -3015,9 +3032,10 @@ MonoBehaviour:
   turnDistance: 1
   currentState: 0
   stateScript: {fileID: 0}
-  isMoving: 0
   player: {fileID: 1919636557}
   bulletPrefab: {fileID: 0}
+  homingBulletPrefab: {fileID: 0}
+  isMoving: 0
 --- !u!212 &1031754012
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3038,7 +3056,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3283,7 +3301,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3312,7 +3330,7 @@ SpriteRenderer:
   m_Size: {x: 100, y: 100}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1244385487
@@ -3551,6 +3569,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterType: 1
   health: 3
+  hungerValue: 1
   walkSpeed: 2
   runSpeed: 7
   crawlSpeed: 0.5
@@ -3558,9 +3577,10 @@ MonoBehaviour:
   turnDistance: 1
   currentState: 0
   stateScript: {fileID: 0}
-  isMoving: 0
   player: {fileID: 1919636557}
   bulletPrefab: {fileID: 0}
+  homingBulletPrefab: {fileID: 0}
+  isMoving: 0
 --- !u!212 &1433310388
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3581,7 +3601,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3629,17 +3649,6 @@ Transform:
   - {fileID: 2010046091}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1651346399 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4463480600298557069, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
-  m_PrefabInstance: {fileID: 509267606}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c85ba010243f754f97459df99066aca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1693569712
 GameObject:
   m_ObjectHideFlags: 0
@@ -3812,6 +3821,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterType: 0
   health: 3
+  hungerValue: 1
   walkSpeed: 2
   runSpeed: 7
   crawlSpeed: 0.5
@@ -3819,9 +3829,10 @@ MonoBehaviour:
   turnDistance: 1
   currentState: 0
   stateScript: {fileID: 0}
-  isMoving: 0
   player: {fileID: 1919636557}
   bulletPrefab: {fileID: 0}
+  homingBulletPrefab: {fileID: 0}
+  isMoving: 0
 --- !u!212 &1693569718
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3842,7 +3853,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3979,7 +3990,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4100,7 +4111,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4304,6 +4315,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterType: 1
   health: 3
+  hungerValue: 1
   walkSpeed: 2
   runSpeed: 7
   crawlSpeed: 0.5
@@ -4311,9 +4323,10 @@ MonoBehaviour:
   turnDistance: 1
   currentState: 0
   stateScript: {fileID: 0}
-  isMoving: 0
   player: {fileID: 1919636557}
   bulletPrefab: {fileID: 0}
+  homingBulletPrefab: {fileID: 0}
+  isMoving: 0
 --- !u!212 &1904420993
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4334,7 +4347,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4575,7 +4588,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4805,7 +4818,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4920,7 +4933,7 @@ PrefabInstance:
     - target: {fileID: 8811865619863605101, guid: 99d0183fde40a224eae3632a6b0caf96, type: 3}
       propertyPath: healthBarScript
       value: 
-      objectReference: {fileID: 1651346399}
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 487986410629779598, guid: 99d0183fde40a224eae3632a6b0caf96, type: 3}
     m_RemovedGameObjects: []
