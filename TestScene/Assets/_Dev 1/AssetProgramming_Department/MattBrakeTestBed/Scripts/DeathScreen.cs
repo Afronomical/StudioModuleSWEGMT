@@ -32,6 +32,7 @@ public class DeathScreen : MonoBehaviour
 
         int randomIndex = Random.Range(0, hints.Count);
         hintText.text = hints[randomIndex];
+        
     }
 
 
@@ -44,6 +45,8 @@ public class DeathScreen : MonoBehaviour
         deathScreenCanvasGroup.interactable = true;
         SetButtonsInteractable(true);
         fadeIn = true;
+        
+        
     }
 
     public void HideUI()
@@ -54,6 +57,7 @@ public class DeathScreen : MonoBehaviour
         fadeOut = true;
         SetButtonsInteractable(false);
         deathCanvas.enabled = false;
+        Invoke("StopGameplay", 5f);
     }
 
     private void Update()
@@ -101,6 +105,11 @@ public class DeathScreen : MonoBehaviour
         {
             button.interactable = interactable;
         }
+    }
+
+    private void StopGameplay()
+    {
+        Time.timeScale = 0f;
     }
 
 }
