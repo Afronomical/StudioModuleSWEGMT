@@ -107,6 +107,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterType: 3
   health: 3
+  hungerValue: 1
   walkSpeed: 2
   runSpeed: 5
   crawlSpeed: 0.5
@@ -437,7 +438,7 @@ Animator:
   m_GameObject: {fileID: 3729059994712698667}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: df83b8b454525c542a13a8e70a8e12fa, type: 2}
+  m_Controller: {fileID: 9100000, guid: 8ff5966de134654478f1a25331d2f776, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
