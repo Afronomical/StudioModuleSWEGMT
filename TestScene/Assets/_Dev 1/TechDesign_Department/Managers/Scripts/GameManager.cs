@@ -18,7 +18,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-
+    public static GameManager instance;
     public bool playerIsDead;
     public bool canChangeLevel;
 
@@ -30,6 +30,15 @@ public class GameManager : MonoBehaviour
 
     private GameObject player;
     private CountdownTimer timer;
+
+    private void Awake()
+    {
+        DontDestroyOnLoad(this);
+        if(instance == null)
+        {
+            instance = this;
+        }
+    }
 
     public enum GameStates
     {
@@ -57,6 +66,12 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            Debug.Log(peopleEaten);
+        }
+
         CheckGameState();
         //set in update so it is up-to-date with the people eaten
         //might have to add a people eaten counter to the feeding script
