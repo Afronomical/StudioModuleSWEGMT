@@ -160,7 +160,7 @@ public class PlayerDeath : MonoBehaviour
 
     public void SunRiseDamage() // Deals Damage While The Player Is In Sun Light
     {
-        AudioManager.Manager.PlaySFX("PlayerTakeDamage");
+        
         animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Hurt);
         currentHealth = currentHealth - sunDamage;
         healthBarScript.SetHealth(currentHealth);

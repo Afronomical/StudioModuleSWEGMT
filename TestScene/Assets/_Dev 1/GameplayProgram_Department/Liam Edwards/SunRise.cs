@@ -53,5 +53,6 @@ public class SunRise : MonoBehaviour
         canBurn = false;
         yield return new WaitForSeconds(damageDelay);
         canBurn = true;
+        AudioManager.Manager.PlaySFX("PlayerTakeDamage");
     }
 }

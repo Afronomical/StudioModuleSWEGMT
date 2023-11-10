@@ -178,3 +178,6 @@ MonoBehaviour:
     pitch: 0
     Loop: 0
     source: {fileID: 0}
+  volumeSlider: {fileID: 0}
+  volumeText: {fileID: 0}
+  volumeValue: 1
