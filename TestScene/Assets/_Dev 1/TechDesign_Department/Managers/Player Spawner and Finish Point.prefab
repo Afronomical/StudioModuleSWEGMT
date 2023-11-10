@@ -52,11 +52,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e527467e91b818342b85d1737e66d028, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerKills: 0
-  killsRequired: 10
-  enoughKills: 0
   player: {fileID: 0}
   refManager: {fileID: 0}
+  maxHunger: 0
 --- !u!114 &3408214122550458394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69,11 +67,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9181386a7b895b74f9374c750f368e16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   loadOnStart: 1
   entities:
   - {fileID: 8424147237921409639, guid: f31c5603327369f4a9a67a256c38040c, type: 3}
   canRespawn: 0
   spawnTimer: 1e+13
+  distanceFromPlayerToRespawn: 10
 --- !u!212 &8459526793938383136
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -94,7 +94,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
