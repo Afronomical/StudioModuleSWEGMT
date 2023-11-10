@@ -7,7 +7,7 @@ public class CoffinInteraction : MonoBehaviour
 {
     private BoxCollider2D coffinArea;
     private Feeding hungerCheck;
-    private bool canPlay = false;
+   
     
 
     //private TMP_Text tooltip;

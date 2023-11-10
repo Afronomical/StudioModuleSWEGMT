@@ -11,16 +11,19 @@ public class DeathScreenButtons : MonoBehaviour
     
    public void Play()
    {
+        AudioManager.Manager.PlaySFX("UI_Click");
         SceneManager.LoadScene(1);
    }
 
     public void Menu()
     {
+        AudioManager.Manager.PlaySFX("UI_Click");
         SceneManager.LoadScene(2);
     }
 
     public void Stats()
     {
+        AudioManager.Manager.PlaySFX("UI_Click");
         ///load stats screen 
     }
 }
