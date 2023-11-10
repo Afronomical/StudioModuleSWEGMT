@@ -123,24 +123,6 @@ MonoBehaviour:
     pitch: 1
     Loop: 0
     source: {fileID: 0}
-  - Name: NPC_Scream
-    clip: {fileID: 0}
-    volume: 1
-    pitch: 1
-    Loop: 0
-    source: {fileID: 0}
-  - Name: NPC_Alterted
-    clip: {fileID: 0}
-    volume: 1
-    pitch: 1
-    Loop: 0
-    source: {fileID: 0}
-  - Name: NPC_VilToHunter
-    clip: {fileID: 0}
-    volume: 1
-    pitch: 1
-    Loop: 0
-    source: {fileID: 0}
   - Name: UI_Click
     clip: {fileID: 8300000, guid: 9c46d51637e534442abd180345f84948, type: 3}
     volume: 1
@@ -156,6 +138,12 @@ MonoBehaviour:
   - Name: EndGame_Victory
     clip: {fileID: 8300000, guid: 02d177859e7494d8daf6fb8a44059f14, type: 3}
     volume: 1
+    pitch: 1
+    Loop: 0
+    source: {fileID: 0}
+  - Name: CoffinOpen
+    clip: {fileID: 8300000, guid: 070779cdcfbe3ff4688691fb33bc3e4e, type: 3}
+    volume: 0.605
     pitch: 1
     Loop: 0
     source: {fileID: 0}
