@@ -9,11 +9,11 @@ public class HungerBar : MonoBehaviour
     public BlinkEffect BlinkEffect;
     private float targetValue;
     private float currentValue;
-    public float fillSpeed = 0.1f;
-    float currentSpeed = 0;
+    public float fillSpeed = 5f;
+    
     private void Start()
     {
-     
+        
     }
 
 
@@ -22,6 +22,7 @@ public class HungerBar : MonoBehaviour
     public void SetMinHunger(int MinHunger)
     {
         slider.minValue = MinHunger;
+        slider.maxValue = 10;
         slider.value = MinHunger; 
         currentValue = MinHunger;
         targetValue = MinHunger;

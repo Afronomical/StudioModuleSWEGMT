@@ -8,6 +8,7 @@ public class CoffinInteraction : MonoBehaviour
     private BoxCollider2D coffinArea;
     private Feeding hungerCheck;
     private bool canPlay = false;
+    
 
     //private TMP_Text tooltip;
 
@@ -120,6 +121,7 @@ public class CoffinInteraction : MonoBehaviour
 
     IEnumerator PlayCoffinSFX() 
     {
+       
         canPlay = true;
         if(canPlay) { AudioManager.Manager.PlaySFX("CoffinOpen");}
         else
@@ -128,6 +130,7 @@ public class CoffinInteraction : MonoBehaviour
         }
         yield return new WaitForSeconds(1f);
         canPlay = false;
-
+        
+       
     }
 }
