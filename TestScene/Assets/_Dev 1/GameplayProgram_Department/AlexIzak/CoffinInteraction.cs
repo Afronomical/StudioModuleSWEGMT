@@ -7,6 +7,8 @@ public class CoffinInteraction : MonoBehaviour
 {
     private BoxCollider2D coffinArea;
     private Feeding hungerCheck;
+    private bool canPlay = false;
+    
 
     //private TMP_Text tooltip;
 
@@ -79,6 +81,8 @@ public class CoffinInteraction : MonoBehaviour
            // openCoffin.enabled = true;
             //print("Coffin opened, I can finally rest!");
             ToolTipManager.ShowBottomToolTip_Static("Coffin Opened, I can finally Rest!");
+            StartCoroutine(PlayCoffinSFX());
+            StopAllCoroutines();
         }
         else
         {
@@ -115,5 +119,18 @@ public class CoffinInteraction : MonoBehaviour
         ToolTipManager.HideBottomToolTip_Static();
     }
 
-    
+    IEnumerator PlayCoffinSFX() 
+    {
+       
+        canPlay = true;
+        if(canPlay) { AudioManager.Manager.PlaySFX("CoffinOpen");}
+        else
+        {
+            AudioManager.Manager.StopSFX("CoffinOpen");
+        }
+        yield return new WaitForSeconds(1f);
+        canPlay = false;
+        
+       
+    }
 }

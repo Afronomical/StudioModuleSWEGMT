@@ -49,6 +49,7 @@ public class ShootState : StateBaseClass
         {
 
             Shoot();
+           
             currentDelay = attackDelay;
         }
 
@@ -65,6 +66,7 @@ public class ShootState : StateBaseClass
         Vector2 distance = character.player.transform.position - character.transform.position;
         GameObject bullet = Instantiate(bulletPrefab, origin.position, origin.rotation);
         bullet.GetComponent<Rigidbody2D>().velocity = distance * bulletSpeed * Time.deltaTime;
+        AudioManager.Manager.PlaySFX("NPC_RangedAttack");
     }
 
 
@@ -73,7 +75,7 @@ public class ShootState : StateBaseClass
     GameObject InstantiateBullet()
     {
         GameObject bullet = Instantiate(bulletPrefab, origin.position, origin.rotation);
-
+        
         return bullet;
     }
 }

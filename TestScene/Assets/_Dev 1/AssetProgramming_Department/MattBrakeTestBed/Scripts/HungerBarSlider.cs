@@ -10,11 +10,10 @@ public class HungerBar : MonoBehaviour
     private float targetValue;
     private float currentValue;
     public float fillSpeed = 5f;
-
-
+    
     private void Start()
     {
-     
+        
     }
 
 
@@ -23,6 +22,7 @@ public class HungerBar : MonoBehaviour
     public void SetMinHunger(int MinHunger)
     {
         slider.minValue = MinHunger;
+        slider.maxValue = 10;
         slider.value = MinHunger; 
         currentValue = MinHunger;
         targetValue = MinHunger;
@@ -45,25 +45,19 @@ public class HungerBar : MonoBehaviour
 
     public void Update()
     {
-        ManageBar();
-       
-    }
 
-    public void ManageBar()
-    {
         if (currentValue != targetValue)
         {
-            currentValue = Mathf.Lerp(currentValue, targetValue, fillSpeed * Time.deltaTime);
+            currentValue = Mathf.Lerp(currentValue, targetValue, fillSpeed * Time.deltaTime);    
             slider.value = currentValue;
-            //if (Mathf.Approximately(currentValue, targetValue))
-            //{
-            //    currentValue = targetValue;
-            //}
             Debug.Log("Current Value: " + currentValue + " Target Value: " + targetValue);
-            
-            //currentValue = targetValue;
-            
+
+           
+
         }
     }
+
+   
+   
 
 }
