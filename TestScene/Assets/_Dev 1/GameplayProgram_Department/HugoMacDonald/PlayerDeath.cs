@@ -38,9 +38,8 @@ public class PlayerDeath : MonoBehaviour
 
     private void Update()
     {
-        IsDamaged();
+        IsDamaged();        
         
-        Debug.Log(currentHealth);
 
         if (isInvincible)
         {
