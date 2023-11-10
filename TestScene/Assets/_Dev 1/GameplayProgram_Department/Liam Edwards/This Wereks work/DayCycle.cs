@@ -38,7 +38,7 @@ public class DayCycle : MonoBehaviour
        
         nightTime = countdownTimer.timeRemaining; // Links Up The "nightTime" Variable To The Countdown Clock
 
-        if (nightTime <= 115) // Checks For When The Timer Reaches 
+        if (nightTime <= 0) // Checks For When The Timer Reaches 
         {            
             ColourChange();
             timeInSun += Time.deltaTime;
@@ -68,6 +68,7 @@ public class DayCycle : MonoBehaviour
         canBurn = false;
         playerDeath.currentHealth = playerDeath.currentHealth - sunBurn;
         GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerDeath>().SunRiseDamage(); // Calls The Function "SunRiseDamage" From "playerDeath" Script
+        //GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerDeath>().showFloatingText(sunBurn);
         yield return new WaitForSeconds(damageDelay);
         canBurn = true;
     }

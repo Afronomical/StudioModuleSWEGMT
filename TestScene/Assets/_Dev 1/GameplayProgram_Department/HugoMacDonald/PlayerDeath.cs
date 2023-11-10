@@ -100,6 +100,7 @@ public class PlayerDeath : MonoBehaviour
     //    }
     //}
 
+
     public void RemoveHealth(int damage)
     {
         if (!isInvincible)
@@ -162,7 +163,7 @@ public class PlayerDeath : MonoBehaviour
         healthBarScript.SetHealth(currentHealth);
     }
 
-    void showFloatingText(int damage)
+    public void showFloatingText(int damage)
     {
 
         Vector3 spawnPos = transform.position + offset; 
