@@ -13,7 +13,8 @@ public class PlayerController : MonoBehaviour
     public float maxStamina = 100;
     public float staminaDrainSpeed = 20;
     public float staminaRegenSpeed = 20;
-    // [SerializeField] float batFormSpeed = 10f;
+    public float resetStaminaRegenSpeed = 20;
+    
     [SerializeField] float dodgeSpeed = 10f;
     [SerializeField] float dodgeDuration = 1f;
     [SerializeField] float dodgeCooldown;
@@ -23,16 +24,22 @@ public class PlayerController : MonoBehaviour
     private PlayerDeath playerDeath;
 
     bool isDodging;
-    bool canDodge;
-    //bool canBatForm;
-    //bool inBatForm;
+    bool canDodge;   
     bool isSprinting;
+    
 
 
     public GameObject playerMesh;
     public GameObject batMesh;
     public BoxCollider2D hitBox;
     public StaminaBar staminaBarSlider;
+
+
+    //bool canBatForm;
+    //bool inBatForm;
+    // [SerializeField] float batFormSpeed = 10f;
+
+
 
     void Start()
     {
@@ -63,6 +70,8 @@ public class PlayerController : MonoBehaviour
             StartCoroutine(StaminaRegen());
         }
 
+        
+
         if (!playerDeath.IsDead())
         {
             if (isDodging)
@@ -70,9 +79,10 @@ public class PlayerController : MonoBehaviour
                 return;
             }
 
-            if (Input.GetKey(KeyCode.LeftShift) && stamina > 0)
+            if (Input.GetKey(KeyCode.LeftShift) && stamina > 0) // srptint
             {
                 isSprinting = true;
+                staminaRegenSpeed = 0;
                 rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * sprintSpeed, Input.GetAxisRaw("Vertical") * sprintSpeed);
                 stamina -= Time.deltaTime * staminaDrainSpeed;
                 staminaBarSlider.SetStamina(stamina);
@@ -83,21 +93,26 @@ public class PlayerController : MonoBehaviour
                 }
 
             }
-            else if (Input.GetKeyDown(KeyCode.Space) && canDodge)
+            else if (Input.GetKeyDown(KeyCode.Space) && canDodge) // dodge
             {
                 AudioManager.Manager.PlaySFX("PlayerDodge");
                 animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Dash);
                 StartCoroutine(Dodge());
                 isSprinting = false;
+                staminaRegenSpeed = 20;
 
-            }
+}
 
-            else
+            else // walk
             {
                 rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * speed, Input.GetAxisRaw("Vertical") * speed);
                 isSprinting = false;
-
+                staminaRegenSpeed = 20;
             }
+        }
+        else
+        {
+            rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * 0, Input.GetAxisRaw("Vertical") * 0); // stops player moving after death
         }
     }
 
@@ -133,7 +148,7 @@ public class PlayerController : MonoBehaviour
     }
 
 
-    private IEnumerator Dodge()
+    private IEnumerator Dodge() // dodge mechanic
     {
 
         canDodge = false;
@@ -161,13 +176,13 @@ public class PlayerController : MonoBehaviour
         {
             stamina += Time.deltaTime * staminaRegenSpeed;
             staminaBarSlider.SetStamina(stamina);
-            //yield return new WaitForSeconds(1.25f);
-        }
-
+           
+        }     
     }
 
+   
+    // Batform Code //
 
-    // Batform Code
 
     //else if (Input.GetKeyDown(KeyCode.LeftControl) && canBatForm)
     //{
