@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,7 +10,8 @@ public class DeathScreen : MonoBehaviour
     public CanvasGroup deathScreenCanvasGroup;
     public Canvas deathCanvas;
     public Canvas mainCanvas;
-    public Button[] buttons; 
+    public Button[] buttons;
+    public TextMeshProUGUI hintText; 
     [SerializeField] private bool fadeIn = false;
     [SerializeField] private bool fadeOut = false;
     public float fadeInSpeed = 2f;
@@ -17,7 +19,8 @@ public class DeathScreen : MonoBehaviour
     private List<string> hints = new List<string>()
     { "HINT: USE THE SPACE BAR TO DODGE ARROWS AND ATTACKS.",
       "HINT: USE THE ENVIRONMENT TO AVOID ARROW STRIKES.",
-      "HINT: TRY USING SHIFT."};
+      "HINT: TRY USING SHIFT TO MOVE FASTER.",
+      "HINT: GET TO THE COFFIN BEFORE SUNLIGHT."};
 
 
     private void Start()
@@ -26,6 +29,9 @@ public class DeathScreen : MonoBehaviour
         
         deathScreenCanvasGroup.alpha = 0; 
         deathCanvas.enabled = false;
+
+        int randomIndex = Random.Range(0, hints.Count);
+        hintText.text = hints[randomIndex];
     }
 
 
