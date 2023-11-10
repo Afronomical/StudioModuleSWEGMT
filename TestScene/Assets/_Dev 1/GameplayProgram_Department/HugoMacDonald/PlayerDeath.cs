@@ -154,6 +154,7 @@ public class PlayerDeath : MonoBehaviour
     {
         AudioManager.Manager.StopMusic("LevelMusic");
         deathscreenCanvas.ShowUI();
+        AudioManager.Manager.PlayMusic("MenuMusic");
        
         //SceneManager.LoadScene("MainMenu");
     }
