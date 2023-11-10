@@ -7,7 +7,7 @@ public class CoffinInteraction : MonoBehaviour
 {
     private BoxCollider2D coffinArea;
     private Feeding hungerCheck;
-    private bool canPlay = false;
+   
     
 
     //private TMP_Text tooltip;
@@ -41,6 +41,7 @@ public class CoffinInteraction : MonoBehaviour
         openCoffin.enabled = false;
         useCoffin.enabled = false;
         ToolTipManager.HideBottomToolTip_Static();
+        
     }
 
     //When coffin is closed
@@ -78,11 +79,11 @@ public class CoffinInteraction : MonoBehaviour
         {
             //Open if this is met - make the current box collider into a trigger instead
             coffinArea.isTrigger = true;
+            
            // openCoffin.enabled = true;
             //print("Coffin opened, I can finally rest!");
             ToolTipManager.ShowBottomToolTip_Static("Coffin Opened, I can finally Rest!");
-            StartCoroutine(PlayCoffinSFX());
-            StopAllCoroutines();
+            
         }
         else
         {
@@ -106,7 +107,7 @@ public class CoffinInteraction : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.R))
         {
             //Sleep - go to next level
-
+            AudioManager.Manager.PlaySFX("CoffinOpen");
             print("Sleeping...");
             ToolTipManager.ShowBottomToolTip_Static("Sleeping...");
         }
@@ -119,18 +120,5 @@ public class CoffinInteraction : MonoBehaviour
         ToolTipManager.HideBottomToolTip_Static();
     }
 
-    IEnumerator PlayCoffinSFX() 
-    {
-       
-        canPlay = true;
-        if(canPlay) { AudioManager.Manager.PlaySFX("CoffinOpen");}
-        else
-        {
-            AudioManager.Manager.StopSFX("CoffinOpen");
-        }
-        yield return new WaitForSeconds(1f);
-        canPlay = false;
-        
-       
-    }
+    
 }

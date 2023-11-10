@@ -105,10 +105,10 @@ public class playerAttack : MonoBehaviour
         if (Input.GetKey(KeyCode.Mouse0))
         {
             animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.SlashAttack);
-            
+            AudioManager.Manager.PlaySFX("PlayerAttack");
             if (canHit)
             {
-                //AudioManager.Manager.PlaySFX("PlayerAttack");
+               
                 damageEnemy();
                 canHit = false;
             }

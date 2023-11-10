@@ -18,7 +18,6 @@ public class PlayerDeath : MonoBehaviour
     private float invincibilityTimer = 0.0f;
     public GameObject floatingText;
     public int feedHealAmount = 5;
-
     public int sunDamage = 5;
 
     public Vector3 offset; 
@@ -40,6 +39,8 @@ public class PlayerDeath : MonoBehaviour
     private void Update()
     {
         IsDamaged();
+        
+        Debug.Log(currentHealth);
 
         if (isInvincible)
         {
@@ -65,7 +66,7 @@ public class PlayerDeath : MonoBehaviour
             //Die();
             
         }
-
+        
 
         //if godmode enabled set health to 100 every tick so is esentailly immortal
         if (godMode)
@@ -100,7 +101,7 @@ public class PlayerDeath : MonoBehaviour
     //        }
     //    }
     //}
-
+    
     public void RemoveHealth(int damage)
     {
         if (!isInvincible)
