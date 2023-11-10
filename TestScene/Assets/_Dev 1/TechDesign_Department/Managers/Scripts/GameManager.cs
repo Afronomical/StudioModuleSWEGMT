@@ -11,10 +11,12 @@ Written by Lucian in the AI team
 
 
 
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -22,13 +24,16 @@ public class GameManager : MonoBehaviour
     public bool playerIsDead;
     public bool canChangeLevel;
 
+    public static GameManager instance;
+
     //this is where the conditions that trigger state changes are defined
     //they are simple for now, subject to change as per Tech Design requirements
     public int peopleEatingThreshold;
     public int peopleEaten;
 
 
-    private GameObject player;
+    public GameObject player;
+    public Transform playerSpawn;
     private CountdownTimer timer;
 
     public enum GameStates
@@ -46,10 +51,17 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        instance = this;
+        //Instantiate(player, playerSpawn);
+
         //get reference to player
         player = GameObject.FindGameObjectWithTag("Player");
+        //DontDestroyOnLoad(player);
+        DontDestroyOnLoad(gameObject);
+
         //reference to game timer
-        timer = GameObject.Find("CountdownText").GetComponent<CountdownTimer>();
+        timer = GameObject.Find("Countdown Text").GetComponent<CountdownTimer>();
+
         //default state
         currentGameState = GameStates.PlayerInLevel;
     }
@@ -57,10 +69,28 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        CheckGameState();
+        //CheckGameState();
+        CheckScene();
         //set in update so it is up-to-date with the people eaten
         //might have to add a people eaten counter to the feeding script
         peopleEaten = player.GetComponent<Feeding>().currentHunger;
+    }
+
+    private void CheckScene()
+    {
+        var scene = SceneManager.GetActiveScene();
+        var spawn = SceneManager.GetSceneByName("Spawn");
+
+        if(scene == spawn)
+        {
+            //Do not start the game - no timer
+            timer.enabled = false;
+        }
+        else
+        {
+            timer.enabled = true;
+            player = GameObject.FindGameObjectWithTag("Player");
+        }
     }
 
     public void ChangeGameState(GameStates newState)
@@ -78,29 +108,29 @@ public class GameManager : MonoBehaviour
         return canChangeLevel;
     }
 
-    void CheckGameState()
-    {
-        //if player dies, the game state will be updated accordingly
-        if(player.GetComponent<PlayerDeath>().currentHealth <= 0)
-        {
-            ChangeGameState(GameStates.PlayerDead);
-        }
-        else if(player.GetComponent<PlayerDeath>().godMode == true)
-        {
-            ChangeGameState(GameStates.GodMode);
-        }
-        //checks if player is out of time
-        if(timer.timeRemaining == 0)
-        {
-            ChangeGameState(GameStates.ObjectiveFailed);
-            canChangeLevel = false;
-        }
-        if(peopleEaten >= peopleEatingThreshold && timer.timeRemaining >= 0)
-        {
-            ChangeGameState(GameStates.ObjectiveCompleted); 
-            canChangeLevel = true;
-        }
+    //void CheckGameState()
+    //{
+    //    //if player dies, the game state will be updated accordingly
+    //    if(player.GetComponent<PlayerDeath>().currentHealth <= 0)
+    //    {
+    //        ChangeGameState(GameStates.PlayerDead);
+    //    }
+    //    else if(player.GetComponent<PlayerDeath>().godMode == true)
+    //    {
+    //        ChangeGameState(GameStates.GodMode);
+    //    }
+    //    //checks if player is out of time
+    //    if(timer.timeRemaining == 0)
+    //    {
+    //        ChangeGameState(GameStates.ObjectiveFailed);
+    //        canChangeLevel = false;
+    //    }
+    //    if(peopleEaten >= peopleEatingThreshold && timer.timeRemaining >= 0)
+    //    {
+    //        ChangeGameState(GameStates.ObjectiveCompleted); 
+    //        canChangeLevel = true;
+    //    }
 
-    }
+    //}
 
 }
