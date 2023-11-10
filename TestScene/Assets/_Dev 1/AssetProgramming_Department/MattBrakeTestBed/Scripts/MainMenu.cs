@@ -16,7 +16,7 @@ public class MainMenu : MonoBehaviour
         AudioManager.Manager.PlaySFX("UI_Click");
         AudioManager.Manager.StopMusic("MenuMusic");
         Debug.Log("Play Game");
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
         Time.timeScale = 1; 
         //LevelManager.Instance.LoadScene("TestCaveScene");
     }
@@ -25,6 +25,7 @@ public class MainMenu : MonoBehaviour
     {
         AudioManager.Manager.PlaySFX("UI_Click");
         Debug.Log("Settings");
+        SceneManager.LoadScene(0);
         
 
     }
@@ -33,7 +34,7 @@ public class MainMenu : MonoBehaviour
     {
         AudioManager.Manager.PlaySFX("UI_Click");
         Debug.Log("Instructions");
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 
     public void ExitGame()
