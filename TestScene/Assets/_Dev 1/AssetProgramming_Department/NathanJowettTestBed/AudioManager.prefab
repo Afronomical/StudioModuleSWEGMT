@@ -112,8 +112,8 @@ MonoBehaviour:
     Loop: 0
     source: {fileID: 0}
   - Name: NPC_RangedAttack
-    clip: {fileID: 0}
-    volume: 1
+    clip: {fileID: 8300000, guid: d19fbf2ffc3058c47b2470da79cc5431, type: 3}
+    volume: 0.108
     pitch: 1
     Loop: 0
     source: {fileID: 0}
@@ -177,6 +177,18 @@ MonoBehaviour:
     volume: 0
     pitch: 0
     Loop: 0
+    source: {fileID: 0}
+  - Name: GameOver
+    clip: {fileID: 0}
+    volume: 1
+    pitch: 1
+    Loop: 1
+    source: {fileID: 0}
+  - Name: Victory
+    clip: {fileID: 0}
+    volume: 1
+    pitch: 1
+    Loop: 1
     source: {fileID: 0}
   volumeSlider: {fileID: 0}
   volumeText: {fileID: 0}

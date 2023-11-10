@@ -117,7 +117,7 @@ public class AICharacter : MonoBehaviour
                     stateScript = transform.AddComponent<HuntState>();
                     break;
                 case States.Shoot:
-                    AudioManager.Manager.PlaySFX("NPC_RangedAttack");
+                    
                     stateScript = transform.AddComponent<ShootState>();
                     break;
                 case States.SpecialAttack:
