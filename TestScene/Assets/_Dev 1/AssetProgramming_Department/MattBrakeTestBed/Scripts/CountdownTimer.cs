@@ -38,7 +38,7 @@ public class CountdownTimer : MonoBehaviour
             }
             else
             {
-                AudioManager.Manager.PlaySFX("SunriseApproaching");
+                //AudioManager.Manager.PlaySFX("SunriseApproaching");
                 Debug.Log("Out of Time! Sunrise is Here!");
                timeIsRunning=false;
             }
