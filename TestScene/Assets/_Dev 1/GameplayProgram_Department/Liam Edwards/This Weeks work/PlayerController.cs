@@ -82,28 +82,24 @@ public class PlayerController : MonoBehaviour
 
             if (Input.GetKey(KeyCode.LeftShift) && stamina > 0) // sprint
             {
+               
                 isSprinting = true;
                 staminaRegenSpeed = 0;
                 rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * sprintSpeed, Input.GetAxisRaw("Vertical") * sprintSpeed);
                 stamina -= Time.deltaTime * staminaDrainSpeed;
                 staminaBarSlider.SetStamina(stamina);
 
-                if (stamina < 0)
-                {
-                    stamina = 0;
-                }
-
             }
             else if (Input.GetKeyDown(KeyCode.Space) && canDodge) // dodge
             {
+
                 AudioManager.Manager.PlaySFX("PlayerDodge");
                 animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Dash);
                 StartCoroutine(Dodge());
                 isSprinting = false;
                 staminaRegenSpeed = 20;
 
-}
-
+            }
             else // walk
             {
                 rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * speed, Input.GetAxisRaw("Vertical") * speed);
