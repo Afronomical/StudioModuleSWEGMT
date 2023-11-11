@@ -80,7 +80,7 @@ public class PlayerController : MonoBehaviour
                 return;
             }
 
-            if (Input.GetKey(KeyCode.LeftShift) && stamina > 0) // srptint
+            if (Input.GetKey(KeyCode.LeftShift) && stamina > 0) // sprint
             {
                 isSprinting = true;
                 staminaRegenSpeed = 0;

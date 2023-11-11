@@ -6,8 +6,8 @@ public class DayCycle : MonoBehaviour
 {
     public Gradient colorGradient; // A gradient to hold the color
 
-    public float changeSpeed; // The speed at which the color changes
-    private float colorChange = 0f; // A float to hold the current color
+    public float changeSpeed; // The speed at which the colour changes
+    private float colourChange = 0f; // A float to hold the current colour
     public float timeInSun = 0; // A float to calculate the amount of time the player has spent in the sun
     public float nightTime; // The amount of time remaining in the night
     public int sunBurn; //
@@ -26,7 +26,7 @@ public class DayCycle : MonoBehaviour
         gameObject.transform.localScale = new Vector2(1000, 1000); // Sets Size Of SunLight Game Object (width, height) Needs to cover the whole level
         transform.position = new Vector3(0, 0, 0); // Sets Pos to Off The Screen
 
-        Color currentColour = colorGradient.Evaluate(colorChange);
+        Color currentColour = colorGradient.Evaluate(colourChange);
         GetComponent<Renderer>().material.color = currentColour;
         
     }
@@ -75,13 +75,13 @@ public class DayCycle : MonoBehaviour
 
     public void ColourChange()
     {
-        // Update the colorChange value
-        colorChange += Time.deltaTime / changeSpeed;
+        // Update the colourChange value
+        colourChange += Time.deltaTime / changeSpeed;
 
-        // Get the color from the gradient
-        Color currentColor = colorGradient.Evaluate(colorChange);
+        // Get the colour from the gradient
+        Color currentColor = colorGradient.Evaluate(colourChange);
 
-        // Set the color of the object
+        // Set the colour of the object
         GetComponent<Renderer>().material.color = currentColor;
     }
 }
