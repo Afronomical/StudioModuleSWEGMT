@@ -793,7 +793,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 328994083}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -1014,8 +1014,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2084855599}
-        m_TargetAssemblyTypeName: AudioSettingsCanvas, Assembly-CSharp
+      - m_Target: {fileID: 2084855601}
+        m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
         m_MethodName: OpenAudioSettings
         m_Mode: 1
         m_Arguments:
@@ -1491,9 +1491,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2084855599}
-        m_TargetAssemblyTypeName: AudioSettingsCanvas, Assembly-CSharp
-        m_MethodName: BacktoMenu
+      - m_Target: {fileID: 2084855601}
+        m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
+        m_MethodName: BackToMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1908,8 +1908,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2084855599}
-        m_TargetAssemblyTypeName: AudioSettingsCanvas, Assembly-CSharp
+      - m_Target: {fileID: 2084855601}
+        m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
         m_MethodName: OpenVisualSettings
         m_Mode: 1
         m_Arguments:
@@ -3187,7 +3187,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1297177596}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -3427,7 +3427,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 67.3823, y: 72.5656}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1493240882
 MonoBehaviour:
@@ -4720,7 +4720,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2084855600}
-  - component: {fileID: 2084855599}
+  - component: {fileID: 2084855601}
   m_Layer: 0
   m_Name: Settings
   m_TagString: Untagged
@@ -4728,22 +4728,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2084855599
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2084855598}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 698622ece3d6f8b4abce9f7a0e7f8cff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioCanvas: {fileID: 328994086}
-  audioCanvasGroup: {fileID: 328994088}
-  visualCanvas: {fileID: 1297177599}
-  visualCanvasGroup: {fileID: 1297177601}
 --- !u!4 &2084855600
 Transform:
   m_ObjectHideFlags: 0
@@ -4759,6 +4743,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2084855601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2084855598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33840233f5627d44c8ed7a01e9c8cbd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCanvas: {fileID: 328994086}
+  visualCanvas: {fileID: 1297177599}
+  audioCanvasGroup: {fileID: 328994088}
+  visualCanvasGroup: {fileID: 1297177601}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
