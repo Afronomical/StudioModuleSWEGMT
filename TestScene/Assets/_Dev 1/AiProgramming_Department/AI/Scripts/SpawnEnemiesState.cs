@@ -35,9 +35,6 @@ public class SpawnEnemiesState : StateBaseClass
     {
         Vector3 vectorToTarget = Quaternion.Euler(0, 0, 90) * (character.player.transform.position - transform.position);  // Direction towards the target location
         transform.rotation = Quaternion.LookRotation(forward: Vector3.forward, upwards: vectorToTarget);
-
-
-
         int rand = UnityEngine.Random.Range(0, 2);
         switch (rand)
         {
