@@ -108,6 +108,7 @@ GameObject:
   - component: {fileID: 5411566995378878399}
   - component: {fileID: 8258340792973537799}
   - component: {fileID: 3073741889036869398}
+  - component: {fileID: 1434578165386917574}
   m_Layer: 0
   m_Name: PlayerPrefab1
   m_TagString: Player
@@ -271,6 +272,7 @@ MonoBehaviour:
   playerDeath: {fileID: 8811865619863605101}
   toolTipManager: {fileID: 0}
   durationTime: 3
+  currentlyFeeding: 0
 --- !u!114 &8754887286368911244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -285,13 +287,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   sprintSpeed: 5
-  batFormSpeed: 10
+  stamina: 0
+  maxStamina: 100
+  staminaDrainSpeed: 20
+  staminaRegenSpeed: 20
   dodgeSpeed: 20
   dodgeDuration: 0.25
   dodgeCooldown: 1
   playerMesh: {fileID: 7403197354801255873}
   batMesh: {fileID: 4511517625070334920}
   hitBox: {fileID: 3438935536249312359}
+  staminaBarSlider: {fileID: 0}
 --- !u!61 &3438935536249312359
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -581,6 +587,52 @@ BoxCollider2D:
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!61 &3073741889036869398
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2207885135432695148}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!61 &1434578165386917574
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2560
     height: 1357.3334
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Inspector
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -442,9 +442,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: ce720000
-      m_LastClickedID: 29390
-      m_ExpandedIDs: f4faffffce720000
+      m_SelectedIDs: 2c720000
+      m_LastClickedID: 29228
+      m_ExpandedIDs: e2f3fffff4faffffda720000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -944,9 +944,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -40.35756, y: 1.2633159, z: -0.52637404}
+    m_Target: {x: -40.64393, y: 6.4184184, z: -0.42916766}
     speed: 2
-    m_Value: {x: -40.35756, y: 1.2633159, z: -0.52637404}
+    m_Value: {x: -7.4700003, y: -0.43, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -996,9 +996,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 14.985974
+    m_Target: 5.265294
     speed: 2
-    m_Value: 14.985974
+    m_Value: 0.8192983
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1070,7 +1070,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/_Dev 1/GameplayProgram_Department/MaxPiper
+    - Assets/_Dev 1/GameplayProgram_Department/PlayerFile
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1080,16 +1080,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/_Dev 1/GameplayProgram_Department/MaxPiper
+  - Assets/_Dev 1/GameplayProgram_Department/PlayerFile
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\maxpi\Documents\GitHub\StudioModuleSWEGMT\TestScene
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 50.333313}
-    m_SelectedIDs: 7e860000
-    m_LastClickedID: 34430
-    m_ExpandedIDs: 00000000b07e0000b27e0000b47e000000ca9a3b
+    m_SelectedIDs: 90860000
+    m_LastClickedID: 34448
+    m_ExpandedIDs: 00000000c27e0000c47e0000c67e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1117,7 +1117,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000b07e0000b27e0000b47e0000
+    m_ExpandedIDs: 00000000c27e0000c47e0000c67e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1252,7 +1252,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 540
+  m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
