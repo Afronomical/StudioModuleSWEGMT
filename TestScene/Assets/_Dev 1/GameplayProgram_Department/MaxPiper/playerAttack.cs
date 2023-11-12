@@ -19,29 +19,42 @@ public class playerAttack : MonoBehaviour
     private Animator animator;
     private PlayerAnimationController animationController;
 
-    public static List<GameObject> enemyList = new List<GameObject>();
+    public List<GameObject> enemyList = new List<GameObject>();
 
     //enter collision, detects if has enemy tag, if true set enemy to attacking var
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if ((other.tag == "Villager") || (other.tag == "Hunter"))
-        {
-            if (!enemyList.Contains(other.gameObject))
-            {
-                enemyList.Add(other.gameObject);
-            }
+    //private void OnTriggerEnter2D(Collider2D other)
+    //{
+    //    if ((other.tag == "Villager") || (other.tag == "Hunter"))
+    //    {
+    //        if (!enemyList.Contains(other.gameObject))
+    //        {
+    //            enemyList.Add(other.gameObject);
+    //        }
             
+    //    }
+    //}
+
+    ////exit clears enemy target
+    //private void OnTriggerExit2D(Collider2D other)
+    //{
+    //    if ((other.tag == "Villager") || (other.tag == "Hunter"))
+    //    {
+    //        enemyList.Remove(other.gameObject);
+    //        //Debug.Log(other.name);
+    //    }
+    //}
+
+    public void onAttackEnter(Collider2D other)
+    {
+        if (!enemyList.Contains(other.gameObject))
+        {
+            enemyList.Add(other.gameObject);
         }
     }
 
-    //exit clears enemy target
-    private void OnTriggerExit2D(Collider2D other)
+    public void onAttackExit(Collider2D other)
     {
-        if ((other.tag == "Villager") || (other.tag == "Hunter"))
-        {
-            enemyList.Remove(other.gameObject);
-            //Debug.Log(other.name);
-        }
+        enemyList.Remove(other.gameObject);
     }
 
 
@@ -116,16 +129,16 @@ public class playerAttack : MonoBehaviour
             
             
         }
-        if (canHit)
+        if (!canHit)
         {
-
+            attackDelay -= Time.deltaTime;
+            if (attackDelay <= 0)
+            {
+                canHit = true;
+                attackDelay = attackDelayStart;
+            }
         }
-        attackDelay -= Time.deltaTime;
-        if (attackDelay <= 0)
-        {
-            canHit = true;
-            attackDelay = attackDelayStart;
-        }
+        
 
     }
 }
