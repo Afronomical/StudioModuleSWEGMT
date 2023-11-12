@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class debugMode : MonoBehaviour
 {
-
+    public GameObject nextLevelButton;
     public GameObject godButton;
     public GameObject instaButton;
     private bool visiPressed;
@@ -21,6 +22,7 @@ public class debugMode : MonoBehaviour
     {
         godButton.SetActive(false);
         instaButton.SetActive(false);
+        nextLevelButton.SetActive(false);
         origAttackDelay = player.GetComponent<playerAttack>().attackDelayStart;
     }
 
@@ -64,6 +66,15 @@ public class debugMode : MonoBehaviour
         }
     }
 
+    public void LoadNextLevel()
+    {
+        // Assuming your scenes are organized with sequential names like "Level1", "Level2", etc.
+        string currentSceneName = SceneManager.GetActiveScene().name;
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+
+        // Load the next scene
+        SceneManager.LoadScene(currentSceneIndex + 1);
+    }
 
     public void menuVisible()
     {
@@ -71,12 +82,14 @@ public class debugMode : MonoBehaviour
         {
             godButton.SetActive(false);
             instaButton.SetActive(false);
+            nextLevelButton.SetActive(false);
             visiPressed = false;
         }
         else
         {
             godButton.SetActive(true);
             instaButton.SetActive(true);
+            nextLevelButton.SetActive(true);
             visiPressed = true;
         }
     }
