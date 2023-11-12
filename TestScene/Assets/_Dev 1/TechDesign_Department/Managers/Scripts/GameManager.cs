@@ -9,7 +9,7 @@ Written by Lucian in the AI team
  */
 
 
-
+//I've edited this script to make it so that you can it static
 
 using System;
 using System.Collections;
@@ -70,7 +70,6 @@ public class GameManager : MonoBehaviour
 
         //reference to game timer
         timer = GameObject.Find("Countdown Text").GetComponent<CountdownTimer>();
-
         //default state
         currentGameState = GameStates.PlayerInLevel;
     }
