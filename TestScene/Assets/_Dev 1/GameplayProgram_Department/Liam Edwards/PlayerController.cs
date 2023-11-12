@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     public float maxStamina = 100;
     public float staminaDrainSpeed = 20;
     public float staminaRegenSpeed = 20;
-    public float resetStaminaRegenSpeed = 20;
+    
     
     [SerializeField] float dodgeSpeed = 10f;
     [SerializeField] float dodgeDuration = 1f;
