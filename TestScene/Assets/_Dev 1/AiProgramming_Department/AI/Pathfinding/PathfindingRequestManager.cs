@@ -36,7 +36,8 @@ public class PathfindingRequestManager : MonoBehaviour
                 for (int i = 0; i < itemsInQueue; i++)  // Go through each item in the queue
                 {
                     PathResult result = results.Dequeue();  // Remove it
-                    result.callback(result.path, result.success);  // Callback to the state script
+                    if (result.callback != null)
+                        result.callback(result.path, result.success);  // Callback to the state script
                 }
             }
         }
