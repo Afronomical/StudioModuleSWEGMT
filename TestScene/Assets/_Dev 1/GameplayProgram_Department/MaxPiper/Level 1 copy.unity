@@ -423,6 +423,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterType: 1
+  startingHealth: 3
   health: 3
   hungerValue: 1
   walkSpeed: 2
@@ -435,6 +436,8 @@ MonoBehaviour:
   player: {fileID: 1919636557}
   bulletPrefab: {fileID: 0}
   homingBulletPrefab: {fileID: 0}
+  hunterPrefab: {fileID: 0}
+  archerPrefab: {fileID: 0}
   isMoving: 0
 --- !u!212 &282692818
 SpriteRenderer:
@@ -796,6 +799,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterType: 0
+  startingHealth: 3
   health: 3
   hungerValue: 1
   walkSpeed: 2
@@ -808,6 +812,8 @@ MonoBehaviour:
   player: {fileID: 1919636557}
   bulletPrefab: {fileID: 0}
   homingBulletPrefab: {fileID: 0}
+  hunterPrefab: {fileID: 0}
+  archerPrefab: {fileID: 0}
   isMoving: 0
 --- !u!212 &344794355
 SpriteRenderer:
@@ -1430,6 +1436,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterType: 1
+  startingHealth: 3
   health: 3
   hungerValue: 1
   walkSpeed: 2
@@ -1442,6 +1449,8 @@ MonoBehaviour:
   player: {fileID: 1919636557}
   bulletPrefab: {fileID: 0}
   homingBulletPrefab: {fileID: 0}
+  hunterPrefab: {fileID: 0}
+  archerPrefab: {fileID: 0}
   isMoving: 0
 --- !u!212 &526840062
 SpriteRenderer:
@@ -1682,6 +1691,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterType: 0
+  startingHealth: 3
   health: 3
   hungerValue: 1
   walkSpeed: 2
@@ -1694,6 +1704,8 @@ MonoBehaviour:
   player: {fileID: 1919636557}
   bulletPrefab: {fileID: 0}
   homingBulletPrefab: {fileID: 0}
+  hunterPrefab: {fileID: 0}
+  archerPrefab: {fileID: 0}
   isMoving: 0
 --- !u!212 &537042812
 SpriteRenderer:
@@ -2385,6 +2397,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterType: 2
+  startingHealth: 3
   health: 3
   hungerValue: 1
   walkSpeed: 2
@@ -2397,6 +2410,8 @@ MonoBehaviour:
   player: {fileID: 1919636557}
   bulletPrefab: {fileID: 4959076639111065171, guid: 86924d39f5b2d3e44bfdd60051fa4164, type: 3}
   homingBulletPrefab: {fileID: 0}
+  hunterPrefab: {fileID: 0}
+  archerPrefab: {fileID: 0}
   isMoving: 0
 --- !u!212 &770136342
 SpriteRenderer:
@@ -2649,6 +2664,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterType: 2
+  startingHealth: 3
   health: 3
   hungerValue: 1
   walkSpeed: 2
@@ -2661,6 +2677,8 @@ MonoBehaviour:
   player: {fileID: 1919636557}
   bulletPrefab: {fileID: 4959076639111065171, guid: 86924d39f5b2d3e44bfdd60051fa4164, type: 3}
   homingBulletPrefab: {fileID: 0}
+  hunterPrefab: {fileID: 0}
+  archerPrefab: {fileID: 0}
   isMoving: 0
 --- !u!212 &1009192466
 SpriteRenderer:
@@ -3023,6 +3041,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterType: 0
+  startingHealth: 3
   health: 3
   hungerValue: 1
   walkSpeed: 2
@@ -3035,6 +3054,8 @@ MonoBehaviour:
   player: {fileID: 1919636557}
   bulletPrefab: {fileID: 0}
   homingBulletPrefab: {fileID: 0}
+  hunterPrefab: {fileID: 0}
+  archerPrefab: {fileID: 0}
   isMoving: 0
 --- !u!212 &1031754012
 SpriteRenderer:
@@ -3568,6 +3589,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterType: 1
+  startingHealth: 3
   health: 3
   hungerValue: 1
   walkSpeed: 2
@@ -3580,6 +3602,8 @@ MonoBehaviour:
   player: {fileID: 1919636557}
   bulletPrefab: {fileID: 0}
   homingBulletPrefab: {fileID: 0}
+  hunterPrefab: {fileID: 0}
+  archerPrefab: {fileID: 0}
   isMoving: 0
 --- !u!212 &1433310388
 SpriteRenderer:
@@ -3820,6 +3844,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterType: 0
+  startingHealth: 3
   health: 3
   hungerValue: 1
   walkSpeed: 2
@@ -3832,6 +3857,8 @@ MonoBehaviour:
   player: {fileID: 1919636557}
   bulletPrefab: {fileID: 0}
   homingBulletPrefab: {fileID: 0}
+  hunterPrefab: {fileID: 0}
+  archerPrefab: {fileID: 0}
   isMoving: 0
 --- !u!212 &1693569718
 SpriteRenderer:
@@ -4314,6 +4341,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterType: 1
+  startingHealth: 3
   health: 3
   hungerValue: 1
   walkSpeed: 2
@@ -4326,6 +4354,8 @@ MonoBehaviour:
   player: {fileID: 1919636557}
   bulletPrefab: {fileID: 0}
   homingBulletPrefab: {fileID: 0}
+  hunterPrefab: {fileID: 0}
+  archerPrefab: {fileID: 0}
   isMoving: 0
 --- !u!212 &1904420993
 SpriteRenderer:

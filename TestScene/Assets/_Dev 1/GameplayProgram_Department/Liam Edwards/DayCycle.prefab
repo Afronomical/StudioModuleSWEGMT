@@ -54,7 +54,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -131,12 +131,11 @@ MonoBehaviour:
   changeSpeed: 30
   timeInSun: 0
   nightTime: 0
-  playerHealth: 0
   sunBurn: 0
-  countdownTimer: {fileID: 0}
-  playerDeath: {fileID: 0}
   damageDelay: 1
   canBurn: 1
+  countdownTimer: {fileID: 0}
+  playerDeath: {fileID: 0}
 --- !u!61 &5679803661327558940
 BoxCollider2D:
   m_ObjectHideFlags: 0
