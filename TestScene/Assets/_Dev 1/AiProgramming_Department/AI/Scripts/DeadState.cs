@@ -13,7 +13,6 @@ public class DeadState : StateBaseClass
     {
         animController = transform.GetComponentInChildren<AIAnimationController>();
         anim = transform.GetComponentInChildren<Animator>();
-        //animController.ChangeAnimationState(AIAnimationController.AnimationStates.SwordAttack);
     }
 
 
@@ -31,8 +30,9 @@ public class DeadState : StateBaseClass
     {
         if (!animController.IsAnimationPlaying(anim, AIAnimationController.AnimationStates.Death))
         {
+            if (!AISpawnManager.instance.deadEnemies.Contains(gameObject) && character.characterType != AICharacter.CharacterTypes.Boss)
+                AISpawnManager.instance.deadEnemies.Add(gameObject);
             character.gameObject.SetActive(false);
-            Debug.Log("Character Disabled");
         }
     }
 }
