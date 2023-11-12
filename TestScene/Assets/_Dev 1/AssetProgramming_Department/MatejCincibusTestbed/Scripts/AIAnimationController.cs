@@ -87,7 +87,7 @@ public class AIAnimationController : MonoBehaviour
     {
         if (currentState == newState) return;
 
-        if (animationsDictionary.ContainsKey(newState))
+        if (animationsDictionary.ContainsKey(newState) && gameObject.activeInHierarchy)
         {
             animator.Play(animationsDictionary[newState]);
             currentState = newState;

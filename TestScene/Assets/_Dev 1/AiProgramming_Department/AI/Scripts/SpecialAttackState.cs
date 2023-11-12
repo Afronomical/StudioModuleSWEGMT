@@ -38,24 +38,25 @@ public class SpecialAttackState : StateBaseClass
     public override void UpdateLogic()
     {
 
-        character.isMoving = false;
+        //character.isMoving = false;
 
-        currentStateDelay -= Time.deltaTime;
+        //currentStateDelay -= Time.deltaTime;
 
-        if (currentStateDelay <= 0)
-        {
-            //changes attack based on time
+        //if (currentStateDelay <= 0)
+        //{
+        //    //changes attack based on time
 
 
-            rand = UnityEngine.Random.Range(1, 100);
+        //    rand = UnityEngine.Random.Range(1, 100);
 
-            currentStateDelay = stateChangeDelay;
-        }
-        ChooseAttack();
+        //    currentStateDelay = stateChangeDelay;
+        //}
+        //ChooseAttack();
 
         //CircularShoot();
         //SprayShoot2();
         //ShootHomingBullet();
+        ShootSprayArrows();
     }
     void Shoot()
     {
@@ -63,6 +64,7 @@ public class SpecialAttackState : StateBaseClass
         transform.rotation = Quaternion.LookRotation(forward: Vector3.forward, upwards: vectorToTarget);
 
         Vector2 distance = character.player.transform.position - character.transform.position;
+        distance.Normalize();
         GameObject bullet = Instantiate(bulletPrefab, origin.position, origin.rotation);
         bullet.GetComponent<Rigidbody2D>().velocity = distance * bulletSpeed * Time.deltaTime;
     }
@@ -93,7 +95,7 @@ public class SpecialAttackState : StateBaseClass
         {
 
             Vector2 direction = character.player.transform.position - bullet.transform.position;
-            direction.Normalize();
+            //direction.Normalize();
             rot = Vector3.Cross(direction, bullet.transform.right).z;
 
 
@@ -104,7 +106,7 @@ public class SpecialAttackState : StateBaseClass
             currentDelay -= Time.deltaTime;
         }
         bullet.GetComponent<Rigidbody2D>().angularVelocity = rot * 200;
-        bullet.GetComponent<Rigidbody2D>().velocity = transform.right * 5;
+        bullet.GetComponent<Rigidbody2D>().velocity = transform.right * 5 * Time.deltaTime;
     }
 
     void CircularShoot()
@@ -145,6 +147,38 @@ public class SpecialAttackState : StateBaseClass
 
 
 
+
+    }
+
+
+    void ShootSprayArrows()
+    {
+        Vector3 vectorToTarget = Quaternion.Euler(0, 0, 90) * (character.player.transform.position - transform.position);  // Direction towards the target location
+        transform.rotation = Quaternion.LookRotation(forward: Vector3.forward, upwards: vectorToTarget);
+
+        //GameObject bullet1;
+        //GameObject bullet2;
+        //GameObject bullet3;
+
+        if (currentDelay <= 0)
+        {
+            GameObject bullet1 = Instantiate(bulletPrefab, origin.position, origin.rotation * Quaternion.Euler(new Vector3(0f, 0f, 15f)));
+            GameObject bullet2 = Instantiate(bulletPrefab, origin.position, origin.rotation); //straight line
+            GameObject bullet3 = Instantiate(bulletPrefab, origin.position, origin.rotation * Quaternion.Euler(new Vector3(0f, 0f, -15f)));
+
+            
+            bullet2.GetComponent<Rigidbody2D>().velocity = transform.right * bulletSpeed * Time.deltaTime;
+            bullet3.GetComponent<Rigidbody2D>().velocity = bullet3.transform.right * bulletSpeed * Time.deltaTime;
+            bullet1.GetComponent<Rigidbody2D>().velocity = bullet1.transform.right * bulletSpeed * Time.deltaTime;
+
+            currentDelay = 3f;
+        }
+        else
+        {
+            currentDelay -= Time.deltaTime;
+        }
+
+        
 
     }
 

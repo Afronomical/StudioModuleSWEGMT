@@ -39,7 +39,7 @@ public class HomingBullet : MonoBehaviour
             player.GetComponent<PlayerDeath>().RemoveHealth(bulletDamage);
             Destroy(gameObject);
         }
-        else if (collision.gameObject.CompareTag("Villager"))//add hunter and any other colliders here
+        else if (collision.gameObject.CompareTag("Villager") || collision.gameObject.layer == 6)//add hunter and any other colliders here
         {
             //add any checks to destroy bullet here
             Destroy(gameObject);
