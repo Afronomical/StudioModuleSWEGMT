@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Feeding : MonoBehaviour
 {
-    public int currentHunger;
+    public static int currentHunger;
     public int minHunger = 0;
     public KeyCode healKey = KeyCode.E; // The key to trigger healing
     private bool canHeal = false; // To check if the player is inside the healing zone
@@ -59,7 +59,7 @@ public class Feeding : MonoBehaviour
             // Feed on the current AI character in the feeding zone when it's downed
             currentHunger += currentTarget.hungerValue;
             
-            hungerBarSlider.SetHunger(currentHunger);
+            hungerBarSlider.SetHunger(Feeding.currentHunger);
             //flashingCanvas.SetActive(false);
             currentTarget.health -= 1;
 

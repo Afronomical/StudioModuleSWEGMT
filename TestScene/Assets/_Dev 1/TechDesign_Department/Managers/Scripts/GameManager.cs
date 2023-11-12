@@ -73,7 +73,7 @@ public class GameManager : MonoBehaviour
         CheckScene();
         //set in update so it is up-to-date with the people eaten
         //might have to add a people eaten counter to the feeding script
-        peopleEaten = player.GetComponent<Feeding>().currentHunger;
+        peopleEaten = Feeding.currentHunger;
     }
 
     private void CheckScene()
