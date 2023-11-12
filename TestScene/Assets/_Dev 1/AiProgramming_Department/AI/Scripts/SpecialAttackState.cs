@@ -38,25 +38,25 @@ public class SpecialAttackState : StateBaseClass
     public override void UpdateLogic()
     {
 
-        //character.isMoving = false;
+        character.isMoving = false;
 
-        //currentStateDelay -= Time.deltaTime;
+        currentStateDelay -= Time.deltaTime;
 
-        //if (currentStateDelay <= 0)
-        //{
-        //    //changes attack based on time
+        if (currentStateDelay <= 0)
+        {
+            //changes attack based on time
 
 
-        //    rand = UnityEngine.Random.Range(1, 100);
+            rand = UnityEngine.Random.Range(1, 100);
 
-        //    currentStateDelay = stateChangeDelay;
-        //}
-        //ChooseAttack();
+            currentStateDelay = stateChangeDelay;
+        }
+        ChooseAttack();
 
         //CircularShoot();
         //SprayShoot2();
         //ShootHomingBullet();
-        ShootSprayArrows();
+        //ShootSprayArrows();
     }
     void Shoot()
     {
