@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
     public bool playerIsDead;
     public bool canChangeLevel;
 
-    public static GameManager instance;
+    
 
     //this is where the conditions that trigger state changes are defined
     //they are simple for now, subject to change as per Tech Design requirements
