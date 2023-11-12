@@ -14,34 +14,48 @@ public class playerAttack : MonoBehaviour
     private GameObject enemyTarg;
     private AICharacter AiEnemy;
     private bool canHit = true;
-    
+    private Feeding feeding;
+
 
     private Animator animator;
     private PlayerAnimationController animationController;
 
-    public static List<GameObject> enemyList = new List<GameObject>();
+    public List<GameObject> enemyList = new List<GameObject>();
 
     //enter collision, detects if has enemy tag, if true set enemy to attacking var
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if ((other.tag == "Villager") || (other.tag == "Hunter"))
-        {
-            if (!enemyList.Contains(other.gameObject))
-            {
-                enemyList.Add(other.gameObject);
-            }
+    //private void OnTriggerEnter2D(Collider2D other)
+    //{
+    //    if ((other.tag == "Villager") || (other.tag == "Hunter"))
+    //    {
+    //        if (!enemyList.Contains(other.gameObject))
+    //        {
+    //            enemyList.Add(other.gameObject);
+    //        }
             
+    //    }
+    //}
+
+    ////exit clears enemy target
+    //private void OnTriggerExit2D(Collider2D other)
+    //{
+    //    if ((other.tag == "Villager") || (other.tag == "Hunter"))
+    //    {
+    //        enemyList.Remove(other.gameObject);
+    //        //Debug.Log(other.name);
+    //    }
+    //}
+
+    public void onAttackEnter(Collider2D other)
+    {
+        if (!enemyList.Contains(other.gameObject))
+        {
+            enemyList.Add(other.gameObject);
         }
     }
 
-    //exit clears enemy target
-    private void OnTriggerExit2D(Collider2D other)
+    public void onAttackExit(Collider2D other)
     {
-        if ((other.tag == "Villager") || (other.tag == "Hunter"))
-        {
-            enemyList.Remove(other.gameObject);
-            Debug.Log(other.name);
-        }
+        enemyList.Remove(other.gameObject);
     }
 
 
@@ -59,7 +73,7 @@ public class playerAttack : MonoBehaviour
                 //enemyTarg.GetComponentInChildren<AI_AnimationController>().ChangeAnimationState(AI_AnimationController.AnimationStates.Hurt);
             }
 
-            
+
 
         }
 
@@ -71,7 +85,7 @@ public class playerAttack : MonoBehaviour
 
         //if (enemyTarg != null)
         //{
-            
+
         //    Debug.Log(enemyTarg.name);
         //    AiEnemy.health -= damage;
         //    AudioManager.Manager.PlaySFX("NPC_TakeDamage");
@@ -87,6 +101,8 @@ public class playerAttack : MonoBehaviour
 
         animator = GetComponent<Animator>();
         animationController = GetComponent<PlayerAnimationController>();
+
+        feeding = GetComponent<Feeding>();
 
         //enemyHealth = AiEnemy.health;
     }
@@ -105,22 +121,28 @@ public class playerAttack : MonoBehaviour
         if (Input.GetKey(KeyCode.Mouse0))
         {
             animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.SlashAttack);
-            
-            if (canHit)
+
+            AudioManager.Manager.PlaySFX("PlayerAttack");
+            if (canHit && feeding.currentlyFeeding == false)
             {
-                //AudioManager.Manager.PlaySFX("PlayerAttack");
+               
                 damageEnemy();
                 canHit = false;
+                Debug.Log("ATTACKED HDBGSUYHGBK");
             }
+            
+            
+        }
+        if (!canHit)
+        {
             attackDelay -= Time.deltaTime;
             if (attackDelay <= 0)
             {
                 canHit = true;
                 attackDelay = attackDelayStart;
             }
-            
         }
-        
+
 
     }
 }

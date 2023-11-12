@@ -80,6 +80,9 @@ public class AIAnimationChange : MonoBehaviour
                 case AICharacter.States.Dead:
                     animController.ChangeAnimationState(AIAnimationController.AnimationStates.Death);
                     break;
+                case AICharacter.States.SpecialAttack:
+                    animController.ChangeAnimationState(AIAnimationController.AnimationStates.BowAttack);
+                    break;
             }
         }
     }

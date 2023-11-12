@@ -84,7 +84,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -211,7 +211,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -257,6 +257,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterType: 2
   health: 3
+  hungerValue: 1
   walkSpeed: 2
   runSpeed: 7
   crawlSpeed: 0.5
@@ -266,6 +267,8 @@ MonoBehaviour:
   stateScript: {fileID: 0}
   player: {fileID: 0}
   bulletPrefab: {fileID: 4959076639111065171, guid: 86924d39f5b2d3e44bfdd60051fa4164, type: 3}
+  homingBulletPrefab: {fileID: 0}
+  isMoving: 0
 --- !u!114 &8110113246035950006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -280,6 +283,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detectionRange: 8
   attackRange: 5
+  unwalkableLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!61 &3029783386737427591
 BoxCollider2D:
   m_ObjectHideFlags: 0

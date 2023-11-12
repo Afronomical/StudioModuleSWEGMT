@@ -9,7 +9,7 @@ Written by Lucian in the AI team
  */
 
 
-
+//I've edited this script to make it so that you can it static
 
 using System;
 using System.Collections;
@@ -20,11 +20,11 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-
+    public static GameManager instance;
     public bool playerIsDead;
     public bool canChangeLevel;
 
-    public static GameManager instance;
+    
 
     //this is where the conditions that trigger state changes are defined
     //they are simple for now, subject to change as per Tech Design requirements
@@ -35,6 +35,15 @@ public class GameManager : MonoBehaviour
     public GameObject player;
     public Transform playerSpawn;
     private CountdownTimer timer;
+
+    private void Awake()
+    {
+        DontDestroyOnLoad(this);
+        if(instance == null)
+        {
+            instance = this;
+        }
+    }
 
     public enum GameStates
     {
@@ -61,7 +70,6 @@ public class GameManager : MonoBehaviour
 
         //reference to game timer
         timer = GameObject.Find("Countdown Text").GetComponent<CountdownTimer>();
-
         //default state
         currentGameState = GameStates.PlayerInLevel;
     }

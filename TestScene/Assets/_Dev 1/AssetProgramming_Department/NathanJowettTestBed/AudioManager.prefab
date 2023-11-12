@@ -112,32 +112,14 @@ MonoBehaviour:
     Loop: 0
     source: {fileID: 0}
   - Name: NPC_RangedAttack
-    clip: {fileID: 0}
-    volume: 1
+    clip: {fileID: 8300000, guid: d19fbf2ffc3058c47b2470da79cc5431, type: 3}
+    volume: 0.108
     pitch: 1
     Loop: 0
     source: {fileID: 0}
   - Name: NPC_Downed
     clip: {fileID: 8300000, guid: ca5bc1cf4b7f0e446bf6c4a9c7975b50, type: 3}
     volume: 0.539
-    pitch: 1
-    Loop: 0
-    source: {fileID: 0}
-  - Name: NPC_Scream
-    clip: {fileID: 0}
-    volume: 1
-    pitch: 1
-    Loop: 0
-    source: {fileID: 0}
-  - Name: NPC_Alterted
-    clip: {fileID: 0}
-    volume: 1
-    pitch: 1
-    Loop: 0
-    source: {fileID: 0}
-  - Name: NPC_VilToHunter
-    clip: {fileID: 0}
-    volume: 1
     pitch: 1
     Loop: 0
     source: {fileID: 0}
@@ -156,6 +138,18 @@ MonoBehaviour:
   - Name: EndGame_Victory
     clip: {fileID: 8300000, guid: 02d177859e7494d8daf6fb8a44059f14, type: 3}
     volume: 1
+    pitch: 1
+    Loop: 0
+    source: {fileID: 0}
+  - Name: CoffinOpen
+    clip: {fileID: 8300000, guid: 070779cdcfbe3ff4688691fb33bc3e4e, type: 3}
+    volume: 0.605
+    pitch: 1
+    Loop: 0
+    source: {fileID: 0}
+  - Name: ArrowHitObj
+    clip: {fileID: 8300000, guid: e65d9b738de659f4abeca95bd4ef9b93, type: 3}
+    volume: 0.39
     pitch: 1
     Loop: 0
     source: {fileID: 0}
@@ -178,3 +172,18 @@ MonoBehaviour:
     pitch: 0
     Loop: 0
     source: {fileID: 0}
+  - Name: GameOver
+    clip: {fileID: 0}
+    volume: 1
+    pitch: 1
+    Loop: 1
+    source: {fileID: 0}
+  - Name: Victory
+    clip: {fileID: 0}
+    volume: 1
+    pitch: 1
+    Loop: 1
+    source: {fileID: 0}
+  volumeSlider: {fileID: 0}
+  volumeText: {fileID: 0}
+  volumeValue: 1

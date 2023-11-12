@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class PlayerDeath : MonoBehaviour
 {
+
+    public DeathScreen deathscreenCanvas;
     private KnockBack knockBack;
     public int maxHealth = 100;
     public int currentHealth;
@@ -16,7 +18,6 @@ public class PlayerDeath : MonoBehaviour
     private float invincibilityTimer = 0.0f;
     public GameObject floatingText;
     public int feedHealAmount = 5;
-
     public int sunDamage = 5;
 
     public Vector3 offset; 
@@ -31,14 +32,14 @@ public class PlayerDeath : MonoBehaviour
         isDead = false;
         currentHealth = maxHealth;
         healthBarScript.setMaxHealth(maxHealth);
-
         animator = GetComponent<Animator>();
         animationController = GetComponent<PlayerAnimationController>();
     }
 
     private void Update()
     {
-        IsDamaged();
+        IsDamaged();        
+        
 
         if (isInvincible)
         {
@@ -64,7 +65,7 @@ public class PlayerDeath : MonoBehaviour
             //Die();
             
         }
-
+        
 
         //if godmode enabled set health to 100 every tick so is esentailly immortal
         if (godMode)
@@ -99,6 +100,7 @@ public class PlayerDeath : MonoBehaviour
     //        }
     //    }
     //}
+
 
     public void RemoveHealth(int damage)
     {
@@ -152,18 +154,20 @@ public class PlayerDeath : MonoBehaviour
     private void deathAfterDelay()
     {
         AudioManager.Manager.StopMusic("LevelMusic");
-        SceneManager.LoadScene("MainMenu");
+        deathscreenCanvas.ShowUI();
+        AudioManager.Manager.PlayMusic("MenuMusic");
+       
+        //SceneManager.LoadScene("MainMenu");
     }
 
     public void SunRiseDamage() // Deals Damage While The Player Is In Sun Light
     {
         AudioManager.Manager.PlaySFX("PlayerTakeDamage");
-        animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Hurt);
-        currentHealth = currentHealth - sunDamage;
+        animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Hurt);       
         healthBarScript.SetHealth(currentHealth);
     }
 
-    void showFloatingText(int damage)
+    public void showFloatingText(int damage)
     {
 
         Vector3 spawnPos = transform.position + offset; 
