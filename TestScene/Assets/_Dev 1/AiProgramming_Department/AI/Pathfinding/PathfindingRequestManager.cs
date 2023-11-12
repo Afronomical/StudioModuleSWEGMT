@@ -36,7 +36,7 @@ public class PathfindingRequestManager : MonoBehaviour
                 for (int i = 0; i < itemsInQueue; i++)  // Go through each item in the queue
                 {
                     PathResult result = results.Dequeue();  // Remove it
-                    if (result.callback != null)
+                    if (result.state)
                         result.callback(result.path, result.success);  // Callback to the state script
                 }
             }
@@ -84,11 +84,13 @@ public struct PathResult  // The result of the pathfinding that is created by Pa
     public Vector3[] path;
     public bool success;
     public Action<Vector3[], bool> callback;
+    public StateBaseClass state;
 
-    public PathResult(Vector3[] path, bool success, Action<Vector3[], bool> callback)
+    public PathResult(Vector3[] path, bool success, Action<Vector3[], bool> callback, StateBaseClass state)
     {
         this.path = path;
         this.success = success;
         this.callback = callback;
+        this.state = state;
     }
 }

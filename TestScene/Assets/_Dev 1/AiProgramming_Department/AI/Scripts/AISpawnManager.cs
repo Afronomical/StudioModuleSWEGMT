@@ -24,11 +24,13 @@ public class AISpawnManager : MonoBehaviour
     public float spawnBlockingCheckSize;
 
     [Header("Respawn Interval")]
-    public float minRespawnTime, maxRespawnTime;
+    public float minRespawnTime;
+    public float maxRespawnTime;
     private float respawnTimer;
 
     [Header("Door Opening")]
-    public float doorOpenTime, doorCloseTime;
+    public float doorOpenTime;
+    public float doorCloseTime;
 
 
     void Awake()
