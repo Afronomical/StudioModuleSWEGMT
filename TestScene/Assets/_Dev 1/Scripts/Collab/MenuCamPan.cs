@@ -16,12 +16,12 @@ public class MenuCamPan : MonoBehaviour
 
     [SerializeField] Image menuCanvas;
 
-    private Transform initialCamPos;
+    [SerializeField] Transform initialCamPos;
 
 
     private void Awake()
     {
-        //initialCamPos.position = transform.position;
+        initialCamPos.position = transform.position;
     }
 
     public enum TimeOfDay

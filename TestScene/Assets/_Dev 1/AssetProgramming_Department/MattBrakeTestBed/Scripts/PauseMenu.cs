@@ -46,7 +46,7 @@ public class PauseMenu : MonoBehaviour
     {
         AudioManager.Manager.PlaySFX("UI_Click");
         pauseMenuUI.SetActive(false);
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(3);
         AudioManager.Manager.StopMusic("LevelMusic");
         
        // loadingScreen.enabled = true;
