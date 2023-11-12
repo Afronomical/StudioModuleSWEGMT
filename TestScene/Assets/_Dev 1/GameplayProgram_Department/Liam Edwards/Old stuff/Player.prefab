@@ -54,7 +54,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -127,4 +127,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   sprintSpeed: 5
-  jumpSpeed: 0
+  batFormSpeed: 10
+  dodgeSpeed: 10
+  dodgeDuration: 1
+  dodgeCooldown: 0
+  dashTrail: {fileID: 0}
+  playerMesh: {fileID: 0}
+  batMesh: {fileID: 0}
+  hitBox: {fileID: 0}

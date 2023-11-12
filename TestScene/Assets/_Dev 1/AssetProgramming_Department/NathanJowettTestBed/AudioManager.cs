@@ -4,6 +4,9 @@ using System;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.Rendering;
+using UnityEngine.UI;
+using TMPro;
+using Unity.VisualScripting;
 
 public class AudioManager : MonoBehaviour
 {
@@ -40,7 +43,10 @@ public class AudioManager : MonoBehaviour
             m.source.pitch = m.pitch;
             m.source.loop = m.Loop;            
         }
+        
+        loadValues();
     }
+    
 
     public void PlaySFX(string name)
     {
@@ -80,6 +86,34 @@ public class AudioManager : MonoBehaviour
         {
             s.source.Stop();
         }
+    }
+
+
+    //Volume Settings
+
+    [SerializeField] private Slider volumeSlider = null;
+    [SerializeField] private TextMeshProUGUI volumeText = null;
+    [SerializeField] private float volumeValue = 1.0f;
+    
+
+    public void Volumeslider(float volumeValue)
+    {
+        volumeText.text = volumeValue.ToString("0.0");
+    }
+
+    public void SaveVolumeButton()
+    {
+        volumeValue = volumeSlider.value; 
+        PlayerPrefs.SetFloat("VolumeValue", volumeValue);
+        loadValues();
+    }
+
+    private void loadValues()
+    {
+        volumeValue = PlayerPrefs.GetFloat("VolumeValue");
+        volumeSlider.value = volumeValue;
+        AudioListener.volume = volumeValue;
+
     }
 }
 

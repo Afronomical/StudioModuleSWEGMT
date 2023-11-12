@@ -25,6 +25,7 @@ public class MainMenu : MonoBehaviour
     {
         AudioManager.Manager.PlaySFX("UI_Click");
         Debug.Log("Settings");
+        SceneManager.LoadScene(0);
         
 
     }

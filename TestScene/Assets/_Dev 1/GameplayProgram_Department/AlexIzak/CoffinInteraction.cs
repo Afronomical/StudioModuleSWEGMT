@@ -8,6 +8,8 @@ public class CoffinInteraction : MonoBehaviour
 {
     private BoxCollider2D coffinArea;
     private Feeding hungerCheck;
+   
+    
 
     //private TMP_Text tooltip;
 
@@ -37,6 +39,8 @@ public class CoffinInteraction : MonoBehaviour
         useCoffin.enabled = false;
 
         //gameManager = FindAnyObjectByType<GameManager>();
+        //ToolTipManager.HideBottomToolTip_Static();
+        
     }
 
     //When coffin is closed
@@ -103,6 +107,8 @@ public class CoffinInteraction : MonoBehaviour
             //Open if this is met
             openCoffin.enabled = true;
             //print("Coffin opened, I can finally rest!");
+            //ToolTipManager.ShowBottomToolTip_Static("Coffin Opened, I can finally Rest!");
+            
         }
 
         //Press a button to sleep

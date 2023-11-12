@@ -20,7 +20,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-
+    public static GameManager instance;
     public bool playerIsDead;
     public bool canChangeLevel;
 
@@ -35,6 +35,15 @@ public class GameManager : MonoBehaviour
     public GameObject player;
     public Transform playerSpawn;
     private CountdownTimer timer;
+
+    private void Awake()
+    {
+        DontDestroyOnLoad(this);
+        if(instance == null)
+        {
+            instance = this;
+        }
+    }
 
     public enum GameStates
     {

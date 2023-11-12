@@ -21,22 +21,21 @@ public class SFX_Controller
     public AudioSource source;
 }
 
-//AudioManager.Manager.Play("PlayerMove");
-//AudioManager.Manager.Play("PlayerAttack");
-//AudioManager.Manager.Play("PlayerFeed");
-//AudioManager.Manager.Play("PlayerTakeDamage");
-//AudioManager.Manager.Play("PlayerDeath");
-//AudioManager.Manager.Play("PlayerHeal");
-//AudioManager.Manager.Play("PlayerDodge");
-//AudioManager.Manager.Play("PlayerLowHealth");
-//AudioManager.Manager.Play("NPC_TakeDamage");
-//AudioManager.Manager.Play("NPC_Death");
-//AudioManager.Manager.Play("NPC_MeleeAttack");
-//AudioManager.Manager.Play("NPC_RangedAttack");
-//AudioManager.Manager.Play("NPC_Downed");
-//AudioManager.Manager.Play("SunriseApproaching");
-//AudioManager.Manager.Play("NPC_Alerted");
-//AudioManager.Manager.Play("UI_Click");
-//AudioManager.Manager.Play("UI_Loading");
-//AudioManager.Manager.Play("EndGame_Victory");
+//AudioManager.Manager.PlaySFX("PlayerMove");
+//AudioManager.Manager.PlaySFX("PlayerAttack");
+//AudioManager.Manager.PlaySFX("PlayerFeed");
+//AudioManager.Manager.PlaySFX("PlayerTakeDamage");
+//AudioManager.Manager.PlaySFX("PlayerDeath");
+//AudioManager.Manager.PlaySFX("PlayerHeal");
+//AudioManager.Manager.PlaySFX("PlayerDodge");
+//AudioManager.Manager.PlaySFX("PlayerLowHealth");
+//AudioManager.Manager.PlaySFX("NPC_TakeDamage");
+//AudioManager.Manager.PlaySFX("NPC_Death");
+//AudioManager.Manager.PlaySFX("NPC_MeleeAttack");
+//AudioManager.Manager.PlaySFX("NPC_RangedAttack");
+//AudioManager.Manager.PlaySFX("NPC_Downed");
+//AudioManager.Manager.PlaySFX("UI_Click");
+//AudioManager.Manager.PlaySFX("UI_Loading");
+//AudioManager.Manager.PlaySFX("EndGame_Victory");
+//AudioManager.Manager.PlaySFX("CoffinOpen");
 

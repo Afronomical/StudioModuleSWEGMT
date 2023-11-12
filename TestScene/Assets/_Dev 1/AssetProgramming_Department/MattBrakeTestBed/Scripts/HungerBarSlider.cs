@@ -7,27 +7,57 @@ public class HungerBar : MonoBehaviour
 {
     public Slider slider;
     public BlinkEffect BlinkEffect;
+    private float targetValue;
+    private float currentValue;
+    public float fillSpeed = 5f;
     
-
-
-    public void SetMinHunger(int Hunger)
+    private void Start()
     {
-        slider.minValue = Hunger;
-        slider.value = Hunger;   
+        
+    }
+
+
+
+
+    public void SetMinHunger(int MinHunger)
+    {
+        slider.minValue = MinHunger;
+        slider.maxValue = 10;
+        slider.value = MinHunger; 
+        currentValue = MinHunger;
+        targetValue = MinHunger;
+       
     }
 
     public void SetHunger(int Hunger)
     {
-        slider.value = Hunger;
+        targetValue = Hunger;
 
-        if(slider.value >= slider.maxValue)
+        if (slider.value >= slider.maxValue)
         {
             BlinkEffect.enabled = false;
         }
         else
         {
-            BlinkEffect.enabled = true; 
+            BlinkEffect.enabled = true;
         }
     }
+
+    public void Update()
+    {
+
+        if (currentValue != targetValue)
+        {
+            currentValue = Mathf.Lerp(currentValue, targetValue, fillSpeed * Time.deltaTime);    
+            slider.value = currentValue;
+            //Debug.Log("Current Value: " + currentValue + " Target Value: " + targetValue);
+
+           
+
+        }
+    }
+
+   
+   
 
 }

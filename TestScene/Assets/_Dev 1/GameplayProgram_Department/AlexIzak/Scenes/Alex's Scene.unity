@@ -157,7 +157,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -186,7 +186,7 @@ SpriteRenderer:
   m_Size: {x: 100, y: 100}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &76158215
@@ -293,7 +293,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -361,6 +361,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterType: 0
   health: 3
+  hungerValue: 1
   walkSpeed: 2
   runSpeed: 7
   crawlSpeed: 0.5
@@ -369,6 +370,9 @@ MonoBehaviour:
   currentState: 0
   stateScript: {fileID: 0}
   player: {fileID: 1616304667}
+  bulletPrefab: {fileID: 0}
+  homingBulletPrefab: {fileID: 0}
+  isMoving: 0
 --- !u!61 &112689149
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -502,6 +506,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detectionRange: 4
   attackRange: 1
+  unwalkableLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &112689153
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -522,7 +529,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -606,6 +613,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterType: 1
   health: 3
+  hungerValue: 1
   walkSpeed: 2
   runSpeed: 7
   crawlSpeed: 0.5
@@ -614,6 +622,9 @@ MonoBehaviour:
   currentState: 0
   stateScript: {fileID: 0}
   player: {fileID: 1616304667}
+  bulletPrefab: {fileID: 0}
+  homingBulletPrefab: {fileID: 0}
+  isMoving: 0
 --- !u!61 &125402321
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -747,6 +758,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detectionRange: 6
   attackRange: 1
+  unwalkableLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &125402325
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -767,7 +781,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1038,7 +1052,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1106,6 +1120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterType: 1
   health: 3
+  hungerValue: 1
   walkSpeed: 2
   runSpeed: 7
   crawlSpeed: 0.5
@@ -1114,6 +1129,9 @@ MonoBehaviour:
   currentState: 0
   stateScript: {fileID: 0}
   player: {fileID: 1616304667}
+  bulletPrefab: {fileID: 0}
+  homingBulletPrefab: {fileID: 0}
+  isMoving: 0
 --- !u!61 &297338554
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1247,6 +1265,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detectionRange: 6
   attackRange: 1
+  unwalkableLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &297338558
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1267,7 +1288,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1351,6 +1372,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterType: 0
   health: 3
+  hungerValue: 1
   walkSpeed: 2
   runSpeed: 7
   crawlSpeed: 0.5
@@ -1359,6 +1381,9 @@ MonoBehaviour:
   currentState: 0
   stateScript: {fileID: 0}
   player: {fileID: 1616304667}
+  bulletPrefab: {fileID: 0}
+  homingBulletPrefab: {fileID: 0}
+  isMoving: 0
 --- !u!61 &298416391
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1492,6 +1517,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detectionRange: 4
   attackRange: 1
+  unwalkableLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &298416395
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1512,7 +1540,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1727,7 +1755,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1848,7 +1876,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1969,7 +1997,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2084,6 +2112,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterType: 0
   health: 3
+  hungerValue: 1
   walkSpeed: 2
   runSpeed: 7
   crawlSpeed: 0.5
@@ -2092,6 +2121,9 @@ MonoBehaviour:
   currentState: 0
   stateScript: {fileID: 0}
   player: {fileID: 1616304667}
+  bulletPrefab: {fileID: 0}
+  homingBulletPrefab: {fileID: 0}
+  isMoving: 0
 --- !u!61 &809798415
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2225,6 +2257,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detectionRange: 4
   attackRange: 1
+  unwalkableLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &809798419
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2245,7 +2280,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2463,6 +2498,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterType: 0
   health: 3
+  hungerValue: 1
   walkSpeed: 2
   runSpeed: 7
   crawlSpeed: 0.5
@@ -2471,6 +2507,9 @@ MonoBehaviour:
   currentState: 0
   stateScript: {fileID: 0}
   player: {fileID: 1616304667}
+  bulletPrefab: {fileID: 0}
+  homingBulletPrefab: {fileID: 0}
+  isMoving: 0
 --- !u!61 &1234840584
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2604,6 +2643,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detectionRange: 4
   attackRange: 1
+  unwalkableLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &1234840588
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2624,7 +2666,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2858,7 +2900,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3047,7 +3089,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3168,7 +3210,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3236,6 +3278,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterType: 1
   health: 3
+  hungerValue: 1
   walkSpeed: 2
   runSpeed: 7
   crawlSpeed: 0.5
@@ -3244,6 +3287,9 @@ MonoBehaviour:
   currentState: 0
   stateScript: {fileID: 0}
   player: {fileID: 1616304667}
+  bulletPrefab: {fileID: 0}
+  homingBulletPrefab: {fileID: 0}
+  isMoving: 0
 --- !u!61 &1426249508
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3377,6 +3423,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detectionRange: 6
   attackRange: 1
+  unwalkableLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &1426249512
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3397,7 +3446,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3723,6 +3772,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 1501186202}
+  _timeToDrain: 0.25
+  healthBarGradient:
+    serializedVersion: 2
+    key0: {r: 1, g: 1, b: 1, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_ColorSpace: -1
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
 --- !u!1001 &1616304663
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4092,7 +4172,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dab6754407e7b04682766844a9cbd67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  requestListSize: 0
 --- !u!114 &1874393971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4229,7 +4308,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4539,6 +4618,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterType: 1
   health: 3
+  hungerValue: 1
   walkSpeed: 2
   runSpeed: 7
   crawlSpeed: 0.5
@@ -4547,6 +4627,9 @@ MonoBehaviour:
   currentState: 0
   stateScript: {fileID: 0}
   player: {fileID: 1616304667}
+  bulletPrefab: {fileID: 0}
+  homingBulletPrefab: {fileID: 0}
+  isMoving: 0
 --- !u!61 &2079219958
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4680,6 +4763,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detectionRange: 6
   attackRange: 1
+  unwalkableLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &2079219962
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4700,7 +4786,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4787,7 +4873,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4851,6 +4937,9 @@ MonoBehaviour:
   openCoffin: {fileID: 130782722}
   useCoffin: {fileID: 2071329673}
   hungerThreshold: 5
+  toolTipManager: {fileID: 0}
+  bottomScreenToolTip: {fileID: 0}
+  topScreenToolTip: {fileID: 0}
 --- !u!61 &2125429056
 BoxCollider2D:
   m_ObjectHideFlags: 0

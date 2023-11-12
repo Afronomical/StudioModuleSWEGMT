@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float dodgeSpeed = 10f;
     [SerializeField] float dodgeDuration = 1f;
     [SerializeField] float dodgeCooldown;
+    [SerializeField] TrailRenderer dashTrail;
 
     private Animator animator;
     private PlayerAnimationController animationController;
@@ -155,10 +156,10 @@ public class PlayerController : MonoBehaviour
         Vector2 inputVector = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         inputVector.Normalize();
         rb.velocity = inputVector * dodgeSpeed;
-
+        dashTrail.emitting = true;
         yield return new WaitForSeconds(dodgeDuration);
         isDodging = false;
-
+        dashTrail.emitting = false;
         yield return new WaitForSeconds(dodgeCooldown);
         canDodge = true;
 

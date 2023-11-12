@@ -16,24 +16,38 @@ public class MenuCamPan : MonoBehaviour
 
     [SerializeField] Image menuCanvas;
 
+    private Transform initialCamPos;
+
+
+    private void Awake()
+    {
+        //initialCamPos.position = transform.position;
+    }
 
     public enum TimeOfDay
     {
         dawn, day, dusk, night
     }
 
+    
+
     public TimeOfDay timeOfDay;
 
     private void Start()
     {
+        ////initialCamPos.position = transform.position;
+
+        transform.position = initialCamPos.position;
+        
         transform.position = waypoint[currentWayPointIndex].transform.position;
 
         timeOfDay= TimeOfDay.night;
         SetTimeMaterial();
+        
     }
     private void FixedUpdate()
     {
-        CheckIfPenultimateNode(waypoint, currentWayPointIndex);
+       // CheckIfPenultimateNode(waypoint, currentWayPointIndex);
         if (Vector2.Distance(waypoint[currentWayPointIndex].transform.position, transform.position) < 3)
         {
            
@@ -77,7 +91,7 @@ public class MenuCamPan : MonoBehaviour
 
     public void SetTimeMaterial()
     {
-        menuCanvas.color = timeColour[(int)TimeOfDay.night].color;
+       // menuCanvas.color = timeColour[(int)TimeOfDay.night].color;
         
     }
     private void CheckIfPenultimateNode(GameObject[] arrayOfNodes, int currentIndex)

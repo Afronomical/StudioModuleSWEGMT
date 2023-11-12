@@ -31,6 +31,7 @@ public class Bullet : MonoBehaviour
         }
         else if (collision.gameObject.layer == LayerMask.NameToLayer("Unwalkable"))
         {
+            AudioManager.Manager.PlaySFX("ArrowHitObj");
             Destroy(gameObject);
         }
     }

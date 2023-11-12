@@ -85,7 +85,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -213,7 +213,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4290181912415165835, guid: 0108efeac77a80443b6fb72f0a615b50, type: 3}
       propertyPath: m_Name
-      value: PlayerPrefab1
+      value: OLDplayer
       objectReference: {fileID: 0}
     - target: {fileID: 4984862847626880890, guid: 0108efeac77a80443b6fb72f0a615b50, type: 3}
       propertyPath: m_Constraints
@@ -262,8 +262,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c07c09eedf6b08418a5b912328371eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathscreenCanvas: {fileID: 0}
   maxHealth: 100
   currentHealth: 0
+  healthBarScript: {fileID: 0}
+  godMode: 0
+  isInvincible: 0
+  invincibilityDuration: 2
+  floatingText: {fileID: 0}
+  feedHealAmount: 5
+  sunDamage: 5
+  offset: {x: 0, y: 0, z: 0}
 --- !u!70 &482283134534383976
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -313,4 +322,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a1b2d1ad7faa2e48832614a861a83c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 1
   hitBox: {fileID: 2080059973917936648}
+  attackDelayStart: 0.5
