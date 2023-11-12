@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerPreferences : MonoBehaviour
 {
@@ -11,6 +12,10 @@ public class PlayerPreferences : MonoBehaviour
     public float masterVolume;
     public float musicVolume;
     public float sfxVolume;
+
+    public Slider masterVolume_slider;
+    public Slider musicVolume_slider;
+    public Slider sfxVolume_slider;
 
     [Header("Video")]
     public float brightness;
@@ -27,6 +32,11 @@ public class PlayerPreferences : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+    }
+
+    private void Update()
+    {
+        
     }
     // Start is called before the first frame update
     void Start()

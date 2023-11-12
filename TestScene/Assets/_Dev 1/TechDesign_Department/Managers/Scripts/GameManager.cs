@@ -9,7 +9,7 @@ Written by Lucian in the AI team
  */
 
 
-
+//I've edited this script to make it so that you can it static
 
 using System.Collections;
 using System.Collections.Generic;
@@ -58,7 +58,7 @@ public class GameManager : MonoBehaviour
         //get reference to player
         player = GameObject.FindGameObjectWithTag("Player");
         //reference to game timer
-        timer = GameObject.Find("CountdownText").GetComponent<CountdownTimer>();
+        timer = GameObject.Find("Countdown Text").GetComponent<CountdownTimer>();
         //default state
         currentGameState = GameStates.PlayerInLevel;
     }
@@ -67,7 +67,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
 
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if(Input.GetKeyDown(KeyCode.L))
         {
             Debug.Log(peopleEaten);
         }
