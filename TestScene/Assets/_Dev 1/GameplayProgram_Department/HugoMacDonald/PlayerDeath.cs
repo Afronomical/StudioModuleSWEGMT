@@ -100,6 +100,7 @@ public class PlayerDeath : MonoBehaviour
     //    }
     //}
 
+
     public void RemoveHealth(int damage)
     {
         if (!isInvincible)
@@ -158,12 +159,11 @@ public class PlayerDeath : MonoBehaviour
     public void SunRiseDamage() // Deals Damage While The Player Is In Sun Light
     {
         AudioManager.Manager.PlaySFX("PlayerTakeDamage");
-        animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Hurt);
-        currentHealth = currentHealth - sunDamage;
+        animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Hurt);       
         healthBarScript.SetHealth(currentHealth);
     }
 
-    void showFloatingText(int damage)
+    public void showFloatingText(int damage)
     {
 
         Vector3 spawnPos = transform.position + offset; 
