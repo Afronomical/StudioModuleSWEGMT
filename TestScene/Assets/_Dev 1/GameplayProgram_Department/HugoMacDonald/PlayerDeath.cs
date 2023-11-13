@@ -91,6 +91,17 @@ public class PlayerDeath : MonoBehaviour
             currentHealth = maxHealth;
         }
 
+        if (healthBarScript == null)
+        {
+            if (FindObjectOfType<NewHealthBarScript>() == true)
+            {
+                healthBarScript = FindObjectOfType<NewHealthBarScript>();
+                healthBarScript.setMaxHealth(maxHealth);
+                GetComponent<Feeding>().currentHunger = 0;
+                GetComponent<Feeding>().hungerBarSlider.SetMinHunger(0);
+            }
+        }
+
     }
 
     //private void OnTriggerEnter2D(Collider2D collision)
@@ -164,7 +175,14 @@ public class PlayerDeath : MonoBehaviour
         deathscreenCanvas.ShowUI();
         AudioManager.Manager.PlayMusic("MenuMusic");
        
-        //SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("Main Menu Animated");
+        gameObject.SetActive(true);
+        
+        
+        currentHealth = maxHealth;
+        GetComponent<Feeding>().currentHunger = 0;
+        isDead = false;
+        
     }
 
     public void SunRiseDamage() // Deals Damage While The Player Is In Sun Light

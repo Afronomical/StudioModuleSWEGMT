@@ -269,7 +269,6 @@ MonoBehaviour:
   playerDeath: {fileID: 8811865619863605101}
   toolTipManager: {fileID: 0}
   durationTime: 3
-  currentlyFeeding: 0
 --- !u!114 &8754887286368911244
 MonoBehaviour:
   m_ObjectHideFlags: 0
