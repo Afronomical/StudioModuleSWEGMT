@@ -123,7 +123,7 @@ public class playerAttack : MonoBehaviour
             animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.SlashAttack);
 
             AudioManager.Manager.PlaySFX("PlayerAttack");
-            if (canHit && feeding.currentlyFeeding == false)
+            if (canHit )//&& //feeding.currentlyFeeding == false)
             {
                
                 damageEnemy();

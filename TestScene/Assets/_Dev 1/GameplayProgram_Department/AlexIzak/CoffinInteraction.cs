@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class CoffinInteraction : MonoBehaviour
 {
     private BoxCollider2D coffinArea;
-    private Feeding hungerCheck;
+    private Feeding feeding;
    
     
 
@@ -26,7 +26,7 @@ public class CoffinInteraction : MonoBehaviour
     void Start()
     {
         coffinArea = GetComponent<BoxCollider2D>();
-        hungerCheck = GameObject.Find("PlayerPrefab1").GetComponent<Feeding>();
+        //Feeding = GameObject.Find("PlayerPrefab1").GetComponent<Feeding>();
 
         //Coffin closed
         coffinArea.isTrigger = false;
@@ -47,19 +47,19 @@ public class CoffinInteraction : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         //If you just started the game - do this
-        if(collision.collider.CompareTag("Player") && hungerCheck.currentHunger == 0) 
+        if(collision.collider.CompareTag("Player") && feeding.currentHunger == 0) 
         {
             //Display a message to the player that you cant sleep yet
             closedCoffin.enabled = true;
             print("Can't sleep yet, I must feast first!");
         }
         //If player ate at least 1 human - do this
-        else if(collision.collider.CompareTag("Player") && hungerCheck.currentHunger > 0 && hungerCheck.currentHunger < hungerThreshold)
+        else if(collision.collider.CompareTag("Player") && feeding.currentHunger > 0 && feeding.currentHunger < hungerThreshold)
         {
             stillHungry.enabled = true;
         }
         //If hunger satiated - do this
-        else if(collision.collider.CompareTag("Player") && hungerCheck.currentHunger >= hungerThreshold)
+        else if(collision.collider.CompareTag("Player") && feeding.currentHunger >= hungerThreshold)
         {
             //Display tooltip
             openCoffin.text = null;
@@ -102,7 +102,7 @@ public class CoffinInteraction : MonoBehaviour
     void Update()
     {
         //Check hunger meter for threshold
-        if(hungerCheck.currentHunger >= hungerThreshold && openCoffin != null) 
+        if(feeding.currentHunger >= hungerThreshold && openCoffin != null) 
         {
             //Open if this is met
             openCoffin.enabled = true;

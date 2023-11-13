@@ -43,6 +43,10 @@ public class GameManager : MonoBehaviour
         {
             instance = this;
         }
+        else
+        {
+            Destroy(this);
+        }
     }
 
     public enum GameStates
@@ -64,7 +68,7 @@ public class GameManager : MonoBehaviour
         //Instantiate(player, playerSpawn);
 
         //get reference to player
-        player = GameObject.FindGameObjectWithTag("Player");
+        //player = GameObject.FindGameObjectWithTag("Player");
         //DontDestroyOnLoad(player);
         DontDestroyOnLoad(gameObject);
 
@@ -81,7 +85,15 @@ public class GameManager : MonoBehaviour
         CheckScene();
         //set in update so it is up-to-date with the people eaten
         //might have to add a people eaten counter to the feeding script
-        peopleEaten = Feeding.currentHunger;
+        peopleEaten = player.GetComponent<Feeding>().currentHunger;
+
+
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            Debug.Log(peopleEaten + "/" + peopleEatingThreshold);
+        }
+
+       
     }
 
     private void CheckScene()
@@ -97,7 +109,7 @@ public class GameManager : MonoBehaviour
         else
         {
             timer.enabled = true;
-            player = GameObject.FindGameObjectWithTag("Player");
+           // player = GameObject.FindGameObjectWithTag("Player");
         }
     }
 

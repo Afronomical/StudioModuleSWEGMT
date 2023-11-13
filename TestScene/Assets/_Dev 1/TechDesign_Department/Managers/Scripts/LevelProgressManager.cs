@@ -55,7 +55,7 @@ public class LevelProgressManager : MonoBehaviour
             Feeding feedingScript = player.GetComponent<Feeding>();
 
             // Check if the feedingScript exists and the currentHunger is sufficient to progress.
-            if (feedingScript != null && Feeding.currentHunger >= maxHunger)
+            if (feedingScript != null && player.GetComponent<Feeding>().currentHunger >= maxHunger)
             {
                 Debug.Log("Winner, move to next level");
                 // Load the next level when hunger is full.

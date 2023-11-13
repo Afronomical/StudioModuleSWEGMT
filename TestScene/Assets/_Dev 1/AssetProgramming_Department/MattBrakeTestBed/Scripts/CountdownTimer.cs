@@ -21,6 +21,12 @@ public class CountdownTimer : MonoBehaviour
     {
         timeIsRunning = true;
         timeRemaining = time;
+        if (FindAnyObjectByType(typeof(CountdownTimer)))
+        {
+            DontDestroyOnLoad(this);
+
+        }
+       
     }
     
     void Update()
