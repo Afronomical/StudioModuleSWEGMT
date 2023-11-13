@@ -31364,6 +31364,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerPrefab1
       objectReference: {fileID: 0}
+    - target: {fileID: 2613843392845268794, guid: 99d0183fde40a224eae3632a6b0caf96, type: 3}
+      propertyPath: m_Parameters.colorGradient.atime2
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2613843392845268794, guid: 99d0183fde40a224eae3632a6b0caf96, type: 3}
+      propertyPath: m_Parameters.colorGradient.m_ColorSpace
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 4345570161522551933, guid: 99d0183fde40a224eae3632a6b0caf96, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.78

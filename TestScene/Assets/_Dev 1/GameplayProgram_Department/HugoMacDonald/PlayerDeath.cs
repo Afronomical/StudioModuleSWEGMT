@@ -174,12 +174,10 @@ public class PlayerDeath : MonoBehaviour
         AudioManager.Manager.PlayMusic("MenuMusic");
        
         SceneManager.LoadScene("Main Menu Animated");
-        gameObject.SetActive(true);
-        
-        
         currentHealth = maxHealth;
         GetComponent<Feeding>().currentHunger = 0;
         isDead = false;
+        gameObject.SetActive(true);
         
     }
 
