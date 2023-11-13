@@ -23,7 +23,7 @@ public class CountdownTimer : MonoBehaviour
         timeRemaining = time;
         if (FindAnyObjectByType(typeof(CountdownTimer)))
         {
-            DontDestroyOnLoad(this);
+            DontDestroyOnLoad(this.transform.parent);
 
         }
        
