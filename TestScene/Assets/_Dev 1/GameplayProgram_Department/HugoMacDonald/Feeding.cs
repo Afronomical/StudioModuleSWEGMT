@@ -73,6 +73,16 @@ public class Feeding : MonoBehaviour
             animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Feed);
 
         }
+
+        if (hungerBarSlider == null)
+        {
+            if (FindObjectOfType<HungerBar>() == true)
+            {
+                hungerBarSlider = FindObjectOfType<HungerBar>();
+                currentHunger = minHunger;
+                hungerBarSlider.SetMinHunger(0);
+            }
+        }
     }
 
 }

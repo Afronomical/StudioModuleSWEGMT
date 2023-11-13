@@ -97,8 +97,6 @@ public class PlayerDeath : MonoBehaviour
             {
                 healthBarScript = FindObjectOfType<NewHealthBarScript>();
                 healthBarScript.setMaxHealth(maxHealth);
-                GetComponent<Feeding>().currentHunger = 0;
-                GetComponent<Feeding>().hungerBarSlider.SetMinHunger(0);
             }
         }
 
@@ -172,7 +170,7 @@ public class PlayerDeath : MonoBehaviour
     private void deathAfterDelay()
     {
         AudioManager.Manager.StopMusic("LevelMusic");
-        deathscreenCanvas.ShowUI();
+        //deathscreenCanvas.ShowUI();
         AudioManager.Manager.PlayMusic("MenuMusic");
        
         SceneManager.LoadScene("Main Menu Animated");
