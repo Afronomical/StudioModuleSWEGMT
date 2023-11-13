@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public static PlayerController Instance;
+
     //Declare Variables
     private Rigidbody2D rb;
 
@@ -41,7 +43,18 @@ public class PlayerController : MonoBehaviour
     //bool inBatForm;
     // [SerializeField] float batFormSpeed = 10f;
 
-
+    private void Awake()
+    {
+        if (Instance != null)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            Instance = this;
+            DontDestroyOnLoad(Instance);
+        }
+    }
 
     void Start()
     {

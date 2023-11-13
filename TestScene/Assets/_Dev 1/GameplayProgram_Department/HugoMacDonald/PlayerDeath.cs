@@ -1,4 +1,5 @@
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -26,6 +27,12 @@ public class PlayerDeath : MonoBehaviour
     private PlayerAnimationController animationController;
     private bool isDead = false;
     private bool isDamaged = false;
+
+    private void Awake()
+    {
+        Object GO = FindAnyObjectByType(typeof(NewHealthBarScript));
+        healthBarScript = GO.GetComponent<NewHealthBarScript>();
+    }
 
     private void Start()
     {

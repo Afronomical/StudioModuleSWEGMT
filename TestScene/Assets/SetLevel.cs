@@ -9,10 +9,10 @@ public class SetLevel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(GameManager.instance.peopleEaten >= GameManager.instance.peopleEatingThreshold)
+        if(GameManager.Instance.peopleEaten >= GameManager.Instance.peopleEatingThreshold)
         {
             tfSpawn.SetNextLevel(nextLevelName);
-            GameManager.instance.peopleEaten = 0;
+            GameManager.Instance.peopleEaten = 0;
         }
     }
 }

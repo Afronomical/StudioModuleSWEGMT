@@ -26,7 +26,8 @@ public class CoffinInteraction : MonoBehaviour
     void Start()
     {
         coffinArea = GetComponent<BoxCollider2D>();
-        feeding = GameObject.Find("PlayerPrefab1").GetComponent<Feeding>();
+        feeding = PlayerController.Instance.GetComponent<Feeding>();
+        //feeding = GameObject.Find("PlayerPrefab1").GetComponent<Feeding>();
 
         //Coffin closed
         coffinArea.isTrigger = false;

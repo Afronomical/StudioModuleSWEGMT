@@ -20,7 +20,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager instance;
+    public static GameManager Instance;
     public bool playerIsDead;
     public bool canChangeLevel;
 
@@ -38,14 +38,14 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        DontDestroyOnLoad(this);
-        if(instance == null)
+        if (Instance != null && Instance != this)
         {
-            instance = this;
+            Destroy(this);
         }
         else
         {
-            Destroy(this);
+            Instance = this;
+            DontDestroyOnLoad(Instance);
         }
     }
 
@@ -64,7 +64,6 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        instance = this;
         //Instantiate(player, playerSpawn);
 
         //get reference to player
@@ -85,7 +84,9 @@ public class GameManager : MonoBehaviour
         CheckScene();
         //set in update so it is up-to-date with the people eaten
         //might have to add a people eaten counter to the feeding script
-        peopleEaten = player.GetComponent<Feeding>().currentHunger;
+        if (PlayerController.Instance.GetComponent<Feeding>() != null)
+            peopleEaten = PlayerController.Instance.GetComponent<Feeding>().currentHunger;
+            //peopleEaten = player.GetComponent<Feeding>().currentHunger;
 
 
         if (Input.GetKeyDown(KeyCode.L))
@@ -101,15 +102,25 @@ public class GameManager : MonoBehaviour
         var scene = SceneManager.GetActiveScene();
         var spawn = SceneManager.GetSceneByName("Spawn");
 
-        if(scene == spawn)
+        if (scene == spawn)
         {
             //Do not start the game - no timer
-            timer.enabled = false;
+            if (timer != null)
+                timer.enabled = false;
+        }
+        else if (scene == SceneManager.GetSceneByName("Main Menu Animated"))
+        {
+            if (GameObject.FindObjectOfType<CountdownTimer>() != null)
+            {
+                GameObject GO = GameObject.FindObjectOfType<CountdownTimer>().transform.parent.gameObject;
+                Destroy(GO);
+            }
         }
         else
         {
-            timer.enabled = true;
-           // player = GameObject.FindGameObjectWithTag("Player");
+            if (timer != null)
+                timer.enabled = true;
+            // player = GameObject.FindGameObjectWithTag("Player");
         }
     }
 
