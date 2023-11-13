@@ -8,6 +8,7 @@ public class Feeding : MonoBehaviour
     public int minHunger = 0;
     public KeyCode healKey = KeyCode.E; // The key to trigger healing
     private bool canHeal = false; // To check if the player is inside the healing zone
+    private bool hasFed = false; // Flag to track whether the player has fed
     private AICharacter currentTarget = null; // Store the current AI character being healed
     public HungerBar hungerBarSlider;
     public GameObject flashingCanvas;
@@ -17,10 +18,17 @@ public class Feeding : MonoBehaviour
     private PlayerAnimationController animationController;
     public ToolTipManager toolTipManager;
     public float durationTime = 3.0f;
+    private float overlapRadius; // Adjust the radius as needed
+    private float feedDelay = 2.0f; // Adjust the delay duration
+    public bool currentlyFeeding = false;
+
 
 
     private void Start()
     {
+        currentlyFeeding = false;
+        feedDelay = 2.0f;
+        overlapRadius = 0.9f;
         currentHunger = minHunger;
         hungerBarSlider.SetMinHunger(minHunger);
 
@@ -28,52 +36,64 @@ public class Feeding : MonoBehaviour
         animationController = GetComponent<PlayerAnimationController>();
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private IEnumerator DelayedFeed()
     {
-        if (other.CompareTag("feedingZone")) // Make sure the player enters the zone
-        {
-            AICharacter aiCharacter = other.GetComponentInParent<AICharacter>();
-            if (aiCharacter != null && aiCharacter.currentState == AICharacter.States.Downed)
-            {
-                canHeal = true;
-                currentTarget = aiCharacter;
-            }
-        }
-    }
+        yield return new WaitForSeconds(feedDelay);
 
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.CompareTag("feedingZone")) // Player left the zone
-        {
-            canHeal = false;
-            currentTarget = null;
-        }
+        canHeal = true;
+        hasFed = false; // Reset the flag after the delay
+        currentlyFeeding = false;
     }
 
     private void Update()
     {
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, overlapRadius);
+
+        bool foundFeedingZone = false;
+
+        foreach (Collider2D collider in colliders)
+        {
+            if (collider.CompareTag("feedingZone"))
+            {
+                AICharacter aiCharacter = collider.GetComponentInParent<AICharacter>();
+                if (aiCharacter != null && aiCharacter.currentState == AICharacter.States.Downed && !hasFed)
+                {
+                    canHeal = true;
+                    currentTarget = aiCharacter;
+                    foundFeedingZone = true;
+                    break; // Exit the loop if a feeding zone is found
+                }
+            }
+        }
+
+        if (!foundFeedingZone)
+        {
+            canHeal = false;
+            currentTarget = null;
+        }
+
         if (canHeal && Input.GetKeyDown(healKey) && currentTarget != null)
         {
-            //Play Feed SFX
+            currentlyFeeding = true;
+            // Play Feed SFX
             AudioManager.Manager.PlaySFX("PlayerFeed");
             // Feed on the current AI character in the feeding zone when it's downed
             currentHunger += currentTarget.hungerValue;
 
             hungerBarSlider.SetHunger(currentHunger);
-            //flashingCanvas.SetActive(false);
+            // flashingCanvas.SetActive(false);
             currentTarget.health -= 1;
 
             // Call a method in the PlayerDeath script to increase player health
             playerDeath.FeedAttack();
             ToolTipManager.ShowTopToolTip_Static("TASTY! Let's keep going before Sunlight hits!", durationTime);
-        }
 
-        if (Input.GetKey(healKey) && currentTarget != null)
-        {
             animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Feed);
 
-        }
+            hasFed = true; // Set the flag to true after feeding
+            StartCoroutine(DelayedFeed()); // Start the delay before allowing another feed
 
+        }
         if (hungerBarSlider == null)
         {
             if (FindObjectOfType<HungerBar>() == true)
@@ -83,20 +103,15 @@ public class Feeding : MonoBehaviour
                 hungerBarSlider.SetMinHunger(0);
             }
         }
+
     }
 
+    private void OnDrawGizmosSelected()
+    {
+        // Draw a wire sphere in the scene view to represent the overlap circle radius
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, overlapRadius);
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
