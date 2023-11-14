@@ -8,14 +8,9 @@ public class ToAndFromSpawn : MonoBehaviour
 {
     private bool canLeaveHub;
     private bool canLeaveLevel;
-    [SerializeField] string nextLevel;
+    [SerializeField] string nextLevel1;
  
 
-
-    private void Start()
-    {
-        
-    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -24,10 +19,14 @@ public class ToAndFromSpawn : MonoBehaviour
             Debug.Log("Collided");
 
             
-                SceneManager.LoadScene(nextLevel);
             
-                
+            SceneManager.LoadScene(nextLevel1);   
             
         }
+    }
+
+    public void SetNextLevel(string newLevel)
+    {
+        nextLevel1= newLevel;
     }
 }

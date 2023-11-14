@@ -9,18 +9,22 @@ Written by Lucian in the AI team
  */
 
 
+//I've edited this script to make it so that you can it static
 
-
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager instance;
+    public static GameManager Instance;
     public bool playerIsDead;
     public bool canChangeLevel;
+
+    
 
     //this is where the conditions that trigger state changes are defined
     //they are simple for now, subject to change as per Tech Design requirements
@@ -28,15 +32,20 @@ public class GameManager : MonoBehaviour
     public int peopleEaten;
 
 
-    private GameObject player;
+    public GameObject player;
+    public Transform playerSpawn;
     private CountdownTimer timer;
 
     private void Awake()
     {
-        DontDestroyOnLoad(this);
-        if(instance == null)
+        if (Instance != null && Instance != this)
         {
-            instance = this;
+            Destroy(this);
+        }
+        else
+        {
+            Instance = this;
+            DontDestroyOnLoad(Instance);
         }
     }
 
@@ -55,10 +64,15 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //Instantiate(player, playerSpawn);
+
         //get reference to player
-        player = GameObject.FindGameObjectWithTag("Player");
+        //player = GameObject.FindGameObjectWithTag("Player");
+        //DontDestroyOnLoad(player);
+        DontDestroyOnLoad(gameObject);
+
         //reference to game timer
-        timer = GameObject.Find("CountdownText").GetComponent<CountdownTimer>();
+        timer = GameObject.Find("Countdown Text").GetComponent<CountdownTimer>();
         //default state
         currentGameState = GameStates.PlayerInLevel;
     }
@@ -66,16 +80,48 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if(Input.GetKeyDown(KeyCode.Escape))
-        {
-            Debug.Log(peopleEaten);
-        }
-
-        CheckGameState();
+        //CheckGameState();
+        CheckScene();
         //set in update so it is up-to-date with the people eaten
         //might have to add a people eaten counter to the feeding script
-        peopleEaten = player.GetComponent<Feeding>().currentHunger;
+        if (PlayerController.Instance.GetComponent<Feeding>() != null)
+            peopleEaten = PlayerController.Instance.GetComponent<Feeding>().currentHunger;
+            //peopleEaten = player.GetComponent<Feeding>().currentHunger;
+
+
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            Debug.Log(peopleEaten + "/" + peopleEatingThreshold);
+        }
+
+       
+    }
+
+    private void CheckScene()
+    {
+        var scene = SceneManager.GetActiveScene();
+        var spawn = SceneManager.GetSceneByName("Spawn");
+
+        if (scene == spawn)
+        {
+            //Do not start the game - no timer
+            if (timer != null)
+                timer.enabled = false;
+        }
+        else if (scene == SceneManager.GetSceneByName("Main Menu Animated"))
+        {
+            if (GameObject.FindObjectOfType<CountdownTimer>() != null)
+            {
+                GameObject GO = GameObject.FindObjectOfType<CountdownTimer>().transform.parent.gameObject;
+                Destroy(GO);
+            }
+        }
+        else
+        {
+            if (timer != null)
+                timer.enabled = true;
+            // player = GameObject.FindGameObjectWithTag("Player");
+        }
     }
 
     public void ChangeGameState(GameStates newState)
@@ -93,29 +139,29 @@ public class GameManager : MonoBehaviour
         return canChangeLevel;
     }
 
-    void CheckGameState()
-    {
-        //if player dies, the game state will be updated accordingly
-        if(player.GetComponent<PlayerDeath>().currentHealth <= 0)
-        {
-            ChangeGameState(GameStates.PlayerDead);
-        }
-        else if(player.GetComponent<PlayerDeath>().godMode == true)
-        {
-            ChangeGameState(GameStates.GodMode);
-        }
-        //checks if player is out of time
-        if(timer.timeRemaining == 0)
-        {
-            ChangeGameState(GameStates.ObjectiveFailed);
-            canChangeLevel = false;
-        }
-        if(peopleEaten >= peopleEatingThreshold && timer.timeRemaining >= 0)
-        {
-            ChangeGameState(GameStates.ObjectiveCompleted); 
-            canChangeLevel = true;
-        }
+    //void CheckGameState()
+    //{
+    //    //if player dies, the game state will be updated accordingly
+    //    if(player.GetComponent<PlayerDeath>().currentHealth <= 0)
+    //    {
+    //        ChangeGameState(GameStates.PlayerDead);
+    //    }
+    //    else if(player.GetComponent<PlayerDeath>().godMode == true)
+    //    {
+    //        ChangeGameState(GameStates.GodMode);
+    //    }
+    //    //checks if player is out of time
+    //    if(timer.timeRemaining == 0)
+    //    {
+    //        ChangeGameState(GameStates.ObjectiveFailed);
+    //        canChangeLevel = false;
+    //    }
+    //    if(peopleEaten >= peopleEatingThreshold && timer.timeRemaining >= 0)
+    //    {
+    //        ChangeGameState(GameStates.ObjectiveCompleted); 
+    //        canChangeLevel = true;
+    //    }
 
-    }
+    //}
 
 }

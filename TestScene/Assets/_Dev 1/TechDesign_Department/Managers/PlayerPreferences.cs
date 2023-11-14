@@ -33,6 +33,11 @@ public class PlayerPreferences : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
+
+    private void Update()
+    {
+        
+    }
     // Start is called before the first frame update
     void Start()
     {

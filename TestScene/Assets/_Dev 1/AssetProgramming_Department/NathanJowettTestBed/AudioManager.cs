@@ -111,7 +111,10 @@ public class AudioManager : MonoBehaviour
     private void loadValues()
     {
         volumeValue = PlayerPrefs.GetFloat("VolumeValue");
-        volumeSlider.value = volumeValue;
+        if (volumeSlider != null)
+        {
+            volumeSlider.value = volumeValue;
+        }
         AudioListener.volume = volumeValue;
 
     }
