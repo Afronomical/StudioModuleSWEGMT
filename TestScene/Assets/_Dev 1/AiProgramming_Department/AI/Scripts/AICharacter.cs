@@ -62,6 +62,11 @@ public class AICharacter : MonoBehaviour
     public GameObject hunterPrefab;
     public GameObject archerPrefab;
 
+    [Header("Reload bar references")]
+    public GameObject reloadBarPrefab;
+    public Transform reloadBar;
+    public bool reloading;
+
     public bool isMoving;
 
     void Start()
@@ -72,6 +77,8 @@ public class AICharacter : MonoBehaviour
         health = startingHealth;
         ChangeState(States.Idle);  // The character will start in the idle state
         player = GameObject.FindGameObjectWithTag("Player");
+
+        reloading = false;
     }
 
 
