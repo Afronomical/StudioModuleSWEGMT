@@ -11,6 +11,8 @@ public class ReloadBar : MonoBehaviour
     public float currentTime;
     public float reloadTime = 3f;
 
+    Vector3 offset = new Vector3(0f, 11f);
+
     private void Start()
     {
         slider = GetComponent<Slider>();
@@ -20,20 +22,16 @@ public class ReloadBar : MonoBehaviour
 
     private void Update()
     {
+        transform.position = Camera.main.WorldToScreenPoint(boss.transform.position) + offset;
+
         slider.value = currentTime/reloadTime;
         if(currentTime <= 0.01)
         {
             Destroy(gameObject);
-            currentTime = reloadTime;
         }
         else
         {
             currentTime -= Time.deltaTime;
         }
-        //if(slider.value <= 0.1)
-        //{
-        //    Destroy(gameObject);
-        //    //boss.GetComponent<AICharacter>().reloading = false;
-        //}
     }
 }
