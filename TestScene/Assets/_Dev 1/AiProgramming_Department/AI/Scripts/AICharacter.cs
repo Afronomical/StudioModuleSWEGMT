@@ -157,6 +157,7 @@ public class AICharacter : MonoBehaviour
                     stateScript = transform.AddComponent<SprayArrowsState>();
                     break;
                 case States.Reload:
+                    Debug.Log(gameObject.name);
                     stateScript = transform.AddComponent<ReloadState>();
                     break;
                 //case States.SpawnEnemies:

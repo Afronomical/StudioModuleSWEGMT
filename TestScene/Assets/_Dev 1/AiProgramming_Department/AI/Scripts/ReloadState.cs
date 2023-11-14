@@ -18,6 +18,10 @@ public class ReloadState : StateBaseClass
     Transform reloadBar;
     bool reloading;
 
+    GameObject rb;
+    //ReloadBar instance;
+    int instances = 0;
+
     private void Start()
     {
         //player = character.player;
@@ -25,26 +29,35 @@ public class ReloadState : StateBaseClass
         reloadBar = character.reloadBar;
         reloadBarPrefab = character.reloadBarPrefab;
         reloading = false;
+        Instantiate(reloadBarPrefab, reloadBar.position, Quaternion.Euler(new Vector3(1,1,1)), reloadBar);
     }
 
     public override void UpdateLogic()
     {
-        if (!character.reloading)
-        {
-            Instantiate(reloadBarPrefab, reloadBar.position, Quaternion.identity);
-            character.reloading = true;
-        }
-        else
-        {
 
-        }
+        //if (!reloading)
+        //{
+
+
+        //    reloading = true;
+
+
+        //    //instance = new ReloadBar();
+        //    //instances++;
+        //    //rb.transform.SetParent(reloadBar);
+        //    //if (!reloadBar)
+        //    //{ds
+        //    //    reloading = false;
+        //    //}
+        //}
+
 
         //if (reloadTime <= 0)
         //{
         //    if (!reloading)
         //    {
-        //        GameObject rb = Instantiate(reloadBarPrefab, reloadBar.position, Quaternion.identity);
-        //        rb.GetComponentInChildren<Slider>().value = currentTime/reloadTime;
+        //        GameObject rb = Instantiate(reloadBarPrefab, reloadBar.position, Quaternion.identity, reloadBar);
+        //        rb.GetComponentInChildren<Slider>().value = currentTime / reloadTime;
         //        StartCoroutine(Reload());
         //        reloading = true;
         //        //Invoke("DestroyObject", 3);
@@ -52,7 +65,7 @@ public class ReloadState : StateBaseClass
         //        currentTime = reloadTime;
 
         //    }
-            
+
         //}
         //else
         //{

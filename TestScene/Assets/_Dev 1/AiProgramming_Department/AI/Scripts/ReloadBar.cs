@@ -20,19 +20,20 @@ public class ReloadBar : MonoBehaviour
 
     private void Update()
     {
-        if(slider.value <= 0)
+        slider.value = currentTime/reloadTime;
+        if(currentTime <= 0.01)
         {
             Destroy(gameObject);
-            boss.GetComponent<AICharacter>().reloading = false;
-        }
-        slider.value = currentTime/reloadTime;
-        if(currentTime <= 0)
-        {
             currentTime = reloadTime;
         }
         else
         {
             currentTime -= Time.deltaTime;
         }
+        //if(slider.value <= 0.1)
+        //{
+        //    Destroy(gameObject);
+        //    //boss.GetComponent<AICharacter>().reloading = false;
+        //}
     }
 }

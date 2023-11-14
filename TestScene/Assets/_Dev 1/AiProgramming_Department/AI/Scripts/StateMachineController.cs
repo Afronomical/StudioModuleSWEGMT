@@ -88,6 +88,7 @@ public class StateMachineController : MonoBehaviour
     {
         if (distance < attackRange)
         {
+            Debug.Log("attached");
             character.ChangeState(AICharacter.States.Reload);
 
             //changes to special attack when health is low
