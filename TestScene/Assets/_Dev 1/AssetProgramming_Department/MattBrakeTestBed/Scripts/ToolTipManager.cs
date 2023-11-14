@@ -23,6 +23,12 @@ public class ToolTipManager : MonoBehaviour
 
     }
 
+    private void Start()
+    {
+        topToolTip.SetActive(false);
+        bottomToolTip.SetActive(false);
+    }
+
 
     private void ShowTopToolTip(string tooltipString, float displayDuration)
     {
