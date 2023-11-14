@@ -16,7 +16,7 @@ public class MainMenu : MonoBehaviour
         AudioManager.Manager.PlaySFX("UI_Click");
         AudioManager.Manager.StopMusic("MenuMusic");
         Debug.Log("Play Game");
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("Spawn");
         Time.timeScale = 1; 
         //LevelManager.Instance.LoadScene("TestCaveScene");
     }

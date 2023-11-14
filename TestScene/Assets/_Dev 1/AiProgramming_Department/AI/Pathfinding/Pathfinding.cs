@@ -89,7 +89,7 @@ public class Pathfinding : MonoBehaviour
             waypoints = RetracePath(startNode, targetNode);  // Create an array of waypoints using the path found
             pathSuccess = waypoints.Length > 0;
         }
-        callback(new PathResult(waypoints, pathSuccess, request.callback));  // Return the result
+        callback(new PathResult(waypoints, pathSuccess, request.callback, request.state));  // Return the result
     }
 
 

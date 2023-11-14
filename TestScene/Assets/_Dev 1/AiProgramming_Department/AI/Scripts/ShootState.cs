@@ -13,7 +13,7 @@ public class ShootState : StateBaseClass
     public Transform origin;
     public GameObject bulletPrefab;
     public GameObject homingBulletPrefab;
-    private float bulletSpeed = 2250f;
+    private float bulletSpeed = 6f;
 
     //private IEnumerator coroutine;
 
@@ -65,7 +65,7 @@ public class ShootState : StateBaseClass
 
         Vector2 distance = character.player.transform.position - character.transform.position;
         GameObject bullet = Instantiate(bulletPrefab, origin.position, origin.rotation);
-        bullet.GetComponent<Rigidbody2D>().velocity = distance.normalized * bulletSpeed * Time.deltaTime;
+        bullet.GetComponent<Rigidbody2D>().velocity = distance.normalized * bulletSpeed;
         AudioManager.Manager.PlaySFX("NPC_RangedAttack");
 
     }
@@ -75,8 +75,6 @@ public class ShootState : StateBaseClass
 
     GameObject InstantiateBullet()
     {
-        GameObject bullet = Instantiate(bulletPrefab, origin.position, origin.rotation);
-        
-        return bullet;
+        return Instantiate(bulletPrefab, origin.position, origin.rotation);
     }
 }

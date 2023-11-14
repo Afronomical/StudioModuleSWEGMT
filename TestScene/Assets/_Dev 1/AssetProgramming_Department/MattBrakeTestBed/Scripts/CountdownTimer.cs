@@ -16,11 +16,25 @@ public class CountdownTimer : MonoBehaviour
     public float rotationSpeed = 1f;
     public float maxrotationAngle = 360f;
 
+    private void Awake()
+    {
+        if (FindAnyObjectByType(typeof(CountdownTimer)))
+        {
+            DontDestroyOnLoad(this.transform.parent);
+
+        }
+    }
 
     void Start()
     {
         timeIsRunning = true;
         timeRemaining = time;
+        //if (FindAnyObjectByType(typeof(CountdownTimer)))
+        //{
+        //    DontDestroyOnLoad(this.transform.parent);
+        //
+        //}
+       
     }
     
     void Update()

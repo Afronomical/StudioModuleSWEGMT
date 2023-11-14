@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,12 +17,12 @@ public class MenuCamPan : MonoBehaviour
 
     [SerializeField] Image menuCanvas;
 
-    private Transform initialCamPos;
+    [SerializeField] Transform initialCamPos;
 
 
     private void Awake()
     {
-        //initialCamPos.position = transform.position;
+        initialCamPos.position = transform.position;
     }
 
     public enum TimeOfDay
@@ -35,17 +36,17 @@ public class MenuCamPan : MonoBehaviour
 
     private void Start()
     {
-        ////initialCamPos.position = transform.position;
-
-        transform.position = initialCamPos.position;
         
-        transform.position = waypoint[currentWayPointIndex].transform.position;
+
+        transform.position = new Vector3 (initialCamPos.position.x, initialCamPos.position.y, transform.position.z);
+        
+        transform.position = new Vector3 (waypoint[currentWayPointIndex].transform.position.x, waypoint[currentWayPointIndex].transform.position.y, transform.position.z) ;
 
         timeOfDay= TimeOfDay.night;
         SetTimeMaterial();
         
     }
-    private void FixedUpdate()
+    private void Update()
     {
        // CheckIfPenultimateNode(waypoint, currentWayPointIndex);
         if (Vector2.Distance(waypoint[currentWayPointIndex].transform.position, transform.position) < 3)
