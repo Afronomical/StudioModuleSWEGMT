@@ -121,23 +121,26 @@ public class playerAttack : MonoBehaviour
         if (Input.GetKey(KeyCode.Mouse0))
         {
             animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.SlashAttack);
-
+            animator.SetBool("Attacking", true);
             AudioManager.Manager.PlaySFX("PlayerAttack");
-            if (canHit )//&& //feeding.currentlyFeeding == false)
+            if (canHit)//&& //feeding.currentlyFeeding == false)
             {
-               
+                
                 damageEnemy();
                 canHit = false;
+               
                 Debug.Log("ATTACKED HDBGSUYHGBK");
             }
-            
+
             
         }
         if (!canHit)
         {
+            
             attackDelay -= Time.deltaTime;
             if (attackDelay <= 0)
             {
+                animator.SetBool("Attacking", false);
                 canHit = true;
                 attackDelay = attackDelayStart;
             }
