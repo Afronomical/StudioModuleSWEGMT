@@ -38,6 +38,8 @@ public class AICharacter : MonoBehaviour
         CircularShoot,
         HomingArrow,
         SpawnEnemies,
+        SprayArrows,
+        Reload,
         None
     }
 
@@ -132,21 +134,27 @@ public class AICharacter : MonoBehaviour
                 case States.SpecialAttack:
                     stateScript = transform.AddComponent<SpecialAttackState>();
                     break;
-                //case States.SprayShoot1:
-                //    stateScript = transform.AddComponent<SprayShoot1State>();
-                //    break;
+                case States.SprayShoot1:
+                    stateScript = transform.AddComponent<SprayShoot1State>();
+                    break;
                 //case States.SprayShoot2:
                 //    stateScript = transform.AddComponent<SprayShoot2State>();
                 //    break;
-                //case States.CircularShoot:
-                //    stateScript = transform.AddComponent<CircularShootState>();
-                //    break;
-                //case States.HomingArrow:
-                //    stateScript = transform.AddComponent<HomingArrowState>();
-                //    break;
-                case States.SpawnEnemies:
-                    stateScript = transform.AddComponent<SpawnEnemiesState>();
+                case States.CircularShoot:
+                    stateScript = transform.AddComponent<CircularShootState>();
                     break;
+                case States.HomingArrow:
+                    stateScript = transform.AddComponent<HomingArrowState>();
+                    break;
+                case States.SprayArrows:
+                    stateScript = transform.AddComponent<SprayArrowsState>();
+                    break;
+                case States.Reload:
+                    stateScript = transform.AddComponent<ReloadState>();
+                    break;
+                //case States.SpawnEnemies:
+                //    stateScript = transform.AddComponent<SpawnEnemiesState>();
+                //    break;
                 //------------------------------------ Add new states in here
 
                 case States.None:
