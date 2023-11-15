@@ -83,6 +83,9 @@ public class AIAnimationChange : MonoBehaviour
                 case AICharacter.States.SpecialAttack:
                     animController.ChangeAnimationState(AIAnimationController.AnimationStates.BowAttack);
                     break;
+                case AICharacter.States.Reload:
+                    animController.ChangeAnimationState(AIAnimationController.AnimationStates.Reload);
+                    break;
             }
         }
     }
