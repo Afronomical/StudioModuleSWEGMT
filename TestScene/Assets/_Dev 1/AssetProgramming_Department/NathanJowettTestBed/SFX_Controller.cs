@@ -8,10 +8,10 @@ using UnityEngine;
 [System.Serializable]
 public class SFX_Controller
 {
-    [SerializeField] AudioMixer audioMixer;
-
+ 
     public string Name;
     public AudioClip clip;
+    public AudioMixerGroup MixerGroup;
 
     [Range(0f, 1f)] public float volume;
     [Range(.1f, 3f)] public float pitch;

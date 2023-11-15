@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4717837047074943943}
   - component: {fileID: 5097419262400239719}
   m_Layer: 5
-  m_Name: SettingsScreen
+  m_Name: VolumeControls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -117,9 +117,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c18d126d756ded41bf1b38b575429c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mixer: {fileID: 0}
-  MusicSlider: {fileID: 0}
-  SFXSlider: {fileID: 0}
+  mixer: {fileID: 24100000, guid: b61dca9e8894f664fb0ce150b9ed8070, type: 2}
+  MusicSlider: {fileID: 4190311481838498471}
+  SFXSlider: {fileID: 4503035197684008441}
 --- !u!1 &177518405825407444
 GameObject:
   m_ObjectHideFlags: 0
@@ -408,7 +408,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Volume
+  m_text: Music
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

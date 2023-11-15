@@ -36,6 +36,7 @@ public class AudioManager : MonoBehaviour
         {
             s.source = gameObject.AddComponent<AudioSource>();
             s.source.clip = s.clip;
+            s.source.outputAudioMixerGroup = s.MixerGroup;
             s.source.volume = s.volume;
             s.source.pitch = s.pitch;
             s.source.loop = s.Loop;
@@ -45,6 +46,7 @@ public class AudioManager : MonoBehaviour
         {
             m.source = gameObject.AddComponent<AudioSource>();
             m.source.clip = m.clip;
+            m.source.outputAudioMixerGroup = m.MixerGroup;
             m.source.volume = m.volume;
             m.source.pitch = m.pitch;
             m.source.loop = m.Loop;            
