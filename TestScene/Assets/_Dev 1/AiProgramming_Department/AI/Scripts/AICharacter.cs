@@ -38,6 +38,8 @@ public class AICharacter : MonoBehaviour
         CircularShoot,
         HomingArrow,
         SpawnEnemies,
+        SprayArrows,
+        Reload,
         None
     }
 
@@ -60,6 +62,11 @@ public class AICharacter : MonoBehaviour
     public GameObject hunterPrefab;
     public GameObject archerPrefab;
 
+    [Header("Reload bar references")]
+    public GameObject reloadBarPrefab;
+    public Transform reloadBar;
+    public bool reloading;
+
     public bool isMoving;
 
     void Start()
@@ -70,6 +77,8 @@ public class AICharacter : MonoBehaviour
         health = startingHealth;
         ChangeState(States.Idle);  // The character will start in the idle state
         player = GameObject.FindGameObjectWithTag("Player");
+
+        reloading = false;
     }
 
 
@@ -132,21 +141,28 @@ public class AICharacter : MonoBehaviour
                 case States.SpecialAttack:
                     stateScript = transform.AddComponent<SpecialAttackState>();
                     break;
-                //case States.SprayShoot1:
-                //    stateScript = transform.AddComponent<SprayShoot1State>();
-                //    break;
+                case States.SprayShoot1:
+                    stateScript = transform.AddComponent<SprayShoot1State>();
+                    break;
                 //case States.SprayShoot2:
                 //    stateScript = transform.AddComponent<SprayShoot2State>();
                 //    break;
-                //case States.CircularShoot:
-                //    stateScript = transform.AddComponent<CircularShootState>();
-                //    break;
-                //case States.HomingArrow:
-                //    stateScript = transform.AddComponent<HomingArrowState>();
-                //    break;
-                case States.SpawnEnemies:
-                    stateScript = transform.AddComponent<SpawnEnemiesState>();
+                case States.CircularShoot:
+                    stateScript = transform.AddComponent<CircularShootState>();
                     break;
+                case States.HomingArrow:
+                    stateScript = transform.AddComponent<HomingArrowState>();
+                    break;
+                case States.SprayArrows:
+                    stateScript = transform.AddComponent<SprayArrowsState>();
+                    break;
+                case States.Reload:
+                    //Debug.Log(gameObject.name);
+                    stateScript = transform.AddComponent<ReloadState>();
+                    break;
+                //case States.SpawnEnemies:
+                //    stateScript = transform.AddComponent<SpawnEnemiesState>();
+                //    break;
                 //------------------------------------ Add new states in here
 
                 case States.None:

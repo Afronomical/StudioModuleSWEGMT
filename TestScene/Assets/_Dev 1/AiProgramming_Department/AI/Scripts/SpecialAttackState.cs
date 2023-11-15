@@ -58,30 +58,30 @@ public class SpecialAttackState : StateBaseClass
         //ShootHomingBullet();
         //ShootSprayArrows();
     }
-    void Shoot()
-    {
-        Vector3 vectorToTarget = Quaternion.Euler(0, 0, 90) * (character.player.transform.position - transform.position);  // Direction towards the target location
-        transform.rotation = Quaternion.LookRotation(forward: Vector3.forward, upwards: vectorToTarget);
+    //void Shoot()
+    //{
+    //    Vector3 vectorToTarget = Quaternion.Euler(0, 0, 90) * (character.player.transform.position - transform.position);  // Direction towards the target location
+    //    transform.rotation = Quaternion.LookRotation(forward: Vector3.forward, upwards: vectorToTarget);
 
-        Vector2 distance = character.player.transform.position - character.transform.position;
-        distance.Normalize();
-        GameObject bullet = Instantiate(bulletPrefab, origin.position, origin.rotation);
-        bullet.GetComponent<Rigidbody2D>().velocity = distance * bulletSpeed * Time.deltaTime;
-    }
+    //    Vector2 distance = character.player.transform.position - character.transform.position;
+    //    distance.Normalize();
+    //    GameObject bullet = Instantiate(bulletPrefab, origin.position, origin.rotation);
+    //    bullet.GetComponent<Rigidbody2D>().velocity = distance * bulletSpeed * Time.deltaTime;
+    //}
 
-    void SprayShoot()
-    {
-        if (currentDelay <= 0)
-        {
-            Shoot();
-            currentDelay = 0.15f;
-        }
-        else
-        {
-            currentDelay -= Time.deltaTime;
-        }
+    //void SprayShoot()
+    //{
+    //    if (currentDelay <= 0)
+    //    {
+    //        Shoot();
+    //        currentDelay = 0.15f;
+    //    }
+    //    else
+    //    {
+    //        currentDelay -= Time.deltaTime;
+    //    }
 
-    }
+    //}
 
     void SprayShoot2()
     {
@@ -109,78 +109,75 @@ public class SpecialAttackState : StateBaseClass
         bullet.GetComponent<Rigidbody2D>().velocity = transform.right * 5 * Time.deltaTime;
     }
 
-    void CircularShoot()
-    {
+    //void CircularShoot()
+    //{
 
-        transform.Rotate(Vector3.forward * 300f * Time.deltaTime);
-        origin = character.transform;
+    //    transform.Rotate(Vector3.forward * 300f * Time.deltaTime);
+    //    origin = character.transform;
 
-        if (currentDelay <= 0)
-        {
-            GameObject bullet = Instantiate(bulletPrefab, origin.position, origin.rotation);
-            bullet.GetComponent<Rigidbody2D>().velocity = transform.right * bulletSpeed * Time.deltaTime;
-            currentDelay = 0.1f;
-        }
-        else
-        {
-            currentDelay -= Time.deltaTime;
-        }
-    }
+    //    if (currentDelay <= 0)
+    //    {
+    //        GameObject bullet = Instantiate(bulletPrefab, origin.position, origin.rotation);
+    //        bullet.GetComponent<Rigidbody2D>().velocity = transform.right * bulletSpeed * Time.deltaTime;
+    //        currentDelay = 0.1f;
+    //    }
+    //    else
+    //    {
+    //        currentDelay -= Time.deltaTime;
+    //    }
+    //}
 
-    void ShootHomingBullet()
-    {
+    //void ShootHomingBullet()
+    //{
 
-        Vector3 vectorToTarget = Quaternion.Euler(0, 0, 90) * (character.player.transform.position - transform.position);  // Direction towards the target location
-        transform.rotation = Quaternion.LookRotation(forward: Vector3.forward, upwards: vectorToTarget);
-
-
-
-        if (currentDelay <= 0)
-        {
-            Instantiate(homingBulletPrefab, origin.position, origin.rotation);
-            currentDelay = 3f;
-        }
-        else
-        {
-            currentDelay -= Time.deltaTime;
-        }
+    //    Vector3 vectorToTarget = Quaternion.Euler(0, 0, 90) * (character.player.transform.position - transform.position);  // Direction towards the target location
+    //    transform.rotation = Quaternion.LookRotation(forward: Vector3.forward, upwards: vectorToTarget);
 
 
 
+    //    if (currentDelay <= 0)
+    //    {
+    //        Instantiate(homingBulletPrefab, origin.position, origin.rotation);
+    //        currentDelay = 3f;
+    //    }
+    //    else
+    //    {
+    //        currentDelay -= Time.deltaTime;
+    //    }
 
-    }
+    //}
 
 
-    void ShootSprayArrows()
-    {
-        Vector3 vectorToTarget = Quaternion.Euler(0, 0, 90) * (character.player.transform.position - transform.position);  // Direction towards the target location
-        transform.rotation = Quaternion.LookRotation(forward: Vector3.forward, upwards: vectorToTarget);
+    //void ShootSprayArrows()
+    //{
+    //    Vector3 vectorToTarget = Quaternion.Euler(0, 0, 90) * (character.player.transform.position - transform.position);  // Direction towards the target location
+    //    transform.rotation = Quaternion.LookRotation(forward: Vector3.forward, upwards: vectorToTarget);
 
-        //GameObject bullet1;
-        //GameObject bullet2;
-        //GameObject bullet3;
+    //    //GameObject bullet1;
+    //    //GameObject bullet2;
+    //    //GameObject bullet3;
 
-        if (currentDelay <= 0)
-        {
-            GameObject bullet1 = Instantiate(bulletPrefab, origin.position, origin.rotation * Quaternion.Euler(new Vector3(0f, 0f, 15f)));
-            GameObject bullet2 = Instantiate(bulletPrefab, origin.position, origin.rotation); //straight line
-            GameObject bullet3 = Instantiate(bulletPrefab, origin.position, origin.rotation * Quaternion.Euler(new Vector3(0f, 0f, -15f)));
+    //    if (currentDelay <= 0)
+    //    {
+    //        GameObject bullet1 = Instantiate(bulletPrefab, origin.position, origin.rotation * Quaternion.Euler(new Vector3(0f, 0f, 15f)));
+    //        GameObject bullet2 = Instantiate(bulletPrefab, origin.position, origin.rotation); //straight line
+    //        GameObject bullet3 = Instantiate(bulletPrefab, origin.position, origin.rotation * Quaternion.Euler(new Vector3(0f, 0f, -15f)));
 
             
-            bullet2.GetComponent<Rigidbody2D>().velocity = transform.right * bulletSpeed * Time.deltaTime;
-            bullet3.GetComponent<Rigidbody2D>().velocity = bullet3.transform.right * bulletSpeed * Time.deltaTime;
-            bullet1.GetComponent<Rigidbody2D>().velocity = bullet1.transform.right * bulletSpeed * Time.deltaTime;
+    //        bullet2.GetComponent<Rigidbody2D>().velocity = transform.right * bulletSpeed * Time.deltaTime;
+    //        bullet3.GetComponent<Rigidbody2D>().velocity = bullet3.transform.right * bulletSpeed * Time.deltaTime;
+    //        bullet1.GetComponent<Rigidbody2D>().velocity = bullet1.transform.right * bulletSpeed * Time.deltaTime;
 
-            currentDelay = 3f;
-        }
-        else
-        {
-            currentDelay -= Time.deltaTime;
-        }
+    //        currentDelay = 3f;
+    //    }
+    //    else
+    //    {
+    //        currentDelay -= Time.deltaTime;
+    //    }
 
         
 
-    }
+    //}
 
     void ChooseAttack()
     {
@@ -207,13 +204,13 @@ public class SpecialAttackState : StateBaseClass
         //        break;
         //}
 
-        if (rand <= 10)
-            SprayShoot2();
-        else if (10 < rand && rand <= 30)
-            SprayShoot();
-        else if (rand > 30 && rand <= 70)
-            CircularShoot();
-        else
-            ShootHomingBullet();
+        //if (rand <= 10)
+        //    SprayShoot2();
+        //else if (10 < rand && rand <= 30)
+        //    SprayShoot();
+        //else if (rand > 30 && rand <= 70)
+        //    CircularShoot();
+        //else
+        //    ShootHomingBullet();
     }
 }
