@@ -17,7 +17,6 @@ public class AttackState : StateBaseClass
 
     private void Start()
     {
-        playerDeath = character.player.GetComponent<PlayerDeath>();
         transform.GetComponentInChildren<AIAnimationController>().ChangeAnimationState(AIAnimationController.AnimationStates.SwordAttack);
     }
 
