@@ -10,10 +10,14 @@ using Unity.VisualScripting;
 
 public class AudioManager : MonoBehaviour
 {
+    [SerializeField] AudioMixer mixer;
+    public const string MUSIC_KEY = "musicVolume";
+    public const string SFX_KEY = "sfxVolume";
     public SFX_Controller[] Sounds;
     public Music_Controller[] Music;
 
     public static AudioManager Manager;
+    
 
     private void Awake()
     {
@@ -25,6 +29,8 @@ public class AudioManager : MonoBehaviour
             return;
         }
         DontDestroyOnLoad(gameObject);
+
+        
 
         foreach (SFX_Controller s in Sounds)
         {
@@ -43,11 +49,18 @@ public class AudioManager : MonoBehaviour
             m.source.pitch = m.pitch;
             m.source.loop = m.Loop;            
         }
-        
-        loadValues();
-    }
-    
 
+        LoadVolume();
+    }
+   
+    void LoadVolume()
+    {
+        float musicVolume = PlayerPrefs.GetFloat(MUSIC_KEY, 1f);
+        float sfxVolume = PlayerPrefs.GetFloat(SFX_KEY, 1f);
+
+        mixer.SetFloat(VolumeSettings.MIXER_MUSIC,Mathf.Log10(musicVolume) *20);
+        mixer.SetFloat(VolumeSettings.MIXER_SFX,Mathf.Log10(sfxVolume) *20);
+    }
     public void PlaySFX(string name)
     {
         SFX_Controller s = Array.Find(Sounds, SFX_Controller => SFX_Controller.Name == name);
@@ -88,8 +101,8 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-
-    //Volume Settings
+   
+    /*//Volume Settings
 
     [SerializeField] private Slider volumeSlider = null;
     [SerializeField] private TextMeshProUGUI volumeText = null;
@@ -117,7 +130,7 @@ public class AudioManager : MonoBehaviour
         }
         AudioListener.volume = volumeValue;
 
-    }
+    }*/
 }
 
 //Old Manager

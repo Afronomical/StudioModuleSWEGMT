@@ -8,6 +8,7 @@ using UnityEngine;
 [System.Serializable]
 public class SFX_Controller
 {
+    [SerializeField] AudioMixer audioMixer;
 
     public string Name;
     public AudioClip clip;
