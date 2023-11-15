@@ -23,7 +23,8 @@ public class AIAnimationController : MonoBehaviour
         Downed,
         Death,
         BowAttack,
-        SwordAttack
+        SwordAttack,
+        Reload
     }
 
     // GOs Animator Component:
