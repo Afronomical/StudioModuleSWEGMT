@@ -29,6 +29,8 @@ public class BossHealthBar : MonoBehaviour
         currentValue = BossSlider.value;
         targetValue = BossSlider.value;
         Phase = BossPhase.One;
+        ToolTipManager.ShowBottomToolTip_Static("Phase: " + Phase);
+        ToolTipManager.ShowTopToolTip_Static("VUN HELLSTING", 60f);
         
     }
 
