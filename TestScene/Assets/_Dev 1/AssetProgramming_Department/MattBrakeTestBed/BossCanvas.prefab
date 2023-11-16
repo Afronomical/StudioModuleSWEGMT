@@ -211,10 +211,11 @@ MonoBehaviour:
     m_NumColorKeys: 4
     m_NumAlphaKeys: 2
   fillImage: {fileID: 3256677672589431992}
+  targetValue: 50
   ToolTipManager: {fileID: 5702947401994293975}
   Boss: {fileID: 0}
   BlinkEffect: {fileID: 4387139067935221977}
-  Phase: 0
+  Phase: 1
 --- !u!1 &2209352062146924726
 GameObject:
   m_ObjectHideFlags: 0
@@ -917,7 +918,7 @@ MonoBehaviour:
   image: {fileID: 3261010532914141554}
   startColour: {r: 0, g: 0, b: 0, a: 0}
   endColour: {r: 1, g: 0.061854143, b: 0, a: 1}
-  speed: 0.47
+  speed: 1.55
 --- !u!1 &8052592004771374295
 GameObject:
   m_ObjectHideFlags: 0

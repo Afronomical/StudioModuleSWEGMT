@@ -10,7 +10,7 @@ public class BossHealthBar : MonoBehaviour
     public Gradient gradient;
     [SerializeField]
     private Image fillImage;
-    private float targetValue;
+    public float targetValue;
     private float currentValue;
     public ToolTipManager ToolTipManager;
     public GameObject Boss;
@@ -35,13 +35,18 @@ public class BossHealthBar : MonoBehaviour
         Phase = BossPhase.One;
         BlinkEffect.enabled = false; 
         ToolTipManager.ShowBottomToolTip_Static("Phase: " + Phase);
-        ToolTipManager.ShowTopToolTip_Static("VUN HELLSTINC", 60f);
+        ToolTipManager.ShowTopToolTip_Static("VUN HELLSTINC");
 
         //float BossHealth = Boss.GetComponent<AICharacter>().GetHealth();
         AICharacter = Boss.GetComponent<AICharacter>();
         currentValue = AICharacter.GetHealth();
         
         
+    }
+
+    public void UpdatePhase()
+    {
+        ToolTipManager.ShowBottomToolTip("Phase: " + Phase);
     }
 
     public void setBossMaxHealth(float MaxHealth)
@@ -99,7 +104,8 @@ public class BossHealthBar : MonoBehaviour
 
     public void EnterPhase(BossPhase phase)
     {
-        Phase = phase; 
+        Phase = phase;
+        UpdatePhase(); 
         StartCoroutine(StartBlink());   
     }
 

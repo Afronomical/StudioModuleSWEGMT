@@ -5181,10 +5181,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4387139067935221977, guid: d65ea9b04ca3fea4e9c0b40a0a44ac79, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4615694013143893861, guid: d65ea9b04ca3fea4e9c0b40a0a44ac79, type: 3}
       propertyPath: m_Name
       value: BossCanvas
