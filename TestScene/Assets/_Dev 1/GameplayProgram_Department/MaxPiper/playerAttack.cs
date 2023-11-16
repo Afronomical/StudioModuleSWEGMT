@@ -128,7 +128,7 @@ public class playerAttack : MonoBehaviour
                
                 damageEnemy();
                 canHit = false;
-                Debug.Log("ATTACKED HDBGSUYHGBK");
+                //Debug.Log("ATTACKED HDBGSUYHGBK");
             }
             
             
