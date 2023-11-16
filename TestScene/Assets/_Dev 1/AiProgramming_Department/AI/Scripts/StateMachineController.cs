@@ -98,7 +98,9 @@ public class StateMachineController : MonoBehaviour
         }
         else if (distance < detectionRange && distance > attackRange)
         {
-            character.ChangeState(AICharacter.States.Hunt);
+            //character.ChangeState(AICharacter.States.Hunt);
+            character.ChangeState(AICharacter.States.DashAttack);
+
         }
 
         else if (distance > detectionRange)

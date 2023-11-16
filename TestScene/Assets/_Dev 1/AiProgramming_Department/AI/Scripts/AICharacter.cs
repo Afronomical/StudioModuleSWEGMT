@@ -32,6 +32,7 @@ public class AICharacter : MonoBehaviour
         Shoot,
         //boss states
         //phase 1, 2, 3...?
+        DashAttack,
         SpecialAttack,
         SprayShoot1,
         SprayShoot2,
@@ -129,6 +130,9 @@ public class AICharacter : MonoBehaviour
                     stateScript = transform.AddComponent<ShootState>();
                     break;
                 //boss states
+                case States.DashAttack:
+                    stateScript = transform.AddComponent<DashAttackState>();
+                    break;
                 case States.SpecialAttack:
                     stateScript = transform.AddComponent<SpecialAttackState>();
                     break;
