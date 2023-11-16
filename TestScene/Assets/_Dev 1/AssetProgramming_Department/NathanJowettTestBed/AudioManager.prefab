@@ -46,13 +46,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mixer: {fileID: 24100000, guid: b61dca9e8894f664fb0ce150b9ed8070, type: 2}
   Sounds:
-  - Name: PlayerMove
-    clip: {fileID: 8300000, guid: f626dafe2c3e045cd852e86532182f70, type: 3}
-    MixerGroup: {fileID: 0}
-    volume: 0.467
-    pitch: 1
-    Loop: 0
-    source: {fileID: 0}
   - Name: PlayerAttack
     clip: {fileID: 8300000, guid: b00465445f60bbc4983b0593b787a380, type: 3}
     MixerGroup: {fileID: 2237963358354840850, guid: b61dca9e8894f664fb0ce150b9ed8070, type: 2}
@@ -62,7 +55,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - Name: PlayerFeed
     clip: {fileID: 8300000, guid: aef31c9c09aa0ad4f843407b46ef787e, type: 3}
-    MixerGroup: {fileID: 0}
+    MixerGroup: {fileID: 2237963358354840850, guid: b61dca9e8894f664fb0ce150b9ed8070, type: 2}
     volume: 1
     pitch: 1
     Loop: 0
@@ -83,15 +76,8 @@ MonoBehaviour:
     source: {fileID: 0}
   - Name: PlayerHeal
     clip: {fileID: 8300000, guid: cfce0cea076109f478783201b2a9f57f, type: 3}
-    MixerGroup: {fileID: 0}
+    MixerGroup: {fileID: 2237963358354840850, guid: b61dca9e8894f664fb0ce150b9ed8070, type: 2}
     volume: 1
-    pitch: 1
-    Loop: 0
-    source: {fileID: 0}
-  - Name: PlayerDodge
-    clip: {fileID: 8300000, guid: f11db4559b3ffff45b62e9327fc5535d, type: 3}
-    MixerGroup: {fileID: 0}
-    volume: 0.529
     pitch: 1
     Loop: 0
     source: {fileID: 0}
@@ -104,70 +90,70 @@ MonoBehaviour:
     source: {fileID: 0}
   - Name: NPC_TakeDamage
     clip: {fileID: 8300000, guid: 97cb1199f33074ead900715f9db9c6f3, type: 3}
-    MixerGroup: {fileID: 0}
+    MixerGroup: {fileID: 2237963358354840850, guid: b61dca9e8894f664fb0ce150b9ed8070, type: 2}
     volume: 0.366
     pitch: 1
     Loop: 0
     source: {fileID: 0}
   - Name: NPC_Death
     clip: {fileID: 8300000, guid: ddc650b445586454e9e4f5e74d58d0ed, type: 3}
-    MixerGroup: {fileID: 0}
+    MixerGroup: {fileID: 2237963358354840850, guid: b61dca9e8894f664fb0ce150b9ed8070, type: 2}
     volume: 0.28
     pitch: 1
     Loop: 0
     source: {fileID: 0}
   - Name: NPC_MeleeAttack
     clip: {fileID: 8300000, guid: 13182107f288fdc47a11f9216c8f062b, type: 3}
-    MixerGroup: {fileID: 0}
+    MixerGroup: {fileID: 2237963358354840850, guid: b61dca9e8894f664fb0ce150b9ed8070, type: 2}
     volume: 0.455
     pitch: 1
     Loop: 0
     source: {fileID: 0}
   - Name: NPC_RangedAttack
     clip: {fileID: 8300000, guid: d19fbf2ffc3058c47b2470da79cc5431, type: 3}
-    MixerGroup: {fileID: 0}
+    MixerGroup: {fileID: 2237963358354840850, guid: b61dca9e8894f664fb0ce150b9ed8070, type: 2}
     volume: 0.108
     pitch: 1
     Loop: 0
     source: {fileID: 0}
   - Name: NPC_Downed
     clip: {fileID: 8300000, guid: ca5bc1cf4b7f0e446bf6c4a9c7975b50, type: 3}
-    MixerGroup: {fileID: 0}
+    MixerGroup: {fileID: 2237963358354840850, guid: b61dca9e8894f664fb0ce150b9ed8070, type: 2}
     volume: 0.539
     pitch: 1
     Loop: 0
     source: {fileID: 0}
   - Name: UI_Click
     clip: {fileID: 8300000, guid: 9c46d51637e534442abd180345f84948, type: 3}
-    MixerGroup: {fileID: 0}
+    MixerGroup: {fileID: 2237963358354840850, guid: b61dca9e8894f664fb0ce150b9ed8070, type: 2}
     volume: 1
     pitch: 1
     Loop: 0
     source: {fileID: 0}
   - Name: UI_Loading
     clip: {fileID: 8300000, guid: 070779cdcfbe3ff4688691fb33bc3e4e, type: 3}
-    MixerGroup: {fileID: 0}
+    MixerGroup: {fileID: 2237963358354840850, guid: b61dca9e8894f664fb0ce150b9ed8070, type: 2}
     volume: 1
     pitch: 1
     Loop: 0
     source: {fileID: 0}
   - Name: EndGame_Victory
     clip: {fileID: 8300000, guid: 02d177859e7494d8daf6fb8a44059f14, type: 3}
-    MixerGroup: {fileID: 0}
+    MixerGroup: {fileID: 2237963358354840850, guid: b61dca9e8894f664fb0ce150b9ed8070, type: 2}
     volume: 1
     pitch: 1
     Loop: 0
     source: {fileID: 0}
   - Name: CoffinOpen
     clip: {fileID: 8300000, guid: 070779cdcfbe3ff4688691fb33bc3e4e, type: 3}
-    MixerGroup: {fileID: 0}
+    MixerGroup: {fileID: 2237963358354840850, guid: b61dca9e8894f664fb0ce150b9ed8070, type: 2}
     volume: 0.605
     pitch: 1
     Loop: 0
     source: {fileID: 0}
   - Name: ArrowHitObj
     clip: {fileID: 8300000, guid: e65d9b738de659f4abeca95bd4ef9b93, type: 3}
-    MixerGroup: {fileID: 0}
+    MixerGroup: {fileID: 2237963358354840850, guid: b61dca9e8894f664fb0ce150b9ed8070, type: 2}
     volume: 0.39
     pitch: 1
     Loop: 0
