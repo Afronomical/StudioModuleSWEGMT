@@ -46,7 +46,7 @@ public class BossHealthBar : MonoBehaviour
 
     public void UpdatePhase()
     {
-        ToolTipManager.ShowBottomToolTip("Phase: " + Phase);
+        ToolTipManager.ShowBottomToolTip_Static("Phase: " + Phase);
     }
 
     public void setBossMaxHealth()
@@ -57,21 +57,35 @@ public class BossHealthBar : MonoBehaviour
         currentValue = AICharacter.health;
         targetValue = AICharacter.health;
         UpdateHealthBarColour();
-        Debug.Log(AICharacter.health);  
+       // Debug.Log(currentValue);  
     }
 
 
     public void SetBossHealth()
     {
         targetValue = AICharacter.health;
-        if(currentValue < 50 && currentValue > 25)
+        if(targetValue == BossSlider.maxValue/2)
         {
             EnterPhase(BossPhase.Two);
+            Debug.Log("Entering Phase 2 ");
            // StartCoroutine(StartBlink());
+        }
+        if(targetValue == BossSlider.maxValue/3)
+        {
+            Debug.Log("Entering Phase 3 ");
+            EnterPhase(BossPhase.Three);
+        }
+        if(targetValue== BossSlider.minValue)
+        {
+            ToolTipManager.ShowBottomToolTip_Static("DEFEATED! SANGUIMESIA IS YOURS!");
+            AudioManager.Manager.StopMusic("LevelMusic");
+           // StartCoroutine(WinSFX()); 
+            //AudioManager.Manager.PlaySFX("Dodge");
+            AudioManager.Manager.PlaySFX("WIN");
         }
 
         UpdateHealthBarColour();
-        Debug.Log(currentValue);
+        //Debug.Log(currentValue);
 
     }
 
@@ -116,8 +130,17 @@ public class BossHealthBar : MonoBehaviour
         Debug.Log("Started Courotine");
         yield return new WaitForSeconds(4f);
         BlinkEffect.enabled = false;
-        yield break;
+       // yield break;
         
+    }
+
+    private IEnumerator WinSFX()
+    {
+        yield return new WaitForSeconds(2f);
+        Debug.Log("Playing Win SFX"); 
+        AudioManager.Manager.PlaySFX("WIN");
+        yield return null; 
+
     }
   
 }
