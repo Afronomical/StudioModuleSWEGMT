@@ -9,6 +9,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RunState : StateBaseClass
 {
@@ -27,23 +28,23 @@ public class RunState : StateBaseClass
 
     public float checkTime;
 
-    GameObject floatingExclamation;
+   // Sprite floatingExclamation;
 
 
     public RunState()
     {
         checkTime = 0f;
-        floatingExclamation = character.floatingExclamation;
-        showFloatingExclamation(); 
+        //floatingExclamation = character.floatingExclamation;
+        //showFloatingExclamation(); 
     }
 
-    void showFloatingExclamation()
-    {
-        Vector3 spawnPos = transform.position;
+    //void showFloatingExclamation()
+    //{
+    //    Vector3 spawnPos = transform.position;
 
-        var go = Instantiate(floatingExclamation, spawnPos, Quaternion.identity, transform);
+    //    var go = Instantiate(floatingExclamation, spawnPos, Quaternion.identity, transform);
         
-    }
+    //}
 
 
     public override void UpdateLogic()

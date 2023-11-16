@@ -9,6 +9,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AICharacter : MonoBehaviour
 {
@@ -72,7 +73,7 @@ public class AICharacter : MonoBehaviour
     public bool isMoving;
 
     [Header("Exclamation Mark Reference")]
-    public GameObject floatingExclamation; 
+    public Sprite floatingExclamation; 
 
     void Start()
     {
