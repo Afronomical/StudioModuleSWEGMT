@@ -19,10 +19,10 @@ public class PlayerPreferences : MonoBehaviour
 
     [Header("Video")]
     public float brightness;
-
+    
     private void Awake()
     {
-        DontDestroyOnLoad(this);
+       // DontDestroyOnLoad(this);
 
         if(instance == null)
         {
