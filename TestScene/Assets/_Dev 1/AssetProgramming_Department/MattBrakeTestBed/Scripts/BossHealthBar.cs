@@ -15,6 +15,7 @@ public class BossHealthBar : MonoBehaviour
     public ToolTipManager ToolTipManager;
     public GameObject Boss;
     private AICharacter AICharacter;
+    public BlinkEffect BlinkEffect;
   
     
     public enum BossPhase
@@ -32,6 +33,7 @@ public class BossHealthBar : MonoBehaviour
         currentValue = BossSlider.value;
         targetValue = BossSlider.value;
         Phase = BossPhase.One;
+        BlinkEffect.enabled = false; 
         ToolTipManager.ShowBottomToolTip_Static("Phase: " + Phase);
         ToolTipManager.ShowTopToolTip_Static("VUN HELLSTINC", 60f);
 
@@ -56,6 +58,11 @@ public class BossHealthBar : MonoBehaviour
     public void SetBossHealth()
     {
         targetValue = AICharacter.GetHealth();
+        if(currentValue < 50 && currentValue > 25)
+        {
+            EnterPhase(BossPhase.Two);
+           // StartCoroutine(StartBlink());
+        }
 
         UpdateHealthBarColour();
         
@@ -72,6 +79,12 @@ public class BossHealthBar : MonoBehaviour
             BossSlider.value = currentValue;
             // Debug.Log("Current Health Value: " + currentValue + "Current Health Target: " + targetValue);
         }
+        if (Phase == BossPhase.Two)
+        {
+            //StartCoroutine(StartBlink());
+            //StopCoroutine(StartBlink()); 
+        }
+
 
     }
 
@@ -84,11 +97,21 @@ public class BossHealthBar : MonoBehaviour
         fillImage.color = gradient.Evaluate(healthPercentage);
     }
 
-    public void EnterNextPhase()
+    public void EnterPhase(BossPhase phase)
     {
-        Phase++; 
+        Phase = phase; 
+        StartCoroutine(StartBlink());   
     }
 
+    private IEnumerator StartBlink()
+    {
+        BlinkEffect.enabled = true;
+        Debug.Log("Started Courotine");
+        yield return new WaitForSeconds(4f);
+        BlinkEffect.enabled = false;
+        yield break;
+        
+    }
   
 }
 
