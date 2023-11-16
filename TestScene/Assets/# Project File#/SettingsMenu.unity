@@ -2251,7 +2251,7 @@ GameObject:
   - component: {fileID: 808246415}
   - component: {fileID: 808246416}
   m_Layer: 5
-  m_Name: VolumeSlider
+  m_Name: MasterSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2323,10 +2323,10 @@ MonoBehaviour:
   m_FillRect: {fileID: 595842235}
   m_HandleRect: {fileID: 1534547735}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.001
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 0.001
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -3313,7 +3313,7 @@ GameObject:
   - component: {fileID: 1472687789}
   - component: {fileID: 1472687790}
   m_Layer: 5
-  m_Name: VolumeSlider
+  m_Name: SFXSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3385,10 +3385,10 @@ MonoBehaviour:
   m_FillRect: {fileID: 1458364550}
   m_HandleRect: {fileID: 1851738576}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.001
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 0.001
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -4039,7 +4039,7 @@ GameObject:
   - component: {fileID: 1703165724}
   - component: {fileID: 1703165725}
   m_Layer: 5
-  m_Name: VolumeSlider
+  m_Name: MusicSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4111,10 +4111,10 @@ MonoBehaviour:
   m_FillRect: {fileID: 1138594165}
   m_HandleRect: {fileID: 253330580}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.001
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 0.001
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -4645,6 +4645,7 @@ GameObject:
   - component: {fileID: 2050067121}
   - component: {fileID: 2050067123}
   - component: {fileID: 2050067124}
+  - component: {fileID: 2050067125}
   m_Layer: 0
   m_Name: Audio SettingsMenu
   m_TagString: Untagged
@@ -4719,6 +4720,22 @@ MonoBehaviour:
   visualCanvas: {fileID: 1297177599}
   audioCanvasGroup: {fileID: 328994088}
   visualCanvasGroup: {fileID: 1297177601}
+--- !u!114 &2050067125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050067120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c18d126d756ded41bf1b38b575429c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mixer: {fileID: 24100000, guid: b61dca9e8894f664fb0ce150b9ed8070, type: 2}
+  MasterSlider: {fileID: 808246416}
+  MusicSlider: {fileID: 1703165725}
+  SFXSlider: {fileID: 1472687790}
 --- !u!1 &2084855598
 GameObject:
   m_ObjectHideFlags: 0
@@ -4780,12 +4797,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0ccf63133d2cab45a4f43c48863c07e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  masterVolume: 0
-  musicVolume: 0
-  sfxVolume: 0
-  masterVolume_slider: {fileID: 808246416}
-  musicVolume_slider: {fileID: 1703165725}
-  sfxVolume_slider: {fileID: 1472687790}
   brightness: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

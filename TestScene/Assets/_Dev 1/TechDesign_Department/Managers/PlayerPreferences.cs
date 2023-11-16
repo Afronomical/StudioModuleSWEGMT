@@ -8,7 +8,7 @@ public class PlayerPreferences : MonoBehaviour
 
     public static PlayerPreferences instance;
 
-    [Header("Audio")]
+    /*[Header("Audio")]
     public float masterVolume;
     public float musicVolume;
     public float sfxVolume;
@@ -16,7 +16,7 @@ public class PlayerPreferences : MonoBehaviour
     public Slider masterVolume_slider;
     public Slider musicVolume_slider;
     public Slider sfxVolume_slider;
-
+*/
     [Header("Video")]
     public float brightness;
     
@@ -41,9 +41,9 @@ public class PlayerPreferences : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       masterVolume = PlayerPrefs.GetFloat("masterVolume");
+      /* masterVolume = PlayerPrefs.GetFloat("masterVolume");
        musicVolume = PlayerPrefs.GetFloat("musicVolume");
-       sfxVolume = PlayerPrefs.GetFloat("sfxVolume");
+       sfxVolume = PlayerPrefs.GetFloat("sfxVolume");*/
         brightness = PlayerPrefs.GetFloat("brightness");
     }
 
@@ -53,14 +53,14 @@ public class PlayerPreferences : MonoBehaviour
         switch (setting)
         {
             default:
-            case SettingType._MasterVolume:
+            /*case SettingType._MasterVolume:
                 return PlayerPrefs.GetFloat("masterVolume");
 
             case SettingType._MusicVolume:
                 return PlayerPrefs.GetFloat("musicVolume");
 
             case SettingType._SFXVolume:
-                return PlayerPrefs.GetFloat("sfxVolume");
+                return PlayerPrefs.GetFloat("sfxVolume");*/
 
             case SettingType._Brightness:
                 return PlayerPrefs.GetFloat("brightness");    
@@ -73,7 +73,7 @@ public class PlayerPreferences : MonoBehaviour
             switch (setting)
         {
             default:
-            case SettingType._MasterVolume:
+            /*case SettingType._MasterVolume:
                 PlayerPrefs.SetFloat("masterVolume", newValue);
                 break;
 
@@ -83,7 +83,7 @@ public class PlayerPreferences : MonoBehaviour
 
             case SettingType._SFXVolume:
                 PlayerPrefs.SetFloat("sfxVolume", newValue);
-                break;
+                break;*/
 
             case SettingType._Brightness:
                 PlayerPrefs.SetFloat("brightness", newValue);
@@ -94,7 +94,7 @@ public class PlayerPreferences : MonoBehaviour
 
     public enum SettingType
     {
-        _MasterVolume, _MusicVolume, _SFXVolume, _Brightness
+       /* _MasterVolume, _MusicVolume, _SFXVolume,*/ _Brightness
     }
 
 
