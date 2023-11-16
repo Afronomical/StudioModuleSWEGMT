@@ -13,6 +13,9 @@ public class BossHealthBar : MonoBehaviour
     private float targetValue;
     private float currentValue;
     public ToolTipManager ToolTipManager;
+    public GameObject Boss;
+    private AICharacter AICharacter;
+  
     
     public enum BossPhase
     {
@@ -30,12 +33,18 @@ public class BossHealthBar : MonoBehaviour
         targetValue = BossSlider.value;
         Phase = BossPhase.One;
         ToolTipManager.ShowBottomToolTip_Static("Phase: " + Phase);
-        ToolTipManager.ShowTopToolTip_Static("VUN HELLSTING", 60f);
+        ToolTipManager.ShowTopToolTip_Static("VUN HELLSTINC", 60f);
+
+        //float BossHealth = Boss.GetComponent<AICharacter>().GetHealth();
+        AICharacter = Boss.GetComponent<AICharacter>();
+        currentValue = AICharacter.GetHealth();
+        
         
     }
 
     public void setBossMaxHealth(float MaxHealth)
     {
+        
         BossSlider.maxValue = MaxHealth;
         BossSlider.value = MaxHealth;
         currentValue = MaxHealth;
@@ -44,10 +53,12 @@ public class BossHealthBar : MonoBehaviour
     }
 
 
-    public void SetBossHealth(float health)
+    public void SetBossHealth()
     {
-        targetValue = health;
+        targetValue = AICharacter.GetHealth();
+
         UpdateHealthBarColour();
+        
 
     }
 
@@ -78,7 +89,7 @@ public class BossHealthBar : MonoBehaviour
         Phase++; 
     }
 
-
+  
 }
 
 
