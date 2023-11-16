@@ -100,8 +100,8 @@ public class PlayerController : MonoBehaviour
                 isSprinting = true;
                 staminaRegenSpeed = 0;
                 rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * sprintSpeed, Input.GetAxisRaw("Vertical") * sprintSpeed);
-                //stamina -= Time.deltaTime * staminaDrainSpeed;
-                //staminaBarSlider.SetStamina(stamina);
+                stamina -= Time.deltaTime * staminaDrainSpeed;
+                staminaBarSlider.SetStamina(stamina);
 
             }
             else if (Input.GetKeyDown(KeyCode.Space) && canDodge) // dodge
