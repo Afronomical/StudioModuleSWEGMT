@@ -559,7 +559,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8be5dd2a69a63e94eb0b327d9c093baa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animationStatesList: 0000000001000000020000000300000004000000050000000600000007000000
+  animationStatesList: 000000000100000002000000030000000400000005000000060000000700000008000000
   animationStringsList:
   - Idle Tree
   - Walk Tree
@@ -569,6 +569,7 @@ MonoBehaviour:
   - Bow Attack Tree
   - Sword Attack Tree
   - Reload Tree
+  - S_Alerted
 --- !u!95 &2335958843912734124
 Animator:
   serializedVersion: 7

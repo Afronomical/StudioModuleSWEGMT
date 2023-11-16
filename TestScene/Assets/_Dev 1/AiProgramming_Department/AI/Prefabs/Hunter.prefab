@@ -105,6 +105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterType: 1
+  startingHealth: 3
   health: 3
   hungerValue: 3
   walkSpeed: 2
@@ -117,6 +118,11 @@ MonoBehaviour:
   player: {fileID: 0}
   bulletPrefab: {fileID: 0}
   homingBulletPrefab: {fileID: 0}
+  hunterPrefab: {fileID: 0}
+  archerPrefab: {fileID: 0}
+  reloadBarPrefab: {fileID: 0}
+  reloadBar: {fileID: 0}
+  reloading: 0
   isMoving: 0
 --- !u!114 &3470126584826272329
 MonoBehaviour:
@@ -530,12 +536,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8be5dd2a69a63e94eb0b327d9c093baa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animationStatesList: 00000000010000000200000003000000040000000500000006000000
+  animationStatesList: 00000000010000000200000003000000040000000600000008000000
   animationStringsList:
   - Idle Tree
   - Walk Tree
   - Hurt Tree
   - Downed Tree
   - S_Death
-  - Bow Attack Tree
   - Sword Attack Tree
+  - S_Alerted
