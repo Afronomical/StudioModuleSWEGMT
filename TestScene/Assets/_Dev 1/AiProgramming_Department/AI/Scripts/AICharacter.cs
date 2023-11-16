@@ -61,6 +61,8 @@ public class AICharacter : MonoBehaviour
     public GameObject homingBulletPrefab;
     public GameObject hunterPrefab;
     public GameObject archerPrefab;
+    
+   
 
     [Header("Reload bar references")]
     public GameObject reloadBarPrefab;
@@ -68,6 +70,9 @@ public class AICharacter : MonoBehaviour
     public bool reloading;
 
     public bool isMoving;
+
+    [Header("Exclamation Mark Reference")]
+    public GameObject floatingExclamation; 
 
     void Start()
     {
