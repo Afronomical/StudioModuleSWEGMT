@@ -104,13 +104,14 @@ public class PlayerController : MonoBehaviour
                 staminaBarSlider.SetStamina(stamina);
 
             }
-            else if (Input.GetKeyDown(KeyCode.Space) && canDodge) // dodge
+            else if (Input.GetKeyDown(KeyCode.Space) && canDodge && stamina > 33) // dodge
             {
 
                 AudioManager.Manager.PlaySFX("PlayerDodge");
                 animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Dash);
                 StartCoroutine(Dodge());
-                isSprinting = false;
+                stamina -= 33;
+                isSprinting = true;
                 staminaRegenSpeed = 20;
 
             }
@@ -175,6 +176,7 @@ public class PlayerController : MonoBehaviour
         dashTrail.emitting = false;
         yield return new WaitForSeconds(dodgeCooldown);
         canDodge = true;
+        isSprinting = false;
 
     }
 
