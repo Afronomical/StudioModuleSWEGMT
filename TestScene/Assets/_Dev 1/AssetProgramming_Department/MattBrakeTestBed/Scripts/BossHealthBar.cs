@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;   
+using UnityEngine.UI;
 
 public class BossHealthBar : MonoBehaviour
 {
@@ -11,7 +11,7 @@ public class BossHealthBar : MonoBehaviour
     [SerializeField]
     private Image fillImage;
     public float targetValue;
-    private float currentValue;
+    [SerializeField] private float currentValue;
     public ToolTipManager ToolTipManager;
     public GameObject Boss;
     private AICharacter AICharacter;
@@ -41,7 +41,7 @@ public class BossHealthBar : MonoBehaviour
         AICharacter = Boss.GetComponent<AICharacter>();
         currentValue = AICharacter.GetHealth();
         
-        
+        setBossMaxHealth();
     }
 
     public void UpdatePhase()
@@ -49,20 +49,21 @@ public class BossHealthBar : MonoBehaviour
         ToolTipManager.ShowBottomToolTip("Phase: " + Phase);
     }
 
-    public void setBossMaxHealth(float MaxHealth)
+    public void setBossMaxHealth()
     {
-        
-        BossSlider.maxValue = MaxHealth;
-        BossSlider.value = MaxHealth;
-        currentValue = MaxHealth;
-        targetValue = MaxHealth;
+
+        BossSlider.maxValue = AICharacter.startingHealth;
+        BossSlider.value = AICharacter.startingHealth;
+        currentValue = AICharacter.health;
+        targetValue = AICharacter.health;
         UpdateHealthBarColour();
+        Debug.Log(AICharacter.health);  
     }
 
 
     public void SetBossHealth()
     {
-        targetValue = AICharacter.GetHealth();
+        targetValue = AICharacter.health;
         if(currentValue < 50 && currentValue > 25)
         {
             EnterPhase(BossPhase.Two);
@@ -70,7 +71,7 @@ public class BossHealthBar : MonoBehaviour
         }
 
         UpdateHealthBarColour();
-        
+        Debug.Log(currentValue);
 
     }
 
@@ -78,6 +79,7 @@ public class BossHealthBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        SetBossHealth();
         if (currentValue != targetValue)
         {
             currentValue = Mathf.Lerp(currentValue, targetValue, fillSpeed * Time.deltaTime);
@@ -89,7 +91,6 @@ public class BossHealthBar : MonoBehaviour
             //StartCoroutine(StartBlink());
             //StopCoroutine(StartBlink()); 
         }
-
 
     }
 

@@ -196,7 +196,7 @@ public class AICharacter : MonoBehaviour
         return player.transform.position;
     }
 
-    public int GetHealth()
+    public float GetHealth()
     {
         return this.health;
     }
