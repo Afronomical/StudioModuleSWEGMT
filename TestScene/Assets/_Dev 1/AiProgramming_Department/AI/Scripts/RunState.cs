@@ -42,7 +42,7 @@ public class RunState : StateBaseClass
     //{
     //    Vector3 spawnPos = transform.position;
 
-    //    var go = Instantiate(floatingExclamation, spawnPos, Quaternion.identity, transform);
+    //    var go = Instantiate(floatingExclamation, spawnPos, Quaternion.identity, transform);   ////////testing exclamation mark 
         
     //}
 
