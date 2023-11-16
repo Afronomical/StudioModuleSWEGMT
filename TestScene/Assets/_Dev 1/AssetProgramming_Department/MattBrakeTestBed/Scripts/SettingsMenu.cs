@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using static MenuCamPan;
 
 public class SettingsMenu : MonoBehaviour
 {
@@ -17,6 +19,10 @@ public class SettingsMenu : MonoBehaviour
     {
         visualCanvas.enabled = false;
         visualCanvasGroup.interactable = false;
+        audioCanvas.enabled = true;
+        audioCanvasGroup.interactable = true;
+        //OpenAudioSettings();
+
     }
 
     // Update is called once per frame

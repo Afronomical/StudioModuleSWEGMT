@@ -3765,9 +3765,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1613306111}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5bf8e2ff982f5864298b609929772cdc, type: 3}
+  m_Script: {fileID: 11500000, guid: 33840233f5627d44c8ed7a01e9c8cbd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioCanvas: {fileID: 328994086}
+  visualCanvas: {fileID: 1297177599}
+  audioCanvasGroup: {fileID: 328994088}
+  visualCanvasGroup: {fileID: 1297177601}
 --- !u!114 &1613306114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4708,9 +4712,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2050067120}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5bf8e2ff982f5864298b609929772cdc, type: 3}
+  m_Script: {fileID: 11500000, guid: 33840233f5627d44c8ed7a01e9c8cbd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioCanvas: {fileID: 328994086}
+  visualCanvas: {fileID: 1297177599}
+  audioCanvasGroup: {fileID: 328994088}
+  visualCanvasGroup: {fileID: 1297177601}
 --- !u!1 &2084855598
 GameObject:
   m_ObjectHideFlags: 0
