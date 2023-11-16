@@ -9,6 +9,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AICharacter : MonoBehaviour
 {
@@ -61,6 +62,8 @@ public class AICharacter : MonoBehaviour
     public GameObject homingBulletPrefab;
     public GameObject hunterPrefab;
     public GameObject archerPrefab;
+    
+   
 
     [Header("Reload bar references")]
     public GameObject reloadBarPrefab;
@@ -68,6 +71,9 @@ public class AICharacter : MonoBehaviour
     public bool reloading;
 
     public bool isMoving;
+
+    [Header("Exclamation Mark Reference")]
+    public Sprite floatingExclamation; 
 
     void Start()
     {
