@@ -30,8 +30,9 @@ public class AICharacter : MonoBehaviour
         Run,
         Hunt,
         Shoot,
-        //boss states
-        //phase 1, 2, 3...?
+        Aleted,
+
+        // Boss states
         SpecialAttack,
         SprayShoot1,
         SprayShoot2,
@@ -40,6 +41,7 @@ public class AICharacter : MonoBehaviour
         SpawnEnemies,
         SprayArrows,
         Reload,
+
         None
     }
 
@@ -62,6 +64,7 @@ public class AICharacter : MonoBehaviour
     public GameObject hunterPrefab;
     public GameObject archerPrefab;
 
+    public bool isAttacking;
     public bool isMoving;
 
     void Start()
@@ -130,16 +133,14 @@ public class AICharacter : MonoBehaviour
                     
                     stateScript = transform.AddComponent<ShootState>();
                     break;
-                //boss states
+
+                // Boss states
                 case States.SpecialAttack:
                     stateScript = transform.AddComponent<SpecialAttackState>();
                     break;
                 case States.SprayShoot1:
                     stateScript = transform.AddComponent<SprayShoot1State>();
                     break;
-                //case States.SprayShoot2:
-                //    stateScript = transform.AddComponent<SprayShoot2State>();
-                //    break;
                 case States.CircularShoot:
                     stateScript = transform.AddComponent<CircularShootState>();
                     break;
@@ -152,9 +153,8 @@ public class AICharacter : MonoBehaviour
                 case States.Reload:
                     stateScript = transform.AddComponent<ReloadState>();
                     break;
-                //case States.SpawnEnemies:
-                //    stateScript = transform.AddComponent<SpawnEnemiesState>();
-                //    break;
+
+
                 //------------------------------------ Add new states in here
 
                 case States.None:
