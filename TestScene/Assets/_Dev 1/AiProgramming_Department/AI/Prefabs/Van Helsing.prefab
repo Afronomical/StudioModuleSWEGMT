@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7142695189202120243}
   - component: {fileID: 3651588021601964476}
   - component: {fileID: 824538643017156388}
+  - component: {fileID: 5590432528825535432}
   m_Layer: 0
   m_Name: Van Helsing
   m_TagString: Hunter
@@ -106,6 +107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterType: 3
+  startingHealth: 3
   health: 3
   hungerValue: 1
   walkSpeed: 2
@@ -118,6 +120,8 @@ MonoBehaviour:
   player: {fileID: 0}
   bulletPrefab: {fileID: 4959076639111065171, guid: 86924d39f5b2d3e44bfdd60051fa4164, type: 3}
   homingBulletPrefab: {fileID: 4959076639111065171, guid: de38b59bde5493d43a0a6740291acf5b, type: 3}
+  hunterPrefab: {fileID: 0}
+  archerPrefab: {fileID: 0}
   isMoving: 0
 --- !u!114 &2438711860252939866
 MonoBehaviour:
@@ -245,6 +249,20 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &5590432528825535432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1304859699899162338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b48616e60cf43574a84de072a821182b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knockbackForce: 3
+  knockbackDuration: 0.2
 --- !u!1 &1908952246970899338
 GameObject:
   m_ObjectHideFlags: 0

@@ -72,6 +72,14 @@ public class playerAttack : MonoBehaviour
             {
                 AiEnemy.health = Mathf.Clamp(AiEnemy.health - damage, 1, 1000);
 
+                EnemyKnockback enemyKnockback = obj.GetComponent<EnemyKnockback>();
+
+                if (enemyKnockback != null)
+                {
+                    // Apply knockback to the enemy
+                    enemyKnockback.ApplyKnockback(transform.position);
+                }
+
                 AudioManager.Manager.PlaySFX("NPC_TakeDamage");
                 AiEnemy.GetComponentInChildren<AIAnimationController>().ChangeAnimationState(AIAnimationController.AnimationStates.Hurt); //Plays the currently hit AIs take damage function
                 //enemyTarg.GetComponentInChildren<AI_AnimationController>().ChangeAnimationState(AI_AnimationController.AnimationStates.Hurt);
@@ -129,7 +137,7 @@ public class playerAttack : MonoBehaviour
             animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.SlashAttack);
 
             AudioManager.Manager.PlaySFX("PlayerAttack");
-            if (canHit )//&& //feeding.currentlyFeeding == false)
+            if (canHit && feeding.currentlyFeeding == false)
             {
                
                 damageEnemy();
@@ -186,6 +194,13 @@ public class playerAttack : MonoBehaviour
             if (obj.TryGetComponent(out AICharacter AiEnemy))
             {
                 AiEnemy.health = Mathf.Clamp(AiEnemy.health - heavyDamage, 1, 1000);
+                EnemyKnockback enemyKnockback = obj.GetComponent<EnemyKnockback>();
+
+                if (enemyKnockback != null)
+                {
+                    // Apply knockback to the enemy
+                    enemyKnockback.ApplyKnockback(transform.position, 3.8f);
+                }
 
                 AudioManager.Manager.PlaySFX("NPC_TakeDamage");
                 AiEnemy.GetComponentInChildren<AIAnimationController>().ChangeAnimationState(AIAnimationController.AnimationStates.Hurt);
