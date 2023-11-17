@@ -30,7 +30,7 @@ public class AICharacter : MonoBehaviour
         Run,
         Hunt,
         Shoot,
-        Aleted,
+        Alerted,
 
         // Boss states
         SpecialAttack,
@@ -64,8 +64,9 @@ public class AICharacter : MonoBehaviour
     public GameObject hunterPrefab;
     public GameObject archerPrefab;
 
-    public bool isAttacking;
-    public bool isMoving;
+    [HideInInspector] public bool isAttacking;
+    [HideInInspector] public bool isMoving;
+    [HideInInspector] public bool knowsAboutPlayer;
 
     void Start()
     {
@@ -116,22 +117,22 @@ public class AICharacter : MonoBehaviour
                     stateScript = transform.AddComponent<RunState>();
                     break;
                 case States.Attack:
-                    AudioManager.Manager.PlaySFX("NPC_MeleeAttack");
                     stateScript = transform.AddComponent<AttackState>();
                     break;
                 case States.Downed:
                     stateScript = transform.AddComponent<DownedState>();
                     break;
                 case States.Dead:
-                    AudioManager.Manager.PlaySFX("NPC_Death");
                     stateScript = transform.AddComponent<DeadState>();
                     break;
                 case States.Hunt:
                     stateScript = transform.AddComponent<HuntState>();
                     break;
                 case States.Shoot:
-                    
                     stateScript = transform.AddComponent<ShootState>();
+                    break;
+                case States.Alerted:
+                    stateScript = transform.AddComponent<AlertedState>();
                     break;
 
                 // Boss states

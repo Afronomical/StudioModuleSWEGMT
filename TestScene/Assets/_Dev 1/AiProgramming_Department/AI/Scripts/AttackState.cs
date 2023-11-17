@@ -15,16 +15,13 @@ public class AttackState : StateBaseClass
     private PlayerDeath playerDeath;
 
 
-    private void Start()
-    {
-        playerDeath = character.player.GetComponent<PlayerDeath>();
-        transform.GetComponentInChildren<AIAnimationController>().ChangeAnimationState(AIAnimationController.AnimationStates.SwordAttack);
-    }
-
     public AttackState() 
     {
         //When a character goes to the attack state, this will delay the attack by x amount
         currentDelay = 0.2f;
+        playerDeath = character.player.GetComponent<PlayerDeath>();
+        transform.GetComponentInChildren<AIAnimationController>().ChangeAnimationState(AIAnimationController.AnimationStates.SwordAttack);
+        AudioManager.Manager.PlaySFX("NPC_MeleeAttack");
     }
     
     public override void UpdateLogic()

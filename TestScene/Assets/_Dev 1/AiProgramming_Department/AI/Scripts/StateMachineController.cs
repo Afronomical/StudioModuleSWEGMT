@@ -16,7 +16,7 @@ public class StateMachineController : MonoBehaviour
     private Vector3 lastPosition;
     private int stuckCheckFrames;
     private float changeStateTimer;
-    private float changeStateTime = 0.5f;
+    private float changeStateTime = 0.25f;
 
 
     private void Start()
@@ -50,17 +50,24 @@ public class StateMachineController : MonoBehaviour
             character.ChangeState(AICharacter.States.Downed);
 
 
-
-        else if (character.characterType == AICharacter.CharacterTypes.Villager)
-            VillagerStates();
-
-
-        else if (character.characterType == AICharacter.CharacterTypes.Hunter)
-            HunterStates();
+        else if (!character.knowsAboutPlayer && distance < detectionRange && RaycastToPlayer(detectionRange))
+            character.ChangeState(AICharacter.States.Alerted);
 
 
-        else if (character.characterType == AICharacter.CharacterTypes.RangedHunter)
-            RangedHunterStates();
+        else if (character.currentState != AICharacter.States.Alerted)
+        {
+            if (character.characterType == AICharacter.CharacterTypes.Villager)
+                VillagerStates();
+
+
+            else if (character.characterType == AICharacter.CharacterTypes.Hunter)
+                HunterStates();
+
+
+            else if (character.characterType == AICharacter.CharacterTypes.RangedHunter)
+                RangedHunterStates();
+        }
+        
 
 
         if (character.isMoving && character.currentState != AICharacter.States.Run && character.currentState != AICharacter.States.Downed)  // Check to see if the character is stuck on an object
@@ -109,10 +116,9 @@ public class StateMachineController : MonoBehaviour
 
         else if (distance < detectionRange && distance > attackRange)  // Hunt while not in attack range
         {
-            if (character.currentState != AICharacter.States.Hunt)  // If they are running
-                if (RaycastToPlayer(detectionRange))  // Can they see the player
-                    character.ChangeState(AICharacter.States.Hunt);
-            else  // If hunt is already the state then don't check for walls
+            if (character.currentState == AICharacter.States.Hunt)  // If hunt is already the state then don't check for walls
+                character.ChangeState(AICharacter.States.Hunt);
+            else if (RaycastToPlayer(detectionRange))  // Can they see the player
                 character.ChangeState(AICharacter.States.Hunt);
         }
 

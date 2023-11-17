@@ -78,7 +78,7 @@ public class BossStateMachineController : MonoBehaviour
                     {
                         if (distance < detectionRange)
                         {
-                            character.ChangeState(AICharacter.States.Aleted);
+                            character.ChangeState(AICharacter.States.Alerted);
                         }
                     }
                     else
