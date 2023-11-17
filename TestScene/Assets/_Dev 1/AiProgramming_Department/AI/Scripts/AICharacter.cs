@@ -7,6 +7,7 @@
 
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -72,8 +73,9 @@ public class AICharacter : MonoBehaviour
 
     public bool isMoving;
 
-    [Header("Exclamation Mark Reference")]
-    public Sprite floatingExclamation; 
+    [Header("HUD References")]
+    public Sprite floatingExclamation;
+    public GameObject floatingDamage; 
 
     void Start()
     {
@@ -210,5 +212,14 @@ public class AICharacter : MonoBehaviour
     public void SetHealth(int n)
     {
         this.health = n;
+       
+    }
+
+    public void ShowFloatingDamage(int damage, Transform enemy)
+    {
+        Vector3 spawnPos = enemy.position; 
+        var go = Instantiate(floatingDamage, spawnPos, Quaternion.identity, transform);
+        go.GetComponentInChildren<TextMeshProUGUI>().text = damage.ToString();
+        Debug.Log("Floating Damage" + "Enemy Pos" + enemy.position + "Spawn Pos " + spawnPos);
     }
 }

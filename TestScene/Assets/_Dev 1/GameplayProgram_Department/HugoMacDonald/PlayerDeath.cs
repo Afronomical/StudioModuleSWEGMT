@@ -20,7 +20,7 @@ public class PlayerDeath : MonoBehaviour
     public int feedHealAmount = 5;
     public int sunDamage = 5;
 
-    public Vector3 offset;
+    public Vector3 offset = new Vector3(0,5,0);
 
     private Animator animator;
     private PlayerAnimationController animationController;
