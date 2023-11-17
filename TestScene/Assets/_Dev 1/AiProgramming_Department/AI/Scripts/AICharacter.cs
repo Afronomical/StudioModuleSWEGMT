@@ -40,6 +40,7 @@ public class AICharacter : MonoBehaviour
         SpawnEnemies,
         SprayArrows,
         Reload,
+        SpinAttackBox,
         None
     }
 
@@ -61,6 +62,7 @@ public class AICharacter : MonoBehaviour
     public GameObject homingBulletPrefab;
     public GameObject hunterPrefab;
     public GameObject archerPrefab;
+    public GameObject spinattackboxPrefab;
 
     public bool isMoving;
 
@@ -151,6 +153,9 @@ public class AICharacter : MonoBehaviour
                     break;
                 case States.Reload:
                     stateScript = transform.AddComponent<ReloadState>();
+                    break;
+                case States.SpinAttackBox:
+                    stateScript = transform.AddComponent<SpinAttackState>();
                     break;
                 //case States.SpawnEnemies:
                 //    stateScript = transform.AddComponent<SpawnEnemiesState>();
