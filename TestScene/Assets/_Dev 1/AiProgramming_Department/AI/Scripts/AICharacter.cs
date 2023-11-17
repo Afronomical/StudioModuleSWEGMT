@@ -218,7 +218,7 @@ public class AICharacter : MonoBehaviour
     public void ShowFloatingDamage(int damage, Transform enemy)
     {
         Vector3 spawnPos = enemy.position; 
-        var go = Instantiate(floatingDamage, spawnPos, Quaternion.identity, transform);
+        var go = Instantiate(floatingDamage, spawnPos, Quaternion.identity, enemy);
         go.GetComponentInChildren<TextMeshProUGUI>().text = damage.ToString();
         Debug.Log("Floating Damage" + "Enemy Pos" + enemy.position + "Spawn Pos " + spawnPos);
     }
