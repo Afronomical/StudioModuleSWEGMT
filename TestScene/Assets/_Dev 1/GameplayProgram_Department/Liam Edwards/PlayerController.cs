@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
     
     [SerializeField] float dodgeSpeed = 10f;
     [SerializeField] float dodgeDuration = 1f;
-    [SerializeField] float dodgeCooldown;
+    [SerializeField] float dodgeCooldown = 0.5f;
     [SerializeField] TrailRenderer dashTrail;
 
     private Animator animator;
