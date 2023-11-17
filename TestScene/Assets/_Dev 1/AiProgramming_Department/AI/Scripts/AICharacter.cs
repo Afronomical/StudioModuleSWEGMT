@@ -54,6 +54,7 @@ public class AICharacter : MonoBehaviour
     public float walkSpeed, runSpeed, crawlSpeed;
     public float turnSpeed;
     public float turnDistance;
+    
 
     [Header("States")]
     public States currentState;
@@ -65,6 +66,7 @@ public class AICharacter : MonoBehaviour
     public GameObject archerPrefab;
     
    
+   
 
     [Header("Reload bar references")]
     public GameObject reloadBarPrefab;
@@ -75,7 +77,9 @@ public class AICharacter : MonoBehaviour
 
     [Header("HUD References")]
     public Sprite floatingExclamation;
-    public GameObject floatingDamage; 
+    public GameObject floatingDamage;
+
+    TrailRenderer _downedTrail;
 
     void Start()
     {
@@ -87,6 +91,9 @@ public class AICharacter : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
 
         reloading = false;
+
+        _downedTrail = gameObject.GetComponent<TrailRenderer>();
+        _downedTrail.enabled = false;
     }
 
 
@@ -132,6 +139,7 @@ public class AICharacter : MonoBehaviour
                     stateScript = transform.AddComponent<AttackState>();
                     break;
                 case States.Downed:
+                    _downedTrail.enabled = true;
                     stateScript = transform.AddComponent<DownedState>();
                     break;
                 case States.Dead:
@@ -222,4 +230,17 @@ public class AICharacter : MonoBehaviour
         go.GetComponentInChildren<TextMeshProUGUI>().text = damage.ToString();
         Debug.Log("Floating Damage" + "Enemy Pos" + enemy.position + "Spawn Pos " + spawnPos);
     }
+
+    /*public void downedTrail()
+    {
+
+        if (States.Downed == currentState)
+        {
+            _downedTrail.enabled = true;
+        }
+        else
+        {
+            _downedTrail.enabled = false;
+        }
+    }*/
 }
