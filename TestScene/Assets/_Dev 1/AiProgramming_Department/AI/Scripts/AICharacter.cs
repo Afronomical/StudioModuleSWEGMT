@@ -121,6 +121,8 @@ public class AICharacter : MonoBehaviour
                     break;
                 case States.Downed:
                     stateScript = transform.AddComponent<DownedState>();
+                    //If the boss is the 1 downed
+                    spinattackboxPrefab.SetActive(false);
                     break;
                 case States.Dead:
                     AudioManager.Manager.PlaySFX("NPC_Death");
