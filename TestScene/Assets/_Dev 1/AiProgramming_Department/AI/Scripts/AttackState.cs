@@ -26,6 +26,9 @@ public class AttackState : StateBaseClass
     {
         //When a character goes to the attack state, this will delay the attack by x amount
         currentDelay = 0.2f;
+        playerDeath = character.player.GetComponent<PlayerDeath>();
+        transform.GetComponentInChildren<AIAnimationController>().ChangeAnimationState(AIAnimationController.AnimationStates.SwordAttack);
+        AudioManager.Manager.PlaySFX("NPC_MeleeAttack");
     }
     
     public override void UpdateLogic()

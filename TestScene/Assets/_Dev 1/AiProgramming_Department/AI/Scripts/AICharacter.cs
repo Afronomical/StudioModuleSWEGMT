@@ -30,9 +30,9 @@ public class AICharacter : MonoBehaviour
         Run,
         Hunt,
         Shoot,
-        //boss states
-        //phase 1, 2, 3...?
-        DashAttack,
+        Alerted,
+
+        // Boss states
         SpecialAttack,
         SprayShoot1,
         SprayShoot2,
@@ -40,8 +40,10 @@ public class AICharacter : MonoBehaviour
         HomingArrow,
         SpawnEnemies,
         SprayArrows,
+        DashAttack,
         Reload,
         SpinAttackBox,
+
         None
     }
 
@@ -70,7 +72,9 @@ public class AICharacter : MonoBehaviour
     public Transform reloadBar;
     public bool reloading;
 
-    public bool isMoving;
+    [HideInInspector] public bool isAttacking;
+    [HideInInspector] public bool isMoving;
+    [HideInInspector] public bool knowsAboutPlayer;
 
     void Start()
     {
@@ -124,7 +128,6 @@ public class AICharacter : MonoBehaviour
                     stateScript = transform.AddComponent<RunState>();
                     break;
                 case States.Attack:
-                    AudioManager.Manager.PlaySFX("NPC_MeleeAttack");
                     stateScript = transform.AddComponent<AttackState>();
                     break;
                 case States.Downed:
@@ -133,29 +136,25 @@ public class AICharacter : MonoBehaviour
                     spinattackboxPrefab.SetActive(false);
                     break;
                 case States.Dead:
-                    AudioManager.Manager.PlaySFX("NPC_Death");
                     stateScript = transform.AddComponent<DeadState>();
                     break;
                 case States.Hunt:
                     stateScript = transform.AddComponent<HuntState>();
                     break;
                 case States.Shoot:
-                    
                     stateScript = transform.AddComponent<ShootState>();
                     break;
-                //boss states
-                case States.DashAttack:
-                    stateScript = transform.AddComponent<DashAttackState>();
+                case States.Alerted:
+                    stateScript = transform.AddComponent<AlertedState>();
                     break;
+
+                // Boss states
                 case States.SpecialAttack:
                     stateScript = transform.AddComponent<SpecialAttackState>();
                     break;
                 case States.SprayShoot1:
                     stateScript = transform.AddComponent<SprayShoot1State>();
                     break;
-                //case States.SprayShoot2:
-                //    stateScript = transform.AddComponent<SprayShoot2State>();
-                //    break;
                 case States.CircularShoot:
                     stateScript = transform.AddComponent<CircularShootState>();
                     break;
@@ -165,16 +164,16 @@ public class AICharacter : MonoBehaviour
                 case States.SprayArrows:
                     stateScript = transform.AddComponent<SprayArrowsState>();
                     break;
+                case States.DashAttack:
+                    stateScript = transform.AddComponent<DashAttackState>();
+                    break;
                 case States.Reload:
-                    //Debug.Log(gameObject.name);
                     stateScript = transform.AddComponent<ReloadState>();
                     break;
                 case States.SpinAttackBox:
                     stateScript = transform.AddComponent<SpinAttackState>();
                     break;
-                //case States.SpawnEnemies:
-                //    stateScript = transform.AddComponent<SpawnEnemiesState>();
-                //    break;
+
                 //------------------------------------ Add new states in here
 
                 case States.None:

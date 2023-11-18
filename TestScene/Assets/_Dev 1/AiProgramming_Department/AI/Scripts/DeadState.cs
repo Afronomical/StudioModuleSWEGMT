@@ -13,6 +13,7 @@ public class DeadState : StateBaseClass
     {
         animController = transform.GetComponentInChildren<AIAnimationController>();
         anim = transform.GetComponentInChildren<Animator>();
+        AudioManager.Manager.PlaySFX("NPC_Death");
     }
 
 
