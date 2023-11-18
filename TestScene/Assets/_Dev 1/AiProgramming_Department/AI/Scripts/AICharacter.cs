@@ -92,6 +92,7 @@ public class AICharacter : MonoBehaviour
 
     public void ChangeState(States newState)  // Will destroy the old state script and create a new one
     {
+        
         if (currentState != newState || stateScript == null)
         {
             if (stateScript != null)

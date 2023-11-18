@@ -88,7 +88,7 @@ public class StateMachineController : MonoBehaviour
     {
         if (distance < attackRange)
         {
-            character.ChangeState(AICharacter.States.Reload);
+            character.ChangeState(AICharacter.States.SpinAttackBox);
 
             //changes to special attack when health is low
             //if (character.GetHealth() <= specialAttackThreshold)

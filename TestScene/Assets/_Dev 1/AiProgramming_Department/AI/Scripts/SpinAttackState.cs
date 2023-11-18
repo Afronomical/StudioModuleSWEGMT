@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpinAttackState : StateBaseClass
 {
-    public int attackDamage = 20;
+    
     public float attackDelay = 1;
     private float currentDelay;
 
@@ -19,12 +19,18 @@ public class SpinAttackState : StateBaseClass
     private PlayerDeath playerDeath;
     private int rand;//= UnityEngine.Random.Range(1, 100);
 
+
+    private SpinAttackState()
+    {
+        currentDelay = 0.2f;
+    }
+
     private void Start()
     {
         playerDeath = character.player.GetComponent<PlayerDeath>();
         origin = character.transform;
         attackboxPrefab = character.spinattackboxPrefab;
-        
+        attackboxPrefab.SetActive(false);
     }
 
     public override void UpdateLogic()
@@ -32,15 +38,15 @@ public class SpinAttackState : StateBaseClass
         transform.Rotate(Vector3.forward * 300f * Time.deltaTime);
         origin = character.transform;
 
+        currentDelay -= Time.deltaTime;
+
         if (currentDelay <= 0)
         {
-            
-
-            currentDelay = 5f;
+            attackboxPrefab.SetActive(true);
+            currentDelay = 10f;
         }
-        else
-        {
-            currentDelay -= Time.deltaTime;
-        }
+        
     }
+
+    
 }
