@@ -14,6 +14,7 @@ public class BoxSpecificAttack : MonoBehaviour
     {
         if ((other.tag == "Villager") || (other.tag == "Hunter"))
         {
+            Debug.Log("Hit");
             playerAttackScript.onAttackEnter(other);
         }
     }
