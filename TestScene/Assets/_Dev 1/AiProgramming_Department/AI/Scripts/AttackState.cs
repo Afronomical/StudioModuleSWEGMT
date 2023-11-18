@@ -13,12 +13,13 @@ public class AttackState : StateBaseClass
     //Gameplay Programmers Script for the Player Health
     private ReferenceManager referenceManager;
     private PlayerDeath playerDeath;
-
+    private Animator slashEffect;
 
     private void Start()
     {
-        playerDeath = character.player.GetComponent<PlayerDeath>();
         transform.GetComponentInChildren<AIAnimationController>().ChangeAnimationState(AIAnimationController.AnimationStates.SwordAttack);
+        gameObject.transform.GetChild(2).GetChild(0).GetComponent<Animator>().SetTrigger("IsAttacking");
+
     }
 
     public AttackState() 
