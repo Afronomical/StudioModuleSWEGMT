@@ -7,7 +7,7 @@ public class DashAttackState : StateBaseClass
     //Dash attack
     public int attackDamage = 10;
     public float dashDelay = 2f;
-    private float dashSpeed = 50f;
+    private float dashSpeed = 15f;
     private float currentDelay;
     private bool isDashing;
     private Rigidbody2D rb;
@@ -26,7 +26,7 @@ public class DashAttackState : StateBaseClass
         playerDeath = character.player.GetComponent<PlayerDeath>();
         rb = GetComponent<Rigidbody2D>();
         dashTrail = gameObject.GetComponent<TrailRenderer>();
-        //transform.GetComponentInChildren<AIAnimationController>().ChangeAnimationState(AIAnimationController.AnimationStates.SwordAttack); // Change to boss dash animation
+        transform.GetComponentInChildren<AIAnimationController>().ChangeAnimationState(AIAnimationController.AnimationStates.SwordAttack); // Change to boss dash animation
     }
 
     public DashAttackState()
@@ -72,9 +72,13 @@ public class DashAttackState : StateBaseClass
         //Prepares to dash - needs to stop looking for the players location
         yield return new WaitForSeconds(dashWindUp);
         Vector3 dirVector = lastKnownPos - transform.position;
-        dirVector.Normalize();
+        //dirVector.Normalize();
         rb.velocity = dirVector * dashSpeed; //Actual dash
         dashTrail.emitting = true;
+        if(dirVector.magnitude < 2)
+        {
+            playerDeath.RemoveHealth(attackDamage);
+        }
         yield return new WaitForSeconds(dashDuration);
         isDashing = false;
         dashTrail.emitting = false; //End of dash
