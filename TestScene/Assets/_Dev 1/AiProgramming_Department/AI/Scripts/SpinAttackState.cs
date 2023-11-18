@@ -43,10 +43,20 @@ public class SpinAttackState : StateBaseClass
         if (currentDelay <= 0)
         {
             attackboxPrefab.SetActive(true);
-            currentDelay = 10f;
+            currentDelay = 3;
         }
+        if(currentDelay > 0)
+        {
+            Invoke("SetAttackBoxFalse", 2);
+        }
+
+        Debug.Log(currentDelay);
         
     }
 
-    
+    void SetAttackBoxFalse()
+    {
+        
+        attackboxPrefab.SetActive(false);
+    }
 }

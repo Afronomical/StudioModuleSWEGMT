@@ -6,7 +6,7 @@ public class SpinAttackBox : MonoBehaviour
 {
     public int attackDamage = 20;
     public PlayerDeath playerDeath;
-    public SpinAttackState spinattackState;
+    
 
     private void OnTriggerEnter2D(Collider2D other)
     {

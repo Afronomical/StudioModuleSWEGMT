@@ -89,7 +89,7 @@ public class StateMachineController : MonoBehaviour
         if (distance < attackRange)
         {
             character.ChangeState(AICharacter.States.SpinAttackBox);
-
+            
             //changes to special attack when health is low
             //if (character.GetHealth() <= specialAttackThreshold)
             //    character.ChangeState(AICharacter.States.SpecialAttack);
@@ -99,11 +99,13 @@ public class StateMachineController : MonoBehaviour
         else if (distance < detectionRange && distance > attackRange)
         {
             character.ChangeState(AICharacter.States.Hunt);
+            character.spinattackboxPrefab.SetActive(false);
         }
 
         else if (distance > detectionRange)
         {
             character.ChangeState(AICharacter.States.Patrol);
+            character.spinattackboxPrefab.SetActive(false);
         }
     }
 
