@@ -3354,7 +3354,7 @@ MonoBehaviour:
   m_Direction: 0
   m_MinValue: 0
   m_MaxValue: 10
-  m_WholeNumbers: 1
+  m_WholeNumbers: 0
   m_Value: 10
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4544,7 +4544,7 @@ PrefabInstance:
     - target: {fileID: 6974631768966646996, guid: 860d2d5c546c7c24c814650ab2e7b61b, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 9054925835316068270, guid: 2ad8fba55c27707499679d7fc7b39fb9, type: 3}
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 9000642850574653529, guid: 860d2d5c546c7c24c814650ab2e7b61b, type: 3}
     - {fileID: 6131917778894028026, guid: 860d2d5c546c7c24c814650ab2e7b61b, type: 3}
