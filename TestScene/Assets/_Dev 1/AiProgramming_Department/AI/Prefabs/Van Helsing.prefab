@@ -123,6 +123,9 @@ MonoBehaviour:
   hunterPrefab: {fileID: 0}
   archerPrefab: {fileID: 0}
   spinattackboxPrefab: {fileID: 8859209612312412524}
+  reloadBarPrefab: {fileID: 3782704543018250707, guid: f19587b37e90c554897acae64ca88fdc, type: 3}
+  reloadBar: {fileID: 0}
+  reloading: 0
   isMoving: 0
 --- !u!114 &2438711860252939866
 MonoBehaviour:
