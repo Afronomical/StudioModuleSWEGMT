@@ -8,6 +8,7 @@ public class SpinAttackBox : MonoBehaviour
     public PlayerDeath playerDeath;
     
 
+    //When the player is hit by the swing, it will deal damage to the player
     private void OnTriggerEnter2D(Collider2D other)
     {
         if ((other.tag == "Player"))
