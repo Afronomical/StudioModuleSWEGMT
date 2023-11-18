@@ -82,5 +82,7 @@ public class DashAttackState : StateBaseClass
         yield return new WaitForSeconds(dashDuration);
         isDashing = false;
         dashTrail.emitting = false; //End of dash
+
+        character.isAttacking = false;
     }
 }

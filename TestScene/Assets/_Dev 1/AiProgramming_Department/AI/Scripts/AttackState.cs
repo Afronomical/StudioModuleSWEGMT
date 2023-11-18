@@ -47,9 +47,9 @@ public class AttackState : StateBaseClass
         {
             playerDeath.RemoveHealth(attackDamage);
             currentDelay = 2;
+
+            if (character.characterType == AICharacter.CharacterTypes.Boss)
+                character.isAttacking = false;
         }
-        
-        //this was moved to HuntState
-        //character.transform.position = Vector2.MoveTowards(character.transform.position, character.player.transform.position, speed * Time.deltaTime / 2);
     }
 }

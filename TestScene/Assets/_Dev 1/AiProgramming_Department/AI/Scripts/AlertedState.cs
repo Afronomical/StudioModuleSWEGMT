@@ -26,9 +26,10 @@ public class AlertedState : StateBaseClass
 
     private IEnumerator Alerted()
     {
-        transform.GetChild(1).GetComponent<SpriteRenderer>().color = Color.blue;  // TEMP COLOUR CHANGE
         yield return new WaitForSeconds(alertedTime);
-        transform.GetChild(1).GetComponent<SpriteRenderer>().color = Color.white;
+
+        if (character.characterType == AICharacter.CharacterTypes.Boss)
+            GetComponent<BossStateMachineController>().ChangePhase();
 
         character.isAttacking = false;
         character.ChangeState(AICharacter.States.None);  // Return to normal states

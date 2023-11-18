@@ -10,9 +10,9 @@ public class BossStateMachineController : MonoBehaviour
     public float meleeRange = 1f;
     public LayerMask unwalkableLayer;
     private float distance;
-    private int phase;
+    [HideInInspector] public int phase;
     private float waitBetweenAttacks;
-    private int reloadCountdown;
+    public int reloadCountdown;
     private int currentPhaseHealthThreshold;
     private float currentPhaseWaitTime;
     private int currentPhaseReloadThreshold;
@@ -48,6 +48,9 @@ public class BossStateMachineController : MonoBehaviour
         phase = 0;
         waitBetweenAttacks = 0;
         currentPhaseWaitTime = 0;
+        currentPhaseHealthThreshold = character.startingHealth;
+        reloadCountdown = 2;
+        currentPhaseReloadThreshold = 2;
         character.ChangeState(AICharacter.States.Patrol);
     }
 
@@ -94,18 +97,20 @@ public class BossStateMachineController : MonoBehaviour
     {
         if (reloadCountdown <= 0)  // Reload
         {
-            reloadCountdown = currentPhaseReloadThreshold;
+            reloadCountdown = currentPhaseReloadThreshold + 1;
             character.ChangeState(AICharacter.States.Reload);
         }
         else if (distance < meleeRange)  // Melee Attack
         {
             int rand = Random.Range(0, currentMeleeAttacks.Count);
             character.ChangeState(currentMeleeAttacks[rand]);
+            Debug.Log(currentMeleeAttacks[rand]);
         }
         else // Ranged Attack
         {
             int rand = Random.Range(0, currentRangedAttacks.Count);
             character.ChangeState(currentRangedAttacks[rand]);
+            Debug.Log(currentRangedAttacks[rand]);
         }
 
         character.isAttacking = true;

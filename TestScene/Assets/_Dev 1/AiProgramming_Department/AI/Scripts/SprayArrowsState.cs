@@ -8,6 +8,8 @@ public class SprayArrowsState : StateBaseClass
     public int attackDamage = 20;
     public float attackDelay = 1;
     private float currentDelay;
+    private int arrowsShot = 0;
+    private int arrowCount = 1;
 
     private float stateChangeDelay = 5;
     private float currentStateDelay;
@@ -15,7 +17,7 @@ public class SprayArrowsState : StateBaseClass
     public Transform origin;
     public GameObject bulletPrefab;
     public GameObject homingBulletPrefab;
-    private float bulletSpeed = 500f;
+    private float bulletSpeed = 5f;
 
     //Gameplay Programmers Script for the Player Health
     private ReferenceManager referenceManager;
@@ -28,6 +30,7 @@ public class SprayArrowsState : StateBaseClass
         origin = character.transform;
         bulletPrefab = character.bulletPrefab;
         homingBulletPrefab = character.homingBulletPrefab;
+        arrowCount = GetComponent<BossStateMachineController>().phase;
     }
 
     public override void UpdateLogic()
@@ -42,11 +45,18 @@ public class SprayArrowsState : StateBaseClass
             GameObject bullet3 = Instantiate(bulletPrefab, origin.position, origin.rotation * Quaternion.Euler(new Vector3(0f, 0f, -15f)));
 
 
-            bullet2.GetComponent<Rigidbody2D>().velocity = transform.right * bulletSpeed * Time.deltaTime;
-            bullet3.GetComponent<Rigidbody2D>().velocity = bullet3.transform.right * bulletSpeed * Time.deltaTime;
-            bullet1.GetComponent<Rigidbody2D>().velocity = bullet1.transform.right * bulletSpeed * Time.deltaTime;
+            bullet2.GetComponent<Rigidbody2D>().velocity = transform.right * bulletSpeed;
+            bullet3.GetComponent<Rigidbody2D>().velocity = bullet3.transform.right * bulletSpeed;
+            bullet1.GetComponent<Rigidbody2D>().velocity = bullet1.transform.right * bulletSpeed;
 
-            currentDelay = 3f;
+            currentDelay = 0.25f;
+
+            arrowsShot++;
+            if (arrowsShot > arrowCount)
+            {
+                character.isAttacking = false;
+                Destroy(this);
+            }
         }
         else
         {
