@@ -26,6 +26,7 @@ public class AlertedState : StateBaseClass
 
     private IEnumerator Alerted()
     {
+
         yield return new WaitForSeconds(alertedTime);
 
         if (character.characterType == AICharacter.CharacterTypes.Boss)

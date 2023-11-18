@@ -63,7 +63,7 @@ public class BossStateMachineController : MonoBehaviour
         else if (character.health == 1)
             character.ChangeState(AICharacter.States.Downed);
 
-        else if (character.health <= currentPhaseHealthThreshold)
+        else if (character.health <= currentPhaseHealthThreshold && phase != 0)
             ChangePhase();
 
         else
@@ -104,13 +104,11 @@ public class BossStateMachineController : MonoBehaviour
         {
             int rand = Random.Range(0, currentMeleeAttacks.Count);
             character.ChangeState(currentMeleeAttacks[rand]);
-            Debug.Log(currentMeleeAttacks[rand]);
         }
         else // Ranged Attack
         {
             int rand = Random.Range(0, currentRangedAttacks.Count);
             character.ChangeState(currentRangedAttacks[rand]);
-            Debug.Log(currentRangedAttacks[rand]);
         }
 
         character.isAttacking = true;
@@ -120,6 +118,7 @@ public class BossStateMachineController : MonoBehaviour
 
     public void ChangePhase()
     {
+        Debug.Log("MOVING TO PHASE " + (phase + 1));
         character.health = currentPhaseHealthThreshold;
         switch(phase)
         {
@@ -138,6 +137,7 @@ public class BossStateMachineController : MonoBehaviour
                 phase = 2;
                 break;
             case 2:  // Move to phase 3
+                currentPhaseHealthThreshold = 0;
                 currentPhaseWaitTime = phase3WaitTime;
                 currentMeleeAttacks = phase3MeleeAttacks;
                 currentRangedAttacks = phase3RangedAttacks;

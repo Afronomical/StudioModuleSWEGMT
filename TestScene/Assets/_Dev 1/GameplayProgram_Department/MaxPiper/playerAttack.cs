@@ -66,10 +66,12 @@ public class playerAttack : MonoBehaviour
         {
             if (obj.TryGetComponent(out AICharacter AiEnemy))
             {
+                Debug.Log("DAMAGE");
                 AiEnemy.health = Mathf.Clamp(AiEnemy.health - damage, 1, 1000);
 
                 AudioManager.Manager.PlaySFX("NPC_TakeDamage");
-                AiEnemy.GetComponentInChildren<AIAnimationController>().ChangeAnimationState(AIAnimationController.AnimationStates.Hurt); //Plays the currently hit AIs take damage function
+                if (AiEnemy.characterType != AICharacter.CharacterTypes.Boss)
+                    AiEnemy.GetComponentInChildren<AIAnimationController>().ChangeAnimationState(AIAnimationController.AnimationStates.Hurt); //Plays the currently hit AIs take damage function
                 //enemyTarg.GetComponentInChildren<AI_AnimationController>().ChangeAnimationState(AI_AnimationController.AnimationStates.Hurt);
             }
 
