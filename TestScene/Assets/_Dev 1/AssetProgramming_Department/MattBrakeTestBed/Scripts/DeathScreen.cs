@@ -39,7 +39,7 @@ public class DeathScreen : MonoBehaviour
 
     public void ShowUI()
     {
-        // deathScreenCanvasGroup.alpha = 1;
+         //deathScreenCanvasGroup.alpha = 1;
         mainCanvas.enabled = false;
         deathCanvas.enabled = true;
         deathScreenCanvasGroup.interactable = true;

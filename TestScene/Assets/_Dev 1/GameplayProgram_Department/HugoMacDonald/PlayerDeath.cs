@@ -60,13 +60,14 @@ public class PlayerDeath : MonoBehaviour
             isDead = true;
             animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Death);
             Invoke("Die", animator.GetCurrentAnimatorClipInfo(0).Length);
-            //if (!animationController.IsAnimationPlaying(animator, PlayerAnimationController.AnimationStates.Death))
-            //{
-            //}
-            //Die();
+            if (!animationController.IsAnimationPlaying(animator, PlayerAnimationController.AnimationStates.Death))
+            {
+                Die();
+            }
             
+
         }
-        
+
 
         //if godmode enabled set health to 100 every tick so is esentailly immortal
         if (godMode)
@@ -149,12 +150,12 @@ public class PlayerDeath : MonoBehaviour
 
         gameObject.SetActive(false);
         //Instantiate(...);              //spawn "YOU DIED" ui
-        Invoke("deathAfterDelay", 1);
+        Invoke("deathAfterDelay", 1f);
     }
     private void deathAfterDelay()
     {
         AudioManager.Manager.StopMusic("LevelMusic");
-        //deathscreenCanvas.ShowUI();
+        deathscreenCanvas.ShowUI();
         AudioManager.Manager.PlayMusic("GameOver");
        
         //SceneManager.LoadScene("MainMenu");
