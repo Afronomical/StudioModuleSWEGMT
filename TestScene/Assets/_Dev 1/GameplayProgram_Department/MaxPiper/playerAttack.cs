@@ -18,6 +18,13 @@ public class playerAttack : MonoBehaviour
     public GameObject BloodOnDamage;
    // public GameObject floatingDamage;
 
+    [HideInInspector] public bool parrying;
+    private bool canParry;
+    public GameObject parryLight;
+    public float parryFeedbackLength = 0.3f;
+    private bool coolDownParry;
+    private float parryCoolTime;
+    private float parryCoolStart = 1f;
 
     private Animator animator;
     private PlayerAnimationController animationController;
@@ -100,10 +107,13 @@ public class playerAttack : MonoBehaviour
 
     }
 
+    
+
 
     void Start()
     {
         attackDelay = attackDelayStart;
+        parryCoolTime = parryCoolStart;
 
         animator = GetComponent<Animator>();
         animationController = GetComponent<PlayerAnimationController>();
@@ -127,6 +137,9 @@ public class playerAttack : MonoBehaviour
         if (Input.GetKey(KeyCode.Mouse0))
         {
            
+            animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.SlashAttack);
+
+            AudioManager.Manager.PlaySFX("PlayerAttack");
             if (canHit)//&& //feeding.currentlyFeeding == false)
             {
                 animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.SlashAttack);
@@ -134,8 +147,7 @@ public class playerAttack : MonoBehaviour
                 AudioManager.Manager.PlaySFX("PlayerAttack");
                 damageEnemy();
                 canHit = false;
-               
-                Debug.Log("ATTACKED HDBGSUYHGBK");
+                
             }
 
             
@@ -152,5 +164,31 @@ public class playerAttack : MonoBehaviour
         }
         
 
+        if (Input.GetKeyDown(KeyCode.Mouse1) && gameObject.GetComponent<PlayerDeath>().recParryAttack && !coolDownParry)
+        {
+            parrying = true;
+            StartCoroutine(parryFeedBack());
+        }
+        else if (Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            coolDownParry = true;
+            Debug.Log("parry cooling down");
+        }
+        if (coolDownParry)
+        {
+            parryCoolTime -= Time.deltaTime;
+            if (parryCoolTime <= 0)
+            {
+                coolDownParry = false;
+                parryCoolTime = parryCoolStart;
+            }
+        }
+
+    }
+    IEnumerator parryFeedBack()
+    {
+        parryLight.SetActive(true);
+        yield return new WaitForSeconds(parryFeedbackLength);
+        parryLight.SetActive(false);
     }
 }

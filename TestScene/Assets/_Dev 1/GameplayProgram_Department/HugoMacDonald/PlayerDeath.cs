@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -20,6 +21,9 @@ public class PlayerDeath : MonoBehaviour
     public int feedHealAmount = 5;
     public int sunDamage = 5;
     
+    private float parryTime = 0.3f;
+    
+    [HideInInspector] public bool recParryAttack;
 
     public Vector3 offset = new Vector3(0,5,0);
 
@@ -105,20 +109,63 @@ public class PlayerDeath : MonoBehaviour
     
     public void RemoveHealth(int damage)
     {
-        if (!isInvincible)
+
+        StartCoroutine(delayedRemoveHealth(damage));
+
+        //if (!gameObject.GetComponent<playerAttack>().parrying)
+        //{
+        //    if (!isInvincible)
+        //    {
+        //        isDamaged = true;
+        //        AudioManager.Manager.PlaySFX("PlayerTakeDamage");
+        //        currentHealth -= damage;
+        //        healthBarScript.SetHealth(currentHealth);
+        //        showFloatingText(damage);
+
+
+        //        // Apply invincibility
+        //        isInvincible = true;
+        //        invincibilityTimer = invincibilityDuration;
+
+
+
+        //    }
+        //}
+        //else
+        //{
+        //    Debug.Log("has parried");
+        //}
+
+    }
+
+    IEnumerator delayedRemoveHealth(int dam)
+    {
+        recParryAttack = true;
+        yield return new WaitForSeconds(parryTime);
+        if (gameObject.GetComponent<playerAttack>().parrying)
         {
-            isDamaged = true;
-            AudioManager.Manager.PlaySFX("PlayerTakeDamage");
-            currentHealth -= damage;
-            healthBarScript.SetHealth(currentHealth);
-            showFloatingText(damage);
+            Debug.Log("parried");
+            gameObject.GetComponent<playerAttack>().parrying = false;
             
-
-            // Apply invincibility
-            isInvincible = true;
-            invincibilityTimer = invincibilityDuration;
-
         }
+        else
+        {
+            if (!isInvincible)
+            {
+
+                isDamaged = true;
+                AudioManager.Manager.PlaySFX("PlayerTakeDamage");
+                currentHealth -= dam;
+                healthBarScript.SetHealth(currentHealth);
+                showFloatingText(dam);
+
+
+                // Apply invincibility
+                isInvincible = true;
+                invincibilityTimer = invincibilityDuration;
+            }
+        }
+        recParryAttack = false;
     }
 
     private void IsDamaged()
@@ -184,4 +231,6 @@ public class PlayerDeath : MonoBehaviour
     {
         return isDead;
     }
+
+
 }
