@@ -130,8 +130,8 @@ MonoBehaviour:
   isMoving: 0
   knowsAboutPlayer: 0
   floatingExclamation: {fileID: 0}
-  floatingDamage: {fileID: 3144044576336324553, guid: 6f03f0a163d617d419aa5194611fd318, type: 3}
-  offset: {x: 0, y: 30, z: 0}
+  floatingDamage: {fileID: 1019051115453438268, guid: 3600330b591fa4c4a9b529fc47c3d502, type: 3}
+  offset: {x: 0, y: 0, z: 0}
   exclamationMark: {fileID: 8341171671009919714, guid: 9e15063be3c23b14d8a6c86a38baa650, type: 3}
 --- !u!114 &2438711860252939866
 MonoBehaviour:

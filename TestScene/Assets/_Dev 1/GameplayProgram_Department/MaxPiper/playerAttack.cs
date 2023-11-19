@@ -70,7 +70,7 @@ public class playerAttack : MonoBehaviour
             {
                 Debug.Log("DAMAGE");
                 AiEnemy.health = Mathf.Clamp(AiEnemy.health - damage, 1, 1000);
-                AiEnemy.ShowFloatingDamage(damage, AiEnemy.transform); 
+                AiEnemy.ShowFloatingDamage(damage); 
                 AudioManager.Manager.PlaySFX("NPC_TakeDamage");
                 //Instantiate(floatingDamage, AiEnemy.transform.position, Quaternion.identity);
                 Instantiate(BloodOnDamage, AiEnemy.transform.position, Quaternion.identity);

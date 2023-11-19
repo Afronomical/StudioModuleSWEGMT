@@ -235,12 +235,14 @@ public class AICharacter : MonoBehaviour
        
     }
 
-    public void ShowFloatingDamage(int damage, Transform enemy)
+    public void ShowFloatingDamage(int damage)
     {
-        Vector3 spawnPos = enemy.position; 
-        var go = Instantiate(floatingDamage, spawnPos, Quaternion.identity);
-        go.GetComponentInChildren<TextMeshProUGUI>().text = damage.ToString();
-        //Debug.Log("Floating Damage" + "Enemy Pos" + enemy.position + "Spawn Pos " + spawnPos);
+        Vector3 offset = new Vector3(0, 1, 0);
+        var go = Instantiate(floatingDamage, transform.position + offset, Quaternion.identity);
+        go.GetComponent<TextMesh>().text = damage.ToString();
+        Debug.Log("Floating Damage" + "Enemy Pos" + transform.position + "Spawn Pos " + transform.position + offset);
+
+        Destroy(go, 1f);
     }
 
     
