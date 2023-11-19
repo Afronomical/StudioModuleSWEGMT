@@ -98,7 +98,7 @@ public class AIAnimationChange : MonoBehaviour
                     break;
                 case AICharacter.States.Alerted:
                     animController.ChangeAnimationState(AIAnimationController.AnimationStates.Alerted);
-                    Destroy(Instantiate(characterScript.exclamationMark, new Vector3(characterScript.transform.position.x, characterScript.transform.position.y + 10, characterScript.transform.position.z), Quaternion.identity), 3f);
+                    
                     break;
 
 
