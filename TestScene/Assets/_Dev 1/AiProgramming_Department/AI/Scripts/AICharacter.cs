@@ -78,6 +78,7 @@ public class AICharacter : MonoBehaviour
     [Header("HUD References")]
     public Sprite floatingExclamation;
     public GameObject floatingDamage;
+    public Vector3 offset = new Vector3(0, 30, 0);  
 
     TrailRenderer _downedTrail;
 
@@ -225,7 +226,7 @@ public class AICharacter : MonoBehaviour
 
     public void ShowFloatingDamage(int damage, Transform enemy)
     {
-        Vector3 spawnPos = enemy.position; 
+        Vector3 spawnPos = enemy.position + offset; 
         var go = Instantiate(floatingDamage, spawnPos, Quaternion.identity, enemy);
         go.GetComponentInChildren<TextMeshProUGUI>().text = damage.ToString();
         Debug.Log("Floating Damage" + "Enemy Pos" + enemy.position + "Spawn Pos " + spawnPos);
