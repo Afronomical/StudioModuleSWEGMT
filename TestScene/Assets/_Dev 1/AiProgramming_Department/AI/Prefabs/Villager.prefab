@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8be5dd2a69a63e94eb0b327d9c093baa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animationStatesList: 000000000100000002000000030000000400000008000000
+  animationStatesList: 00000000010000000200000003000000040000000800000006000000
   animationStringsList:
   - Idle Tree
   - Walk Tree
@@ -120,6 +120,7 @@ MonoBehaviour:
   - Downed Tree
   - S_Death
   - S_Alerted
+  - Sword Attack Tree
 --- !u!95 &6396984321996656256
 Animator:
   serializedVersion: 7
@@ -263,12 +264,16 @@ MonoBehaviour:
   homingBulletPrefab: {fileID: 0}
   hunterPrefab: {fileID: 0}
   archerPrefab: {fileID: 0}
+  spinattackboxPrefab: {fileID: 0}
   reloadBarPrefab: {fileID: 0}
   reloadBar: {fileID: 0}
   reloading: 0
+  isAttacking: 0
   isMoving: 0
+  knowsAboutPlayer: 0
   floatingExclamation: {fileID: 0}
   floatingDamage: {fileID: 0}
+  offset: {x: 0, y: 30, z: 0}
 --- !u!114 &222520338588703597
 MonoBehaviour:
   m_ObjectHideFlags: 0

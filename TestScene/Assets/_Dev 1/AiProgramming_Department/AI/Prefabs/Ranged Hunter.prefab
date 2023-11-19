@@ -122,12 +122,16 @@ MonoBehaviour:
   homingBulletPrefab: {fileID: 4959076639111065171, guid: de38b59bde5493d43a0a6740291acf5b, type: 3}
   hunterPrefab: {fileID: 0}
   archerPrefab: {fileID: 0}
+  spinattackboxPrefab: {fileID: 0}
   reloadBarPrefab: {fileID: 0}
   reloadBar: {fileID: 0}
   reloading: 0
+  isAttacking: 0
   isMoving: 0
+  knowsAboutPlayer: 0
   floatingExclamation: {fileID: 0}
   floatingDamage: {fileID: 0}
+  offset: {x: 0, y: 30, z: 0}
 --- !u!114 &2438711860252939866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -550,7 +554,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8be5dd2a69a63e94eb0b327d9c093baa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animationStatesList: 00000000010000000200000003000000040000000500000008000000
+  animationStatesList: 0000000001000000020000000300000004000000050000000800000006000000
   animationStringsList:
   - Idle Tree
   - Walk Tree
@@ -559,6 +563,7 @@ MonoBehaviour:
   - S_Death
   - Bow Attack Tree
   - S_Alerted
+  - Sword Attack Tree
 --- !u!95 &2335958843912734124
 Animator:
   serializedVersion: 7
