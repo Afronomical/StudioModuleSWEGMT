@@ -25,6 +25,11 @@ public class playerAttack : MonoBehaviour
     private bool coolDownParry;
     private float parryCoolTime;
     private float parryCoolStart = 1f;
+    public GameObject heavyHitBox; // New hit box for heavy attack
+    public int heavyDamage = 3; // Damage for heavy attack
+    public float heavyChargeTime = 1.5f; // Time to charge the heavy attack
+    private float heavyChargeTimer;
+    private bool isChargingAttack = false; // Flag to indicate if the heavy attack is charging
 
     private Animator animator;
     private PlayerAnimationController animationController;
@@ -78,6 +83,15 @@ public class playerAttack : MonoBehaviour
                 Debug.Log("DAMAGE");
                 AiEnemy.health = Mathf.Clamp(AiEnemy.health - damage, 1, 1000);
                 AiEnemy.ShowFloatingDamage(damage); 
+
+                EnemyKnockback enemyKnockback = obj.GetComponent<EnemyKnockback>();
+
+                if (enemyKnockback != null)
+                {
+                    // Apply knockback to the enemy
+                    enemyKnockback.ApplyKnockback(transform.position);
+                }
+
                 AudioManager.Manager.PlaySFX("NPC_TakeDamage");
                 //Instantiate(floatingDamage, AiEnemy.transform.position, Quaternion.identity);
                 Instantiate(BloodOnDamage, AiEnemy.transform.position, Quaternion.identity);
@@ -121,6 +135,8 @@ public class playerAttack : MonoBehaviour
         feeding = GetComponent<Feeding>();
 
         //enemyHealth = AiEnemy.health;
+
+        heavyChargeTimer = heavyChargeTime;
     }
 
 
@@ -132,7 +148,7 @@ public class playerAttack : MonoBehaviour
         mousePos.y = Input.mousePosition.y - (Screen.height / 2);
         float angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
         hitBox.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward); //swap "angle" with another 0 if cam is another angle
-
+        heavyHitBox.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward); //swap "angle" with another 0 if cam is another angle
         //calls damage enemy when LMB is pressed
         if (Input.GetKey(KeyCode.Mouse0))
         {
@@ -140,7 +156,7 @@ public class playerAttack : MonoBehaviour
             animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.SlashAttack);
 
             AudioManager.Manager.PlaySFX("PlayerAttack");
-            if (canHit)//&& //feeding.currentlyFeeding == false)
+            if (canHit && feeding.currentlyFeeding == false)
             {
                 animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.SlashAttack);
                 animator.SetTrigger("AttackSlash");
@@ -152,10 +168,39 @@ public class playerAttack : MonoBehaviour
 
             
         }
+
+        if (Input.GetKey(KeyCode.Mouse1)) // Assuming Mouse1 is the input for heavy attack
+        {
+            // Start charging the heavy attack
+            if (!isChargingAttack)
+            {
+                isChargingAttack = true;
+            }
+        }
+
+        if (isChargingAttack)
+        {
+            if (heavyChargeTimer > 0)
+            {
+                heavyChargeTimer -= Time.deltaTime;
+
+                // Charging animation or effects can be included here
+
+                if (heavyChargeTimer <= 0)
+                {
+                    ExecuteHeavyAttack();
+                    heavyChargeTimer = heavyChargeTime;
+                    isChargingAttack = false;
+                    canHit = false;
+                }
+            }
+        }
+
         if (!canHit)
         {
             
             attackDelay -= Time.deltaTime;
+
             if (attackDelay <= 0)
             {
                 canHit = true;
@@ -191,4 +236,27 @@ public class playerAttack : MonoBehaviour
         yield return new WaitForSeconds(parryFeedbackLength);
         parryLight.SetActive(false);
     }
+    }
+
+    void ExecuteHeavyAttack()
+    {
+        foreach (GameObject obj in enemyList)
+        {
+            if (obj.TryGetComponent(out AICharacter AiEnemy))
+            {
+                AiEnemy.health = Mathf.Clamp(AiEnemy.health - heavyDamage, 1, 1000);
+                EnemyKnockback enemyKnockback = obj.GetComponent<EnemyKnockback>();
+
+                if (enemyKnockback != null)
+                {
+                    // Apply knockback to the enemy
+                    enemyKnockback.ApplyKnockback(transform.position, 3.8f);
+                }
+
+                AudioManager.Manager.PlaySFX("NPC_TakeDamage");
+                AiEnemy.GetComponentInChildren<AIAnimationController>().ChangeAnimationState(AIAnimationController.AnimationStates.Hurt);
+            }
+        }
+    }
+
 }
