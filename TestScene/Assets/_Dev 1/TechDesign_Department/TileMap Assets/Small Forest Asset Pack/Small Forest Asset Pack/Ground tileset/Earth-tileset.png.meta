@@ -78,7 +78,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -128,12 +128,12 @@ TextureImporter:
       name: Earth-tileset_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 50
-        width: 34
-        height: 34
+        x: 9
+        y: 51
+        width: 30
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -149,12 +149,12 @@ TextureImporter:
       name: Earth-tileset_1
       rect:
         serializedVersion: 2
-        x: 47
-        y: 50
-        width: 34
-        height: 34
+        x: 48
+        y: 51
+        width: 32
+        height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -170,12 +170,12 @@ TextureImporter:
       name: Earth-tileset_2
       rect:
         serializedVersion: 2
-        x: 86
-        y: 50
-        width: 34
-        height: 34
+        x: 87
+        y: 51
+        width: 31
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -191,12 +191,12 @@ TextureImporter:
       name: Earth-tileset_3
       rect:
         serializedVersion: 2
-        x: 125
-        y: 50
-        width: 34
-        height: 34
+        x: 126
+        y: 51
+        width: 31
+        height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -212,12 +212,12 @@ TextureImporter:
       name: Earth-tileset_4
       rect:
         serializedVersion: 2
-        x: 165
-        y: 50
-        width: 34
-        height: 34
+        x: 167
+        y: 52
+        width: 31
+        height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -233,12 +233,12 @@ TextureImporter:
       name: Earth-tileset_5
       rect:
         serializedVersion: 2
-        x: 7
+        x: 9
         y: 9
-        width: 34
-        height: 34
+        width: 30
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -254,12 +254,12 @@ TextureImporter:
       name: Earth-tileset_6
       rect:
         serializedVersion: 2
-        x: 47
-        y: 9
-        width: 34
-        height: 34
+        x: 49
+        y: 10
+        width: 31
+        height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -275,12 +275,12 @@ TextureImporter:
       name: Earth-tileset_7
       rect:
         serializedVersion: 2
-        x: 86
-        y: 9
-        width: 34
-        height: 34
+        x: 87
+        y: 11
+        width: 31
+        height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -296,12 +296,12 @@ TextureImporter:
       name: Earth-tileset_8
       rect:
         serializedVersion: 2
-        x: 125
-        y: 9
-        width: 34
-        height: 34
+        x: 126
+        y: 10
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -317,12 +317,12 @@ TextureImporter:
       name: Earth-tileset_9
       rect:
         serializedVersion: 2
-        x: 165
-        y: 9
-        width: 34
-        height: 34
+        x: 168
+        y: 11
+        width: 30
+        height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -337,14 +337,24 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 9e456e16a735e5e4f8f7db861c82a7a1
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Earth-tileset_0: 4589140708677626814
+      Earth-tileset_1: -4705262584102634792
+      Earth-tileset_2: 1572547907511873579
+      Earth-tileset_3: -690384306400745994
+      Earth-tileset_4: -346292131049668492
+      Earth-tileset_5: 3140817956803938764
+      Earth-tileset_6: -6749825528743494094
+      Earth-tileset_7: -1490749756557424273
+      Earth-tileset_8: -5274739010677454447
+      Earth-tileset_9: -537556536562523197
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

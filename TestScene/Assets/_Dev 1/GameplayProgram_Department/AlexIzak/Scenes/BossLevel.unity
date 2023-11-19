@@ -12065,6 +12065,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1981758959967963264, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.0001373291
+      objectReference: {fileID: 0}
     - target: {fileID: 4615694013143893861, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
       propertyPath: m_Name
       value: CanvasPrefab
@@ -19745,6 +19749,63 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1001 &1595002202
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1304859699899162338, guid: 3246b6fa5942f2a439e4abd7ef57e2b9, type: 3}
+      propertyPath: m_Name
+      value: Van Helsing
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282624766971018035, guid: 3246b6fa5942f2a439e4abd7ef57e2b9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282624766971018035, guid: 3246b6fa5942f2a439e4abd7ef57e2b9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282624766971018035, guid: 3246b6fa5942f2a439e4abd7ef57e2b9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282624766971018035, guid: 3246b6fa5942f2a439e4abd7ef57e2b9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282624766971018035, guid: 3246b6fa5942f2a439e4abd7ef57e2b9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282624766971018035, guid: 3246b6fa5942f2a439e4abd7ef57e2b9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282624766971018035, guid: 3246b6fa5942f2a439e4abd7ef57e2b9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282624766971018035, guid: 3246b6fa5942f2a439e4abd7ef57e2b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282624766971018035, guid: 3246b6fa5942f2a439e4abd7ef57e2b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282624766971018035, guid: 3246b6fa5942f2a439e4abd7ef57e2b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3246b6fa5942f2a439e4abd7ef57e2b9, type: 3}
 --- !u!1001 &1670475474
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20160,3 +20221,4 @@ SceneRoots:
   - {fileID: 1670475474}
   - {fileID: 1454651411}
   - {fileID: 2032608613}
+  - {fileID: 1595002202}
