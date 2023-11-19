@@ -95,6 +95,10 @@ public class AIAnimationChange : MonoBehaviour
                 case AICharacter.States.None:
                     animController.ChangeAnimationState(AIAnimationController.AnimationStates.Idle);
                     break;
+                case AICharacter.States.Alerted:
+                    animController.ChangeAnimationState(AIAnimationController.AnimationStates.Alerted);
+                    break;
+
 
             }
         }
