@@ -35,6 +35,7 @@ public class HungerBar : MonoBehaviour
 
         if (slider.value >= slider.maxValue)
         {
+            
             BlinkEffect.enabled = false;
         }
         else
