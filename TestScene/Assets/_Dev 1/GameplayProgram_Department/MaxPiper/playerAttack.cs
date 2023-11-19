@@ -15,7 +15,13 @@ public class playerAttack : MonoBehaviour
     private AICharacter AiEnemy;
     private bool canHit = true;
     private Feeding feeding;
-
+    [HideInInspector] public bool parrying;
+    private bool canParry;
+    public GameObject parryLight;
+    public float parryFeedbackLength = 0.3f;
+    private bool coolDownParry;
+    private float parryCoolTime;
+    private float parryCoolStart = 1f;
 
     private Animator animator;
     private PlayerAnimationController animationController;
@@ -94,10 +100,13 @@ public class playerAttack : MonoBehaviour
 
     }
 
+    
+
 
     void Start()
     {
         attackDelay = attackDelayStart;
+        parryCoolTime = parryCoolStart;
 
         animator = GetComponent<Animator>();
         animationController = GetComponent<PlayerAnimationController>();
@@ -123,12 +132,12 @@ public class playerAttack : MonoBehaviour
             animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.SlashAttack);
 
             AudioManager.Manager.PlaySFX("PlayerAttack");
-            if (canHit )//&& //feeding.currentlyFeeding == false)
+            if (canHit)//&& //feeding.currentlyFeeding == false)
             {
                
                 damageEnemy();
                 canHit = false;
-                Debug.Log("ATTACKED HDBGSUYHGBK");
+                
             }
             
             
@@ -144,5 +153,31 @@ public class playerAttack : MonoBehaviour
         }
 
 
+        if (Input.GetKeyDown(KeyCode.Mouse1) && gameObject.GetComponent<PlayerDeath>().recParryAttack && !coolDownParry)
+        {
+            parrying = true;
+            StartCoroutine(parryFeedBack());
+        }
+        else if (Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            coolDownParry = true;
+            Debug.Log("parry cooling down");
+        }
+        if (coolDownParry)
+        {
+            parryCoolTime -= Time.deltaTime;
+            if (parryCoolTime <= 0)
+            {
+                coolDownParry = false;
+                parryCoolTime = parryCoolStart;
+            }
+        }
+
+    }
+    IEnumerator parryFeedBack()
+    {
+        parryLight.SetActive(true);
+        yield return new WaitForSeconds(parryFeedbackLength);
+        parryLight.SetActive(false);
     }
 }
