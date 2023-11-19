@@ -171,7 +171,7 @@ public class PlayerDeath : MonoBehaviour
     void showFloatingText(int damage)
     {
 
-        Vector3 spawnPos = transform.position + offset; 
+        Vector3 spawnPos = offset; 
         
         var go = Instantiate(floatingText, spawnPos, Quaternion.identity, transform);
         go.GetComponentInChildren<TextMeshProUGUI>().text = damage.ToString();
