@@ -12,12 +12,14 @@ public class DeathScreenButtons : MonoBehaviour
    public void Play()
    {
         AudioManager.Manager.PlaySFX("UI_Click");
+        AudioManager.Manager.StopMusic("GameOver");
         SceneManager.LoadScene(2);
    }
 
     public void Menu()
     {
         AudioManager.Manager.PlaySFX("UI_Click");
+        AudioManager.Manager.StopMusic("GameOver");
         SceneManager.LoadScene(3);
     }
 

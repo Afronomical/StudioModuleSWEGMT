@@ -7,7 +7,9 @@
 
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RunState : StateBaseClass
 {
@@ -18,7 +20,7 @@ public class RunState : StateBaseClass
     private float maxCheckTime = 1.5f;
     private float stopDistance = 0.5f;  // When they start slowing down
     private bool debugPath = false;
-
+    
     private Vector2 runDestination = Vector2.zero;
     private PathfindingSmoothing path;
     private int pathIndex = 0;
@@ -26,11 +28,23 @@ public class RunState : StateBaseClass
 
     public float checkTime;
 
+   // Sprite floatingExclamation;
+
 
     public RunState()
     {
         checkTime = 0f;
+        //floatingExclamation = character.floatingExclamation;
+        //showFloatingExclamation(); 
     }
+
+    //void showFloatingExclamation()
+    //{
+    //    Vector3 spawnPos = transform.position;
+
+    //    var go = Instantiate(floatingExclamation, spawnPos, Quaternion.identity, transform);   ////////testing exclamation mark 
+        
+    //}
 
 
     public override void UpdateLogic()

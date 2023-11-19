@@ -1,5 +1,4 @@
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -20,19 +19,14 @@ public class PlayerDeath : MonoBehaviour
     public GameObject floatingText;
     public int feedHealAmount = 5;
     public int sunDamage = 5;
+    
 
-    public Vector3 offset; 
+    public Vector3 offset = new Vector3(0,5,0);
 
     private Animator animator;
     private PlayerAnimationController animationController;
     private bool isDead = false;
     private bool isDamaged = false;
-
-    private void Awake()
-    {
-        Object GO = FindAnyObjectByType(typeof(NewHealthBarScript));
-        healthBarScript = GO.GetComponent<NewHealthBarScript>();
-    }
 
     private void Start()
     {
@@ -91,15 +85,6 @@ public class PlayerDeath : MonoBehaviour
             currentHealth = maxHealth;
         }
 
-        if (healthBarScript == null)
-        {
-            if (FindObjectOfType<NewHealthBarScript>() == true)
-            {
-                healthBarScript = FindObjectOfType<NewHealthBarScript>();
-                healthBarScript.setMaxHealth(maxHealth);
-            }
-        }
-
     }
 
     //private void OnTriggerEnter2D(Collider2D collision)
@@ -116,8 +101,7 @@ public class PlayerDeath : MonoBehaviour
     //        }
     //    }
     //}
-
-
+    
     public void RemoveHealth(int damage)
     {
         if (!isInvincible)
@@ -170,28 +154,24 @@ public class PlayerDeath : MonoBehaviour
     private void deathAfterDelay()
     {
         AudioManager.Manager.StopMusic("LevelMusic");
-        //deathscreenCanvas.ShowUI();
-        AudioManager.Manager.PlayMusic("MenuMusic");
+        deathscreenCanvas.ShowUI();
+        AudioManager.Manager.PlayMusic("GameOver");
        
-        SceneManager.LoadScene("Main Menu Animated");
-        currentHealth = maxHealth;
-        GetComponent<Feeding>().currentHunger = 0;
-        isDead = false;
-        gameObject.SetActive(true);
-        
+        //SceneManager.LoadScene("MainMenu");
     }
 
     public void SunRiseDamage() // Deals Damage While The Player Is In Sun Light
     {
-        AudioManager.Manager.PlaySFX("PlayerTakeDamage");
-        animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Hurt);       
+        
+        animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Hurt);
+        currentHealth = currentHealth - sunDamage;
         healthBarScript.SetHealth(currentHealth);
     }
 
-    public void showFloatingText(int damage)
+    void showFloatingText(int damage)
     {
 
-        Vector3 spawnPos = transform.position + offset; 
+        Vector3 spawnPos = offset; 
         
         var go = Instantiate(floatingText, spawnPos, Quaternion.identity, transform);
         go.GetComponentInChildren<TextMeshProUGUI>().text = damage.ToString();

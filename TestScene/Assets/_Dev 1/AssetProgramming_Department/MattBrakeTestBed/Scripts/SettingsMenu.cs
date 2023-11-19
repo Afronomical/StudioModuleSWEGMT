@@ -1,10 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using static MenuCamPan;
 
 public class SettingsMenu : MonoBehaviour
 {
+    public static SettingsMenu instance;
+
+
+    private void Awake()
+    {
+        if(instance == null)
+        {
+            instance = this; 
+        }
+        //else
+        //{
+        //    Destroy(this);
+        //    return;
+        //}
+        //DontDestroyOnLoad(gameObject);
+    }
+
     public Canvas audioCanvas;
     public Canvas visualCanvas;
 
@@ -15,8 +34,18 @@ public class SettingsMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        visualCanvas.enabled = false;
+        audioCanvas = GameObject.Find("AudioCanvas").GetComponent<Canvas>();
+        audioCanvasGroup = GameObject.Find("AudioCanvas").GetComponent<CanvasGroup>();
+        visualCanvas = GameObject.Find("VisualCanvas").GetComponent<Canvas>();
+        visualCanvasGroup = GameObject.Find("VisualCanvas").GetComponent<CanvasGroup>();
+        
+        
+visualCanvas.enabled = false;
         visualCanvasGroup.interactable = false;
+        audioCanvas.enabled = true;
+        audioCanvasGroup.interactable = true;
+        //OpenAudioSettings();
+
     }
 
     // Update is called once per frame
