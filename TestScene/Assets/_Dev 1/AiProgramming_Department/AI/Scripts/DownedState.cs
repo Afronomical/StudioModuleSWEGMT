@@ -28,6 +28,7 @@ public class DownedState : StateBaseClass
        
         //change colour to indicate state change
         transform.Find("Sprite").GetComponent<SpriteRenderer>().color = Color.red;
+        character = GetComponent<AICharacter>();
     }
 
 

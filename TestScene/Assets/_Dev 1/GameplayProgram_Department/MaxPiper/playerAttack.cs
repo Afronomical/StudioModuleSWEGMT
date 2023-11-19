@@ -16,6 +16,7 @@ public class playerAttack : MonoBehaviour
     private bool canHit = true;
     private Feeding feeding;
     public GameObject BloodOnDamage;
+   // public GameObject floatingDamage;
 
 
     private Animator animator;
@@ -71,6 +72,7 @@ public class playerAttack : MonoBehaviour
                 AiEnemy.health = Mathf.Clamp(AiEnemy.health - damage, 1, 1000);
                 AiEnemy.ShowFloatingDamage(damage, AiEnemy.transform); 
                 AudioManager.Manager.PlaySFX("NPC_TakeDamage");
+                //Instantiate(floatingDamage, AiEnemy.transform.position, Quaternion.identity);
                 Instantiate(BloodOnDamage, AiEnemy.transform.position, Quaternion.identity);
                 if (AiEnemy.characterType != AICharacter.CharacterTypes.Boss)
                     AiEnemy.GetComponentInChildren<AIAnimationController>().ChangeAnimationState(AIAnimationController.AnimationStates.Hurt); //Plays the currently hit AIs take damage function

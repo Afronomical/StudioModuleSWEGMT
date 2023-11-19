@@ -7,6 +7,7 @@ public class AlertedState : StateBaseClass
     private AIAnimationController animController;
     private Animator anim;
     private float alertedTime = 0.5f;  // How long the state will last
+    
 
     private void Start()
     {
@@ -16,6 +17,7 @@ public class AlertedState : StateBaseClass
         character.isMoving = false;
         character.isAttacking = true;
         character.knowsAboutPlayer = true;
+        
         StartCoroutine(Alerted());
     }
 
@@ -26,6 +28,7 @@ public class AlertedState : StateBaseClass
 
     private IEnumerator Alerted()
     {
+       
 
         yield return new WaitForSeconds(alertedTime);
 

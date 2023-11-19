@@ -82,7 +82,9 @@ public class AICharacter : MonoBehaviour
     [Header("HUD References")]
     public Sprite floatingExclamation;
     public GameObject floatingDamage;
-    public Vector3 offset = new Vector3(0, 30, 0);  
+    public Vector3 offset = new Vector3(0, 30, 0);
+
+    public GameObject exclamationMark; 
 
     TrailRenderer _downedTrail;
 
@@ -147,7 +149,8 @@ public class AICharacter : MonoBehaviour
                     _downedTrail.enabled = true;
                     stateScript = transform.AddComponent<DownedState>();
                     //If the boss is the 1 downed
-                    spinattackboxPrefab.SetActive(false);
+                    if(spinattackboxPrefab != null)
+                        spinattackboxPrefab.SetActive(false);
                     break;
                 case States.Dead:
                     stateScript = transform.AddComponent<DeadState>();
@@ -234,11 +237,13 @@ public class AICharacter : MonoBehaviour
 
     public void ShowFloatingDamage(int damage, Transform enemy)
     {
-        Vector3 spawnPos = enemy.position + offset; 
-        var go = Instantiate(floatingDamage, spawnPos, Quaternion.identity, enemy);
+        Vector3 spawnPos = enemy.position; 
+        var go = Instantiate(floatingDamage, spawnPos, Quaternion.identity);
         go.GetComponentInChildren<TextMeshProUGUI>().text = damage.ToString();
-        Debug.Log("Floating Damage" + "Enemy Pos" + enemy.position + "Spawn Pos " + spawnPos);
+        //Debug.Log("Floating Damage" + "Enemy Pos" + enemy.position + "Spawn Pos " + spawnPos);
     }
+
+    
 
     /*public void downedTrail()
     {
