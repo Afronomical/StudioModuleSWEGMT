@@ -43,7 +43,7 @@ public class CountdownTimer : MonoBehaviour
         { 
             if(timeRemaining >= 0)
             {
-                DisplayTime(timeRemaining);
+                //DisplayTime(timeRemaining);
                 timeRemaining -= Time.deltaTime;
                // Debug.Log("Time remaining: " + timeRemaining);
                 //float rotationAngle = 180 * (1 - (timeRemaining / time));
@@ -73,7 +73,7 @@ public class CountdownTimer : MonoBehaviour
     {
         rotatingCover.Rotate(Vector3.forward * Time.deltaTime * rotationSpeed); ///continuosly rotates the cover as specified speed 
 
-        //rotatingCover.rotation = Quaternion.Euler(0, 0, rotatingCover.eulerAngles.z % maxrotationAngle); ///caps the rotation to 360 degrees
+        rotatingCover.rotation = Quaternion.Euler(0, 0, rotatingCover.eulerAngles.z % maxrotationAngle); ///caps the rotation to 360 degrees
 
        
     }
