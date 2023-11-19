@@ -122,21 +122,23 @@ public class playerAttack : MonoBehaviour
         //calls damage enemy when LMB is pressed
         if (Input.GetKey(KeyCode.Mouse0))
         {
-            animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.SlashAttack);
-
-            AudioManager.Manager.PlaySFX("PlayerAttack");
-            if (canHit )//&& //feeding.currentlyFeeding == false)
+           
+            if (canHit)//&& //feeding.currentlyFeeding == false)
             {
-               
+                animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.SlashAttack);
+                animator.SetTrigger("AttackSlash");
+                AudioManager.Manager.PlaySFX("PlayerAttack");
                 damageEnemy();
                 canHit = false;
-                //Debug.Log("ATTACKED HDBGSUYHGBK");
+               
+                Debug.Log("ATTACKED HDBGSUYHGBK");
             }
-            
+
             
         }
         if (!canHit)
         {
+            
             attackDelay -= Time.deltaTime;
             if (attackDelay <= 0)
             {
@@ -144,7 +146,7 @@ public class playerAttack : MonoBehaviour
                 attackDelay = attackDelayStart;
             }
         }
-
+        
 
     }
 }

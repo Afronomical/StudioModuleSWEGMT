@@ -42,6 +42,7 @@ public class AICharacter : MonoBehaviour
         SpawnEnemies,
         SprayArrows,
         Reload,
+        SpinAttackBox,
         None
     }
 
@@ -64,9 +65,7 @@ public class AICharacter : MonoBehaviour
     public GameObject homingBulletPrefab;
     public GameObject hunterPrefab;
     public GameObject archerPrefab;
-    
-   
-   
+    public GameObject spinattackboxPrefab;
 
     [Header("Reload bar references")]
     public GameObject reloadBarPrefab;
@@ -113,6 +112,7 @@ public class AICharacter : MonoBehaviour
 
     public void ChangeState(States newState)  // Will destroy the old state script and create a new one
     {
+        
         if (currentState != newState || stateScript == null)
         {
             if (stateScript != null)
@@ -142,6 +142,8 @@ public class AICharacter : MonoBehaviour
                 case States.Downed:
                     _downedTrail.enabled = true;
                     stateScript = transform.AddComponent<DownedState>();
+                    //If the boss is the 1 downed
+                    spinattackboxPrefab.SetActive(false);
                     break;
                 case States.Dead:
                     AudioManager.Manager.PlaySFX("NPC_Death");
@@ -176,6 +178,9 @@ public class AICharacter : MonoBehaviour
                 case States.Reload:
                     //Debug.Log(gameObject.name);
                     stateScript = transform.AddComponent<ReloadState>();
+                    break;
+                case States.SpinAttackBox:
+                    stateScript = transform.AddComponent<SpinAttackState>();
                     break;
                 //case States.SpawnEnemies:
                 //    stateScript = transform.AddComponent<SpawnEnemiesState>();
