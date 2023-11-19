@@ -7,8 +7,10 @@
 
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AICharacter : MonoBehaviour
 {
@@ -30,14 +32,20 @@ public class AICharacter : MonoBehaviour
         Run,
         Hunt,
         Shoot,
-        //boss states
-        //phase 1, 2, 3...?
+        Alerted,
+
+        // Boss states
         SpecialAttack,
         SprayShoot1,
         SprayShoot2,
         CircularShoot,
         HomingArrow,
         SpawnEnemies,
+        SprayArrows,
+        DashAttack,
+        Reload,
+        SpinAttackBox,
+
         None
     }
 
@@ -50,6 +58,7 @@ public class AICharacter : MonoBehaviour
     public float walkSpeed, runSpeed, crawlSpeed;
     public float turnSpeed;
     public float turnDistance;
+    
 
     [Header("States")]
     public States currentState;
@@ -59,8 +68,23 @@ public class AICharacter : MonoBehaviour
     public GameObject homingBulletPrefab;
     public GameObject hunterPrefab;
     public GameObject archerPrefab;
+    public GameObject spinattackboxPrefab;
 
-    public bool isMoving;
+    [Header("Reload bar references")]
+    public GameObject reloadBarPrefab;
+    public Transform reloadBar;
+    public bool reloading;
+
+    [HideInInspector] public bool isAttacking;
+    [HideInInspector] public bool isMoving;
+    [HideInInspector] public bool knowsAboutPlayer;
+
+    [Header("HUD References")]
+    public Sprite floatingExclamation;
+    public GameObject floatingDamage;
+    public Vector3 offset = new Vector3(0, 30, 0);  
+
+    TrailRenderer _downedTrail;
 
     void Start()
     {
@@ -70,6 +94,11 @@ public class AICharacter : MonoBehaviour
         health = startingHealth;
         ChangeState(States.Idle);  // The character will start in the idle state
         player = GameObject.FindGameObjectWithTag("Player");
+
+        reloading = false;
+
+        _downedTrail = gameObject.GetComponent<TrailRenderer>();
+        _downedTrail.enabled = false;
     }
 
 
@@ -88,6 +117,7 @@ public class AICharacter : MonoBehaviour
 
     public void ChangeState(States newState)  // Will destroy the old state script and create a new one
     {
+        
         if (currentState != newState || stateScript == null)
         {
             if (stateScript != null)
@@ -111,42 +141,53 @@ public class AICharacter : MonoBehaviour
                     stateScript = transform.AddComponent<RunState>();
                     break;
                 case States.Attack:
-                    AudioManager.Manager.PlaySFX("NPC_MeleeAttack");
                     stateScript = transform.AddComponent<AttackState>();
                     break;
                 case States.Downed:
+                    _downedTrail.enabled = true;
                     stateScript = transform.AddComponent<DownedState>();
+                    //If the boss is the 1 downed
+                    spinattackboxPrefab.SetActive(false);
                     break;
                 case States.Dead:
-                    AudioManager.Manager.PlaySFX("NPC_Death");
                     stateScript = transform.AddComponent<DeadState>();
                     break;
                 case States.Hunt:
                     stateScript = transform.AddComponent<HuntState>();
                     break;
                 case States.Shoot:
-                    
                     stateScript = transform.AddComponent<ShootState>();
                     break;
-                //boss states
+                case States.Alerted:
+                    stateScript = transform.AddComponent<AlertedState>();
+                    break;
+
+                // Boss states
                 case States.SpecialAttack:
                     stateScript = transform.AddComponent<SpecialAttackState>();
                     break;
-                //case States.SprayShoot1:
-                //    stateScript = transform.AddComponent<SprayShoot1State>();
-                //    break;
-                //case States.SprayShoot2:
-                //    stateScript = transform.AddComponent<SprayShoot2State>();
-                //    break;
-                //case States.CircularShoot:
-                //    stateScript = transform.AddComponent<CircularShootState>();
-                //    break;
-                //case States.HomingArrow:
-                //    stateScript = transform.AddComponent<HomingArrowState>();
-                //    break;
-                case States.SpawnEnemies:
-                    stateScript = transform.AddComponent<SpawnEnemiesState>();
+                case States.SprayShoot1:
+                    stateScript = transform.AddComponent<SprayShoot1State>();
                     break;
+                case States.CircularShoot:
+                    stateScript = transform.AddComponent<CircularShootState>();
+                    break;
+                case States.HomingArrow:
+                    stateScript = transform.AddComponent<HomingArrowState>();
+                    break;
+                case States.SprayArrows:
+                    stateScript = transform.AddComponent<SprayArrowsState>();
+                    break;
+                case States.DashAttack:
+                    stateScript = transform.AddComponent<DashAttackState>();
+                    break;
+                case States.Reload:
+                    stateScript = transform.AddComponent<ReloadState>();
+                    break;
+                case States.SpinAttackBox:
+                    stateScript = transform.AddComponent<SpinAttackState>();
+                    break;
+
                 //------------------------------------ Add new states in here
 
                 case States.None:
@@ -180,7 +221,7 @@ public class AICharacter : MonoBehaviour
         return player.transform.position;
     }
 
-    public int GetHealth()
+    public float GetHealth()
     {
         return this.health;
     }
@@ -188,5 +229,27 @@ public class AICharacter : MonoBehaviour
     public void SetHealth(int n)
     {
         this.health = n;
+       
     }
+
+    public void ShowFloatingDamage(int damage, Transform enemy)
+    {
+        Vector3 spawnPos = enemy.position + offset; 
+        var go = Instantiate(floatingDamage, spawnPos, Quaternion.identity, enemy);
+        go.GetComponentInChildren<TextMeshProUGUI>().text = damage.ToString();
+        Debug.Log("Floating Damage" + "Enemy Pos" + enemy.position + "Spawn Pos " + spawnPos);
+    }
+
+    /*public void downedTrail()
+    {
+
+        if (States.Downed == currentState)
+        {
+            _downedTrail.enabled = true;
+        }
+        else
+        {
+            _downedTrail.enabled = false;
+        }
+    }*/
 }

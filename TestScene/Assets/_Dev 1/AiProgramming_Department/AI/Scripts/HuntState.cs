@@ -50,6 +50,16 @@ public class HuntState : StateBaseClass
 
             transform.Translate(Vector3.right * character.runSpeed * Time.deltaTime, Space.Self);  // Move the character forwards
         }
+
+        if (character.characterType == AICharacter.CharacterTypes.Boss)
+        {
+            if (Vector3.Distance(character.GetPlayerPosition(), character.GetPosition()) <= 2f)
+            {
+                character.isAttacking = false;
+                GetComponent<BossStateMachineController>().reloadCountdown++;
+                Destroy(this);
+            }
+        }
     }
 
 

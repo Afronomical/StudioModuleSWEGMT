@@ -68,6 +68,8 @@ public class ShootState : StateBaseClass
         bullet.GetComponent<Rigidbody2D>().velocity = distance.normalized * bulletSpeed;
         AudioManager.Manager.PlaySFX("NPC_RangedAttack");
 
+        if (character.characterType == AICharacter.CharacterTypes.Boss)
+            character.isAttacking = false;
     }
 
 

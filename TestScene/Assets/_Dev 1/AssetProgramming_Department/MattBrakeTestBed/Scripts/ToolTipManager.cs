@@ -25,8 +25,8 @@ public class ToolTipManager : MonoBehaviour
 
     private void Start()
     {
-        bottomToolTip.SetActive(false);
         topToolTip.SetActive(false);
+        bottomToolTip.SetActive(false);
     }
 
 
@@ -40,6 +40,11 @@ public class ToolTipManager : MonoBehaviour
             StartCoroutine(RemoveToolTipAfterDelay(displayDuration));
         }
 
+    }
+    public void ShowTopToolTip(string tooltipString)
+    {
+        topToolTip.SetActive(true);
+        toolTipTopText.text = tooltipString; 
     }
     public void HideTopToolTip()
     {
@@ -86,5 +91,9 @@ public class ToolTipManager : MonoBehaviour
     public static void HideBottomToolTip_Static()
     {
         instance.HideBottomToolTip();
+    }
+    public static void ShowTopToolTip_Static(string toolTipString)
+    {
+        instance.ShowTopToolTip(toolTipString); 
     }
 }

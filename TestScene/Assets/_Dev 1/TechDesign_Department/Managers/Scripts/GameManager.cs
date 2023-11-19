@@ -72,7 +72,7 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         //reference to game timer
-        timer = GameObject.Find("Countdown Text").GetComponent<CountdownTimer>();
+        timer = GameObject.Find("Timer").GetComponent<CountdownTimer>();
         //default state
         currentGameState = GameStates.PlayerInLevel;
     }

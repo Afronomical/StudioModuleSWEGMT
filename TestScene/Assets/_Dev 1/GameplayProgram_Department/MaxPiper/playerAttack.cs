@@ -15,6 +15,7 @@ public class playerAttack : MonoBehaviour
     private AICharacter AiEnemy;
     private bool canHit = true;
     private Feeding feeding;
+    public GameObject BloodOnDamage;
 
 
     private Animator animator;
@@ -66,10 +67,13 @@ public class playerAttack : MonoBehaviour
         {
             if (obj.TryGetComponent(out AICharacter AiEnemy))
             {
+                Debug.Log("DAMAGE");
                 AiEnemy.health = Mathf.Clamp(AiEnemy.health - damage, 1, 1000);
-
+                AiEnemy.ShowFloatingDamage(damage, AiEnemy.transform); 
                 AudioManager.Manager.PlaySFX("NPC_TakeDamage");
-                AiEnemy.GetComponentInChildren<AIAnimationController>().ChangeAnimationState(AIAnimationController.AnimationStates.Hurt); //Plays the currently hit AIs take damage function
+                Instantiate(BloodOnDamage, AiEnemy.transform.position, Quaternion.identity);
+                if (AiEnemy.characterType != AICharacter.CharacterTypes.Boss)
+                    AiEnemy.GetComponentInChildren<AIAnimationController>().ChangeAnimationState(AIAnimationController.AnimationStates.Hurt); //Plays the currently hit AIs take damage function
                 //enemyTarg.GetComponentInChildren<AI_AnimationController>().ChangeAnimationState(AI_AnimationController.AnimationStates.Hurt);
             }
 
@@ -120,21 +124,23 @@ public class playerAttack : MonoBehaviour
         //calls damage enemy when LMB is pressed
         if (Input.GetKey(KeyCode.Mouse0))
         {
-            animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.SlashAttack);
-
-            AudioManager.Manager.PlaySFX("PlayerAttack");
-            if (canHit )//&& //feeding.currentlyFeeding == false)
+           
+            if (canHit)//&& //feeding.currentlyFeeding == false)
             {
-               
+                animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.SlashAttack);
+                animator.SetTrigger("AttackSlash");
+                AudioManager.Manager.PlaySFX("PlayerAttack");
                 damageEnemy();
                 canHit = false;
+               
                 Debug.Log("ATTACKED HDBGSUYHGBK");
             }
-            
+
             
         }
         if (!canHit)
         {
+            
             attackDelay -= Time.deltaTime;
             if (attackDelay <= 0)
             {
@@ -142,7 +148,7 @@ public class playerAttack : MonoBehaviour
                 attackDelay = attackDelayStart;
             }
         }
-
+        
 
     }
 }

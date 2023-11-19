@@ -11,7 +11,12 @@ public class AIAnimationChange : MonoBehaviour
     private AICharacter characterScript;
     public Transform faceTowards;
 
+    //Slash Effect Anim
+    //public Animator slashEffect;
+
     private bool characterAttacking = false;
+
+    
 
     void Start()
     {
@@ -26,10 +31,9 @@ public class AIAnimationChange : MonoBehaviour
         Vector3 dir = faceTowards.position - transform.position;
         anim.SetFloat("MovementX", dir.x);
         anim.SetFloat("MovementY", dir.y);
-   
         transform.rotation = Quaternion.Euler(new Vector3(0, 0, -characterTransform.rotation.z));
 
-
+        //Debug.Log(slashEffect.parameters.GetValue(0));
 
         if (!animController.IsAnimationPlaying(anim, AIAnimationController.AnimationStates.Hurt) &&
             !animController.IsAnimationPlaying(anim, AIAnimationController.AnimationStates.SwordAttack))  // If he isn't playing the hurt animation
@@ -64,6 +68,8 @@ public class AIAnimationChange : MonoBehaviour
                     if (!characterAttacking)
                     {
                         animController.ChangeAnimationState(AIAnimationController.AnimationStates.SwordAttack);
+                        //slashEffect.SetTrigger("SlashEffect");
+                        
                         characterAttacking = true;
                     }
                     else
@@ -83,6 +89,17 @@ public class AIAnimationChange : MonoBehaviour
                 case AICharacter.States.SpecialAttack:
                     animController.ChangeAnimationState(AIAnimationController.AnimationStates.BowAttack);
                     break;
+                case AICharacter.States.Reload:
+                    animController.ChangeAnimationState(AIAnimationController.AnimationStates.Reload);
+                    break;
+                case AICharacter.States.None:
+                    animController.ChangeAnimationState(AIAnimationController.AnimationStates.Idle);
+                    break;
+                case AICharacter.States.Alerted:
+                    animController.ChangeAnimationState(AIAnimationController.AnimationStates.Alerted);
+                    break;
+
+
             }
         }
     }
