@@ -47,12 +47,12 @@ public class SpinAttackState : StateBaseClass
         {
             //Sets the attack box to show in the game, the damage logic is handled in it's own script attached to the Attack Box object
             attackboxPrefab.SetActive(true);
-            currentDelay = 3;
+            currentDelay = 2.5f;
         }
         else
         {
             //When the player has spun all the way around, it will disable the Attack Box
-            Invoke("SetAttackBoxFalse", 2);
+            Invoke("SetAttackBoxFalse", 4f);
         }
     }
 
