@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     public float maxStamina = 100;
     public float staminaDrainSpeed = 20;
     public float staminaRegenSpeed = 20;
+    public float dodgeStaminaCost = 33.333f;
     
     
     [SerializeField] float dodgeSpeed = 10f;
@@ -104,13 +105,13 @@ public class PlayerController : MonoBehaviour
                 staminaBarSlider.SetStamina(stamina);
 
             }
-            else if (Input.GetKeyDown(KeyCode.Space) && canDodge && stamina > 33) // dodge
+            else if (Input.GetKeyDown(KeyCode.Space) && canDodge && stamina > dodgeStaminaCost) // dodge
             {
 
                 AudioManager.Manager.PlaySFX("PlayerDodge");
                 animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Dash);
                 StartCoroutine(Dodge());
-                stamina -= 33;
+                stamina -= dodgeStaminaCost;
                 isSprinting = true;
                 staminaRegenSpeed = 20;
 
