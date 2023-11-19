@@ -49,19 +49,16 @@ public class SpinAttackState : StateBaseClass
             attackboxPrefab.SetActive(true);
             currentDelay = 3;
         }
-        if(currentDelay > 0)
+        else
         {
             //When the player has spun all the way around, it will disable the Attack Box
             Invoke("SetAttackBoxFalse", 2);
         }
-
-        
-        
     }
 
     void SetAttackBoxFalse()
     {
-        
         attackboxPrefab.SetActive(false);
+        character.isAttacking = false;
     }
 }

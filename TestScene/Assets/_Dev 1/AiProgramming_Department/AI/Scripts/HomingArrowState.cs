@@ -39,6 +39,7 @@ public class HomingArrowState : StateBaseClass
         {
             Instantiate(homingBulletPrefab, origin.position, origin.rotation);
             currentDelay = 3f;
+            character.isAttacking = false;
         }
         else
         {

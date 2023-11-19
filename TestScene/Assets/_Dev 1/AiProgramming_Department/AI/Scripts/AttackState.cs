@@ -18,14 +18,16 @@ public class AttackState : StateBaseClass
     private void Start()
     {
         transform.GetComponentInChildren<AIAnimationController>().ChangeAnimationState(AIAnimationController.AnimationStates.SwordAttack);
-        gameObject.transform.GetChild(2).GetChild(0).GetComponent<Animator>().SetTrigger("IsAttacking");
-
+        gameObject.transform.GetChild(2).GetChild(0).GetComponent<Animator>().SetTrigger("IsAttacking");  // <-----------------------------------  Error Here
     }
 
     public AttackState() 
     {
         //When a character goes to the attack state, this will delay the attack by x amount
         currentDelay = 0.2f;
+        playerDeath = character.player.GetComponent<PlayerDeath>();
+        transform.GetComponentInChildren<AIAnimationController>().ChangeAnimationState(AIAnimationController.AnimationStates.SwordAttack);
+        AudioManager.Manager.PlaySFX("NPC_MeleeAttack");
     }
     
     public override void UpdateLogic()
@@ -44,9 +46,9 @@ public class AttackState : StateBaseClass
         {
             playerDeath.RemoveHealth(attackDamage);
             currentDelay = 2;
+
+            if (character.characterType == AICharacter.CharacterTypes.Boss)
+                character.isAttacking = false;
         }
-        
-        //this was moved to HuntState
-        //character.transform.position = Vector2.MoveTowards(character.transform.position, character.player.transform.position, speed * Time.deltaTime / 2);
     }
 }

@@ -7,6 +7,8 @@ public class CircularShootState : StateBaseClass
     public int attackDamage = 20;
     public float attackDelay = 1;
     private float currentDelay;
+    private int arrowsShot = 0;
+    private int arrowCount = 30;
 
     private float stateChangeDelay = 5;
     private float currentStateDelay;
@@ -14,7 +16,7 @@ public class CircularShootState : StateBaseClass
     public Transform origin;
     public GameObject bulletPrefab;
     public GameObject homingBulletPrefab;
-    private float bulletSpeed = 500f;
+    private float bulletSpeed = 5f;
 
     //Gameplay Programmers Script for the Player Health
     private ReferenceManager referenceManager;
@@ -37,8 +39,15 @@ public class CircularShootState : StateBaseClass
         if (currentDelay <= 0)
         {
             GameObject bullet = Instantiate(bulletPrefab, origin.position, origin.rotation);
-            bullet.GetComponent<Rigidbody2D>().velocity = transform.right * bulletSpeed * Time.deltaTime;
+            bullet.GetComponent<Rigidbody2D>().velocity = transform.right * bulletSpeed;
             currentDelay = 0.1f;
+
+            arrowsShot++;
+            if (arrowsShot > arrowCount)
+            {
+                character.isAttacking = false;
+                Destroy(this);
+            }
         }
         else
         {

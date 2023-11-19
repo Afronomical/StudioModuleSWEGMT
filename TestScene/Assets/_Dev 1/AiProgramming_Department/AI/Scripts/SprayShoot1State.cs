@@ -15,7 +15,7 @@ public class SprayShoot1State : StateBaseClass
     public Transform origin;
     public GameObject bulletPrefab;
     public GameObject homingBulletPrefab;
-    private float bulletSpeed = 500f;
+    private float bulletSpeed = 5f;
 
     //Gameplay Programmers Script for the Player Health
     private ReferenceManager referenceManager;
@@ -38,7 +38,9 @@ public class SprayShoot1State : StateBaseClass
         Vector2 distance = character.player.transform.position - character.transform.position;
         distance.Normalize();
         GameObject bullet = Instantiate(bulletPrefab, origin.position, origin.rotation);
-        bullet.GetComponent<Rigidbody2D>().velocity = distance * bulletSpeed * Time.deltaTime;
+        bullet.GetComponent<Rigidbody2D>().velocity = distance * bulletSpeed;
+
+        character.isAttacking = false;
     }
 
     public override void UpdateLogic()

@@ -106,6 +106,7 @@ public class PatrolState : StateBaseClass
         if (pathSuccessful)
         {
             path = new PathfindingSmoothing(waypoints, transform.position, character.turnDistance, stopDistance);
+            character.knowsAboutPlayer = false;
             pathIndex = 0;
             speedPercent = 1;
         }
