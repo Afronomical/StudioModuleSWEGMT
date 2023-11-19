@@ -15,11 +15,12 @@ public class PlayerController : MonoBehaviour
     public float maxStamina = 100;
     public float staminaDrainSpeed = 20;
     public float staminaRegenSpeed = 20;
+    public float dodgeStaminaCost = 33.333f;
     
     
     [SerializeField] float dodgeSpeed = 10f;
     [SerializeField] float dodgeDuration = 1f;
-    [SerializeField] float dodgeCooldown;
+    [SerializeField] float dodgeCooldown = 0.5f;
     [SerializeField] TrailRenderer dashTrail;
 
     private Animator animator;
@@ -100,17 +101,18 @@ public class PlayerController : MonoBehaviour
                 isSprinting = true;
                 staminaRegenSpeed = 0;
                 rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * sprintSpeed, Input.GetAxisRaw("Vertical") * sprintSpeed);
-                //stamina -= Time.deltaTime * staminaDrainSpeed;
-                //staminaBarSlider.SetStamina(stamina);
+                stamina -= Time.deltaTime * staminaDrainSpeed;
+                staminaBarSlider.SetStamina(stamina);
 
             }
-            else if (Input.GetKeyDown(KeyCode.Space) && canDodge) // dodge
+            else if (Input.GetKeyDown(KeyCode.Space) && canDodge && stamina > dodgeStaminaCost) // dodge
             {
 
                 AudioManager.Manager.PlaySFX("PlayerDodge");
                 animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Dash);
                 StartCoroutine(Dodge());
-                isSprinting = false;
+                stamina -= dodgeStaminaCost;
+                isSprinting = true;
                 staminaRegenSpeed = 20;
 
             }
@@ -175,6 +177,7 @@ public class PlayerController : MonoBehaviour
         dashTrail.emitting = false;
         yield return new WaitForSeconds(dodgeCooldown);
         canDodge = true;
+        isSprinting = false;
 
     }
 
