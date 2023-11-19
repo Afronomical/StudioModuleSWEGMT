@@ -175,6 +175,8 @@ public class PlayerDeath : MonoBehaviour
         
         var go = Instantiate(floatingText, spawnPos, Quaternion.identity, transform);
         go.GetComponentInChildren<TextMeshProUGUI>().text = damage.ToString();
+
+        Destroy(go, 1f); 
     }
 
     public bool IsDead()

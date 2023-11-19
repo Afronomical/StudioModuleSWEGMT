@@ -67,6 +67,7 @@ public class AISpawnManager : MonoBehaviour
         yield return new WaitForSeconds(doorOpenTime);
 
         // Resetting all of the values in the enemy
+        enemy.GetComponent<TrailRenderer>().enabled = false; 
         enemy.transform.position = spawnPoint.position + spawnPointOffset;
         AICharacter AIScript = enemy.GetComponent<AICharacter>();
         GameObject enemySprite = enemy.transform.Find("Sprite").gameObject;
