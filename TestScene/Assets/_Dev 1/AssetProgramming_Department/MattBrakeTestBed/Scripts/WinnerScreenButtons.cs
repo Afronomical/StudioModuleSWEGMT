@@ -11,6 +11,7 @@ public class WinnerScreenButtons : MonoBehaviour
   public void EndGame()
     {
         SceneManager.LoadScene("Credits");
+        AudioManager.Manager.PlayMusic("Credits"); 
     }
 
     public void Menu()

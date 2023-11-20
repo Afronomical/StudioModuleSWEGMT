@@ -13,6 +13,8 @@ public class BossCanvasActivate : MonoBehaviour
     void Start()
     {
         bossCanvasGroup.alpha = 0;
+        AudioManager.Manager.StopMusic("LevelMusic");
+        //AudioManager.Manager.PlayMusic("BossMusic");
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -31,6 +33,7 @@ public class BossCanvasActivate : MonoBehaviour
     {
         if (fadeIn)
         {
+            AudioManager.Manager.PlayMusic("BossMusic"); 
             if (bossCanvasGroup.alpha < 1)
             {
                bossCanvasGroup.alpha += Time.deltaTime;
