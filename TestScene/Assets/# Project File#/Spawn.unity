@@ -10226,17 +10226,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c1d255f172ac6747935b689ae8dee35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1224926657 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2850715717861354058, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
-  m_PrefabInstance: {fileID: 2133233163}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9762afe9ff8f6ed42b6a41418b8faf38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1243117366 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2207885135432695148, guid: 99d0183fde40a224eae3632a6b0caf96, type: 3}
@@ -31435,7 +31424,7 @@ PrefabInstance:
     - target: {fileID: 8811865619863605101, guid: 99d0183fde40a224eae3632a6b0caf96, type: 3}
       propertyPath: deathscreenCanvas
       value: 
-      objectReference: {fileID: 1224926657}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31684,6 +31673,14 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2980688281692362530, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2980688281692362530, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3246875828020413125, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -31699,6 +31696,10 @@ PrefabInstance:
     - target: {fileID: 6735579504183721518, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7711175167643033123, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
+      propertyPath: m_MaxValue
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
