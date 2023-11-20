@@ -64,18 +64,18 @@ public class BossHealthBar : MonoBehaviour
     public void SetBossHealth()
     {
         targetValue = AICharacter.health;
-        if(targetValue == 75)
+        if(targetValue < 75 && targetValue > 40)
         {
             EnterPhase(BossPhase.Two);
             Debug.Log("Entering Phase 2 ");
            // StartCoroutine(StartBlink());
         }
-        if(targetValue == 40)
+        if(targetValue <= 40)
         {
             Debug.Log("Entering Phase 3 ");
             EnterPhase(BossPhase.Three);
         }
-        if(targetValue== BossSlider.minValue)
+        if(targetValue <= BossSlider.minValue)
         {
             ToolTipManager.ShowBottomToolTip_Static("DEFEATED! SANGUIMESIA IS YOURS!");
             AudioManager.Manager.StopMusic("LevelMusic");
