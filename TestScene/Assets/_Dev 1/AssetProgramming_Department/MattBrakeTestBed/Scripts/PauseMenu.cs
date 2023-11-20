@@ -47,7 +47,7 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
         AudioManager.Manager.PlaySFX("UI_Click");
         pauseMenuUI.SetActive(false);
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("Main Menu Animated");
         AudioManager.Manager.StopMusic("LevelMusic");
         
        // loadingScreen.enabled = true;
