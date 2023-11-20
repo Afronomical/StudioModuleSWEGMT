@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2560
     height: 1357.3334
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Debug
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 150}
   m_MaxSize: {x: 24288, y: 24288}
   vertical: 0
-  controlID: 116
+  controlID: 122
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -126,7 +126,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 150}
   m_MaxSize: {x: 16192, y: 24288}
   vertical: 1
-  controlID: 117
+  controlID: 123
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -222,7 +222,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 0
-  controlID: 118
+  controlID: 91
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -319,8 +319,8 @@ MonoBehaviour:
     y: 0
     width: 379.99988
     height: 1050.6666
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -407,7 +407,7 @@ MonoBehaviour:
       y: 21
       width: 1875.3334
       height: 528.6666
-    m_Scale: {x: 1.4219141, y: 1.4219143}
+    m_Scale: {x: 1.4142535, y: 1.4142535}
     m_Translation: {x: 937.6667, y: 264.3333}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -415,10 +415,10 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -659.43976
-      y: -185.8996
-      width: 1318.8795
-      height: 371.7992
+      x: -663.0118
+      y: -186.9066
+      width: 1326.0236
+      height: 373.8132
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 2813, y: 824.49994}
@@ -916,9 +916,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -53.36961, y: 4.2841787, z: 0.030267723}
+    m_Target: {x: -45.843582, y: 3.6161494, z: 0.01716572}
     speed: 2
-    m_Value: {x: -53.36961, y: 4.2841787, z: 0.030267723}
+    m_Value: {x: -45.843582, y: 3.6161494, z: 0.01716572}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -968,9 +968,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 2.969046
+    m_Target: 5.4588575
     speed: 2
-    m_Value: 2.969046
+    m_Value: 5.4588575
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1034,9 +1034,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 348a0000
-      m_LastClickedID: 35380
-      m_ExpandedIDs: a4f2fffff4fafffff4ffffffa48a0000c08a0000
+      m_SelectedIDs: 5c9e0000
+      m_LastClickedID: 40540
+      m_ExpandedIDs: 54e4ffff10e8fffff4ffffff409e00005c9e0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1107,7 +1107,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/_Dev 1/GameplayProgram_Department/Liam Edwards
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1117,16 +1117,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/_Dev 1/GameplayProgram_Department/Liam Edwards
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\maxpi\Documents\GitHub\StudioModuleSWEGMT\TestScene
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 689c0000
-    m_LastClickedID: 40040
-    m_ExpandedIDs: 00000000689c000000ca9a3b
+    scrollPos: {x: 0, y: 24.333252}
+    m_SelectedIDs: e6d90000
+    m_LastClickedID: 55782
+    m_ExpandedIDs: 0000000082a8000042b80000dad9000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1154,7 +1154,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000689c0000
+    m_ExpandedIDs: 0000000082a80000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1179,8 +1179,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: c2ecfeff
-    m_LastClickedInstanceID: -70462
+    m_SelectedInstanceIDs: 2858f9ff
+    m_LastClickedInstanceID: -436184
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000607a0000067a00000000000026b00000327600004c2f0300
     m_RenameOverlay:
