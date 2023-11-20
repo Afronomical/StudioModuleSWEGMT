@@ -236,7 +236,7 @@ public class playerAttack : MonoBehaviour
         yield return new WaitForSeconds(parryFeedbackLength);
         parryLight.SetActive(false);
     }
-    }
+    
 
     void ExecuteHeavyAttack()
     {
