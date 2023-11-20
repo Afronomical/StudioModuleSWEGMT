@@ -11,11 +11,13 @@ public class WinnerScreenButtons : MonoBehaviour
   public void EndGame()
     {
         SceneManager.LoadScene("Credits");
+        AudioManager.Manager.StopMusic("BossMusic");
         AudioManager.Manager.PlayMusic("Credits"); 
     }
 
     public void Menu()
     {
+        AudioManager.Manager.StopMusic("BossMusic"); 
         SceneManager.LoadScene("Main Menu Animated"); 
     }
 }
