@@ -80,6 +80,6 @@ visualCanvas.enabled = false;
 
     public void BackToMenu()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene("Main Menu Animated");
     }
 }

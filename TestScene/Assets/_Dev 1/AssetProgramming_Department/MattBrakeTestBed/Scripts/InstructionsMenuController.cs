@@ -14,7 +14,7 @@ public class InstructionsMenuController : MonoBehaviour
     public void Back()
     {
         AudioManager.Manager.PlaySFX("UI_Click");
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene("Main Menu Animated");
         //Debug.Log("Back to main menu!");
     }
 
