@@ -15,6 +15,7 @@ TagManager:
   - RangedHunter
   - Projectile
   - Bullet
+  - CanvasTrigger
   layers:
   - Default
   - TransparentFX

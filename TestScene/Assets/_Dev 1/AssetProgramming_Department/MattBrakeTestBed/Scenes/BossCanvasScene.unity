@@ -519,29 +519,14 @@ GameObject:
   m_Component:
   - component: {fileID: 553670330}
   - component: {fileID: 553670329}
-  - component: {fileID: 553670328}
+  - component: {fileID: 553670331}
   m_Layer: 0
   m_Name: CanvasTrigger
-  m_TagString: Untagged
+  m_TagString: CanvasTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &553670328
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 553670327}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0d73335e4bb83d4d9817828964543ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BossCanvas: {fileID: 1943996997}
-  bossCanvasGroup: {fileID: 1943996996}
-  fadeIn: 0
 --- !u!61 &553670329
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -597,12 +582,27 @@ Transform:
   m_GameObject: {fileID: 553670327}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.09, y: -5.43, z: 0.023991726}
+  m_LocalPosition: {x: -0.01, y: -5.43, z: 0.023991726}
   m_LocalScale: {x: 7.5875, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &553670331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553670327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0d73335e4bb83d4d9817828964543ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BossCanvas: {fileID: 1943996997}
+  bossCanvasGroup: {fileID: 1943996996}
+  fadeIn: 0
 --- !u!1 &695261192
 GameObject:
   m_ObjectHideFlags: 0
@@ -31770,7 +31770,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 31565795281301039, guid: ad122001bbfdcde4290e4f18d62c6328, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.05
+      value: -8
       objectReference: {fileID: 0}
     - target: {fileID: 31565795281301039, guid: ad122001bbfdcde4290e4f18d62c6328, type: 3}
       propertyPath: m_LocalPosition.z
@@ -37101,6 +37101,10 @@ PrefabInstance:
     - target: {fileID: 4615694013143893861, guid: d65ea9b04ca3fea4e9c0b40a0a44ac79, type: 3}
       propertyPath: m_Name
       value: BossCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 5118492507342958072, guid: d65ea9b04ca3fea4e9c0b40a0a44ac79, type: 3}
+      propertyPath: m_Alpha
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7865808534844621312, guid: d65ea9b04ca3fea4e9c0b40a0a44ac79, type: 3}
       propertyPath: Boss
