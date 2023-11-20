@@ -234,7 +234,7 @@ public class playerAttack : MonoBehaviour
     }
     IEnumerator parryFeedBack()
     {
-        //place parry sounds here
+        AudioManager.Manager.PlaySFX("Parry");
         parryLight.GetComponent<Light2D>().enabled = true;
         yield return new WaitForSeconds(parryFeedbackLength);
         parryLight.GetComponent<Light2D>().enabled = false;

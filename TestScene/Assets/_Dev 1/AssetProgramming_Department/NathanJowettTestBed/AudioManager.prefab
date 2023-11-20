@@ -165,6 +165,13 @@ MonoBehaviour:
     pitch: 1
     Loop: 0
     source: {fileID: 0}
+  - Name: Parry
+    clip: {fileID: 8300000, guid: 80151380c0f818243b66a78ef69c9fcd, type: 3}
+    MixerGroup: {fileID: 2237963358354840850, guid: b61dca9e8894f664fb0ce150b9ed8070, type: 2}
+    volume: 0.39
+    pitch: 1
+    Loop: 0
+    source: {fileID: 0}
   Music:
   - Name: MenuMusic
     clip: {fileID: 8300000, guid: e2a073a65e81749fdb085ab52ae881e6, type: 3}
