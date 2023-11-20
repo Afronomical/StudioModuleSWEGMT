@@ -6,13 +6,24 @@ public class BossCanvasActivate : MonoBehaviour
 {
     public Canvas BossCanvas;
     public CanvasGroup bossCanvasGroup;
-    public bool fadeIn;
-
-
+    public bool fadeIn; 
+    
+    
     // Start is called before the first frame update
     void Start()
     {
-        //bossCanvasGroup.alpha = 0f; 
+        bossCanvasGroup.alpha = 0;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision != null)
+        {
+            if(collision.CompareTag("Player"))
+            {
+                fadeIn= true;
+            }
+        }
     }
 
     // Update is called once per frame
@@ -22,7 +33,7 @@ public class BossCanvasActivate : MonoBehaviour
         {
             if (bossCanvasGroup.alpha < 1)
             {
-                bossCanvasGroup.alpha += Time.deltaTime;
+               bossCanvasGroup.alpha += Time.deltaTime;
                 if (bossCanvasGroup.alpha >= 1)
                 {
                     fadeIn = false;
@@ -30,20 +41,4 @@ public class BossCanvasActivate : MonoBehaviour
             }
         }
     }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision != null)
-        {
-            if (collision.CompareTag("Player"))
-            {
-                fadeIn = true;
-            }
-        }
-    }
-
-
-
 }
-
-   
