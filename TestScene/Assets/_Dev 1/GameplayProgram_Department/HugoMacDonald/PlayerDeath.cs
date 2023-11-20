@@ -195,7 +195,7 @@ public class PlayerDeath : MonoBehaviour
         //    //animator.SetTrigger("Die"); // Make sure your Animator has a "Die" trigger.
         //}
 
-        gameObject.SetActive(false);
+       // gameObject.SetActive(false);
         //Instantiate(...);              //spawn "YOU DIED" ui
         Invoke("deathAfterDelay", 1f);
     }

@@ -13,7 +13,8 @@ public class DeathScreenButtons : MonoBehaviour
    {
         AudioManager.Manager.PlaySFX("UI_Click");
         AudioManager.Manager.StopMusic("GameOver");
-        SceneManager.LoadScene("Level 1 ");
+        SceneManager.LoadScene("Level 1");
+        SetSpawnpoint.instance.ResetPosition();
    }
 
     public void Menu()
