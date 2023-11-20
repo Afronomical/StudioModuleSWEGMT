@@ -19,8 +19,12 @@ public class BossHealthBar : MonoBehaviour
 
     public float PhaseTwo;
     public float PhaseThree;
+    public Canvas bossCanvas; 
     public Canvas winnerScreen;
     public CanvasGroup winnerScreenCanvas;
+
+    public EndScreen endScreen;
+    
   
     
     public enum BossPhase
@@ -86,10 +90,12 @@ public class BossHealthBar : MonoBehaviour
         if(targetValue <= BossSlider.minValue)
         {
             ToolTipManager.ShowBottomToolTip_Static("DEFEATED! SANGUIMESIA IS YOURS!");
-            AudioManager.Manager.StopMusic("LevelMusic");
+            //AudioManager.Manager.StopMusic("LevelMusic");
            // StartCoroutine(WinSFX()); 
             //AudioManager.Manager.PlaySFX("Dodge");
-            AudioManager.Manager.PlaySFX("WIN");
+            //AudioManager.Manager.PlaySFX("WIN");
+            endScreen.ShowUI();
+
         }
 
         UpdateHealthBarColour();
@@ -113,11 +119,13 @@ public class BossHealthBar : MonoBehaviour
             //StartCoroutine(StartBlink());
             //StopCoroutine(StartBlink()); 
         }
-        if(targetValue <= 0)
+        if(AICharacter.health <= 0)
         {
             //die 
-            winnerScreen.enabled = true;
-            winnerScreenCanvas.alpha= 1.0f;
+            //winnerScreen.enabled = true;
+           // bossCanvas.enabled = false;
+           // winnerScreen.enabled = true;
+           
         }
 
     }
