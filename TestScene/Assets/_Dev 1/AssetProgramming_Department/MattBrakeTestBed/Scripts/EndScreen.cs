@@ -42,8 +42,8 @@ public class EndScreen : MonoBehaviour
     public void ShowUI()
     {
         EndScreenCanvasGroup.alpha = 1;
-        mainCanvas.enabled = false;
         EndScreenCanvas.enabled = true;
+        //mainCanvas.enabled = false;
         EndScreenCanvasGroup.interactable = true;
         SetButtonsInteractable(true);
         fadeIn = true;
@@ -55,7 +55,7 @@ public class EndScreen : MonoBehaviour
     {
         // deathScreenCanvasGroup.alpha = 0;
         EndScreenCanvasGroup.interactable = false;          //////stops all interaction behind the scene 
-        mainCanvas.enabled = true; 
+        //mainCanvas.enabled = true; 
         fadeOut = true;
         SetButtonsInteractable(false);
         EndScreenCanvas.enabled = false;

@@ -9453,6 +9453,16 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!223 &217604495 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 2995289403889696267, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
+  m_PrefabInstance: {fileID: 2133233163}
+  m_PrefabAsset: {fileID: 0}
+--- !u!225 &217604497 stripped
+CanvasGroup:
+  m_CorrespondingSourceObject: {fileID: 4411536573361216581, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
+  m_PrefabInstance: {fileID: 2133233163}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &268174740
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10052,6 +10062,11 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1.78125}
   m_EdgeRadius: 0
+--- !u!224 &984115240 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8902011787197866989, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
+  m_PrefabInstance: {fileID: 2133233163}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1020275928 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8476325947453187417, guid: 77bba42740dfd634c8b3d900c4fa1d4f, type: 3}
@@ -31313,7 +31328,7 @@ PrefabInstance:
     - target: {fileID: 8811865619863605101, guid: 99d0183fde40a224eae3632a6b0caf96, type: 3}
       propertyPath: deathscreenCanvas
       value: 
-      objectReference: {fileID: 2133233165}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31466,6 +31481,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!223 &2132067089 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 9072885035934138857, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
+  m_PrefabInstance: {fileID: 2133233163}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2133233163
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31562,12 +31582,20 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2231328316824964116, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
+      propertyPath: SpinTimer
+      value: 
+      objectReference: {fileID: 984115240}
     - target: {fileID: 2980688281692362530, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2980688281692362530, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4411536573361216581, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
+      propertyPath: m_Alpha
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4615694013143893861, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
@@ -31582,6 +31610,18 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8208048905792183955, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
+      propertyPath: mainCanvas
+      value: 
+      objectReference: {fileID: 2132067089}
+    - target: {fileID: 8208048905792183955, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
+      propertyPath: EndScreenCanvas
+      value: 
+      objectReference: {fileID: 217604495}
+    - target: {fileID: 8208048905792183955, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
+      propertyPath: EndScreenCanvasGroup
+      value: 
+      objectReference: {fileID: 217604497}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31596,17 +31636,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8dab25084a54d2e41a426b14ddace027, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2133233165 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 341149872676145550, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
-  m_PrefabInstance: {fileID: 2133233163}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9762afe9ff8f6ed42b6a41418b8faf38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &2133233166 stripped

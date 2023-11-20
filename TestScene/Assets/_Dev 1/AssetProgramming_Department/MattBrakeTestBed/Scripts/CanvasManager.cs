@@ -8,6 +8,8 @@ public class CanvasManager : MonoBehaviour
 
     public HungerBar hungerBarUI;
     public ToolTipManager toolTipManager;
+    public EndScreen deathScreenCanvas;
+    public CountdownTimer countdownTimer;
 
     private void Awake()
     {
@@ -26,5 +28,7 @@ public class CanvasManager : MonoBehaviour
     {
         hungerBarUI = Object.FindFirstObjectByType<HungerBar>();
         toolTipManager = Object.FindFirstObjectByType<ToolTipManager>();
+        deathScreenCanvas = Object.FindFirstObjectByType<EndScreen>();
+        countdownTimer = Object.FindFirstObjectByType<CountdownTimer>();
     }
 }

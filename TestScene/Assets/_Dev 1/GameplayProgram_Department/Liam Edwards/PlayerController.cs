@@ -89,7 +89,7 @@ public class PlayerController : MonoBehaviour
 
         
 
-        if (!playerDeath.IsDead())
+        if (!playerDeath.GetIsDead())
         {
             if (isDodging)
             {
@@ -146,7 +146,7 @@ public class PlayerController : MonoBehaviour
             !animationController.IsAnimationPlaying(animator, PlayerAnimationController.AnimationStates.Death) &&
             !animationController.IsAnimationPlaying(animator, PlayerAnimationController.AnimationStates.Feed))
         {
-            if (!playerDeath.IsDead())
+            if (!playerDeath.GetIsDead())
             {
                 if (movementInput != Vector2.zero)
                 {

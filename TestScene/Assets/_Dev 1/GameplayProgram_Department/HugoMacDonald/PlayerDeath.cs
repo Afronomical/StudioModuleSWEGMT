@@ -1,6 +1,7 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 
 public class PlayerDeath : MonoBehaviour
@@ -32,6 +33,9 @@ public class PlayerDeath : MonoBehaviour
     private bool isDead = false;
     private bool isDamaged = false;
 
+    public BoxCollider2D[] boxColliders;
+    public void SetIsDead(bool isDead) {  this.isDead = isDead; }
+
     private void Start()
     {
         isDead = false;
@@ -39,6 +43,7 @@ public class PlayerDeath : MonoBehaviour
         healthBarScript.setMaxHealth(maxHealth);
         animator = GetComponent<Animator>();
         animationController = GetComponent<PlayerAnimationController>();
+        boxColliders = GetComponents<BoxCollider2D>();
     }
 
     private void Update()
@@ -202,7 +207,12 @@ public class PlayerDeath : MonoBehaviour
     private void deathAfterDelay()
     {
         AudioManager.Manager.StopMusic("LevelMusic");
-        deathscreenCanvas.ShowUI();
+        CanvasManager.Instance.deathScreenCanvas.ShowUI();
+        foreach (BoxCollider2D boxCollider in boxColliders)
+        {
+            if (boxCollider.isTrigger)
+                boxCollider.enabled = false;
+        }
         AudioManager.Manager.PlayMusic("GameOver");
        
         //SceneManager.LoadScene("MainMenu");
@@ -227,7 +237,7 @@ public class PlayerDeath : MonoBehaviour
         Destroy(go, 1f); 
     }
 
-    public bool IsDead()
+    public bool GetIsDead()
     {
         return isDead;
     }
