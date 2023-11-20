@@ -64,13 +64,13 @@ public class BossHealthBar : MonoBehaviour
     public void SetBossHealth()
     {
         targetValue = AICharacter.health;
-        if(targetValue == BossSlider.maxValue/2)
+        if(targetValue == 75)
         {
             EnterPhase(BossPhase.Two);
             Debug.Log("Entering Phase 2 ");
            // StartCoroutine(StartBlink());
         }
-        if(targetValue == BossSlider.maxValue/3)
+        if(targetValue == 40)
         {
             Debug.Log("Entering Phase 3 ");
             EnterPhase(BossPhase.Three);
