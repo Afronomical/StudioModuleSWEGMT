@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class playerAttack : MonoBehaviour
 {
@@ -149,10 +150,11 @@ public class playerAttack : MonoBehaviour
         float angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
         hitBox.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward); //swap "angle" with another 0 if cam is another angle
         heavyHitBox.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward); //swap "angle" with another 0 if cam is another angle
+        Debug.Log("ATTACKKKKKKKIINNGGGG");
         //calls damage enemy when LMB is pressed
         if (Input.GetKey(KeyCode.Mouse0))
         {
-           
+            Debug.Log("ATTACKKKKKKKIINNGGGG");
             animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.SlashAttack);
 
             AudioManager.Manager.PlaySFX("PlayerAttack");
@@ -209,12 +211,12 @@ public class playerAttack : MonoBehaviour
         }
         
 
-        if (Input.GetKeyDown(KeyCode.Mouse1) && gameObject.GetComponent<PlayerDeath>().recParryAttack && !coolDownParry)
+        if (Input.GetKeyDown(KeyCode.Q) && gameObject.GetComponent<PlayerDeath>().recParryAttack && !coolDownParry)
         {
             parrying = true;
             StartCoroutine(parryFeedBack());
         }
-        else if (Input.GetKeyDown(KeyCode.Mouse1))
+        else if (Input.GetKeyDown(KeyCode.Q))
         {
             coolDownParry = true;
             Debug.Log("parry cooling down");
@@ -232,9 +234,9 @@ public class playerAttack : MonoBehaviour
     }
     IEnumerator parryFeedBack()
     {
-        parryLight.SetActive(true);
+        parryLight.GetComponent<Light2D>().enabled = true;
         yield return new WaitForSeconds(parryFeedbackLength);
-        parryLight.SetActive(false);
+        parryLight.GetComponent<Light2D>().enabled = false;
     }
     
 
