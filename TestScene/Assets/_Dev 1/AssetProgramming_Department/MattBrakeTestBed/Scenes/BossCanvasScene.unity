@@ -36747,7 +36747,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8053255959442060808, guid: 3246b6fa5942f2a439e4abd7ef57e2b9, type: 3}
       propertyPath: health
-      value: 6
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8053255959442060808, guid: 3246b6fa5942f2a439e4abd7ef57e2b9, type: 3}
       propertyPath: player
@@ -36759,7 +36759,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8053255959442060808, guid: 3246b6fa5942f2a439e4abd7ef57e2b9, type: 3}
       propertyPath: startingHealth
-      value: 6
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8282624766971018035, guid: 3246b6fa5942f2a439e4abd7ef57e2b9, type: 3}
       propertyPath: m_LocalPosition.x
