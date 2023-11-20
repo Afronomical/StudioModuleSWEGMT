@@ -16,6 +16,9 @@ public class BossHealthBar : MonoBehaviour
     public GameObject Boss;
     private AICharacter AICharacter;
     public BlinkEffect BlinkEffect;
+
+    public int PhaseTwo = 75;
+    public int PhaseThree = 40;
   
     
     public enum BossPhase
@@ -64,13 +67,13 @@ public class BossHealthBar : MonoBehaviour
     public void SetBossHealth()
     {
         targetValue = AICharacter.health;
-        if(targetValue < 75 && targetValue > 40)
+        if(targetValue < PhaseTwo && targetValue > PhaseThree)
         {
             EnterPhase(BossPhase.Two);
             Debug.Log("Entering Phase 2 ");
            // StartCoroutine(StartBlink());
         }
-        if(targetValue <= 40)
+        if(targetValue <= PhaseThree)
         {
             Debug.Log("Entering Phase 3 ");
             EnterPhase(BossPhase.Three);
