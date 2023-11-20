@@ -560,12 +560,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0ccf63133d2cab45a4f43c48863c07e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  masterVolume: 0
-  musicVolume: 0
-  sfxVolume: 0
-  masterVolume_slider: {fileID: 0}
-  musicVolume_slider: {fileID: 0}
-  sfxVolume_slider: {fileID: 0}
   brightness: 0
 --- !u!1001 &509267606
 PrefabInstance:
@@ -663,6 +657,14 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2980688281692362530, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2980688281692362530, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4615694013143893861, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
       propertyPath: m_Name
       value: CanvasPrefab
@@ -678,6 +680,10 @@ PrefabInstance:
     - target: {fileID: 6735579504183721518, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7711175167643033123, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
+      propertyPath: m_MaxValue
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
