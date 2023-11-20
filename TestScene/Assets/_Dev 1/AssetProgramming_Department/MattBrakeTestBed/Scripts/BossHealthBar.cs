@@ -17,8 +17,8 @@ public class BossHealthBar : MonoBehaviour
     private AICharacter AICharacter;
     public BlinkEffect BlinkEffect;
 
-    public int PhaseTwo = 75;
-    public int PhaseThree = 40;
+    public float PhaseTwo;
+    public float PhaseThree;
   
     
     public enum BossPhase
@@ -35,6 +35,8 @@ public class BossHealthBar : MonoBehaviour
         //fillImage = slider.fillRect.GetComponent<Image>();
         currentValue = BossSlider.value;
         targetValue = BossSlider.value;
+        PhaseTwo = BossSlider.maxValue * 0.75f;
+        PhaseThree = BossSlider.maxValue * 0.4f;
         Phase = BossPhase.One;
         BlinkEffect.enabled = false; 
         ToolTipManager.ShowBottomToolTip_Static("Phase: " + Phase);
