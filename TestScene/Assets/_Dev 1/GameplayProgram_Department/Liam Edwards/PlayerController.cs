@@ -31,7 +31,8 @@ public class PlayerController : MonoBehaviour
     bool canDodge;   
     bool isSprinting;
     
-
+    public PlayerDeath GetPlayerDeath() => playerDeath;
+    public Feeding GetFeeding() => GetComponent<Feeding>();
 
     public GameObject playerMesh;
     public GameObject batMesh;

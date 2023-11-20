@@ -18,11 +18,6 @@ public class CountdownTimer : MonoBehaviour
 
     private void Awake()
     {
-        if (FindAnyObjectByType(typeof(CountdownTimer)))
-        {
-            DontDestroyOnLoad(this.transform.parent);
-
-        }
     }
 
     void Start()

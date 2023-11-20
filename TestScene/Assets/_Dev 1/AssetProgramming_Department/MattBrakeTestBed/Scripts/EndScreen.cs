@@ -41,7 +41,7 @@ public class EndScreen : MonoBehaviour
 
     public void ShowUI()
     {
-         //deathScreenCanvasGroup.alpha = 1;
+        EndScreenCanvasGroup.alpha = 1;
         mainCanvas.enabled = false;
         EndScreenCanvas.enabled = true;
         EndScreenCanvasGroup.interactable = true;
