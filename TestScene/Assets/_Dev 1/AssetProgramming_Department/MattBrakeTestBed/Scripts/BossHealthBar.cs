@@ -36,7 +36,7 @@ public class BossHealthBar : MonoBehaviour
         currentValue = BossSlider.value;
         targetValue = BossSlider.value;
         PhaseTwo = BossSlider.maxValue * 0.75f;
-        PhaseThree = BossSlider.maxValue * 0.4f;
+        PhaseThree = BossSlider.maxValue * 0.4f; 
         Phase = BossPhase.One;
         BlinkEffect.enabled = false; 
         ToolTipManager.ShowBottomToolTip_Static("Phase: " + Phase);
