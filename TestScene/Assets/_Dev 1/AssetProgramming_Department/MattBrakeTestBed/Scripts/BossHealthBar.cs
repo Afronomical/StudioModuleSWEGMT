@@ -19,6 +19,8 @@ public class BossHealthBar : MonoBehaviour
 
     public float PhaseTwo;
     public float PhaseThree;
+    public Canvas winnerScreen;
+    public CanvasGroup winnerScreenCanvas;
   
     
     public enum BossPhase
@@ -109,6 +111,12 @@ public class BossHealthBar : MonoBehaviour
         {
             //StartCoroutine(StartBlink());
             //StopCoroutine(StartBlink()); 
+        }
+        if(targetValue <= 0)
+        {
+            //die 
+            winnerScreen.enabled = true;
+            winnerScreenCanvas.alpha= 1.0f;
         }
 
     }
