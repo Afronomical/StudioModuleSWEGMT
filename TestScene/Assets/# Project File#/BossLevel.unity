@@ -12332,34 +12332,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1179504536170853492, guid: b8a25120f27211649961e823cb72465d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 489935210}
-    - target: {fileID: 1179504536170853492, guid: b8a25120f27211649961e823cb72465d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: EndGame
-      objectReference: {fileID: 0}
-    - target: {fileID: 1179504536170853492, guid: b8a25120f27211649961e823cb72465d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: WinnerScreenButtons, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 3864151867386537364, guid: b8a25120f27211649961e823cb72465d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 489935208}
-    - target: {fileID: 3864151867386537364, guid: b8a25120f27211649961e823cb72465d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4493793324972073359, guid: b8a25120f27211649961e823cb72465d, type: 3}
-      propertyPath: m_Alpha
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4493793324972073359, guid: b8a25120f27211649961e823cb72465d, type: 3}
-      propertyPath: m_Interactable
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5048892723925279968, guid: b8a25120f27211649961e823cb72465d, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -12448,66 +12420,20 @@ PrefabInstance:
       propertyPath: mainCanvas
       value: 
       objectReference: {fileID: 603638634}
-    - target: {fileID: 7124853586828354191, guid: b8a25120f27211649961e823cb72465d, type: 3}
-      propertyPath: EndScreenCanvas
-      value: 
-      objectReference: {fileID: 1744178238}
-    - target: {fileID: 7124853586828354191, guid: b8a25120f27211649961e823cb72465d, type: 3}
-      propertyPath: EndScreenCanvasGroup
-      value: 
-      objectReference: {fileID: 1744178235}
-    - target: {fileID: 7124853586828354191, guid: b8a25120f27211649961e823cb72465d, type: 3}
-      propertyPath: 'buttons.Array.data[0]'
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8186194209108518435, guid: b8a25120f27211649961e823cb72465d, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 9068928662446217353, guid: b8a25120f27211649961e823cb72465d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 489935210}
-    - target: {fileID: 9068928662446217353, guid: b8a25120f27211649961e823cb72465d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Menu
-      objectReference: {fileID: 0}
-    - target: {fileID: 9068928662446217353, guid: b8a25120f27211649961e823cb72465d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: WinnerScreenButtons, Assembly-CSharp
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6364024621312863024, guid: b8a25120f27211649961e823cb72465d, type: 3}
-    m_RemovedGameObjects:
-    - {fileID: 3637516073053284399, guid: b8a25120f27211649961e823cb72465d, type: 3}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8a25120f27211649961e823cb72465d, type: 3}
---- !u!1 &489935208 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5980445417913561134, guid: b8a25120f27211649961e823cb72465d, type: 3}
-  m_PrefabInstance: {fileID: 489935207}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &489935209 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7124853586828354191, guid: b8a25120f27211649961e823cb72465d, type: 3}
   m_PrefabInstance: {fileID: 489935207}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 489935208}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9762afe9ff8f6ed42b6a41418b8faf38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &489935210 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4437083628349428354, guid: b8a25120f27211649961e823cb72465d, type: 3}
-  m_PrefabInstance: {fileID: 489935207}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 489935208}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 719a1b0d146b4b245bfa6fe0bb05fbf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &495588440

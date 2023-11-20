@@ -678,7 +678,7 @@ CanvasGroup:
   m_GameObject: {fileID: 5980445417913561134}
   m_Enabled: 1
   m_Alpha: 1
-  m_Interactable: 1
+  m_Interactable: 0
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
 --- !u!114 &7124853586828354191
@@ -697,9 +697,8 @@ MonoBehaviour:
   EndScreenCanvas: {fileID: 198126288158325366}
   mainCanvas: {fileID: 0}
   buttons:
-  - {fileID: 0}
-  - {fileID: 9068928662446217353}
   - {fileID: 1179504536170853492}
+  - {fileID: 9068928662446217353}
   hintText: {fileID: 0}
   fadeIn: 0
   fadeOut: 0
