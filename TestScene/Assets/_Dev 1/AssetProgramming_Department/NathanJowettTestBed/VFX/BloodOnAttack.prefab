@@ -18,7 +18,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2363943109936183431, guid: 45f3163cacf94ec449e2748b6aea4e1c, type: 3}
       propertyPath: InitialModule.maxNumParticles
-      value: 50
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 2363943109936183431, guid: 45f3163cacf94ec449e2748b6aea4e1c, type: 3}
       propertyPath: InitialModule.startSize.scalar
@@ -39,6 +39,10 @@ PrefabInstance:
     - target: {fileID: 2363943109936183431, guid: 45f3163cacf94ec449e2748b6aea4e1c, type: 3}
       propertyPath: InitialModule.startSizeZ.minMaxState
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2363943109936183431, guid: 45f3163cacf94ec449e2748b6aea4e1c, type: 3}
+      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.scalar
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 2526560092308074482, guid: 45f3163cacf94ec449e2748b6aea4e1c, type: 3}
       propertyPath: m_LocalPosition.x

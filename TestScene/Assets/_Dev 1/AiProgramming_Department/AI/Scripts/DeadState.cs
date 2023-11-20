@@ -13,7 +13,7 @@ public class DeadState : StateBaseClass
     {
         animController = transform.GetComponentInChildren<AIAnimationController>();
         anim = transform.GetComponentInChildren<Animator>();
-        AudioManager.Manager.PlaySFX("NPC_Death");
+        //AudioManager.Manager.PlaySFX("NPC_Death");
     }
 
 
@@ -23,7 +23,7 @@ public class DeadState : StateBaseClass
         if (animController != null && anim != null)
         {
             character.gameObject.GetComponent<CircleCollider2D>().enabled = false; //Player can't push AI whilst they're death animation is playing
-            Invoke("DisableAfterDeath", 1);
+            Invoke("DisableAfterDeath", 0.075f);
         }
     }
 

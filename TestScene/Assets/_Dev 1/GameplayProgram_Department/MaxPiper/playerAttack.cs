@@ -155,9 +155,9 @@ public class playerAttack : MonoBehaviour
         if (Input.GetKey(KeyCode.Mouse0))
         {
             
-            animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.SlashAttack);
+            //animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.SlashAttack);
+            //AudioManager.Manager.PlaySFX("PlayerAttack");
 
-            AudioManager.Manager.PlaySFX("PlayerAttack");
             if (canHit && feeding.currentlyFeeding == false)
             {
                 animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.SlashAttack);
@@ -171,7 +171,7 @@ public class playerAttack : MonoBehaviour
             
         }
 
-        if (Input.GetKey(KeyCode.Mouse1)) // Assuming Mouse1 is the input for heavy attack
+        if (Input.GetKeyDown(KeyCode.Mouse1)) // Assuming Mouse1 is the input for heavy attack
         {
             // Start charging the heavy attack
             if (!isChargingAttack)
@@ -190,6 +190,9 @@ public class playerAttack : MonoBehaviour
 
                 if (heavyChargeTimer <= 0)
                 {
+                    animator.SetTrigger("AttackSlash");
+                    AudioManager.Manager.PlaySFX("PlayerAttack");
+                    animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.SlashAttack);
                     ExecuteHeavyAttack();
                     heavyChargeTimer = heavyChargeTime;
                     isChargingAttack = false;

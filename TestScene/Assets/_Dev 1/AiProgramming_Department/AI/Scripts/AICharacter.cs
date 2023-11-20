@@ -240,7 +240,7 @@ public class AICharacter : MonoBehaviour
         Vector3 offset = new Vector3(0, 1, 0);
         var go = Instantiate(floatingDamage, transform.position + offset, Quaternion.identity);
         go.GetComponent<TextMesh>().text = damage.ToString();
-        Debug.Log("Floating Damage" + "Enemy Pos" + transform.position + "Spawn Pos " + transform.position + offset);
+        //Debug.Log("Floating Damage" + "Enemy Pos" + transform.position + "Spawn Pos " + transform.position + offset);
 
         Destroy(go, 1f);
     }

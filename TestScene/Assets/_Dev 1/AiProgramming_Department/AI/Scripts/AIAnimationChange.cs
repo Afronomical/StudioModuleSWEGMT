@@ -16,6 +16,7 @@ public class AIAnimationChange : MonoBehaviour
     //public Animator slashEffect;
 
     private bool characterAttacking = false;
+    public bool characterHasDied = false;
 
     
 
@@ -85,7 +86,12 @@ public class AIAnimationChange : MonoBehaviour
                     animController.ChangeAnimationState(AIAnimationController.AnimationStates.BowAttack);
                     break;
                 case AICharacter.States.Dead:
-                    animController.ChangeAnimationState(AIAnimationController.AnimationStates.Death);
+                    if (!characterHasDied)
+                    {
+                        animController.ChangeAnimationState(AIAnimationController.AnimationStates.Death);
+                        AudioManager.Manager.PlaySFX("NPC_Death");
+                        characterHasDied = true;
+                    }
                     break;
                 case AICharacter.States.SpecialAttack:
                     animController.ChangeAnimationState(AIAnimationController.AnimationStates.BowAttack);
@@ -98,7 +104,6 @@ public class AIAnimationChange : MonoBehaviour
                     break;
                 case AICharacter.States.Alerted:
                     animController.ChangeAnimationState(AIAnimationController.AnimationStates.Alerted);
-                    
                     break;
 
 

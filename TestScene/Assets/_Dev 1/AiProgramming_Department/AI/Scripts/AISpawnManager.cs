@@ -79,6 +79,7 @@ public class AISpawnManager : MonoBehaviour
         enemySprite.GetComponent<Animator>().SetFloat("MovementX", 0);
         enemySprite.GetComponent<Animator>().SetFloat("MovementY", -1);
         enemy.SetActive(true);  // Make the enemy appear
+        enemySprite.GetComponent<AIAnimationChange>().characterHasDied = false;
 
         yield return new WaitForSeconds(doorCloseTime);
         spawnPoint.gameObject.GetComponent<SpriteRenderer>().color = Color.white;  // Close the door
