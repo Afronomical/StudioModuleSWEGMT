@@ -103,9 +103,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'STATS
-
-'
+  m_text: END GAME
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -716,7 +714,7 @@ GameObject:
   - component: {fileID: 3174002114314476090}
   - component: {fileID: 1179504536170853492}
   m_Layer: 5
-  m_Name: Stats
+  m_Name: ENDGAME
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -824,9 +822,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6364024621312863024}
-        m_TargetAssemblyTypeName: DeathScreenButtons, Assembly-CSharp
-        m_MethodName: Stats
+      - m_Target: {fileID: 7124853586828354191}
+        m_TargetAssemblyTypeName: DeathScreen, Assembly-CSharp
+        m_MethodName: EndGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -972,6 +970,7 @@ MonoBehaviour:
   - {fileID: 3864151867386537364}
   - {fileID: 9068928662446217353}
   - {fileID: 1179504536170853492}
+  hintText: {fileID: 0}
   fadeIn: 0
   fadeOut: 0
   fadeInSpeed: 2

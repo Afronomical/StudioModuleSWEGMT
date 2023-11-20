@@ -1,14 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 
-public class DeathScreen : MonoBehaviour
+public class EndScreen : MonoBehaviour
 {
-    public CanvasGroup deathScreenCanvasGroup;
-    public Canvas deathCanvas;
+    public CanvasGroup EndScreenCanvasGroup;
+    public Canvas EndScreenCanvas;
     public Canvas mainCanvas;
     public Button[] buttons;
     public TextMeshProUGUI hintText; 
@@ -27,8 +29,8 @@ public class DeathScreen : MonoBehaviour
     {
         //deathScreenCanvasGroup.enabled = false;
         
-        deathScreenCanvasGroup.alpha = 0; 
-        deathCanvas.enabled = false;
+        EndScreenCanvasGroup.alpha = 0; 
+        EndScreenCanvas.enabled = false;
 
         int randomIndex = Random.Range(0, hints.Count);
         hintText.text = hints[randomIndex];
@@ -41,8 +43,8 @@ public class DeathScreen : MonoBehaviour
     {
          //deathScreenCanvasGroup.alpha = 1;
         mainCanvas.enabled = false;
-        deathCanvas.enabled = true;
-        deathScreenCanvasGroup.interactable = true;
+        EndScreenCanvas.enabled = true;
+        EndScreenCanvasGroup.interactable = true;
         SetButtonsInteractable(true);
         fadeIn = true;
         
@@ -52,11 +54,11 @@ public class DeathScreen : MonoBehaviour
     public void HideUI()
     {
         // deathScreenCanvasGroup.alpha = 0;
-        deathScreenCanvasGroup.interactable = false;          //////stops all interaction behind the scene 
+        EndScreenCanvasGroup.interactable = false;          //////stops all interaction behind the scene 
         mainCanvas.enabled = true; 
         fadeOut = true;
         SetButtonsInteractable(false);
-        deathCanvas.enabled = false;
+        EndScreenCanvas.enabled = false;
         Invoke("StopGameplay", 5f);
     }
 
@@ -77,10 +79,10 @@ public class DeathScreen : MonoBehaviour
         
         if(fadeIn)
         {
-            if(deathScreenCanvasGroup.alpha < 1)
+            if(EndScreenCanvasGroup.alpha < 1)
             {
-                deathScreenCanvasGroup.alpha += Time.deltaTime;
-                if(deathScreenCanvasGroup.alpha >= 1)
+                EndScreenCanvasGroup.alpha += Time.deltaTime;
+                if(EndScreenCanvasGroup.alpha >= 1)
                 {
                     fadeIn = false;
                 }
@@ -88,10 +90,10 @@ public class DeathScreen : MonoBehaviour
         }
         if (fadeOut)
         {
-            if (deathScreenCanvasGroup.alpha > 0)
+            if (EndScreenCanvasGroup.alpha > 0)
             {
-                deathScreenCanvasGroup.alpha -= Time.deltaTime;
-                if (deathScreenCanvasGroup.alpha == 0)
+                EndScreenCanvasGroup.alpha -= Time.deltaTime;
+                if (EndScreenCanvasGroup.alpha == 0)
                 {
                     fadeOut = false;
                 }
@@ -111,5 +113,11 @@ public class DeathScreen : MonoBehaviour
     {
         Time.timeScale = 0f;
     }
+
+
+    //public void EndGame()
+    //{
+    //    SceneManager.LoadScene("Credits");
+    //}
 
 }

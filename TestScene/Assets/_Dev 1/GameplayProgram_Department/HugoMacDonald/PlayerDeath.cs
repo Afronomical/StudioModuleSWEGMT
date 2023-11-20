@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class PlayerDeath : MonoBehaviour
 {
 
-    public DeathScreen deathscreenCanvas;
+    public EndScreen deathscreenCanvas;
     private KnockBack knockBack;
     public int maxHealth = 100;
     public int currentHealth;
