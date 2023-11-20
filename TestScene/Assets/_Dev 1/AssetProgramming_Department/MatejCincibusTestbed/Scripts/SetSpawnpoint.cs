@@ -8,6 +8,8 @@ public class SetSpawnpoint : MonoBehaviour
     void Start()
     {
         PlayerController.Instance.transform.position = transform.position;
+        
+       
     }
 
     // Update is called once per frame
