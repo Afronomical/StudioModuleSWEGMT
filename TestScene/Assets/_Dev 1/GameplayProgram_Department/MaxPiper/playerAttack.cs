@@ -180,6 +180,15 @@ public class playerAttack : MonoBehaviour
             }
         }
 
+        if (Input.GetKeyUp(KeyCode.Mouse1))
+        {
+            if (isChargingAttack)
+            {
+                isChargingAttack = false;
+                heavyChargeTimer = heavyChargeTime;
+            }
+        }
+
         if (isChargingAttack)
         {
             if (heavyChargeTimer > 0)
