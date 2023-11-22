@@ -42,6 +42,7 @@ public class VolumeSettings : MonoBehaviour
     void SetSFXVol(float value)
     {
         mixer.SetFloat(MIXER_SFX, Mathf.Log10(value) * 20);
+        AudioManager.Manager.PlaySFX("UI_Click");
     }
     private void OnDisable()
     {
