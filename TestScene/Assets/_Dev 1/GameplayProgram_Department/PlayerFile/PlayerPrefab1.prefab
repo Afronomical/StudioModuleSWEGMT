@@ -279,6 +279,7 @@ MonoBehaviour:
   toolTipManager: {fileID: 0}
   durationTime: 3
   currentlyFeeding: 0
+  BloodOnFeed: {fileID: 7214402304109910164, guid: 800319faf2619e24dba9853906389aaf, type: 3}
 --- !u!114 &8754887286368911244
 MonoBehaviour:
   m_ObjectHideFlags: 0

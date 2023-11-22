@@ -37228,11 +37228,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8474772640908459720, guid: d65ea9b04ca3fea4e9c0b40a0a44ac79, type: 3}
       propertyPath: m_Value
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8474772640908459720, guid: d65ea9b04ca3fea4e9c0b40a0a44ac79, type: 3}
       propertyPath: m_MaxValue
-      value: 6
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

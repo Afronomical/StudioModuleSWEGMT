@@ -16,6 +16,15 @@ public class BossHealthBar : MonoBehaviour
     public GameObject Boss;
     private AICharacter AICharacter;
     public BlinkEffect BlinkEffect;
+
+    public float PhaseTwo;
+    public float PhaseThree;
+    public Canvas bossCanvas; 
+    public Canvas winnerScreen;
+    public CanvasGroup winnerScreenCanvas;
+
+    public EndScreen endScreen;
+    
   
     
     public enum BossPhase
@@ -32,10 +41,13 @@ public class BossHealthBar : MonoBehaviour
         //fillImage = slider.fillRect.GetComponent<Image>();
         currentValue = BossSlider.value;
         targetValue = BossSlider.value;
+        PhaseTwo = BossSlider.maxValue * 0.75f;
+        PhaseThree = BossSlider.maxValue * 0.4f; 
         Phase = BossPhase.One;
         BlinkEffect.enabled = false; 
         ToolTipManager.ShowBottomToolTip_Static("Phase: " + Phase);
         ToolTipManager.ShowTopToolTip_Static("VUN HELLSTINC");
+       
 
         //float BossHealth = Boss.GetComponent<AICharacter>().GetHealth();
         AICharacter = Boss.GetComponent<AICharacter>();
@@ -64,24 +76,26 @@ public class BossHealthBar : MonoBehaviour
     public void SetBossHealth()
     {
         targetValue = AICharacter.health;
-        if(targetValue == 75)
+        if(targetValue < PhaseTwo && targetValue > PhaseThree)
         {
             EnterPhase(BossPhase.Two);
             Debug.Log("Entering Phase 2 ");
            // StartCoroutine(StartBlink());
         }
-        if(targetValue == 40)
+        if(targetValue <= PhaseThree)
         {
             Debug.Log("Entering Phase 3 ");
             EnterPhase(BossPhase.Three);
         }
-        if(targetValue== BossSlider.minValue)
+        if(targetValue <= BossSlider.minValue)
         {
             ToolTipManager.ShowBottomToolTip_Static("DEFEATED! SANGUIMESIA IS YOURS!");
-            AudioManager.Manager.StopMusic("LevelMusic");
+            //AudioManager.Manager.StopMusic("LevelMusic");
            // StartCoroutine(WinSFX()); 
             //AudioManager.Manager.PlaySFX("Dodge");
-            AudioManager.Manager.PlaySFX("WIN");
+            //AudioManager.Manager.PlaySFX("WIN");
+            endScreen.ShowUI();
+
         }
 
         UpdateHealthBarColour();
@@ -104,6 +118,14 @@ public class BossHealthBar : MonoBehaviour
         {
             //StartCoroutine(StartBlink());
             //StopCoroutine(StartBlink()); 
+        }
+        if(AICharacter.health <= 0)
+        {
+            //die 
+            //winnerScreen.enabled = true;
+           // bossCanvas.enabled = false;
+           // winnerScreen.enabled = true;
+           
         }
 
     }

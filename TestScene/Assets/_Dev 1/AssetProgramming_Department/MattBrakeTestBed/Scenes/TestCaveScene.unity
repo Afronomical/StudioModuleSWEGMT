@@ -712,6 +712,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!225 &1171288446 stripped
+CanvasGroup:
+  m_CorrespondingSourceObject: {fileID: 4493793324972073359, guid: b8a25120f27211649961e823cb72465d, type: 3}
+  m_PrefabInstance: {fileID: 7726498223423850074}
+  m_PrefabAsset: {fileID: 0}
+--- !u!223 &1171288449 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 198126288158325366, guid: b8a25120f27211649961e823cb72465d, type: 3}
+  m_PrefabInstance: {fileID: 7726498223423850074}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1263606876
 GameObject:
   m_ObjectHideFlags: 0
@@ -2190,6 +2200,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9762afe9ff8f6ed42b6a41418b8faf38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!225 &1843338070 stripped
+CanvasGroup:
+  m_CorrespondingSourceObject: {fileID: 3606127083213559161, guid: 24ab942bbfa661548924e94ed6d89c06, type: 3}
+  m_PrefabInstance: {fileID: 1743564259929499457}
+  m_PrefabAsset: {fileID: 0}
+--- !u!223 &1843338073 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 2783791427406853943, guid: 24ab942bbfa661548924e94ed6d89c06, type: 3}
+  m_PrefabInstance: {fileID: 1743564259929499457}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1869518645
 GameObject:
   m_ObjectHideFlags: 0
@@ -2572,6 +2592,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3606127083213559161, guid: 24ab942bbfa661548924e94ed6d89c06, type: 3}
+      propertyPath: m_Alpha
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7032821007286839852, guid: 24ab942bbfa661548924e94ed6d89c06, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -2656,6 +2680,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: DeathScreenCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 9141107297912362927, guid: 24ab942bbfa661548924e94ed6d89c06, type: 3}
+      propertyPath: mainCanvas
+      value: 
+      objectReference: {fileID: 1648665287}
+    - target: {fileID: 9141107297912362927, guid: 24ab942bbfa661548924e94ed6d89c06, type: 3}
+      propertyPath: EndScreenCanvas
+      value: 
+      objectReference: {fileID: 1843338073}
+    - target: {fileID: 9141107297912362927, guid: 24ab942bbfa661548924e94ed6d89c06, type: 3}
+      propertyPath: EndScreenCanvasGroup
+      value: 
+      objectReference: {fileID: 1843338070}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2669,6 +2705,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4493793324972073359, guid: b8a25120f27211649961e823cb72465d, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5048892723925279968, guid: b8a25120f27211649961e823cb72465d, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -2757,6 +2797,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7124853586828354191, guid: b8a25120f27211649961e823cb72465d, type: 3}
+      propertyPath: mainCanvas
+      value: 
+      objectReference: {fileID: 1648665287}
+    - target: {fileID: 7124853586828354191, guid: b8a25120f27211649961e823cb72465d, type: 3}
+      propertyPath: EndScreenCanvas
+      value: 
+      objectReference: {fileID: 1171288449}
+    - target: {fileID: 7124853586828354191, guid: b8a25120f27211649961e823cb72465d, type: 3}
+      propertyPath: EndScreenCanvasGroup
+      value: 
+      objectReference: {fileID: 1171288446}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -102,6 +102,11 @@ public class CoffinInteraction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (areaToMove != GameManager.Instance.nextLevel)
+        {
+            areaToMove = GameManager.Instance.nextLevel;
+        }
+
         //Check hunger meter for threshold
         if(feeding.currentHunger >= hungerThreshold && openCoffin != null) 
         {
@@ -117,6 +122,10 @@ public class CoffinInteraction : MonoBehaviour
         {
             //Sleep - go to next level
             SceneManager.LoadScene(areaToMove);
+            PlayerController.Instance.GetPlayerDeath().currentHealth = PlayerController.Instance.GetPlayerDeath().maxHealth;
+            PlayerController.Instance.GetFeeding().currentHunger = 0;
+            CanvasManager.Instance.hungerBarUI.SetHunger(0);
+            useCoffin.enabled = false;
             //print("Sleeping...");
         }
     }

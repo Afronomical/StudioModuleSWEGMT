@@ -88,7 +88,7 @@ public class Feeding : MonoBehaviour
 
             // Call a method in the PlayerDeath script to increase player health
             playerDeath.FeedAttack();
-            ToolTipManager.ShowTopToolTip_Static("TASTY! Let's keep going before Sunlight hits!", durationTime);
+            CanvasManager.Instance.toolTipManager.ShowTopToolTip_Static("TASTY! Let's keep going before Sunlight hits!", durationTime);
 
             animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Feed);
 

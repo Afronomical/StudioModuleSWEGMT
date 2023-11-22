@@ -195,11 +195,11 @@ MonoBehaviour:
     Loop: 1
     source: {fileID: 0}
   - Name: BossMusic
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 92831f326362f6943ac2d249e0929ff2, type: 3}
     MixerGroup: {fileID: -5348099966156042405, guid: b61dca9e8894f664fb0ce150b9ed8070, type: 2}
-    volume: 0
-    pitch: 0
-    Loop: 0
+    volume: 0.357
+    pitch: 1
+    Loop: 1
     source: {fileID: 0}
   - Name: GameOver
     clip: {fileID: 0}
@@ -210,6 +210,13 @@ MonoBehaviour:
     source: {fileID: 0}
   - Name: Victory
     clip: {fileID: 0}
+    MixerGroup: {fileID: 2237963358354840850, guid: b61dca9e8894f664fb0ce150b9ed8070, type: 2}
+    volume: 1
+    pitch: 1
+    Loop: 1
+    source: {fileID: 0}
+  - Name: Credits
+    clip: {fileID: 8300000, guid: 5f388aa9fc10b4eecacb8e80427082f5, type: 3}
     MixerGroup: {fileID: 2237963358354840850, guid: b61dca9e8894f664fb0ce150b9ed8070, type: 2}
     volume: 1
     pitch: 1

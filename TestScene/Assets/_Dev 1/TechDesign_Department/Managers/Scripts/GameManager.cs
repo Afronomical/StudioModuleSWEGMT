@@ -35,6 +35,8 @@ public class GameManager : MonoBehaviour
     public GameObject player;
     public Transform playerSpawn;
     private CountdownTimer timer;
+    public string nextLevel = "Level 2";
+    public string currentLevel = "Level 1";
 
     private void Awake()
     {
@@ -94,7 +96,19 @@ public class GameManager : MonoBehaviour
             Debug.Log(peopleEaten + "/" + peopleEatingThreshold);
         }
 
-       
+        switch (SceneManager.GetActiveScene().name)
+        {
+            case "Level 1":
+                nextLevel = "Level 2";
+                currentLevel = "Level 1";
+                break;
+            case "Level 2":
+                nextLevel = "BossLevel";
+                currentLevel = "Level 2";
+                break;
+            default:
+                break;
+        }
     }
 
     private void CheckScene()
