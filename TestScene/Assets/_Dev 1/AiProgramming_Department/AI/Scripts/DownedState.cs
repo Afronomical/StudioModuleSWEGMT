@@ -29,6 +29,16 @@ public class DownedState : StateBaseClass
         //change colour to indicate state change
         transform.Find("Sprite").GetComponent<SpriteRenderer>().color = Color.red;
         character = GetComponent<AICharacter>();
+
+        //Finds exclamation mark game objects if it remains after the npc has entered the downed state.
+        foreach (Transform transform in transform.Find("Sprite"))
+        {
+            if (transform.CompareTag("Alerted"))
+            {
+                Destroy(transform.gameObject);
+                break;
+            }
+        }
     }
 
 

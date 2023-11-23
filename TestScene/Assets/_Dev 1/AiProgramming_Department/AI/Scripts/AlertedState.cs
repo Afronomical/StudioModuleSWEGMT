@@ -30,7 +30,9 @@ public class AlertedState : StateBaseClass
     {
        
        
-        var go = Instantiate(character.exclamationMark, new Vector3(character.transform.position.x, character.transform.position.y + 1, character.transform.position.z), Quaternion.identity);
+        GameObject go = Instantiate(character.exclamationMark, 
+            new Vector3(character.transform.position.x, character.transform.position.y + 1, character.transform.position.z), 
+            Quaternion.identity, transform.Find("Sprite"));
            
         yield return new WaitForSeconds(alertedTime);
 
