@@ -48,6 +48,9 @@ public class PlayerDeath : MonoBehaviour
 
     private void Update()
     {
+        if (healthBarScript == null)
+            healthBarScript = FindAnyObjectByType<NewHealthBarScript>();
+
         IsDamaged();        
         
 
