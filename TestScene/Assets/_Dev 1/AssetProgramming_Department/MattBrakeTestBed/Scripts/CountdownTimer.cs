@@ -4,7 +4,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-
+using JetBrains.Annotations;
 
 public class CountdownTimer : MonoBehaviour
 {
@@ -15,13 +15,20 @@ public class CountdownTimer : MonoBehaviour
     public Transform rotatingCover;
     public float rotationSpeed = 1f;
     public float maxrotationAngle = 360f;
+    public Quaternion startRotation;
+    
 
     private void Awake()
     {
+        startRotation = rotatingCover.rotation;
     }
 
     void Start()
     {
+
+       //startRotation =  rotatingCover.transform.rotation;
+
+        //rotatingCover.transform.rotation = startRotation;
         timeIsRunning = true;
         timeRemaining = time;
         //if (FindAnyObjectByType(typeof(CountdownTimer)))
@@ -71,5 +78,10 @@ public class CountdownTimer : MonoBehaviour
         rotatingCover.rotation = Quaternion.Euler(0, 0, rotatingCover.eulerAngles.z % maxrotationAngle); ///caps the rotation to 360 degrees
 
        
+    }
+    public void resetTimer()
+    {
+        rotatingCover.rotation = startRotation;
+        rotatingCover.Rotate(Vector3.forward * Time.deltaTime * rotationSpeed);
     }
 }
