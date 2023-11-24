@@ -132,8 +132,12 @@ public class GameManager : MonoBehaviour
         }
         else if(scene == SceneManager.GetSceneByName("Level 2"))
         {
-            timer.resetTimer(); 
-            //timer.enabled = true;
+            if(timer != null)
+            {
+                timer.resetTimer(); 
+                timer.enabled = true;
+            }
+           
         }
         else
         {
