@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Game
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 61
+  controlID: 51
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -68,8 +68,8 @@ MonoBehaviour:
     y: 0
     width: 454
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 62
+  controlID: 52
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -360,7 +360,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/_Dev 1/AssetProgramming_Department/MattBrakeTestBed/Scripts
+    - Assets/# Project File#
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -370,16 +370,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/_Dev 1/AssetProgramming_Department/MattBrakeTestBed/Scripts
+  - Assets/# Project File#
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Matth\Documents\UNI WORK\Actual Year 2\SWEGMT REPO\StudioModuleSWEGMT\TestScene
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: b0ad0000
-    m_LastClickedID: 44464
-    m_ExpandedIDs: 0000000072a40000a2a400008cad000098ad000000ca9a3bffffff7f
+    m_SelectedIDs: a2a40000
+    m_LastClickedID: 42146
+    m_ExpandedIDs: 0000000074a40000a4a40000e8a40000eaa4000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -407,7 +407,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000072a40000
+    m_ExpandedIDs: 0000000074a40000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -551,20 +551,20 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: daf5ffffcafaffff
+      m_SelectedIDs: 9ecc0000
+      m_LastClickedID: 52382
+      m_ExpandedIDs: 8e99ffff5ea5ffff6aa5ffff46a7ffffb8a7ffff32b6ffff66cbffffaaf5ffffb2fafffff4ffffffd0a50000e4a5000050a600008aa60000aca600001ea700000ac0000024c00000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: PauseMenu 1
-        m_OriginalName: PauseMenu 1
+        m_Name: AudioManager
+        m_OriginalName: AudioManager
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 44502
+        m_UserData: -26896
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
         m_OriginalEventType: 0
@@ -1031,7 +1031,7 @@ MonoBehaviour:
       containerId: overlay-container--right
       floating: 0
       collapsed: 0
-      displayed: 0
+      displayed: 1
       snapOffset: {x: 48, y: 48}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
@@ -1079,9 +1079,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 472.17722, y: 293.93906, z: -5.2148256}
+    m_Target: {x: 574.11646, y: 311.2477, z: 7.030093}
     speed: 2
-    m_Value: {x: 459.5, y: 258.5, z: 0}
+    m_Value: {x: 574.11646, y: 311.2477, z: 7.030093}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1131,9 +1131,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 440.0216
+    m_Target: 400.0146
     speed: 2
-    m_Value: 527.2215
+    m_Value: 400.0146
   m_Ortho:
     m_Target: 1
     speed: 2
