@@ -130,6 +130,15 @@ public class GameManager : MonoBehaviour
                 Destroy(GO);
             }
         }
+        else if(scene == SceneManager.GetSceneByName("Level 2"))
+        {
+            if(timer != null)
+            {
+                timer.resetTimer(); 
+                timer.enabled = true;
+            }
+           
+        }
         else
         {
             if (timer != null)

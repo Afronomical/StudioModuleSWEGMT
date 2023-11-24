@@ -921,8 +921,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -224, y: -762}
-  m_SizeDelta: {x: 314.893, y: 1515.7285}
+  m_AnchoredPosition: {x: -224, y: -980}
+  m_SizeDelta: {x: 314.893, y: 1935.3862}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1492600754
 MonoBehaviour:
@@ -944,41 +944,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'LEADS
-
-
-
-
-    TECH DESIGN
-
-
-
-
-
-    AI
-
-
-
-
-
-
-    ASSETS
-
-
-
-
-
-
-    GAMEPLAY
-
-
-
-
-
-
-
-    3RD
-    PARTY ASSETS:'
+  m_text: "LEADS\n\n\n\nTECH DESIGN\n\n\n\n\nAI\n\n\n\n\n\nASSETS\n\n\n\n\n\nGAMEPLAY\n\n\n\n\n\n\nPRODUCER
+    \n\n\n\n\n\n\n3RD PARTY ASSETS:"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1112,42 +1079,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Lucian Dusciac, Somi, Matej Cincibus, Max Piper
-
-
-
-
-    Somi, Imogen,
-    Shaban
-
-
-
-
-
-    Luscian Dusciac, Alex Izak, Aaron Moreland, Adam Alexander
-
-
-
-
-
-
-    Matej
-    Cincibus, Matt Brake, Nathan Jowett
-
-
-
-
-
-    Max Piper, Maximus Wade, Hugo Macdonald,
-    Liam Edwards Ellis
-
-
-
-
-
-
-
-    3RD PARTY ASSETS:'
+  m_text: "Lucian Dusciac, Somi, Matej Cincibus, Max Piper\n\n\n\nSomi Euler-Ajayi,
+    Imogen Killingley, Shaban Laghari \n\n\n\n\nLuscian Dusciac, Alex Izak, Aaron
+    Moreland, Adam Alexander\n\n\n\n\nMatej Cincibus, Matt Brake, Nathan Jowett\n\n\n\n\n\nMax
+    Piper, Maximus Wade, Hugo Macdonald, Liam Edwards Ellis\n\n\n\n\n\nKostas Dokos
+    \n\n\n\n\n\n\n\n3RD PARTY ASSETS:\n\n\"rowdy41\"- Itch.io - Small Forest Asset
+    Pack "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
