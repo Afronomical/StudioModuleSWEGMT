@@ -60,6 +60,7 @@ public class PauseMenu : MonoBehaviour
     public void Quit()
     {
         AudioManager.Manager.PlaySFX("UI_Click");
+        Application.Quit();
     }
     public void LoadSettingsMenu()
     {
