@@ -25,6 +25,11 @@ public class CoffinInteraction : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        closedCoffin = GameObject.Find("Coffin Closed Text").GetComponent<TMP_Text>();
+        stillHungry = GameObject.Find("Hunger Not Satisfied").GetComponent<TMP_Text>();
+        openCoffin = GameObject.Find("Coffin Opened Text").GetComponent<TMP_Text>();
+        useCoffin = GameObject.Find("Using the coffin").GetComponent<TMP_Text>();
+
         coffinArea = GetComponent<BoxCollider2D>();
         feeding = PlayerController.Instance.GetComponent<Feeding>();
         //feeding = GameObject.Find("PlayerPrefab1").GetComponent<Feeding>();
@@ -126,6 +131,7 @@ public class CoffinInteraction : MonoBehaviour
             PlayerController.Instance.GetFeeding().currentHunger = 0;
             CanvasManager.Instance.hungerBarUI.SetHunger(0);
             useCoffin.enabled = false;
+            GameObject.Find("Timer").GetComponent<CountdownTimer>().resetTimer();
             //print("Sleeping...");
         }
     }

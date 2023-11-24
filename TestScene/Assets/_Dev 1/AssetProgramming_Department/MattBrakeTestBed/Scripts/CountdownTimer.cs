@@ -17,11 +17,12 @@ public class CountdownTimer : MonoBehaviour
     public float maxrotationAngle = 360f;
     public Quaternion startRotation;
     private bool isRotating = false;
-    
+
+    public void SetIsRotating(bool isRotating) { this.isRotating = isRotating; }
 
     private void Awake()
     {
-        startRotation = rotatingCover.rotation;
+        //startRotation = rotatingCover.rotation;
     }
 
     void Start()
@@ -30,10 +31,10 @@ public class CountdownTimer : MonoBehaviour
        
 
        
-        timeIsRunning = true;
-        timeRemaining = time;
-        isRotating = true;
-        rotateCover();
+        //timeIsRunning = true;
+        //timeRemaining = time;
+        //isRotating = true;
+        //rotateCover();
         
        
     }
@@ -88,7 +89,8 @@ public class CountdownTimer : MonoBehaviour
     {
         rotatingCover.rotation = startRotation;
         rotateCover();
-        isRotating = true; 
+        isRotating = true;
+        timeRemaining = time;
        // rotatingCover.Rotate(Vector3.forward * Time.deltaTime * rotationSpeed);
     }
 }
