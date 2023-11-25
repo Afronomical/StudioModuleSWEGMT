@@ -45,8 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c1d255f172ac6747935b689ae8dee35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hub: Level 1 - Spawn
-  level1: Level 1 - World
+  currentLevel: 
+  playerDashTrailHandler: {fileID: 0}
 --- !u!61 &3999311813210046170
 BoxCollider2D:
   m_ObjectHideFlags: 0
