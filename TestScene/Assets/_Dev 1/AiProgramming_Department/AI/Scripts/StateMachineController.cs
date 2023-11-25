@@ -16,7 +16,7 @@ public class StateMachineController : MonoBehaviour
     private Vector3 lastPosition;
     private int stuckCheckFrames;
     private float changeStateTimer;
-    private float changeStateTime = 0.25f;
+    private float changeStateTime = 0.2f;
 
 
     private void Start()
@@ -114,7 +114,7 @@ public class StateMachineController : MonoBehaviour
             character.ChangeState(AICharacter.States.Patrol);
 
 
-        else if (distance < detectionRange && distance > attackRange)  // Hunt while not in attack range
+        else if (distance > attackRange)  // Hunt while not in attack range
         {
             if (character.currentState == AICharacter.States.Hunt)  // If hunt is already the state then don't check for walls
                 character.ChangeState(AICharacter.States.Hunt);
@@ -123,7 +123,7 @@ public class StateMachineController : MonoBehaviour
         }
 
 
-        else if (distance < attackRange) // Attack when in attack range
+        else  // Attack when in attack range
             character.ChangeState(AICharacter.States.Attack);
     }
 

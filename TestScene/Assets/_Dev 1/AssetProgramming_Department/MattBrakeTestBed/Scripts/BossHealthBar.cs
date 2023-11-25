@@ -41,8 +41,8 @@ public class BossHealthBar : MonoBehaviour
         //fillImage = slider.fillRect.GetComponent<Image>();
         currentValue = BossSlider.value;
         targetValue = BossSlider.value;
-        PhaseTwo = BossSlider.maxValue * 0.75f;
-        PhaseThree = BossSlider.maxValue * 0.4f; 
+        PhaseTwo = Boss.GetComponent<BossStateMachineController>().phase2Heath;
+        PhaseThree = Boss.GetComponent<BossStateMachineController>().phase3Heath; 
         Phase = BossPhase.One;
         BlinkEffect.enabled = false; 
         ToolTipManager.ShowBottomToolTip_Static("Phase: " + Phase);
