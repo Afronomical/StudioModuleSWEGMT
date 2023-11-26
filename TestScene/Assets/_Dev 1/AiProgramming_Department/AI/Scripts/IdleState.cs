@@ -26,6 +26,8 @@ public class IdleState : StateBaseClass
     private PathfindingSmoothing path;
     private int pathIndex = 0;
     private float speedPercent;
+    private int pathfindingErrorCheck;
+    private int maxPathfindingChecks = 6;
 
 
     public IdleState()
@@ -37,14 +39,14 @@ public class IdleState : StateBaseClass
 
     public override void UpdateLogic()
     {
-        //change colour to indicate state change
-        this.GetComponent<SpriteRenderer>().color = Color.green;
-
-        //Debug.Log("Idle");
-        if (walking)
-            Walk();
-        else
-            Idle();
+        if (pathfindingErrorCheck < maxPathfindingChecks)
+        {
+            //Debug.Log("Idle");
+            if (walking)
+                Walk();
+            else
+                Idle();
+        }
     }
 
 
@@ -121,9 +123,18 @@ public class IdleState : StateBaseClass
             character.knowsAboutPlayer = false;
             pathIndex = 0;
             speedPercent = 1;
+            pathfindingErrorCheck = 0;
+        }
+        else if (pathfindingErrorCheck >= maxPathfindingChecks)
+        {
+            character.isMoving = false;
+            return;
         }
         else
+        {
+            pathfindingErrorCheck++;
             FindWalkTarget();  // Try and find a new path
+        }
     }
 
 

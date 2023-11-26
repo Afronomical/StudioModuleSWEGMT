@@ -20,6 +20,7 @@ public class AttackState : StateBaseClass
         transform.GetComponentInChildren<AIAnimationController>().ChangeAnimationState(AIAnimationController.AnimationStates.SwordAttack);
         gameObject.transform.GetChild(2).GetChild(0).GetComponent<Animator>().SetTrigger("IsAttacking");  // <-----------------------------------  Error Here
         playerDeath = character.player.GetComponent<PlayerDeath>();
+        GetComponent<AICharacter>().isMoving = false;
     }
 
     public AttackState() 
@@ -41,14 +42,21 @@ public class AttackState : StateBaseClass
         //Counts down the delay
         currentDelay -= Time.deltaTime;
 
+        Vector3 vectorToTarget = Quaternion.Euler(0, 0, 90) * (character.player.transform.position - transform.position);  // Direction towards the target location
+        transform.rotation = Quaternion.LookRotation(forward: Vector3.forward, upwards: vectorToTarget);
+
         //Checks if the delay timer has hit 0, if so, it will damage the player and reset the delay timer to x amount
         if (currentDelay <= 0)
         {
-            playerDeath.RemoveHealth(attackDamage);
+            if (Vector2.Distance(character.player.transform.position, transform.position) <= 1.25f)
+                playerDeath.RemoveHealth(attackDamage);
             currentDelay = 2;
 
             if (character.characterType == AICharacter.CharacterTypes.Boss)
+            {
                 character.isAttacking = false;
+                Destroy(this);
+            }
         }
     }
 }
