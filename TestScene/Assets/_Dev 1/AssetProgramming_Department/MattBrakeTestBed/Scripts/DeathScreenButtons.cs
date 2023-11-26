@@ -8,12 +8,12 @@ public class DeathScreenButtons : MonoBehaviour
 
     public Canvas deathScreen;
 
-    private void Update()
+    /*private void Update()
     {
         if (deathScreen != null)
             AudioManager.Manager.PlayMusic("GameOver");
 
-    }
+    }*/
 
     public void Play()
    {

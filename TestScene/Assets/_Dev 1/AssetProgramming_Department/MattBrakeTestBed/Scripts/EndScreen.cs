@@ -46,6 +46,7 @@ public class EndScreen : MonoBehaviour
         fadeIn = true;
         
         
+        
     }
 
     public void HideUI()

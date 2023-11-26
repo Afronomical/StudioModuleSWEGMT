@@ -210,6 +210,9 @@ public class PlayerDeath : MonoBehaviour
     private void deathAfterDelay()
     {
         AudioManager.Manager.StopMusic("LevelMusic");
+        AudioManager.Manager.StopMusic("BossMusic");
+        AudioManager.Manager.stopAllInGameSFX();
+
         CanvasManager.Instance.deathScreenCanvas.ShowUI();
         foreach (BoxCollider2D boxCollider in boxColliders)
         {

@@ -105,7 +105,7 @@ MonoBehaviour:
   - Name: NPC_Death
     clip: {fileID: 8300000, guid: ddc650b445586454e9e4f5e74d58d0ed, type: 3}
     MixerGroup: {fileID: 2237963358354840850, guid: b61dca9e8894f664fb0ce150b9ed8070, type: 2}
-    volume: 0.28
+    volume: 0.155
     pitch: 1
     Loop: 0
     source: {fileID: 0}
