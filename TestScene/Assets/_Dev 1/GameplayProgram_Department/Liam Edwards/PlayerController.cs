@@ -80,8 +80,6 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        AnimateMovement();
-
         if (stamina != 100 && isSprinting == false)
         {
             StartCoroutine(StaminaRegen());
@@ -129,38 +127,6 @@ public class PlayerController : MonoBehaviour
             rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * 0, Input.GetAxisRaw("Vertical") * 0); // stops player moving after death
         }
     }
-
-    private void AnimateMovement()
-    {
-        Vector2 movementInput = new(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-
-        if (movementInput != Vector2.zero)
-        {
-            animator.SetFloat("MovementX", movementInput.x);
-            animator.SetFloat("MovementY", movementInput.y);
-        }
-
-        if (!animationController.IsAnimationPlaying(animator, PlayerAnimationController.AnimationStates.SlashAttack) &&
-            !animationController.IsAnimationPlaying(animator, PlayerAnimationController.AnimationStates.Dash) &&
-            !animationController.IsAnimationPlaying(animator, PlayerAnimationController.AnimationStates.Hurt) &&
-            !animationController.IsAnimationPlaying(animator, PlayerAnimationController.AnimationStates.Death) &&
-            !animationController.IsAnimationPlaying(animator, PlayerAnimationController.AnimationStates.Feed))
-        {
-            if (!playerDeath.GetIsDead())
-            {
-                if (movementInput != Vector2.zero)
-                {
-                    animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Walk);
-                }
-                else
-                {
-                    //AudioManager.Manager.PlayVFX("PlayerMove");
-                    animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Idle);
-                }
-            }
-        }
-    }
-
 
     private IEnumerator Dodge() // dodge mechanic
     {

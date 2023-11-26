@@ -71,11 +71,11 @@ public class PlayerDeath : MonoBehaviour
             AudioManager.Manager.PlaySFX("PlayerDeath");
             isDead = true;
             animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Death);
-            Invoke("Die", animator.GetCurrentAnimatorClipInfo(0).Length);
-            if (!animationController.IsAnimationPlaying(animator, PlayerAnimationController.AnimationStates.Death))
-            {
-                Die();
-            }
+            Invoke(nameof(Die), animator.GetCurrentAnimatorClipInfo(0).Length);
+            //if (!animationController.IsAnimationPlaying(animator, PlayerAnimationController.AnimationStates.Death))
+            //{
+            //    Die();
+            //}
             
 
         }
