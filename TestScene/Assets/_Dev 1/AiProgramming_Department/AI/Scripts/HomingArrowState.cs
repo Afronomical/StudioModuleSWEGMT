@@ -38,6 +38,7 @@ public class HomingArrowState : StateBaseClass
         if (currentDelay <= 0)
         {
             Instantiate(homingBulletPrefab, origin.position, origin.rotation);
+            AudioManager.Manager.PlaySFX("NPC_RangedAttack");
             currentDelay = 3f;
             character.isAttacking = false;
         }

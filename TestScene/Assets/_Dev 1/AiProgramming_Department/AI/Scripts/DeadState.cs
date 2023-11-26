@@ -13,7 +13,6 @@ public class DeadState : StateBaseClass
     {
         animController = transform.GetComponentInChildren<AIAnimationController>();
         anim = transform.GetComponentInChildren<Animator>();
-        //AudioManager.Manager.PlaySFX("NPC_Death");
     }
 
 
@@ -23,17 +22,14 @@ public class DeadState : StateBaseClass
         if (animController != null && anim != null)
         {
             character.gameObject.GetComponent<CircleCollider2D>().enabled = false; //Player can't push AI whilst they're death animation is playing
-            Invoke("DisableAfterDeath", 0.075f);
+            Invoke(nameof(DisableAfterDeath), anim.GetCurrentAnimatorClipInfo(0).Length * 0.75f);
         }
     }
 
     private void DisableAfterDeath()
     {
-        if (!animController.IsAnimationPlaying(anim, AIAnimationController.AnimationStates.Death))
-        {
-            if (!AISpawnManager.instance.deadEnemies.Contains(gameObject) && character.characterType != AICharacter.CharacterTypes.Boss)
-                AISpawnManager.instance.deadEnemies.Add(gameObject);
-            character.gameObject.SetActive(false);
-        }
+        if (!AISpawnManager.instance.deadEnemies.Contains(gameObject) && character.characterType != AICharacter.CharacterTypes.Boss)
+            AISpawnManager.instance.deadEnemies.Add(gameObject);
+        character.gameObject.SetActive(false);
     }
 }

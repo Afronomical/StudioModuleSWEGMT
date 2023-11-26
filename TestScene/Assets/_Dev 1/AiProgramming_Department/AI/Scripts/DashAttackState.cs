@@ -67,6 +67,7 @@ public class DashAttackState : StateBaseClass
         Vector3 dirVector = lastKnownPos - transform.position;
         //dirVector.Normalize();
         rb.velocity = dirVector * dashSpeed; //Actual dash
+        AudioManager.Manager.PlaySFX("BossDash");
         dashTrail.emitting = true;
         if(dirVector.magnitude < 2)
         {
