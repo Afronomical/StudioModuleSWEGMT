@@ -199,7 +199,7 @@ public class playerAttack : MonoBehaviour
 
                 if (heavyChargeTimer <= 0)
                 {
-                    animator.SetTrigger("AttackSlash");
+                    animator.SetTrigger("HeavyAttackSlash");
                     AudioManager.Manager.PlaySFX("PlayerHeavyAttack");
                     animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.SlashAttack);
                     ExecuteHeavyAttack();
