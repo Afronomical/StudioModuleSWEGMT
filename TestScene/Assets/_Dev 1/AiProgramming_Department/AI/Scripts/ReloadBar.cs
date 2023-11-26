@@ -7,6 +7,7 @@ public class ReloadBar : MonoBehaviour
 {
     public Slider slider;
     public GameObject boss;
+    public GameObject character;
 
     public float currentTime;
     public float reloadTime = 3f;
@@ -18,11 +19,21 @@ public class ReloadBar : MonoBehaviour
         slider = GetComponent<Slider>();
         currentTime = reloadTime;
         boss = GameObject.Find("Van Helsing");
+        character = GameObject.Find("Ranged Hunter");
     }
 
     private void Update()
     {
-        transform.position = Camera.main.WorldToScreenPoint(boss.transform.position) + offset;
+        if(boss != null)
+        {
+            transform.position = Camera.main.WorldToScreenPoint(boss.transform.position) + offset;
+
+        }
+        else
+        {
+            transform.position = Camera.main.WorldToScreenPoint(character.transform.position) + offset;
+        }
+
 
         slider.value = currentTime/reloadTime;
         if(currentTime <= 0.01)

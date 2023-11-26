@@ -19,10 +19,17 @@ public class StateMachineController : MonoBehaviour
     private float changeStateTime = 0.2f;
 
 
+    //ranged hunnter reloading values
+    float currentTime;
+    float reloadingTime = 5f;
+    bool isReloading = false;
+
     private void Start()
     {
         character = GetComponent<AICharacter>();
         changeStateTimer = UnityEngine.Random.Range(-2.5f, changeStateTime);
+
+        currentTime = reloadingTime;
     }
 
 
@@ -129,10 +136,24 @@ public class StateMachineController : MonoBehaviour
 
 
     private void RangedHunterStates()
-    { 
-        if (distance < attackRange && RaycastToPlayer(distance))
+    {
+        if (character.reloading)
+        {
+            character.ChangeState(AICharacter.States.Reload);
+            //character.reloading = false;
+
+        }
+
+        else if (distance < attackRange && RaycastToPlayer(distance))
         {
             character.ChangeState(AICharacter.States.Shoot);
+            //if (character.reloading)
+            //{
+            //    character.ChangeState(AICharacter.States.Reload);
+            //    //character.reloading = false;
+
+            //}
+            
         }
 
         else if (distance < detectionRange)
