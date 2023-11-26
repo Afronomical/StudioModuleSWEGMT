@@ -113,4 +113,9 @@ public class AudioManager : MonoBehaviour
         AudioManager.Manager.StopSFX("Parry");
 
     }
+    public void OnMouseUp()
+    {
+        AudioManager.Manager.PlaySFX("UI_Click");
+        
+    }
 }
