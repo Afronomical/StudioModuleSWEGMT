@@ -56,18 +56,11 @@ public class DashAttackState : StateBaseClass
             //playerDeath.RemoveHealth(attackDamage);
             currentDelay = 2;
         }
-
-        //this was moved to HuntState
-        //character.transform.position = Vector2.MoveTowards(character.transform.position, character.player.transform.position, speed * Time.deltaTime / 2);
     }
 
     private IEnumerator Dash() // dash attack mechanic
     {
         isDashing = true;
-
-        //Records players location
-        //float lastKnownX = character.player.transform.position.x;
-        //float lastKnownY = character.player.transform.position.y;
 
         //Prepares to dash - needs to stop looking for the players location
         yield return new WaitForSeconds(dashWindUp);
@@ -82,7 +75,7 @@ public class DashAttackState : StateBaseClass
         yield return new WaitForSeconds(dashDuration);
         isDashing = false;
         dashTrail.emitting = false; //End of dash
-
+        GetComponent<BossStateMachineController>().reloadCountdown++;
         character.isAttacking = false;
     }
 }

@@ -154,19 +154,19 @@ MonoBehaviour:
     m_Bits: 64
   phase: 0
   reloadCountdown: 0
-  phase1WaitTime: 2
+  phase1WaitTime: 1.5
   phase1Reload: 2
-  phase1MeleeAttacks: 0400000005000000
-  phase1RangedAttacks: 1000000006000000070000000f000000
+  phase1MeleeAttacks: 040000000400000004000000
+  phase1RangedAttacks: 100000000600000007000000070000000f0000000f000000
   phase2Heath: 40
-  phase2WaitTime: 1.5
+  phase2WaitTime: 1
   phase2Reload: 3
   phase2MeleeAttacks: 040000001200000005000000
   phase2RangedAttacks: 10000000060000000d0000000c000000
   phase3Heath: 20
-  phase3WaitTime: 1
+  phase3WaitTime: 0.5
   phase3Reload: 4
-  phase3MeleeAttacks: 040000001200000005000000
+  phase3MeleeAttacks: 0400000004000000120000001200000005000000
   phase3RangedAttacks: 100000000d0000000c0000000a000000
 --- !u!61 &7142695189202120243
 BoxCollider2D:

@@ -6,7 +6,7 @@ public class AlertedState : StateBaseClass
 {
     private AIAnimationController animController;
     private Animator anim; 
-    private float alertedTime = 1f;  // How long the state will last
+    private float alertedTime = 0.75f;  // How long the state will last
     
 
     private void Start()

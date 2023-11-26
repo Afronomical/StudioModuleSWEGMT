@@ -48,17 +48,12 @@ public class AttackState : StateBaseClass
         //Checks if the delay timer has hit 0, if so, it will damage the player and reset the delay timer to x amount
         if (currentDelay <= 0)
         {
-            if (character.characterType != AICharacter.CharacterTypes.Boss)
+            if (Vector2.Distance(character.player.transform.position, transform.position) <= 1.25f)
+                playerDeath.RemoveHealth(attackDamage);
+            currentDelay = 2;
+
+            if (character.characterType == AICharacter.CharacterTypes.Boss)
             {
-                Debug.Log(Vector2.Distance(character.player.transform.position, transform.position));
-                if (Vector2.Distance(character.player.transform.position, transform.position) <= 1.25f)
-                    playerDeath.RemoveHealth(attackDamage);
-                currentDelay = 2;
-            }
-            else if (character.characterType == AICharacter.CharacterTypes.Boss)
-            {
-                if (Vector2.Distance(character.player.transform.position, transform.position) <= 3.25f)
-                    playerDeath.RemoveHealth(attackDamage);
                 character.isAttacking = false;
                 Destroy(this);
             }

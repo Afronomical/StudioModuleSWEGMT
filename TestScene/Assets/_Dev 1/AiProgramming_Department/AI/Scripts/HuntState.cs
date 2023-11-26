@@ -71,7 +71,7 @@ public class HuntState : StateBaseClass
                 {
                     character.isAttacking = false;
                     character.isMoving = false;
-                    GetComponent<BossStateMachineController>().reloadCountdown++;
+                    GetComponent<BossStateMachineController>().reloadCountdown += 2;
                     Destroy(this);
                 }
             }
