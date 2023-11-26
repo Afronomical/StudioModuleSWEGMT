@@ -202,7 +202,7 @@ MonoBehaviour:
     Loop: 1
     source: {fileID: 0}
   - Name: GameOver
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 5f388aa9fc10b4eecacb8e80427082f5, type: 3}
     MixerGroup: {fileID: -5348099966156042405, guid: b61dca9e8894f664fb0ce150b9ed8070, type: 2}
     volume: 1
     pitch: 1

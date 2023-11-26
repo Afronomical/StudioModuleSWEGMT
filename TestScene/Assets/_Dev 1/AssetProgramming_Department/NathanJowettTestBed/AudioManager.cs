@@ -105,5 +105,12 @@ public class AudioManager : MonoBehaviour
             s.source.Stop();
         }
     }
+    public void stopAllInGameSFX()
+    {
+        AudioManager.Manager.StopSFX("PlayerAttack");
+        AudioManager.Manager.StopSFX("PlayerDodge");
+        AudioManager.Manager.StopSFX("PlayerHeavyAttack");
+        AudioManager.Manager.StopSFX("Parry");
 
+    }
 }
