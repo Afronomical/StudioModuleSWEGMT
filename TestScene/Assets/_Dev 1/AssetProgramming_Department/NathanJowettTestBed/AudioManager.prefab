@@ -179,6 +179,20 @@ MonoBehaviour:
     pitch: 0.75
     Loop: 0
     source: {fileID: 0}
+  - Name: BossDash
+    clip: {fileID: 8300000, guid: f11db4559b3ffff45b62e9327fc5535d, type: 3}
+    MixerGroup: {fileID: 2237963358354840850, guid: b61dca9e8894f664fb0ce150b9ed8070, type: 2}
+    volume: 0.631
+    pitch: 0.75
+    Loop: 0
+    source: {fileID: 0}
+  - Name: BossMelee
+    clip: {fileID: 8300000, guid: 13182107f288fdc47a11f9216c8f062b, type: 3}
+    MixerGroup: {fileID: 2237963358354840850, guid: b61dca9e8894f664fb0ce150b9ed8070, type: 2}
+    volume: 0.631
+    pitch: 0.75
+    Loop: 0
+    source: {fileID: 0}
   Music:
   - Name: MenuMusic
     clip: {fileID: 8300000, guid: e2a073a65e81749fdb085ab52ae881e6, type: 3}
@@ -197,7 +211,7 @@ MonoBehaviour:
   - Name: BossMusic
     clip: {fileID: 8300000, guid: 92831f326362f6943ac2d249e0929ff2, type: 3}
     MixerGroup: {fileID: -5348099966156042405, guid: b61dca9e8894f664fb0ce150b9ed8070, type: 2}
-    volume: 0.357
+    volume: 0.374
     pitch: 1
     Loop: 1
     source: {fileID: 0}
