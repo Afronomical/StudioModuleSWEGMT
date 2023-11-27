@@ -9238,16 +9238,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!223 &217604495 stripped
-Canvas:
-  m_CorrespondingSourceObject: {fileID: 2995289403889696267, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
-  m_PrefabInstance: {fileID: 2133233163}
-  m_PrefabAsset: {fileID: 0}
---- !u!225 &217604497 stripped
-CanvasGroup:
-  m_CorrespondingSourceObject: {fileID: 4411536573361216581, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
-  m_PrefabInstance: {fileID: 2133233163}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &268174740
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10559,11 +10549,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.91035986, y: 1.3031696}
   m_EdgeRadius: 0
---- !u!224 &984115240 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 8902011787197866989, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
-  m_PrefabInstance: {fileID: 2133233163}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1020275928 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8476325947453187417, guid: 77bba42740dfd634c8b3d900c4fa1d4f, type: 3}
@@ -31978,11 +31963,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!223 &2132067089 stripped
-Canvas:
-  m_CorrespondingSourceObject: {fileID: 9072885035934138857, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
-  m_PrefabInstance: {fileID: 2133233163}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2133233163
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32079,20 +32059,12 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2231328316824964116, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
-      propertyPath: SpinTimer
-      value: 
-      objectReference: {fileID: 984115240}
     - target: {fileID: 2980688281692362530, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2980688281692362530, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4411536573361216581, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
-      propertyPath: m_Alpha
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4615694013143893861, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
@@ -32107,18 +32079,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8208048905792183955, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
-      propertyPath: mainCanvas
-      value: 
-      objectReference: {fileID: 2132067089}
-    - target: {fileID: 8208048905792183955, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
-      propertyPath: EndScreenCanvas
-      value: 
-      objectReference: {fileID: 217604495}
-    - target: {fileID: 8208048905792183955, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
-      propertyPath: EndScreenCanvasGroup
-      value: 
-      objectReference: {fileID: 217604497}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 8351174093400642025, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}

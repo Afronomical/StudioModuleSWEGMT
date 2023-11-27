@@ -171,7 +171,7 @@ public class playerAttack : MonoBehaviour
             
         }
 
-        if (Input.GetKeyDown(KeyCode.Mouse1)) // Assuming Mouse1 is the input for heavy attack
+        if (Input.GetKeyDown(KeyCode.Q)) 
         {
             // Start charging the heavy attack
             if (!isChargingAttack)
@@ -180,7 +180,7 @@ public class playerAttack : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyUp(KeyCode.Mouse1))
+        if (Input.GetKeyUp(KeyCode.Q))
         {
             if (isChargingAttack)
             {
@@ -223,12 +223,12 @@ public class playerAttack : MonoBehaviour
         }
         
 
-        if (Input.GetKeyDown(KeyCode.Q) && gameObject.GetComponent<PlayerDeath>().recParryAttack && !coolDownParry)
+        if (Input.GetKeyDown(KeyCode.Mouse1) && gameObject.GetComponent<PlayerDeath>().recParryAttack && !coolDownParry)
         {
             parrying = true;
             StartCoroutine(parryFeedBack());
         }
-        else if (Input.GetKeyDown(KeyCode.Q))
+        else if (Input.GetKeyDown(KeyCode.Mouse1))
         {
             coolDownParry = true;
             Debug.Log("parry cooling down");

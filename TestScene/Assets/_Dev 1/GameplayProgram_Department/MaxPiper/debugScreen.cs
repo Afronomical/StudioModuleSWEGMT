@@ -13,8 +13,11 @@ public class debugMode : MonoBehaviour
     private bool instaPressed;
     public GameObject player;
     private PlayerDeath playerDeath;
-    private playerAttack playerAttack;
+    //private playerAttack playerAttack;
     private float origAttackDelay;
+    public GameObject togGodVis;
+    public GameObject togInstaVis;
+    private int origDam;
 
 
 
@@ -23,7 +26,9 @@ public class debugMode : MonoBehaviour
         godButton.SetActive(false);
         instaButton.SetActive(false);
         //nextLevelButton.SetActive(false);
+        player = GameObject.FindGameObjectWithTag("Player");
         origAttackDelay = player.GetComponent<playerAttack>().attackDelayStart;
+        origDam = player.GetComponent<playerAttack>().damage;
     }
 
     
@@ -42,11 +47,13 @@ public class debugMode : MonoBehaviour
         {
             player.GetComponent<PlayerDeath>().godMode = false;
             godPressed = false;
+            togGodVis.SetActive(false);
         }
         else
         {
             player.GetComponent<PlayerDeath>().godMode = true;
             godPressed = true;
+            togGodVis.SetActive(true);
         }
     }
 
@@ -57,12 +64,14 @@ public class debugMode : MonoBehaviour
         if (instaPressed)
         {
             // Set attack damage to a high value for instant kill
-            player.GetComponent<playerAttack>().damage = 1000;
+            player.GetComponent<playerAttack>().damage = 9999;
+            togInstaVis.SetActive(true);
         }
         else
         {
             // Restore the original attack damage
-            player.GetComponent<playerAttack>().damage = 1;
+            player.GetComponent<playerAttack>().damage = origDam;
+            togInstaVis.SetActive(false);
         }
     }
 
