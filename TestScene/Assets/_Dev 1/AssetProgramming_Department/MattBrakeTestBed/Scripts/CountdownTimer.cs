@@ -49,6 +49,7 @@ public class CountdownTimer : MonoBehaviour
     
     void Update()
     {
+
         if (timeIsRunning) 
         { 
             if(timeRemaining >= 0)
