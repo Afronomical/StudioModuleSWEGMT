@@ -137,23 +137,27 @@ public class StateMachineController : MonoBehaviour
 
     private void RangedHunterStates()
     {
-        if (character.reloading)
+        //if (character.reloading)
+        //{
+        //    character.ChangeState(AICharacter.States.Reload);
+        //    //character.reloading = false;
+
+        //}
+
+        if (distance < attackRange && RaycastToPlayer(distance))
         {
-            character.ChangeState(AICharacter.States.Reload);
-            //character.reloading = false;
+            if (character.reloading)
+            {
+                character.ChangeState(AICharacter.States.Reload);
+                //character.reloading = false;
 
-        }
+            }
+            else
+            {
+                character.ChangeState(AICharacter.States.Shoot);
 
-        else if (distance < attackRange && RaycastToPlayer(distance))
-        {
-            character.ChangeState(AICharacter.States.Shoot);
-            //if (character.reloading)
-            //{
-            //    character.ChangeState(AICharacter.States.Reload);
-            //    //character.reloading = false;
+            }
 
-            //}
-            
         }
 
         else if (distance < detectionRange)

@@ -41,6 +41,8 @@ public class ShootState : StateBaseClass
         //change colour to indicate state change
         this.GetComponent<SpriteRenderer>().color = Color.cyan;
         character.isMoving = false;
+        //Counts down the delay
+        currentDelay -= Time.deltaTime;
 
         if (numberOfShots == 5) 
         {
@@ -49,10 +51,8 @@ public class ShootState : StateBaseClass
             numberOfShots = 0;
         }
 
-        //Counts down the delay
-        currentDelay -= Time.deltaTime;
 
-        if (currentDelay <= 0 && !character.reloading)
+        else if (currentDelay <= 0 && !character.reloading)
         {
             character.isAttacking = true;
             Shoot();
