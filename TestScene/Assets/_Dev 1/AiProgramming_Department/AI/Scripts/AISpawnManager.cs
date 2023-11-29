@@ -67,6 +67,7 @@ public class AISpawnManager : MonoBehaviour
         yield return new WaitForSeconds(doorOpenTime);
 
         // Resetting all of the values in the enemy
+        enemy.GetComponent<TrailRenderer>().enabled = false; 
         enemy.transform.position = spawnPoint.position + spawnPointOffset;
         AICharacter AIScript = enemy.GetComponent<AICharacter>();
         GameObject enemySprite = enemy.transform.Find("Sprite").gameObject;
@@ -78,6 +79,7 @@ public class AISpawnManager : MonoBehaviour
         enemySprite.GetComponent<Animator>().SetFloat("MovementX", 0);
         enemySprite.GetComponent<Animator>().SetFloat("MovementY", -1);
         enemy.SetActive(true);  // Make the enemy appear
+        enemySprite.GetComponent<AIAnimationChange>().characterHasDied = false;
 
         yield return new WaitForSeconds(doorCloseTime);
         spawnPoint.gameObject.GetComponent<SpriteRenderer>().color = Color.white;  // Close the door

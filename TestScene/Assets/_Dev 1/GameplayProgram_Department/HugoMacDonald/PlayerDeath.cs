@@ -1,12 +1,13 @@
+using System.Collections;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 
 public class PlayerDeath : MonoBehaviour
 {
 
-    public DeathScreen deathscreenCanvas;
+    public EndScreen deathscreenCanvas;
     private KnockBack knockBack;
     public int maxHealth = 100;
     public int currentHealth;
@@ -20,19 +21,20 @@ public class PlayerDeath : MonoBehaviour
     public GameObject floatingText;
     public int feedHealAmount = 5;
     public int sunDamage = 5;
+    
+    private float parryTime = 0.3f;
+    
+    [HideInInspector] public bool recParryAttack;
 
-    public Vector3 offset; 
+    public Vector3 offset = new Vector3(0,5,0);
 
     private Animator animator;
     private PlayerAnimationController animationController;
     private bool isDead = false;
     private bool isDamaged = false;
 
-    private void Awake()
-    {
-        Object GO = FindAnyObjectByType(typeof(NewHealthBarScript));
-        healthBarScript = GO.GetComponent<NewHealthBarScript>();
-    }
+    public BoxCollider2D[] boxColliders;
+    public void SetIsDead(bool isDead) {  this.isDead = isDead; }
 
     private void Start()
     {
@@ -41,10 +43,14 @@ public class PlayerDeath : MonoBehaviour
         healthBarScript.setMaxHealth(maxHealth);
         animator = GetComponent<Animator>();
         animationController = GetComponent<PlayerAnimationController>();
+        boxColliders = GetComponents<BoxCollider2D>();
     }
 
     private void Update()
     {
+        if (healthBarScript == null)
+            healthBarScript = FindAnyObjectByType<NewHealthBarScript>();
+
         IsDamaged();        
         
 
@@ -65,14 +71,15 @@ public class PlayerDeath : MonoBehaviour
             AudioManager.Manager.PlaySFX("PlayerDeath");
             isDead = true;
             animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Death);
-            Invoke("Die", animator.GetCurrentAnimatorClipInfo(0).Length);
+            Invoke(nameof(Die), animator.GetCurrentAnimatorClipInfo(0).Length);
             //if (!animationController.IsAnimationPlaying(animator, PlayerAnimationController.AnimationStates.Death))
             //{
+            //    Die();
             //}
-            //Die();
             
+
         }
-        
+
 
         //if godmode enabled set health to 100 every tick so is esentailly immortal
         if (godMode)
@@ -91,15 +98,6 @@ public class PlayerDeath : MonoBehaviour
             currentHealth = maxHealth;
         }
 
-        if (healthBarScript == null)
-        {
-            if (FindObjectOfType<NewHealthBarScript>() == true)
-            {
-                healthBarScript = FindObjectOfType<NewHealthBarScript>();
-                healthBarScript.setMaxHealth(maxHealth);
-            }
-        }
-
     }
 
     //private void OnTriggerEnter2D(Collider2D collision)
@@ -116,24 +114,66 @@ public class PlayerDeath : MonoBehaviour
     //        }
     //    }
     //}
-
-
+    
     public void RemoveHealth(int damage)
     {
-        if (!isInvincible)
+
+        StartCoroutine(delayedRemoveHealth(damage));
+
+        //if (!gameObject.GetComponent<playerAttack>().parrying)
+        //{
+        //    if (!isInvincible)
+        //    {
+        //        isDamaged = true;
+        //        AudioManager.Manager.PlaySFX("PlayerTakeDamage");
+        //        currentHealth -= damage;
+        //        healthBarScript.SetHealth(currentHealth);
+        //        showFloatingText(damage);
+
+
+        //        // Apply invincibility
+        //        isInvincible = true;
+        //        invincibilityTimer = invincibilityDuration;
+
+
+
+        //    }
+        //}
+        //else
+        //{
+        //    Debug.Log("has parried");
+        //}
+
+    }
+
+    IEnumerator delayedRemoveHealth(int dam)
+    {
+        recParryAttack = true;
+        yield return new WaitForSeconds(parryTime);
+        if (gameObject.GetComponent<playerAttack>().parrying)
         {
-            isDamaged = true;
-            AudioManager.Manager.PlaySFX("PlayerTakeDamage");
-            currentHealth -= damage;
-            healthBarScript.SetHealth(currentHealth);
-            showFloatingText(damage);
+            Debug.Log("parried");
+            gameObject.GetComponent<playerAttack>().parrying = false;
             
-
-            // Apply invincibility
-            isInvincible = true;
-            invincibilityTimer = invincibilityDuration;
-
         }
+        else
+        {
+            if (!isInvincible)
+            {
+
+                isDamaged = true;
+                AudioManager.Manager.PlaySFX("PlayerTakeDamage");
+                currentHealth -= dam;
+                healthBarScript.SetHealth(currentHealth);
+                showFloatingText(dam);
+
+
+                // Apply invincibility
+                isInvincible = true;
+                invincibilityTimer = invincibilityDuration;
+            }
+        }
+        recParryAttack = false;
     }
 
     private void IsDamaged()
@@ -163,42 +203,50 @@ public class PlayerDeath : MonoBehaviour
         //    //animator.SetTrigger("Die"); // Make sure your Animator has a "Die" trigger.
         //}
 
-        gameObject.SetActive(false);
+       // gameObject.SetActive(false);
         //Instantiate(...);              //spawn "YOU DIED" ui
-        Invoke("deathAfterDelay", 1);
+        Invoke("deathAfterDelay", 1f);
     }
     private void deathAfterDelay()
     {
         AudioManager.Manager.StopMusic("LevelMusic");
-        //deathscreenCanvas.ShowUI();
-        AudioManager.Manager.PlayMusic("MenuMusic");
+        AudioManager.Manager.StopMusic("BossMusic");
+        AudioManager.Manager.stopAllInGameSFX();
+
+        CanvasManager.Instance.deathScreenCanvas.ShowUI();
+        foreach (BoxCollider2D boxCollider in boxColliders)
+        {
+            if (boxCollider.isTrigger)
+                boxCollider.enabled = false;
+        }
+        AudioManager.Manager.PlayMusic("GameOver");
        
-        SceneManager.LoadScene("Main Menu Animated");
-        currentHealth = maxHealth;
-        GetComponent<Feeding>().currentHunger = 0;
-        isDead = false;
-        gameObject.SetActive(true);
-        
+        //SceneManager.LoadScene("MainMenu");
     }
 
     public void SunRiseDamage() // Deals Damage While The Player Is In Sun Light
     {
-        AudioManager.Manager.PlaySFX("PlayerTakeDamage");
-        animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Hurt);       
+        
+        animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Hurt);
+        currentHealth = currentHealth - sunDamage;
         healthBarScript.SetHealth(currentHealth);
     }
 
-    public void showFloatingText(int damage)
+    void showFloatingText(int damage)
     {
 
-        Vector3 spawnPos = transform.position + offset; 
+        Vector3 spawnPos = offset; 
         
         var go = Instantiate(floatingText, spawnPos, Quaternion.identity, transform);
         go.GetComponentInChildren<TextMeshProUGUI>().text = damage.ToString();
+
+        Destroy(go, 1f); 
     }
 
-    public bool IsDead()
+    public bool GetIsDead()
     {
         return isDead;
     }
+
+
 }

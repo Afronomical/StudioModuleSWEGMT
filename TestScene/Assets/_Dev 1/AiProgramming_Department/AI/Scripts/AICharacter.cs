@@ -7,8 +7,10 @@
 
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AICharacter : MonoBehaviour
 {
@@ -56,6 +58,7 @@ public class AICharacter : MonoBehaviour
     public float walkSpeed, runSpeed, crawlSpeed;
     public float turnSpeed;
     public float turnDistance;
+    
 
     [Header("States")]
     public States currentState;
@@ -76,6 +79,15 @@ public class AICharacter : MonoBehaviour
     [HideInInspector] public bool isMoving;
     [HideInInspector] public bool knowsAboutPlayer;
 
+    [Header("HUD References")]
+    public Sprite floatingExclamation;
+    public GameObject floatingDamage;
+    public Vector3 offset = new Vector3(0, 30, 0);
+
+    public GameObject exclamationMark; 
+
+    TrailRenderer _downedTrail;
+
     void Start()
     {
         walkSpeed /= 2;
@@ -86,6 +98,9 @@ public class AICharacter : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
 
         reloading = false;
+
+        _downedTrail = gameObject.GetComponent<TrailRenderer>();
+        _downedTrail.enabled = false;
     }
 
 
@@ -131,9 +146,11 @@ public class AICharacter : MonoBehaviour
                     stateScript = transform.AddComponent<AttackState>();
                     break;
                 case States.Downed:
+                    _downedTrail.enabled = true;
                     stateScript = transform.AddComponent<DownedState>();
                     //If the boss is the 1 downed
-                    spinattackboxPrefab.SetActive(false);
+                    if(spinattackboxPrefab != null)
+                        spinattackboxPrefab.SetActive(false);
                     break;
                 case States.Dead:
                     stateScript = transform.AddComponent<DeadState>();
@@ -207,7 +224,7 @@ public class AICharacter : MonoBehaviour
         return player.transform.position;
     }
 
-    public int GetHealth()
+    public float GetHealth()
     {
         return this.health;
     }
@@ -215,5 +232,31 @@ public class AICharacter : MonoBehaviour
     public void SetHealth(int n)
     {
         this.health = n;
+       
     }
+
+    public void ShowFloatingDamage(int damage)
+    {
+        Vector3 offset = new Vector3(0, 1, 0);
+        var go = Instantiate(floatingDamage, transform.position + offset, Quaternion.identity);
+        go.GetComponent<TextMesh>().text = damage.ToString();
+        //Debug.Log("Floating Damage" + "Enemy Pos" + transform.position + "Spawn Pos " + transform.position + offset);
+
+        Destroy(go, 1f);
+    }
+
+    
+
+    /*public void downedTrail()
+    {
+
+        if (States.Downed == currentState)
+        {
+            _downedTrail.enabled = true;
+        }
+        else
+        {
+            _downedTrail.enabled = false;
+        }
+    }*/
 }

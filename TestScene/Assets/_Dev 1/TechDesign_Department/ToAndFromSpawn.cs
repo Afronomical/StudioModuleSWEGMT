@@ -8,25 +8,49 @@ public class ToAndFromSpawn : MonoBehaviour
 {
     private bool canLeaveHub;
     private bool canLeaveLevel;
-    [SerializeField] string nextLevel1;
- 
+    [SerializeField] string currentLevel;
+    private TrailRenderer trailHandler;
 
+    private void Start()
+    {
+        trailHandler = GameObject.Find("PlayerPrefab1").GetComponent<TrailRenderer>();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        
         if (collision.CompareTag("Player"))
         {
             Debug.Log("Collided");
+            trailHandler.emitting = false;
 
-            
-            
-            SceneManager.LoadScene(nextLevel1);   
-            
+            if (SceneManager.GetActiveScene().name == "Spawn")
+            {
+                SceneManager.LoadScene(currentLevel);
+                
+            }
+            else
+            {
+                SceneManager.LoadScene("Spawn");
+            }            
         }
+    }
+
+    private void Update()
+    {
+        
+        
+        if (currentLevel != GameManager.Instance.currentLevel)
+        {
+            currentLevel = GameManager.Instance.currentLevel;
+
+        }
+
     }
 
     public void SetNextLevel(string newLevel)
     {
-        nextLevel1= newLevel;
+        currentLevel= newLevel;
+        
     }
 }

@@ -35,6 +35,8 @@ public class GameManager : MonoBehaviour
     public GameObject player;
     public Transform playerSpawn;
     private CountdownTimer timer;
+    public string nextLevel = "Level 2";
+    public string currentLevel = "Level 1";
 
     private void Awake()
     {
@@ -72,7 +74,7 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         //reference to game timer
-        timer = GameObject.Find("Countdown Text").GetComponent<CountdownTimer>();
+        timer = GameObject.Find("Timer").GetComponent<CountdownTimer>();
         //default state
         currentGameState = GameStates.PlayerInLevel;
     }
@@ -80,8 +82,13 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (timer == null)
+        {
+            timer = FindFirstObjectByType<CountdownTimer>();
+        }
+
         //CheckGameState();
-        CheckScene();
+        //CheckScene();
         //set in update so it is up-to-date with the people eaten
         //might have to add a people eaten counter to the feeding script
         if (PlayerController.Instance.GetComponent<Feeding>() != null)
@@ -94,7 +101,37 @@ public class GameManager : MonoBehaviour
             Debug.Log(peopleEaten + "/" + peopleEatingThreshold);
         }
 
-       
+        switch (SceneManager.GetActiveScene().name)
+        {
+            case "Spawn":
+                if (timer != null)
+                {
+                    timer.SetIsRotating(false);
+                    timer.enabled = false;
+                }
+                    
+                break;
+            case "Level 1":
+                nextLevel = "Level 2";
+                currentLevel = "Level 1";
+                if (timer != null)
+                {
+                    timer.enabled = true;
+                    timer.SetIsRotating(true);
+                }
+                break;
+            case "Level 2":
+                nextLevel = "BossLevel";
+                currentLevel = "Level 2";
+                if (timer != null)
+                {
+                    timer.enabled = true;
+                    timer.SetIsRotating(true);
+                }
+                break;
+            default:
+                break;
+        }
     }
 
     private void CheckScene()
@@ -108,20 +145,29 @@ public class GameManager : MonoBehaviour
             if (timer != null)
                 timer.enabled = false;
         }
-        else if (scene == SceneManager.GetSceneByName("Main Menu Animated"))
-        {
-            if (GameObject.FindObjectOfType<CountdownTimer>() != null)
-            {
-                GameObject GO = GameObject.FindObjectOfType<CountdownTimer>().transform.parent.gameObject;
-                Destroy(GO);
-            }
-        }
-        else
-        {
-            if (timer != null)
-                timer.enabled = true;
-            // player = GameObject.FindGameObjectWithTag("Player");
-        }
+        //else if (scene == SceneManager.GetSceneByName("Main Menu Animated"))
+        //{
+        //    if (GameObject.FindObjectOfType<CountdownTimer>() != null)
+        //    {
+        //        GameObject GO = GameObject.FindObjectOfType<CountdownTimer>().transform.parent.gameObject;
+        //        Destroy(GO);
+        //    }
+        //}
+        //else if(scene == SceneManager.GetSceneByName("Level 2"))
+        //{
+        //    if(timer != null)
+        //    {
+        //        timer.resetTimer(); 
+        //        timer.enabled = true;
+        //    }
+        //   
+        //}
+        //else
+        //{
+        //    if (timer != null)
+        //        timer.enabled = true;
+        //    // player = GameObject.FindGameObjectWithTag("Player");
+        //}
     }
 
     public void ChangeGameState(GameStates newState)

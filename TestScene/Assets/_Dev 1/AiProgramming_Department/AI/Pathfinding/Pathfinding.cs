@@ -26,12 +26,6 @@ public class Pathfinding : MonoBehaviour
     }
 
 
-    //public void StartFindPath(Vector3 startPos, Vector3 targetPos)
-    //{
-    //    StartCoroutine(FindPath(startPos, targetPos));
-    //}
-
-
     public void FindPath(PathRequest request, Action<PathResult> callback)
     {
         Stopwatch sw = new Stopwatch();

@@ -23,9 +23,9 @@ public class MainMenu : MonoBehaviour
 
     public void SettingsMenu()
     {
-        AudioManager.Manager.PlaySFX("UI_Click");
+        //AudioManager.Manager.PlaySFX("UI_Click");
         Debug.Log("Settings");
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("SettingsMenu");
         
 
     }
@@ -34,7 +34,7 @@ public class MainMenu : MonoBehaviour
     {
         AudioManager.Manager.PlaySFX("UI_Click");
         Debug.Log("Instructions");
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("InstructionsMenu");
     }
 
     public void ExitGame()

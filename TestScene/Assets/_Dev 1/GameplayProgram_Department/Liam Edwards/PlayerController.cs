@@ -15,11 +15,12 @@ public class PlayerController : MonoBehaviour
     public float maxStamina = 100;
     public float staminaDrainSpeed = 20;
     public float staminaRegenSpeed = 20;
+    public float dodgeStaminaCost = 33.333f;
     
     
     [SerializeField] float dodgeSpeed = 10f;
     [SerializeField] float dodgeDuration = 1f;
-    [SerializeField] float dodgeCooldown;
+    [SerializeField] float dodgeCooldown = 0.5f;
     [SerializeField] TrailRenderer dashTrail;
 
     private Animator animator;
@@ -30,7 +31,8 @@ public class PlayerController : MonoBehaviour
     bool canDodge;   
     bool isSprinting;
     
-
+    public PlayerDeath GetPlayerDeath() => playerDeath;
+    public Feeding GetFeeding() => GetComponent<Feeding>();
 
     public GameObject playerMesh;
     public GameObject batMesh;
@@ -78,8 +80,6 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        AnimateMovement();
-
         if (stamina != 100 && isSprinting == false)
         {
             StartCoroutine(StaminaRegen());
@@ -87,7 +87,7 @@ public class PlayerController : MonoBehaviour
 
         
 
-        if (!playerDeath.IsDead())
+        if (!playerDeath.GetIsDead())
         {
             if (isDodging)
             {
@@ -100,17 +100,18 @@ public class PlayerController : MonoBehaviour
                 isSprinting = true;
                 staminaRegenSpeed = 0;
                 rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * sprintSpeed, Input.GetAxisRaw("Vertical") * sprintSpeed);
-                //stamina -= Time.deltaTime * staminaDrainSpeed;
-                //staminaBarSlider.SetStamina(stamina);
+                stamina -= Time.deltaTime * staminaDrainSpeed;
+                staminaBarSlider.SetStamina(stamina);
 
             }
-            else if (Input.GetKeyDown(KeyCode.Space) && canDodge) // dodge
+            else if (Input.GetKeyDown(KeyCode.Space) && canDodge && stamina > dodgeStaminaCost) // dodge
             {
 
                 AudioManager.Manager.PlaySFX("PlayerDodge");
                 animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Dash);
                 StartCoroutine(Dodge());
-                isSprinting = false;
+                stamina -= dodgeStaminaCost;
+                isSprinting = true;
                 staminaRegenSpeed = 20;
 
             }
@@ -126,38 +127,6 @@ public class PlayerController : MonoBehaviour
             rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * 0, Input.GetAxisRaw("Vertical") * 0); // stops player moving after death
         }
     }
-
-    private void AnimateMovement()
-    {
-        Vector2 movementInput = new(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-
-        if (movementInput != Vector2.zero)
-        {
-            animator.SetFloat("MovementX", movementInput.x);
-            animator.SetFloat("MovementY", movementInput.y);
-        }
-
-        if (!animationController.IsAnimationPlaying(animator, PlayerAnimationController.AnimationStates.SlashAttack) &&
-            !animationController.IsAnimationPlaying(animator, PlayerAnimationController.AnimationStates.Dash) &&
-            !animationController.IsAnimationPlaying(animator, PlayerAnimationController.AnimationStates.Hurt) &&
-            !animationController.IsAnimationPlaying(animator, PlayerAnimationController.AnimationStates.Death) &&
-            !animationController.IsAnimationPlaying(animator, PlayerAnimationController.AnimationStates.Feed))
-        {
-            if (!playerDeath.IsDead())
-            {
-                if (movementInput != Vector2.zero)
-                {
-                    animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Walk);
-                }
-                else
-                {
-                    //AudioManager.Manager.PlayVFX("PlayerMove");
-                    animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Idle);
-                }
-            }
-        }
-    }
-
 
     private IEnumerator Dodge() // dodge mechanic
     {
@@ -175,6 +144,7 @@ public class PlayerController : MonoBehaviour
         dashTrail.emitting = false;
         yield return new WaitForSeconds(dodgeCooldown);
         canDodge = true;
+        isSprinting = false;
 
     }
 

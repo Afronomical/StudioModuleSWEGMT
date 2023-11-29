@@ -7,37 +7,56 @@
 
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RunState : StateBaseClass
 {
-    private float minRunDistance = 4;
-    private float maxRunDistance = 6;
-    private float runOffset = 0.1f;  // Stops them from running straight
+    private float minRunDistance = 5;
+    private float maxRunDistance = 10;
+    private float runOffset = 0.25f;  // Stops them from running straight
     private float minCheckTime = 0.5f;
     private float maxCheckTime = 1.5f;
     private float stopDistance = 0.5f;  // When they start slowing down
     private bool debugPath = false;
-
+    
     private Vector2 runDestination = Vector2.zero;
     private PathfindingSmoothing path;
     private int pathIndex = 0;
     private float speedPercent;
+    private int pathfindingErrorCheck;
+    private int maxPathfindingChecks = 2;
 
     public float checkTime;
+
+   // Sprite floatingExclamation;
 
 
     public RunState()
     {
         checkTime = 0f;
+        //floatingExclamation = character.floatingExclamation;
+        //showFloatingExclamation(); 
     }
+
+    //void showFloatingExclamation()
+    //{
+    //    Vector3 spawnPos = transform.position;
+
+    //    var go = Instantiate(floatingExclamation, spawnPos, Quaternion.identity, transform);   ////////testing exclamation mark 
+        
+    //}
 
 
     public override void UpdateLogic()
     {
-
-        //change colour to indicate state change
-        this.GetComponent<SpriteRenderer>().color = Color.blue;
+        if (character.characterType == AICharacter.CharacterTypes.Boss && maxRunDistance != 7)
+        {
+            minRunDistance = 4;
+            maxRunDistance = 7;
+            runOffset = 0.75f;
+        }
 
         if (checkTime > 0)  // Wait a bit before running 
             checkTime -= Time.deltaTime;
@@ -50,12 +69,22 @@ public class RunState : StateBaseClass
                 {
                     if (pathIndex == path.finishLineIndex)  // Has finished
                     {
-                        path = new PathfindingSmoothing(null, Vector3.zero, 0, 0);
-                        runDestination = Vector2.zero;  // Stop to look around and see if they escaped
-                        checkTime = Random.Range(minCheckTime, maxCheckTime);
-                        FindWalkTarget();
-                        character.isMoving = false;
-                        return;
+                        if (character.characterType != AICharacter.CharacterTypes.Boss)
+                        {
+                            path = new PathfindingSmoothing(null, Vector3.zero, 0, 0);
+                            runDestination = Vector2.zero;  // Stop to look around and see if they escaped
+                            checkTime = Random.Range(minCheckTime, maxCheckTime);
+                            FindWalkTarget();
+                            character.isMoving = false;
+                            return;
+                        }
+                        else
+                        {
+                            character.isAttacking = false;
+                            character.isMoving = false;
+                            GetComponent<BossStateMachineController>().reloadCountdown++;
+                            Destroy(this);
+                        }
                     }
                     else  // Has reached a checkpoint
                         pathIndex++;
@@ -90,7 +119,7 @@ public class RunState : StateBaseClass
         moveVector = moveVector.normalized;
         runDestination = new Vector3(-moveVector.x * Random.Range(minRunDistance, maxRunDistance),
                                      -moveVector.y * Random.Range(minRunDistance, maxRunDistance));
-
+        Debug.DrawLine(transform.position, runDestination, Color.red, 10);
         PathfindingRequestManager.RequestPath(new PathRequest(transform.position, runDestination, this, OnPathFound));
     }
 
@@ -102,9 +131,19 @@ public class RunState : StateBaseClass
             path = new PathfindingSmoothing(waypoints, transform.position, character.turnDistance, stopDistance);
             pathIndex = 0;
             speedPercent = 1;
+            pathfindingErrorCheck = 0;
+        }
+        else if (pathfindingErrorCheck >= maxPathfindingChecks)
+        {
+            pathfindingErrorCheck = maxPathfindingChecks / 2;
+            runOffset *= 2;
+            FindWalkTarget();  // Try and find a new path
         }
         else
+        {
+            pathfindingErrorCheck++;
             FindWalkTarget();  // Try and find a new path
+        }
     }
 
     public void OnDrawGizmos()

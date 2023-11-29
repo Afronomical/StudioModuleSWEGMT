@@ -22,7 +22,7 @@ public class Feeding : MonoBehaviour
     private float feedDelay = 2.0f; // Adjust the delay duration
     public bool currentlyFeeding = false;
 
-
+    public GameObject BloodOnFeed;
 
     private void Start()
     {
@@ -75,6 +75,8 @@ public class Feeding : MonoBehaviour
         if (canHeal && Input.GetKeyDown(healKey) && currentTarget != null)
         {
             currentlyFeeding = true;
+            // Play blood VFX
+            Instantiate(BloodOnFeed, currentTarget.transform.position, Quaternion.identity);
             // Play Feed SFX
             AudioManager.Manager.PlaySFX("PlayerFeed");
             // Feed on the current AI character in the feeding zone when it's downed
@@ -86,7 +88,7 @@ public class Feeding : MonoBehaviour
 
             // Call a method in the PlayerDeath script to increase player health
             playerDeath.FeedAttack();
-            ToolTipManager.ShowTopToolTip_Static("TASTY! Let's keep going before Sunlight hits!", durationTime);
+            CanvasManager.Instance.toolTipManager.ShowTopToolTip_Static("TASTY! Let's keep going before Sunlight hits!", durationTime);
 
             animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Feed);
 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class playerAttack : MonoBehaviour
 {
@@ -15,7 +16,21 @@ public class playerAttack : MonoBehaviour
     private AICharacter AiEnemy;
     private bool canHit = true;
     private Feeding feeding;
+    public GameObject BloodOnDamage;
+   // public GameObject floatingDamage;
 
+    [HideInInspector] public bool parrying;
+    private bool canParry;
+    public GameObject parryLight;
+    public float parryFeedbackLength = 0.3f;
+    private bool coolDownParry;
+    private float parryCoolTime;
+    private float parryCoolStart = 1f;
+    public GameObject heavyHitBox; // New hit box for heavy attack
+    public int heavyDamage = 3; // Damage for heavy attack
+    public float heavyChargeTime = 1.5f; // Time to charge the heavy attack
+    private float heavyChargeTimer;
+    private bool isChargingAttack = false; // Flag to indicate if the heavy attack is charging
 
     private Animator animator;
     private PlayerAnimationController animationController;
@@ -68,8 +83,19 @@ public class playerAttack : MonoBehaviour
             {
                 Debug.Log("DAMAGE");
                 AiEnemy.health = Mathf.Clamp(AiEnemy.health - damage, 1, 1000);
+                AiEnemy.ShowFloatingDamage(damage); 
+
+                EnemyKnockback enemyKnockback = obj.GetComponent<EnemyKnockback>();
+
+                if (enemyKnockback != null)
+                {
+                    // Apply knockback to the enemy
+                    enemyKnockback.ApplyKnockback(transform.position);
+                }
 
                 AudioManager.Manager.PlaySFX("NPC_TakeDamage");
+                //Instantiate(floatingDamage, AiEnemy.transform.position, Quaternion.identity);
+                Instantiate(BloodOnDamage, AiEnemy.transform.position, Quaternion.identity);
                 if (AiEnemy.characterType != AICharacter.CharacterTypes.Boss)
                     AiEnemy.GetComponentInChildren<AIAnimationController>().ChangeAnimationState(AIAnimationController.AnimationStates.Hurt); //Plays the currently hit AIs take damage function
                 //enemyTarg.GetComponentInChildren<AI_AnimationController>().ChangeAnimationState(AI_AnimationController.AnimationStates.Hurt);
@@ -96,10 +122,13 @@ public class playerAttack : MonoBehaviour
 
     }
 
+    
+
 
     void Start()
     {
         attackDelay = attackDelayStart;
+        parryCoolTime = parryCoolStart;
 
         animator = GetComponent<Animator>();
         animationController = GetComponent<PlayerAnimationController>();
@@ -107,6 +136,8 @@ public class playerAttack : MonoBehaviour
         feeding = GetComponent<Feeding>();
 
         //enemyHealth = AiEnemy.health;
+
+        heavyChargeTimer = heavyChargeTime;
     }
 
 
@@ -118,28 +149,72 @@ public class playerAttack : MonoBehaviour
         mousePos.y = Input.mousePosition.y - (Screen.height / 2);
         float angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
         hitBox.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward); //swap "angle" with another 0 if cam is another angle
-
+        heavyHitBox.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward); //swap "angle" with another 0 if cam is another angle
+        
         //calls damage enemy when LMB is pressed
         if (Input.GetKey(KeyCode.Mouse0))
         {
-           
-            if (canHit)//&& //feeding.currentlyFeeding == false)
+            
+            //animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.SlashAttack);
+            //AudioManager.Manager.PlaySFX("PlayerAttack");
+
+            if (canHit && feeding.currentlyFeeding == false)
             {
                 animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.SlashAttack);
                 animator.SetTrigger("AttackSlash");
                 AudioManager.Manager.PlaySFX("PlayerAttack");
                 damageEnemy();
                 canHit = false;
-               
-                Debug.Log("ATTACKED HDBGSUYHGBK");
+                
             }
 
             
         }
+
+        if (Input.GetKeyDown(KeyCode.Q)) 
+        {
+            // Start charging the heavy attack
+            if (!isChargingAttack)
+            {
+                isChargingAttack = true;
+            }
+        }
+
+        if (Input.GetKeyUp(KeyCode.Q))
+        {
+            if (isChargingAttack)
+            {
+                isChargingAttack = false;
+                heavyChargeTimer = heavyChargeTime;
+            }
+        }
+
+        if (isChargingAttack)
+        {
+            if (heavyChargeTimer > 0)
+            {
+                heavyChargeTimer -= Time.deltaTime;
+
+                // Charging animation or effects can be included here
+
+                if (heavyChargeTimer <= 0)
+                {
+                    animator.SetTrigger("HeavyAttackSlash");
+                    AudioManager.Manager.PlaySFX("PlayerHeavyAttack");
+                    animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.SlashAttack);
+                    ExecuteHeavyAttack();
+                    heavyChargeTimer = heavyChargeTime;
+                    isChargingAttack = false;
+                    canHit = false;
+                }
+            }
+        }
+
         if (!canHit)
         {
             
             attackDelay -= Time.deltaTime;
+
             if (attackDelay <= 0)
             {
                 canHit = true;
@@ -148,5 +223,55 @@ public class playerAttack : MonoBehaviour
         }
         
 
+        if (Input.GetKeyDown(KeyCode.Mouse1) && gameObject.GetComponent<PlayerDeath>().recParryAttack && !coolDownParry)
+        {
+            parrying = true;
+            StartCoroutine(parryFeedBack());
+        }
+        else if (Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            coolDownParry = true;
+            Debug.Log("parry cooling down");
+        }
+        if (coolDownParry)
+        {
+            parryCoolTime -= Time.deltaTime;
+            if (parryCoolTime <= 0)
+            {
+                coolDownParry = false;
+                parryCoolTime = parryCoolStart;
+            }
+        }
+
     }
+    IEnumerator parryFeedBack()
+    {
+        AudioManager.Manager.PlaySFX("Parry");
+        parryLight.GetComponent<Light2D>().enabled = true;
+        yield return new WaitForSeconds(parryFeedbackLength);
+        parryLight.GetComponent<Light2D>().enabled = false;
+    }
+    
+
+    void ExecuteHeavyAttack()
+    {
+        foreach (GameObject obj in enemyList)
+        {
+            if (obj.TryGetComponent(out AICharacter AiEnemy))
+            {
+                AiEnemy.health = Mathf.Clamp(AiEnemy.health - heavyDamage, 1, 1000);
+                EnemyKnockback enemyKnockback = obj.GetComponent<EnemyKnockback>();
+
+                if (enemyKnockback != null)
+                {
+                    // Apply knockback to the enemy
+                    enemyKnockback.ApplyKnockback(transform.position, 3.8f);
+                }
+
+                AudioManager.Manager.PlaySFX("NPC_TakeDamage");
+                AiEnemy.GetComponentInChildren<AIAnimationController>().ChangeAnimationState(AIAnimationController.AnimationStates.Hurt);
+            }
+        }
+    }
+
 }

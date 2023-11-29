@@ -32,7 +32,13 @@ public class Bullet : MonoBehaviour
         else if (collision.gameObject.layer == LayerMask.NameToLayer("Unwalkable"))
         {
             AudioManager.Manager.PlaySFX("ArrowHitObj");
-            Destroy(gameObject);
+            this.gameObject.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+            Invoke("DestroyBullet", 1.5f);
         }
+    }
+
+    private void DestroyBullet()
+    {
+        Destroy(this.gameObject);
     }
 }

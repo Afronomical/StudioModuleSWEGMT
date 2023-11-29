@@ -16,6 +16,7 @@ public class ReloadState : StateBaseClass
 
         Instantiate(reloadBarPrefab, reloadBar.position, Quaternion.Euler(new Vector3(1,1,1)), reloadBar);
         StartCoroutine(WaitTime());
+        //character.reloading = false;
     }
 
     public override void UpdateLogic()
@@ -28,5 +29,6 @@ public class ReloadState : StateBaseClass
     {
         yield return new WaitForSeconds(3);
         character.isAttacking = false;
+        character.reloading = false;
     }
 }

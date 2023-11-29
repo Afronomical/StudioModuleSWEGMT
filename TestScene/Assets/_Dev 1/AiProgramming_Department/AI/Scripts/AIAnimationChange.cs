@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.TextCore.Text;
 
 public class AIAnimationChange : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class AIAnimationChange : MonoBehaviour
     //public Animator slashEffect;
 
     private bool characterAttacking = false;
+    public bool characterHasDied = false;
 
     
 
@@ -36,7 +38,7 @@ public class AIAnimationChange : MonoBehaviour
         //Debug.Log(slashEffect.parameters.GetValue(0));
 
         if (!animController.IsAnimationPlaying(anim, AIAnimationController.AnimationStates.Hurt) &&
-            !animController.IsAnimationPlaying(anim, AIAnimationController.AnimationStates.SwordAttack))  // If he isn't playing the hurt animation
+            !animController.IsAnimationPlaying(anim, AIAnimationController.AnimationStates.SwordAttack) && !characterHasDied)  // If he isn't playing the hurt animation
         {
             switch (characterScript.currentState)
             {
@@ -68,8 +70,6 @@ public class AIAnimationChange : MonoBehaviour
                     if (!characterAttacking)
                     {
                         animController.ChangeAnimationState(AIAnimationController.AnimationStates.SwordAttack);
-                        //slashEffect.SetTrigger("SlashEffect");
-                        
                         characterAttacking = true;
                     }
                     else
@@ -84,11 +84,27 @@ public class AIAnimationChange : MonoBehaviour
                     animController.ChangeAnimationState(AIAnimationController.AnimationStates.BowAttack);
                     break;
                 case AICharacter.States.Dead:
-                    animController.ChangeAnimationState(AIAnimationController.AnimationStates.Death);
+                    if (!characterHasDied)
+                    {
+                        animController.ChangeAnimationState(AIAnimationController.AnimationStates.Death);
+                        AudioManager.Manager.PlaySFX("NPC_Death");
+                        characterHasDied = true;
+                    }
                     break;
                 case AICharacter.States.SpecialAttack:
                     animController.ChangeAnimationState(AIAnimationController.AnimationStates.BowAttack);
                     break;
+                case AICharacter.States.Reload:
+                    animController.ChangeAnimationState(AIAnimationController.AnimationStates.Reload);
+                    break;
+                case AICharacter.States.None:
+                    animController.ChangeAnimationState(AIAnimationController.AnimationStates.Idle);
+                    break;
+                case AICharacter.States.Alerted:
+                    animController.ChangeAnimationState(AIAnimationController.AnimationStates.Alerted);
+                    break;
+
+
             }
         }
     }

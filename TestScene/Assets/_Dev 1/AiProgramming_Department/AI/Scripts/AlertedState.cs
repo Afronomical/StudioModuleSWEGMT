@@ -5,8 +5,9 @@ using UnityEngine;
 public class AlertedState : StateBaseClass
 {
     private AIAnimationController animController;
-    private Animator anim;
-    private float alertedTime = 0.5f;  // How long the state will last
+    private Animator anim; 
+    private float alertedTime = 0.75f;  // How long the state will last
+    
 
     private void Start()
     {
@@ -16,6 +17,7 @@ public class AlertedState : StateBaseClass
         character.isMoving = false;
         character.isAttacking = true;
         character.knowsAboutPlayer = true;
+        
         StartCoroutine(Alerted());
     }
 
@@ -26,8 +28,16 @@ public class AlertedState : StateBaseClass
 
     private IEnumerator Alerted()
     {
-
+       
+       
+        GameObject go = Instantiate(character.exclamationMark, 
+            new Vector3(character.transform.position.x, character.transform.position.y + 1, character.transform.position.z), 
+            Quaternion.identity, transform.Find("Sprite"));
+           
         yield return new WaitForSeconds(alertedTime);
+
+        Destroy(go);
+       
 
         if (character.characterType == AICharacter.CharacterTypes.Boss)
             GetComponent<BossStateMachineController>().ChangePhase();
@@ -35,4 +45,7 @@ public class AlertedState : StateBaseClass
         character.isAttacking = false;
         character.ChangeState(AICharacter.States.None);  // Return to normal states
     }
+        
+        
+       
 }
