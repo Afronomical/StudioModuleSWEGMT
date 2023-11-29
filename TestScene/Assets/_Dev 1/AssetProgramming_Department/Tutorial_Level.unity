@@ -927,6 +927,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8409612617082958024, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 8409612617082958024, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: m_Name
       value: TUTORIAL_TRIGGER
       objectReference: {fileID: 0}
@@ -1698,6 +1702,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8409612617082958024, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 8409612617082958024, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: m_Name
       value: TUTORIAL_TRIGGER
       objectReference: {fileID: 0}
@@ -1764,8 +1772,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 34.20945, y: -21.7106, z: 0}
-    m_Extent: {x: 47.177254, y: 35.3276, z: 0}
+    m_Center: {x: 34.209003, y: -21.7127, z: 0}
+    m_Extent: {x: 47.173, y: 35.3244, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1961,6 +1969,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 8409612617082958024, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 8409612617082958024, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: m_Name
       value: TUTORIAL_TRIGGER
@@ -48712,6 +48724,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8409612617082958024, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 8409612617082958024, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: m_Name
       value: TUTORIAL_TRIGGER
