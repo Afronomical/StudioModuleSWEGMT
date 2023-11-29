@@ -14,6 +14,12 @@ public class ReloadState : StateBaseClass
         reloadBar = character.reloadBar;
         reloadBarPrefab = character.reloadBarPrefab;
 
+        if(character.characterType == AICharacter.CharacterTypes.Boss)
+        {
+            if(!character.ps.isPlaying) character.ps.Play();
+
+        }
+
         Instantiate(reloadBarPrefab, reloadBar.position, Quaternion.Euler(new Vector3(1,1,1)), reloadBar);
         StartCoroutine(WaitTime());
         //character.reloading = false;

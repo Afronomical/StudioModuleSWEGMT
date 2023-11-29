@@ -84,7 +84,9 @@ public class AICharacter : MonoBehaviour
     public GameObject floatingDamage;
     public Vector3 offset = new Vector3(0, 30, 0);
 
-    public GameObject exclamationMark; 
+    public GameObject exclamationMark;
+
+    public ParticleSystem ps;
 
     TrailRenderer _downedTrail;
 
