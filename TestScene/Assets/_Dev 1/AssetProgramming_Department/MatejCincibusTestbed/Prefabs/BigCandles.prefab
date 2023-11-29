@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2424262401151548756}
   - component: {fileID: 5443915012387840112}
   - component: {fileID: 592491320684864464}
+  - component: {fileID: 317708466233276644}
   m_Layer: 0
   m_Name: BigCandles
   m_TagString: Untagged
@@ -85,7 +86,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!58 &592491320684864464
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -122,6 +123,28 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: -0.0055806637, y: -1.3505323}
   m_Radius: 0.26666307
+--- !u!95 &317708466233276644
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4118522930717191}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a89d280617061d84b8cb981f25babfb4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2826855348927162415
 GameObject:
   m_ObjectHideFlags: 0
