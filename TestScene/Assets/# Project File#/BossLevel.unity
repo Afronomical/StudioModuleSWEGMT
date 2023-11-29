@@ -608,7 +608,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2207885135432695148, guid: 99d0183fde40a224eae3632a6b0caf96, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4345570161522551933, guid: 99d0183fde40a224eae3632a6b0caf96, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20790,6 +20790,14 @@ PrefabInstance:
     - target: {fileID: 1304859699899162338, guid: 3246b6fa5942f2a439e4abd7ef57e2b9, type: 3}
       propertyPath: m_Name
       value: Van Helsing
+      objectReference: {fileID: 0}
+    - target: {fileID: 6125311130634775527, guid: 3246b6fa5942f2a439e4abd7ef57e2b9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.717
+      objectReference: {fileID: 0}
+    - target: {fileID: 6125311130634775527, guid: 3246b6fa5942f2a439e4abd7ef57e2b9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.13
       objectReference: {fileID: 0}
     - target: {fileID: 6765331982240328346, guid: 3246b6fa5942f2a439e4abd7ef57e2b9, type: 3}
       propertyPath: playerDeath
