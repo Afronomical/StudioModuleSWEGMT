@@ -11,12 +11,12 @@ public class TUTORIAL_TRIGGERS : MonoBehaviour
     public string TutorialText;
     public GameObject TutorialCanvas;
     public TextMeshProUGUI CanvasText;
-    public GameObject HUDArrow; 
+    public GameObject ArrowToSpawn; 
 
     private void Start()
     {
         TutorialCanvas.SetActive(false);
-        HUDArrow.SetActive(false);
+        ArrowToSpawn.SetActive(false);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -25,13 +25,13 @@ public class TUTORIAL_TRIGGERS : MonoBehaviour
         {
             TutorialCanvas.SetActive(true);
             CanvasText.text = TutorialText; 
-            if(HUDArrow != null)
+            if(ArrowToSpawn != null)
             {
-                HUDArrow.SetActive(true);
+                ArrowToSpawn.SetActive(true);
             }
             else
             {
-
+                ///nothin 
             }
           
             
@@ -43,7 +43,7 @@ public class TUTORIAL_TRIGGERS : MonoBehaviour
         if(collision.CompareTag("Player"))
         {
             TutorialCanvas.SetActive(false);
-            HUDArrow?.SetActive(false); 
+            ArrowToSpawn?.SetActive(false); 
             CanvasText.text = " "; 
         }
     }
