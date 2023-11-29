@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &2251010190730529137
+--- !u!1001 &7769947229004588780
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,15 +10,27 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3893423085264075015, guid: 8c90a4d3ab2d818489001b1586355f2b, type: 3}
       propertyPath: m_Name
-      value: TUTORIAL_ARROW_HEALTH
+      value: TUTORIAL_ARROW_STAMINA
+      objectReference: {fileID: 0}
+    - target: {fileID: 4876437173037992620, guid: 8c90a4d3ab2d818489001b1586355f2b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9670212
+      objectReference: {fileID: 0}
+    - target: {fileID: 4876437173037992620, guid: 8c90a4d3ab2d818489001b1586355f2b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.2546958
       objectReference: {fileID: 0}
     - target: {fileID: 4876437173037992620, guid: 8c90a4d3ab2d818489001b1586355f2b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -146
+      value: -184
       objectReference: {fileID: 0}
     - target: {fileID: 4876437173037992620, guid: 8c90a4d3ab2d818489001b1586355f2b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 189
+      value: 130
+      objectReference: {fileID: 0}
+    - target: {fileID: 4876437173037992620, guid: 8c90a4d3ab2d818489001b1586355f2b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -29.511
       objectReference: {fileID: 0}
     - target: {fileID: 8326305422924492135, guid: 8c90a4d3ab2d818489001b1586355f2b, type: 3}
       propertyPath: m_LocalPosition.x
