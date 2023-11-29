@@ -8,6 +8,7 @@ public class HomingBullet : MonoBehaviour
     public GameObject player;
     Rigidbody2D rb;
     public int bulletDamage = 5;
+    public ParticleSystem ps;
     private void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -36,6 +37,7 @@ public class HomingBullet : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            if (!ps.isPlaying) ps.Play();
             player.GetComponent<PlayerDeath>().RemoveHealth(bulletDamage);
             Destroy(gameObject);
         }
@@ -46,8 +48,10 @@ public class HomingBullet : MonoBehaviour
         }
         else if (collision.gameObject.layer == LayerMask.NameToLayer("Unwalkable"))
         {
+            this.GetComponent<BoxCollider2D>().enabled = false;
             AudioManager.Manager.PlaySFX("ArrowHitObj");
             this.gameObject.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+            if (!ps.isPlaying) ps.Play();
             Invoke("DestroyBullet", 1.5f);
         }
     }
