@@ -9,7 +9,14 @@ public class PauseMenu : MonoBehaviour
 
     public static bool isPaused = false;
     public GameObject pauseMenuUI;
-   // public Canvas loadingScreen;
+    // public Canvas loadingScreen;
+
+    private GameObject playerObject;
+
+    private void Start()
+    {
+        playerObject = FindFirstObjectByType<PlayerController>().gameObject;
+    }
 
 
     // Update is called once per frame
@@ -34,6 +41,10 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         AudioManager.Manager.stopAllInGameSFX();
+
+        playerObject.GetComponent<playerAttack>().enabled = false;
+        playerObject.GetComponent<PlayerController>().enabled = false;
+        playerObject.GetComponent<PlayerAnimationChange>().enabled = false;
     }
     public void Resume()
     {
@@ -41,10 +52,15 @@ public class PauseMenu : MonoBehaviour
         isPaused = false;
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
+
+        playerObject.GetComponent<playerAttack>().enabled = true;
+        playerObject.GetComponent<PlayerController>().enabled = true;
+        playerObject.GetComponent<PlayerAnimationChange>().enabled = true;
     }
 
     public void LoadMenu()
     {
+        isPaused = false;
         Time.timeScale = 1f;
         AudioManager.Manager.PlaySFX("UI_Click");
         pauseMenuUI.SetActive(false);
@@ -52,12 +68,11 @@ public class PauseMenu : MonoBehaviour
         AudioManager.Manager.StopMusic("LevelMusic");
         AudioManager.Manager.StopMusic("BossMusic");
 
-        
-       // loadingScreen.enabled = true;
-        
-        
-      // LevelManager.Instance.LoadScene("MainMenu");
-        
+        // loadingScreen.enabled = true;
+
+
+        // LevelManager.Instance.LoadScene("MainMenu");
+
     }
 
     public void Quit()
