@@ -67,6 +67,8 @@ public class AIAnimationChange : MonoBehaviour
                     animController.ChangeAnimationState(AIAnimationController.AnimationStates.Downed);
                     break;
                 case AICharacter.States.Attack:
+                case AICharacter.States.DashAttack:
+                case AICharacter.States.SpinAttackBox:
                     if (!characterAttacking)
                     {
                         animController.ChangeAnimationState(AIAnimationController.AnimationStates.SwordAttack);
@@ -81,6 +83,12 @@ public class AIAnimationChange : MonoBehaviour
                     }
                     break;
                 case AICharacter.States.Shoot:
+                case AICharacter.States.SpecialAttack:
+                case AICharacter.States.SprayShoot1:
+                case AICharacter.States.SprayShoot2:
+                case AICharacter.States.CircularShoot:
+                case AICharacter.States.HomingArrow:
+                case AICharacter.States.SprayArrows:
                     animController.ChangeAnimationState(AIAnimationController.AnimationStates.BowAttack);
                     break;
                 case AICharacter.States.Dead:
@@ -91,9 +99,6 @@ public class AIAnimationChange : MonoBehaviour
                         characterHasDied = true;
                     }
                     break;
-                case AICharacter.States.SpecialAttack:
-                    animController.ChangeAnimationState(AIAnimationController.AnimationStates.BowAttack);
-                    break;
                 case AICharacter.States.Reload:
                     animController.ChangeAnimationState(AIAnimationController.AnimationStates.Reload);
                     break;
@@ -103,8 +108,6 @@ public class AIAnimationChange : MonoBehaviour
                 case AICharacter.States.Alerted:
                     animController.ChangeAnimationState(AIAnimationController.AnimationStates.Alerted);
                     break;
-
-
             }
         }
     }

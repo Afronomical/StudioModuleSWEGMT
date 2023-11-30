@@ -13,10 +13,17 @@ public class ReferenceManager : MonoBehaviour
     void Start()
     {
         
-            player = GameObject.FindGameObjectWithTag("Player");
-            playerHealthScript = player.GetComponent<PlayerDeath>();
+        player = GameObject.FindGameObjectWithTag("Player");
+        playerHealthScript = player.GetComponent<PlayerDeath>();
         
-            
+        if (!player.GetComponent<playerAttack>().isActiveAndEnabled)
+            player.GetComponent<playerAttack>().enabled = true;
+
+        if (!player.GetComponent<PlayerController>().isActiveAndEnabled)
+            player.GetComponent<PlayerController>().enabled = true;
+
+        if (!player.GetComponent<PlayerAnimationChange>().isActiveAndEnabled)
+            player.GetComponent<PlayerAnimationChange>().enabled = true;
         
     }
 
