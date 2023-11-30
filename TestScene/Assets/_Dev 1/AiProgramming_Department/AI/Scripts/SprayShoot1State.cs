@@ -38,6 +38,7 @@ public class SprayShoot1State : StateBaseClass
         Vector2 distance = character.player.transform.position - character.transform.position;
         distance.Normalize();
         GameObject bullet = Instantiate(bulletPrefab, origin.position, origin.rotation);
+        AudioManager.Manager.PlaySFX("NPC_RangedAttack");
         bullet.GetComponent<Rigidbody2D>().velocity = distance * bulletSpeed;
 
         character.isAttacking = false;

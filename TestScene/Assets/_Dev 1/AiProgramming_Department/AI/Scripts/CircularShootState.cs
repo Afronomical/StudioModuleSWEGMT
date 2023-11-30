@@ -40,6 +40,7 @@ public class CircularShootState : StateBaseClass
         {
             GameObject bullet = Instantiate(bulletPrefab, origin.position, origin.rotation);
             bullet.GetComponent<Rigidbody2D>().velocity = transform.right * bulletSpeed;
+            AudioManager.Manager.PlaySFX("NPC_RangedAttack");
             currentDelay = 0.1f;
 
             arrowsShot++;

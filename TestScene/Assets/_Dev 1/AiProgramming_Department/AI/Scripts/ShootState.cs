@@ -15,6 +15,8 @@ public class ShootState : StateBaseClass
     public GameObject homingBulletPrefab;
     private float bulletSpeed = 6f;
 
+    int numberOfShots = 0;
+
     //private IEnumerator coroutine;
 
     //Gameplay Programmers Script for the Player Health
@@ -39,17 +41,22 @@ public class ShootState : StateBaseClass
         //change colour to indicate state change
         this.GetComponent<SpriteRenderer>().color = Color.cyan;
         character.isMoving = false;
-
-
-
         //Counts down the delay
         currentDelay -= Time.deltaTime;
 
-        if (currentDelay <= 0)
+        if (numberOfShots == 5) 
         {
+            character.reloading = true;
+            character.isAttacking = false;
+            numberOfShots = 0;
+        }
 
+
+        else if (currentDelay <= 0 && !character.reloading)
+        {
+            character.isAttacking = true;
             Shoot();
-           
+            numberOfShots++;
             currentDelay = attackDelay;
         }
 

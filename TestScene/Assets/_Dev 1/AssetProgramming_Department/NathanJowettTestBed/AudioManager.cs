@@ -105,6 +105,21 @@ public class AudioManager : MonoBehaviour
             s.source.Stop();
         }
     }
+    public void stopAllInGameSFX()
+    {
+        AudioManager.Manager.StopSFX("PlayerAttack");
+        AudioManager.Manager.StopSFX("PlayerDodge");
+        AudioManager.Manager.StopSFX("PlayerHeavyAttack");
+        AudioManager.Manager.StopSFX("BossMelee");
+        AudioManager.Manager.StopSFX("NPC_RangedAttack");
+        AudioManager.Manager.StopSFX("Bossdash");
+        AudioManager.Manager.StopSFX("Parry");
+        AudioManager.Manager.StopSFX("NPC_TakeDamage");
 
-
+    }
+    public void OnMouseUp()
+    {
+        AudioManager.Manager.PlaySFX("UI_Click");
+        
+    }
 }

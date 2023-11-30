@@ -39,10 +39,21 @@ public class HomingBullet : MonoBehaviour
             player.GetComponent<PlayerDeath>().RemoveHealth(bulletDamage);
             Destroy(gameObject);
         }
-        else if (collision.gameObject.CompareTag("Villager") || collision.gameObject.layer == 6)//add hunter and any other colliders here
+        else if (collision.gameObject.CompareTag("Villager"))//add hunter and any other colliders here
         {
             //add any checks to destroy bullet here
             Destroy(gameObject);
         }
+        else if (collision.gameObject.layer == LayerMask.NameToLayer("Unwalkable"))
+        {
+            AudioManager.Manager.PlaySFX("ArrowHitObj");
+            this.gameObject.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+            Invoke("DestroyBullet", 1.5f);
+        }
+    }
+
+    private void DestroyBullet()
+    {
+        Destroy(this.gameObject);
     }
 }

@@ -6,7 +6,7 @@ public class AlertedState : StateBaseClass
 {
     private AIAnimationController animController;
     private Animator anim; 
-    private float alertedTime = 1.5f;  // How long the state will last
+    private float alertedTime = 0.75f;  // How long the state will last
     
 
     private void Start()
@@ -30,7 +30,9 @@ public class AlertedState : StateBaseClass
     {
        
        
-        var go = Instantiate(character.exclamationMark, new Vector3(character.transform.position.x, character.transform.position.y + 1, character.transform.position.z), Quaternion.identity);
+        GameObject go = Instantiate(character.exclamationMark, 
+            new Vector3(character.transform.position.x, character.transform.position.y + 1, character.transform.position.z), 
+            Quaternion.identity, transform.Find("Sprite"));
            
         yield return new WaitForSeconds(alertedTime);
 

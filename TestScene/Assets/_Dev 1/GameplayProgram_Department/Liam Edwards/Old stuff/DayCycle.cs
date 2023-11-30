@@ -9,7 +9,7 @@ public class DayCycle : MonoBehaviour
     public float changeSpeed; // The speed at which the colour changes
     //private float colourChange = 0f; // A float to hold the current colour
     public float timeInSun = 0; // A float to calculate the amount of time the player has spent in the sun
-    public float nightTime; // The amount of time remaining in the night
+    public bool nightTime; // The amount of time remaining in the night
     public int sunBurn; //
     public float damageDelay = 1.5f; // Num of seconds between the delay in damage whrn the player is in the sun
 
@@ -36,14 +36,18 @@ public class DayCycle : MonoBehaviour
     void Update()
     {
        
-        nightTime = countdownTimer.timeRemaining; // Links Up The "nightTime" Variable To The Countdown Clock
+        nightTime = !countdownTimer.timeIsRunning; // Links Up The "nightTime" Variable To The Countdown Clock
+        print(countdownTimer.timeIsRunning);
 
-        if (nightTime <= 0) // Checks For When The Timer Reaches 
+        if (nightTime) // Checks For When The Timer Reaches 
         {            
             ColourChange();
             timeInSun += Time.deltaTime;
-            if (transform.GetComponent<Collider2D>().IsTouching(GameObject.FindGameObjectWithTag("Player").GetComponent<Collider2D>()))
+            //if (transform.GetComponent<Collider2D>().IsTouching(GameObject.FindGameObjectWithTag("Player").GetComponent<Collider2D>()))
+            //if()
             {                              
+                print("Detected Player");
+
                 if (timeInSun < 5 && canBurn == true)
                 {
                     sunBurn = 1;
