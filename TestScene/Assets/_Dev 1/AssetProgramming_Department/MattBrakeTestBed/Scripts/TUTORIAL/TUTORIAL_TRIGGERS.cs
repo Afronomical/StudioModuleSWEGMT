@@ -1,8 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class TUTORIAL_TRIGGERS : MonoBehaviour
 {
@@ -11,21 +8,25 @@ public class TUTORIAL_TRIGGERS : MonoBehaviour
     public string TutorialText;
     public GameObject TutorialCanvas;
     public TextMeshProUGUI CanvasText;
-    public GameObject ArrowToSpawn; 
+    public GameObject ArrowToSpawn;
+
+    private TUTORIAL_TypewriterController controller;
 
     private void Start()
     {
+        controller = transform.parent.GetComponent<TUTORIAL_TypewriterController>();
+        CanvasText.text = "";
         TutorialCanvas.SetActive(false);
         ArrowToSpawn.SetActive(false);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Player"))
+        if(collision.gameObject.CompareTag("Player")) //&& !isDisplaying
         {
             TutorialCanvas.SetActive(true);
-            CanvasText.text = TutorialText; 
-            if(ArrowToSpawn != null)
+            controller.SetIsDisplaying(true, TutorialText); 
+            if (ArrowToSpawn != null)
             {
                 ArrowToSpawn.SetActive(true);
             }
@@ -40,11 +41,11 @@ public class TUTORIAL_TRIGGERS : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if(collision.CompareTag("Player"))
+        if(collision.gameObject.CompareTag("Player"))
         {
+            CanvasText.text = "";
             TutorialCanvas.SetActive(false);
             ArrowToSpawn?.SetActive(false); 
-            CanvasText.text = " "; 
         }
     }
 }

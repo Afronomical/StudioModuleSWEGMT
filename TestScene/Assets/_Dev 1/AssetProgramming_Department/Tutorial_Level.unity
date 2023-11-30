@@ -1772,8 +1772,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 34.209003, y: -21.7127, z: 0}
-    m_Extent: {x: 47.173, y: 35.3244, z: 0}
+    m_Center: {x: 34.204502, y: -21.712849, z: 0}
+    m_Extent: {x: 47.1721, y: 35.32835, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -3002,7 +3002,8 @@ PrefabInstance:
       objectReference: {fileID: 917977250}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialText
-      value: 'MOVEMENT ::::'
+      value: This test text is used to give the player information about the characters
+        movement.
       objectReference: {fileID: 0}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialCanvas
