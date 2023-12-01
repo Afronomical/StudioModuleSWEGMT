@@ -6,7 +6,8 @@ public class BossCanvasActivate : MonoBehaviour
 {
     public Canvas BossCanvas;
     public CanvasGroup bossCanvasGroup;
-    public bool fadeIn; 
+    public bool fadeIn;
+    private PlayerDeath player;
     
     
     // Start is called before the first frame update
@@ -14,6 +15,7 @@ public class BossCanvasActivate : MonoBehaviour
     {
         bossCanvasGroup.alpha = 0;
         AudioManager.Manager.StopMusic("LevelMusic");
+        player = FindFirstObjectByType<PlayerDeath>();
         //AudioManager.Manager.PlayMusic("BossMusic");
     }
 
@@ -43,6 +45,11 @@ public class BossCanvasActivate : MonoBehaviour
                     fadeIn = false;
                 }
             }
+        }
+
+        if(player.currentHealth <= 0)
+        {
+            bossCanvasGroup.alpha = 0;
         }
     }
 }
