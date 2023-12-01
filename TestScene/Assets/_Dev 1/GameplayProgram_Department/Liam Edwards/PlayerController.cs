@@ -47,6 +47,7 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
+        AudioManager.Manager.PlayMusic("LevelMusic");
         if (Instance != null)
         {
             Destroy(this.gameObject);
@@ -60,7 +61,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        AudioManager.Manager.PlayMusic("LevelMusic");
+        
         rb = GetComponent<Rigidbody2D>();
 
         canDodge = true;
