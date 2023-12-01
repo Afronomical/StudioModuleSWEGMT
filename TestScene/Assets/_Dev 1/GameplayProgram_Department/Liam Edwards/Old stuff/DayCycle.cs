@@ -22,6 +22,8 @@ public class DayCycle : MonoBehaviour
 
     public void Start()
     {
+        countdownTimer = CanvasManager.Instance.countdownTimer;
+
         canBurn = true;
         gameObject.transform.localScale = new Vector2(1000, 1000); // Sets Size Of SunLight Game Object (width, height) Needs to cover the whole level
         transform.position = new Vector3(0, 0, 0); // Sets Pos to Off The Screen
