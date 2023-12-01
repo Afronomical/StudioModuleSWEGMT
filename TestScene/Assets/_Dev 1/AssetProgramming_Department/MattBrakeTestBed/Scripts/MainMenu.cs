@@ -35,7 +35,7 @@ public class MainMenu : MonoBehaviour
             CanvasManager.Instance.staminaBar.gameObject.SetActive(true);
             //float hunger = CanvasManager.Instance.hungerBarUI.GetComponent<HungerBar>().currentValue;
             CanvasManager.Instance.hungerBarUI.GetComponent<HungerBar>().SetMinHunger(0);
-            CanvasManager.Instance.HealthBar.GetComponent<NewHealthBarScript>().setMaxHealth(100);
+            //CanvasManager.Instance.HealthBar.GetComponent<NewHealthBarScript>().setMaxHealth(100);
 
         }
 

@@ -26,12 +26,16 @@ public class ToAndFromSpawn : MonoBehaviour
 
             if (SceneManager.GetActiveScene().name == "Spawn")
             {
+                AudioManager.Manager.StopMusic("Spawn");
                 SceneManager.LoadScene(currentLevel);
+                AudioManager.Manager.PlayMusic("LevelMusic");
                 
             }
             else
             {
                 SceneManager.LoadScene("Spawn");
+                AudioManager.Manager.StopMusic("LevelMusic");
+                AudioManager.Manager.PlayMusic("Spawn");
             }            
         }
     }

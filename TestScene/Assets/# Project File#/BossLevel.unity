@@ -12766,6 +12766,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BossCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 5702947401994293975, guid: d65ea9b04ca3fea4e9c0b40a0a44ac79, type: 3}
+      propertyPath: topToolTip
+      value: 
+      objectReference: {fileID: 603638635}
     - target: {fileID: 7865808534844621312, guid: d65ea9b04ca3fea4e9c0b40a0a44ac79, type: 3}
       propertyPath: Boss
       value: 
@@ -12790,6 +12794,10 @@ PrefabInstance:
       propertyPath: winnerScreenCanvas
       value: 
       objectReference: {fileID: 1744178235}
+    - target: {fileID: 8474772640908459720, guid: d65ea9b04ca3fea4e9c0b40a0a44ac79, type: 3}
+      propertyPath: m_Value
+      value: 60
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12803,6 +12811,11 @@ CanvasGroup:
 --- !u!223 &603638634 stripped
 Canvas:
   m_CorrespondingSourceObject: {fileID: 9072885035934138857, guid: d65ea9b04ca3fea4e9c0b40a0a44ac79, type: 3}
+  m_PrefabInstance: {fileID: 603638632}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &603638635 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 613428702102776447, guid: d65ea9b04ca3fea4e9c0b40a0a44ac79, type: 3}
   m_PrefabInstance: {fileID: 603638632}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &659622933
