@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8920947512509553797}
   - component: {fileID: 3571360558012005276}
-  - component: {fileID: 5152166117741277549}
+  - component: {fileID: 6288041380466275727}
   m_Layer: 0
   m_Name: SmallCandle
   m_TagString: Untagged
@@ -86,7 +86,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &5152166117741277549
+--- !u!95 &6288041380466275727
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
