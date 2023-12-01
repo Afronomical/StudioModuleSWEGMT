@@ -110,7 +110,7 @@ public class AICharacter : MonoBehaviour
 
     void Update()
     {
-        if (stateScript != null)
+        if (stateScript != null && player.GetComponent<PlayerDeath>().currentHealth > 0)
             stateScript.UpdateLogic();  // Calls the virtual function for whatever state scripts
     }
 

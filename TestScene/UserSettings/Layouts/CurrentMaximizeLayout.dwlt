@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 14190
+  controlID: 32846
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -149,7 +149,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 0
-  controlID: 14153
+  controlID: 32809
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -174,7 +174,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 14094
+  controlID: 32739
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -461,8 +461,8 @@ MonoBehaviour:
       containerId: overlay-container--right
       floating: 0
       collapsed: 0
-      displayed: 1
-      snapOffset: {x: 24, y: 0}
+      displayed: 0
+      snapOffset: {x: 24, y: 25}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/Particles
@@ -704,9 +704,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 26.725773, y: -4.3514, z: -0.095053405}
+    m_Target: {x: 23.115204, y: 0.56510645, z: -0.023548627}
     speed: 2
-    m_Value: {x: 26.725773, y: -4.3514, z: -0.095053405}
+    m_Value: {x: 23.115204, y: 0.56510645, z: -0.023548627}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -756,9 +756,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 7.1549234
+    m_Target: 4.352113
     speed: 2
-    m_Value: 7.1549234
+    m_Value: 4.352113
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1799,8 +1799,8 @@ MonoBehaviour:
     y: 441
     width: 899
     height: 546
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 2}
   m_Panes:
   - {fileID: 2}
@@ -1830,7 +1830,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 14154
+  controlID: 32810
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1895,10 +1895,10 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 81}
+      scrollPos: {x: 0, y: 540}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 7ef3ffff98f3ffff16f4ffff34f4ffffd2f4ffffecf4ffffa0faffffbafafffff0faffff
+      m_ExpandedIDs: 606dfdfff272fdffccd4fdffe6d4fdffbcdffdff6a49feffd049feff7ef3ffff16f4ffffd2f4ffffa0fafffff0faffff30fc000010fd0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1996,7 +1996,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/_Dev 1/AssetProgramming_Department/MatejCincibusTestbed/Scripts
+    - Assets/_Dev 1/AiProgramming_Department/AI/Scripts
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -2006,15 +2006,15 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/_Dev 1/AssetProgramming_Department/MatejCincibusTestbed/Scripts
+  - Assets/_Dev 1/AiProgramming_Department/AI/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\amore\Desktop\StudioModuleSWEGMT\TestScene
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 151}
-    m_SelectedIDs: a0ac0000
-    m_LastClickedID: 44192
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 88ac0000
+    m_LastClickedID: 44168
     m_ExpandedIDs: 00000000129b0000149b0000169b0000189b00001a9b00001c9b00001e9b0000209b0000229b0000249b0000269b0000289b00002a9b00002c9b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -2068,8 +2068,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 98f3ffff
-    m_LastClickedInstanceID: -3176
+    m_SelectedInstanceIDs: 10fd0000
+    m_LastClickedInstanceID: 64784
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
@@ -2204,7 +2204,7 @@ MonoBehaviour:
     m_CachedPref: 160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: -56108
+  m_LastInspectedObjectInstanceID: 64624
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
