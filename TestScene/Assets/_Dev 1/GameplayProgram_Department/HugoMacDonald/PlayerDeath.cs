@@ -193,7 +193,7 @@ public class PlayerDeath : MonoBehaviour
     public void FeedAttack()
     {
         // Implement your logic to increase health when the player is fed
-        currentHealth += feedHealAmount; // You can adjust the value as needed
+        currentHealth += 15; // You can adjust the value as needed
         healthBarScript.SetHealth(currentHealth);
     }
 

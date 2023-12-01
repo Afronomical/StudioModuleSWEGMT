@@ -7,7 +7,9 @@ public class Feeding : MonoBehaviour
     public int currentHunger;
     public int minHunger = 0;
     public KeyCode healKey = KeyCode.E; // The key to trigger healing
+    public KeyCode feedKey = KeyCode.F; // The key to trigger feeding
     private bool canHeal = false; // To check if the player is inside the healing zone
+    private bool canFeed = false; // Flag to track whether the player is inside the feeding zone
     private bool hasFed = false; // Flag to track whether the player has fed
     private AICharacter currentTarget = null; // Store the current AI character being healed
     public HungerBar hungerBarSlider;
@@ -41,6 +43,7 @@ public class Feeding : MonoBehaviour
         yield return new WaitForSeconds(feedDelay);
 
         canHeal = true;
+        canFeed = true;
         hasFed = false; // Reset the flag after the delay
         currentlyFeeding = false;
     }
@@ -59,6 +62,7 @@ public class Feeding : MonoBehaviour
                 if (aiCharacter != null && aiCharacter.currentState == AICharacter.States.Downed && !hasFed)
                 {
                     canHeal = true;
+                    canFeed = true;
                     currentTarget = aiCharacter;
                     foundFeedingZone = true;
                     break; // Exit the loop if a feeding zone is found
@@ -69,11 +73,24 @@ public class Feeding : MonoBehaviour
         if (!foundFeedingZone)
         {
             canHeal = false;
+            canFeed = false;
             currentTarget = null;
         }
 
         if (canHeal && Input.GetKeyDown(healKey) && currentTarget != null)
         {
+            currentlyFeeding = false;
+            playerDeath.FeedAttack();
+            Instantiate(BloodOnFeed, currentTarget.transform.position, Quaternion.identity);
+            // Play Feed SFX
+            AudioManager.Manager.PlaySFX("PlayerFeed");
+            
+            animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Feed);
+            currentTarget.health -= 1;
+        }
+        else if (canFeed && Input.GetKeyDown(feedKey) && currentTarget != null)
+        {
+            // Code for feeding
             currentlyFeeding = true;
             // Play blood VFX
             Instantiate(BloodOnFeed, currentTarget.transform.position, Quaternion.identity);
@@ -87,25 +104,16 @@ public class Feeding : MonoBehaviour
             currentTarget.health -= 1;
 
             // Call a method in the PlayerDeath script to increase player health
-            playerDeath.FeedAttack();
+            
             CanvasManager.Instance.toolTipManager.ShowTopToolTip_Static("TASTY! Let's keep going before Sunlight hits!", durationTime);
 
             animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Feed);
 
             hasFed = true; // Set the flag to true after feeding
             StartCoroutine(DelayedFeed()); // Start the delay before allowing another feed
-
-        }
-        if (hungerBarSlider == null)
-        {
-            if (FindObjectOfType<HungerBar>() == true)
-            {
-                hungerBarSlider = FindObjectOfType<HungerBar>();
-                currentHunger = minHunger;
-                hungerBarSlider.SetMinHunger(0);
-            }
         }
 
+        
     }
 
     private void OnDrawGizmosSelected()
@@ -115,5 +123,4 @@ public class Feeding : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, overlapRadius);
     }
 }
-
 
