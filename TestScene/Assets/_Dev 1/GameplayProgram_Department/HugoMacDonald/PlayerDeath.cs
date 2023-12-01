@@ -166,7 +166,7 @@ public class PlayerDeath : MonoBehaviour
                 currentHealth -= dam;
                 healthBarScript.SetHealth(currentHealth);
                 showFloatingText(dam);
-                GameObject.FindWithTag("MainCamera").GetComponent<cameraFollow>().StartShake(0.3f, 3f);
+                GameObject.FindWithTag("MainCamera").GetComponent<cameraFollow>().StartShake(0.3f, 1.5f);
 
 
                 // Apply invincibility
