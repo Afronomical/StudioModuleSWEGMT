@@ -71,6 +71,7 @@ public class PauseMenu : MonoBehaviour
         //GameManager.Instance.currentGameState = GameManager.GameStates.PlayerDead;
         //GameManager.Instance.ChangeGameState(GameManager.GameStates.MainMenu);
         CanvasManager.Instance.countdownTimer.gameObject.SetActive(false);
+        CanvasManager.Instance.hungerBarUI.slider.value = 0;
         CanvasManager.Instance.hungerBarUI.gameObject.SetActive(false);
 
         // loadingScreen.enabled = true;

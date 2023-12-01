@@ -7,8 +7,8 @@ public class HungerBar : MonoBehaviour
 {
     public Slider slider;
     public BlinkEffect BlinkEffect;
-    private float targetValue;
-    private float currentValue;
+    public float targetValue;
+    public float currentValue;
     public float fillSpeed = 5f;
     
     private void Start()
