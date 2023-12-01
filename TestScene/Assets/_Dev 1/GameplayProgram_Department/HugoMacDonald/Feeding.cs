@@ -82,7 +82,7 @@ public class Feeding : MonoBehaviour
 
         if (canHeal && Input.GetKeyDown(healKey) && currentTarget != null)
         {
-            currentlyFeeding = false;
+            currentlyFeeding = true;
             playerDeath.FeedAttack();
             Instantiate(BloodOnFeed, currentTarget.transform.position, Quaternion.identity);
             // Play Feed SFX
@@ -90,6 +90,7 @@ public class Feeding : MonoBehaviour
             
             animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Feed);
             currentTarget.health -= 1;
+            StartCoroutine(DelayedFeed());
         }
         else if (canFeed && Input.GetKeyDown(feedKey) && currentTarget != null)
         {

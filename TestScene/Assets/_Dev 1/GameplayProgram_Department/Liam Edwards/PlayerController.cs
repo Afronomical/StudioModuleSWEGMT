@@ -135,6 +135,7 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKey(KeyCode.LeftShift) && stamina > 0)
             {
                 HandleSprinting();
+                CreateDust();
             }
             // Check for dodging
             else if (Input.GetKeyDown(KeyCode.Space) && canDodge && stamina > dodgeStaminaCost)
