@@ -728,7 +728,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 157.7064, y: 80.1459}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2134812272228507639
 CanvasRenderer:
@@ -1194,8 +1194,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9762afe9ff8f6ed42b6a41418b8faf38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathScreenCanvasGroup: {fileID: 3606127083213559161}
-  deathCanvas: {fileID: 2783791427406853943}
+  EndScreenCanvasGroup: {fileID: 0}
+  EndScreenCanvas: {fileID: 0}
   mainCanvas: {fileID: 0}
   buttons:
   - {fileID: 4503264936297241963}
@@ -1218,6 +1218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathScreen: {fileID: 2783791427406853943}
+  mainCanvas: {fileID: 9072885035934138857, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
 --- !u!1 &8284829813947881055
 GameObject:
   m_ObjectHideFlags: 0

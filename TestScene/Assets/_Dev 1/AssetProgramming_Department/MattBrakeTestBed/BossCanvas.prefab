@@ -35,8 +35,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -14, y: -4}
-  m_SizeDelta: {x: 190.8429, y: 38.2108}
+  m_AnchoredPosition: {x: -14, y: -17.3}
+  m_SizeDelta: {x: 139.7125, y: 30.9065}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7620889253193238451
 CanvasRenderer:
@@ -112,8 +112,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 408, y: 67}
-  m_SizeDelta: {x: 425.4602, y: 116.1493}
+  m_AnchoredPosition: {x: 391.3, y: 67}
+  m_SizeDelta: {x: 280.4642, y: 85.6522}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &8474772640908459720
 MonoBehaviour:
@@ -212,9 +212,16 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   fillImage: {fileID: 3256677672589431992}
   targetValue: 50
+  currentValue: 0
   ToolTipManager: {fileID: 5702947401994293975}
   Boss: {fileID: 0}
   BlinkEffect: {fileID: 4387139067935221977}
+  PhaseTwo: 0
+  PhaseThree: 0
+  bossCanvas: {fileID: 0}
+  winnerScreen: {fileID: 0}
+  winnerScreenCanvas: {fileID: 0}
+  endScreen: {fileID: 0}
   Phase: 1
 --- !u!1 &2209352062146924726
 GameObject:
@@ -233,7 +240,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5552156287219797908
 RectTransform:
   m_ObjectHideFlags: 0
@@ -862,7 +869,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -164, y: -47}
+  m_AnchoredPosition: {x: -135.3, y: -47}
   m_SizeDelta: {x: 85.2757, y: 74.2325}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7949367954109696821

@@ -7,7 +7,7 @@ public class DeathScreenButtons : MonoBehaviour
 {
 
     public Canvas deathScreen;
-    public Canvas mainCanvas;
+    //public Canvas mainCanvas;
     
 
     /*private void Update()
@@ -36,6 +36,7 @@ public class DeathScreenButtons : MonoBehaviour
         CanvasManager.Instance.countdownTimer.timeRemaining = CanvasManager.Instance.countdownTimer.time;
         Transform rotatingCover = CanvasManager.Instance.countdownTimer.rotatingCover;
         rotatingCover.transform.rotation = Quaternion.Euler(rotatingCover.transform.rotation.x, rotatingCover.transform.rotation.y, 0);
+        deathScreen.enabled = false;
         SceneManager.LoadScene("Level 1");
         SetSpawnpoint.instance.ResetPosition();
    }
@@ -46,7 +47,8 @@ public class DeathScreenButtons : MonoBehaviour
         AudioManager.Manager.StopMusic("GameOver");
         SceneManager.LoadScene("Main Menu Animated");
         deathScreen.enabled = false;
-        mainCanvas.gameObject.SetActive(false);
+        GameManager.Instance.ChangeGameState(GameManager.GameStates.MainMenu);
+        //mainCanvas.gameObject.SetActive(false);
     }
 
     public void Stats()

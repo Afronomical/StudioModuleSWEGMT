@@ -44,6 +44,7 @@ public class EndScreen : MonoBehaviour
         EndScreenCanvasGroup.interactable = true;
         SetButtonsInteractable(true);
         fadeIn = true;
+        Time.timeScale = 0f;
         
         
         
