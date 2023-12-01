@@ -7,6 +7,8 @@ public class DeathScreenButtons : MonoBehaviour
 {
 
     public Canvas deathScreen;
+    public Canvas mainCanvas;
+    
 
     /*private void Update()
     {
@@ -14,6 +16,8 @@ public class DeathScreenButtons : MonoBehaviour
             AudioManager.Manager.PlayMusic("GameOver");
 
     }*/
+
+    
 
     public void Play()
    {
@@ -41,6 +45,8 @@ public class DeathScreenButtons : MonoBehaviour
         AudioManager.Manager.PlaySFX("UI_Click");
         AudioManager.Manager.StopMusic("GameOver");
         SceneManager.LoadScene("Main Menu Animated");
+        deathScreen.enabled = false;
+        mainCanvas.gameObject.SetActive(false);
     }
 
     public void Stats()

@@ -8,6 +8,7 @@ public class MainMenu : MonoBehaviour
     private void Start()
     {
         AudioManager.Manager.PlayMusic("MenuMusic");
+
     }
 
 
