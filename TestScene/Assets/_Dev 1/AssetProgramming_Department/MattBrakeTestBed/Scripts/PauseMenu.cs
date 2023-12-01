@@ -70,8 +70,8 @@ public class PauseMenu : MonoBehaviour
         AudioManager.Manager.StopMusic("BossMusic");
         //GameManager.Instance.currentGameState = GameManager.GameStates.PlayerDead;
         //GameManager.Instance.ChangeGameState(GameManager.GameStates.MainMenu);
-        CanvasManager.Instance.countdownTimer.enabled = false;
-        CanvasManager.Instance.hungerBarUI.enabled = false;
+        CanvasManager.Instance.countdownTimer.gameObject.SetActive(false);
+        CanvasManager.Instance.hungerBarUI.gameObject.SetActive(false);
 
         // loadingScreen.enabled = true;
 
