@@ -1100,8 +1100,8 @@ PrefabInstance:
       objectReference: {fileID: 1794824402}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialText
-      value: This is your timer. It lets know how much time you have remaining before
-        sunlight hits. Beware the sun!
+      value: This is your timer. It lets you know how much time you have remaining
+        before sunlight hits. Beware the sun!
       objectReference: {fileID: 0}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialCanvas
@@ -2124,8 +2124,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 34.19715, y: -21.71225, z: 0}
-    m_Extent: {x: 47.17675, y: 35.32545, z: 0}
+    m_Center: {x: 34.20375, y: -21.71225, z: 0}
+    m_Extent: {x: 47.181747, y: 35.33085, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
