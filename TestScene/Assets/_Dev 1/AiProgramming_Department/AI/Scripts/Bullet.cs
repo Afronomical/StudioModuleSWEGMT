@@ -47,6 +47,7 @@ public class Bullet : MonoBehaviour
             this.GetComponent<BoxCollider2D>().enabled = false;
             this.gameObject.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
             if (!ps.isPlaying) ps.Play();
+            GetComponent<SpriteRenderer>().enabled = false;
             Invoke("DestroyBullet", 1.5f);
         }
     }
