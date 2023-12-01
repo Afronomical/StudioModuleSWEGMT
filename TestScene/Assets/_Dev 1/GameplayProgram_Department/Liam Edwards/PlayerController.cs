@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.PlasticSCM.Editor.WebApi;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -47,7 +49,23 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
-        AudioManager.Manager.PlayMusic("LevelMusic");
+        if (SceneManager.GetActiveScene().name == "Spawn")
+        {
+            AudioManager.Manager.StopMusic("LevelMusic");
+            AudioManager.Manager.PlayMusic("Spawn");
+
+        }
+        else
+        {
+            AudioManager.Manager.PlayMusic("LevelMusic");
+        }
+        /*else if (SceneManager.GetActiveScene().name== )
+        {
+            
+            AudioManager.Manager.PlayMusic("LevelMusic");
+            AudioManager.Manager.StopMusic("Spawn");
+        }*/
+        
         if (Instance != null)
         {
             Destroy(this.gameObject);
