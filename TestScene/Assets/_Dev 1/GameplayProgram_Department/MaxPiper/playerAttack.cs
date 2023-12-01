@@ -31,6 +31,7 @@ public class playerAttack : MonoBehaviour
     public float heavyChargeTime = 1.5f; // Time to charge the heavy attack
     private float heavyChargeTimer;
     private bool isChargingAttack = false; // Flag to indicate if the heavy attack is charging
+    private bool isHeavyAttackReady = false;
 
     private Animator animator;
     private PlayerAnimationController animationController;
@@ -150,69 +151,64 @@ public class playerAttack : MonoBehaviour
         float angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
         hitBox.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward); //swap "angle" with another 0 if cam is another angle
         heavyHitBox.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward); //swap "angle" with another 0 if cam is another angle
-        
-        //calls damage enemy when LMB is pressed
-        if (Input.GetKey(KeyCode.Mouse0))
-        {
-            
-            //animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.SlashAttack);
-            //AudioManager.Manager.PlaySFX("PlayerAttack");
 
-            if (canHit && feeding.currentlyFeeding == false)
+        // Check for normal attack (left mouse button)
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            if (canHit && !feeding.currentlyFeeding && !isChargingAttack)
             {
                 animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.SlashAttack);
                 animator.SetTrigger("AttackSlash");
                 AudioManager.Manager.PlaySFX("PlayerAttack");
                 damageEnemy();
                 canHit = false;
-                
             }
-
-            
         }
 
-        if (Input.GetKeyDown(KeyCode.Q)) 
+        // Check for heavy attack charge (holding left mouse button)
+        if (Input.GetMouseButton(0))
         {
-            // Start charging the heavy attack
-            if (!isChargingAttack)
+            if (!isChargingAttack && canHit && !feeding.currentlyFeeding)
             {
                 isChargingAttack = true;
             }
         }
-
-        if (Input.GetKeyUp(KeyCode.Q))
+        else
         {
-            if (isChargingAttack)
+            if (isChargingAttack && isHeavyAttackReady)
+            {
+                animator.SetTrigger("HeavyAttackSlash");
+                AudioManager.Manager.PlaySFX("PlayerHeavyAttack");
+                animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.SlashAttack);
+                ExecuteHeavyAttack();
+                canHit = false;
+                isChargingAttack = false;
+                isHeavyAttackReady = false;
+            }
+            else
             {
                 isChargingAttack = false;
                 heavyChargeTimer = heavyChargeTime;
             }
         }
 
+        // Handle heavy attack charge
         if (isChargingAttack)
         {
             if (heavyChargeTimer > 0)
             {
                 heavyChargeTimer -= Time.deltaTime;
 
-                // Charging animation or effects can be included here
-
                 if (heavyChargeTimer <= 0)
                 {
-                    animator.SetTrigger("HeavyAttackSlash");
-                    AudioManager.Manager.PlaySFX("PlayerHeavyAttack");
-                    animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.SlashAttack);
-                    ExecuteHeavyAttack();
-                    heavyChargeTimer = heavyChargeTime;
-                    isChargingAttack = false;
-                    canHit = false;
+                    isHeavyAttackReady = true;
                 }
             }
         }
 
+        // Handle attack delay
         if (!canHit)
         {
-            
             attackDelay -= Time.deltaTime;
 
             if (attackDelay <= 0)
@@ -221,7 +217,7 @@ public class playerAttack : MonoBehaviour
                 attackDelay = attackDelayStart;
             }
         }
-        
+
 
         if (Input.GetKeyDown(KeyCode.Mouse1) && gameObject.GetComponent<PlayerDeath>().recParryAttack && !coolDownParry)
         {
