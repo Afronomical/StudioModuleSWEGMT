@@ -17,7 +17,9 @@ public class TUTORIAL_TRIGGERS : MonoBehaviour
         controller = transform.parent.GetComponent<TUTORIAL_TypewriterController>();
         CanvasText.text = "";
         TutorialCanvas.SetActive(false);
-        ArrowToSpawn.SetActive(false);
+
+        if (ArrowToSpawn != null)
+            ArrowToSpawn.SetActive(false);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -26,16 +28,9 @@ public class TUTORIAL_TRIGGERS : MonoBehaviour
         {
             TutorialCanvas.SetActive(true);
             controller.SetIsDisplaying(true, TutorialText); 
+
             if (ArrowToSpawn != null)
-            {
-                ArrowToSpawn.SetActive(true);
-            }
-            else
-            {
-                ///nothin 
-            }
-          
-            
+                ArrowToSpawn.SetActive(true);        
         }
     }
 
@@ -45,7 +40,9 @@ public class TUTORIAL_TRIGGERS : MonoBehaviour
         {
             CanvasText.text = "";
             TutorialCanvas.SetActive(false);
-            ArrowToSpawn?.SetActive(false); 
+
+            if (ArrowToSpawn != null)
+                ArrowToSpawn.SetActive(false);
         }
     }
 }
