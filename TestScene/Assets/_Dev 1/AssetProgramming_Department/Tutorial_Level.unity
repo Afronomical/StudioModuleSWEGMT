@@ -156,7 +156,7 @@ PrefabInstance:
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: ArrowToSpawn
       value: 
-      objectReference: {fileID: 1794824402}
+      objectReference: {fileID: 0}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialText
       value: Be wary of these doors, NPCs can come out of them and take you by surprise!
@@ -817,6 +817,105 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2424262401151548756, guid: 146b88214b9451546b8680b9f952fe5b, type: 3}
   m_PrefabInstance: {fileID: 302257954}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &336999071
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1719358475}
+    m_Modifications:
+    - target: {fileID: 426057734829397559, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
+      propertyPath: m_Size.x
+      value: 6.216217
+      objectReference: {fileID: 0}
+    - target: {fileID: 426057734829397559, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
+      propertyPath: m_Size.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 426057734829397559, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 426057734829397559, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
+      propertyPath: m_Offset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
+      propertyPath: CanvasText
+      value: 
+      objectReference: {fileID: 1599234294}
+    - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
+      propertyPath: ArrowToSpawn
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
+      propertyPath: TutorialText
+      value: When an enemy turns red they have entered the downed state. Take the
+        opportunity in this moment to feed on them by pressing 'E'.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
+      propertyPath: TutorialCanvas
+      value: 
+      objectReference: {fileID: 1599234295}
+    - target: {fileID: 2965946689413441714, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 59.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 2965946689413441714, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -25.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 2965946689413441714, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.30018
+      objectReference: {fileID: 0}
+    - target: {fileID: 2965946689413441714, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2965946689413441714, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2965946689413441714, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2965946689413441714, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2965946689413441714, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2965946689413441714, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2965946689413441714, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8409612617082958024, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 8409612617082958024, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
+      propertyPath: m_Name
+      value: TUTORIAL_TRIGGER_Feeding
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
+--- !u!4 &336999072 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2965946689413441714, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
+  m_PrefabInstance: {fileID: 336999071}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &362608017 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6763371435233714155, guid: 7fa250c893ce7ca48a53bb137facec7c, type: 3}
@@ -998,7 +1097,7 @@ PrefabInstance:
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: ArrowToSpawn
       value: 
-      objectReference: {fileID: 1794824402}
+      objectReference: {fileID: 0}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialText
       value: When in a tight pinch you can parry attacks by pressing RMB, however
@@ -1387,7 +1486,7 @@ PrefabInstance:
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: ArrowToSpawn
       value: 
-      objectReference: {fileID: 1794824402}
+      objectReference: {fileID: 0}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialText
       value: Here is a villager, when they are alerted of your presence, an exclamation
@@ -2124,8 +2223,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 34.20375, y: -21.71225, z: 0}
-    m_Extent: {x: 47.181747, y: 35.33085, z: 0}
+    m_Center: {x: 34.2004, y: -21.706049, z: 0}
+    m_Extent: {x: 47.1716, y: 35.32215, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -48830,7 +48929,7 @@ PrefabInstance:
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: ArrowToSpawn
       value: 
-      objectReference: {fileID: 1794824402}
+      objectReference: {fileID: 0}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialText
       value: The ranged hunter can damage you from afar, so keep an eye out for them!
@@ -48912,7 +49011,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 426057734829397559, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: m_Size.y
-      value: 6
+      value: 5.363962
       objectReference: {fileID: 0}
     - target: {fileID: 426057734829397559, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: m_Offset.x
@@ -48920,7 +49019,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 426057734829397559, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: m_Offset.y
-      value: 0
+      value: -0.3180189
       objectReference: {fileID: 0}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: CanvasText
@@ -48929,7 +49028,7 @@ PrefabInstance:
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: ArrowToSpawn
       value: 
-      objectReference: {fileID: 1794824402}
+      objectReference: {fileID: 0}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialText
       value: Press SPACEBAR to dash! This gives you the ability to get out of sticky
@@ -48941,7 +49040,7 @@ PrefabInstance:
       objectReference: {fileID: 1599234295}
     - target: {fileID: 2965946689413441714, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 55.86
+      value: 46.24
       objectReference: {fileID: 0}
     - target: {fileID: 2965946689413441714, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -49007,7 +49106,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 426057734829397559, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: m_Size.x
-      value: 6.216217
+      value: 5.2224092
       objectReference: {fileID: 0}
     - target: {fileID: 426057734829397559, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: m_Size.y
@@ -49015,7 +49114,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 426057734829397559, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: m_Offset.x
-      value: 0
+      value: -0.2186395
       objectReference: {fileID: 0}
     - target: {fileID: 426057734829397559, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: m_Offset.y
@@ -49028,7 +49127,7 @@ PrefabInstance:
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: ArrowToSpawn
       value: 
-      objectReference: {fileID: 1794824402}
+      objectReference: {fileID: 0}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialText
       value: Hold Q to charge up your heavy attack!
@@ -49039,11 +49138,11 @@ PrefabInstance:
       objectReference: {fileID: 1599234295}
     - target: {fileID: 2965946689413441714, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 59.86
+      value: 55.57
       objectReference: {fileID: 0}
     - target: {fileID: 2965946689413441714, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -26.3
+      value: -32.62
       objectReference: {fileID: 0}
     - target: {fileID: 2965946689413441714, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -49051,7 +49150,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2965946689413441714, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 2965946689413441714, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: m_LocalRotation.x
@@ -49063,7 +49162,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2965946689413441714, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 2965946689413441714, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -49075,7 +49174,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2965946689413441714, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 8409612617082958024, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: m_Icon
@@ -49318,7 +49417,7 @@ PrefabInstance:
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: ArrowToSpawn
       value: 
-      objectReference: {fileID: 1794824402}
+      objectReference: {fileID: 0}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialText
       value: Press LMB to perform a slash attack on your enemies!
@@ -49333,7 +49432,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2965946689413441714, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -19.3
+      value: -20.05
       objectReference: {fileID: 0}
     - target: {fileID: 2965946689413441714, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -49534,6 +49633,7 @@ Transform:
   - {fileID: 2086622999}
   - {fileID: 1537200113}
   - {fileID: 1677320221}
+  - {fileID: 336999072}
   - {fileID: 1587983848}
   - {fileID: 1572586389}
   - {fileID: 385721651}
@@ -49833,7 +49933,7 @@ PrefabInstance:
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: ArrowToSpawn
       value: 
-      objectReference: {fileID: 1794824402}
+      objectReference: {fileID: 0}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialText
       value: This is your coffin. In order to progress to the next level you must
@@ -63259,7 +63359,7 @@ PrefabInstance:
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: ArrowToSpawn
       value: 
-      objectReference: {fileID: 1794824402}
+      objectReference: {fileID: 0}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialText
       value: This is a melee hunter, they will charge at you with their sword and
