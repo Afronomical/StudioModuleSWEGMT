@@ -12,8 +12,7 @@ GameObject:
   - component: {fileID: 521752302053206567}
   - component: {fileID: 2389024188652053508}
   - component: {fileID: 7362221554660842767}
-  - component: {fileID: 6330586062455382740}
-  - component: {fileID: 482064999306725687}
+  - component: {fileID: 3423175439604557115}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -46,7 +45,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -71,7 +70,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 6.74
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -107,9 +106,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c54e91aa2fa08e48896fb648e00d1e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SmoothSpeed: 4.58
+  SmoothSpeed: 0.1
   Offset: {x: 0, y: 0, z: -1}
---- !u!114 &6330586062455382740
+--- !u!114 &3423175439604557115
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -153,15 +152,3 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
---- !u!114 &482064999306725687
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8476325947453187417}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4737dba2a97a3844ba35318da0ffcfc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

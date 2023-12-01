@@ -22,7 +22,7 @@ public class PlayerDeath : MonoBehaviour
     public int feedHealAmount = 5;
     public int sunDamage = 5;
     
-    private float parryTime = 0.3f;
+    private float parryTime = 0.2f;
     
     [HideInInspector] public bool recParryAttack;
 
@@ -166,6 +166,7 @@ public class PlayerDeath : MonoBehaviour
                 currentHealth -= dam;
                 healthBarScript.SetHealth(currentHealth);
                 showFloatingText(dam);
+                GameObject.FindWithTag("MainCamera").GetComponent<cameraFollow>().StartShake(0.3f, 3f);
 
 
                 // Apply invincibility

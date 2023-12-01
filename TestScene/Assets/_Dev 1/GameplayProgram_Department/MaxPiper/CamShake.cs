@@ -15,28 +15,28 @@ public class CamShake : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
-            StartShake(1);
+            //StartShake(1);
         }
     }
 
-    void StartShake(float duration)
-    {
-        StartCoroutine(Shake(duration));
-    }
+    //void StartShake(float duration)
+    //{
+    //    StartCoroutine(Shake(duration));
+    //}
 
-    IEnumerator Shake(float duration)
-    {
-        Vector3 startPos = transform.position;
-        float elapsedTime = 0f;
+    //IEnumerator Shake(float duration)
+    //{
+    //    Vector3 startPos = transform.position; //should be player pos
+    //    float elapsedTime = 0f;
         
-        while (elapsedTime < duration)
-        {
-            elapsedTime += Time.deltaTime;
-            transform.position = startPos + Random.insideUnitSphere;
-            startPos = transform.position;
-            yield return null;
-        }
+    //    while (elapsedTime < duration)
+    //    {
+    //        elapsedTime += Time.deltaTime;
+    //        transform.position = startPos + Random.insideUnitSphere;
+    //        startPos = transform.position;
+    //        yield return null;
+    //    }
 
-        transform.position = startPos;
-    }
+    //    transform.position = startPos;
+    //}
 }
