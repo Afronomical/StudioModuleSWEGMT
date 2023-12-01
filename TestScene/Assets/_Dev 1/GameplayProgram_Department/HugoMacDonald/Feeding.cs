@@ -19,15 +19,17 @@ public class Feeding : MonoBehaviour
     public ToolTipManager toolTipManager;
     public float durationTime = 3.0f;
     private float overlapRadius; // Adjust the radius as needed
-    private float feedDelay = 2.0f; // Adjust the delay duration
+    private float feedDelay = 0.44f; // Adjust the delay duration
     public bool currentlyFeeding = false;
 
     public GameObject BloodOnFeed;
+    private GameObject biteIcon;
 
     private void Start()
     {
+        biteIcon = transform.GetChild(3).gameObject;
+        biteIcon.SetActive(false);
         currentlyFeeding = false;
-        feedDelay = 2.0f;
         overlapRadius = 0.9f;
         currentHunger = minHunger;
         hungerBarSlider.SetMinHunger(minHunger);
@@ -43,6 +45,7 @@ public class Feeding : MonoBehaviour
         canHeal = true;
         hasFed = false; // Reset the flag after the delay
         currentlyFeeding = false;
+        biteIcon.SetActive(false);
     }
 
     private void Update()
@@ -66,14 +69,10 @@ public class Feeding : MonoBehaviour
             }
         }
 
-        if (!foundFeedingZone)
-        {
-            canHeal = false;
-            currentTarget = null;
-        }
 
         if (canHeal && Input.GetKeyDown(healKey) && currentTarget != null)
         {
+            biteIcon.SetActive(true);
             currentlyFeeding = true;
             // Play blood VFX
             Instantiate(BloodOnFeed, currentTarget.transform.position, Quaternion.identity);
@@ -96,6 +95,22 @@ public class Feeding : MonoBehaviour
             StartCoroutine(DelayedFeed()); // Start the delay before allowing another feed
 
         }
+
+        if (!foundFeedingZone)
+        {
+            canHeal = false;
+            currentTarget = null;
+        }
+        else
+        {
+            biteIcon.SetActive(true);
+        }
+
+        if (!foundFeedingZone && !currentlyFeeding)
+        {
+            biteIcon.SetActive(false);
+        }
+
         if (hungerBarSlider == null)
         {
             if (FindObjectOfType<HungerBar>() == true)
