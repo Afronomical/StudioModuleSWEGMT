@@ -11,6 +11,8 @@ public class TUTORIAL_TRIGGERS : MonoBehaviour
     public GameObject ArrowToSpawn;
 
     private TUTORIAL_TypewriterController controller;
+    private BoxCollider2D boxCollider;
+
 
     private void Start()
     {
@@ -20,6 +22,13 @@ public class TUTORIAL_TRIGGERS : MonoBehaviour
 
         if (ArrowToSpawn != null)
             ArrowToSpawn.SetActive(false);
+    }
+
+    private void OnDrawGizmos()
+    {
+        boxCollider = GetComponent<BoxCollider2D>();
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireCube(transform.position, boxCollider.size);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
