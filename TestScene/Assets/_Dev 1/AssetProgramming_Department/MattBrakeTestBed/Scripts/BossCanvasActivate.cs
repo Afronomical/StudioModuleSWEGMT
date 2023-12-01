@@ -36,6 +36,7 @@ public class BossCanvasActivate : MonoBehaviour
         if (fadeIn)
         {
             GetComponent<BoxCollider2D>().enabled = false;
+            AudioManager.Manager.StopMusic("Spawn");
             AudioManager.Manager.PlayMusic("BossMusic"); 
             if (bossCanvasGroup.alpha < 1)
             {
