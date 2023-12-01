@@ -15,6 +15,7 @@ public class AlertedState : StateBaseClass
         anim = transform.GetComponentInChildren<Animator>();
         character = GetComponent<AICharacter>();
         character.isMoving = false;
+        character.walkingParticles.Stop();
         character.isAttacking = true;
         character.knowsAboutPlayer = true;
         

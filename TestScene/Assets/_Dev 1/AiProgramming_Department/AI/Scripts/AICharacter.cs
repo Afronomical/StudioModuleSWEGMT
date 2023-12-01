@@ -123,9 +123,12 @@ public class AICharacter : MonoBehaviour
 
     public void ChangeState(States newState)  // Will destroy the old state script and create a new one
     {
-        
         if (currentState != newState || stateScript == null)
         {
+            walkingParticles.Stop();
+            runParticles.Stop();
+            downedParticles.Stop();
+
             if (stateScript != null)
             {
                 //destroy current script attached to AI character
