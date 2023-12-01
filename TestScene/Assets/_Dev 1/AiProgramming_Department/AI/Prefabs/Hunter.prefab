@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 5785094608074434423}
   - component: {fileID: 288219473141606958}
   - component: {fileID: 5683172205188306926}
+  - component: {fileID: 5837697074176565182}
   m_Layer: 0
   m_Name: Hunter
   m_TagString: Hunter
@@ -132,6 +133,7 @@ MonoBehaviour:
   floatingDamage: {fileID: 1019051115453438268, guid: 3600330b591fa4c4a9b529fc47c3d502, type: 3}
   offset: {x: 0, y: 0, z: 0}
   exclamationMark: {fileID: 8341171671009919714, guid: 9e15063be3c23b14d8a6c86a38baa650, type: 3}
+  ps: {fileID: 0}
 --- !u!114 &3470126584826272329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -380,6 +382,20 @@ TrailRenderer:
   m_Autodestruct: 0
   m_Emitting: 1
   m_ApplyActiveColorSpace: 1
+--- !u!114 &5837697074176565182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1133785511964601302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b48616e60cf43574a84de072a821182b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knockbackForce: 2
+  knockbackDuration: 0.2
 --- !u!1 &4316415217644720785
 GameObject:
   m_ObjectHideFlags: 0
