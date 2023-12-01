@@ -91,6 +91,7 @@ public class SpecialAttackState : StateBaseClass
         //Vector2 direction = character.player.transform.position - character.transform.position;
         //direction.Normalize();
         GameObject bullet = Instantiate(bulletPrefab, origin.position, origin.rotation);
+        AudioManager.Manager.PlaySFX("NPC_RangedAttack");
         if (currentDelay <= 0)
         {
 

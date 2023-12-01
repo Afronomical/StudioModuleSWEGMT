@@ -38,7 +38,7 @@ public class AIAnimationChange : MonoBehaviour
         //Debug.Log(slashEffect.parameters.GetValue(0));
 
         if (!animController.IsAnimationPlaying(anim, AIAnimationController.AnimationStates.Hurt) &&
-            !animController.IsAnimationPlaying(anim, AIAnimationController.AnimationStates.SwordAttack))  // If he isn't playing the hurt animation
+            !animController.IsAnimationPlaying(anim, AIAnimationController.AnimationStates.SwordAttack) && !characterHasDied)  // If he isn't playing the hurt animation
         {
             switch (characterScript.currentState)
             {
@@ -70,8 +70,6 @@ public class AIAnimationChange : MonoBehaviour
                     if (!characterAttacking)
                     {
                         animController.ChangeAnimationState(AIAnimationController.AnimationStates.SwordAttack);
-                        //slashEffect.SetTrigger("SlashEffect");
-                        
                         characterAttacking = true;
                     }
                     else

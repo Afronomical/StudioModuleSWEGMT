@@ -42,7 +42,10 @@ public class VolumeSettings : MonoBehaviour
     void SetSFXVol(float value)
     {
         mixer.SetFloat(MIXER_SFX, Mathf.Log10(value) * 20);
+       
     }
+
+    
     private void OnDisable()
     {
 

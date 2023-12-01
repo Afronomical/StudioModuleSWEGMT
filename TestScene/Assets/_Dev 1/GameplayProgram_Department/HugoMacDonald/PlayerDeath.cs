@@ -48,6 +48,9 @@ public class PlayerDeath : MonoBehaviour
 
     private void Update()
     {
+        if (healthBarScript == null)
+            healthBarScript = FindAnyObjectByType<NewHealthBarScript>();
+
         IsDamaged();        
         
 
@@ -68,11 +71,11 @@ public class PlayerDeath : MonoBehaviour
             AudioManager.Manager.PlaySFX("PlayerDeath");
             isDead = true;
             animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Death);
-            Invoke("Die", animator.GetCurrentAnimatorClipInfo(0).Length);
-            if (!animationController.IsAnimationPlaying(animator, PlayerAnimationController.AnimationStates.Death))
-            {
-                Die();
-            }
+            Invoke(nameof(Die), animator.GetCurrentAnimatorClipInfo(0).Length);
+            //if (!animationController.IsAnimationPlaying(animator, PlayerAnimationController.AnimationStates.Death))
+            //{
+            //    Die();
+            //}
             
 
         }
@@ -207,6 +210,9 @@ public class PlayerDeath : MonoBehaviour
     private void deathAfterDelay()
     {
         AudioManager.Manager.StopMusic("LevelMusic");
+        AudioManager.Manager.StopMusic("BossMusic");
+        AudioManager.Manager.stopAllInGameSFX();
+
         CanvasManager.Instance.deathScreenCanvas.ShowUI();
         foreach (BoxCollider2D boxCollider in boxColliders)
         {

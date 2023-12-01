@@ -33,6 +33,7 @@ public class PauseMenu : MonoBehaviour
         isPaused = true;
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
+        AudioManager.Manager.stopAllInGameSFX();
     }
     public void Resume()
     {
@@ -49,6 +50,8 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(false);
         SceneManager.LoadScene("Main Menu Animated");
         AudioManager.Manager.StopMusic("LevelMusic");
+        AudioManager.Manager.StopMusic("BossMusic");
+
         
        // loadingScreen.enabled = true;
         
@@ -60,11 +63,14 @@ public class PauseMenu : MonoBehaviour
     public void Quit()
     {
         AudioManager.Manager.PlaySFX("UI_Click");
+        Application.Quit();
     }
     public void LoadSettingsMenu()
     {
         AudioManager.Manager.PlaySFX("UI_Click");
         Debug.Log("settings menu opened");
+        AudioManager.Manager.StopMusic("LevelMusic");
+        AudioManager.Manager.StopMusic("BossMusic");
     }
 }
 

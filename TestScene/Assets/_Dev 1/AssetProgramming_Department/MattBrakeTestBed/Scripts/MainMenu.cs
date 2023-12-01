@@ -23,7 +23,7 @@ public class MainMenu : MonoBehaviour
 
     public void SettingsMenu()
     {
-        AudioManager.Manager.PlaySFX("UI_Click");
+        //AudioManager.Manager.PlaySFX("UI_Click");
         Debug.Log("Settings");
         SceneManager.LoadScene("SettingsMenu");
         

@@ -8,10 +8,18 @@ public class DeathScreenButtons : MonoBehaviour
 
     public Canvas deathScreen;
 
+    /*private void Update()
+    {
+        if (deathScreen != null)
+            AudioManager.Manager.PlayMusic("GameOver");
+
+    }*/
+
     public void Play()
    {
         AudioManager.Manager.PlaySFX("UI_Click");
         AudioManager.Manager.StopMusic("GameOver");
+        AudioManager.Manager.PlayMusic("LevelMusic");
         GetComponent<Canvas>().enabled = false;
         PlayerController.Instance.GetPlayerDeath().currentHealth = PlayerController.Instance.GetPlayerDeath().maxHealth;
         PlayerController.Instance.GetPlayerDeath().SetIsDead(false);

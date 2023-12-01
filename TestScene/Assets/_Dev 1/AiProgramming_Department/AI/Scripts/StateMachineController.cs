@@ -16,13 +16,20 @@ public class StateMachineController : MonoBehaviour
     private Vector3 lastPosition;
     private int stuckCheckFrames;
     private float changeStateTimer;
-    private float changeStateTime = 0.25f;
+    private float changeStateTime = 0.2f;
 
+
+    //ranged hunnter reloading values
+    float currentTime;
+    float reloadingTime = 5f;
+    bool isReloading = false;
 
     private void Start()
     {
         character = GetComponent<AICharacter>();
         changeStateTimer = UnityEngine.Random.Range(-2.5f, changeStateTime);
+
+        currentTime = reloadingTime;
     }
 
 
@@ -114,7 +121,7 @@ public class StateMachineController : MonoBehaviour
             character.ChangeState(AICharacter.States.Patrol);
 
 
-        else if (distance < detectionRange && distance > attackRange)  // Hunt while not in attack range
+        else if (distance > attackRange)  // Hunt while not in attack range
         {
             if (character.currentState == AICharacter.States.Hunt)  // If hunt is already the state then don't check for walls
                 character.ChangeState(AICharacter.States.Hunt);
@@ -123,16 +130,34 @@ public class StateMachineController : MonoBehaviour
         }
 
 
-        else if (distance < attackRange) // Attack when in attack range
+        else  // Attack when in attack range
             character.ChangeState(AICharacter.States.Attack);
     }
 
 
     private void RangedHunterStates()
-    { 
+    {
+        //if (character.reloading)
+        //{
+        //    character.ChangeState(AICharacter.States.Reload);
+        //    //character.reloading = false;
+
+        //}
+
         if (distance < attackRange && RaycastToPlayer(distance))
         {
-            character.ChangeState(AICharacter.States.Shoot);
+            if (character.reloading)
+            {
+                character.ChangeState(AICharacter.States.Reload);
+                //character.reloading = false;
+
+            }
+            else
+            {
+                character.ChangeState(AICharacter.States.Shoot);
+
+            }
+
         }
 
         else if (distance < detectionRange)

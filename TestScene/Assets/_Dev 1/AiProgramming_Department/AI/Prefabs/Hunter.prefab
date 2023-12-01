@@ -106,9 +106,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterType: 1
-  startingHealth: 3
-  health: 3
-  hungerValue: 3
+  startingHealth: 5
+  health: 5
+  hungerValue: 2
   walkSpeed: 2
   runSpeed: 5.5
   crawlSpeed: 0.5
@@ -655,6 +655,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   faceTowards: {fileID: 8330677311624415417}
+  characterHasDied: 0
 --- !u!114 &4622460344589319978
 MonoBehaviour:
   m_ObjectHideFlags: 0

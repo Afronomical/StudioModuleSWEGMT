@@ -38,6 +38,7 @@ public class SpinAttackState : StateBaseClass
     {
         //Rotates the character
         transform.Rotate(Vector3.forward * 300f * Time.deltaTime);
+        //AudioManager.Manager.PlaySFX("BossMelee");
         origin = character.transform;
 
         //Counts the attack delay down
