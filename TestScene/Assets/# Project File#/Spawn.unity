@@ -31743,6 +31743,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1242946125863460908, guid: 99d0183fde40a224eae3632a6b0caf96, type: 3}
+      propertyPath: lengthInSec
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1242946125863460908, guid: 99d0183fde40a224eae3632a6b0caf96, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1242946125863460908, guid: 99d0183fde40a224eae3632a6b0caf96, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2207885135432695148, guid: 99d0183fde40a224eae3632a6b0caf96, type: 3}
       propertyPath: m_Name
       value: PlayerPrefab1

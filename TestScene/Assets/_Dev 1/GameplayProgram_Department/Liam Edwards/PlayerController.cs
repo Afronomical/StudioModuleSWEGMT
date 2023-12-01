@@ -6,6 +6,8 @@ public class PlayerController : MonoBehaviour
 {
     public static PlayerController Instance;
 
+    public ParticleSystem runningDust;
+
     //Declare Variables
     private Rigidbody2D rb;
 
@@ -97,13 +99,12 @@ public class PlayerController : MonoBehaviour
 
             if (Input.GetKey(KeyCode.LeftShift) && stamina > 0) // sprint
             {
-               
                 isSprinting = true;
                 staminaRegenSpeed = 0;
                 rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * sprintSpeed, Input.GetAxisRaw("Vertical") * sprintSpeed);
                 stamina -= Time.deltaTime * staminaDrainSpeed;
                 staminaBarSlider.SetStamina(stamina);
-
+                CreateDust();
             }
             else if (Input.GetKeyDown(KeyCode.Space) && canDodge && stamina > dodgeStaminaCost) // dodge
             {
@@ -131,7 +132,6 @@ public class PlayerController : MonoBehaviour
 
     private IEnumerator Dodge() // dodge mechanic
     {
-
         canDodge = false;
         isDodging = true;
         
@@ -162,6 +162,10 @@ public class PlayerController : MonoBehaviour
         }     
     }
 
+    private void CreateDust()
+    {
+        runningDust.Play();
+    }
 
 
     public void SetHUDReference(GameObject hudReference)
