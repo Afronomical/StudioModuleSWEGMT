@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class credits : MonoBehaviour
 {
@@ -13,6 +15,14 @@ public class credits : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            ///skip credits, return to menu 
+            SceneManager.LoadScene("Main Menu Animated");
+            AudioManager.Manager.StopMusic("Credits");
+        }
+
+
+        //when last thing in credits is in view, end them 
     }
 }

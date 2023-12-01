@@ -30,11 +30,20 @@ public class MainMenu : MonoBehaviour
 
     }
 
-    public void InstructionsMenu()
+    public void TutorialLevel()
     {
         AudioManager.Manager.PlaySFX("UI_Click");
-        Debug.Log("Instructions");
-        SceneManager.LoadScene("InstructionsMenu");
+        Debug.Log("Tutorial");
+        AudioManager.Manager.StopMusic("MenuMusic");
+       // SceneManager.LoadScene("Tutorial_Level");
+        //SceneManager.LoadScene("InstructionsMenu");
+    }
+
+    public void Credits()
+    {
+        AudioManager.Manager.PlaySFX("UI_Click");
+        AudioManager.Manager.StopMusic("MenuMusic");
+        SceneManager.LoadScene("Credits"); 
     }
 
     public void ExitGame()
