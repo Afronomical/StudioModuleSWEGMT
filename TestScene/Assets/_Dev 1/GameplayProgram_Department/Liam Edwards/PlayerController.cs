@@ -59,6 +59,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
+            AudioManager.Manager.StopMusic("Spawn");
             AudioManager.Manager.PlayMusic("LevelMusic");
         }
         /*else if (SceneManager.GetActiveScene().name== )

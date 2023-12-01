@@ -126,12 +126,16 @@ public class CoffinInteraction : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R) && useCoffin.enabled)
         {
             //Sleep - go to next level
+            AudioManager.Manager.PlaySFX("CoffinOpen");
             SceneManager.LoadScene(areaToMove);
             PlayerController.Instance.GetPlayerDeath().currentHealth = PlayerController.Instance.GetPlayerDeath().maxHealth;
             PlayerController.Instance.GetFeeding().currentHunger = 0;
             CanvasManager.Instance.hungerBarUI.SetHunger(0);
             useCoffin.enabled = false;
             GameObject.Find("Timer").GetComponent<CountdownTimer>().resetTimer();
+            AudioManager.Manager.StopMusic("Spawn");
+            AudioManager.Manager.PlayMusic("LevelMusic");
+
             //print("Sleeping...");
         }
     }
