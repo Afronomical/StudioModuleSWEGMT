@@ -13,6 +13,7 @@ public class SFX_Controller
     public AudioClip clip;
     public AudioMixerGroup MixerGroup;
 
+    
     [Range(0f, 1f)] public float volume;
     [Range(.1f, 3f)] public float pitch;
 

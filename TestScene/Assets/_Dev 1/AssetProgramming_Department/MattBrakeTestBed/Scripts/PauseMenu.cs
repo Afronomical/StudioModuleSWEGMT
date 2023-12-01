@@ -16,6 +16,7 @@ public class PauseMenu : MonoBehaviour
     private void Start()
     {
         playerObject = FindFirstObjectByType<PlayerController>().gameObject;
+        GameManager.Instance.ChangeGameState(GameManager.GameStates.PauseMenu);
     }
 
 
@@ -52,7 +53,7 @@ public class PauseMenu : MonoBehaviour
         isPaused = false;
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
-
+        GameManager.Instance.ChangeGameState(GameManager.GameStates.PlayerInLevel);
         playerObject.GetComponent<playerAttack>().enabled = true;
         playerObject.GetComponent<PlayerController>().enabled = true;
         playerObject.GetComponent<PlayerAnimationChange>().enabled = true;
@@ -67,6 +68,11 @@ public class PauseMenu : MonoBehaviour
         SceneManager.LoadScene("Main Menu Animated");
         AudioManager.Manager.StopMusic("LevelMusic");
         AudioManager.Manager.StopMusic("BossMusic");
+        //GameManager.Instance.currentGameState = GameManager.GameStates.PlayerDead;
+        //GameManager.Instance.ChangeGameState(GameManager.GameStates.MainMenu);
+        CanvasManager.Instance.countdownTimer.gameObject.SetActive(false);
+        CanvasManager.Instance.hungerBarUI.slider.value = 0;
+        CanvasManager.Instance.hungerBarUI.gameObject.SetActive(false);
 
         // loadingScreen.enabled = true;
 

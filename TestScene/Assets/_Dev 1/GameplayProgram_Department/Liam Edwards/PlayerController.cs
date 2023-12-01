@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
     public static PlayerController Instance;
+
+    public ParticleSystem runningDust;
 
     //Declare Variables
     private Rigidbody2D rb;
@@ -47,6 +50,24 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
+        if (SceneManager.GetActiveScene().name == "Spawn")
+        {
+            AudioManager.Manager.StopMusic("LevelMusic");
+            AudioManager.Manager.PlayMusic("Spawn");
+
+        }
+        else
+        {
+            AudioManager.Manager.StopMusic("Spawn");
+            AudioManager.Manager.PlayMusic("LevelMusic");
+        }
+        /*else if (SceneManager.GetActiveScene().name== )
+        {
+            
+            AudioManager.Manager.PlayMusic("LevelMusic");
+            AudioManager.Manager.StopMusic("Spawn");
+        }*/
+        
         if (Instance != null)
         {
             Destroy(this.gameObject);
@@ -60,7 +81,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        AudioManager.Manager.PlayMusic("LevelMusic");
+        
         rb = GetComponent<Rigidbody2D>();
 
         canDodge = true;
@@ -177,7 +198,6 @@ public class PlayerController : MonoBehaviour
     }
     private IEnumerator Dodge() // dodge mechanic
     {
-
         canDodge = false;
         isDodging = true;
 
@@ -209,6 +229,10 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void CreateDust()
+    {
+        runningDust.Play();
+    }
 
 
     public void SetHUDReference(GameObject hudReference)

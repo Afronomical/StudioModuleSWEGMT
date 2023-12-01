@@ -16,6 +16,8 @@ public class DayNightLightController : MonoBehaviour
 
     private void Start()
     {
+        countdownTimer = CanvasManager.Instance.countdownTimer;
+
         globalLight = GetComponent<Light2D>();
         percentage = 1 / countdownTimer.time;
         continueIncreasing = true;

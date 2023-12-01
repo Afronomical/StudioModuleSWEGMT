@@ -44,6 +44,8 @@ public class BossStateMachineController : MonoBehaviour
 
     private void Start()
     {
+        AudioManager.Manager.StopMusic("Spawn");
+        AudioManager.Manager.StopMusic("LevelMusic");
         character = GetComponent<AICharacter>();
         phase = 0;
         waitBetweenAttacks = 0;

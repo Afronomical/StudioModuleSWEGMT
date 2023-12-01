@@ -58,7 +58,11 @@ public class GameManager : MonoBehaviour
         ObjectiveCompleted,//objective has to be clearly defined
         ObjectiveFailed,
         PlayerInLevel,
-        GodMode
+        GodMode,
+        PauseMenu,
+        MainMenu 
+       
+
     }
 
     public GameStates currentGameState;
@@ -114,6 +118,7 @@ public class GameManager : MonoBehaviour
             case "Level 1":
                 nextLevel = "Level 2";
                 currentLevel = "Level 1";
+                //currentGameState = GameStates.PlayerInLevel;
                 if (timer != null)
                 {
                     timer.enabled = true;
@@ -127,6 +132,13 @@ public class GameManager : MonoBehaviour
                 {
                     timer.enabled = true;
                     timer.SetIsRotating(true);
+                }
+                break;
+            case "BossLevel":
+                if(timer != null)
+                {
+                    timer.enabled = false;
+                    timer.SetIsRotating(false); 
                 }
                 break;
             default:

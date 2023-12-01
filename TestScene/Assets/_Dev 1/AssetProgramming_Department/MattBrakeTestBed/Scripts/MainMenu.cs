@@ -8,6 +8,15 @@ public class MainMenu : MonoBehaviour
     private void Start()
     {
         AudioManager.Manager.PlayMusic("MenuMusic");
+        if(CanvasManager.Instance != null)
+        {
+            CanvasManager.Instance.countdownTimer.gameObject.SetActive(false);
+            CanvasManager.Instance.hungerBarUI.gameObject.SetActive(false);
+            CanvasManager.Instance.HealthBar.gameObject.SetActive(false);
+            CanvasManager.Instance.staminaBar.gameObject.SetActive(false);
+        }
+
+        //GameManager.Instance.currentGameState = GameManager.GameStates.MainMenu; 
     }
 
 
@@ -17,8 +26,19 @@ public class MainMenu : MonoBehaviour
         AudioManager.Manager.StopMusic("MenuMusic");
         Debug.Log("Play Game");
         SceneManager.LoadScene("Spawn");
-        Time.timeScale = 1; 
-        //LevelManager.Instance.LoadScene("TestCaveScene");
+        Time.timeScale = 1;
+        if (CanvasManager.Instance != null)
+        {
+            CanvasManager.Instance.countdownTimer.gameObject.SetActive(true);
+            CanvasManager.Instance.hungerBarUI.gameObject.SetActive(true);
+            CanvasManager.Instance.HealthBar.gameObject.SetActive(true);
+            CanvasManager.Instance.staminaBar.gameObject.SetActive(true);
+            //float hunger = CanvasManager.Instance.hungerBarUI.GetComponent<HungerBar>().currentValue;
+            CanvasManager.Instance.hungerBarUI.GetComponent<HungerBar>().SetMinHunger(0);
+            //CanvasManager.Instance.HealthBar.GetComponent<NewHealthBarScript>().setMaxHealth(100);
+
+        }
+
     }
 
     public void SettingsMenu()
