@@ -36,7 +36,7 @@ public class EnemyKnockback : MonoBehaviour
             isKnockedBack = true;
 
             // Change the enemy's color to red.
-            enemyRenderer.color = Color.red;
+            //enemyRenderer.color = Color.red;
 
             // Adjust the knockback force based on the forceMultiplier
             finalKnockbackForce = knockbackForce * forceMultiplier;
@@ -54,7 +54,7 @@ public class EnemyKnockback : MonoBehaviour
         yield return new WaitForSeconds(knockbackDuration);
 
         // Reset the enemy color to the original color.
-        enemyRenderer.color = originalColor;
+        //enemyRenderer.color = originalColor;
         isKnockedBack = false;
     }
 }

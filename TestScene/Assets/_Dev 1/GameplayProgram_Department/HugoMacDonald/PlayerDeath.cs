@@ -14,6 +14,7 @@ public class PlayerDeath : MonoBehaviour
     //private int damageAmount = 10;
     public NewHealthBarScript healthBarScript;
     public bool godMode;
+    
     //public float SetHealth;
     public bool isInvincible = false;
     public float invincibilityDuration = 2.0f; // Adjust the duration as needed

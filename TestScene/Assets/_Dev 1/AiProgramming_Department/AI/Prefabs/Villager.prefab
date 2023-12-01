@@ -100,6 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   faceTowards: {fileID: 3627512504425329955}
+  characterHasDied: 0
 --- !u!114 &1416848244179247335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159,6 +160,7 @@ GameObject:
   - component: {fileID: 2396381723003450701}
   - component: {fileID: 522231053018310325}
   - component: {fileID: 7668209223878739427}
+  - component: {fileID: 7631881679790243923}
   m_Layer: 0
   m_Name: Villager
   m_TagString: Villager
@@ -523,6 +525,21 @@ TrailRenderer:
   m_Autodestruct: 0
   m_Emitting: 1
   m_ApplyActiveColorSpace: 1
+--- !u!114 &7631881679790243923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8190964105698881817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 477a4c8d20b5f5645abc5f959a1274c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knockbackForce: 5
+  knockbackDuration: 0.2
+  playerRadius: 0
 --- !u!1 &8976372609608719289
 GameObject:
   m_ObjectHideFlags: 0
