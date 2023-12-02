@@ -19,6 +19,7 @@ public class AudioManager : MonoBehaviour
 
     public static AudioManager Manager;
 
+    public readonly string playedTutorial = "PlayedTutorial";
 
     private void Awake()
     {

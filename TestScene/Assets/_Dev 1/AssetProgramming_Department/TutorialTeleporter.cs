@@ -9,13 +9,8 @@ public class TutorialTeleporter : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
+            PlayerPrefs.SetInt(AudioManager.Manager.playedTutorial, 1);
             SceneManager.LoadScene("Main Menu Animated");
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

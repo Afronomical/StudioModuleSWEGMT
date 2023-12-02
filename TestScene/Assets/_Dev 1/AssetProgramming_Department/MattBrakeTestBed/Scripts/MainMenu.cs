@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -26,7 +27,11 @@ public class MainMenu : MonoBehaviour
         AudioManager.Manager.PlaySFX("UI_Click");
         AudioManager.Manager.StopMusic("MenuMusic");
         Debug.Log("Play Game");
-        SceneManager.LoadScene("Spawn");
+
+        if (PlayerPrefs.GetInt(AudioManager.Manager.playedTutorial) == 0 )
+            SceneManager.LoadScene("Tutorial_Level");
+        else
+            SceneManager.LoadScene("Spawn");
         Time.timeScale = 1;
         if (CanvasManager.Instance != null)
         {
