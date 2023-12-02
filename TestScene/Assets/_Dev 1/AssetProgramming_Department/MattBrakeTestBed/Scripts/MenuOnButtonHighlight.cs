@@ -14,7 +14,8 @@ public class MenuOnButtonHighlight : MonoBehaviour, ISelectHandler, IPointerEnte
     private float lerpSpeed = 4f;
     private bool isHovering = false;
     private float originalY;
-    private Vector3 originalPos; 
+    private Vector3 originalPos;
+    public ParticleSystem ParticleSystem;
     
 
     private void Start()
@@ -27,6 +28,7 @@ public class MenuOnButtonHighlight : MonoBehaviour, ISelectHandler, IPointerEnte
     {
         Debug.Log("Highlighting button");
         isHovering= true;
+        ParticleSystem.Play();
        
     }
 
@@ -35,6 +37,7 @@ public class MenuOnButtonHighlight : MonoBehaviour, ISelectHandler, IPointerEnte
       ////reset pos and have teeth image go back to original 
       isHovering= false;
       ResetTeethPos();
+        ParticleSystem.Stop(); 
     }
 
     public void OnSelect(BaseEventData eventData)

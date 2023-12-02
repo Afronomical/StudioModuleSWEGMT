@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -22,10 +23,15 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGame()
     {
+        
         AudioManager.Manager.PlaySFX("UI_Click");
         AudioManager.Manager.StopMusic("MenuMusic");
         Debug.Log("Play Game");
-        SceneManager.LoadScene("Spawn");
+
+        if (PlayerPrefs.GetInt(AudioManager.Manager.playedTutorial) == 0 )
+            SceneManager.LoadScene("Tutorial_Level");
+        else
+            SceneManager.LoadScene("Spawn");
         Time.timeScale = 1;
         if (CanvasManager.Instance != null)
         {
@@ -35,7 +41,8 @@ public class MainMenu : MonoBehaviour
             CanvasManager.Instance.staminaBar.gameObject.SetActive(true);
             //float hunger = CanvasManager.Instance.hungerBarUI.GetComponent<HungerBar>().currentValue;
             CanvasManager.Instance.hungerBarUI.GetComponent<HungerBar>().SetMinHunger(0);
-            //CanvasManager.Instance.HealthBar.GetComponent<NewHealthBarScript>().setMaxHealth(100);
+            CanvasManager.Instance.HealthBar.GetComponent<NewHealthBarScript>().UpdateHealthBarColour();
+            CanvasManager.Instance.HealthBar.GetComponent<NewHealthBarScript>().setMaxHealth(100);
 
         }
 
@@ -55,7 +62,8 @@ public class MainMenu : MonoBehaviour
         AudioManager.Manager.PlaySFX("UI_Click");
         Debug.Log("Tutorial");
         AudioManager.Manager.StopMusic("MenuMusic");
-       // SceneManager.LoadScene("Tutorial_Level");
+       
+       SceneManager.LoadScene("Tutorial_Level");
         //SceneManager.LoadScene("InstructionsMenu");
     }
 

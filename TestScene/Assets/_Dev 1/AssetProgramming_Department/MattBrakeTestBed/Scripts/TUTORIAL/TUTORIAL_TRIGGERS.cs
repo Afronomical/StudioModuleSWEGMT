@@ -35,6 +35,7 @@ public class TUTORIAL_TRIGGERS : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Player")) //&& !isDisplaying
         {
+            Invoke(nameof(PauseMovement), 0.1f); 
             TutorialCanvas.SetActive(true);
             controller.SetIsDisplaying(true, TutorialText); 
 
@@ -52,6 +53,13 @@ public class TUTORIAL_TRIGGERS : MonoBehaviour
 
             if (ArrowToSpawn != null)
                 ArrowToSpawn.SetActive(false);
+            gameObject.SetActive(false);    
         }
+    }
+
+    private void PauseMovement()
+    {
+        PlayerController.Instance.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        PlayerController.Instance.GetComponent<PlayerController>().enabled = false;
     }
 }
