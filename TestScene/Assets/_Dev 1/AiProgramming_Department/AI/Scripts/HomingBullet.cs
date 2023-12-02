@@ -51,6 +51,8 @@ public class HomingBullet : MonoBehaviour
             this.GetComponent<BoxCollider2D>().enabled = false;
             AudioManager.Manager.PlaySFX("ArrowHitObj");
             this.gameObject.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+            this.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+            this.gameObject.GetComponent<TrailRenderer>().enabled = false;
             if (!ps.isPlaying) ps.Play();
             Invoke("DestroyBullet", 1.5f);
         }
