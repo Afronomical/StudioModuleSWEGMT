@@ -22,6 +22,7 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGame()
     {
+        
         AudioManager.Manager.PlaySFX("UI_Click");
         AudioManager.Manager.StopMusic("MenuMusic");
         Debug.Log("Play Game");
