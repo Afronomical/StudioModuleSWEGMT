@@ -1641,7 +1641,7 @@ PrefabInstance:
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialText
       value: When in a tight pinch you can parry attacks by pressing RMB, however
-        make sure you time this correctly!
+        make sure you time this correctly! Defeat this Hunter to Progress!
       objectReference: {fileID: 0}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialCanvas
@@ -3447,8 +3447,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 34.204697, y: -21.7047, z: 0}
-    m_Extent: {x: 47.1669, y: 35.3222, z: 0}
+    m_Center: {x: 34.19805, y: -21.71245, z: 0}
+    m_Extent: {x: 47.176147, y: 35.31515, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -3493,6 +3493,84 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1376187217}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &826508023
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 826508025}
+  - component: {fileID: 826508024}
+  m_Layer: 0
+  m_Name: HunterBeatenCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &826508024
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 826508023}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.05139923, y: -0.05139923}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.1027985, y: 4.940609}
+  m_EdgeRadius: 0
+--- !u!4 &826508025
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 826508023}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 35, y: -28.06, z: -0.020747747}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &829736441
 PrefabInstance:
@@ -3876,6 +3954,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2424262401151548756, guid: 146b88214b9451546b8680b9f952fe5b, type: 3}
   m_PrefabInstance: {fileID: 961563646}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &985053861 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6265489983574509464, guid: 5e7ae5dd960698d4281e1d9055f5077a, type: 3}
+  m_PrefabInstance: {fileID: 1457421788}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &985053871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985053861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23a74ca13021db1408a1f8fcfcd4cef6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HunterBeatenBoxCollider: {fileID: 826508023}
 --- !u!1001 &994621902
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50142,7 +50238,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6265489983574509464, guid: 5e7ae5dd960698d4281e1d9055f5077a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 985053871}
   m_SourcePrefab: {fileID: 100100000, guid: 5e7ae5dd960698d4281e1d9055f5077a, type: 3}
 --- !u!1 &1462718221
 GameObject:
@@ -50888,8 +50987,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 3.3331501, y: -2.04175, z: 0}
-    m_Extent: {x: 8.57005, y: 7.3435497, z: 0}
+    m_Center: {x: 3.33965, y: -2.0375497, z: 0}
+    m_Extent: {x: 8.56535, y: 7.3477497, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -51405,7 +51504,7 @@ Transform:
   m_GameObject: {fileID: 1792018360}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 42.25, y: -27.83, z: 0.011922492}
+  m_LocalPosition: {x: 41.98, y: -27.83, z: 0.011922492}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -66349,3 +66448,4 @@ SceneRoots:
   - {fileID: 1514602145}
   - {fileID: 829736441}
   - {fileID: 200829354}
+  - {fileID: 826508025}
