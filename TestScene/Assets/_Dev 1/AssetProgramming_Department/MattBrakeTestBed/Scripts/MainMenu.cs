@@ -8,6 +8,7 @@ public class MainMenu : MonoBehaviour
 {
     private void Start()
     {
+        Time.timeScale = 1f; 
         AudioManager.Manager.PlayMusic("MenuMusic");
         if(CanvasManager.Instance != null)
         {
