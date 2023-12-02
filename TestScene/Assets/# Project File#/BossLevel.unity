@@ -20787,9 +20787,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1174551338056737445, guid: 3246b6fa5942f2a439e4abd7ef57e2b9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1304859699899162338, guid: 3246b6fa5942f2a439e4abd7ef57e2b9, type: 3}
       propertyPath: m_Name
       value: Van Helsing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1579750411711191535, guid: 3246b6fa5942f2a439e4abd7ef57e2b9, type: 3}
+      propertyPath: m_Size.y
+      value: 0.23984891
+      objectReference: {fileID: 0}
+    - target: {fileID: 1579750411711191535, guid: 3246b6fa5942f2a439e4abd7ef57e2b9, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.058682114
       objectReference: {fileID: 0}
     - target: {fileID: 7723451969944449188, guid: 3246b6fa5942f2a439e4abd7ef57e2b9, type: 3}
       propertyPath: m_Enabled
