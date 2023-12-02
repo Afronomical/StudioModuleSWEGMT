@@ -48,7 +48,7 @@ public class BossCanvasActivate : MonoBehaviour
             }
         }
 
-        if(player.currentHealth <= 0)
+        if (player.currentHealth <= 0)
         {
             bossCanvasGroup.alpha = 0;
         }

@@ -52,7 +52,7 @@ public class NewHealthBarScript : MonoBehaviour
     }
 
 
-   private void UpdateHealthBarColour()
+   public void UpdateHealthBarColour()
     {
         float currentHealth = slider.value;
         float maxHealth = slider.maxValue;
