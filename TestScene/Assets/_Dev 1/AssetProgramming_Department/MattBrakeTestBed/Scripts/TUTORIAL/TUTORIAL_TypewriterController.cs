@@ -41,6 +41,7 @@ public class TUTORIAL_TypewriterController : MonoBehaviour
 
     private IEnumerator TypewriterEffect(float delay)
     {
+
         bool characterDisplayed = false;
         int j = -1;
 
@@ -61,5 +62,6 @@ public class TUTORIAL_TypewriterController : MonoBehaviour
         }
 
         isDisplaying = false;
+        PlayerController.Instance.GetComponent<PlayerController>().enabled = true; 
     }
 }
