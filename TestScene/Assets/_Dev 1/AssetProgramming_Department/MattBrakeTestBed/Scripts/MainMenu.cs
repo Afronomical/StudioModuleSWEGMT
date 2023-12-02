@@ -37,7 +37,7 @@ public class MainMenu : MonoBehaviour
             //float hunger = CanvasManager.Instance.hungerBarUI.GetComponent<HungerBar>().currentValue;
             CanvasManager.Instance.hungerBarUI.GetComponent<HungerBar>().SetMinHunger(0);
             CanvasManager.Instance.HealthBar.GetComponent<NewHealthBarScript>().UpdateHealthBarColour();
-            //CanvasManager.Instance.HealthBar.GetComponent<NewHealthBarScript>().setMaxHealth(100);
+            CanvasManager.Instance.HealthBar.GetComponent<NewHealthBarScript>().setMaxHealth(100);
 
         }
 
