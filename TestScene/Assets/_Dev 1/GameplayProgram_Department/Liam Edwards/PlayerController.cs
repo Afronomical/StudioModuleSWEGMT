@@ -50,17 +50,6 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
-        if (SceneManager.GetActiveScene().name == "Spawn")
-        {
-            AudioManager.Manager.StopMusic("LevelMusic");
-            AudioManager.Manager.PlayMusic("Spawn");
-
-        }
-        else
-        {
-            AudioManager.Manager.StopMusic("Spawn");
-            AudioManager.Manager.PlayMusic("LevelMusic");
-        }
         /*else if (SceneManager.GetActiveScene().name== )
         {
             
@@ -81,6 +70,17 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        if (SceneManager.GetActiveScene().name == "Spawn")
+        {
+            AudioManager.Manager.StopMusic("LevelMusic");
+            AudioManager.Manager.PlayMusic("Spawn");
+
+        }
+        else
+        {
+            AudioManager.Manager.StopMusic("Spawn");
+            AudioManager.Manager.PlayMusic("LevelMusic");
+        }
         
         rb = GetComponent<Rigidbody2D>();
 
