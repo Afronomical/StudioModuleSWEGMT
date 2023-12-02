@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 521752302053206567}
   - component: {fileID: 2389024188652053508}
   - component: {fileID: 7362221554660842767}
-  - component: {fileID: 3423175439604557115}
+  - component: {fileID: 3810575175688261740}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -107,8 +107,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SmoothSpeed: 0.1
-  Offset: {x: 0, y: 0, z: -1}
---- !u!114 &3423175439604557115
+  Offset: {x: 0, y: 0, z: -10}
+--- !u!114 &3810575175688261740
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

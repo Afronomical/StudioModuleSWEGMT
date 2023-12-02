@@ -4,6 +4,7 @@ using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
+using UnityEngine.UIElements;
 
 public class playerAttack : MonoBehaviour
 {
@@ -31,6 +32,9 @@ public class playerAttack : MonoBehaviour
     public float heavyChargeTime = 1.5f; // Time to charge the heavy attack
     private float heavyChargeTimer;
     private bool isChargingAttack = false; // Flag to indicate if the heavy attack is charging
+    public Collider2D parriedEnemyInRange;
+
+    [SerializeField] TrailRenderer dashTrail;
 
     private Animator animator;
     private PlayerAnimationController animationController;
@@ -248,7 +252,16 @@ public class playerAttack : MonoBehaviour
     {
         AudioManager.Manager.PlaySFX("Parry");
         parryLight.GetComponent<Light2D>().enabled = true;
-        yield return new WaitForSeconds(parryFeedbackLength);
+        GameObject.FindWithTag("MainCamera").GetComponent<cameraFollow>().StartShake(parryFeedbackLength, 3.5f);
+        GameObject.FindWithTag("MainCamera").GetComponent<cameraFollow>().CameraZoom(parryFeedbackLength / 4, 4f);
+        GetComponent<KnockBack>().ApplyKnockback(parriedEnemyInRange);
+        dashTrail.emitting = true;
+        Time.timeScale = 0.2f;
+        yield return new WaitForSeconds(parryFeedbackLength / 3);
+        GameObject.FindWithTag("MainCamera").GetComponent<cameraFollow>().CameraZoom(parryFeedbackLength / 2, 0);
+        //yield return new WaitForSeconds(parryFeedbackLength / 2);
+        Time.timeScale = 1f;
+        dashTrail.emitting = false;
         parryLight.GetComponent<Light2D>().enabled = false;
     }
     
