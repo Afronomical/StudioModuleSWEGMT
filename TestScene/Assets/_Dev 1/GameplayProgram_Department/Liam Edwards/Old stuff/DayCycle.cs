@@ -39,7 +39,7 @@ public class DayCycle : MonoBehaviour
     {
        
         nightTime = !countdownTimer.timeIsRunning; // Links Up The "nightTime" Variable To The Countdown Clock
-        print(countdownTimer.timeIsRunning);
+        
 
         if (nightTime) // Checks For When The Timer Reaches 
         {            

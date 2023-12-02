@@ -14,7 +14,6 @@ public class debugMode : MonoBehaviour
     public GameObject player;
     private PlayerDeath playerDeath;
     //private playerAttack playerAttack;
-    private float origAttackDelay;
     public GameObject togGodVis;
     public GameObject togInstaVis;
     private int origDam;
@@ -27,7 +26,6 @@ public class debugMode : MonoBehaviour
         instaButton.SetActive(false);
         //nextLevelButton.SetActive(false);
         player = GameObject.FindGameObjectWithTag("Player");
-        origAttackDelay = player.GetComponent<playerAttack>().attackDelayStart;
         origDam = player.GetComponent<playerAttack>().damage;
     }
 

@@ -32,7 +32,7 @@ public class playerAttack : MonoBehaviour
     public float heavyChargeTime = 1.5f; // Time to charge the heavy attack
     private float heavyChargeTimer;
     private bool isChargingAttack = false; // Flag to indicate if the heavy attack is charging
-    public Collider2D parriedEnemyInRange;
+    [HideInInspector] public Collider2D parriedEnemyInRange;
 
     [SerializeField] TrailRenderer dashTrail;
 
@@ -256,9 +256,9 @@ public class playerAttack : MonoBehaviour
         GameObject.FindWithTag("MainCamera").GetComponent<cameraFollow>().CameraZoom(parryFeedbackLength / 4, 4f);
         GetComponent<KnockBack>().ApplyKnockback(parriedEnemyInRange);
         dashTrail.emitting = true;
-        Time.timeScale = 0.2f;
-        yield return new WaitForSeconds(parryFeedbackLength / 3);
-        GameObject.FindWithTag("MainCamera").GetComponent<cameraFollow>().CameraZoom(parryFeedbackLength / 2, 0);
+        Time.timeScale = 0.5f;
+        yield return new WaitForSeconds(parryFeedbackLength);
+        GameObject.FindWithTag("MainCamera").GetComponent<cameraFollow>().CameraZoom(parryFeedbackLength / 3, 0);
         //yield return new WaitForSeconds(parryFeedbackLength / 2);
         Time.timeScale = 1f;
         dashTrail.emitting = false;

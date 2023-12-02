@@ -30,8 +30,8 @@ public class BoxSpecificAttack : MonoBehaviour
 
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
-        playerAttackScript = player.GetComponent<playerAttack>();
+        //player = FindFirstObjectByType<PlayerController>().gameObject;
+        playerAttackScript = FindFirstObjectByType<playerAttack>();
     }
 
     // Update is called once per frame
