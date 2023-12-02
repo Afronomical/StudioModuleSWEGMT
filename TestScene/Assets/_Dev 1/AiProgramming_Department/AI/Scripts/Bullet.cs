@@ -46,6 +46,7 @@ public class Bullet : MonoBehaviour
             AudioManager.Manager.PlaySFX("ArrowHitObj");
             this.GetComponent<BoxCollider2D>().enabled = false;
             this.gameObject.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+            this.gameObject.GetComponent<TrailRenderer>().enabled = false;
             if (!ps.isPlaying) ps.Play();
             Invoke("DestroyBullet", 1.5f);
         }

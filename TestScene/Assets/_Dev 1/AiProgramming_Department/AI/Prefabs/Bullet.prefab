@@ -4899,7 +4899,7 @@ GameObject:
   - component: {fileID: -8779928757783073345}
   - component: {fileID: -3083432969925148121}
   - component: {fileID: 1505104089849088449}
-  - component: {fileID: 3000544916733062197}
+  - component: {fileID: 8557695064819339538}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Bullet
@@ -5063,7 +5063,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 3.4276009, y: 0.99048734}
   m_EdgeRadius: 0
---- !u!96 &3000544916733062197
+--- !u!96 &8557695064819339538
 TrailRenderer:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -5105,7 +5105,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 0.5
+  m_Time: 0.000001
   m_PreviewTimeScale: 0
   m_Parameters:
     serializedVersion: 3
@@ -5116,14 +5116,14 @@ TrailRenderer:
       - serializedVersion: 3
         time: 0
         value: 1
-        inSlope: 0
-        outSlope: 0
+        inSlope: -1.4959861
+        outSlope: -1.4959861
         tangentMode: 0
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 1
+        time: 0.20397949
         value: 0
         inSlope: 0
         outSlope: 0
@@ -5171,7 +5171,7 @@ TrailRenderer:
     textureScale: {x: 1, y: 1}
     shadowBias: 0.5
     generateLightingData: 0
-  m_MinVertexDistance: 0.1
+  m_MinVertexDistance: 1
   m_MaskInteraction: 0
   m_Autodestruct: 0
   m_Emitting: 1
