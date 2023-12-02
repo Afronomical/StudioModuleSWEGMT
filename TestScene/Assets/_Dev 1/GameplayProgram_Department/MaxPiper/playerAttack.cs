@@ -252,13 +252,14 @@ public class playerAttack : MonoBehaviour
     {
         AudioManager.Manager.PlaySFX("Parry");
         parryLight.GetComponent<Light2D>().enabled = true;
-        GameObject.FindWithTag("MainCamera").GetComponent<cameraFollow>().StartShake(parryFeedbackLength, 4f);
-        GameObject.FindWithTag("MainCamera").GetComponent<cameraFollow>().CameraZoom(parryFeedbackLength / 2, 4.5f);
+        GameObject.FindWithTag("MainCamera").GetComponent<cameraFollow>().StartShake(parryFeedbackLength, 3.5f);
+        GameObject.FindWithTag("MainCamera").GetComponent<cameraFollow>().CameraZoom(parryFeedbackLength / 4, 4f);
         GetComponent<KnockBack>().ApplyKnockback(parriedEnemyInRange);
         dashTrail.emitting = true;
-        Time.timeScale = 0.5f;
-        yield return new WaitForSeconds(parryFeedbackLength);
+        Time.timeScale = 0.2f;
+        yield return new WaitForSeconds(parryFeedbackLength / 3);
         GameObject.FindWithTag("MainCamera").GetComponent<cameraFollow>().CameraZoom(parryFeedbackLength / 2, 0);
+        //yield return new WaitForSeconds(parryFeedbackLength / 2);
         Time.timeScale = 1f;
         dashTrail.emitting = false;
         parryLight.GetComponent<Light2D>().enabled = false;
