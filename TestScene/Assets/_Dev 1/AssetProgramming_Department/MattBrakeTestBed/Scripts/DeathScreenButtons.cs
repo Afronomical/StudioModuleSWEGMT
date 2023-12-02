@@ -24,6 +24,8 @@ public class DeathScreenButtons : MonoBehaviour
         AudioManager.Manager.PlaySFX("UI_Click");
         AudioManager.Manager.StopMusic("GameOver");
         AudioManager.Manager.PlayMusic("LevelMusic");
+        AudioManager.Manager.StopMusic("BossMusic");
+
         GetComponent<Canvas>().enabled = false;
         PlayerController.Instance.GetPlayerDeath().currentHealth = PlayerController.Instance.GetPlayerDeath().maxHealth;
         PlayerController.Instance.GetPlayerDeath().SetIsDead(false);
@@ -45,6 +47,7 @@ public class DeathScreenButtons : MonoBehaviour
     {
         AudioManager.Manager.PlaySFX("UI_Click");
         AudioManager.Manager.StopMusic("GameOver");
+        AudioManager.Manager.StopMusic("BossMusic");
         SceneManager.LoadScene("Main Menu Animated");
         deathScreen.enabled = false;
         GameManager.Instance.ChangeGameState(GameManager.GameStates.MainMenu);

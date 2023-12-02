@@ -62,13 +62,17 @@ public class BossStateMachineController : MonoBehaviour
         if (character.health <= 0)
         {
             character.ChangeState(AICharacter.States.Dead);
-            AudioManager.Manager.StopMusic("BossMusic");
-            AudioManager.Manager.PlaySFX("Victory");
+            //AudioManager.Manager.StopMusic("BossMusic");
+            //AudioManager.Manager.PlaySFX("Victory");
         }
             
 
         else if (character.health == 1)
+        {
             character.ChangeState(AICharacter.States.Downed);
+            
+        }
+
 
         else if (character.health <= currentPhaseHealthThreshold && phase != 0)
             ChangePhase();

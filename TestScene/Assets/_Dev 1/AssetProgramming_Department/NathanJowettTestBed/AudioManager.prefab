@@ -144,7 +144,7 @@ MonoBehaviour:
     pitch: 1
     Loop: 0
     source: {fileID: 0}
-  - Name: EndGame_Victory
+  - Name: Victory
     clip: {fileID: 8300000, guid: 02d177859e7494d8daf6fb8a44059f14, type: 3}
     MixerGroup: {fileID: 2237963358354840850, guid: b61dca9e8894f664fb0ce150b9ed8070, type: 2}
     volume: 1
@@ -188,6 +188,13 @@ MonoBehaviour:
     source: {fileID: 0}
   - Name: BossMelee
     clip: {fileID: 8300000, guid: 13182107f288fdc47a11f9216c8f062b, type: 3}
+    MixerGroup: {fileID: 2237963358354840850, guid: b61dca9e8894f664fb0ce150b9ed8070, type: 2}
+    volume: 0.631
+    pitch: 0.75
+    Loop: 0
+    source: {fileID: 0}
+  - Name: BossDowned
+    clip: {fileID: 8300000, guid: d3b7197c3c2da48d28b27f3e45b6c770, type: 3}
     MixerGroup: {fileID: 2237963358354840850, guid: b61dca9e8894f664fb0ce150b9ed8070, type: 2}
     volume: 0.631
     pitch: 0.75

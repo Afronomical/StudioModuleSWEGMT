@@ -38,6 +38,7 @@ public class EndScreen : MonoBehaviour
 
     public void ShowUI()
     {
+        AudioManager.Manager.PlaySFX("Victory");
         EndScreenCanvasGroup.alpha = 1;
         EndScreenCanvas.enabled = true;
         //mainCanvas.enabled = false;
@@ -52,6 +53,7 @@ public class EndScreen : MonoBehaviour
 
     public void HideUI()
     {
+        
         // deathScreenCanvasGroup.alpha = 0;
         EndScreenCanvasGroup.interactable = false;          //////stops all interaction behind the scene 
         //mainCanvas.enabled = true; 

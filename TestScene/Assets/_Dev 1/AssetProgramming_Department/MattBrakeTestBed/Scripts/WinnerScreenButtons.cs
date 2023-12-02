@@ -8,7 +8,7 @@ public class WinnerScreenButtons : MonoBehaviour
 
     public Canvas winScreen;
     
-  public void EndGame()
+    public void EndGame()
     {
         SceneManager.LoadScene("Credits");
         Time.timeScale = 1f;
