@@ -10,6 +10,7 @@ public class TutorialTeleporter : MonoBehaviour
         if(collision.CompareTag("Player"))
         {
             PlayerPrefs.SetInt(AudioManager.Manager.playedTutorial, 1);
+            AudioManager.Manager.StopMusic("LevelMusic");
             SceneManager.LoadScene("Main Menu Animated");
         }
     }

@@ -62,7 +62,8 @@ public class MainMenu : MonoBehaviour
         AudioManager.Manager.PlaySFX("UI_Click");
         Debug.Log("Tutorial");
         AudioManager.Manager.StopMusic("MenuMusic");
-       // SceneManager.LoadScene("Tutorial_Level");
+       
+       SceneManager.LoadScene("Tutorial_Level");
         //SceneManager.LoadScene("InstructionsMenu");
     }
 
