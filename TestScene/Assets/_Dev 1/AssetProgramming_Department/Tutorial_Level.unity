@@ -2671,7 +2671,7 @@ PrefabInstance:
       objectReference: {fileID: 1020719199}
     - target: {fileID: 8811865619863605101, guid: 99d0183fde40a224eae3632a6b0caf96, type: 3}
       propertyPath: maxHealth
-      value: 1000
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8811865619863605101, guid: 99d0183fde40a224eae3632a6b0caf96, type: 3}
       propertyPath: healthBarScript
@@ -3451,8 +3451,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 34.2046, y: -21.71365, z: 0}
-    m_Extent: {x: 47.1691, y: 35.32775, z: 0}
+    m_Center: {x: 34.19555, y: -21.7094, z: 0}
+    m_Extent: {x: 47.17475, y: 35.3262, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -50991,8 +50991,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 3.3423998, y: -2.0426, z: 0}
-    m_Extent: {x: 8.5681, y: 7.3534, z: 0}
+    m_Center: {x: 3.342, y: -2.0427, z: 0}
+    m_Extent: {x: 8.5708, y: 7.3444004, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
