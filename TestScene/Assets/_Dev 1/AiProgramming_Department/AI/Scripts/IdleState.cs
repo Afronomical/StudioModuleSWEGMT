@@ -28,6 +28,8 @@ public class IdleState : StateBaseClass
     private float speedPercent;
     private int pathfindingErrorCheck;
     private int maxPathfindingChecks = 6;
+    private int distanceErrorCheck;
+    private int maxDistanceChecks = 10;
 
 
     public IdleState()
@@ -58,6 +60,7 @@ public class IdleState : StateBaseClass
         {
             walking = true;
             character.isMoving = true;
+            character.walkingParticles.Play();
             FindWalkTarget();
         }
     }
@@ -75,6 +78,7 @@ public class IdleState : StateBaseClass
                     walking = false;
                     idleTime = Random.Range(minIdleTime, maxIdleTime);  // How long the character will stand still for
                     character.isMoving = false;
+                    character.walkingParticles.Stop();
                     return;
                 }
                 else  // Has reached a checkpoint
@@ -104,12 +108,14 @@ public class IdleState : StateBaseClass
     private void FindWalkTarget()
     {
         walkDestination = new Vector3(character.GetPosition().x + Random.Range(-maxWalkDistance, maxWalkDistance), character.GetPosition().y + Random.Range(-maxWalkDistance, maxWalkDistance));
-        if (Vector3.Distance(character.GetPosition(), walkDestination) < minWalkDistance)
+        if (Vector3.Distance(character.GetPosition(), walkDestination) < minWalkDistance && distanceErrorCheck < maxDistanceChecks)
         {
+            distanceErrorCheck++;
             FindWalkTarget();
         }
         else
         {
+            distanceErrorCheck = 0;
             PathfindingRequestManager.RequestPath(new PathRequest(transform.position, walkDestination, this, OnPathFound));
         }
     }
@@ -125,9 +131,16 @@ public class IdleState : StateBaseClass
             speedPercent = 1;
             pathfindingErrorCheck = 0;
         }
+        else if (pathfindingErrorCheck >= maxPathfindingChecks / 2)
+        {
+            minWalkDistance /= 2;
+            maxWalkDistance /= 2;
+            FindWalkTarget();  // Try and find a new path
+        }
         else if (pathfindingErrorCheck >= maxPathfindingChecks)
         {
             character.isMoving = false;
+            character.walkingParticles.Stop();
             return;
         }
         else

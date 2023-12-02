@@ -69,19 +69,20 @@ public class RunState : StateBaseClass
                 {
                     if (pathIndex == path.finishLineIndex)  // Has finished
                     {
+                        character.isMoving = false;
+                        character.runParticles.Stop();
+
                         if (character.characterType != AICharacter.CharacterTypes.Boss)
                         {
                             path = new PathfindingSmoothing(null, Vector3.zero, 0, 0);
                             runDestination = Vector2.zero;  // Stop to look around and see if they escaped
                             checkTime = Random.Range(minCheckTime, maxCheckTime);
                             FindWalkTarget();
-                            character.isMoving = false;
                             return;
                         }
                         else
                         {
                             character.isAttacking = false;
-                            character.isMoving = false;
                             GetComponent<BossStateMachineController>().reloadCountdown++;
                             Destroy(this);
                         }
@@ -132,6 +133,7 @@ public class RunState : StateBaseClass
             pathIndex = 0;
             speedPercent = 1;
             pathfindingErrorCheck = 0;
+            character.runParticles.Play();
         }
         else if (pathfindingErrorCheck >= maxPathfindingChecks)
         {

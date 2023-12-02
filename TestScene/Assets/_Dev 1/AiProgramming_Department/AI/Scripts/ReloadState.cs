@@ -16,7 +16,7 @@ public class ReloadState : StateBaseClass
 
         if(character.characterType == AICharacter.CharacterTypes.Boss)
         {
-            if(!character.ps.isPlaying) character.ps.Play();
+            if(!character.reloadParticles.isPlaying) character.reloadParticles.Play();
 
         }
 
