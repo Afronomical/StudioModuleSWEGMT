@@ -110,7 +110,6 @@ public class RunState : StateBaseClass
                 FindWalkTarget();
 
             character.isMoving = true;
-            character.runParticles.Play();
         }
     }
 
@@ -134,6 +133,7 @@ public class RunState : StateBaseClass
             pathIndex = 0;
             speedPercent = 1;
             pathfindingErrorCheck = 0;
+            character.runParticles.Play();
         }
         else if (pathfindingErrorCheck >= maxPathfindingChecks)
         {

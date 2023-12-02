@@ -4976,7 +4976,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a24d8aecd3ce13a468536f48c8a327a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectionRange: 6
+  detectionRange: 8
   attackRange: 1
   unwalkableLayer:
     serializedVersion: 2
@@ -6082,7 +6082,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 4
+      scalar: 6
       minScalar: 10
       maxCurve:
         serializedVersion: 2
