@@ -99,8 +99,9 @@ public class AICharacter : MonoBehaviour
 
         reloading = false;
 
-        _downedTrail = gameObject.GetComponent<TrailRenderer>();
-        _downedTrail.enabled = false;
+        
+        //_downedTrail = gameObject.GetComponent<TrailRenderer>();
+        //_downedTrail.enabled = false;
     }
 
 
