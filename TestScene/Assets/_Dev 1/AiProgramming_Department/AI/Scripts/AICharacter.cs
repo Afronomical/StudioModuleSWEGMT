@@ -84,7 +84,11 @@ public class AICharacter : MonoBehaviour
     public GameObject floatingDamage;
     public Vector3 offset = new Vector3(0, 30, 0);
 
-    public GameObject exclamationMark; 
+    public GameObject exclamationMark;
+    public ParticleSystem walkingParticles;
+    public ParticleSystem runParticles;
+    public ParticleSystem downedParticles;
+    public ParticleSystem reloadParticles;
 
     TrailRenderer _downedTrail;
 
@@ -110,7 +114,7 @@ public class AICharacter : MonoBehaviour
 
     void Update()
     {
-        if (stateScript != null)
+        if (stateScript != null && player.GetComponent<PlayerDeath>().currentHealth > 0)
             stateScript.UpdateLogic();  // Calls the virtual function for whatever state scripts
     }
 
@@ -126,6 +130,10 @@ public class AICharacter : MonoBehaviour
         
         if (currentState != newState || stateScript == null)
         {
+            walkingParticles.Stop();
+            runParticles.Stop();
+            downedParticles.Stop();
+
             if (stateScript != null)
             {
                 //destroy current script attached to AI character
