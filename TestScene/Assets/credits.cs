@@ -16,8 +16,9 @@ public class credits : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            ///skip credits, return to menu 
-            SceneManager.LoadScene("Main Menu Animated");
+            //skip credits, return to menu 
+            FindFirstObjectByType<FadeTransitionController>().LoadNextLevel("Main Menu Animated");
+            //SceneManager.LoadScene("Main Menu Animated");
             AudioManager.Manager.StopMusic("Credits");
         }
 

@@ -11,7 +11,8 @@ public class TutorialTeleporter : MonoBehaviour
         {
             PlayerPrefs.SetInt(AudioManager.Manager.playedTutorial, 1);
             AudioManager.Manager.StopMusic("LevelMusic");
-            SceneManager.LoadScene("Main Menu Animated");
+            FindFirstObjectByType<FadeTransitionController>().LoadNextLevel("Main Menu Animated");
+            //SceneManager.LoadScene("Main Menu Animated");
         }
     }
 }

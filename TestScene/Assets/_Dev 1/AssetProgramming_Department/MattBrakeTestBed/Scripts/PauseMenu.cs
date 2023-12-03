@@ -65,7 +65,8 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
         AudioManager.Manager.PlaySFX("UI_Click");
         pauseMenuUI.SetActive(false);
-        SceneManager.LoadScene("Main Menu Animated");
+        FindFirstObjectByType<FadeTransitionController>().LoadNextLevel("Main Menu Animated");
+        //SceneManager.LoadScene("Main Menu Animated");
         AudioManager.Manager.StopMusic("LevelMusic");
         AudioManager.Manager.StopMusic("BossMusic");
         //GameManager.Instance.currentGameState = GameManager.GameStates.PlayerDead;
