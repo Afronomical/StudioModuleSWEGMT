@@ -5893,7 +5893,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6878574643033226844}
-  - component: {fileID: 3093685711999446082}
+  - component: {fileID: 8987901375396047519}
   m_Layer: 0
   m_Name: DashTrail
   m_TagString: Untagged
@@ -5916,7 +5916,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5423638641185258288}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!96 &3093685711999446082
+--- !u!96 &8987901375396047519
 TrailRenderer:
   serializedVersion: 3
   m_ObjectHideFlags: 0
