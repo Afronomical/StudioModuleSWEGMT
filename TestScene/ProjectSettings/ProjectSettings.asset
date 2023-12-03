@@ -16,7 +16,7 @@ PlayerSettings:
   productName: Night In Sanguimesia
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
-  m_SplashScreenBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
+  m_SplashScreenBackgroundColor: {r: 0.050980397, g: 0.08235294, b: 0.10588236, a: 1}
   m_ShowUnitySplashScreen: 1
   m_ShowUnitySplashLogo: 1
   m_SplashScreenOverlayOpacity: 0.5
@@ -40,13 +40,13 @@ PlayerSettings:
     width: 1
     height: 1
   m_SplashScreenLogos:
-  - logo: {fileID: -762784546857049799, guid: 0732ee729844cba41ae41b61a44f8063, type: 3}
+  - logo: {fileID: -762784546857049799, guid: 3a1f559ff0959c24eb9cc0e661cdc940, type: 3}
     duration: 5
   - logo: {fileID: 10404, guid: 0000000000000000f000000000000000, type: 0}
     duration: 2
-  - logo: {fileID: -4695498974440723850, guid: d2ad3786396f9ed47b4ad85398fefed2, type: 3}
+  - logo: {fileID: 7141765067525904753, guid: 25157583073efa14ea453fc45aef36f8, type: 3}
     duration: 3
-  m_VirtualRealitySplashScreen: {fileID: 2800000, guid: 0732ee729844cba41ae41b61a44f8063, type: 3}
+  m_VirtualRealitySplashScreen: {fileID: 2800000, guid: 3a1f559ff0959c24eb9cc0e661cdc940, type: 3}
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1920
   defaultScreenHeight: 1080
@@ -283,7 +283,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: d2ad3786396f9ed47b4ad85398fefed2, type: 3}
+      m_Icon: {fileID: 2800000, guid: 25157583073efa14ea453fc45aef36f8, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0

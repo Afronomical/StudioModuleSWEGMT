@@ -71,7 +71,8 @@ public class LevelProgressManager : MonoBehaviour
 
     private void LoadNextLevel()
     {
+        FindFirstObjectByType<FadeTransitionController>().LoadNextLevel("Level2");
         // Load the next level. Please replace "Level2" with the appropriate level name - Max W :) .
-        SceneManager.LoadScene("Level2");
+        //SceneManager.LoadScene("Level2");
     }
 }

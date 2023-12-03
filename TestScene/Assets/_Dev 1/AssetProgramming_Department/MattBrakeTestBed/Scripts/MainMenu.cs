@@ -29,10 +29,12 @@ public class MainMenu : MonoBehaviour
         AudioManager.Manager.StopMusic("MenuMusic");
         Debug.Log("Play Game");
 
-        if (PlayerPrefs.GetInt(AudioManager.Manager.playedTutorial) == 0 )
-            SceneManager.LoadScene("Tutorial_Level");
+        if (PlayerPrefs.GetInt(AudioManager.Manager.playedTutorial) == 0)
+            FindFirstObjectByType<FadeTransitionController>().LoadNextLevel("Tutorial_Level");
+        //SceneManager.LoadScene("Tutorial_Level");
         else
-            SceneManager.LoadScene("Spawn");
+            FindFirstObjectByType<FadeTransitionController>().LoadNextLevel("Spawn");
+        //SceneManager.LoadScene("Spawn");
         Time.timeScale = 1;
         if (CanvasManager.Instance != null)
         {

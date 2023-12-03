@@ -24,6 +24,8 @@ public class DeathScreenButtons : MonoBehaviour
         AudioManager.Manager.PlaySFX("UI_Click");
         AudioManager.Manager.StopMusic("GameOver");
         AudioManager.Manager.PlayMusic("LevelMusic");
+        AudioManager.Manager.StopMusic("BossMusic");
+
         GetComponent<Canvas>().enabled = false;
         PlayerController.Instance.GetPlayerDeath().currentHealth = PlayerController.Instance.GetPlayerDeath().maxHealth;
         PlayerController.Instance.GetPlayerDeath().SetIsDead(false);
@@ -37,7 +39,8 @@ public class DeathScreenButtons : MonoBehaviour
         Transform rotatingCover = CanvasManager.Instance.countdownTimer.rotatingCover;
         rotatingCover.transform.rotation = Quaternion.Euler(rotatingCover.transform.rotation.x, rotatingCover.transform.rotation.y, 0);
         deathScreen.enabled = false;
-        SceneManager.LoadScene("Level 1");
+        FindFirstObjectByType<FadeTransitionController>().LoadNextLevel("Level 1");
+        //SceneManager.LoadScene("Level 1");
         SetSpawnpoint.instance.ResetPosition();
    }
 
@@ -45,7 +48,9 @@ public class DeathScreenButtons : MonoBehaviour
     {
         AudioManager.Manager.PlaySFX("UI_Click");
         AudioManager.Manager.StopMusic("GameOver");
-        SceneManager.LoadScene("Main Menu Animated");
+        AudioManager.Manager.StopMusic("BossMusic");
+        FindFirstObjectByType<FadeTransitionController>().LoadNextLevel("Main Menu Animated");
+        //SceneManager.LoadScene("Main Menu Animated");
         deathScreen.enabled = false;
         GameManager.Instance.ChangeGameState(GameManager.GameStates.MainMenu);
         //mainCanvas.gameObject.SetActive(false);

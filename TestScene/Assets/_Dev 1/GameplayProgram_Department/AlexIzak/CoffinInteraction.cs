@@ -87,7 +87,8 @@ public class CoffinInteraction : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
         {
             //Sleep - go to next level
-            SceneManager.LoadScene(areaToMove);
+            FindFirstObjectByType<FadeTransitionController>().LoadNextLevel(areaToMove);
+            //SceneManager.LoadScene(areaToMove);
             //print("Sleeping...");
         }
     }
@@ -127,7 +128,8 @@ public class CoffinInteraction : MonoBehaviour
         {
             //Sleep - go to next level
             AudioManager.Manager.PlaySFX("CoffinOpen");
-            SceneManager.LoadScene(areaToMove);
+            FindFirstObjectByType<FadeTransitionController>().LoadNextLevel(areaToMove);
+            //SceneManager.LoadScene(areaToMove);
             PlayerController.Instance.GetPlayerDeath().currentHealth = PlayerController.Instance.GetPlayerDeath().maxHealth;
             PlayerController.Instance.GetFeeding().currentHunger = 0;
             CanvasManager.Instance.hungerBarUI.SetHunger(0);

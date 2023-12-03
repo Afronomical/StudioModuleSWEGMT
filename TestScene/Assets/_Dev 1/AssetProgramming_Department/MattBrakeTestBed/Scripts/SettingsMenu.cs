@@ -80,6 +80,7 @@ visualCanvas.enabled = false;
 
     public void BackToMenu()
     {
-        SceneManager.LoadScene("Main Menu Animated");
+        FindFirstObjectByType<FadeTransitionController>().LoadNextLevel("Main Menu Animated");
+        //SceneManager.LoadScene("Main Menu Animated");
     }
 }
