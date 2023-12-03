@@ -84,13 +84,9 @@ public class AICharacter : MonoBehaviour
     public GameObject floatingDamage;
     public Vector3 offset = new Vector3(0, 30, 0);
 
-    [Header("Effects")]
-    public GameObject exclamationMark;
-    public ParticleSystem walkingParticles;
-    public ParticleSystem runParticles;
-    public ParticleSystem downedParticles;
-    public ParticleSystem reloadParticles;
-    TrailRenderer downedTrail;
+    public GameObject exclamationMark; 
+
+    TrailRenderer _downedTrail;
 
     void Start()
     {
@@ -103,14 +99,18 @@ public class AICharacter : MonoBehaviour
 
         reloading = false;
 
-        downedTrail = gameObject.GetComponent<TrailRenderer>();
-        downedTrail.enabled = false;
+        if(gameObject.tag != "Boss")
+        {
+            _downedTrail = gameObject.GetComponent<TrailRenderer>();
+            _downedTrail.enabled = false;
+        }
+        
     }
 
 
     void Update()
     {
-        if (stateScript != null && player.GetComponent<PlayerDeath>().currentHealth > 0)
+        if (stateScript != null)
             stateScript.UpdateLogic();  // Calls the virtual function for whatever state scripts
     }
 
@@ -123,12 +123,9 @@ public class AICharacter : MonoBehaviour
 
     public void ChangeState(States newState)  // Will destroy the old state script and create a new one
     {
+        
         if (currentState != newState || stateScript == null)
         {
-            walkingParticles.Stop();
-            runParticles.Stop();
-            downedParticles.Stop();
-
             if (stateScript != null)
             {
                 //destroy current script attached to AI character
@@ -153,7 +150,7 @@ public class AICharacter : MonoBehaviour
                     stateScript = transform.AddComponent<AttackState>();
                     break;
                 case States.Downed:
-                    downedTrail.enabled = true;
+                    _downedTrail.enabled = true;
                     stateScript = transform.AddComponent<DownedState>();
                     //If the boss is the 1 downed
                     if(spinattackboxPrefab != null)
@@ -254,7 +251,7 @@ public class AICharacter : MonoBehaviour
 
     
 
-    /*public void DownedTrail()
+    /*public void downedTrail()
     {
 
         if (States.Downed == currentState)

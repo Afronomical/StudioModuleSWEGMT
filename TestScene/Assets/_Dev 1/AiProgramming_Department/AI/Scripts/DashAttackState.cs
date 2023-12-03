@@ -50,7 +50,7 @@ public class DashAttackState : StateBaseClass
         
 
         //Checks if the delay timer has hit 0, if so, it will damage the player and reset the delay timer to x amount
-        if (currentDelay <= 0)
+        if (currentDelay <= 0 && isDashing == false)
         {
             StartCoroutine(Dash());
             //playerDeath.RemoveHealth(attackDamage);
