@@ -25,7 +25,7 @@ public class debugMode : MonoBehaviour
     {
         godButton.SetActive(false);
         instaButton.SetActive(false);
-        //nextLevelButton.SetActive(false);
+        nextLevelButton.SetActive(false);
         player = GameObject.FindGameObjectWithTag("Player");
         origAttackDelay = player.GetComponent<playerAttack>().attackDelayStart;
         origDam = player.GetComponent<playerAttack>().damage;
@@ -91,14 +91,14 @@ public class debugMode : MonoBehaviour
         {
             godButton.SetActive(false);
             instaButton.SetActive(false);
-            //nextLevelButton.SetActive(false);
+            nextLevelButton.SetActive(false);
             visiPressed = false;
         }
         else
         {
             godButton.SetActive(true);
             instaButton.SetActive(true);
-            //nextLevelButton.SetActive(true);
+            nextLevelButton.SetActive(true);
             visiPressed = true;
         }
     }

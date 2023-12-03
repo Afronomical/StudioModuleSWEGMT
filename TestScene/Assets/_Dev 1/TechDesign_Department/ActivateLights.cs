@@ -17,6 +17,7 @@ public class ActivateLights : MonoBehaviour
         {
             gameObject.GetComponentInChildren<Light2D>().enabled = true;
             gameObject.GetComponent<Animator>().enabled = true;
+            //Destroy(this); - scene reloads so this does not work
         }
     }
 }
