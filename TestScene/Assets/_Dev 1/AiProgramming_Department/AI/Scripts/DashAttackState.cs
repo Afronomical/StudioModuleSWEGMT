@@ -25,7 +25,7 @@ public class DashAttackState : StateBaseClass
     {
         playerDeath = character.player.GetComponent<PlayerDeath>();
         rb = GetComponent<Rigidbody2D>();
-        dashTrail = gameObject.GetComponent<TrailRenderer>();
+        dashTrail = transform.Find("Sprite").Find("DashTrail").GetComponent<TrailRenderer>();
         transform.GetComponentInChildren<AIAnimationController>().ChangeAnimationState(AIAnimationController.AnimationStates.SwordAttack); // Change to boss dash animation
     }
 

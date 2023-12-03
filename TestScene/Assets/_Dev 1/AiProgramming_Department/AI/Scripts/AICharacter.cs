@@ -103,12 +103,8 @@ public class AICharacter : MonoBehaviour
 
         reloading = false;
 
-        if(gameObject.tag != "Boss")
-        {
-            _downedTrail = gameObject.GetComponent<TrailRenderer>();
-            _downedTrail.enabled = false;
-        }
-        
+        _downedTrail = gameObject.GetComponent<TrailRenderer>();
+        _downedTrail.enabled = false;
     }
 
 

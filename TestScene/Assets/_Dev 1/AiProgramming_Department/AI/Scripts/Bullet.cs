@@ -49,7 +49,7 @@ public class Bullet : MonoBehaviour
             this.gameObject.GetComponent<BoxCollider2D>().enabled = false;
             this.gameObject.GetComponent<TrailRenderer>().enabled = false;
             if (!ps.isPlaying) ps.Play();
-            //GetComponent<SpriteRenderer>().enabled = false;
+            GetComponent<SpriteRenderer>().enabled = false;
             Invoke("DestroyBullet", 1.5f);
         }
     }
