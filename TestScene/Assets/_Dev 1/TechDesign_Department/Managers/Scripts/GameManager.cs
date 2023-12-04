@@ -170,6 +170,8 @@ public class GameManager : MonoBehaviour
                 break;
             case "BossLevel":
                 hasPaused = false;
+                nextLevel = "Spawn";
+                currentLevel = "Level 1"; 
                 if(timer != null)
                 {
                     timer.enabled = false;
