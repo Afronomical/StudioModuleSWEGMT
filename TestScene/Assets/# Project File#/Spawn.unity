@@ -10592,7 +10592,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &773217763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34013,6 +34013,7 @@ GameObject:
   - component: {fileID: 314684470169687811}
   - component: {fileID: 3087727331549845278}
   - component: {fileID: 8454343513730928811}
+  - component: {fileID: 8454343513730928812}
   m_Layer: 0
   m_Name: Coffin
   m_TagString: Untagged
@@ -34477,7 +34478,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.125, y: 3.6875}
+    oldSize: {x: 1.0625, y: 1.84375}
     newSize: {x: 2.125, y: 3.6875}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -34485,6 +34486,24 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.125, y: 3.6875}
   m_EdgeRadius: 0
+--- !u!114 &8454343513730928812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5555664535812049023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97bb7d538973c784ebcce88dfe5b1fc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  closedCoffin: {fileID: 1314762478}
+  stillHungry: {fileID: 1668978352}
+  openCoffin: {fileID: 742489559}
+  useCoffin: {fileID: 2082396150}
+  areaToMove: Level 2
+  hungerThreshold: 10
 --- !u!4 &8471046298262900618
 Transform:
   m_ObjectHideFlags: 0
