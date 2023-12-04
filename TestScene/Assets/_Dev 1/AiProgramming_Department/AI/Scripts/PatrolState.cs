@@ -48,6 +48,7 @@ public class PatrolState : StateBaseClass
         {
             walking = true;
             character.isMoving = true;
+            character.walkingParticles.Play();
             FindWalkTarget();
         }
     }
@@ -65,6 +66,7 @@ public class PatrolState : StateBaseClass
                     walking = false;
                     idleTime = Random.Range(minIdleTime, maxIdleTime);  // How long the character will stand still for
                     character.isMoving = false;
+                    character.walkingParticles.Stop();
                     return;
                 }
                 else  // Has reached a checkpoint

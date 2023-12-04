@@ -13,6 +13,7 @@ public class SpinAttackState : StateBaseClass
 
     public Transform origin;
     public GameObject attackboxPrefab;
+    private bool SpinBoss;
     
     //Gameplay Programmers Script for the Player Health
     private ReferenceManager referenceManager;
@@ -36,10 +37,14 @@ public class SpinAttackState : StateBaseClass
 
     public override void UpdateLogic()
     {
-        //Rotates the character
-        transform.Rotate(Vector3.forward * 300f * Time.deltaTime);
-        //AudioManager.Manager.PlaySFX("BossMelee");
-        origin = character.transform;
+        if(SpinBoss == true)
+        {
+            //Rotates the character
+            transform.Rotate(Vector3.forward * 400f * Time.deltaTime);
+            //AudioManager.Manager.PlaySFX("BossMelee");
+            origin = character.transform;
+        }
+        
 
         //Counts the attack delay down
         currentDelay -= Time.deltaTime;
@@ -49,11 +54,12 @@ public class SpinAttackState : StateBaseClass
             //Sets the attack box to show in the game, the damage logic is handled in it's own script attached to the Attack Box object
             attackboxPrefab.SetActive(true);
             currentDelay = 3;
+            SpinBoss = true;
         }
         else
         {
             //When the player has spun all the way around, it will disable the Attack Box
-            Invoke("SetAttackBoxFalse", 2);
+            Invoke("SetAttackBoxFalse", 4f);
         }
     }
 
@@ -61,5 +67,6 @@ public class SpinAttackState : StateBaseClass
     {
         attackboxPrefab.SetActive(false);
         character.isAttacking = false;
+        SpinBoss = false;
     }
 }

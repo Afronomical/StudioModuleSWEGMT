@@ -71,6 +71,7 @@ public class HuntState : StateBaseClass
                 {
                     character.isAttacking = false;
                     character.isMoving = false;
+                    character.runParticles.Stop();
                     GetComponent<BossStateMachineController>().reloadCountdown += 2;
                     Destroy(this);
                 }
@@ -87,6 +88,7 @@ public class HuntState : StateBaseClass
             pathIndex = 0;
             pathfindingErrorCheck = 0;
             character.isMoving = true;
+            character.runParticles.Play();
         }
         else if (pathfindingErrorCheck >= 10)
         {

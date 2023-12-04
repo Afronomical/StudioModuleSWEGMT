@@ -21,6 +21,8 @@ public class AttackState : StateBaseClass
         gameObject.transform.GetChild(2).GetChild(0).GetComponent<Animator>().SetTrigger("IsAttacking");  // <-----------------------------------  Error Here
         playerDeath = character.player.GetComponent<PlayerDeath>();
         GetComponent<AICharacter>().isMoving = false;
+        GetComponent<AICharacter>().walkingParticles.Stop();
+        GetComponent<AICharacter>().runParticles.Stop();
     }
 
     public AttackState() 
