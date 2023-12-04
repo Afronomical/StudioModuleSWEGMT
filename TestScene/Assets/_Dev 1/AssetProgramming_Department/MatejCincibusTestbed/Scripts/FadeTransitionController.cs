@@ -33,5 +33,6 @@ public class FadeTransitionController : MonoBehaviour
         }
        
         SceneManager.LoadScene(levelName);
+        
     }
 }

@@ -109,6 +109,23 @@ public class GameManager : MonoBehaviour
         switch (SceneManager.GetActiveScene().name)
         {
             case "Spawn":
+                if (PlayerController.Instance != null)
+                {
+                    foreach (BoxCollider2D boxCollider in PlayerController.Instance.GetPlayerDeath().boxColliders)
+                    {
+                        if (boxCollider.isTrigger)
+                            boxCollider.enabled = true;
+                    }
+                    if (PlayerController.Instance.GetPlayerDeath().isInvincible)
+                    {
+                        PlayerController.Instance.GetPlayerDeath().isInvincible = false;
+                        PlayerController.Instance.GetPlayerDeath().currentHealth = PlayerController.Instance.GetPlayerDeath().maxHealth;
+                        PlayerController.Instance.GetPlayerDeath().healthBarScript.SetHealth(PlayerController.Instance.GetPlayerDeath().currentHealth);
+                        CanvasManager.Instance.HealthBar.GetComponent<NewHealthBarScript>().UpdateHealthBarColour();
+                        CanvasManager.Instance.HealthBar.GetComponent<NewHealthBarScript>().setMaxHealth(100);
+                    }
+                }
+
                 if (pauseMenu == null && !hasPaused)
                 {
                     pauseMenu = FindFirstObjectByType<PauseMenu>().gameObject;
@@ -120,7 +137,10 @@ public class GameManager : MonoBehaviour
                     timer.SetIsRotating(false);
                     timer.enabled = false;
                 }
-                    
+
+                CanvasManager.Instance.HealthBar.GetComponent<NewHealthBarScript>().SetHealth(PlayerController.Instance.GetPlayerDeath().currentHealth);
+
+
                 break;
             case "Level 1":
                 hasPaused = false;
@@ -132,6 +152,8 @@ public class GameManager : MonoBehaviour
                     timer.enabled = true;
                     timer.SetIsRotating(true);
                 }
+
+                CanvasManager.Instance.HealthBar.GetComponent<NewHealthBarScript>().SetHealth(PlayerController.Instance.GetPlayerDeath().currentHealth);
                 break;
             case "Level 2":
                 hasPaused = false;
@@ -142,6 +164,8 @@ public class GameManager : MonoBehaviour
                     timer.enabled = true;
                     timer.SetIsRotating(true);
                 }
+
+                CanvasManager.Instance.HealthBar.GetComponent<NewHealthBarScript>().SetHealth(PlayerController.Instance.GetPlayerDeath().currentHealth);
                 break;
             case "BossLevel":
                 hasPaused = false;
@@ -150,6 +174,8 @@ public class GameManager : MonoBehaviour
                     timer.enabled = false;
                     timer.SetIsRotating(false); 
                 }
+
+                CanvasManager.Instance.HealthBar.GetComponent<NewHealthBarScript>().SetHealth(PlayerController.Instance.GetPlayerDeath().currentHealth);
                 break;
             case "Main Menu Animated":
                 hasPaused = false;
@@ -165,6 +191,15 @@ public class GameManager : MonoBehaviour
                 break;
             default:
                 break;
+        }
+    }
+
+    private void EnableBoxCollider()
+    {
+        foreach (BoxCollider2D boxCollider in PlayerController.Instance.GetPlayerDeath().boxColliders)
+        {
+            if (boxCollider.isTrigger)
+                boxCollider.enabled = true;
         }
     }
 

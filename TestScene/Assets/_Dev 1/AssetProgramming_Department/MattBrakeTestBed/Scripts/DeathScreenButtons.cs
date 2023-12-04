@@ -34,18 +34,20 @@ public class DeathScreenButtons : MonoBehaviour
 
 
         PlayerController.Instance.GetPlayerDeath().currentHealth = PlayerController.Instance.GetPlayerDeath().maxHealth;
-        //PlayerController.Instance.GetPlayerDeath().SetIsDead(false);
+        PlayerController.Instance.GetPlayerDeath().healthBarScript.SetHealth(PlayerController.Instance.GetPlayerDeath().currentHealth);
+        CanvasManager.Instance.HealthBar.GetComponent<NewHealthBarScript>().UpdateHealthBarColour(); 
+        CanvasManager.Instance.HealthBar.GetComponent<NewHealthBarScript>().setMaxHealth(100);
+        PlayerController.Instance.GetPlayerDeath().SetIsDead(false);
         foreach (BoxCollider2D boxCollider in PlayerController.Instance.GetPlayerDeath().boxColliders)
         {
             if (boxCollider.isTrigger)
-                boxCollider.enabled = true;
+                boxCollider.enabled = false;
         }
-        PlayerController.Instance.GetPlayerDeath().healthBarScript.SetHealth(PlayerController.Instance.GetPlayerDeath().currentHealth);
+        //Invoke(nameof(EnableBoxCollider), 5f);
 
         PlayerController.Instance.GetFeeding().currentHunger = 0;
+        PlayerController.Instance.GetPlayerDeath().isInvincible = true;
         CanvasManager.Instance.hungerBarUI.GetComponent<HungerBar>().SetMinHunger(0);
-        CanvasManager.Instance.HealthBar.GetComponent<NewHealthBarScript>().setMaxHealth(100);
-        CanvasManager.Instance.HealthBar.GetComponent<NewHealthBarScript>().UpdateHealthBarColour(); 
 
         CanvasManager.Instance.countdownTimer.timeRemaining = CanvasManager.Instance.countdownTimer.time;
         Transform rotatingCover = CanvasManager.Instance.countdownTimer.rotatingCover;
@@ -74,4 +76,13 @@ public class DeathScreenButtons : MonoBehaviour
         AudioManager.Manager.PlaySFX("UI_Click");
         ///load stats screen 
     }
+
+    //private void EnableBoxCollider()
+    //{
+    //    foreach (BoxCollider2D boxCollider in PlayerController.Instance.GetPlayerDeath().boxColliders)
+    //    {
+    //        if (boxCollider.isTrigger)
+    //            boxCollider.enabled = true;
+    //    }
+    //}
 }
