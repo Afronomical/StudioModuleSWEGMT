@@ -56,20 +56,23 @@ public class CoffinInteraction : MonoBehaviour
         if(collision.collider.CompareTag("Player") && feeding.currentHunger == 0) 
         {
             //Display a message to the player that you cant sleep yet
-            closedCoffin.enabled = true;
-            print("Can't sleep yet, I must feast first!");
+            //closedCoffin.enabled = true;
+            //print("Can't sleep yet, I must feast first!");
+            CanvasManager.Instance.toolTipManager.ShowBottomToolTip_Static("Can't sleep yet. I must feast first");
         }
         //If player ate at least 1 human - do this
         else if(collision.collider.CompareTag("Player") && feeding.currentHunger > 0 && feeding.currentHunger < hungerThreshold)
         {
-            stillHungry.enabled = true;
+            //stillHungry.enabled = true;
+            CanvasManager.Instance.toolTipManager.ShowBottomToolTip_Static("Hunger Not Satisfied");
         }
         //If hunger satiated - do this
         else if(collision.collider.CompareTag("Player") && feeding.currentHunger >= hungerThreshold)
         {
             //Display tooltip
-            openCoffin.text = null;
-            useCoffin.enabled = true;
+            //openCoffin.text = null;
+            //useCoffin.enabled = true;
+            CanvasManager.Instance.toolTipManager.ShowBottomToolTip_Static("Using Coffin"); 
         }
     }
 
@@ -97,11 +100,13 @@ public class CoffinInteraction : MonoBehaviour
     {
         if (collision.collider.CompareTag("Player"))
         {
+            CanvasManager.Instance.toolTipManager.HideBottomToolTip_Static();
             closedCoffin.enabled = false; //Remove tooltip off screen
             stillHungry.enabled = false;
 
             if (useCoffin != null)
                 useCoffin.enabled = false;
+
         }
     }
 
@@ -117,7 +122,8 @@ public class CoffinInteraction : MonoBehaviour
         if(feeding.currentHunger >= hungerThreshold && openCoffin != null) 
         {
             //Open if this is met
-            openCoffin.enabled = true;
+            //openCoffin.enabled = true;
+            CanvasManager.Instance.toolTipManager.ShowBottomToolTip_Static("Coffin Opened. I can finally rest");
             //print("Coffin opened, I can finally rest!");
             //ToolTipManager.ShowBottomToolTip_Static("Coffin Opened, I can finally Rest!");
             
@@ -128,8 +134,8 @@ public class CoffinInteraction : MonoBehaviour
         {
             //Sleep - go to next level
             AudioManager.Manager.PlaySFX("CoffinOpen");
-            FindFirstObjectByType<FadeTransitionController>().LoadNextLevel(areaToMove);
-            //SceneManager.LoadScene(areaToMove);
+            //FindFirstObjectByType<FadeTransitionController>().LoadNextLevel(areaToMove);
+            SceneManager.LoadScene(areaToMove);
             PlayerController.Instance.GetPlayerDeath().currentHealth = PlayerController.Instance.GetPlayerDeath().maxHealth;
             PlayerController.Instance.GetFeeding().currentHunger = 0;
             CanvasManager.Instance.hungerBarUI.SetHunger(0);
