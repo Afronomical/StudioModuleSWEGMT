@@ -3452,8 +3452,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 34.205, y: -21.71755, z: 0}
-    m_Extent: {x: 47.1817, y: 35.32495, z: 0}
+    m_Center: {x: 34.199303, y: -21.718948, z: 0}
+    m_Extent: {x: 47.1772, y: 35.32365, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -4138,10 +4138,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3500548692249957960, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
-      propertyPath: m_Value
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 4615694013143893861, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
       propertyPath: m_Name
       value: CanvasPrefab
@@ -4155,11 +4151,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 8351174093400642025, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
-    - {fileID: 8499984281895282879, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
-    - {fileID: 6856197342246727909, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
-    - {fileID: 7753112891432063840, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62be890a34de96e4697157eab44cc1b8, type: 3}
@@ -50993,8 +50985,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 3.3437998, y: -2.03965, z: 0}
-    m_Extent: {x: 8.5675, y: 7.34665, z: 0}
+    m_Center: {x: 3.3360002, y: -2.04065, z: 0}
+    m_Extent: {x: 8.5611, y: 7.34955, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
