@@ -24,7 +24,8 @@ public class GameManager : MonoBehaviour
     public bool playerIsDead;
     public bool canChangeLevel;
 
-    
+    private GameObject pauseMenu;
+    private bool hasPaused;
 
     //this is where the conditions that trigger state changes are defined
     //they are simple for now, subject to change as per Tech Design requirements
@@ -108,6 +109,13 @@ public class GameManager : MonoBehaviour
         switch (SceneManager.GetActiveScene().name)
         {
             case "Spawn":
+                if (pauseMenu == null && !hasPaused)
+                {
+                    pauseMenu = FindFirstObjectByType<PauseMenu>().gameObject;
+                    hasPaused = true;
+                    StartCoroutine(CutsceneDelay(11f));
+                }
+
                 if (timer != null)
                 {
                     timer.SetIsRotating(false);
@@ -116,6 +124,7 @@ public class GameManager : MonoBehaviour
                     
                 break;
             case "Level 1":
+                hasPaused = false;
                 nextLevel = "Level 2";
                 currentLevel = "Level 1";
                 //currentGameState = GameStates.PlayerInLevel;
@@ -126,6 +135,7 @@ public class GameManager : MonoBehaviour
                 }
                 break;
             case "Level 2":
+                hasPaused = false;
                 nextLevel = "BossLevel";
                 currentLevel = "Level 2";
                 if (timer != null)
@@ -135,15 +145,29 @@ public class GameManager : MonoBehaviour
                 }
                 break;
             case "BossLevel":
+                hasPaused = false;
                 if(timer != null)
                 {
                     timer.enabled = false;
                     timer.SetIsRotating(false); 
                 }
                 break;
+            case "Main Menu Animated":
+                hasPaused = false;
+                break;
+            case "Tutorial_Level":
+                hasPaused = false;
+                break;
             default:
                 break;
         }
+    }
+
+    private IEnumerator CutsceneDelay(float delay)
+    {
+        pauseMenu.SetActive(false);
+        yield return new WaitForSeconds(delay);
+        pauseMenu.SetActive(true);
     }
 
     private void CheckScene()

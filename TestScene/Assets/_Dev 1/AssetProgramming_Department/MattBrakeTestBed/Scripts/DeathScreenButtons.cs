@@ -42,6 +42,7 @@ public class DeathScreenButtons : MonoBehaviour
         FindFirstObjectByType<FadeTransitionController>().LoadNextLevel("Level 1");
         //SceneManager.LoadScene("Level 1");
         SetSpawnpoint.instance.ResetPosition();
+        Time.timeScale = 1.0f;
    }
 
     public void Menu()
