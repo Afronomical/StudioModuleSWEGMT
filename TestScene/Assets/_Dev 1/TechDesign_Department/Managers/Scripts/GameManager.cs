@@ -18,6 +18,7 @@ using Unity.VisualScripting;
 using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class GameManager : MonoBehaviour
 {
@@ -39,6 +40,8 @@ public class GameManager : MonoBehaviour
     private CountdownTimer timer;
     public string nextLevel = "Level 2";
     public string currentLevel = "Level 1";
+
+    public bool playerDied;
 
     private void Awake()
     {
@@ -106,6 +109,15 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log(peopleEaten + "/" + peopleEatingThreshold);
         }
+
+
+        if (SceneManager.GetActiveScene().name == "Spawn" && playerDied)
+        {
+            nextLevel = "Spawn";
+            currentLevel = "Level 1";
+            playerDied = false;
+        }
+
 
         switch (SceneManager.GetActiveScene().name)
         {
@@ -186,6 +198,8 @@ public class GameManager : MonoBehaviour
                 break;
             case "Main Menu Animated":
                 hasPaused = false;
+                nextLevel = "Level 1";
+                currentLevel = "Spawn";
                 break;
             case "Tutorial_Level":
                 hasPaused = false;
