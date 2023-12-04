@@ -15,6 +15,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -131,7 +132,10 @@ public class GameManager : MonoBehaviour
                     pauseMenu = FindFirstObjectByType<PauseMenu>().gameObject;
                     hasPaused = true;
                     if (pauseMenu != null)
+                    {
+                        FindFirstObjectByType<CoffinInteraction>().enabled = false;
                         StartCoroutine(CutsceneDelay(9.5f));
+                    }
                 }
                 if (timer != null)
                 {
@@ -219,6 +223,8 @@ public class GameManager : MonoBehaviour
 
         if (pauseMenu != null)
             pauseMenu.SetActive(true);
+
+        FindFirstObjectByType<CoffinInteraction>().enabled = true;
     }
 
     private void CheckScene()
