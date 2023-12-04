@@ -5,10 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class credits : MonoBehaviour
 {
+    private void Awake()
+    {
+        PlayerController.Instance.GetComponent<Animator>().enabled = false;
+        
+    }
+
     // Start is called before the first frame update
     void Start()
     {
         AudioManager.Manager.PlayMusic("Credits");
+        gameObject.GetComponentInChildren<Animator>().Play("CreditAnimation");
     }
 
     // Update is called once per frame
@@ -21,7 +28,6 @@ public class credits : MonoBehaviour
             //SceneManager.LoadScene("Main Menu Animated");
             AudioManager.Manager.StopMusic("Credits");
         }
-
 
         //when last thing in credits is in view, end them 
     }
