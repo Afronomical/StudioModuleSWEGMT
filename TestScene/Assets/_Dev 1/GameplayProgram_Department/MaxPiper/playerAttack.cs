@@ -8,6 +8,8 @@ using UnityEngine.UIElements;
 
 public class playerAttack : MonoBehaviour
 {
+    private SpriteRenderer spriteRenderer;
+
     public int damage = 1;
     public GameObject hitBox;
     public float attackDelayStart = 0.5f;
@@ -132,6 +134,8 @@ public class playerAttack : MonoBehaviour
 
     void Start()
     {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+
         attackDelay = attackDelayStart;
         parryCoolTime = parryCoolStart;
 
@@ -188,6 +192,7 @@ public class playerAttack : MonoBehaviour
                 canHit = false;
                 isChargingAttack = false;
                 isHeavyAttackReady = false;
+                spriteRenderer.color = Color.white;
             }
             else
             {
@@ -206,6 +211,7 @@ public class playerAttack : MonoBehaviour
                 if (heavyChargeTimer <= 0)
                 {
                     isHeavyAttackReady = true;
+                    spriteRenderer.color = Color.yellow;
                 }
             }
         }
