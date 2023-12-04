@@ -149,6 +149,8 @@ public class CoffinInteraction : MonoBehaviour
             GameObject.Find("Timer").GetComponent<CountdownTimer>().resetTimer();
             AudioManager.Manager.StopMusic("Spawn");
             AudioManager.Manager.PlayMusic("LevelMusic");
+            CanvasManager.Instance.toolTipManager.HideBottomToolTip_Static(); 
+
 
             //print("Sleeping...");
         }
