@@ -2116,6 +2116,8 @@ MonoBehaviour:
   toolTipManager: {fileID: 0}
   deathScreenCanvas: {fileID: 0}
   countdownTimer: {fileID: 0}
+  HealthBar: {fileID: 0}
+  staminaBar: {fileID: 0}
 --- !u!1 &4647173932047632739
 GameObject:
   m_ObjectHideFlags: 0
@@ -2451,8 +2453,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0a66bcc2409bafb4597f5839bd5ba2be, type: 2}
+  m_sharedMaterial: {fileID: 5719957615426329459, guid: 0a66bcc2409bafb4597f5839bd5ba2be, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3332,6 +3334,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slider: {fileID: 3500548692249957960}
   BlinkEffect: {fileID: 5467851922213096365}
+  targetValue: 0
+  currentValue: 0
   fillSpeed: 1
 --- !u!1 &6636882998037152997
 GameObject:
@@ -3932,8 +3936,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0a66bcc2409bafb4597f5839bd5ba2be, type: 2}
+  m_sharedMaterial: {fileID: 5719957615426329459, guid: 0a66bcc2409bafb4597f5839bd5ba2be, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
