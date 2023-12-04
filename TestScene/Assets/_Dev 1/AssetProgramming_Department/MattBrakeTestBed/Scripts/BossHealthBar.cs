@@ -46,7 +46,7 @@ public class BossHealthBar : MonoBehaviour
         Phase = BossPhase.One;
         BlinkEffect.enabled = false; 
         ToolTipManager.ShowBottomToolTip_Static("Phase: " + Phase);
-        ToolTipManager.ShowTopToolTip_Static("VUN HELLSTINC");
+        ToolTipManager.ShowTopToolTip_Static("");
        
 
         //float BossHealth = Boss.GetComponent<AICharacter>().GetHealth();
