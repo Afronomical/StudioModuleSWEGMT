@@ -23,15 +23,15 @@ public class AttackState : StateBaseClass
         GetComponent<AICharacter>().isMoving = false;
         GetComponent<AICharacter>().walkingParticles.Stop();
         GetComponent<AICharacter>().runParticles.Stop();
-    }
-
-    public AttackState() 
-    {
-        //When a character goes to the attack state, this will delay the attack by x amount
+        //transform.GetComponentInChildren<AIAnimationController>().ChangeAnimationState(AIAnimationController.AnimationStates.SwordAttack);
         currentDelay = 0.2f;
-        transform.GetComponentInChildren<AIAnimationController>().ChangeAnimationState(AIAnimationController.AnimationStates.SwordAttack);
         AudioManager.Manager.PlaySFX("NPC_MeleeAttack");
     }
+
+    //public AttackState() 
+    //{
+    //    //When a character goes to the attack state, this will delay the attack by x amount
+    //}
     
     public override void UpdateLogic()
     {

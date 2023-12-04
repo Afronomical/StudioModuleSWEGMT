@@ -973,7 +973,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1.78125}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &149545926
@@ -2672,7 +2672,7 @@ PrefabInstance:
       objectReference: {fileID: 1020719199}
     - target: {fileID: 8811865619863605101, guid: 99d0183fde40a224eae3632a6b0caf96, type: 3}
       propertyPath: maxHealth
-      value: 1000
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8811865619863605101, guid: 99d0183fde40a224eae3632a6b0caf96, type: 3}
       propertyPath: healthBarScript
@@ -3452,8 +3452,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 34.19835, y: -21.70795, z: 0}
-    m_Extent: {x: 47.175552, y: 35.31685, z: 0}
+    m_Center: {x: 34.2001, y: -21.7067, z: 0}
+    m_Extent: {x: 47.175297, y: 35.3231, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -50993,8 +50993,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 3.3363, y: -2.043, z: 0}
-    m_Extent: {x: 8.5672, y: 7.3514996, z: 0}
+    m_Center: {x: 3.33905, y: -2.03955, z: 0}
+    m_Extent: {x: 8.57535, y: 7.3455505, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
