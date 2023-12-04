@@ -334,7 +334,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 12
   m_TargetDisplay: 0
 --- !u!224 &362789225
 RectTransform:
@@ -357,63 +357,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1001 &493441595
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3172733779747772765, guid: c5bf5d8bba9c03a4eb3439e3e7967316, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3172733779747772765, guid: c5bf5d8bba9c03a4eb3439e3e7967316, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3172733779747772765, guid: c5bf5d8bba9c03a4eb3439e3e7967316, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3172733779747772765, guid: c5bf5d8bba9c03a4eb3439e3e7967316, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3172733779747772765, guid: c5bf5d8bba9c03a4eb3439e3e7967316, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3172733779747772765, guid: c5bf5d8bba9c03a4eb3439e3e7967316, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3172733779747772765, guid: c5bf5d8bba9c03a4eb3439e3e7967316, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3172733779747772765, guid: c5bf5d8bba9c03a4eb3439e3e7967316, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3172733779747772765, guid: c5bf5d8bba9c03a4eb3439e3e7967316, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3172733779747772765, guid: c5bf5d8bba9c03a4eb3439e3e7967316, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9123651882320505506, guid: c5bf5d8bba9c03a4eb3439e3e7967316, type: 3}
-      propertyPath: m_Name
-      value: SceneFade
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: c5bf5d8bba9c03a4eb3439e3e7967316, type: 3}
 --- !u!1 &618378592
 GameObject:
   m_ObjectHideFlags: 0
@@ -633,6 +576,7 @@ GameObject:
   m_Component:
   - component: {fileID: 997643319}
   - component: {fileID: 997643320}
+  - component: {fileID: 997643321}
   m_Layer: 0
   m_Name: Credits
   m_TagString: Untagged
@@ -682,6 +626,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &997643321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 997643318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32a00cb36a4c14e479e6e0a79b420202, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1084277541
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -839,11 +795,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1982800875}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 429, y: 0}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1326374952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1271,11 +1227,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Lucian Dusciac, Somi Euler - Ajayi , Matej Cincibus, Max Piper\n\n\n\nSomi
-    Euler-Ajayi, Imogen Killingley, Shaban Laghari \n\n\n\nLuscian Dusciac, Alex
-    Izak, Aaron Moreland, Adam Alexander\n\n\n\n\nMatej Cincibus, Matt Brake, Nathan
-    Jowett\n\n\n\n\n\nMax Piper, Maximus Wade, Hugo Macdonald, Liam Edwards Ellis\n\n\n\n\n\nKostas
-    Dokos \n\n\n\n\n\n\n\n3RD PARTY ASSETS:\n\n\"rowdy41\"- Itch.io - Small Forest
-    Asset Pack "
+    Euler-Ajayi\n\n\n\nLuscian Dusciac, Alex Izak, Aaron Moreland, Adam Alexander\n\n\n\n\nMatej
+    Cincibus, Matt Brake, Nathan Jowett\n\n\n\n\n\nMax Piper, Maximus Wade, Hugo
+    Macdonald, Liam Edwards Ellis\n\n\n\n\n\nKostas Dokos \n\n\n\n\n\n\n\n3RD PARTY
+    ASSETS:\n\n\"rowdy41\"- Itch.io - Small Forest Asset Pack "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0a66bcc2409bafb4597f5839bd5ba2be, type: 2}
   m_sharedMaterial: {fileID: 5719957615426329459, guid: 0a66bcc2409bafb4597f5839bd5ba2be, type: 2}
@@ -1363,7 +1318,6 @@ GameObject:
   - component: {fileID: 1982800875}
   - component: {fileID: 1982800877}
   - component: {fileID: 1982800876}
-  - component: {fileID: 1982800878}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -1429,18 +1383,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1982800874}
   m_CullTransparentMesh: 1
---- !u!114 &1982800878
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1982800874}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32a00cb36a4c14e479e6e0a79b420202, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1449,4 +1391,3 @@ SceneRoots:
   - {fileID: 362789225}
   - {fileID: 1172978636}
   - {fileID: 1084277541}
-  - {fileID: 493441595}

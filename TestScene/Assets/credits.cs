@@ -1,24 +1,27 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class credits : MonoBehaviour
 {
+    private Animator animator;
+    
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
+        Time.timeScale = 1.0f;
+        animator = GetComponent<Animator>();
+        animator.Play("CreditAnimation");
         AudioManager.Manager.PlayMusic("Credits");
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {
             //skip credits, return to menu 
-            FindFirstObjectByType<FadeTransitionController>().LoadNextLevel("Main Menu Animated");
-            //SceneManager.LoadScene("Main Menu Animated");
+            //FindFirstObjectByType<FadeTransitionController>().LoadNextLevel("Main Menu Animated");
+            SceneManager.LoadScene("Main Menu Animated");
             AudioManager.Manager.StopMusic("Credits");
         }
 

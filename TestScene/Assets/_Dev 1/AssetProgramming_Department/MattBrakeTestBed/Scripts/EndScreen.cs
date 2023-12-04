@@ -30,7 +30,8 @@ public class EndScreen : MonoBehaviour
         EndScreenCanvas.enabled = false;
 
         int randomIndex = Random.Range(0, hints.Count);
-        hintText.text = hints[randomIndex];
+        if (hintText != null)
+            hintText.text = hints[randomIndex];
         
     }
 
