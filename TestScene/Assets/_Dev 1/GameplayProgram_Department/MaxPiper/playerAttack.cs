@@ -108,7 +108,10 @@ public class playerAttack : MonoBehaviour
                 //enemyTarg.GetComponentInChildren<AI_AnimationController>().ChangeAnimationState(AI_AnimationController.AnimationStates.Hurt);
             }
 
-
+            if (obj.CompareTag("Grave") && Input.GetMouseButtonDown(0))
+            {
+                Destroy(obj);
+            }
 
         }
 

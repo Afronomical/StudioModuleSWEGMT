@@ -12,9 +12,9 @@ public class BoxSpecificAttack : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if ((other.tag == "Villager") || (other.tag == "Hunter") || (other.tag == "Boss"))
+        if ((other.tag == "Villager") || (other.tag == "Hunter") || (other.tag == "Grave"))
         {
-            
+            Debug.Log("Hit");
             playerAttackScript.onAttackEnter(other);
         }
     }
@@ -22,7 +22,7 @@ public class BoxSpecificAttack : MonoBehaviour
     //exit clears enemy target
     private void OnTriggerExit2D(Collider2D other)
     {
-        if ((other.tag == "Villager") || (other.tag == "Hunter") || (other.tag == "Boss"))
+        if ((other.tag == "Villager") || (other.tag == "Hunter") || (other.tag == "Grave"))
         {
             playerAttackScript.onAttackExit(other);
         }
@@ -30,8 +30,8 @@ public class BoxSpecificAttack : MonoBehaviour
 
     void Start()
     {
-        //player = FindFirstObjectByType<PlayerController>().gameObject;
-        playerAttackScript = FindFirstObjectByType<playerAttack>();
+        player = GameObject.FindGameObjectWithTag("Player");
+        playerAttackScript = player.GetComponent<playerAttack>();
     }
 
     // Update is called once per frame

@@ -8,6 +8,7 @@ public class DeadState : StateBaseClass
 {
     private AIAnimationController animController;
     private Animator anim;
+    private bool isAlive = true;
 
     private void Start()
     {
@@ -22,6 +23,7 @@ public class DeadState : StateBaseClass
         if (animController != null && anim != null)
         {
             character.gameObject.GetComponent<CircleCollider2D>().enabled = false; //Player can't push AI whilst they're death animation is playing
+            StartCoroutine(SpawnGrave());
             Invoke(nameof(DisableAfterDeath), anim.GetCurrentAnimatorClipInfo(0).Length * 0.75f);
         }
     }
@@ -31,5 +33,16 @@ public class DeadState : StateBaseClass
         if (!AISpawnManager.instance.deadEnemies.Contains(gameObject) && character.characterType != AICharacter.CharacterTypes.Boss)
             AISpawnManager.instance.deadEnemies.Add(gameObject);
         character.gameObject.SetActive(false);
+    }
+
+    private IEnumerator SpawnGrave()
+    {
+        //Spawn random gravestone after death
+        if (isAlive)
+        {
+            isAlive = false;
+            yield return new WaitForSeconds(anim.GetCurrentAnimatorClipInfo(0).Length * 0.5f);
+            Instantiate(character.graves[UnityEngine.Random.Range(0, 3)], gameObject.transform.position, Quaternion.identity);
+        }
     }
 }

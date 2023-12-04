@@ -69,6 +69,7 @@ public class AICharacter : MonoBehaviour
     public GameObject hunterPrefab;
     public GameObject archerPrefab;
     public GameObject spinattackboxPrefab;
+    public List<GameObject> graves = new List<GameObject>();
 
     [Header("Reload bar references")]
     public GameObject reloadBarPrefab;

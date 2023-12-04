@@ -4950,6 +4950,10 @@ MonoBehaviour:
   hunterPrefab: {fileID: 0}
   archerPrefab: {fileID: 0}
   spinattackboxPrefab: {fileID: 0}
+  graves:
+  - {fileID: 2055102311959635369, guid: 6d9a1504606c57143b1a8bbc2249aabe, type: 3}
+  - {fileID: 2055102311959635369, guid: 6242b925f1d3e0d44a183102cd3d4c26, type: 3}
+  - {fileID: 2055102311959635369, guid: 3fcd8726c7cd53345947949baefbab35, type: 3}
   reloadBarPrefab: {fileID: 0}
   reloadBar: {fileID: 0}
   reloading: 0
