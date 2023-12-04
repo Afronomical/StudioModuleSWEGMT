@@ -129,7 +129,7 @@ public class CoffinInteraction : MonoBehaviour
             //Open if this is met
             //openCoffin.enabled = true;
             useCoffin.enabled = true;
-            CanvasManager.Instance.toolTipManager.ShowBottomToolTip_Static("Coffin Opened. I can finally rest");
+            CanvasManager.Instance.toolTipManager.ShowBottomToolTip_Static("Coffin Opened. I can finally rest (Press R next to coffin)");
             //print("Coffin opened, I can finally rest!");
             //ToolTipManager.ShowBottomToolTip_Static("Coffin Opened, I can finally Rest!");
             
