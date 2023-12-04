@@ -32056,6 +32056,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerPrefab1
       objectReference: {fileID: 0}
+    - target: {fileID: 2268389596231106699, guid: 99d0183fde40a224eae3632a6b0caf96, type: 3}
+      propertyPath: m_Name
+      value: arrow
+      objectReference: {fileID: 0}
+    - target: {fileID: 2268389596231106699, guid: 99d0183fde40a224eae3632a6b0caf96, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 4185675753851016826, guid: 99d0183fde40a224eae3632a6b0caf96, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 

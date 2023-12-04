@@ -43,6 +43,10 @@ public class PlayerController : MonoBehaviour
     public BoxCollider2D hitBox;
     public StaminaBar staminaBarSlider;
 
+    private SpriteRenderer playerSprite;
+    public SpriteRenderer arrowSprite;
+
+    public SpriteRenderer GetPlayerSprite() => playerSprite;
 
     //bool canBatForm;
     //bool inBatForm;
@@ -97,6 +101,9 @@ public class PlayerController : MonoBehaviour
         
         stamina = maxStamina;
         staminaBarSlider.SetStamina(stamina);
+
+        playerSprite = GetComponent<SpriteRenderer>();
+        arrowSprite = transform.Find("arrow").GetComponent<SpriteRenderer>(); 
     }
 
     void Update()
@@ -131,7 +138,6 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKey(KeyCode.LeftShift) && stamina > 0)
             {
                 HandleSprinting();
-                CreateDust();
             }
             // Check for dodging
             else if (Input.GetKeyDown(KeyCode.Space) && canDodge && stamina > dodgeStaminaCost)
@@ -149,6 +155,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftShift) && stamina > 0)
         {
             HandleSprinting();
+            CreateDust();
         }
         else
         {

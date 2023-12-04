@@ -113,9 +113,8 @@ public class GameManager : MonoBehaviour
                 {
                     pauseMenu = FindFirstObjectByType<PauseMenu>().gameObject;
                     hasPaused = true;
-                    StartCoroutine(CutsceneDelay(11f));
+                    StartCoroutine(CutsceneDelay(9.5f));
                 }
-
                 if (timer != null)
                 {
                     timer.SetIsRotating(false);
@@ -166,7 +165,13 @@ public class GameManager : MonoBehaviour
     private IEnumerator CutsceneDelay(float delay)
     {
         pauseMenu.SetActive(false);
+
+        PlayerController.Instance.transform.position = new(-100, -100, 0);
+
         yield return new WaitForSeconds(delay);
+
+        PlayerController.Instance.transform.position = new(-1.84f, 0.52f, 0);
+
         pauseMenu.SetActive(true);
     }
 
