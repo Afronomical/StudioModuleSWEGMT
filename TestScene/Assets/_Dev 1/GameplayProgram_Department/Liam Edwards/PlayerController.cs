@@ -101,28 +101,24 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        
-
         if (stamina != 100 && isSprinting == false)
         {
             StartCoroutine(StaminaRegen());
         }
 
-
-
-        // Check if the player is not dead
         if (!playerDeath.GetIsDead())
         {
-            // Handle movement if not dead
             HandleLivingMovement();
         }
         else
         {
-            // Stop player movement after death
             StopPlayerMovement();
         }
+    }
 
-        void HandleLivingMovement()
+    void HandleLivingMovement()
+    {
+        if (isDodging)
         {
             // Check if currently dodging
             if (isDodging)
@@ -147,55 +143,56 @@ public class PlayerController : MonoBehaviour
                 // Walk if not sprinting or dodging
                 HandleWalking();
             }
+            return;
         }
 
-        void HandleSprinting()
+        if (Input.GetKey(KeyCode.LeftShift) && stamina > 0)
         {
-            isSprinting = true;
-            staminaRegenSpeed = 0;
-
-            // Calculate velocity for sprinting
-            Vector2 sprintVelocity = new Vector2(Input.GetAxisRaw("Horizontal") * sprintSpeed, Input.GetAxisRaw("Vertical") * sprintSpeed);
-            rb.velocity = sprintVelocity;
-
-            // Update stamina and UI
-            stamina -= Time.deltaTime * staminaDrainSpeed;
-            staminaBarSlider.SetStamina(stamina);
+            HandleSprinting();
         }
-
-        void HandleDodge()
+        else
         {
-            // Play dodge sound
-            AudioManager.Manager.PlaySFX("PlayerDodge");
-
-            // Change animation state to Dash
-            animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Dash);
-
-            // Perform dodge coroutine
-            StartCoroutine(Dodge());
-
-            // Update stamina and state
-            stamina -= dodgeStaminaCost;
-            isSprinting = true;
-            staminaRegenSpeed = 20;
+            HandleWalking();
         }
 
-        void HandleWalking()
+        // Check for dodge regardless of sprinting state
+        if (Input.GetKeyDown(KeyCode.Space) && canDodge && stamina > dodgeStaminaCost)
         {
-            // Calculate velocity for walking
-            Vector2 walkVelocity = new Vector2(Input.GetAxisRaw("Horizontal") * speed, Input.GetAxisRaw("Vertical") * speed);
-            rb.velocity = walkVelocity;
-
-            // Update state
-            isSprinting = false;
-            staminaRegenSpeed = 20;
+            HandleDodge();
         }
+    }
 
-        void StopPlayerMovement()
-        {
-            // Stop player movement after death
-            rb.velocity = Vector2.zero;
-        }
+    void HandleSprinting()
+    {
+        isSprinting = true;
+        staminaRegenSpeed = 0;
+        Vector2 sprintVelocity = new Vector2(Input.GetAxisRaw("Horizontal") * sprintSpeed, Input.GetAxisRaw("Vertical") * sprintSpeed);
+        rb.velocity = sprintVelocity;
+        stamina -= Time.deltaTime * staminaDrainSpeed;
+        staminaBarSlider.SetStamina(stamina);
+    }
+
+    void HandleDodge()
+    {
+        AudioManager.Manager.PlaySFX("PlayerDodge");
+        animationController.ChangeAnimationState(PlayerAnimationController.AnimationStates.Dash);
+        StartCoroutine(Dodge());
+        stamina -= dodgeStaminaCost;
+        isSprinting = true;
+        staminaRegenSpeed = 20;
+    }
+
+    void HandleWalking()
+    {
+        Vector2 walkVelocity = new Vector2(Input.GetAxisRaw("Horizontal") * speed, Input.GetAxisRaw("Vertical") * speed);
+        rb.velocity = walkVelocity;
+        isSprinting = false;
+        staminaRegenSpeed = 20;
+    }
+
+    void StopPlayerMovement()
+    {
+        rb.velocity = Vector2.zero;
     }
     private IEnumerator Dodge() // dodge mechanic
     {
