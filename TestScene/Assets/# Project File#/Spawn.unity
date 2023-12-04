@@ -32902,8 +32902,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.7299998, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.6000001, y: 1.6000001, z: 1.6000001}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 5223150814955634238}
   m_Father: {fileID: 0}
@@ -33944,7 +33944,7 @@ Transform:
   m_GameObject: {fileID: 846534468646819199}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.47, z: 0}
+  m_LocalPosition: {x: 0, y: 0.30333334, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -34218,7 +34218,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6100857921913137240}
   - component: {fileID: 7986390542384443893}
-  - component: {fileID: 7081921397712012264}
   - component: {fileID: 532236972813490008}
   - component: {fileID: 4662639133649826695}
   m_Layer: 0
@@ -34228,14 +34227,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &7081921397712012264
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7028618457368440921}
-  m_Enabled: 1
 --- !u!61 &7652177661495224053
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34474,7 +34465,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.025476098, y: -0.1681425}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -34484,7 +34475,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.125, y: 3.6875}
+  m_Size: {x: 1.0346218, y: 1.4761726}
   m_EdgeRadius: 0
 --- !u!114 &8454343513730928812
 MonoBehaviour:
