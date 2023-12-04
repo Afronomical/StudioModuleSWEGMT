@@ -1640,8 +1640,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialText
-      value: When in a tight pinch you can parry attacks by pressing RMB, however
-        make sure you time this correctly! Defeat this Hunter to Progress!
+      value: When in a tight pinch you can parry attacks by pressing your right mouse
+        button, however make sure you time this correctly! Defeat this Hunter to
+        Progress!
       objectReference: {fileID: 0}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialCanvas
@@ -3451,8 +3452,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 34.200653, y: -21.7047, z: 0}
-    m_Extent: {x: 47.17305, y: 35.3223, z: 0}
+    m_Center: {x: 34.19835, y: -21.70795, z: 0}
+    m_Extent: {x: 47.175552, y: 35.31685, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -50583,7 +50584,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialText
-      value: Hold Q to charge up your heavy attack!
+      value: Hold your left mouse button to charge up your heavy attack and let go
+        of it once charged to unleash it!
       objectReference: {fileID: 0}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialCanvas
@@ -50991,8 +50993,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 3.33245, y: -2.0403998, z: 0}
-    m_Extent: {x: 8.56785, y: 7.3456, z: 0}
+    m_Center: {x: 3.3363, y: -2.043, z: 0}
+    m_Extent: {x: 8.5672, y: 7.3514996, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -51201,7 +51203,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialText
-      value: Press LMB to perform a slash attack on your enemies!
+      value: Press your left mouse button to perform a slash attack on your enemies!
       objectReference: {fileID: 0}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialCanvas
