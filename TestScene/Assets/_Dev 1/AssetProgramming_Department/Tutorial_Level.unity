@@ -912,17 +912,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.000000014901161, y: 0.7711049}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.125, y: 3.6875}
-    newSize: {x: 2.125, y: 3.6875}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 1, y: 1.78125}
+    newSize: {x: 1, y: 1.78125}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.08, y: 3.73}
+  m_Size: {x: 0.91035986, y: 1.3031696}
   m_EdgeRadius: 0
 --- !u!212 &149545925
 SpriteRenderer:
@@ -965,12 +965,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2321548574264968908, guid: 6a3334ca6bc1da54bb5db5a009a6496d, type: 3}
+  m_Sprite: {fileID: 21300076, guid: 29c9cded5e558164aaf8c9bf08aa1510, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.125, y: 3.6875}
+  m_Size: {x: 1, y: 1.78125}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -985,9 +985,9 @@ Transform:
   m_GameObject: {fileID: 149545922}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 73.01, y: -48.45, z: 0}
-  m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
-  m_ConstrainProportionsScale: 1
+  m_LocalPosition: {x: 73.01, y: -49.7, z: 0}
+  m_LocalScale: {x: 1.6, y: 1.6, z: 1.6}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1640,8 +1640,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialText
-      value: When in a tight pinch you can parry attacks by pressing RMB, however
-        make sure you time this correctly! Defeat this Hunter to Progress!
+      value: When in a tight pinch you can parry attacks by pressing your right mouse
+        button, however make sure you time this correctly! Defeat this Hunter to
+        Progress!
       objectReference: {fileID: 0}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialCanvas
@@ -2671,7 +2672,7 @@ PrefabInstance:
       objectReference: {fileID: 1020719199}
     - target: {fileID: 8811865619863605101, guid: 99d0183fde40a224eae3632a6b0caf96, type: 3}
       propertyPath: maxHealth
-      value: 100
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 8811865619863605101, guid: 99d0183fde40a224eae3632a6b0caf96, type: 3}
       propertyPath: healthBarScript
@@ -3451,8 +3452,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 34.19555, y: -21.7094, z: 0}
-    m_Extent: {x: 47.17475, y: 35.3262, z: 0}
+    m_Center: {x: 34.19835, y: -21.70795, z: 0}
+    m_Extent: {x: 47.175552, y: 35.31685, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -50583,7 +50584,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialText
-      value: Hold Q to charge up your heavy attack!
+      value: Hold your left mouse button to charge up your heavy attack and let go
+        of it once charged to unleash it!
       objectReference: {fileID: 0}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialCanvas
@@ -50991,8 +50993,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 3.342, y: -2.0427, z: 0}
-    m_Extent: {x: 8.5708, y: 7.3444004, z: 0}
+    m_Center: {x: 3.3363, y: -2.043, z: 0}
+    m_Extent: {x: 8.5672, y: 7.3514996, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -51201,7 +51203,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialText
-      value: Press LMB to perform a slash attack on your enemies!
+      value: Press your left mouse button to perform a slash attack on your enemies!
       objectReference: {fileID: 0}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialCanvas
@@ -66356,6 +66358,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1657575145879159937
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3172733779747772765, guid: c5bf5d8bba9c03a4eb3439e3e7967316, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3172733779747772765, guid: c5bf5d8bba9c03a4eb3439e3e7967316, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3172733779747772765, guid: c5bf5d8bba9c03a4eb3439e3e7967316, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3172733779747772765, guid: c5bf5d8bba9c03a4eb3439e3e7967316, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3172733779747772765, guid: c5bf5d8bba9c03a4eb3439e3e7967316, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3172733779747772765, guid: c5bf5d8bba9c03a4eb3439e3e7967316, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3172733779747772765, guid: c5bf5d8bba9c03a4eb3439e3e7967316, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3172733779747772765, guid: c5bf5d8bba9c03a4eb3439e3e7967316, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3172733779747772765, guid: c5bf5d8bba9c03a4eb3439e3e7967316, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3172733779747772765, guid: c5bf5d8bba9c03a4eb3439e3e7967316, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9123651882320505506, guid: c5bf5d8bba9c03a4eb3439e3e7967316, type: 3}
+      propertyPath: m_Name
+      value: SceneFade
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c5bf5d8bba9c03a4eb3439e3e7967316, type: 3}
 --- !u!1001 &5958469038192059196
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -66453,3 +66512,4 @@ SceneRoots:
   - {fileID: 829736441}
   - {fileID: 200829354}
   - {fileID: 826508025}
+  - {fileID: 1657575145879159937}
