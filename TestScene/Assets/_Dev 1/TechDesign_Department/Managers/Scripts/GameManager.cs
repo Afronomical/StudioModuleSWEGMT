@@ -156,6 +156,12 @@ public class GameManager : MonoBehaviour
                 break;
             case "Tutorial_Level":
                 hasPaused = false;
+
+                if (timer != null)
+                {
+                    timer.SetIsRotating(false);
+                    timer.enabled = false;
+                }
                 break;
             default:
                 break;
