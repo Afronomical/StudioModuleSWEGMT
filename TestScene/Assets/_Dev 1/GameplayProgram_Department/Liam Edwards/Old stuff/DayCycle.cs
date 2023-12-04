@@ -23,7 +23,7 @@ public class DayCycle : MonoBehaviour
     public void Start()
     {
         countdownTimer = CanvasManager.Instance.countdownTimer;
-
+        nightTime = false;
         canBurn = true;
         gameObject.transform.localScale = new Vector2(1000, 1000); // Sets Size Of SunLight Game Object (width, height) Needs to cover the whole level
         transform.position = new Vector3(0, 0, 0); // Sets Pos to Off The Screen
@@ -38,17 +38,16 @@ public class DayCycle : MonoBehaviour
     void Update()
     {
        
-        nightTime = !countdownTimer.timeIsRunning; // Links Up The "nightTime" Variable To The Countdown Clock
-        
+        //nightTime = !countdownTimer.timeIsRunning; // Links Up The "nightTime" Variable To The Countdown Clock
 
-        if (nightTime) // Checks For When The Timer Reaches 
+        if (countdownTimer.timeRemaining < 0) // (nightTime) Checks For When The Timer Reaches 
         {            
             ColourChange();
             timeInSun += Time.deltaTime;
             //if (transform.GetComponent<Collider2D>().IsTouching(GameObject.FindGameObjectWithTag("Player").GetComponent<Collider2D>()))
             //if()
-            {                              
-                print("Detected Player");
+            //{                              
+                //print("Detected Player");
 
                 if (timeInSun < 5 && canBurn == true)
                 {
@@ -65,14 +64,14 @@ public class DayCycle : MonoBehaviour
                     sunBurn = 5;
                     StartCoroutine(sunDamage());
                 }               
-            }                
+            //}                
         }                              
     }
 
     private IEnumerator sunDamage()
     {
         canBurn = false;
-        playerDeath.currentHealth = playerDeath.currentHealth - sunBurn;
+        playerDeath.currentHealth -= sunBurn;
         GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerDeath>().SunRiseDamage(); // Calls The Function "SunRiseDamage" From "playerDeath" Script
         //GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerDeath>().showFloatingText(sunBurn);
         yield return new WaitForSeconds(damageDelay);
