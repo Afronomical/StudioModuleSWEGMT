@@ -6,10 +6,10 @@ using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class MenuOnButtonHighlight : MonoBehaviour, ISelectHandler, IPointerEnterHandler
+public class MenuOnButtonHighlight : MonoBehaviour, ISelectHandler, IPointerEnterHandler, IPointerExitHandler
 {
 
-    public Image Teeth;
+    public Image TeethImage;
     public Button Button;
     private float lerpSpeed = 4f;
     private bool isHovering = false;
@@ -20,24 +20,27 @@ public class MenuOnButtonHighlight : MonoBehaviour, ISelectHandler, IPointerEnte
 
     private void Start()
     {
-        originalY = Teeth.transform.position.y; 
-        originalPos = Teeth.transform.position;
+       
+        TeethImage.GetComponent<Image>().enabled = false;
+        isHovering = false;
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
         Debug.Log("Highlighting button");
-        isHovering= true;
+        //isHovering= true;
+        //TeethImage.GetComponent<Image>().enabled = true;
+        TeethImage.GetComponent<Image>().enabled = true;
+        isHovering = true;
         ParticleSystem.Play();
-       
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-      ////reset pos and have teeth image go back to original 
-      isHovering= false;
-      ResetTeethPos();
-        ParticleSystem.Stop(); 
+       
+        Debug.Log("Exited"); 
+        TeethImage.GetComponent<Image>().enabled = false;
+        ParticleSystem.Stop();
     }
 
     public void OnSelect(BaseEventData eventData)
@@ -45,24 +48,13 @@ public class MenuOnButtonHighlight : MonoBehaviour, ISelectHandler, IPointerEnte
       
     }
 
-    private void Update()
-    {
-       if(isHovering)
-        {
-           //mathf.lerp from current image pos to the y pos of the mouse pos 
-           float targetY = Input.mousePosition.y;
-            Vector3 lerpedPos = Teeth.transform.position;
-            lerpedPos.y = Mathf.Lerp(lerpedPos.y, targetY, Time.deltaTime * lerpSpeed);
-            Teeth.transform.position = lerpedPos;
-        }
-        else
-        {
-             Teeth.transform.position = Vector3.Lerp(Teeth.transform.position, originalPos, Time.deltaTime * lerpSpeed);
-        }
-    }
+    //public void Update()
+    //{
+    //   if(isHovering == false)
+    //    {
+    //        TeethImage.enabled=false;
+    //    }
+    //}
 
-    private void ResetTeethPos()
-    {
-        Teeth.transform.position = originalPos; 
-    }
+
 }
