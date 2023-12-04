@@ -98,7 +98,7 @@ public class AISpawnManager : MonoBehaviour
         {
             elapsedTime += Time.deltaTime;
 
-            Vector3 newPos = Vector3.Lerp(spawnPoint.position - (spawnPointOffset * 2), spawnPoint.position + spawnPointOffset, elapsedTime / duration);
+            Vector3 newPos = Vector3.Lerp(spawnPoint.position - (spawnPointOffset), spawnPoint.position + (spawnPointOffset * 1.5f), elapsedTime / duration);
             enemy.transform.position = newPos;
 
             if (elapsedTime < duration / 0.3f)
