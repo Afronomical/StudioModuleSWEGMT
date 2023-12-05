@@ -198,8 +198,8 @@ public class GameManager : MonoBehaviour
                 break;
             case "Main Menu Animated":
                 hasPaused = false;
-                nextLevel = "Level 1";
-                currentLevel = "Spawn";
+                nextLevel = "Level 2";
+                currentLevel = "Level 1";
                 break;
             case "Tutorial_Level":
                 hasPaused = false;

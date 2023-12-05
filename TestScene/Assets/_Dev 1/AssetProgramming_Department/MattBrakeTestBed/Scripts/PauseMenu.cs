@@ -71,9 +71,29 @@ public class PauseMenu : MonoBehaviour
         AudioManager.Manager.StopMusic("BossMusic");
         //GameManager.Instance.currentGameState = GameManager.GameStates.PlayerDead;
         //GameManager.Instance.ChangeGameState(GameManager.GameStates.MainMenu);
-        CanvasManager.Instance.countdownTimer.gameObject.SetActive(false);
-        CanvasManager.Instance.hungerBarUI.slider.value = 0;
-        CanvasManager.Instance.hungerBarUI.gameObject.SetActive(false);
+        //CanvasManager.Instance.countdownTimer.gameObject.SetActive(false);
+        //CanvasManager.Instance.hungerBarUI.slider.value = 0;
+        //CanvasManager.Instance.hungerBarUI.gameObject.SetActive(false);
+
+        PlayerController.Instance.GetPlayerDeath().currentHealth = PlayerController.Instance.GetPlayerDeath().maxHealth;
+        PlayerController.Instance.GetPlayerDeath().healthBarScript.SetHealth(PlayerController.Instance.GetPlayerDeath().currentHealth);
+        CanvasManager.Instance.HealthBar.GetComponent<NewHealthBarScript>().UpdateHealthBarColour();
+        CanvasManager.Instance.HealthBar.GetComponent<NewHealthBarScript>().setMaxHealth(100);
+        PlayerController.Instance.GetPlayerDeath().SetIsDead(false);
+        foreach (BoxCollider2D boxCollider in PlayerController.Instance.GetPlayerDeath().boxColliders)
+        {
+            if (boxCollider.isTrigger)
+                boxCollider.enabled = false;
+        }
+        //Invoke(nameof(EnableBoxCollider), 5f);
+
+        PlayerController.Instance.GetFeeding().currentHunger = 0;
+        PlayerController.Instance.GetPlayerDeath().isInvincible = true;
+        CanvasManager.Instance.hungerBarUI.GetComponent<HungerBar>().SetMinHunger(0);
+
+        CanvasManager.Instance.countdownTimer.timeRemaining = CanvasManager.Instance.countdownTimer.time;
+        Transform rotatingCover = CanvasManager.Instance.countdownTimer.rotatingCover;
+        rotatingCover.transform.rotation = Quaternion.Euler(rotatingCover.transform.rotation.x, rotatingCover.transform.rotation.y, 0);
 
         // loadingScreen.enabled = true;
 
