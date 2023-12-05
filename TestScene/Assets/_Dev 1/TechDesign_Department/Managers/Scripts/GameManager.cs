@@ -202,6 +202,7 @@ public class GameManager : MonoBehaviour
                 CanvasManager.Instance.HealthBar.GetComponent<NewHealthBarScript>().SetHealth(PlayerController.Instance.GetPlayerDeath().currentHealth);
                 break;
             case "Main Menu Animated":
+                CanvasManager.Instance.toolTipManager.HideBottomToolTip_Static(); 
                 hasPaused = false;
                 nextLevel = "Level 2";
                 currentLevel = "Level 1";
