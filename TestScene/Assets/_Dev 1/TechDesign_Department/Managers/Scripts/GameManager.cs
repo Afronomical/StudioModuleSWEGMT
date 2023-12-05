@@ -216,7 +216,10 @@ public class GameManager : MonoBehaviour
                 break;
             case "Tutorial_Level":
                 hasPaused = false;
-
+                if (CanvasManager.Instance != null)
+                {
+                    
+                }
                 if (timer != null)
                 {
                     timer.SetIsRotating(false);

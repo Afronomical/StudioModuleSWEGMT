@@ -65,8 +65,16 @@ public class MainMenu : MonoBehaviour
         AudioManager.Manager.PlaySFX("UI_Click");
         Debug.Log("Tutorial");
         AudioManager.Manager.StopMusic("MenuMusic");
-       
-       SceneManager.LoadScene("Tutorial_Level");
+
+        if (CanvasManager.Instance != null)
+        {
+            CanvasManager.Instance.countdownTimer.gameObject.SetActive(true);
+            CanvasManager.Instance.hungerBarUI.gameObject.SetActive(true);
+            CanvasManager.Instance.HealthBar.gameObject.SetActive(true);
+            CanvasManager.Instance.staminaBar.gameObject.SetActive(true);
+        }
+
+            SceneManager.LoadScene("Tutorial_Level");
         //SceneManager.LoadScene("InstructionsMenu");
     }
 

@@ -32,7 +32,6 @@ public class EndScreen : MonoBehaviour
         int randomIndex = Random.Range(0, hints.Count);
         if (hintText != null)
             hintText.text = hints[randomIndex];
-
         CanvasManager.Instance.toolTipManager.HideBottomToolTip_Static(); 
         
     }
