@@ -32,13 +32,20 @@ public class ToAndFromSpawn : MonoBehaviour
                 AudioManager.Manager.PlayMusic("LevelMusic");
                 
             }
+            else if (SceneManager.GetActiveScene().name == "SpawnPostLoad")
+            {
+                AudioManager.Manager.StopMusic("Spawn");
+                FindFirstObjectByType<FadeTransitionController>().LoadNextLevel(currentLevel);
+                //SceneManager.LoadScene(currentLevel);
+                AudioManager.Manager.PlayMusic("LevelMusic");
+            }
             else
             {
-                FindFirstObjectByType<FadeTransitionController>().LoadNextLevel("Spawn");
+                FindFirstObjectByType<FadeTransitionController>().LoadNextLevel("SpawnPostLoad");
                 //SceneManager.LoadScene("Spawn");
                 AudioManager.Manager.StopMusic("LevelMusic");
                 AudioManager.Manager.PlayMusic("Spawn");
-            }            
+            }
         }
     }
 
