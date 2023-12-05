@@ -45,7 +45,7 @@ public class BossHealthBar : MonoBehaviour
         PhaseThree = Boss.GetComponent<BossStateMachineController>().phase3Heath; 
         Phase = BossPhase.One;
         BlinkEffect.enabled = false; 
-        ToolTipManager.ShowBottomToolTip_Static("Phase: " + Phase);
+        ToolTipManager.ShowBottomToolTip_Static("Phase " + Phase);
         ToolTipManager.ShowTopToolTip_Static("");
        
 
@@ -58,7 +58,7 @@ public class BossHealthBar : MonoBehaviour
 
     public void UpdatePhase()
     {
-        ToolTipManager.ShowBottomToolTip_Static("Phase: " + Phase);
+        ToolTipManager.ShowBottomToolTip_Static("Phase " + Phase);
     }
 
     public void setBossMaxHealth()

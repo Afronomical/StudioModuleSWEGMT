@@ -278,6 +278,7 @@ public class playerAttack : MonoBehaviour
             if (obj.TryGetComponent(out AICharacter AiEnemy))
             {
                 AiEnemy.health = Mathf.Clamp(AiEnemy.health - heavyDamage, 1, 1000);
+                AiEnemy.ShowFloatingDamage(heavyDamage);
                 EnemyKnockback enemyKnockback = obj.GetComponent<EnemyKnockback>();
 
                 if (enemyKnockback != null)
@@ -288,8 +289,15 @@ public class playerAttack : MonoBehaviour
 
                 AudioManager.Manager.PlaySFX("NPC_TakeDamage");
                 AiEnemy.GetComponentInChildren<AIAnimationController>().ChangeAnimationState(AIAnimationController.AnimationStates.Hurt);
+                Instantiate(BloodOnDamage, AiEnemy.transform.position, Quaternion.identity);
+                Instantiate(BloodOnDamage, AiEnemy.transform.position, Quaternion.identity);
+                Instantiate(BloodOnDamage, AiEnemy.transform.position, Quaternion.identity);
+            }
+
+            if (obj.CompareTag("Grave"))
+            {
+                Destroy(obj);
             }
         }
     }
-
 }
