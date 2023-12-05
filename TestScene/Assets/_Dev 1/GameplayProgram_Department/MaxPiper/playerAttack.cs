@@ -20,7 +20,8 @@ public class playerAttack : MonoBehaviour
     private bool canHit = true;
     private Feeding feeding;
     public GameObject BloodOnDamage;
-   // public GameObject floatingDamage;
+    public GameObject destroyGrave;
+    // public GameObject floatingDamage;
 
     [HideInInspector] public bool parrying;
     private bool canParry;
@@ -110,6 +111,7 @@ public class playerAttack : MonoBehaviour
 
             if (obj.CompareTag("Grave") && Input.GetMouseButtonDown(0))
             {
+                Instantiate(destroyGrave, obj.transform.position, Quaternion.identity);
                 Destroy(obj);
             }
 
@@ -296,6 +298,7 @@ public class playerAttack : MonoBehaviour
 
             if (obj.CompareTag("Grave"))
             {
+                Instantiate(destroyGrave, obj.transform.position, Quaternion.identity);
                 Destroy(obj);
             }
         }

@@ -10429,6 +10429,7 @@ MonoBehaviour:
   playerSpawn: {fileID: 0}
   nextLevel: Level 2
   currentLevel: Level 1
+  playerDied: 0
   currentGameState: 0
 --- !u!4 &384453184
 Transform:
@@ -32040,6 +32041,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1022398017744774872, guid: 99d0183fde40a224eae3632a6b0caf96, type: 3}
+      propertyPath: destroyGrave
+      value: 
+      objectReference: {fileID: 441388770024292730, guid: 6f5c4be948d5dfe4c962b54f9802c4bf, type: 3}
     - target: {fileID: 1242946125863460908, guid: 99d0183fde40a224eae3632a6b0caf96, type: 3}
       propertyPath: lengthInSec
       value: 0.1

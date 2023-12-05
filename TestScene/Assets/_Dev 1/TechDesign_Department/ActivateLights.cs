@@ -7,7 +7,7 @@ public class ActivateLights : MonoBehaviour
 {
     private void Start()
     {
-        gameObject.GetComponentInChildren<Light2D>().enabled = false;
+        transform.GetChild(0).gameObject.SetActive(false);
         gameObject.GetComponent<Animator>().enabled = false;
     }
 
@@ -15,7 +15,7 @@ public class ActivateLights : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
-            gameObject.GetComponentInChildren<Light2D>().enabled = true;
+            transform.GetChild(0).gameObject.SetActive(true);
             gameObject.GetComponent<Animator>().enabled = true;
             //Destroy(this); - scene reloads so this does not work
         }
