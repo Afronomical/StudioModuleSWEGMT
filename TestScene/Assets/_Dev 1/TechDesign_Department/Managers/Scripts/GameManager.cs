@@ -126,6 +126,13 @@ public class GameManager : MonoBehaviour
 
         switch (SceneManager.GetActiveScene().name)
         {
+            case "SpawnPostLoad":
+                if (timer != null)
+                {
+                    timer.SetIsRotating(false);
+                    timer.enabled = false;
+                }
+                break;
             case "Spawn":
                 if (PlayerController.Instance != null)
                 {

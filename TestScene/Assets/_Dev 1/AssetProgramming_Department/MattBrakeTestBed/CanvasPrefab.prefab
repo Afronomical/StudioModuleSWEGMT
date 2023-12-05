@@ -453,12 +453,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f3a76e03d2b302418e2f23c5e2a30f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 120
-  timeRemaining: 120
+  time: 180
+  timeRemaining: 180
   timeIsRunning: 1
   timeText: {fileID: 0}
   rotatingCover: {fileID: 8902011787197866989}
-  rotationSpeed: 1.4
+  rotationSpeed: 0.94
   maxrotationAngle: 360
   startRotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &2113424799865638720
