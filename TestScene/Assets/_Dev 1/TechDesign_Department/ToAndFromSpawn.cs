@@ -34,7 +34,7 @@ public class ToAndFromSpawn : MonoBehaviour
             }
             else
             {
-                FindFirstObjectByType<FadeTransitionController>().LoadNextLevel("Spawn");
+                FindFirstObjectByType<FadeTransitionController>().LoadNextLevel("SpawnNoCut");
                 //SceneManager.LoadScene("Spawn");
                 AudioManager.Manager.StopMusic("LevelMusic");
                 AudioManager.Manager.PlayMusic("Spawn");
