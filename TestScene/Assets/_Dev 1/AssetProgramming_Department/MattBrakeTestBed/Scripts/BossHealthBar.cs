@@ -47,7 +47,7 @@ public class BossHealthBar : MonoBehaviour
         BlinkEffect.enabled = false; 
         //ToolTipManager.ShowBottomToolTip_Static("Phase " + Phase);
         ToolTipManager.ShowTopToolTip_Static("");
-       
+        ToolTipManager.ShowBottomToolTip_Static("Van Helsing");
 
         //float BossHealth = Boss.GetComponent<AICharacter>().GetHealth();
         AICharacter = Boss.GetComponent<AICharacter>();
