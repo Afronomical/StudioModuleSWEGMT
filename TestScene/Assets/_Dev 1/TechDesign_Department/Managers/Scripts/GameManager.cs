@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
 
     private GameObject pauseMenu;
     private bool hasPaused;
-    private bool nextSpawn;
+    public bool nextSpawn;
 
     //this is where the conditions that trigger state changes are defined
     //they are simple for now, subject to change as per Tech Design requirements
@@ -144,7 +144,7 @@ public class GameManager : MonoBehaviour
                     }
                 }
 
-                if (pauseMenu == null && !hasPaused && nextSpawn)
+                if (pauseMenu == null && !hasPaused && !nextSpawn)
                 {
                     pauseMenu = FindFirstObjectByType<PauseMenu>().gameObject;
                     hasPaused = true;
