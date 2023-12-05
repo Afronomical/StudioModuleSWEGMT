@@ -53,11 +53,12 @@ public class DeathScreenButtons : MonoBehaviour
         Transform rotatingCover = CanvasManager.Instance.countdownTimer.rotatingCover;
         rotatingCover.transform.rotation = Quaternion.Euler(rotatingCover.transform.rotation.x, rotatingCover.transform.rotation.y, 0);
         //deathScreen.enabled = false;
-        
+
         //SceneManager.LoadScene("Level 1");
         //SetSpawnpoint.instance.ResetPosition();
-        
-   }
+
+        GameManager.Instance.playerDied = true;
+    }
 
     public void Menu()
     {
@@ -89,6 +90,8 @@ public class DeathScreenButtons : MonoBehaviour
         Transform rotatingCover = CanvasManager.Instance.countdownTimer.rotatingCover;
         rotatingCover.transform.rotation = Quaternion.Euler(rotatingCover.transform.rotation.x, rotatingCover.transform.rotation.y, 0);
         //mainCanvas.gameObject.SetActive(false);
+
+        GameManager.Instance.playerDied = true;
     }
 
     public void Stats()

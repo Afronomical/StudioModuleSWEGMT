@@ -15,8 +15,10 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class GameManager : MonoBehaviour
 {
@@ -39,6 +41,8 @@ public class GameManager : MonoBehaviour
     private CountdownTimer timer;
     public string nextLevel = "Level 2";
     public string currentLevel = "Level 1";
+
+    public bool playerDied;
 
     private void Awake()
     {
@@ -107,6 +111,15 @@ public class GameManager : MonoBehaviour
             Debug.Log(peopleEaten + "/" + peopleEatingThreshold);
         }
 
+
+        if (SceneManager.GetActiveScene().name == "Spawn" && playerDied)
+        {
+            nextLevel = "Level 2";
+            currentLevel = "Level 1";
+            playerDied = false;
+        }
+
+
         switch (SceneManager.GetActiveScene().name)
         {
             case "Spawn":
@@ -132,7 +145,10 @@ public class GameManager : MonoBehaviour
                     pauseMenu = FindFirstObjectByType<PauseMenu>().gameObject;
                     hasPaused = true;
                     if (pauseMenu != null)
+                    {
+                        FindFirstObjectByType<CoffinInteraction>().enabled = false;
                         StartCoroutine(CutsceneDelay(9.5f));
+                    }
                 }
                 if (timer != null)
                 {
@@ -183,6 +199,8 @@ public class GameManager : MonoBehaviour
                 break;
             case "Main Menu Animated":
                 hasPaused = false;
+                nextLevel = "Level 2";
+                currentLevel = "Level 1";
                 break;
             case "Tutorial_Level":
                 hasPaused = false;
@@ -220,6 +238,8 @@ public class GameManager : MonoBehaviour
 
         if (pauseMenu != null)
             pauseMenu.SetActive(true);
+
+        FindFirstObjectByType<CoffinInteraction>().enabled = true;
     }
 
     private void CheckScene()
