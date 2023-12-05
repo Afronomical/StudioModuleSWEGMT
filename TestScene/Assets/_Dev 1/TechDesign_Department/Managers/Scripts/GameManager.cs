@@ -113,7 +113,7 @@ public class GameManager : MonoBehaviour
 
         if (SceneManager.GetActiveScene().name == "Spawn" && playerDied)
         {
-            nextLevel = "Spawn";
+            nextLevel = "Level 2";
             currentLevel = "Level 1";
             playerDied = false;
         }
