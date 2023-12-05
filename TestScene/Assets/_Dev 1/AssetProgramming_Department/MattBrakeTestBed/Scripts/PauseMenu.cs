@@ -74,6 +74,10 @@ public class PauseMenu : MonoBehaviour
         //CanvasManager.Instance.countdownTimer.gameObject.SetActive(false);
         //CanvasManager.Instance.hungerBarUI.slider.value = 0;
         //CanvasManager.Instance.hungerBarUI.gameObject.SetActive(false);
+        if (PlayerController.Instance != null)
+        {
+            PlayerController.Instance.GetComponent<PlayerDeath>().maxHealth = 100;
+        }
 
         PlayerController.Instance.GetPlayerDeath().currentHealth = PlayerController.Instance.GetPlayerDeath().maxHealth;
         PlayerController.Instance.GetPlayerDeath().healthBarScript.SetHealth(PlayerController.Instance.GetPlayerDeath().currentHealth);
@@ -94,6 +98,7 @@ public class PauseMenu : MonoBehaviour
         CanvasManager.Instance.countdownTimer.timeRemaining = CanvasManager.Instance.countdownTimer.time;
         Transform rotatingCover = CanvasManager.Instance.countdownTimer.rotatingCover;
         rotatingCover.transform.rotation = Quaternion.Euler(rotatingCover.transform.rotation.x, rotatingCover.transform.rotation.y, 0);
+      
 
         // loadingScreen.enabled = true;
 
