@@ -12,10 +12,12 @@ public class MainMenu : MonoBehaviour
         AudioManager.Manager.PlayMusic("MenuMusic");
         if(CanvasManager.Instance != null)
         {
-            CanvasManager.Instance.countdownTimer.gameObject.SetActive(false);
-            CanvasManager.Instance.hungerBarUI.gameObject.SetActive(false);
-            CanvasManager.Instance.HealthBar.gameObject.SetActive(false);
-            CanvasManager.Instance.staminaBar.gameObject.SetActive(false);
+            //CanvasManager.Instance.countdownTimer.gameObject.SetActive(false);
+            //CanvasManager.Instance.hungerBarUI.gameObject.SetActive(false);
+            //CanvasManager.Instance.HealthBar.gameObject.SetActive(false);
+            //CanvasManager.Instance.staminaBar.gameObject.SetActive(false);
+
+            CanvasManager.Instance.gameObject.SetActive(false);
         }
 
         //GameManager.Instance.currentGameState = GameManager.GameStates.MainMenu; 
@@ -24,7 +26,6 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGame()
     {
-        
         AudioManager.Manager.PlaySFX("UI_Click");
         AudioManager.Manager.StopMusic("MenuMusic");
         Debug.Log("Play Game");
@@ -38,10 +39,11 @@ public class MainMenu : MonoBehaviour
         Time.timeScale = 1;
         if (CanvasManager.Instance != null)
         {
-            CanvasManager.Instance.countdownTimer.gameObject.SetActive(true);
-            CanvasManager.Instance.hungerBarUI.gameObject.SetActive(true);
-            CanvasManager.Instance.HealthBar.gameObject.SetActive(true);
-            CanvasManager.Instance.staminaBar.gameObject.SetActive(true);
+            //CanvasManager.Instance.countdownTimer.gameObject.SetActive(true);
+            //CanvasManager.Instance.hungerBarUI.gameObject.SetActive(true);
+            //CanvasManager.Instance.HealthBar.gameObject.SetActive(true);
+            //CanvasManager.Instance.staminaBar.gameObject.SetActive(true);
+            CanvasManager.Instance.gameObject.SetActive(true);
             //float hunger = CanvasManager.Instance.hungerBarUI.GetComponent<HungerBar>().currentValue;
             CanvasManager.Instance.hungerBarUI.GetComponent<HungerBar>().SetMinHunger(0);
             CanvasManager.Instance.HealthBar.GetComponent<NewHealthBarScript>().UpdateHealthBarColour();
@@ -68,13 +70,10 @@ public class MainMenu : MonoBehaviour
 
         if (CanvasManager.Instance != null)
         {
-            CanvasManager.Instance.countdownTimer.gameObject.SetActive(true);
-            CanvasManager.Instance.hungerBarUI.gameObject.SetActive(true);
-            CanvasManager.Instance.HealthBar.gameObject.SetActive(true);
-            CanvasManager.Instance.staminaBar.gameObject.SetActive(true);
+            CanvasManager.Instance.gameObject.SetActive(true);
         }
 
-            SceneManager.LoadScene("Tutorial_Level");
+        SceneManager.LoadScene("Tutorial_Level");
         //SceneManager.LoadScene("InstructionsMenu");
     }
 
