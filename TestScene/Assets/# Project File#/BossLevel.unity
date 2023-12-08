@@ -5230,6 +5230,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerIsDead: 0
   canChangeLevel: 0
+  nextSpawn: 0
   peopleEatingThreshold: 0
   peopleEaten: 0
   player: {fileID: 262175992}
@@ -30584,6 +30585,10 @@ PrefabInstance:
     - target: {fileID: 1304859699899162338, guid: 3246b6fa5942f2a439e4abd7ef57e2b9, type: 3}
       propertyPath: m_Name
       value: Van Helsing
+      objectReference: {fileID: 0}
+    - target: {fileID: 6765331982240328346, guid: 3246b6fa5942f2a439e4abd7ef57e2b9, type: 3}
+      propertyPath: attackDamage
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8282624766971018035, guid: 3246b6fa5942f2a439e4abd7ef57e2b9, type: 3}
       propertyPath: m_LocalPosition.x

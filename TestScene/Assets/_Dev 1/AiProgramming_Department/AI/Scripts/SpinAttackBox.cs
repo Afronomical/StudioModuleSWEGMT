@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpinAttackBox : MonoBehaviour
 {
-    public int attackDamage = 20;
+    public int attackDamage = 10;
     private PlayerDeath playerDeathRef;
     public void Start()
     {

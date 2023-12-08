@@ -19,11 +19,14 @@ public class SpinAttackState : StateBaseClass
     private ReferenceManager referenceManager;
     private PlayerDeath playerDeath;
     private int rand;//= UnityEngine.Random.Range(1, 100);
+    
+    private AIAnimationController animController;
+
 
     //sets a delay when it enters this state
     private SpinAttackState()
     {
-        currentDelay = 0.2f;
+        currentDelay = 2f;
     }
 
     //Grabs references to the PlayerDeath script, Character's transform and the Attack Box prefab. This also makes sure the attack box is disabled when it enters this state
@@ -33,7 +36,8 @@ public class SpinAttackState : StateBaseClass
         origin = character.transform;
         attackboxPrefab = character.spinattackboxPrefab;
         attackboxPrefab.SetActive(false);
-    }
+        animController = transform.Find("Sprite").GetComponent<AIAnimationController>();
+    }   
 
     public override void UpdateLogic()
     {
@@ -48,18 +52,23 @@ public class SpinAttackState : StateBaseClass
 
         //Counts the attack delay down
         currentDelay -= Time.deltaTime;
+        if(currentDelay <= 2 && SpinBoss == false)
+        {
+            SpinBoss = true;
+            animController.ChangeAnimationState(AIAnimationController.AnimationStates.Idle);
+        }
 
         if (currentDelay <= 0)
         {
             //Sets the attack box to show in the game, the damage logic is handled in it's own script attached to the Attack Box object
             attackboxPrefab.SetActive(true);
-            currentDelay = 3;
-            SpinBoss = true;
+            animController.ChangeAnimationState(AIAnimationController.AnimationStates.SwordAttack);
+            currentDelay = 10f;
         }
         else
         {
             //When the player has spun all the way around, it will disable the Attack Box
-            Invoke("SetAttackBoxFalse", 4f);
+            Invoke("SetAttackBoxFalse", 5f);
         }
     }
 
