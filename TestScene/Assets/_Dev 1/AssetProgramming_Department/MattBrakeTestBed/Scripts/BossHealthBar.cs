@@ -45,9 +45,9 @@ public class BossHealthBar : MonoBehaviour
         PhaseThree = Boss.GetComponent<BossStateMachineController>().phase3Heath; 
         Phase = BossPhase.One;
         BlinkEffect.enabled = false; 
-        ToolTipManager.ShowBottomToolTip_Static("Phase: " + Phase);
-        ToolTipManager.ShowTopToolTip_Static("VUN HELLSTINC");
-       
+        //ToolTipManager.ShowBottomToolTip_Static("Phase " + Phase);
+        ToolTipManager.ShowTopToolTip_Static("");
+        ToolTipManager.ShowBottomToolTip_Static("Van Helsing");
 
         //float BossHealth = Boss.GetComponent<AICharacter>().GetHealth();
         AICharacter = Boss.GetComponent<AICharacter>();
@@ -58,7 +58,7 @@ public class BossHealthBar : MonoBehaviour
 
     public void UpdatePhase()
     {
-        ToolTipManager.ShowBottomToolTip_Static("Phase: " + Phase);
+        //ToolTipManager.ShowBottomToolTip_Static("Phase " + Phase);
     }
 
     public void setBossMaxHealth()
@@ -89,7 +89,7 @@ public class BossHealthBar : MonoBehaviour
         }
         if(targetValue <= BossSlider.minValue)
         {
-            ToolTipManager.ShowBottomToolTip_Static("DEFEATED! SANGUIMESIA IS YOURS!");
+            //ToolTipManager.ShowBottomToolTip_Static("DEFEATED! SANGUIMESIA IS YOURS!");
             //AudioManager.Manager.StopMusic("LevelMusic");
            // StartCoroutine(WinSFX()); 
             //AudioManager.Manager.PlaySFX("Dodge");
@@ -142,7 +142,7 @@ public class BossHealthBar : MonoBehaviour
     public void EnterPhase(BossPhase phase)
     {
         Phase = phase;
-        UpdatePhase(); 
+        //UpdatePhase(); 
         StartCoroutine(StartBlink());   
     }
 

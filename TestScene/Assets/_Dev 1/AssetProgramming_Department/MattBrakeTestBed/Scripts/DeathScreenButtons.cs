@@ -26,23 +26,39 @@ public class DeathScreenButtons : MonoBehaviour
         AudioManager.Manager.PlayMusic("LevelMusic");
         AudioManager.Manager.StopMusic("BossMusic");
 
-        GetComponent<Canvas>().enabled = false;
+        //GetComponent<Canvas>().enabled = false;
+        
+        FindFirstObjectByType<FadeTransitionController>().LoadNextLevel("Spawn");
+
+        Time.timeScale = 1.0f;
+
+
         PlayerController.Instance.GetPlayerDeath().currentHealth = PlayerController.Instance.GetPlayerDeath().maxHealth;
+        PlayerController.Instance.GetPlayerDeath().healthBarScript.SetHealth(PlayerController.Instance.GetPlayerDeath().currentHealth);
+        CanvasManager.Instance.HealthBar.GetComponent<NewHealthBarScript>().UpdateHealthBarColour(); 
+        CanvasManager.Instance.HealthBar.GetComponent<NewHealthBarScript>().setMaxHealth(100);
         PlayerController.Instance.GetPlayerDeath().SetIsDead(false);
         foreach (BoxCollider2D boxCollider in PlayerController.Instance.GetPlayerDeath().boxColliders)
         {
             if (boxCollider.isTrigger)
-                boxCollider.enabled = true;
+                boxCollider.enabled = false;
         }
-        PlayerController.Instance.GetPlayerDeath().healthBarScript.SetHealth(PlayerController.Instance.GetPlayerDeath().currentHealth);
+        //Invoke(nameof(EnableBoxCollider), 5f);
+
+        PlayerController.Instance.GetFeeding().currentHunger = 0;
+        PlayerController.Instance.GetPlayerDeath().isInvincible = true;
+        CanvasManager.Instance.hungerBarUI.GetComponent<HungerBar>().SetMinHunger(0);
+
         CanvasManager.Instance.countdownTimer.timeRemaining = CanvasManager.Instance.countdownTimer.time;
         Transform rotatingCover = CanvasManager.Instance.countdownTimer.rotatingCover;
         rotatingCover.transform.rotation = Quaternion.Euler(rotatingCover.transform.rotation.x, rotatingCover.transform.rotation.y, 0);
-        deathScreen.enabled = false;
-        FindFirstObjectByType<FadeTransitionController>().LoadNextLevel("Level 1");
+        //deathScreen.enabled = false;
+
         //SceneManager.LoadScene("Level 1");
-        SetSpawnpoint.instance.ResetPosition();
-   }
+        //SetSpawnpoint.instance.ResetPosition();
+
+        GameManager.Instance.playerDied = true;
+    }
 
     public void Menu()
     {
@@ -50,10 +66,32 @@ public class DeathScreenButtons : MonoBehaviour
         AudioManager.Manager.StopMusic("GameOver");
         AudioManager.Manager.StopMusic("BossMusic");
         FindFirstObjectByType<FadeTransitionController>().LoadNextLevel("Main Menu Animated");
+
+        Time.timeScale = 1.0f;
         //SceneManager.LoadScene("Main Menu Animated");
         deathScreen.enabled = false;
         GameManager.Instance.ChangeGameState(GameManager.GameStates.MainMenu);
+        PlayerController.Instance.GetPlayerDeath().currentHealth = PlayerController.Instance.GetPlayerDeath().maxHealth;
+        PlayerController.Instance.GetPlayerDeath().healthBarScript.SetHealth(PlayerController.Instance.GetPlayerDeath().currentHealth);
+        CanvasManager.Instance.HealthBar.GetComponent<NewHealthBarScript>().UpdateHealthBarColour();
+        CanvasManager.Instance.HealthBar.GetComponent<NewHealthBarScript>().setMaxHealth(100);
+        PlayerController.Instance.GetPlayerDeath().SetIsDead(false);
+        foreach (BoxCollider2D boxCollider in PlayerController.Instance.GetPlayerDeath().boxColliders)
+        {
+            if (boxCollider.isTrigger)
+                boxCollider.enabled = false;
+        }
+
+        PlayerController.Instance.GetFeeding().currentHunger = 0;
+        PlayerController.Instance.GetPlayerDeath().isInvincible = true;
+        CanvasManager.Instance.hungerBarUI.GetComponent<HungerBar>().SetMinHunger(0);
+
+        CanvasManager.Instance.countdownTimer.timeRemaining = CanvasManager.Instance.countdownTimer.time;
+        Transform rotatingCover = CanvasManager.Instance.countdownTimer.rotatingCover;
+        rotatingCover.transform.rotation = Quaternion.Euler(rotatingCover.transform.rotation.x, rotatingCover.transform.rotation.y, 0);
         //mainCanvas.gameObject.SetActive(false);
+
+        GameManager.Instance.playerDied = true;
     }
 
     public void Stats()
@@ -61,4 +99,13 @@ public class DeathScreenButtons : MonoBehaviour
         AudioManager.Manager.PlaySFX("UI_Click");
         ///load stats screen 
     }
+
+    //private void EnableBoxCollider()
+    //{
+    //    foreach (BoxCollider2D boxCollider in PlayerController.Instance.GetPlayerDeath().boxColliders)
+    //    {
+    //        if (boxCollider.isTrigger)
+    //            boxCollider.enabled = true;
+    //    }
+    //}
 }

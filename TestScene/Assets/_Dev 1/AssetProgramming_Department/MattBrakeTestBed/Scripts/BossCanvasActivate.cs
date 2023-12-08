@@ -51,6 +51,7 @@ public class BossCanvasActivate : MonoBehaviour
         if (player.currentHealth <= 0)
         {
             bossCanvasGroup.alpha = 0;
+            CanvasManager.Instance.toolTipManager.HideBottomToolTip_Static(); 
         }
     }
 }

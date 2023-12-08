@@ -8,7 +8,7 @@ public class cameraFollow : MonoBehaviour
     public float SmoothSpeed = 0.125f;
     public Vector3 Offset;
 
-
+    private float startCamSize;
     private Vector3 shakeCoords;
 
     private Transform Target;
@@ -19,6 +19,21 @@ public class cameraFollow : MonoBehaviour
         Target = PlayerController.Instance.transform;
         //Target = gameManager.player.transform;
         //Target = FindFirstObjectByType<PlayerController>().GetComponent<Transform>();
+        startCamSize = GetComponent<Camera>().orthographicSize;
+    }
+
+    private void Update()
+    {
+        //if (Input.GetKeyDown(KeyCode.F))
+        //{
+        //    CameraZoom(0.2f, 3f);
+        //}
+
+        //if (Input.GetKeyDown(KeyCode.G))
+        //{
+        //    CameraZoom(0.2f, 0);
+        //}
+
     }
 
     void LateUpdate()
@@ -40,15 +55,18 @@ public class cameraFollow : MonoBehaviour
         // Make the camera look at the player
         //transform.LookAt(Target);
 
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            StartShake(1, 2f);
-        }
+        
+
     }
 
     public void StartShake(float duration, float shakeIntensity)
     {
         StartCoroutine(Shake(duration, shakeIntensity));
+    }
+
+    public void CameraZoom(float duration, float zoom)
+    {
+        StartCoroutine(CamZoom(duration, zoom));
     }
 
     IEnumerator Shake(float duration, float shakeIntensity)
@@ -66,5 +84,29 @@ public class cameraFollow : MonoBehaviour
         }
         shakeCoords = new Vector3(0, 0, 0);
         //transform.position = startPos;
+    }
+
+    IEnumerator CamZoom(float duration, float zoom)
+    {
+        float elapsedTime = 0f;
+        float startZoomedIn = GetComponent<Camera>().orthographicSize;
+
+        while (elapsedTime < duration)
+        {
+            elapsedTime += Time.deltaTime;
+            if (zoom == 0)
+            {
+                GetComponent<Camera>().orthographicSize = Mathf.Lerp(startZoomedIn, startCamSize, elapsedTime / duration);
+            }
+            else
+            {
+                GetComponent<Camera>().orthographicSize = Mathf.Lerp(startCamSize, zoom, elapsedTime / duration);
+            }
+            
+            
+            
+            yield return null;
+        }
+        
     }
 }

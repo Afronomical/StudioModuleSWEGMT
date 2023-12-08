@@ -15,8 +15,10 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class GameManager : MonoBehaviour
 {
@@ -24,7 +26,9 @@ public class GameManager : MonoBehaviour
     public bool playerIsDead;
     public bool canChangeLevel;
 
-    
+    private GameObject pauseMenu;
+    private bool hasPaused;
+    public bool nextSpawn;
 
     //this is where the conditions that trigger state changes are defined
     //they are simple for now, subject to change as per Tech Design requirements
@@ -37,6 +41,8 @@ public class GameManager : MonoBehaviour
     private CountdownTimer timer;
     public string nextLevel = "Level 2";
     public string currentLevel = "Level 1";
+
+    public bool playerDied;
 
     private void Awake()
     {
@@ -105,17 +111,68 @@ public class GameManager : MonoBehaviour
             Debug.Log(peopleEaten + "/" + peopleEatingThreshold);
         }
 
+
+        if (SceneManager.GetActiveScene().name == "Spawn" && playerDied)
+        {
+            nextLevel = "Level 2";
+            currentLevel = "Level 1";
+            playerDied = false;
+            PlayerController.Instance.GetPlayerDeath().currentHealth = PlayerController.Instance.GetPlayerDeath().maxHealth;
+            PlayerController.Instance.GetPlayerDeath().healthBarScript.SetHealth(PlayerController.Instance.GetPlayerDeath().currentHealth);
+            CanvasManager.Instance.HealthBar.GetComponent<NewHealthBarScript>().UpdateHealthBarColour();
+            CanvasManager.Instance.HealthBar.GetComponent<NewHealthBarScript>().setMaxHealth(100);
+        }
+
+
         switch (SceneManager.GetActiveScene().name)
         {
-            case "Spawn":
+            case "SpawnPostLoad":
                 if (timer != null)
                 {
                     timer.SetIsRotating(false);
                     timer.enabled = false;
                 }
-                    
+                break;
+            case "Spawn":
+                if (PlayerController.Instance != null)
+                {
+                    foreach (BoxCollider2D boxCollider in PlayerController.Instance.GetPlayerDeath().boxColliders)
+                    {
+                        if (boxCollider.isTrigger)
+                            boxCollider.enabled = true;
+                    }
+                    if (PlayerController.Instance.GetPlayerDeath().isInvincible)
+                    {
+                        PlayerController.Instance.GetPlayerDeath().isInvincible = false;
+                        PlayerController.Instance.GetPlayerDeath().currentHealth = PlayerController.Instance.GetPlayerDeath().maxHealth;
+                        PlayerController.Instance.GetPlayerDeath().healthBarScript.SetHealth(PlayerController.Instance.GetPlayerDeath().currentHealth);
+                        CanvasManager.Instance.HealthBar.GetComponent<NewHealthBarScript>().UpdateHealthBarColour();
+                        CanvasManager.Instance.HealthBar.GetComponent<NewHealthBarScript>().setMaxHealth(100);
+                    }
+                }
+
+                if (pauseMenu == null && !hasPaused && !nextSpawn)
+                {
+                    pauseMenu = FindFirstObjectByType<PauseMenu>().gameObject;
+                    hasPaused = true;
+                    if (pauseMenu != null)
+                    {
+                        FindFirstObjectByType<CoffinInteraction>().enabled = false;
+                        StartCoroutine(CutsceneDelay(9.5f));
+                    }
+                }
+                if (timer != null)
+                {
+                    timer.SetIsRotating(false);
+                    timer.enabled = false;
+                }
+
+                CanvasManager.Instance.HealthBar.GetComponent<NewHealthBarScript>().SetHealth(PlayerController.Instance.GetPlayerDeath().currentHealth);
+
+
                 break;
             case "Level 1":
+                hasPaused = false;
                 nextLevel = "Level 2";
                 currentLevel = "Level 1";
                 //currentGameState = GameStates.PlayerInLevel;
@@ -124,8 +181,11 @@ public class GameManager : MonoBehaviour
                     timer.enabled = true;
                     timer.SetIsRotating(true);
                 }
+
+                CanvasManager.Instance.HealthBar.GetComponent<NewHealthBarScript>().SetHealth(PlayerController.Instance.GetPlayerDeath().currentHealth);
                 break;
             case "Level 2":
+                hasPaused = false;
                 nextLevel = "BossLevel";
                 currentLevel = "Level 2";
                 if (timer != null)
@@ -133,17 +193,68 @@ public class GameManager : MonoBehaviour
                     timer.enabled = true;
                     timer.SetIsRotating(true);
                 }
+
+                CanvasManager.Instance.HealthBar.GetComponent<NewHealthBarScript>().SetHealth(PlayerController.Instance.GetPlayerDeath().currentHealth);
                 break;
             case "BossLevel":
+                hasPaused = false;
+                nextLevel = "Spawn";
+                currentLevel = "Level 1"; 
                 if(timer != null)
                 {
                     timer.enabled = false;
                     timer.SetIsRotating(false); 
                 }
+
+                CanvasManager.Instance.HealthBar.GetComponent<NewHealthBarScript>().SetHealth(PlayerController.Instance.GetPlayerDeath().currentHealth);
+                break;
+            case "Main Menu Animated":
+                CanvasManager.Instance.toolTipManager.HideBottomToolTip_Static(); 
+                hasPaused = false;
+                nextLevel = "Level 2";
+                currentLevel = "Level 1";
+                break;
+            case "Tutorial_Level":
+                hasPaused = false;
+                if (CanvasManager.Instance != null)
+                {
+                    
+                }
+                if (timer != null)
+                {
+                    timer.SetIsRotating(false);
+                    timer.enabled = false;
+                }
                 break;
             default:
                 break;
         }
+    }
+
+    private void EnableBoxCollider()
+    {
+        foreach (BoxCollider2D boxCollider in PlayerController.Instance.GetPlayerDeath().boxColliders)
+        {
+            if (boxCollider.isTrigger)
+                boxCollider.enabled = true;
+        }
+    }
+
+    private IEnumerator CutsceneDelay(float delay)
+    {
+        if (pauseMenu != null)
+            pauseMenu.SetActive(false);
+
+        PlayerController.Instance.transform.position = new(-100, -100, 0);
+
+        yield return new WaitForSeconds(delay);
+
+        PlayerController.Instance.transform.position = new(-1.84f, 0.52f, 0);
+
+        if (pauseMenu != null)
+            pauseMenu.SetActive(true);
+
+        FindFirstObjectByType<CoffinInteraction>().enabled = true;
     }
 
     private void CheckScene()

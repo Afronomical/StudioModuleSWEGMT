@@ -25,7 +25,7 @@ public class DashAttackState : StateBaseClass
     {
         playerDeath = character.player.GetComponent<PlayerDeath>();
         rb = GetComponent<Rigidbody2D>();
-        dashTrail = gameObject.GetComponent<TrailRenderer>();
+        dashTrail = transform.Find("Sprite").Find("DashTrail").GetComponent<TrailRenderer>();
         transform.GetComponentInChildren<AIAnimationController>().ChangeAnimationState(AIAnimationController.AnimationStates.SwordAttack); // Change to boss dash animation
     }
 
@@ -50,7 +50,7 @@ public class DashAttackState : StateBaseClass
         
 
         //Checks if the delay timer has hit 0, if so, it will damage the player and reset the delay timer to x amount
-        if (currentDelay <= 0)
+        if (currentDelay <= 0 && isDashing == false)
         {
             StartCoroutine(Dash());
             //playerDeath.RemoveHealth(attackDamage);

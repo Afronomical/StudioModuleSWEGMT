@@ -10,6 +10,10 @@ public class TutorialTeleporter : MonoBehaviour
         if(collision.CompareTag("Player"))
         {
             PlayerPrefs.SetInt(AudioManager.Manager.playedTutorial, 1);
+            if (PlayerController.Instance != null)
+            {
+                PlayerController.Instance.GetComponent<PlayerDeath>().maxHealth = 100;
+            }
             AudioManager.Manager.StopMusic("LevelMusic");
             FindFirstObjectByType<FadeTransitionController>().LoadNextLevel("Main Menu Animated");
             //SceneManager.LoadScene("Main Menu Animated");

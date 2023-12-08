@@ -13,6 +13,8 @@ public class CanvasManager : MonoBehaviour
     public NewHealthBarScript HealthBar;
     public StaminaBar staminaBar;
 
+    private DayNightLightController DNcontroller;
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -43,5 +45,24 @@ public class CanvasManager : MonoBehaviour
         staminaBar = Object.FindFirstObjectByType<StaminaBar>();
     }
 
-    
+    private void Update()
+    {
+        if (DNcontroller == null)
+        {
+            DNcontroller = FindFirstObjectByType<DayNightLightController>();
+        }
+
+        if (DNcontroller != null)
+        {
+            if (countdownTimer.timeRemaining <= 0)
+            {
+                DNcontroller.SetGlobalColor(Color.white);
+                DNcontroller.SetContinueIncreasing(false);
+            }
+            else if (countdownTimer.timeRemaining > 0)
+            {
+                DNcontroller.SetContinueIncreasing(true);
+            }
+        }
+    }
 }

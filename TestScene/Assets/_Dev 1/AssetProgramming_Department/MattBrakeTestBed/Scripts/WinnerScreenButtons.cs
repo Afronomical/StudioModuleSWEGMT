@@ -12,16 +12,14 @@ public class WinnerScreenButtons : MonoBehaviour
     {
         //FindFirstObjectByType<FadeTransitionController>().LoadNextLevel("Credits");
         SceneManager.LoadScene("Credits");
-        //Time.timeScale = 1f;
+        Time.timeScale = 1f;
         AudioManager.Manager.StopMusic("BossMusic");
         AudioManager.Manager.PlayMusic("Credits"); 
     }
 
     public void Menu()
     {
-        
         AudioManager.Manager.StopMusic("BossMusic");
-        //Time.timeScale = 1f; 
         //FindFirstObjectByType<FadeTransitionController>().LoadNextLevel("Main Menu Animated");
         SceneManager.LoadScene("Main Menu Animated"); 
     }

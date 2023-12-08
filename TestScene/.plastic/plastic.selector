@@ -1,0 +1,4 @@
+repository "TestScene@SolidInstinct@cloud"
+  path "/"
+    br "/main"
+    co "/main"

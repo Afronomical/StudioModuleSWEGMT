@@ -38,25 +38,25 @@ public class KnockBack : MonoBehaviour
 
         Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, playerRadius);
 
-        if (colliders.Length > 0)
-        {
-            foreach (Collider2D collider in colliders)
-            {
-                if (collider.CompareTag("Hunter") || collider.CompareTag("Villager") || collider.CompareTag("Projectile"))
-                {
-                    if (playerDeath != null && playerDeath.currentHealth < previousHealth)
-                    {
-                        ApplyKnockback(collider);
+        //if (colliders.Length > 0)
+        //{
+        //    foreach (Collider2D collider in colliders)
+        //    {
+        //        if (collider.CompareTag("Hunter") || collider.CompareTag("Villager") || collider.CompareTag("Projectile"))
+        //        {
+        //            if (playerDeath != null && playerDeath.currentHealth < previousHealth)
+        //            {
+        //                ApplyKnockback(collider);
 
-                        // Update the previous health to the current health
-                        previousHealth = playerDeath.currentHealth;
-                    }
-                }
-            }
-        }
+        //                // Update the previous health to the current health
+        //                previousHealth = playerDeath.currentHealth;
+        //            }
+        //        }
+        //    }
+        //}
     }
 
-    private void ApplyKnockback(Collider2D collider)
+    public void ApplyKnockback(Collider2D collider)
     {
         if (!isKnockedBack)
         {
@@ -66,7 +66,7 @@ public class KnockBack : MonoBehaviour
             isKnockedBack = true;
 
             // Change the player's color to red.
-            playerRenderer.color = Color.red;
+            //playerRenderer.color = Color.red;
 
             // Reset the knockback and player color after a specified duration.
             StartCoroutine(ResetKnockback());
@@ -78,7 +78,7 @@ public class KnockBack : MonoBehaviour
         yield return new WaitForSeconds(knockbackDuration);
 
         // Reset the player color to the original color.
-        playerRenderer.color = originalColor;
+        //playerRenderer.color = originalColor;
         isKnockedBack = false;
     }
 

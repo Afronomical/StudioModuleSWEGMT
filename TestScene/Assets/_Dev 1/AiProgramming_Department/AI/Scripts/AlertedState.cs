@@ -6,7 +6,7 @@ public class AlertedState : StateBaseClass
 {
     private AIAnimationController animController;
     private Animator anim; 
-    private float alertedTime = 0.75f;  // How long the state will last
+    private float alertedTime = 0.65f;  // How long the state will last
     
 
     private void Start()
@@ -15,6 +15,7 @@ public class AlertedState : StateBaseClass
         anim = transform.GetComponentInChildren<Animator>();
         character = GetComponent<AICharacter>();
         character.isMoving = false;
+        character.walkingParticles.Stop();
         character.isAttacking = true;
         character.knowsAboutPlayer = true;
         

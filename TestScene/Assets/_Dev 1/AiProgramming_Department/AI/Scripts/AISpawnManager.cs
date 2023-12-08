@@ -68,19 +68,56 @@ public class AISpawnManager : MonoBehaviour
 
         // Resetting all of the values in the enemy
         enemy.GetComponent<TrailRenderer>().enabled = false; 
-        enemy.transform.position = spawnPoint.position + spawnPointOffset;
+        enemy.transform.position = spawnPoint.position;
         AICharacter AIScript = enemy.GetComponent<AICharacter>();
         GameObject enemySprite = enemy.transform.Find("Sprite").gameObject;
+        SpriteRenderer sprite = enemySprite.GetComponent<SpriteRenderer>();
+        enemy.SetActive(true);
+
         AIScript.health = AIScript.startingHealth;
         AIScript.ChangeState(AICharacter.States.None);
+        AIScript.enabled = false;
+        enemy.GetComponent<StateMachineController>().enabled = false;
         enemy.GetComponent<CircleCollider2D>().enabled = true;
-        enemySprite.GetComponent<AIAnimationController>().ChangeAnimationState(AIAnimationController.AnimationStates.Idle);
-        enemySprite.GetComponent<SpriteRenderer>().color = Color.white;
+        enemySprite.GetComponent<AIAnimationController>().ChangeAnimationState(AIAnimationController.AnimationStates.Walk);
+        enemySprite.GetComponent<AIAnimationController>().enabled = false;
+        enemySprite.GetComponent<AIAnimationChange>().enabled = false;
+        sprite.color = Color.white;
+        int oldSortingLayer = sprite.sortingOrder;
+        sprite.sortingOrder = 5;
         enemySprite.GetComponent<Animator>().SetFloat("MovementX", 0);
         enemySprite.GetComponent<Animator>().SetFloat("MovementY", -1);
-        enemy.SetActive(true);  // Make the enemy appear
+        enemy.SetActive(true);
         enemySprite.GetComponent<AIAnimationChange>().characterHasDied = false;
 
+        float duration = 3;
+        float elapsedTime = 0;
+        Vector3 targetSize = enemy.transform.localScale;
+        Vector3 startSize = targetSize / 5;
+        while (elapsedTime < duration)
+        {
+            elapsedTime += Time.deltaTime;
+
+            Vector3 newPos = Vector3.Lerp(spawnPoint.position - (spawnPointOffset), spawnPoint.position + (spawnPointOffset * 1.5f), elapsedTime / duration);
+            enemy.transform.position = newPos;
+
+            if (elapsedTime < duration / 0.3f)
+            {
+                Vector3 newSize = Vector3.Lerp(startSize, targetSize, elapsedTime / (duration * 0.3f));
+                enemy.transform.localScale = newSize;
+
+                float newAlpha = Mathf.Lerp(0, 1, elapsedTime / (duration * 0.3f));
+                sprite.color = new Color(sprite.color.r, sprite.color.g, sprite.color.b, newAlpha);
+            }
+
+            yield return null;
+        }
+
+        sprite.sortingOrder = oldSortingLayer;
+        AIScript.enabled = true;
+        enemy.GetComponent<StateMachineController>().enabled = true;
+        enemySprite.GetComponent<AIAnimationController>().enabled = true;
+        enemySprite.GetComponent<AIAnimationChange>().enabled = true;
         yield return new WaitForSeconds(doorCloseTime);
         spawnPoint.gameObject.GetComponent<SpriteRenderer>().color = Color.white;  // Close the door
     }

@@ -18,7 +18,11 @@ public class CountdownTimer : MonoBehaviour
     public Quaternion startRotation;
     private bool isRotating = false;
 
-    public void SetIsRotating(bool isRotating) { this.isRotating = isRotating; }
+    public void SetIsRotating(bool isRotating) 
+    { 
+        this.isRotating = isRotating;
+        timeIsRunning = true;
+    }
 
     private void Awake()
     {
@@ -49,6 +53,7 @@ public class CountdownTimer : MonoBehaviour
     
     void Update()
     {
+
         if (timeIsRunning) 
         { 
             if(timeRemaining >= 0)

@@ -14,13 +14,15 @@ public class DayNightLightController : MonoBehaviour
     private float currentTime;
     private bool continueIncreasing;
 
+    public bool GetContinueIncrease() => continueIncreasing;
+    public void SetContinueIncreasing(bool continueIncreasing) { this.continueIncreasing = continueIncreasing; }
+
     private void Start()
     {
         countdownTimer = CanvasManager.Instance.countdownTimer;
 
         globalLight = GetComponent<Light2D>();
         percentage = 1 / countdownTimer.time;
-        continueIncreasing = true;
         currentTime = 0;
     }
 
@@ -36,5 +38,10 @@ public class DayNightLightController : MonoBehaviour
             currentTime += Time.deltaTime;
             globalLight.color = lightColor.Evaluate(currentTime * percentage);
         }
+    }
+
+    public void SetGlobalColor(Color color)
+    {
+        globalLight.color = color;
     }
 }
