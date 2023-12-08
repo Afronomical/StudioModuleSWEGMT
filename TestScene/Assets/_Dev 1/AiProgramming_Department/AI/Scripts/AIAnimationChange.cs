@@ -68,7 +68,7 @@ public class AIAnimationChange : MonoBehaviour
                     break;
                 case AICharacter.States.Attack:
                 case AICharacter.States.DashAttack:
-                case AICharacter.States.SpinAttackBox:
+                //case AICharacter.States.SpinAttackBox: <- 
                     if (!characterAttacking)
                     {
                         animController.ChangeAnimationState(AIAnimationController.AnimationStates.SwordAttack);
