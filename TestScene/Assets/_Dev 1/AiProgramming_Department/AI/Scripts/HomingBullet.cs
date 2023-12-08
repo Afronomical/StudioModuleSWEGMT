@@ -9,6 +9,7 @@ public class HomingBullet : MonoBehaviour
     Rigidbody2D rb;
     public int bulletDamage = 5;
     public ParticleSystem ps;
+    private bool stopMoving;
     private void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -26,11 +27,14 @@ public class HomingBullet : MonoBehaviour
     }
     void FixedUpdate()
     {
-        Vector2 direction = (Vector2)player.transform.position - rb.position;
-        direction.Normalize();
-        float rot = Vector3.Cross(direction, transform.right).z;
-        rb.angularVelocity = -rot * 500;
-        rb.velocity = transform.right * 5;
+        if (!stopMoving)
+        {
+            Vector2 direction = (Vector2)player.transform.position - rb.position;
+            direction.Normalize();
+            float rot = Vector3.Cross(direction, transform.right).z;
+            rb.angularVelocity = -rot * 500;
+            rb.velocity = transform.right * 5;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -41,11 +45,6 @@ public class HomingBullet : MonoBehaviour
             player.GetComponent<PlayerDeath>().RemoveHealth(bulletDamage);
             Destroy(gameObject);
         }
-        else if (collision.gameObject.CompareTag("Villager"))//add hunter and any other colliders here
-        {
-            //add any checks to destroy bullet here
-            Destroy(gameObject);
-        }
         else if (collision.gameObject.layer == LayerMask.NameToLayer("Unwalkable"))
         {
             this.GetComponent<BoxCollider2D>().enabled = false;
@@ -53,6 +52,8 @@ public class HomingBullet : MonoBehaviour
             this.gameObject.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
             this.gameObject.GetComponent<BoxCollider2D>().enabled = false;
             this.gameObject.GetComponent<TrailRenderer>().enabled = false;
+            GetComponent<SpriteRenderer>().enabled = false;
+            stopMoving = true;
             if (!ps.isPlaying) ps.Play();
             Invoke("DestroyBullet", 1.5f);
         }
