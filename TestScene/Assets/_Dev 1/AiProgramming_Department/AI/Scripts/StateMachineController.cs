@@ -121,17 +121,19 @@ public class StateMachineController : MonoBehaviour
             character.ChangeState(AICharacter.States.Patrol);
 
 
-        else if (distance > attackRange)  // Hunt while not in attack range
+        else if (character.currentState == AICharacter.States.Attack && distance < attackRange * 2.5f)  // Attack when in attack range
+            character.ChangeState(AICharacter.States.Attack);
+        else if (distance < attackRange)
+            character.ChangeState(AICharacter.States.Attack);
+
+
+        else  // Hunt while not in attack range
         {
             if (character.currentState == AICharacter.States.Hunt)  // If hunt is already the state then don't check for walls
                 character.ChangeState(AICharacter.States.Hunt);
             else if (RaycastToPlayer(detectionRange))  // Can they see the player
                 character.ChangeState(AICharacter.States.Hunt);
         }
-
-
-        else  // Attack when in attack range
-            character.ChangeState(AICharacter.States.Attack);
     }
 
 

@@ -18,6 +18,7 @@ public class AISpawnManager : MonoBehaviour
     public List<Transform> doorSpawnPoints = new List<Transform>();
     public Vector3 spawnPointOffset;
     public List<GameObject> deadEnemies = new List<GameObject>();
+    public BossStateMachineController boss;
 
     [Header("Door Blocking")]
     public string[] spawnBlockingTags;
@@ -50,10 +51,21 @@ public class AISpawnManager : MonoBehaviour
             {
                 respawnTimer = Random.Range(minRespawnTime, maxRespawnTime);
                 Transform spawnPoint = FindSpawnPoint(0);  // Use the function to find an unblocked door
-                if (spawnPoint != null)  // If a door is free
+                if (boss == null)
                 {
-                    GameObject enemyToSpawn = deadEnemies[Random.Range(0, deadEnemies.Count)];  // Pick a random dead enemy
-                    StartCoroutine(SpawnEnemy(spawnPoint, enemyToSpawn));  // Respawn the enemy
+                    if (spawnPoint != null)  // If a door is free
+                    {
+                        GameObject enemyToSpawn = deadEnemies[Random.Range(0, deadEnemies.Count)];  // Pick a random dead enemy
+                        StartCoroutine(SpawnEnemy(spawnPoint, enemyToSpawn));  // Respawn the enemy
+                    }
+                }
+                else if (boss.phase != 1)
+                {
+                    if (spawnPoint != null)  // If a door is free
+                    {
+                        GameObject enemyToSpawn = deadEnemies[Random.Range(0, deadEnemies.Count)];  // Pick a random dead enemy
+                        StartCoroutine(SpawnEnemy(spawnPoint, enemyToSpawn));  // Respawn the enemy
+                    }
                 }
             }
         }
