@@ -57,11 +57,14 @@ public class AttackState : StateBaseClass
                 AudioManager.Manager.PlaySFX("NPC_MeleeAttack");
                 preAttack = true;
                 currentDelay = attackDelay;
-                if (character.characterType != AICharacter.CharacterTypes.Boss && Vector2.Distance(character.player.transform.position, transform.position) > 1.5f)
+                if (Vector2.Distance(character.player.transform.position, transform.position) > 1.5f)
                 {
                     Vector3 dirVector = lastKnownPos - transform.position;
-                    GetComponent<Rigidbody2D>().velocity = dirVector * 10f;  // Actual dash
                     damageDist = 1.5f;
+                    if (character.characterType != AICharacter.CharacterTypes.Boss)
+                        GetComponent<Rigidbody2D>().velocity = dirVector * 10f; 
+                    else
+                        GetComponent<Rigidbody2D>().velocity = dirVector * 4f; 
                 }
             }
             else if (preAttack && !postAttack)
