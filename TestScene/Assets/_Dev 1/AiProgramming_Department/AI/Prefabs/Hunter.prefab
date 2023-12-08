@@ -4981,7 +4981,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detectionRange: 8
-  attackRange: 1
+  attackRange: 1.25
   unwalkableLayer:
     serializedVersion: 2
     m_Bits: 64

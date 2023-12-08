@@ -7,8 +7,11 @@ using UnityEngine;
 public class AttackState : StateBaseClass
 {
     public int attackDamage = 10;
-    public float attackDelay = 2;
-    private float currentDelay;
+    public float attackDelay = 0.125f;
+    private float currentDelay = 0.25f;
+    private float damageDist = 1.25f;
+    private Vector3 lastKnownPos;
+    private bool preAttack, postAttack;
 
     //Gameplay Programmers Script for the Player Health
     private ReferenceManager referenceManager;
@@ -17,15 +20,11 @@ public class AttackState : StateBaseClass
 
     private void Start()
     {
-        transform.GetComponentInChildren<AIAnimationController>().ChangeAnimationState(AIAnimationController.AnimationStates.SwordAttack);
-        gameObject.transform.GetChild(2).GetChild(0).GetComponent<Animator>().SetTrigger("IsAttacking");  // <-----------------------------------  Error Here
         playerDeath = character.player.GetComponent<PlayerDeath>();
         GetComponent<AICharacter>().isMoving = false;
         GetComponent<AICharacter>().walkingParticles.Stop();
         GetComponent<AICharacter>().runParticles.Stop();
         //transform.GetComponentInChildren<AIAnimationController>().ChangeAnimationState(AIAnimationController.AnimationStates.SwordAttack);
-        currentDelay = 0.2f;
-        AudioManager.Manager.PlaySFX("NPC_MeleeAttack");
     }
 
     //public AttackState() 
@@ -37,9 +36,10 @@ public class AttackState : StateBaseClass
     {
         //Set the reference for the playerDeath variable
         if (playerDeath == null)
-        {
             playerDeath = character.player.GetComponent<PlayerDeath>();
-        }
+        
+        if (lastKnownPos == Vector3.zero)
+            lastKnownPos = character.player.transform.position;
 
         //Counts down the delay
         currentDelay -= Time.deltaTime;
@@ -50,13 +50,35 @@ public class AttackState : StateBaseClass
         //Checks if the delay timer has hit 0, if so, it will damage the player and reset the delay timer to x amount
         if (currentDelay <= 0)
         {
-            if (Vector2.Distance(character.player.transform.position, transform.position) <= 1.25f)
-                playerDeath.RemoveHealth(attackDamage);
-            currentDelay = 2;
-
-            if (character.characterType == AICharacter.CharacterTypes.Boss)
+            if (!preAttack)
             {
-                character.isAttacking = false;
+                transform.GetComponentInChildren<AIAnimationController>().ChangeAnimationState(AIAnimationController.AnimationStates.SwordAttack);
+                gameObject.transform.GetChild(2).GetChild(0).GetComponent<Animator>().SetTrigger("IsAttacking");
+                AudioManager.Manager.PlaySFX("NPC_MeleeAttack");
+                preAttack = true;
+                currentDelay = attackDelay;
+                if (character.characterType != AICharacter.CharacterTypes.Boss && Vector2.Distance(character.player.transform.position, transform.position) > 1.5f)
+                {
+                    Vector3 dirVector = lastKnownPos - transform.position;
+                    GetComponent<Rigidbody2D>().velocity = dirVector * 10f;  // Actual dash
+                    damageDist = 1.5f;
+                }
+            }
+            else if (preAttack && !postAttack)
+            {
+                if (Vector2.Distance(character.player.transform.position, transform.position) <= damageDist)
+                    playerDeath.RemoveHealth(attackDamage);
+
+                if (character.characterType == AICharacter.CharacterTypes.Boss)
+                {
+                    character.isAttacking = false;
+                    Destroy(this);
+                }
+                postAttack = true;
+                currentDelay = 1;
+            }
+            else
+            {
                 Destroy(this);
             }
         }
