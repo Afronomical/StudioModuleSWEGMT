@@ -36,6 +36,8 @@ public class PlayerDeath : MonoBehaviour
 
     public BoxCollider2D[] boxColliders;
     public void SetIsDead(bool isDead) {  this.isDead = isDead; }
+    private playerAttack PlayerAttack;
+    private Feeding feeding;
 
     private void Start()
     {
@@ -45,6 +47,8 @@ public class PlayerDeath : MonoBehaviour
         animator = GetComponent<Animator>();
         animationController = GetComponent<PlayerAnimationController>();
         boxColliders = GetComponents<BoxCollider2D>();
+        PlayerAttack = GetComponent<playerAttack>();
+        feeding = GetComponent<Feeding>();
     }
 
     private void Update()
@@ -149,8 +153,12 @@ public class PlayerDeath : MonoBehaviour
 
     IEnumerator delayedRemoveHealth(int dam)
     {
+        if (!feeding.IsBiteIconActive())
+            PlayerAttack.GetParrySword().SetActive(true);
+
         recParryAttack = true;
         yield return new WaitForSeconds(parryTime);
+        PlayerAttack.GetParrySword().SetActive(false);
         if (gameObject.GetComponent<playerAttack>().parrying)
         {
             Debug.Log("parried");
