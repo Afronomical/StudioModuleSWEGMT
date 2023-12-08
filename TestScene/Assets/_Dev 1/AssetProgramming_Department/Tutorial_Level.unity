@@ -1329,8 +1329,8 @@ PrefabInstance:
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialText
       value: When an enemy turns red they have entered the downed state. Take the
-        opportunity to feed on them by pressing 'E' to heal your health or 'F' to
-        fill your hunger bar.
+        opportunity to feed on them by pressing <sprite index=4>to heal your health
+        or <sprite index=5>to fill your hunger bar.
       objectReference: {fileID: 0}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialCanvas
@@ -1664,9 +1664,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialText
-      value: When in a tight pinch you can parry attacks by pressing your right mouse
-        button, however make sure you time this correctly! Defeat this Hunter to
-        Progress!
+      value: When in a tight pinch you can parry attacks by pressing your <sprite
+        index=74>, however make sure you time this correctly! Defeat this Hunter
+        to Progress!
       objectReference: {fileID: 0}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialCanvas
@@ -3314,8 +3314,8 @@ PrefabInstance:
       objectReference: {fileID: 1663084675}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialText
-      value: 'This is your hunger bar. When your hunger is satisfied you are able
-        to sleep in your coffin and proceed to the next level. '
+      value: 'This is your <color=yellow>hunger</color> bar. When your hunger is
+        satisfied you are able to sleep in your coffin and proceed to the next level. '
       objectReference: {fileID: 0}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialCanvas
@@ -3510,8 +3510,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 34.20365, y: -21.709301, z: 0}
-    m_Extent: {x: 47.175148, y: 35.327, z: 0}
+    m_Center: {x: 34.204002, y: -21.71925, z: 0}
+    m_Extent: {x: 47.1808, y: 35.32475, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -3878,8 +3878,9 @@ PrefabInstance:
       objectReference: {fileID: 79254580}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialText
-      value: This is the HUD zone. It displays your current health, hunger, stamina
-        and the time left before sunlight hits.
+      value: This is the HUD zone. It displays your current <color=green>health</color>,
+        <color=yellow>hunger</color>, <color=blue>stamina</color> and the time left
+        before sunlight hits.
       objectReference: {fileID: 0}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialCanvas
@@ -4651,7 +4652,8 @@ PrefabInstance:
       objectReference: {fileID: 1599234294}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialText
-      value: Use WASD to move around!
+      value: Use <sprite index=23><sprite index=0><sprite index=18><sprite index=3>to
+        move around!
       objectReference: {fileID: 0}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialCanvas
@@ -50569,8 +50571,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialText
-      value: Press SPACEBAR to dash! This gives you the ability to get out of sticky
-        situations, BUT be careful as it uses up more stamina!
+      value: Press  <sprite index=88>to dash! This gives you the ability to get out
+        of sticky situations, BUT be careful as it uses up more stamina!
       objectReference: {fileID: 0}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialCanvas
@@ -50668,7 +50670,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialText
-      value: Hold your left mouse button to charge up your heavy attack and let go
+      value: Hold your <sprite index=73>to charge up your heavy attack and let go
         of it once charged to unleash it!
       objectReference: {fileID: 0}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
@@ -51085,8 +51087,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 3.3321002, y: -2.04285, z: 0}
-    m_Extent: {x: 8.5655, y: 7.35315, z: 0}
+    m_Center: {x: 3.3321002, y: -2.04165, z: 0}
+    m_Extent: {x: 8.567, y: 7.34525, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -51295,7 +51297,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialText
-      value: Press your left mouse button to perform a slash attack on your enemies!
+      value: Press your <sprite index=73>to perform a slash attack on your enemies!
       objectReference: {fileID: 0}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialCanvas
@@ -51393,8 +51395,8 @@ PrefabInstance:
       objectReference: {fileID: 362608017}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialText
-      value: This is your stamina bar. It gets depleted whilst you're running or
-        performing quick movements, like dashing!
+      value: This is your <color=blue>stamina</color> bar. It gets depleted whilst
+        you're running or performing quick movements, like dashing!
       objectReference: {fileID: 0}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialCanvas
@@ -51652,8 +51654,8 @@ PrefabInstance:
       objectReference: {fileID: 1704802798}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialText
-      value: This is your health bar. Be careful of how much damage you take from
-        the hunters!
+      value: This is your <color=green>health</color> bar. Be careful of how much
+        <color=red>damage</color> you take from the hunters!
       objectReference: {fileID: 0}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialCanvas
@@ -51752,7 +51754,8 @@ PrefabInstance:
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialText
       value: This is your coffin. In order to progress to the next level you must
-        satisfy your hunger and then go back to your cave and rest in your coffin!
+        satisfy your hunger and then go back to your cave and rest in your coffin
+        by pressing <sprite index=17>!
       objectReference: {fileID: 0}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialCanvas
