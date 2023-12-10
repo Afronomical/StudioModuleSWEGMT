@@ -48,6 +48,10 @@ public class playerAttack : MonoBehaviour
     public GameObject parrySword;
     public GameObject parrySparks;
 
+    private bool parryGrace;
+    private float parryTimer;
+    private float parryTotalGrace = 0.2f;
+
     public GameObject GetParrySword() => parrySword;
 
     //enter collision, detects if has enemy tag, if true set enemy to attacking var
@@ -160,6 +164,8 @@ public class playerAttack : MonoBehaviour
 
         parrySword.SetActive(false);
         parrySparks.SetActive(false);
+
+        parryTimer = parryTotalGrace;
     }
 
 
@@ -242,15 +248,17 @@ public class playerAttack : MonoBehaviour
         }
 
 
-        if (Input.GetKeyDown(KeyCode.Mouse1) && gameObject.GetComponent<PlayerDeath>().recParryAttack && !coolDownParry)
+        //if (Input.GetKeyDown(KeyCode.Mouse1) && gameObject.GetComponent<PlayerDeath>().recParryAttack && !coolDownParry)
+        //{
+        //    parrying = true;
+        //    StartCoroutine(parryFeedBack());
+        //}
+        if (Input.GetKeyDown(KeyCode.Mouse1))
         {
-            parrying = true;
-            StartCoroutine(parryFeedBack());
-        }
-        else if (Input.GetKeyDown(KeyCode.Mouse1))
-        {
-            coolDownParry = true;
-            Debug.Log("parry cooling down");
+            if (!coolDownParry)
+            {
+                parryGrace = true;
+            }
         }
         if (coolDownParry)
         {
@@ -261,8 +269,52 @@ public class playerAttack : MonoBehaviour
                 parryCoolTime = parryCoolStart;
             }
         }
+        if (parryGrace)
+        {
+            parryTimer -= Time.deltaTime;
+            if (gameObject.GetComponent<PlayerDeath>().recParryAttack && !coolDownParry)
+            {
+                parrying = true;
+                StartCoroutine(parryFeedBack());
+                parryTimer = parryTotalGrace;
+                parryGrace = false;
+            }
+            if (parryTimer <= 0)
+            {
+                parryGrace = false;
+                coolDownParry = true;
+                parryTimer = parryTotalGrace;
+                Debug.Log("parry cooling down");
+            }
+        }
 
     }
+
+    IEnumerator ParryGrace()
+    {
+        if (gameObject.GetComponent<PlayerDeath>().recParryAttack && !coolDownParry)
+        {
+            parrying = true;
+            StartCoroutine(parryFeedBack());
+        }
+        else
+        {
+            Debug.Log("reeeeeeeeeeeee");
+            yield return new WaitForSeconds(5f);
+            Debug.Log("hyugsdfjhdgfrjhfdbg");
+            if (gameObject.GetComponent<PlayerDeath>().recParryAttack && !coolDownParry)
+            {
+                parrying = true;
+                StartCoroutine(parryFeedBack());
+            }
+            else
+            {
+                coolDownParry = true;
+                Debug.Log("parry cooling down");
+            }
+        }
+    }
+
     IEnumerator parryFeedBack()
     {
         if (!feeding.IsBiteIconActive())
