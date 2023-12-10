@@ -52,7 +52,7 @@ public class SpinAttackState : StateBaseClass
 
         //Counts the attack delay down
         currentDelay -= Time.deltaTime;
-        if(currentDelay <= 2 && SpinBoss == false)
+        if(currentDelay <= 1.25 && SpinBoss == false)
         {
             SpinBoss = true;
             animController.ChangeAnimationState(AIAnimationController.AnimationStates.Idle);
