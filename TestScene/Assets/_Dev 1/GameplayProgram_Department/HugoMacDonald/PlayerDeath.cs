@@ -223,6 +223,7 @@ public class PlayerDeath : MonoBehaviour
         AudioManager.Manager.StopMusic("BossMusic");
         AudioManager.Manager.stopAllInGameSFX();
 
+        CanvasManager.Instance.HUDObject.SetActive(false);
         CanvasManager.Instance.deathScreenCanvas.ShowUI();
         foreach (BoxCollider2D boxCollider in boxColliders)
         {

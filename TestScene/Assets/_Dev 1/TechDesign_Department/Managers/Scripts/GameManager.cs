@@ -114,6 +114,11 @@ public class GameManager : MonoBehaviour
 
         if (SceneManager.GetActiveScene().name == "Spawn" && playerDied)
         {
+            if (CanvasManager.Instance != null)
+            {
+                CanvasManager.Instance.HUDObject.SetActive(true);
+            }
+
             nextLevel = "Level 2";
             currentLevel = "Level 1";
             playerDied = false;
@@ -131,6 +136,11 @@ public class GameManager : MonoBehaviour
                 {
                     timer.SetIsRotating(false);
                     timer.enabled = false;
+                }
+
+                if (CanvasManager.Instance != null)
+                {
+                    CanvasManager.Instance.HUDObject.SetActive(true);
                 }
                 break;
             case "Spawn":

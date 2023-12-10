@@ -1306,6 +1306,7 @@ MonoBehaviour:
   countdownTimer: {fileID: 0}
   HealthBar: {fileID: 0}
   staminaBar: {fileID: 0}
+  HUDObject: {fileID: 5687945196647290556}
 --- !u!1 &4961921472983302230
 GameObject:
   m_ObjectHideFlags: 0

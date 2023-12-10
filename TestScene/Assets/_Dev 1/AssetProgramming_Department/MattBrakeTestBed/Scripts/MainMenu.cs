@@ -17,12 +17,11 @@ public class MainMenu : MonoBehaviour
             //CanvasManager.Instance.HealthBar.gameObject.SetActive(false);
             //CanvasManager.Instance.staminaBar.gameObject.SetActive(false);
 
-            CanvasManager.Instance.gameObject.SetActive(false);
+            CanvasManager.Instance.HUDObject.SetActive(false);
         }
 
         //GameManager.Instance.currentGameState = GameManager.GameStates.MainMenu; 
     }
-
 
     public void PlayGame()
     {
@@ -43,7 +42,7 @@ public class MainMenu : MonoBehaviour
             //CanvasManager.Instance.hungerBarUI.gameObject.SetActive(true);
             //CanvasManager.Instance.HealthBar.gameObject.SetActive(true);
             //CanvasManager.Instance.staminaBar.gameObject.SetActive(true);
-            CanvasManager.Instance.gameObject.SetActive(true);
+            CanvasManager.Instance.HUDObject.SetActive(true);
             //float hunger = CanvasManager.Instance.hungerBarUI.GetComponent<HungerBar>().currentValue;
             CanvasManager.Instance.hungerBarUI.GetComponent<HungerBar>().SetMinHunger(0);
             CanvasManager.Instance.HealthBar.GetComponent<NewHealthBarScript>().UpdateHealthBarColour();
@@ -70,7 +69,7 @@ public class MainMenu : MonoBehaviour
 
         if (CanvasManager.Instance != null)
         {
-            CanvasManager.Instance.gameObject.SetActive(true);
+            CanvasManager.Instance.HUDObject.SetActive(true);
         }
 
         SceneManager.LoadScene("Tutorial_Level");

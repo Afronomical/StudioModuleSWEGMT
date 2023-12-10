@@ -13,6 +13,8 @@ public class CanvasManager : MonoBehaviour
     public NewHealthBarScript HealthBar;
     public StaminaBar staminaBar;
 
+    public GameObject HUDObject;
+
     private DayNightLightController DNcontroller;
 
     private void Awake()
