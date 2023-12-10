@@ -45,6 +45,11 @@ public class playerAttack : MonoBehaviour
 
     public List<GameObject> enemyList = new List<GameObject>();
 
+    public GameObject parrySword;
+    public GameObject parrySparks;
+
+    public GameObject GetParrySword() => parrySword;
+
     //enter collision, detects if has enemy tag, if true set enemy to attacking var
     //private void OnTriggerEnter2D(Collider2D other)
     //{
@@ -152,6 +157,9 @@ public class playerAttack : MonoBehaviour
         //enemyHealth = AiEnemy.health;
 
         heavyChargeTimer = heavyChargeTime;
+
+        parrySword.SetActive(false);
+        parrySparks.SetActive(false);
     }
 
 
@@ -257,6 +265,9 @@ public class playerAttack : MonoBehaviour
     }
     IEnumerator parryFeedBack()
     {
+        if (!feeding.IsBiteIconActive())
+            parrySparks.SetActive(true);
+
         AudioManager.Manager.PlaySFX("Parry");
         parryLight.GetComponent<Light2D>().enabled = true;
         GameObject.FindWithTag("MainCamera").GetComponent<cameraFollow>().StartShake(parryFeedbackLength, 3.5f);
@@ -270,6 +281,7 @@ public class playerAttack : MonoBehaviour
         Time.timeScale = 1f;
         dashTrail.emitting = false;
         parryLight.GetComponent<Light2D>().enabled = false;
+        parrySparks.SetActive(false);
     }
     
 

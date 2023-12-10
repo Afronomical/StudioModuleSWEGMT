@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices.WindowsRuntime;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Feeding : MonoBehaviour
@@ -26,6 +28,8 @@ public class Feeding : MonoBehaviour
 
     public GameObject BloodOnFeed;
     private GameObject biteIcon;
+
+    public bool IsBiteIconActive() { return biteIcon.activeInHierarchy; }
 
     private void Start()
     {
