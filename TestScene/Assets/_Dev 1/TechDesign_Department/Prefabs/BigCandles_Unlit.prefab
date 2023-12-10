@@ -9758,6 +9758,7 @@ GameObject:
   - component: {fileID: 3664718194087123614}
   - component: {fileID: 3407572308731649687}
   - component: {fileID: 2778374475802363813}
+  - component: {fileID: 4522551147608384500}
   m_Layer: 0
   m_Name: BigCandles_Unlit
   m_TagString: Untagged
@@ -9822,7 +9823,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -521659841, guid: d9f61b901ea62954f9e1f4f3e2d348a9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 210f8bb09f247dc4b967fb6ed4eeae3f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9941,7 +9942,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 2.125}
+    oldSize: {x: 1, y: 3}
     newSize: {x: 1, y: 3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -9950,6 +9951,18 @@ BoxCollider2D:
   m_Size: {x: 3.5985222, y: 4.281597}
   m_EdgeRadius: 0
 --- !u!114 &2778374475802363813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7989384370035910810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50efcb7dbe9576c49b211b184a711b75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4522551147608384500
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

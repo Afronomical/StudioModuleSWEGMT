@@ -41,8 +41,8 @@ public class TUTORIAL_TypewriterController : MonoBehaviour
 
     private IEnumerator TypewriterEffect(float delay)
     {
-
         bool characterDisplayed = false;
+        bool isAddingRichTextTag = false;
         int j = -1;
 
         for (int i = 0; i < textToDisplay.Length; i++)
@@ -53,12 +53,20 @@ public class TUTORIAL_TypewriterController : MonoBehaviour
                 j = i;
             }
 
-            if (!characterDisplayed)
+            if (textToDisplay[i] == '<' || isAddingRichTextTag)
+            {
+                isAddingRichTextTag = true;
+                CanvasText.text += textToDisplay[i];
+                if (textToDisplay[i] == '>')
+                    isAddingRichTextTag = false;
+            }
+
+            else if (!characterDisplayed)
             {
                 CanvasText.text += textToDisplay[i];
                 characterDisplayed = true;
+                yield return new WaitForSeconds(delay);
             }
-            yield return new WaitForSeconds(delay);
         }
 
         isDisplaying = false;
