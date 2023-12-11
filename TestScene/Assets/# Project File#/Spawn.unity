@@ -9290,6 +9290,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SceneFade
       objectReference: {fileID: 0}
+    - target: {fileID: 9123651882320505506, guid: c5bf5d8bba9c03a4eb3439e3e7967316, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
