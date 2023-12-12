@@ -3807,8 +3807,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 34.200348, y: -21.71805, z: 0}
-    m_Extent: {x: 47.17505, y: 35.32265, z: 0}
+    m_Center: {x: 34.2133, y: -21.715199, z: 0}
+    m_Extent: {x: 47.175, y: 35.3214, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -4270,8 +4270,8 @@ PrefabInstance:
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialText
       value: This is the HUD zone. It displays your current <color=green>health</color>,
-        <color=yellow>hunger</color>, <color=blue>stamina</color> and the time left
-        before sunlight hits.
+        <color=yellow>hunger</color>, <color=#42B9A4>stamina</color> and the time
+        left before sunlight hits.
       objectReference: {fileID: 0}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialCanvas
@@ -51668,6 +51668,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3959416225025747871, guid: 4e3634e8eb4b0ff4bbd9bfb8bbff953e, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3959416225025747871, guid: 4e3634e8eb4b0ff4bbd9bfb8bbff953e, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3959416225025747871, guid: 4e3634e8eb4b0ff4bbd9bfb8bbff953e, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8131083491864858769, guid: 4e3634e8eb4b0ff4bbd9bfb8bbff953e, type: 3}
       propertyPath: m_Name
       value: TUTORIAL_TOOLTIP
@@ -52206,8 +52218,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 3.33935, y: -2.0472, z: 0}
-    m_Extent: {x: 8.56215, y: 7.3438997, z: 0}
+    m_Center: {x: 3.33965, y: -2.0391998, z: 0}
+    m_Extent: {x: 8.57515, y: 7.3489, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -52514,7 +52526,7 @@ PrefabInstance:
       objectReference: {fileID: 362608017}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
       propertyPath: TutorialText
-      value: This is your <color=blue>stamina</color> bar. It gets depleted whilst
+      value: This is your <color=#42B9A4>stamina</color> bar. It gets depleted whilst
         you're running or performing quick movements, like dashing!
       objectReference: {fileID: 0}
     - target: {fileID: 1198509856300645482, guid: cce4f4e343a954641a42543a700a20f4, type: 3}
